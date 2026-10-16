@@ -1,0 +1,17 @@
+{
+  "pid": 903758,
+  "prerequisite": "artifacts/e7-rlpd-independent-eval-smoke-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_u1_repeat.py",
+    "--seed",
+    "0",
+    "--output",
+    "artifacts/u1-pick-seed0-pipeline-001"
+  ],
+  "started_at": "2026-10-16T12:38:07.441682+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 968476,
+  "ended_at": "2026-10-16T13:49:31.413022+00:00"
+}

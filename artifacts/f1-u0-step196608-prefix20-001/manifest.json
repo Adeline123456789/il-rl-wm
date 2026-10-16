@@ -1,0 +1,33 @@
+{
+  "experiment_id": "f1-u0-step196608-prefix20-001",
+  "started_at": "2026-10-16T13:49:32.003515+00:00",
+  "ended_at": "2026-10-16T13:57:34.955680+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_ranking.py",
+    "--checkpoint",
+    "releases/u0-analysis-precollapse-001/weights.pt",
+    "--output",
+    "artifacts/f1-u0-step196608-prefix20-001",
+    "--prefix-steps",
+    "20",
+    "--continuation-steps",
+    "400",
+    "--states",
+    "8",
+    "--repeats",
+    "2"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 900.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 1181504,
+  "code_commit": "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "e83672f1a73b064462d76dbb16e8e2294ed987be5ad9d4fee908e4817ef6a4fd",
+  "source_snapshot_sha256": "ec48a168dfd48aff7e6ed2c6f6a8a0c6de8268f87fa67a5c635e34a6f814d104",
+  "child_pid": 1181524,
+  "elapsed_seconds": 482.90626035300374
+}

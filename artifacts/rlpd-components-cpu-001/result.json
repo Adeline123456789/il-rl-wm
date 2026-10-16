@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "critic_updates": 20,
+  "actor_updates": 1,
+  "critics": 10,
+  "layers_with_layernorm": 3,
+  "expert_transitions": 55092,
+  "dataset_sha256": "c7c3dead37db29195a774ac25b575837b5544e4200f941dad25f9e71bee964a4",
+  "alternating_half_mixture": true,
+  "optimizer_roundtrip_exact": true,
+  "final_observation_boundary": true
+}

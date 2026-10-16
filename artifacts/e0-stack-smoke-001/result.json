@@ -1,0 +1,38 @@
+{
+  "purpose": "smoke_only",
+  "env_id": "StackCube-v1",
+  "seed": 0,
+  "interactions": 400,
+  "elapsed_seconds": 2.5405625349958427,
+  "steps_per_second": 157.44544544370152,
+  "observation_shape": [
+    4,
+    48
+  ],
+  "action_shape": [
+    4,
+    4
+  ],
+  "action_low": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "control_frequency": 20,
+  "simulation_frequency": 100,
+  "time_limit": 50,
+  "completed_episodes": 8,
+  "reward_dtype": "bool",
+  "reward_values": [
+    0.0
+  ],
+  "torch_peak_allocated_bytes": 8821760,
+  "torch_peak_reserved_bytes": 23068672
+}

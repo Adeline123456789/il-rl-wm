@@ -1,0 +1,953 @@
+{
+  "checkpoint": "checkpoints/e1-bc-full-002/final.pt",
+  "checkpoint_sha256": "f6383be377a7754a46fd4391f8dd677a217109dc71be66a483fe5e9e6413147b",
+  "dataset_sha256": "6c3e8db30cbb6bb8b2f080470ae557729de9d4be9b6ef861d71f74936417d65b",
+  "training_iteration": 10000,
+  "validation_episode_count": 180,
+  "episodes": [
+    {
+      "episode_id": 1,
+      "transitions": 50,
+      "mse": 0.00010782876051962376
+    },
+    {
+      "episode_id": 5,
+      "transitions": 69,
+      "mse": 0.00012540658644866198
+    },
+    {
+      "episode_id": 10,
+      "transitions": 72,
+      "mse": 4.8392234020866454e-05
+    },
+    {
+      "episode_id": 15,
+      "transitions": 74,
+      "mse": 0.001861072494648397
+    },
+    {
+      "episode_id": 36,
+      "transitions": 68,
+      "mse": 0.0007210534531623125
+    },
+    {
+      "episode_id": 38,
+      "transitions": 70,
+      "mse": 9.262035018764436e-05
+    },
+    {
+      "episode_id": 43,
+      "transitions": 75,
+      "mse": 4.5708322431892157e-05
+    },
+    {
+      "episode_id": 45,
+      "transitions": 76,
+      "mse": 4.642445492208935e-05
+    },
+    {
+      "episode_id": 46,
+      "transitions": 78,
+      "mse": 0.0002725755621213466
+    },
+    {
+      "episode_id": 54,
+      "transitions": 82,
+      "mse": 4.191857442492619e-05
+    },
+    {
+      "episode_id": 57,
+      "transitions": 83,
+      "mse": 0.002540833782404661
+    },
+    {
+      "episode_id": 64,
+      "transitions": 61,
+      "mse": 7.366642967099324e-05
+    },
+    {
+      "episode_id": 70,
+      "transitions": 74,
+      "mse": 7.354716944973916e-05
+    },
+    {
+      "episode_id": 72,
+      "transitions": 75,
+      "mse": 7.247173198265955e-05
+    },
+    {
+      "episode_id": 76,
+      "transitions": 77,
+      "mse": 0.00012110328680137172
+    },
+    {
+      "episode_id": 85,
+      "transitions": 83,
+      "mse": 8.15050516393967e-05
+    },
+    {
+      "episode_id": 91,
+      "transitions": 88,
+      "mse": 4.4923657696926966e-05
+    },
+    {
+      "episode_id": 100,
+      "transitions": 68,
+      "mse": 0.00016594910994172096
+    },
+    {
+      "episode_id": 116,
+      "transitions": 82,
+      "mse": 4.438076575752348e-05
+    },
+    {
+      "episode_id": 119,
+      "transitions": 84,
+      "mse": 4.05599748773966e-05
+    },
+    {
+      "episode_id": 120,
+      "transitions": 86,
+      "mse": 3.96227442251984e-05
+    },
+    {
+      "episode_id": 127,
+      "transitions": 98,
+      "mse": 6.296032370300964e-05
+    },
+    {
+      "episode_id": 129,
+      "transitions": 64,
+      "mse": 0.00010143122199224308
+    },
+    {
+      "episode_id": 130,
+      "transitions": 66,
+      "mse": 5.804104148410261e-05
+    },
+    {
+      "episode_id": 133,
+      "transitions": 68,
+      "mse": 5.969987250864506e-05
+    },
+    {
+      "episode_id": 138,
+      "transitions": 74,
+      "mse": 5.190096271689981e-05
+    },
+    {
+      "episode_id": 139,
+      "transitions": 75,
+      "mse": 7.933056622277945e-05
+    },
+    {
+      "episode_id": 154,
+      "transitions": 85,
+      "mse": 4.058247941429727e-05
+    },
+    {
+      "episode_id": 160,
+      "transitions": 58,
+      "mse": 0.00014472135808318853
+    },
+    {
+      "episode_id": 188,
+      "transitions": 89,
+      "mse": 0.009860741905868053
+    },
+    {
+      "episode_id": 192,
+      "transitions": 57,
+      "mse": 0.00012419807899277657
+    },
+    {
+      "episode_id": 199,
+      "transitions": 70,
+      "mse": 0.00011240512685617432
+    },
+    {
+      "episode_id": 204,
+      "transitions": 73,
+      "mse": 0.0003745142603293061
+    },
+    {
+      "episode_id": 209,
+      "transitions": 78,
+      "mse": 0.00011142445873701945
+    },
+    {
+      "episode_id": 210,
+      "transitions": 78,
+      "mse": 6.736512295901775e-05
+    },
+    {
+      "episode_id": 211,
+      "transitions": 78,
+      "mse": 4.181273470749147e-05
+    },
+    {
+      "episode_id": 212,
+      "transitions": 79,
+      "mse": 3.974205537815578e-05
+    },
+    {
+      "episode_id": 219,
+      "transitions": 88,
+      "mse": 4.540878944681026e-05
+    },
+    {
+      "episode_id": 237,
+      "transitions": 76,
+      "mse": 0.0002747793332673609
+    },
+    {
+      "episode_id": 246,
+      "transitions": 84,
+      "mse": 5.400745794759132e-05
+    },
+    {
+      "episode_id": 254,
+      "transitions": 95,
+      "mse": 0.00012078762665623799
+    },
+    {
+      "episode_id": 296,
+      "transitions": 73,
+      "mse": 7.93070939835161e-05
+    },
+    {
+      "episode_id": 297,
+      "transitions": 74,
+      "mse": 5.11271100549493e-05
+    },
+    {
+      "episode_id": 302,
+      "transitions": 75,
+      "mse": 6.554358697030693e-05
+    },
+    {
+      "episode_id": 305,
+      "transitions": 80,
+      "mse": 0.0003015678666997701
+    },
+    {
+      "episode_id": 307,
+      "transitions": 81,
+      "mse": 5.7749170082388446e-05
+    },
+    {
+      "episode_id": 309,
+      "transitions": 81,
+      "mse": 3.540641409927048e-05
+    },
+    {
+      "episode_id": 316,
+      "transitions": 89,
+      "mse": 9.833228978095576e-05
+    },
+    {
+      "episode_id": 317,
+      "transitions": 91,
+      "mse": 6.364433647831902e-05
+    },
+    {
+      "episode_id": 322,
+      "transitions": 64,
+      "mse": 0.0003047330246772617
+    },
+    {
+      "episode_id": 328,
+      "transitions": 74,
+      "mse": 6.347825546981767e-05
+    },
+    {
+      "episode_id": 332,
+      "transitions": 78,
+      "mse": 0.0022050775587558746
+    },
+    {
+      "episode_id": 333,
+      "transitions": 78,
+      "mse": 3.560047844075598e-05
+    },
+    {
+      "episode_id": 335,
+      "transitions": 81,
+      "mse": 3.7561494536930695e-05
+    },
+    {
+      "episode_id": 343,
+      "transitions": 88,
+      "mse": 4.3040941818617284e-05
+    },
+    {
+      "episode_id": 345,
+      "transitions": 89,
+      "mse": 3.216855475329794e-05
+    },
+    {
+      "episode_id": 346,
+      "transitions": 89,
+      "mse": 0.011239251121878624
+    },
+    {
+      "episode_id": 350,
+      "transitions": 91,
+      "mse": 8.125792373903096e-05
+    },
+    {
+      "episode_id": 362,
+      "transitions": 77,
+      "mse": 5.206445712246932e-05
+    },
+    {
+      "episode_id": 366,
+      "transitions": 78,
+      "mse": 4.643618376576342e-05
+    },
+    {
+      "episode_id": 367,
+      "transitions": 81,
+      "mse": 6.058467261027545e-05
+    },
+    {
+      "episode_id": 375,
+      "transitions": 83,
+      "mse": 9.617894102120772e-05
+    },
+    {
+      "episode_id": 378,
+      "transitions": 88,
+      "mse": 0.01140645518898964
+    },
+    {
+      "episode_id": 384,
+      "transitions": 58,
+      "mse": 0.00012005662574665621
+    },
+    {
+      "episode_id": 386,
+      "transitions": 64,
+      "mse": 0.001898532034829259
+    },
+    {
+      "episode_id": 396,
+      "transitions": 75,
+      "mse": 0.00010638782259775326
+    },
+    {
+      "episode_id": 401,
+      "transitions": 80,
+      "mse": 0.00013693181972485036
+    },
+    {
+      "episode_id": 403,
+      "transitions": 82,
+      "mse": 3.345673394505866e-05
+    },
+    {
+      "episode_id": 406,
+      "transitions": 84,
+      "mse": 4.175079084234312e-05
+    },
+    {
+      "episode_id": 407,
+      "transitions": 84,
+      "mse": 2.8761718567693606e-05
+    },
+    {
+      "episode_id": 409,
+      "transitions": 85,
+      "mse": 0.004327964968979359
+    },
+    {
+      "episode_id": 412,
+      "transitions": 89,
+      "mse": 6.0872684116475284e-05
+    },
+    {
+      "episode_id": 423,
+      "transitions": 73,
+      "mse": 5.941169001744129e-05
+    },
+    {
+      "episode_id": 425,
+      "transitions": 74,
+      "mse": 6.420823774533346e-05
+    },
+    {
+      "episode_id": 426,
+      "transitions": 74,
+      "mse": 0.00011694491695379838
+    },
+    {
+      "episode_id": 429,
+      "transitions": 75,
+      "mse": 7.896823808550835e-05
+    },
+    {
+      "episode_id": 436,
+      "transitions": 84,
+      "mse": 7.778097642585635e-05
+    },
+    {
+      "episode_id": 437,
+      "transitions": 85,
+      "mse": 4.0745799196884036e-05
+    },
+    {
+      "episode_id": 448,
+      "transitions": 59,
+      "mse": 9.805348963709548e-05
+    },
+    {
+      "episode_id": 455,
+      "transitions": 70,
+      "mse": 4.9750859034247696e-05
+    },
+    {
+      "episode_id": 461,
+      "transitions": 76,
+      "mse": 4.7532048483844846e-05
+    },
+    {
+      "episode_id": 481,
+      "transitions": 61,
+      "mse": 0.00013503493391908705
+    },
+    {
+      "episode_id": 487,
+      "transitions": 74,
+      "mse": 5.60921362193767e-05
+    },
+    {
+      "episode_id": 490,
+      "transitions": 76,
+      "mse": 9.292273171013221e-05
+    },
+    {
+      "episode_id": 492,
+      "transitions": 78,
+      "mse": 4.289207572583109e-05
+    },
+    {
+      "episode_id": 500,
+      "transitions": 82,
+      "mse": 0.00011660243035294116
+    },
+    {
+      "episode_id": 501,
+      "transitions": 83,
+      "mse": 7.674873631913215e-05
+    },
+    {
+      "episode_id": 503,
+      "transitions": 85,
+      "mse": 5.076907837064937e-05
+    },
+    {
+      "episode_id": 505,
+      "transitions": 86,
+      "mse": 3.954818384954706e-05
+    },
+    {
+      "episode_id": 528,
+      "transitions": 79,
+      "mse": 3.5336430300958455e-05
+    },
+    {
+      "episode_id": 538,
+      "transitions": 84,
+      "mse": 0.0003615154419094324
+    },
+    {
+      "episode_id": 539,
+      "transitions": 84,
+      "mse": 0.0041483487002551556
+    },
+    {
+      "episode_id": 547,
+      "transitions": 65,
+      "mse": 0.00010266070603393018
+    },
+    {
+      "episode_id": 548,
+      "transitions": 68,
+      "mse": 6.658647180302069e-05
+    },
+    {
+      "episode_id": 557,
+      "transitions": 74,
+      "mse": 9.944695193553343e-05
+    },
+    {
+      "episode_id": 559,
+      "transitions": 76,
+      "mse": 5.2244955440983176e-05
+    },
+    {
+      "episode_id": 560,
+      "transitions": 76,
+      "mse": 4.052183430758305e-05
+    },
+    {
+      "episode_id": 561,
+      "transitions": 81,
+      "mse": 0.0006327121518552303
+    },
+    {
+      "episode_id": 566,
+      "transitions": 84,
+      "mse": 0.0003025017213076353
+    },
+    {
+      "episode_id": 578,
+      "transitions": 66,
+      "mse": 6.752285116817802e-05
+    },
+    {
+      "episode_id": 585,
+      "transitions": 73,
+      "mse": 0.00010295437095919624
+    },
+    {
+      "episode_id": 586,
+      "transitions": 74,
+      "mse": 6.927247886778787e-05
+    },
+    {
+      "episode_id": 588,
+      "transitions": 76,
+      "mse": 3.372874925844371e-05
+    },
+    {
+      "episode_id": 589,
+      "transitions": 76,
+      "mse": 9.875318210106343e-05
+    },
+    {
+      "episode_id": 593,
+      "transitions": 79,
+      "mse": 2.998265699716285e-05
+    },
+    {
+      "episode_id": 594,
+      "transitions": 79,
+      "mse": 6.025719630997628e-05
+    },
+    {
+      "episode_id": 596,
+      "transitions": 80,
+      "mse": 5.453444828162901e-05
+    },
+    {
+      "episode_id": 602,
+      "transitions": 85,
+      "mse": 4.075444667250849e-05
+    },
+    {
+      "episode_id": 605,
+      "transitions": 90,
+      "mse": 4.551290112431161e-05
+    },
+    {
+      "episode_id": 609,
+      "transitions": 62,
+      "mse": 7.400222966680303e-05
+    },
+    {
+      "episode_id": 610,
+      "transitions": 62,
+      "mse": 8.551077189622447e-05
+    },
+    {
+      "episode_id": 615,
+      "transitions": 69,
+      "mse": 4.961260492564179e-05
+    },
+    {
+      "episode_id": 617,
+      "transitions": 76,
+      "mse": 4.743678800878115e-05
+    },
+    {
+      "episode_id": 626,
+      "transitions": 83,
+      "mse": 0.0010759863071143627
+    },
+    {
+      "episode_id": 647,
+      "transitions": 73,
+      "mse": 9.266593406209722e-05
+    },
+    {
+      "episode_id": 650,
+      "transitions": 74,
+      "mse": 5.430935198091902e-05
+    },
+    {
+      "episode_id": 654,
+      "transitions": 78,
+      "mse": 0.0006458666757680476
+    },
+    {
+      "episode_id": 661,
+      "transitions": 81,
+      "mse": 0.0001025741221383214
+    },
+    {
+      "episode_id": 663,
+      "transitions": 83,
+      "mse": 6.071373354643583e-05
+    },
+    {
+      "episode_id": 666,
+      "transitions": 88,
+      "mse": 0.009591275826096535
+    },
+    {
+      "episode_id": 675,
+      "transitions": 66,
+      "mse": 4.854158396483399e-05
+    },
+    {
+      "episode_id": 677,
+      "transitions": 70,
+      "mse": 0.00012965196219738573
+    },
+    {
+      "episode_id": 681,
+      "transitions": 74,
+      "mse": 0.002759561873972416
+    },
+    {
+      "episode_id": 683,
+      "transitions": 76,
+      "mse": 5.2295956265879795e-05
+    },
+    {
+      "episode_id": 687,
+      "transitions": 80,
+      "mse": 3.330800245748833e-05
+    },
+    {
+      "episode_id": 689,
+      "transitions": 81,
+      "mse": 9.009752830024809e-05
+    },
+    {
+      "episode_id": 696,
+      "transitions": 85,
+      "mse": 5.174643956706859e-05
+    },
+    {
+      "episode_id": 701,
+      "transitions": 88,
+      "mse": 0.004652891308069229
+    },
+    {
+      "episode_id": 703,
+      "transitions": 93,
+      "mse": 4.595310383592732e-05
+    },
+    {
+      "episode_id": 706,
+      "transitions": 66,
+      "mse": 6.34075840935111e-05
+    },
+    {
+      "episode_id": 709,
+      "transitions": 67,
+      "mse": 0.0004452793800737709
+    },
+    {
+      "episode_id": 710,
+      "transitions": 69,
+      "mse": 9.295385825680569e-05
+    },
+    {
+      "episode_id": 711,
+      "transitions": 70,
+      "mse": 0.002542210975661874
+    },
+    {
+      "episode_id": 717,
+      "transitions": 74,
+      "mse": 5.256566873867996e-05
+    },
+    {
+      "episode_id": 720,
+      "transitions": 76,
+      "mse": 0.004965876694768667
+    },
+    {
+      "episode_id": 723,
+      "transitions": 77,
+      "mse": 8.947747119236737e-05
+    },
+    {
+      "episode_id": 737,
+      "transitions": 63,
+      "mse": 0.0001226624590344727
+    },
+    {
+      "episode_id": 739,
+      "transitions": 67,
+      "mse": 6.927915092092007e-05
+    },
+    {
+      "episode_id": 742,
+      "transitions": 70,
+      "mse": 0.0001053841260727495
+    },
+    {
+      "episode_id": 745,
+      "transitions": 76,
+      "mse": 0.007766724564135075
+    },
+    {
+      "episode_id": 759,
+      "transitions": 84,
+      "mse": 0.002060550730675459
+    },
+    {
+      "episode_id": 761,
+      "transitions": 87,
+      "mse": 3.259377626818605e-05
+    },
+    {
+      "episode_id": 774,
+      "transitions": 67,
+      "mse": 9.150869300356135e-05
+    },
+    {
+      "episode_id": 777,
+      "transitions": 72,
+      "mse": 7.686747267143801e-05
+    },
+    {
+      "episode_id": 781,
+      "transitions": 75,
+      "mse": 6.154638685984537e-05
+    },
+    {
+      "episode_id": 786,
+      "transitions": 79,
+      "mse": 0.004152638837695122
+    },
+    {
+      "episode_id": 794,
+      "transitions": 90,
+      "mse": 0.0003782171697821468
+    },
+    {
+      "episode_id": 796,
+      "transitions": 93,
+      "mse": 3.1705225410405546e-05
+    },
+    {
+      "episode_id": 797,
+      "transitions": 94,
+      "mse": 7.012235437287018e-05
+    },
+    {
+      "episode_id": 806,
+      "transitions": 72,
+      "mse": 6.059302540961653e-05
+    },
+    {
+      "episode_id": 808,
+      "transitions": 76,
+      "mse": 4.6197415940696374e-05
+    },
+    {
+      "episode_id": 812,
+      "transitions": 79,
+      "mse": 4.607392111211084e-05
+    },
+    {
+      "episode_id": 813,
+      "transitions": 80,
+      "mse": 5.311951827025041e-05
+    },
+    {
+      "episode_id": 830,
+      "transitions": 93,
+      "mse": 5.40967084816657e-05
+    },
+    {
+      "episode_id": 833,
+      "transitions": 64,
+      "mse": 0.00014805878163315356
+    },
+    {
+      "episode_id": 840,
+      "transitions": 74,
+      "mse": 0.00028353685047477484
+    },
+    {
+      "episode_id": 852,
+      "transitions": 81,
+      "mse": 5.2413943194551393e-05
+    },
+    {
+      "episode_id": 853,
+      "transitions": 82,
+      "mse": 3.092865881626494e-05
+    },
+    {
+      "episode_id": 864,
+      "transitions": 65,
+      "mse": 6.0373873566277325e-05
+    },
+    {
+      "episode_id": 871,
+      "transitions": 76,
+      "mse": 8.564599556848407e-05
+    },
+    {
+      "episode_id": 876,
+      "transitions": 79,
+      "mse": 4.040883868583478e-05
+    },
+    {
+      "episode_id": 883,
+      "transitions": 82,
+      "mse": 3.778712562052533e-05
+    },
+    {
+      "episode_id": 899,
+      "transitions": 68,
+      "mse": 8.232479012804106e-05
+    },
+    {
+      "episode_id": 904,
+      "transitions": 75,
+      "mse": 6.532420957228169e-05
+    },
+    {
+      "episode_id": 907,
+      "transitions": 77,
+      "mse": 4.511001316132024e-05
+    },
+    {
+      "episode_id": 911,
+      "transitions": 78,
+      "mse": 4.465987876756117e-05
+    },
+    {
+      "episode_id": 913,
+      "transitions": 81,
+      "mse": 5.04025629197713e-05
+    },
+    {
+      "episode_id": 918,
+      "transitions": 83,
+      "mse": 5.3844032663619146e-05
+    },
+    {
+      "episode_id": 925,
+      "transitions": 93,
+      "mse": 0.0071199131198227406
+    },
+    {
+      "episode_id": 932,
+      "transitions": 67,
+      "mse": 0.00010430383554194123
+    },
+    {
+      "episode_id": 939,
+      "transitions": 70,
+      "mse": 6.829595076851547e-05
+    },
+    {
+      "episode_id": 948,
+      "transitions": 80,
+      "mse": 3.1176870834315196e-05
+    },
+    {
+      "episode_id": 952,
+      "transitions": 84,
+      "mse": 5.80024097871501e-05
+    },
+    {
+      "episode_id": 955,
+      "transitions": 89,
+      "mse": 3.309241947135888e-05
+    },
+    {
+      "episode_id": 964,
+      "transitions": 72,
+      "mse": 0.013533838093280792
+    },
+    {
+      "episode_id": 968,
+      "transitions": 74,
+      "mse": 7.36519432393834e-05
+    },
+    {
+      "episode_id": 974,
+      "transitions": 77,
+      "mse": 0.0014616429107263684
+    },
+    {
+      "episode_id": 982,
+      "transitions": 81,
+      "mse": 4.456409078557044e-05
+    },
+    {
+      "episode_id": 985,
+      "transitions": 84,
+      "mse": 4.459458796191029e-05
+    },
+    {
+      "episode_id": 994,
+      "transitions": 68,
+      "mse": 0.00015621125930920243
+    }
+  ],
+  "action_mse": 0.0007437572930939496,
+  "mse_by_action_dimension": [
+    5.066292578703724e-05,
+    5.2040995797142386e-05,
+    0.0001222800783580169,
+    0.002750042825937271
+  ],
+  "mae_by_action_dimension": [
+    0.005652361549437046,
+    0.005074625369161367,
+    0.008445377461612225,
+    0.0025354246608912945
+  ],
+  "p95_absolute_error_by_action_dimension": [
+    0.013920350745320319,
+    0.014469887968152758,
+    0.0223669433966279,
+    2.562999725341797e-06
+  ],
+  "expert_action_mean": [
+    2.4475366444676183e-05,
+    0.00024151784600690007,
+    -0.004050121176987886,
+    0.10059001296758652
+  ],
+  "predicted_action_mean": [
+    -0.004390921909362078,
+    0.0006651742733083665,
+    -0.00557037303224206,
+    0.10123325139284134
+  ],
+  "expert_near_bound_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "predicted_near_bound_fraction": [
+    0.0,
+    0.0,
+    0.0,
+    0.995251115268384
+  ],
+  "interpretation": "Held-out expert-state action accuracy only; cannot establish closed-loop success or policy robustness."
+}

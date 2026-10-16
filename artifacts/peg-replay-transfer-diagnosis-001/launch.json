@@ -1,0 +1,7 @@
+{
+  "pid": 881385,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/peg-replay-transfer-diagnosis-001/check.py"
+  ]
+}

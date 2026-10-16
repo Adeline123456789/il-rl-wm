@@ -1,0 +1,51 @@
+{
+  "plan_sha256": "b3485b55adf79bea80118c8744afbbe0cd4f0b0375a17ea536f7ad05a1100671",
+  "method_fixed": "U0 and preregistered U1 critic hidden LayerNorm only; no further research mechanism in this batch",
+  "registered_models_or_stages": 52,
+  "registered_method_conditions": 88,
+  "evaluation_limit_seconds": 7200,
+  "max_wait_seconds": 86400,
+  "jobs": [
+    {
+      "pid": 1329466,
+      "command": [
+        ".venv/bin/python",
+        "scripts/after_success.py",
+        "--prerequisite",
+        "artifacts/queue-u1-pick-seed4-pipeline-001/status.json",
+        "--output",
+        "artifacts/queue-final-evaluation-001",
+        "--max-wait-seconds",
+        "86400",
+        "--",
+        ".venv/bin/python",
+        "scripts/run_final_evaluation.py",
+        "--plan",
+        "configs/final_evaluation_plan.json",
+        "--output",
+        "artifacts/final-evaluation-001"
+      ],
+      "cpu_only": false
+    },
+    {
+      "pid": 1329467,
+      "command": [
+        ".venv/bin/python",
+        "scripts/after_success.py",
+        "--prerequisite",
+        "artifacts/queue-final-evaluation-001/status.json",
+        "--output",
+        "artifacts/queue-final-results-001",
+        "--max-wait-seconds",
+        "86400",
+        "--",
+        ".venv/bin/python",
+        "scripts/summarize_final_results.py",
+        "--output",
+        "artifacts/final-results-001"
+      ],
+      "cpu_only": true
+    }
+  ],
+  "test_accessed_at_launch": false
+}

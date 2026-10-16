@@ -1,0 +1,11 @@
+variant,training_seed,training_role,total_training_interactions,method,episodes,success_once,mean_return,source
+C continuation,0,development,524288,sac,16,16.0,188.0625,artifacts/e3-sac-c-continue-full-001/validation_episodes.jsonl
+C-LN continuation,0,development,524288,sac,16,16.0,187.375,artifacts/u1-pick-seed0-c-continue-001/validation_episodes.jsonl
+U0,0,development,524288,il,16,0.0,0.0,artifacts/e6-u0-full-001/validation_episodes.jsonl
+U0,0,development,524288,il_sac_wm,16,0.0,0.0,artifacts/e6-u0-full-001/validation_episodes.jsonl
+U0,0,development,524288,sac,16,0.0,0.0,artifacts/e6-u0-full-001/validation_episodes.jsonl
+U0,0,development,524288,sac_wm,16,0.0,0.0,artifacts/e6-u0-full-001/validation_episodes.jsonl
+U1,0,development,524288,il,16,0.0,0.0,artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl
+U1,0,development,524288,il_sac_wm,16,13.0,121.25,artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl
+U1,0,development,524288,sac,16,16.0,187.0,artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl
+U1,0,development,524288,sac_wm,16,15.0,172.6875,artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl

@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "states": 64,
+  "bit_exact_cpu_action_parity": true,
+  "no_il_weights": true,
+  "il_constructor_forbidden": true,
+  "no_trainable_parameters": true,
+  "new_environment_interactions": 0,
+  "limitation": "Inference parity on saved real states; does not improve or establish task performance."
+}

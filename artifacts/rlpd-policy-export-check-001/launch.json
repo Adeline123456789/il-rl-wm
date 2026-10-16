@@ -1,0 +1,8 @@
+{
+  "pid": 868912,
+  "command": [
+    ".venv-rlpd/bin/python",
+    "artifacts/rlpd-policy-export-check-001/check.py"
+  ],
+  "JAX_PLATFORMS": "cpu"
+}

@@ -1,0 +1,54 @@
+{
+  "repository": "https://github.com/mani-skill/ManiSkill",
+  "commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "files": {
+    "vendor/maniskill/bc/bc.py": {
+      "upstream_path": "examples/baselines/bc/bc.py",
+      "git_blob": "5d5b86c8cd4ac734d09cd93fe8a5f55002996154",
+      "sha256": "dc7b1f3a55ce7c5dcf79a627105e3689e0e5a2240440e6e24d439632867412c3",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/bc/README.md": {
+      "upstream_path": "examples/baselines/bc/README.md",
+      "git_blob": "5715fe700d18b966ae1174f46c40f5a68204688a",
+      "sha256": "a33109cf3cd0438a74b0cef0bdf8d1658949f5f2cddeaeaea9b392e21fea22e5",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/bc/behavior_cloning/evaluate.py": {
+      "upstream_path": "examples/baselines/bc/behavior_cloning/evaluate.py",
+      "git_blob": "d99336b00410dc403e0bf755db75669f528567a6",
+      "sha256": "3a52e3a46d9c81ac654467948c00979ec166f8ab0406c46960b61b9418652095",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/bc/behavior_cloning/make_env.py": {
+      "upstream_path": "examples/baselines/bc/behavior_cloning/make_env.py",
+      "git_blob": "e659238b447b270fe5598ef10476ebc58891c941",
+      "sha256": "be189b9ba9d9ba104eacf15378cb65d45ab5030ef56b76f1e016721517dae221",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/sac/sac.py": {
+      "upstream_path": "examples/baselines/sac/sac.py",
+      "git_blob": "cb0d9f3dbced4440ca634493ccd137926d1fa4e5",
+      "sha256": "172343531c143a40b5308c1d309614d5dd0992b540d9336c9d712a165d733fd0",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/sac/README.md": {
+      "upstream_path": "examples/baselines/sac/README.md",
+      "git_blob": "d10f338a71970ffde27a2b4cbc471e3889a8e45c",
+      "sha256": "62681bf3d3d656d8f81a182f1a154d36ca366720e4ed7661336f8e31a7076cdd",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/LICENSE": {
+      "upstream_path": "LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "status": "unmodified"
+    },
+    "vendor/maniskill/LICENSE-3RD-PARTY": {
+      "upstream_path": "LICENSE-3RD-PARTY",
+      "git_blob": "dddfeb8fbdd4d2d7d10a11980336d0bd860fdee8",
+      "sha256": "c97be8008c9a458ed50c585757811afc399dffe211e7dcb2532d12733ede5f36",
+      "status": "unmodified"
+    }
+  }
+}

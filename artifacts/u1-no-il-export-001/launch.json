@@ -1,0 +1,8 @@
+{
+  "pid": 1153896,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/u1-no-il-export-001/run.py"
+  ],
+  "cpu_only": true
+}

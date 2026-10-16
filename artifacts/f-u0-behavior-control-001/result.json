@@ -1,0 +1,87 @@
+{
+  "new_environment_interactions": 0,
+  "recorded_real_transitions": 262144,
+  "bins": [
+    {
+      "start": 0,
+      "end": 65536,
+      "source": "bare_SAC",
+      "executions": 65536,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6500396728515625,
+      "grasped_fraction": 0.8385009765625,
+      "action_std": [
+        0.19090229272842407,
+        0.21876952052116394,
+        0.2439931482076645,
+        0.5394740104675293
+      ],
+      "object_displacement_mean_m": 0.0032441988587379456,
+      "object_displacement_p95_m": 0.008126703090965748,
+      "next_goal_distance_mean_m": 0.04974289610981941
+    },
+    {
+      "start": 65536,
+      "end": 131072,
+      "source": "bare_SAC",
+      "executions": 65536,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7366485595703125,
+      "grasped_fraction": 0.860076904296875,
+      "action_std": [
+        0.1829429715871811,
+        0.21638700366020203,
+        0.2365504503250122,
+        0.48730435967445374
+      ],
+      "object_displacement_mean_m": 0.0030085346661508083,
+      "object_displacement_p95_m": 0.00591568008530885,
+      "next_goal_distance_mean_m": 0.04397206008434296
+    },
+    {
+      "start": 131072,
+      "end": 196608,
+      "source": "bare_SAC",
+      "executions": 65536,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7979278564453125,
+      "grasped_fraction": 0.8877105712890625,
+      "action_std": [
+        0.17991822957992554,
+        0.1997637003660202,
+        0.24049900472164154,
+        0.40789785981178284
+      ],
+      "object_displacement_mean_m": 0.003059104550629854,
+      "object_displacement_p95_m": 0.0055890732910484076,
+      "next_goal_distance_mean_m": 0.04139186814427376
+    },
+    {
+      "start": 196608,
+      "end": 262144,
+      "source": "bare_SAC",
+      "executions": 65536,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.813446044921875,
+      "grasped_fraction": 0.886566162109375,
+      "action_std": [
+        0.180083766579628,
+        0.2024255394935608,
+        0.24030694365501404,
+        0.4223400950431824
+      ],
+      "object_displacement_mean_m": 0.002962869592010975,
+      "object_displacement_p95_m": 0.005106473574414849,
+      "next_goal_distance_mean_m": 0.04060496389865875
+    }
+  ],
+  "successful_episodes_in_segment": 1219,
+  "episodes_seen": 1312,
+  "first_success_action_source": {
+    "IL": 0,
+    "planned_SAC": 0,
+    "random_SAC": 0,
+    "bare_SAC": 1219
+  },
+  "limitations": "Observed source association, not causal action credit or matched-state comparisons. Segment includes partial boundary episodes. Sustained reward fraction is not episode success rate. Action std is observed dispersion, not policy entropy or evidence of useful exploration."
+}

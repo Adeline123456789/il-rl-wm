@@ -1,0 +1,340 @@
+diff --git a/research_state.json b/research_state.json
+index 5349aa0..6aec730 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 3037.5482263690064,
++    "gpu_job_seconds_used": 3894.394787893005,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+@@ -56,7 +56,10 @@
+     "e0-pickcube-fresh-contacts-test-001",
+     "e0-pickcube-gpu-replay-full-003",
+     "e1-bc-full-003",
+-    "e3-sac-c-smoke-001"
++    "e3-sac-c-smoke-001",
++    "e3-sac-c-full-001",
++    "e4-wm-smoke-001",
++    "e4-wm-full-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {
+diff --git a/scripts/expert_replay.py b/scripts/expert_replay.py
+index 6aa7ad6..50d44f8 100644
+--- a/scripts/expert_replay.py
++++ b/scripts/expert_replay.py
+@@ -18,9 +18,11 @@ class ExpertReplay:
+         assert hashlib.sha256(Path(dataset).read_bytes()).hexdigest()==report['dataset_sha256']
+         train=report['train_episode_ids'];assert not set(train)&set(report['validation_episode_ids'])
+         columns={k:[] for k in ['obs','next_obs','actions','rewards','dones']}
++        sequence_starts=[];offset=0
+         with h5py.File(dataset) as source:
+             for i in train:
+                 trajectory=source[f'traj_{i}'];n=len(trajectory['actions'])
++                sequence_starts.extend(range(offset,offset+n-1));offset+=n
+                 columns['obs'].append(trajectory['obs'][:-1]);columns['next_obs'].append(trajectory['obs'][1:])
+                 columns['actions'].append(trajectory['actions'][:]);columns['rewards'].append(trajectory['rewards'][:])
+                 # Declared continuing-task protocol: raw labels stay in source HDF5.
+@@ -28,9 +30,16 @@ class ExpertReplay:
+                 columns['dones'].append(np.zeros(n,dtype=np.float32))
+         self.data={k:torch.as_tensor(np.concatenate(v),dtype=torch.float32) for k,v in columns.items()}
+         self.size=len(self.data['obs']);self.device=device
++        self.sequence_starts=torch.tensor(sequence_starts,dtype=torch.int64)
+         assert self.size>0
+         self.manifest=dict(env_info=report['env_info'],dataset=str(dataset),dataset_sha256=report['dataset_sha256'],train_episode_ids=train,transitions=self.size,storage='cpu',effective_terminal_mask='always_bootstrap_continuing_task')
+ 
+     def sample(self, n):
+         indices=torch.randint(self.size,(n,))
+         return {k:v[indices].to(self.device) for k,v in self.data.items()}
++
++    def sample_sequences(self, n):
++        i=self.sequence_starts[torch.randint(len(self.sequence_starts),(n,))]
++        return dict(states=torch.stack([self.data['obs'][i],self.data['next_obs'][i],self.data['next_obs'][i+1]],1).to(self.device),
++                    actions=torch.stack([self.data['actions'][i],self.data['actions'][i+1]],1).to(self.device),
++                    rewards=torch.stack([self.data['rewards'][i],self.data['rewards'][i+1]],1).to(self.device))
+diff --git a/scripts/sac_evidence.py b/scripts/sac_evidence.py
+index 435028a..0ee6257 100644
+--- a/scripts/sac_evidence.py
++++ b/scripts/sac_evidence.py
+@@ -24,9 +24,10 @@ def append_json(path, record):
+         stream.write(json.dumps(record, allow_nan=False) + '\n')
+ 
+ 
+-def evaluate_policy(actor, env, args, output, step):
++def evaluate_policy(actor, env, args, output, step, method=None):
+     # Evaluation must not consume training RNG streams.
+     states = (random.getstate(), np.random.get_state(), torch.get_rng_state(), torch.cuda.get_rng_state_all())
++    random.seed(args.eval_seed);np.random.seed(args.eval_seed);torch.manual_seed(args.eval_seed)
+     actor.eval()
+     obs, _ = env.reset(seed=args.eval_seed)
+     episodes = 0
+@@ -43,7 +44,7 @@ def evaluate_policy(actor, env, args, output, step):
+         if 'final_info' in info:
+             mask = info['_final_info']
+             for i in torch.where(mask)[0].tolist():
+-                append_json(output / 'validation_episodes.jsonl', dict(step=step, episode=episodes, env=i, **{k:float(v[i]) for k,v in info['final_info']['episode'].items()}, **{k+'_once':bool(v[i]) for k,v in event_seen.items()}))
++                append_json(output / 'validation_episodes.jsonl', dict(step=step, episode=episodes, env=i, **({} if method is None else dict(method=method)), **{k:float(v[i]) for k,v in info['final_info']['episode'].items()}, **{k+'_once':bool(v[i]) for k,v in event_seen.items()}))
+                 episodes += 1
+             for value in event_seen.values():
+                 value[mask] = False
+@@ -53,7 +54,7 @@ def evaluate_policy(actor, env, args, output, step):
+     return args.num_eval_envs * args.num_eval_steps
+ 
+ 
+-def save_snapshot(output, run_name, step, updates, actor, q1, q2, qt1, qt2, actor_opt, q_opt, log_alpha, alpha_opt, replay, args, il, final=False):
++def save_snapshot(output, run_name, step, updates, actor, q1, q2, qt1, qt2, actor_opt, q_opt, log_alpha, alpha_opt, replay, args, il, final=False, u0=None):
+     directory = Path('checkpoints') / run_name
+     directory.mkdir(parents=True, exist_ok=True)
+     path = directory / ('final.pt' if final else f'step_{step}.pt')
+@@ -62,9 +63,32 @@ def save_snapshot(output, run_name, step, updates, actor, q1, q2, qt1, qt2, acto
+     replay_state = {k:v[:count].cpu() for k,v in vars(replay).items() if isinstance(v, torch.Tensor)}
+     replay_state.update(pos=replay.pos, full=replay.full, num_envs=replay.num_envs, capacity=replay.per_env_buffer_size)
+     state = dict(actor=actor.state_dict(), qf1=q1.state_dict(), qf2=q2.state_dict(), qf1_target=qt1.state_dict(), qf2_target=qt2.state_dict(), actor_optimizer=actor_opt.state_dict(), q_optimizer=q_opt.state_dict(), log_alpha=None if log_alpha is None else log_alpha.detach(), alpha_optimizer=None if alpha_opt is None else alpha_opt.state_dict(), replay=replay_state, global_step=step, global_update=updates, config=vars(args), frozen_il=None if il is None else il.state_dict(), rng=dict(python=random.getstate(), numpy=np.random.get_state(), torch=torch.get_rng_state(), cuda=torch.cuda.get_rng_state_all()), recovery='Learner/RNG/replay saved. Simulator/controller/partial episode state is not serialized; resumption must be a labeled new segment, not claimed bit-exact.')
++    state['lineage_training_interactions']=getattr(args,'inherited_training_interactions',0)+step
++    if u0 is not None:state['u0']=u0
+     temp = path.with_suffix('.tmp')
+     torch.save(state, temp); temp.replace(path)
+     h = hashlib.sha256()
+     with path.open('rb') as stream:
+         for block in iter(lambda: stream.read(2**20), b''): h.update(block)
+     append_json(output / 'checkpoints.jsonl', dict(step=step, final=final, path=str(path), bytes=path.stat().st_size, sha256=h.hexdigest()))
++
++
++def restore_new_segment(path, actor, q1, q2, qt1, qt2, actor_opt, q_opt, log_alpha, alpha_opt, replay, il, output, args):
++    state=torch.load(path,map_location='cpu')
++    for key in ['env_id','control_mode','max_episode_steps','gamma','reconfiguration_freq','bootstrap_at_done']:
++        assert state['config'][key]==getattr(args,key), f'Resume protocol mismatch: {key}'
++    assert state['replay']['num_envs']==replay.num_envs and state['replay']['capacity']==replay.per_env_buffer_size
++    for model,key in [(actor,'actor'),(q1,'qf1'),(q2,'qf2'),(qt1,'qf1_target'),(qt2,'qf2_target')]:model.load_state_dict(state[key])
++    actor_opt.load_state_dict(state['actor_optimizer']);q_opt.load_state_dict(state['q_optimizer'])
++    with torch.no_grad():log_alpha.copy_(state['log_alpha'])
++    alpha_opt.load_state_dict(state['alpha_optimizer'])
++    for key,value in state['replay'].items():
++        if isinstance(value,torch.Tensor):getattr(replay,key)[:len(value)].copy_(value)
++    replay.pos=state['replay']['pos'];replay.full=state['replay']['full']
++    if il is not None:
++        assert all(torch.equal(v.cpu(),state['frozen_il'][k]) for k,v in il.state_dict().items())
++    parent_steps=state.get('lineage_training_interactions',state['global_step'])
++    (output/'resume.json').write_text(json.dumps(dict(parent=str(path),sha256=hashlib.sha256(Path(path).read_bytes()).hexdigest(),
++        inherited_training_interactions=parent_steps,parent_gradient_updates=state['global_update'],
++        recovery='New simulator segment; learner/optimizers/temperature/replay retained. Fresh configured seed, not an exact interrupted trajectory/RNG continuation.'),indent=2))
++    return parent_steps,int(state['replay']['episode_ids'].max())+1,state.get('u0')
+diff --git a/scripts/train_sac.py b/scripts/train_sac.py
+index fb2d6f0..c6dd5d7 100644
+--- a/scripts/train_sac.py
++++ b/scripts/train_sac.py
+@@ -7,7 +7,7 @@ import sys
+ from pathlib import Path
+ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+ import json
+-from scripts.sac_evidence import RawLabels, append_json, evaluate_policy, save_snapshot
++from scripts.sac_evidence import RawLabels, append_json, evaluate_policy, save_snapshot, restore_new_segment
+ from scripts.expert_replay import ExpertReplay
+ from scripts.interaction_counter import InteractionCounter, CountedEnv
+ from scripts.policy_bridge import freeze_il, fingerprint, initialize_sac_mean, check_frozen
+@@ -45,6 +45,10 @@ class Args:
+     bc_checkpoint: Optional[str] = None
+     expert_dataset: Optional[str] = None
+     expert_audit: Optional[str] = None
++    resume_checkpoint: Optional[str] = None
++    wm_checkpoint: Optional[str] = None
++    task_value_checkpoint: Optional[str] = None
++    inherited_training_interactions: int = 0
+     max_episode_steps: int = 200
+     eval_seed: int = 10000
+     torch_threads: int = 4
+@@ -174,8 +178,10 @@ class ReplayBuffer:
+         self.raw_truncated = torch.zeros_like(self.dones, dtype=torch.bool)
+         self.episode_ids = torch.zeros_like(self.dones, dtype=torch.int64)
+         self.timesteps = torch.zeros_like(self.dones, dtype=torch.int32)
++        self.action_sources = torch.full_like(self.dones,3,dtype=torch.int8)
++        self.planner_selected = torch.full_like(self.dones,-1,dtype=torch.int16)
+ 
+-    def add(self, obs: torch.Tensor, next_obs: torch.Tensor, action: torch.Tensor, reward: torch.Tensor, done: torch.Tensor, raw_terminated, raw_truncated, episode_ids, timesteps):
++    def add(self, obs: torch.Tensor, next_obs: torch.Tensor, action: torch.Tensor, reward: torch.Tensor, done: torch.Tensor, raw_terminated, raw_truncated, episode_ids, timesteps, action_sources=None, planner_selected=None):
+         if self.storage_device == torch.device("cpu"):
+             obs = obs.cpu()
+             next_obs = next_obs.cpu()
+@@ -192,6 +198,8 @@ class ReplayBuffer:
+ 
+         for name, value in [('raw_terminated', raw_terminated), ('raw_truncated', raw_truncated), ('episode_ids', episode_ids), ('timesteps', timesteps)]:
+             getattr(self, name)[self.pos] = value.to(self.storage_device)
++        self.action_sources[self.pos]=3 if action_sources is None else action_sources.to(self.storage_device)
++        self.planner_selected[self.pos]=-1 if planner_selected is None else planner_selected.to(self.storage_device)
+         self.pos += 1
+         if self.pos == self.per_env_buffer_size:
+             self.full = True
+@@ -210,6 +218,15 @@ class ReplayBuffer:
+             dones=self.dones[batch_inds, env_inds].to(self.sample_device)
+         )
+ 
++    def sample_sequences(self,batch_size):
++        count=self.per_env_buffer_size if self.full else self.pos
++        i=torch.randint(count,(batch_size,),device=self.storage_device);e=torch.randint(self.num_envs,(batch_size,),device=self.storage_device);j=(i+1)%count
++        valid=(self.episode_ids[i,e]==self.episode_ids[j,e])&(self.timesteps[j,e]==self.timesteps[i,e]+1)&~self.raw_truncated[i,e]
++        i,j,e=i[valid],j[valid],e[valid]
++        return dict(states=torch.stack([self.obs[i,e],self.next_obs[i,e],self.next_obs[j,e]],1).to(self.sample_device),
++                    actions=torch.stack([self.actions[i,e],self.actions[j,e]],1).to(self.sample_device),
++                    rewards=torch.stack([self.rewards[i,e],self.rewards[j,e]],1).to(self.sample_device))
++
+ # ALGO LOGIC: initialize agent here:
+ class SoftQNetwork(nn.Module):
+     def __init__(self, env):
+@@ -304,6 +321,11 @@ class Logger:
+ if __name__ == "__main__":
+     args = tyro.cli(Args)
+     assert bool(args.expert_dataset) == bool(args.expert_audit)
++    assert bool(args.wm_checkpoint)==bool(args.task_value_checkpoint)
++    if args.wm_checkpoint:
++        assert args.resume_checkpoint and args.expert_dataset and args.bc_checkpoint
++    if args.resume_checkpoint:
++        assert args.autotune and args.learning_starts==0, 'Resume as a new segment with retained replay and immediate updates'
+     if args.expert_dataset:
+         assert args.bc_checkpoint and args.batch_size % 2 == 0, 'C uses BC initialization and exactly 50% expert samples'
+     assert args.output and not args.track and not args.capture_video and not args.save_trajectory
+@@ -448,19 +470,31 @@ if __name__ == "__main__":
+     # TRY NOT TO MODIFY: start the game
+     obs, info = envs.reset(seed=args.seed) # in Gymnasium, seed is given to reset() instead of seed()
+     eval_obs, _ = eval_envs.reset(seed=args.eval_seed)
++    parent_u0=None;episode_start=0
++    if args.resume_checkpoint:
++        args.inherited_training_interactions,episode_start,parent_u0=restore_new_segment(args.resume_checkpoint,actor,qf1,qf2,qf1_target,qf2_target,actor_optimizer,q_optimizer,log_alpha,a_optimizer,rb,frozen_il,output,args)
++        alpha=log_alpha.exp().item()
+     if frozen_il is not None:
+         with torch.no_grad():
+-            torch.testing.assert_close(frozen_il(obs), actor.get_eval_action(obs), rtol=0, atol=0)
++            if not args.resume_checkpoint:torch.testing.assert_close(frozen_il(obs), actor.get_eval_action(obs), rtol=0, atol=0)
+         check_frozen(frozen_il, actor_optimizer, teacher_hash)
+-        (output / 'bridge.json').write_text(json.dumps(dict(initial_mean_bit_exact=True, frozen_hash=teacher_hash)))
+-    episode_ids = torch.arange(args.num_envs, device=device, dtype=torch.int64)
++        (output / 'bridge.json').write_text(json.dumps(dict(initial_mean_bit_exact=None if args.resume_checkpoint else True, actor_from_resume=bool(args.resume_checkpoint), frozen_hash=teacher_hash)))
++    u0=None
++    if args.wm_checkpoint:
++        from scripts.u0_modules import U0
++        u0=U0(args,actor,frozen_il,expert,device,output)
++        if parent_u0 is not None:u0.restore(parent_u0)
++    episode_ids = episode_start+torch.arange(args.num_envs, device=device, dtype=torch.int64)
+     timesteps = torch.zeros(args.num_envs, device=device, dtype=torch.int32)
+     validation_interactions = 0
+     started_at = time.perf_counter()
+-    (output / 'model.json').write_text(json.dumps(dict(trainable_parameters=sum(p.numel() for m in [actor,qf1,qf2] for p in m.parameters()), frozen_il_parameters=0 if frozen_il is None else sum(p.numel() for p in frozen_il.parameters()))))
++    parameter_count=sum(p.numel() for m in [actor,qf1,qf2] for p in m.parameters())+int(args.autotune)+(0 if u0 is None else u0.parameters_count)
++    assert parameter_count<10000000
++    (output / 'model.json').write_text(json.dumps(dict(trainable_parameters=parameter_count,additional_u0_parameters=0 if u0 is None else u0.parameters_count,frozen_il_parameters=0 if frozen_il is None else sum(p.numel() for p in frozen_il.parameters()))))
++    (output / 'sac_config.json').write_text(json.dumps(vars(args),indent=2))
+     global_step = 0
+     global_update = 0
+-    learning_has_started = False
++    learning_has_started = bool(args.resume_checkpoint)
+ 
+     global_steps_per_iteration = args.num_envs * (args.steps_per_env)
+     pbar = tqdm.tqdm(range(args.total_timesteps))
+@@ -468,9 +502,9 @@ if __name__ == "__main__":
+ 
+     while global_step < args.total_timesteps:
+         if (global_step - args.training_freq) // args.eval_freq < global_step // args.eval_freq:
+-            validation_interactions += evaluate_policy(actor, eval_envs, args, output, global_step)
++            validation_interactions += evaluate_policy(actor, eval_envs, args, output, global_step) if u0 is None else u0.evaluate(eval_envs,args,global_step)
+             if args.save_model:
+-                save_snapshot(output, run_name, global_step, global_update, actor, qf1, qf2, qf1_target, qf2_target, actor_optimizer, q_optimizer, log_alpha if args.autotune else None, a_optimizer if args.autotune else None, rb, args, frozen_il)
++                save_snapshot(output, run_name, global_step, global_update, actor, qf1, qf2, qf1_target, qf2_target, actor_optimizer, q_optimizer, log_alpha if args.autotune else None, a_optimizer if args.autotune else None, rb, args, frozen_il,u0=None if u0 is None else u0.snapshot())
+ 
+         # Collect samples from environemnts
+         rollout_time = time.perf_counter()
+@@ -478,7 +512,10 @@ if __name__ == "__main__":
+             global_step += 1 * args.num_envs
+ 
+             # ALGO LOGIC: put action logic here
+-            if not learning_has_started:
++            action_sources=planner_selected=None
++            if u0 is not None:
++                actions,action_sources,planner_selected=u0.act(obs,global_step)
++            elif not learning_has_started:
+                 actions = 2 * torch.rand(size=envs.action_space.shape, dtype=torch.float32, device=device) - 1
+             else:
+                 with torch.no_grad():
+@@ -512,7 +549,7 @@ if __name__ == "__main__":
+                 append_json(output / 'reset_checks.jsonl', dict(step=global_step, count=int(mask.sum()), final_vs_reset_l2=(real_next_obs[mask]-next_obs[mask]).norm(dim=-1).cpu().tolist(), bootstrap_stopped=int(stop_bootstrap[mask].sum())))
+                 for i in torch.where(mask)[0].tolist():
+                     append_json(output / 'train_episodes.jsonl', dict(step=global_step, env=i, episode_id=int(episode_ids[i]), **{k:float(v[i]) for k,v in infos['final_info']['episode'].items()}))
+-            rb.add(obs, real_next_obs, actions, rewards, stop_bootstrap, raw_env.terminated, raw_env.truncated, episode_ids, timesteps)
++            rb.add(obs, real_next_obs, actions, rewards, stop_bootstrap, raw_env.terminated, raw_env.truncated, episode_ids, timesteps,action_sources,planner_selected)
+             timesteps += 1
+             reset_mask = truncations | terminations
+             episode_ids[reset_mask] += args.num_envs
+@@ -594,6 +631,7 @@ if __name__ == "__main__":
+                     target_param.data.copy_(args.tau * param.data + (1 - args.tau) * target_param.data)
+                 for param, target_param in zip(qf2.parameters(), qf2_target.parameters()):
+                     target_param.data.copy_(args.tau * param.data + (1 - args.tau) * target_param.data)
++            if u0 is not None:u0.update(data,rb,global_update)
+         if frozen_il is not None:
+             check_frozen(frozen_il, actor_optimizer, teacher_hash)
+         update_time = time.perf_counter() - update_time
+@@ -601,6 +639,7 @@ if __name__ == "__main__":
+ 
+         # Log training-related data
+         if (global_step - args.training_freq) // args.log_freq < global_step // args.log_freq:
++            if u0 is not None:u0.log(global_step)
+             logger.add_scalar("losses/qf1_values", qf1_a_values.mean().item(), global_step)
+             logger.add_scalar("losses/qf2_values", qf2_a_values.mean().item(), global_step)
+             logger.add_scalar("losses/qf1_loss", qf1_loss.item(), global_step)
+@@ -617,13 +656,17 @@ if __name__ == "__main__":
+             if args.autotune:
+                 logger.add_scalar("losses/alpha_loss", alpha_loss.item(), global_step)
+ 
+-    validation_interactions += evaluate_policy(actor, eval_envs, args, output, global_step)
++    validation_interactions += evaluate_policy(actor, eval_envs, args, output, global_step) if u0 is None else u0.evaluate(eval_envs,args,global_step)
+     if args.save_model:
+-        save_snapshot(output, run_name, global_step, global_update, actor, qf1, qf2, qf1_target, qf2_target, actor_optimizer, q_optimizer, log_alpha if args.autotune else None, a_optimizer if args.autotune else None, rb, args, frozen_il, final=True)
++        save_snapshot(output, run_name, global_step, global_update, actor, qf1, qf2, qf1_target, qf2_target, actor_optimizer, q_optimizer, log_alpha if args.autotune else None, a_optimizer if args.autotune else None, rb, args, frozen_il, final=True,u0=None if u0 is None else u0.snapshot())
+     if frozen_il is not None:
+         check_frozen(frozen_il, actor_optimizer, teacher_hash)
+     (output / 'sampling.json').write_text(json.dumps(dict(expert_samples=sampled_expert,online_samples=sampled_online,expert_fraction=0.5 if expert is not None else 0.0),indent=2))
+-    (output / 'result.json').write_text(json.dumps(dict(training_interactions=global_step, gradient_updates=global_update, validation_interactions=validation_interactions, final_test_evaluated=False, elapsed_seconds=time.perf_counter()-started_at, frozen_il_verified=frozen_il is not None, torch_peak_allocated_bytes=torch.cuda.max_memory_allocated()), indent=2))
++    if u0 is not None:
++        u0.log(global_step)
++        assert int(u0.counts.sum())==global_step
++        (output/'executed_sources.json').write_text(json.dumps(dict(il=int(u0.counts[0]),planned_sac=int(u0.counts[1]),random_sac=int(u0.counts[2]),wm_updates=u0.wm_updates,task_value_updates=u0.value_updates),indent=2))
++    (output / 'result.json').write_text(json.dumps(dict(training_interactions=global_step,inherited_training_interactions=args.inherited_training_interactions, gradient_updates=global_update, validation_interactions=validation_interactions, final_test_evaluated=False, elapsed_seconds=time.perf_counter()-started_at, frozen_il_verified=frozen_il is not None, torch_peak_allocated_bytes=torch.cuda.max_memory_allocated()), indent=2))
+     interaction_counter.flush()
+     assert interaction_counter.counts['training']['completed_transitions'] == global_step
+     assert interaction_counter.counts['validation']['completed_transitions'] == validation_interactions
+diff --git a/tests/test_expert_replay.py b/tests/test_expert_replay.py
+index 9bef061..7ef53d1 100644
+--- a/tests/test_expert_replay.py
++++ b/tests/test_expert_replay.py
+@@ -23,6 +23,9 @@ class ExpertReplayTests(unittest.TestCase):
+             torch.testing.assert_close(sample['next_obs'],sample['obs']+1)
+             self.assertEqual(sample['dones'].sum(),0)
+             self.assertGreater(sample['rewards'].sum(),0)
++            sequence=expert.sample_sequences(128)
++            self.assertTrue((sequence['states']<4).all())
++            torch.testing.assert_close(sequence['states'][:,2],sequence['states'][:,0]+2)
+ 
+ 
+ if __name__=='__main__': unittest.main()
+diff --git a/tests/test_sac_contract.py b/tests/test_sac_contract.py
+index d8a094d..43094ba 100644
+--- a/tests/test_sac_contract.py
++++ b/tests/test_sac_contract.py
+@@ -39,5 +39,16 @@ class SACContractTests(unittest.TestCase):
+         self.assertEqual(batch.dones.sum(),0)
+         torch.testing.assert_close(batch.next_obs,batch.obs+1)
+ 
++    def test_two_step_sequences_wrap_ring_but_never_cross_reset(self):
++        rb=ReplayBuffer(self.env,1,4,torch.device('cpu'),torch.device('cpu'))
++        for t in range(6):
++            episode=t//3;time_in_episode=t%3;value=100*episode+time_in_episode
++            rb.add(torch.full((1,3),float(value)),torch.full((1,3),float(value+1)),torch.zeros(1,2),torch.zeros(1),torch.zeros(1),
++                torch.tensor([False]),torch.tensor([time_in_episode==2]),torch.tensor([episode]),torch.tensor([time_in_episode]))
++        sequence=rb.sample_sequences(1024)
++        self.assertGreater(len(sequence['states']),0)
++        self.assertEqual(set(sequence['states'][:,0,0].tolist()),{100.,101.})
++        torch.testing.assert_close(sequence['states'][:,2],sequence['states'][:,0]+2)
++
+ 
+ if __name__ == '__main__': unittest.main()

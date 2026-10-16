@@ -1,0 +1,28 @@
+{
+  "reason": "F1 prefix40 probes were unidentifiable: final U0 all-zero returns and step196608 already on a success plateau. Probe an earlier fixed prefix without changing ranking tolerance or task reward.",
+  "training_step": 196608,
+  "lineage_training_interactions": 458752,
+  "prefix_steps": 20,
+  "continuation_steps": 400,
+  "states": 8,
+  "repeats": 2,
+  "reset_seed": 30000,
+  "candidate_rng_seed": 2026,
+  "estimated_each_diagnostic_interactions": 121120,
+  "new_training_interactions": 0,
+  "maximum_gpu_job_seconds": 1800,
+  "per_job_seconds": 900,
+  "selection": "Predetermined step196608 for both U0 and U1; both are diagnostic snapshots, not final models. No selection using final-test seed20000.",
+  "scope": "Matched resets and prefix replay within each snapshot; different actors can create different states/candidates across models. This is not a same-state causal comparison.",
+  "on_unidentifiable": "Report zero rankable pairs and stop this follow-up; do not search more prefixes or lower tolerance in this batch.",
+  "jobs": [
+    {
+      "id": "f1-u0-step196608-prefix20-001",
+      "checkpoint": "releases/u0-analysis-precollapse-001/weights.pt"
+    },
+    {
+      "id": "f1-u1-step196608-prefix20-001",
+      "checkpoint": "releases/u1-seed0-analysis-step196608-001/weights.pt"
+    }
+  ]
+}

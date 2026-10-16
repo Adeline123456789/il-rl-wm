@@ -1,0 +1,80 @@
+{
+  "source": "data/replay/e0-pickcube-replay-full-001/trajectory.state.pd_ee_delta_pos.physx_cpu.h5",
+  "target": "data/replay/e0-pickcube-gpu-replay-boundary-test-001/trajectory.state.pd_ee_delta_pos.physx_cuda.h5",
+  "episodes": [
+    {
+      "target_episode_id": 0,
+      "source_episode_id": 2,
+      "seed": 2,
+      "source_steps": 50,
+      "target_steps": 50,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 1,
+      "source_episode_id": 0,
+      "seed": 0,
+      "source_steps": 74,
+      "target_steps": 74,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 2,
+      "source_episode_id": 1,
+      "seed": 1,
+      "source_steps": 74,
+      "target_steps": 74,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 3,
+      "source_episode_id": 3,
+      "seed": 3,
+      "source_steps": 86,
+      "target_steps": 86,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 4,
+      "source_episode_id": 6,
+      "seed": 6,
+      "source_steps": 71,
+      "target_steps": 71,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 5,
+      "source_episode_id": 7,
+      "seed": 7,
+      "source_steps": 74,
+      "target_steps": 74,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 6,
+      "source_episode_id": 4,
+      "seed": 4,
+      "source_steps": 76,
+      "target_steps": 76,
+      "actions_equal": true,
+      "first_state_equal": true
+    },
+    {
+      "target_episode_id": 7,
+      "source_episode_id": 5,
+      "seed": 5,
+      "source_steps": 88,
+      "target_steps": 88,
+      "actions_equal": true,
+      "first_state_equal": true
+    }
+  ],
+  "valid": true,
+  "mismatched_episodes": 0
+}

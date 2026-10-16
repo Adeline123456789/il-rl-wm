@@ -1,0 +1,18 @@
+{
+  "pid": 702917,
+  "prerequisite": "artifacts/stack-data-pipeline-001/status.json",
+  "command": [
+    "python",
+    "scripts/prepare_task_data.py",
+    "--task",
+    "PegInsertionSide-v1",
+    "--status-path",
+    "artifacts/peg-data-pipeline-001/status.json"
+  ],
+  "started_at": "2026-10-16T11:30:08.614036+00:00",
+  "phase": "failed",
+  "exit_code": 1,
+  "child_pid": 843208,
+  "error": "AssertionError('Dependent command failed; no retries')",
+  "ended_at": "2026-10-16T12:17:01.648080+00:00"
+}

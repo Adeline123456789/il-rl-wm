@@ -1,0 +1,22 @@
+{
+  "phases": {
+    "expert_source_initial": {
+      "attempted_transitions": 1424,
+      "completed_transitions": 1424,
+      "completed_vector_steps": 89
+    },
+    "bc_source_initial": {
+      "attempted_transitions": 3200,
+      "completed_transitions": 3200,
+      "completed_vector_steps": 200
+    },
+    "bc_independent_reset": {
+      "attempted_transitions": 3200,
+      "completed_transitions": 3200,
+      "completed_vector_steps": 200
+    }
+  },
+  "total_completed": 7824,
+  "total_attempted": 7824,
+  "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+}

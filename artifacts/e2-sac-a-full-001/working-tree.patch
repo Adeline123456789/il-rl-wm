@@ -1,0 +1,111 @@
+diff --git a/research_state.json b/research_state.json
+index f41d246..8d0272b 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+   "batch_id": "20261016-u0-01",
+-  "phase": "E0_environment_setup",
++  "phase": "E2_SAC_A_B_smoke_verified",
+   "branch": "research/u0-batch-20261016",
+   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+   "upstreams": {
+@@ -19,31 +19,86 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 0,
++    "gpu_job_seconds_used": 1546.1635067220195,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+   "data_version": {
+     "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+     "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+-    "downloaded": false
++    "downloaded": true,
++    "active_pickcube_audit": "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
++    "invalidated_gpu_replay": "e0-pickcube-gpu-replay-full-001"
+   },
+-  "experiments": [],
+-  "results": null,
+-  "next_experiment": "E0 real reset/step and official demonstration replay",
++  "experiments": [
++    "e0-pickcube-smoke-001",
++    "e0-peg-smoke-001",
++    "e0-stack-smoke-001",
++    "e0-pickcube-throughput-001",
++    "e0-peg-replay-001",
++    "e0-peg-replay-fixed-001",
++    "e0-pickcube-replay-001",
++    "e0-pickcube-gpu-replay-001",
++    "e0-pickcube-gpu-replay-002",
++    "e1-bc-smoke-001",
++    "e0-pickcube-replay-full-001",
++    "e0-pickcube-gpu-replay-full-001",
++    "e1-bc-full-001",
++    "e0-pickcube-gpu-replay-boundary-test-001",
++    "e0-pickcube-gpu-replay-full-002",
++    "e1-bc-full-002",
++    "e2-sac-a-smoke-002",
++    "e2-sac-b-smoke-002",
++    "e1-bc-diagnosis-001"
++  ],
++  "results": {
++    "e1_bc_smoke_001": {
++      "validation_action_mse": 0.014878595312992175,
++      "success_episodes": 0,
++      "validation_episodes": 8,
++      "engineering_only": true
++    },
++    "pickcube_gpu_replay_full_002": {
++      "episodes": 1000,
++      "success_at_end": 898,
++      "excluded_failures": 102,
++      "transitions": 77976,
++      "all_action_and_first_state_alignment_verified": true
++    },
++    "e1_bc_full_002": {
++      "iterations": 10000,
++      "final_validation_success_once": 0,
++      "validation_episodes": 40,
++      "final_test_evaluated": false
++    },
++    "e2_sac_a_b_smoke_002": {
++      "each_training_interactions": 4096,
++      "each_gradient_updates": 244,
++      "each_validation_interactions": 1600,
++      "B_frozen_il_verified": true
++    }
++  },
++  "next_experiment": "Inspect BC diagnosis; full SAC A queued (262144 transitions), then add minimal fixed-ratio expert replay C; WM only after tested BC/SAC flow",
+   "blockers": [],
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+   "background_jobs": [
+     {
+-      "pid": 297042,
+-      "role": "bounded_bootstrap_then_first_smoke",
+-      "status_file": "artifacts/bootstrap/background-status.json",
+-      "log": "artifacts/bootstrap/background-local-runtime.log"
++      "pid": 397444,
++      "role": "BC_diagnosis",
++      "manifest": "artifacts/e1-bc-diagnosis-001/manifest.json"
++    },
++    {
++      "pid": 398317,
++      "role": "full_SAC_A_after_diagnosis",
++      "status_file": "artifacts/queue-e2-sac-a-full-001/status.json"
+     }
+   ],
+   "environment": {
+     "python": "3.10.20",
+     "torch": "2.3.0+cu121",
+-    "status": "runtime_copy_then_dependency_install"
+-  }
++    "status": "verified_ready"
++  },
++  "invalidated_experiments": [
++    "e1-bc-full-001"
++  ]
+ }

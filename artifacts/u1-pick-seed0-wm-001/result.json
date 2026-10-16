@@ -1,0 +1,9 @@
+{
+  "updates": 10000,
+  "elapsed_seconds": 11.20751358999405,
+  "trainable_parameters": 88875,
+  "new_environment_interactions": 0,
+  "checkpoint": "checkpoints/u1-pick-seed0-wm-001/final.pt",
+  "sha256": "2a23f446c96d86add686d7011c97cd81a37a5ef82539461fda8d8e35298eb53b",
+  "torch_peak_allocated_bytes": 208573440
+}

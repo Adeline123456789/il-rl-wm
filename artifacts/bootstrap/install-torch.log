@@ -1,0 +1,50 @@
+WARN Retry attempt #0. Sleeping 1.748942299s before the next attempt
+WARN Retry attempt #0. Sleeping 1.409021355s before the next attempt
+WARN Retry attempt #0. Sleeping 1.21742347s before the next attempt
+WARN Retry attempt #0. Sleeping 1.879609952s before the next attempt
+WARN Retry attempt #0. Sleeping 1.446406311s before the next attempt
+Resolved 25 packages in 1m 19s
+Downloading torchvision (7.0MiB)
+Downloading networkx (2.0MiB)
+Downloading numpy (16.1MiB)
+Downloading nvidia-cudnn-cu12 (634.0MiB)
+Downloading pillow (6.6MiB)
+Downloading nvidia-nccl-cu12 (179.9MiB)
+Downloading sympy (5.9MiB)
+Downloading triton (199.8MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (23.5MiB)
+Downloading torch (866.2MiB)
+Downloading nvidia-cufft-cu12 (201.7MiB)
+WARN Retry attempt #0. Sleeping 1.275054968s before the next attempt
+WARN Retry attempt #0. Sleeping 1.491831245s before the next attempt
+WARN Retry attempt #0. Sleeping 1.623074881s before the next attempt
+WARN Retry attempt #0. Sleeping 1.52830638s before the next attempt
+WARN Retry attempt #0. Sleeping 1.444918356s before the next attempt
+WARN Retry attempt #0. Sleeping 1.093746279s before the next attempt
+WARN Retry attempt #1. Sleeping 3.056193335s before the next attempt
+WARN Retry attempt #1. Sleeping 1.221776205s before the next attempt
+WARN Retry attempt #1. Sleeping 1.087616949s before the next attempt
+WARN Retry attempt #1. Sleeping 2.218545151s before the next attempt
+WARN Retry attempt #1. Sleeping 3.808486848s before the next attempt
+WARN Retry attempt #1. Sleeping 1.914313045s before the next attempt
+Downloading nvidia-cuda-cupti-cu12 (13.2MiB)
+Downloading nvidia-nccl-cu12 (179.9MiB)
+Downloading nvidia-cusparse-cu12 (197.8MiB)
+WARN Retry attempt #0. Sleeping 1.732053376s before the next attempt
+WARN Retry attempt #0. Sleeping 1.279184979s before the next attempt
+WARN Retry attempt #2. Sleeping 5.191035504s before the next attempt
+WARN Retry attempt #2. Sleeping 2.733428529s before the next attempt
+WARN Retry attempt #2. Sleeping 4.991995065s before the next attempt
+WARN Retry attempt #2. Sleeping 4.331467062s before the next attempt
+  × Failed to download `nvidia-cublas-cu12==12.4.5.8`
+  ├─▶ Request failed after 3 retries in 70.2s
+  ├─▶ Failed to fetch:
+  │   `https://pypi.nvidia.com/nvidia-cublas-cu12/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl`
+  ├─▶ error sending request for url
+  │   (https://pypi.nvidia.com/nvidia-cublas-cu12/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl)
+  ├─▶ client error (SendRequest)
+  ├─▶ connection error
+  ╰─▶ peer closed connection without sending TLS close_notify:
+      https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof
+
+hint: `nvidia-cublas-cu12` (v12.4.5.8) was included because `torch` (v2.5.1+cu124) depends on `nvidia-cublas-cu12`

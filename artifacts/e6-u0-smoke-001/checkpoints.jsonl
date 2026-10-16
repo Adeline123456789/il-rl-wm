@@ -1,0 +1,2 @@
+{"step": 0, "final": false, "path": "checkpoints/e6-u0-smoke-001/step_0.pt", "bytes": 110231605, "sha256": "5552a127e43c2737c76cf73632a63ce6b3af2042b382aff87a7157556e66b6a0"}
+{"step": 4096, "final": true, "path": "checkpoints/e6-u0-smoke-001/final.pt", "bytes": 110226782, "sha256": "f60262c854ea2faa3be04a4260f4c3255ad4b17ad0cdda2c397ab660b87ff2f7"}

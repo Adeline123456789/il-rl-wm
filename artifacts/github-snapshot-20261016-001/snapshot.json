@@ -1,0 +1,477 @@
+{
+  "captured_at_utc": "2026-10-16T14:39:28.125426+00:00",
+  "kind": "in_progress_user_requested_upload",
+  "source_head_before_snapshot": "8ec9714acb3dff8a0badc48f7d26df254bb2de38",
+  "budget": {
+    "gpu_hours_limit": 24,
+    "gpu_job_seconds_used": 16542.608747378996,
+    "local_changes_limit": 2,
+    "local_changes_used": 1,
+    "final_evaluation_reserve_seconds": 7200
+  },
+  "running_jobs": [
+    {
+      "experiment": "pick-seed1-b-001",
+      "ended_at": null,
+      "exit_code": null,
+      "stop_reason": null,
+      "code_commit": "47599319c50930fabc73dbd76ee2da7d973fdacf",
+      "child_pid": 1348510,
+      "process_live": true,
+      "latest_metric": {
+        "step": 217600,
+        "metric": "train/success_at_end",
+        "value": 0.0
+      }
+    }
+  ],
+  "experiment_jobs": [
+    {
+      "experiment": "e0-peg-cpu-replay-full-002",
+      "ended_at": "2026-10-16T12:51:56.274747+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161"
+    },
+    {
+      "experiment": "e0-peg-cpu-replay-smoke-001",
+      "ended_at": "2026-10-16T12:16:39.034430+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057"
+    },
+    {
+      "experiment": "e0-peg-cpu-replay-smoke-002",
+      "ended_at": "2026-10-16T12:30:00.537625+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161"
+    },
+    {
+      "experiment": "e0-peg-gpu-replay-full-002",
+      "ended_at": "2026-10-16T12:57:07.533395+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d"
+    },
+    {
+      "experiment": "e0-peg-gpu-replay-smoke-001",
+      "ended_at": "2026-10-16T12:17:01.362364+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057"
+    },
+    {
+      "experiment": "e0-peg-gpu-replay-smoke-002",
+      "ended_at": "2026-10-16T12:30:43.120477+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161"
+    },
+    {
+      "experiment": "e0-peg-replay-001",
+      "ended_at": "2026-10-16T09:26:29.075665+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1"
+    },
+    {
+      "experiment": "e0-peg-replay-fixed-001",
+      "ended_at": "2026-10-16T09:28:32.656270+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "865f0dd61fac39451c2c65b296b9e004d2e11ff1"
+    },
+    {
+      "experiment": "e0-peg-smoke-001",
+      "ended_at": "2026-10-16T09:18:34.789847+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1"
+    },
+    {
+      "experiment": "e0-pickcube-fresh-contacts-test-001",
+      "ended_at": "2026-10-16T10:19:38.170253+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "c5a8791fdf2efd40b887a4c4390b6f0950158c69"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-001",
+      "ended_at": "2026-10-16T09:32:05.046652+00:00",
+      "exit_code": 1,
+      "stop_reason": null,
+      "code_commit": "0e379ba50a1016467851df5e9714cff70fce5850"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-002",
+      "ended_at": "2026-10-16T09:34:05.678436+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-boundary-test-001",
+      "ended_at": "2026-10-16T09:50:11.386658+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-full-001",
+      "ended_at": "2026-10-16T09:47:39.293756+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "ddf0c6a546520842e316b637b4e3176994f896d8"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-full-002",
+      "ended_at": "2026-10-16T09:53:43.803671+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "c7b318b47cd8f24091564aec629779783d2b9826"
+    },
+    {
+      "experiment": "e0-pickcube-gpu-replay-full-003",
+      "ended_at": "2026-10-16T10:22:31.759411+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47"
+    },
+    {
+      "experiment": "e0-pickcube-replay-001",
+      "ended_at": "2026-10-16T09:30:17.498619+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "0e379ba50a1016467851df5e9714cff70fce5850"
+    },
+    {
+      "experiment": "e0-pickcube-replay-full-001",
+      "ended_at": "2026-10-16T09:45:32.177684+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8"
+    },
+    {
+      "experiment": "e0-pickcube-smoke-001",
+      "ended_at": "2026-10-16T09:17:40.325006+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "4ab1909c1157c1c0198242e17bb8fb82623e4b52"
+    },
+    {
+      "experiment": "e0-pickcube-throughput-001",
+      "ended_at": "2026-10-16T09:24:32.557714+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1"
+    },
+    {
+      "experiment": "e0-stack-cpu-replay-full-001",
+      "ended_at": "2026-10-16T12:11:53.106730+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455"
+    },
+    {
+      "experiment": "e0-stack-cpu-replay-smoke-001",
+      "ended_at": "2026-10-16T12:03:58.196400+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455"
+    },
+    {
+      "experiment": "e0-stack-gpu-replay-full-001",
+      "ended_at": "2026-10-16T12:15:09.036502+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057"
+    },
+    {
+      "experiment": "e0-stack-gpu-replay-smoke-001",
+      "ended_at": "2026-10-16T12:04:12.433079+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455"
+    },
+    {
+      "experiment": "e0-stack-smoke-001",
+      "ended_at": "2026-10-16T09:19:24.728820+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1"
+    },
+    {
+      "experiment": "e1-bc-diagnosis-001",
+      "ended_at": "2026-10-16T10:06:26.086134+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b"
+    },
+    {
+      "experiment": "e1-bc-full-001",
+      "ended_at": "2026-10-16T09:49:10.032776+00:00",
+      "exit_code": -15,
+      "stop_reason": "KeyboardInterrupt: Received signal 15; terminating child and saving ledger",
+      "code_commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38"
+    },
+    {
+      "experiment": "e1-bc-full-002",
+      "ended_at": "2026-10-16T10:03:38.380517+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "1b3f57f089a2301e209e3ec147288bf9b38b42e6"
+    },
+    {
+      "experiment": "e1-bc-full-003",
+      "ended_at": "2026-10-16T10:31:53.207676+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47"
+    },
+    {
+      "experiment": "e1-bc-smoke-001",
+      "ended_at": "2026-10-16T09:34:43.748349+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8"
+    },
+    {
+      "experiment": "e2-sac-a-full-001",
+      "ended_at": "2026-10-16T10:19:24.080819+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b"
+    },
+    {
+      "experiment": "e2-sac-a-full-002",
+      "ended_at": "2026-10-16T11:01:28.248515+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9"
+    },
+    {
+      "experiment": "e2-sac-a-smoke-002",
+      "ended_at": "2026-10-16T10:04:20.394700+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7"
+    },
+    {
+      "experiment": "e2-sac-b-full-001",
+      "ended_at": "2026-10-16T11:14:08.488447+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9"
+    },
+    {
+      "experiment": "e2-sac-b-smoke-002",
+      "ended_at": "2026-10-16T10:05:02.437717+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7"
+    },
+    {
+      "experiment": "e3-rlpd-smoke-001",
+      "ended_at": "2026-10-16T12:02:59.275168+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455"
+    },
+    {
+      "experiment": "e3-sac-c-continue-full-001",
+      "ended_at": "2026-10-16T11:46:57.015676+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "f0dc12f4e31292b88bb4b785aef53fa8da5273e7"
+    },
+    {
+      "experiment": "e3-sac-c-full-001",
+      "ended_at": "2026-10-16T10:46:37.468767+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "04f6162f6667b6bc28cadfb977da8e288db46a46"
+    },
+    {
+      "experiment": "e3-sac-c-smoke-001",
+      "ended_at": "2026-10-16T10:32:33.850457+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "04f6162f6667b6bc28cadfb977da8e288db46a46"
+    },
+    {
+      "experiment": "e4-wm-full-001",
+      "ended_at": "2026-10-16T10:46:57.117167+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9"
+    },
+    {
+      "experiment": "e4-wm-smoke-001",
+      "ended_at": "2026-10-16T10:46:42.029701+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9"
+    },
+    {
+      "experiment": "e5-candidates-001",
+      "ended_at": "2026-10-16T10:47:04.522922+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9"
+    },
+    {
+      "experiment": "e6-u0-full-001",
+      "ended_at": "2026-10-16T11:32:25.357783+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "cbcea4f997caa40f224542b53047f91cb38a6bee"
+    },
+    {
+      "experiment": "e6-u0-smoke-001",
+      "ended_at": "2026-10-16T10:48:37.217942+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9"
+    },
+    {
+      "experiment": "e6-value-preheat-001",
+      "ended_at": "2026-10-16T10:47:13.524478+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9"
+    },
+    {
+      "experiment": "e7-independent-eval-smoke-001",
+      "ended_at": "2026-10-16T12:03:24.992642+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455"
+    },
+    {
+      "experiment": "e7-rlpd-independent-eval-smoke-001",
+      "ended_at": "2026-10-16T12:57:23.682591+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d"
+    },
+    {
+      "experiment": "f1-u0-precollapse-ranking-001",
+      "ended_at": "2026-10-16T12:01:50.826107+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "6b2e2d91a7a6b45debffaa4b418a08c016c10db7"
+    },
+    {
+      "experiment": "f1-u0-ranking-001",
+      "ended_at": "2026-10-16T11:54:13.529773+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "94d3ab7994c7b4ca8959f406f5079b6c7a4b6bb0"
+    },
+    {
+      "experiment": "f1-u0-step196608-prefix20-001",
+      "ended_at": "2026-10-16T13:57:34.955680+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0"
+    },
+    {
+      "experiment": "f1-u1-step196608-prefix20-001",
+      "ended_at": "2026-10-16T14:05:28.255702+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "f3cbe8d1884b253193e5c30ee67683da9e42eeb9"
+    },
+    {
+      "experiment": "pick-seed1-a-001",
+      "ended_at": "2026-10-16T14:28:25.090332+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "d699acb9cdd6e36845cbdb89df9e85b6f5e408ae"
+    },
+    {
+      "experiment": "pick-seed1-b-001",
+      "ended_at": null,
+      "exit_code": null,
+      "stop_reason": null,
+      "code_commit": "47599319c50930fabc73dbd76ee2da7d973fdacf",
+      "child_pid": 1348510,
+      "process_live": true,
+      "latest_metric": {
+        "step": 217600,
+        "metric": "train/success_at_end",
+        "value": 0.0
+      }
+    },
+    {
+      "experiment": "pick-seed1-bc-001",
+      "ended_at": "2026-10-16T14:15:10.864740+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "779129b1b0d9c8c72f7d22f99f1d485112e29241"
+    },
+    {
+      "experiment": "u1-pick-seed0-c-001",
+      "ended_at": "2026-10-16T13:12:52.192694+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d"
+    },
+    {
+      "experiment": "u1-pick-seed0-c-continue-001",
+      "ended_at": "2026-10-16T13:49:31.402659+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "f3bbfea82c3946ffb5fbf77f280e171bef0ba672"
+    },
+    {
+      "experiment": "u1-pick-seed0-u0-001",
+      "ended_at": "2026-10-16T13:33:19.272596+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911"
+    },
+    {
+      "experiment": "u1-pick-seed0-value-001",
+      "ended_at": "2026-10-16T13:13:14.626714+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911"
+    },
+    {
+      "experiment": "u1-pick-seed0-wm-001",
+      "ended_at": "2026-10-16T13:13:06.444726+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911"
+    },
+    {
+      "experiment": "u1-sac-c-smoke-001",
+      "ended_at": "2026-10-16T12:27:10.086648+00:00",
+      "exit_code": 0,
+      "stop_reason": null,
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161"
+    }
+  ],
+  "final_test_accessed": false,
+  "unuploaded": [
+    "data/ raw demonstrations and full replay",
+    "checkpoints/ full learner optimizer and replay snapshots",
+    "runs/ large training event logs",
+    ".venv/ and .venv-rlpd/",
+    ".cache/ upstream checkouts and download caches"
+  ],
+  "portable_deliverables": [
+    "releases/c-continue-analysis-final-001/manifest.json",
+    "releases/rlpd-smoke-001/manifest.json",
+    "releases/source-history-20261016-001/manifest.json",
+    "releases/u0-analysis-final-001/manifest.json",
+    "releases/u0-analysis-precollapse-001/manifest.json",
+    "releases/u0-final-001/manifest.json",
+    "releases/u1-final-001/manifest.json",
+    "releases/u1-seed0-analysis-final-001/manifest.json",
+    "releases/u1-seed0-analysis-step196608-001/manifest.json"
+  ],
+  "note": "Files captured individually while training continues; active manifests/logs are partial. No exact simulator resume claim."
+}

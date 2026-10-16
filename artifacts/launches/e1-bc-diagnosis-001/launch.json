@@ -1,0 +1,27 @@
+{
+  "experiment_id": "e1-bc-diagnosis-001",
+  "pid": 397444,
+  "started_at": "2026-10-16T10:06:05.789557+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py",
+    "--id",
+    "e1-bc-diagnosis-001",
+    "--seconds",
+    "300.0",
+    "--memory-mib",
+    "20480",
+    "--",
+    ".venv/bin/python",
+    "scripts/diagnose_bc.py",
+    "--checkpoint",
+    "checkpoints/e1-bc-full-002/final.pt",
+    "--audit",
+    "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
+    "--output",
+    "artifacts/e1-bc-diagnosis-001",
+    "--episodes",
+    "16"
+  ],
+  "log": "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/launches/e1-bc-diagnosis-001/runner.log"
+}

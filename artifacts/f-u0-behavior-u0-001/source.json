@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/e6-u0-full-001/final.pt",
+  "sha256": "c0ffcb9643732c9546e3e2e0cb7120a2d22bdfc10918db476d5103a79b7048d8",
+  "training_seed": 0,
+  "inherited_interactions": 262144
+}

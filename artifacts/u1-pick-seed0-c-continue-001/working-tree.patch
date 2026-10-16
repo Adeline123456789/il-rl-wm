@@ -1,0 +1,52 @@
+diff --git a/research_state.json b/research_state.json
+index 812c237..9753690 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -21,7 +21,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 12040.187766003015,
++    "gpu_job_seconds_used": 13244.769644036016,
+     "local_changes_limit": 2,
+     "local_changes_used": 1,
+     "final_evaluation_reserve_seconds": 7200
+@@ -88,7 +88,8 @@
+     "e7-rlpd-independent-eval-smoke-001",
+     "u1-pick-seed0-c-001",
+     "u1-pick-seed0-wm-001",
+-    "u1-pick-seed0-value-001"
++    "u1-pick-seed0-value-001",
++    "u1-pick-seed0-u0-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {
+diff --git a/scripts/summarize_final_results.py b/scripts/summarize_final_results.py
+index 35b6f8e..ec63ba1 100644
+--- a/scripts/summarize_final_results.py
++++ b/scripts/summarize_final_results.py
+@@ -82,10 +82,11 @@ def summarize(plan, root):
+     for key, rows in groups.items():
+         assert len({row['training_seed'] for row in rows}) == len(rows), 'Duplicate training run in aggregate'
+         rates = [row['success_rate'] for row in rows]
++        returns = [row['mean_return'] for row in rows]
+         aggregates.append(dict(zip(GROUP, key), training_seeds=[row['training_seed'] for row in rows],
+             n_training_runs=len(rows), mean_success_rate=statistics.mean(rates),
+             sample_sd_success_rate=statistics.stdev(rates) if len(rates) > 1 else None,
+-            mean_return=statistics.mean(row['mean_return'] for row in rows)))
++            mean_return=statistics.mean(returns), sample_sd_return=statistics.stdev(returns) if len(returns) > 1 else None))
+     paired = []
+     index = {(r['task'], r['training_seed'], r['training_interactions'], r['method'], r['variant']): r for r in complete}
+     for treatment, control in [('U1', 'U0'), ('C-LN', 'C'), ('C-LN continuation', 'C continuation')]:
+diff --git a/tests/test_final_results.py b/tests/test_final_results.py
+index 1645056..e344563 100644
+--- a/tests/test_final_results.py
++++ b/tests/test_final_results.py
+@@ -50,6 +50,7 @@ def test_training_runs_roles_and_budgets_stay_separate(tmp_path):
+     assert independent['n_training_runs'] == 2 and independent['training_seeds'] == [1, 2]
+     assert independent['mean_success_rate'] == .5
+     assert independent['sample_sd_success_rate'] == pytest.approx(2 ** .5 * .1)
++    assert independent['mean_return'] == 50 and independent['sample_sd_return'] == pytest.approx(2 ** .5 * 10)
+     assert len([g for g in groups if g['variant'] == 'RLPD']) == 2
+     assert len(result['paired_differences']) == 3
+     assert all(p['success_rate_difference'] == pytest.approx(.1) for p in result['paired_differences'])

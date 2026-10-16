@@ -1,0 +1,28 @@
+{
+  "experiment_id": "e1-bc-diagnosis-001",
+  "started_at": "2026-10-16T10:06:05.815364+00:00",
+  "ended_at": "2026-10-16T10:06:26.086134+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_bc.py",
+    "--checkpoint",
+    "checkpoints/e1-bc-full-002/final.pt",
+    "--audit",
+    "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
+    "--output",
+    "artifacts/e1-bc-diagnosis-001",
+    "--episodes",
+    "16"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 300.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 397444,
+  "code_commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "2f2c7797d757dbdb781ddcb093a0935f2e02337cd8382ef2aec94ba77fdc9a78",
+  "child_pid": 397456,
+  "elapsed_seconds": 20.260315144012566
+}

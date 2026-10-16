@@ -1,0 +1,18 @@
+[
+  {
+    "index": "https://pypi.tuna.tsinghua.edu.cn/simple/torch/",
+    "error": "<urlopen error _ssl.c:999: The handshake operation timed out>"
+  },
+  {
+    "index": "https://mirrors.aliyun.com/pypi/simple/torch/",
+    "url": "https://mirrors.aliyun.com/pypi/packages/d1/35/e8b2daf02ce933e4518e6f5682c72fd0ed66c15910ea1fb4168f442b71c4/torch-2.5.1-cp311-cp311-manylinux1_x86_64.whl",
+    "returncode": 28,
+    "result": "000 0"
+  },
+  {
+    "mirror_direct": true,
+    "url": "https://mirrors.aliyun.com/pypi/packages/d1/35/e8b2daf02ce933e4518e6f5682c72fd0ed66c15910ea1fb4168f442b71c4/torch-2.5.1-cp311-cp311-manylinux1_x86_64.whl",
+    "returncode": 0,
+    "result": "206 136741"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "pid": 1044520,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_final_results.py"
+  ],
+  "synthetic_evidence_only": true
+}

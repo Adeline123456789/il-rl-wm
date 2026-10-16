@@ -1,0 +1,30 @@
+{
+  "pid": 903757,
+  "prerequisite": "artifacts/peg-data-pipeline-002/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "e7-rlpd-independent-eval-smoke-001",
+    "--seconds",
+    "180",
+    "--",
+    ".venv-rlpd/bin/python",
+    "external/rlpd/evaluate.py",
+    "--policy",
+    "releases/rlpd-smoke-001",
+    "--output",
+    "artifacts/e7-rlpd-independent-eval-smoke-001",
+    "--seed",
+    "10000",
+    "--episodes",
+    "4",
+    "--num-envs",
+    "4"
+  ],
+  "started_at": "2026-10-16T12:38:07.431829+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 967483,
+  "ended_at": "2026-10-16T12:57:23.686828+00:00"
+}

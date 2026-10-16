@@ -1,0 +1,81 @@
+{
+  "env_id": "PickCube-v1",
+  "source_repository": "haosulab/ManiSkill_Demonstrations",
+  "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+  "url": "https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/resolve/d674485bbffdd533914e52d272fdda34c0515608/demos/PickCube-v1.zip?download=true",
+  "elapsed_seconds": 589.0426514700084,
+  "files": {
+    "data/official/PickCube-v1/motionplanning/sample.mp4": {
+      "bytes": 76486,
+      "sha256": "0096e70da9f135aad66f040f39904b6643474327f9a7194b5b4c5ee846917703"
+    },
+    "data/official/PickCube-v1/motionplanning/trajectory.h5": {
+      "bytes": 29349195,
+      "sha256": "03ca60546541a7f18321d9d32721f0254bc75217828c0cadacd217d0c014576a"
+    },
+    "data/official/PickCube-v1/motionplanning/trajectory.json": {
+      "bytes": 228218,
+      "sha256": "16e403cb77bfbdda28c243b96eb90adbae1c0edf42854283be57ee47076a2e90"
+    },
+    "data/official/PickCube-v1/rl/ppo_pd_ee_delta_pos_ckpt.pt": {
+      "bytes": 1152034,
+      "sha256": "0b17b5ed9690ccf83111d0f09af8d1599f69ee7ba0077e1aac48814ac78ce99c"
+    },
+    "data/official/PickCube-v1/rl/ppo_pd_ee_delta_pose_ckpt.pt": {
+      "bytes": 1155106,
+      "sha256": "5b7c5d2da3e1651e0ba8f2ab64bc848e68ae683cdebca99d1c3ebc3a83723e9e"
+    },
+    "data/official/PickCube-v1/rl/ppo_pd_joint_delta_pos_ckpt.pt": {
+      "bytes": 1156130,
+      "sha256": "78959417279892d73e4ed5930a6d8de8626a24eee0ec553dfc6af61391b0b356"
+    },
+    "data/official/PickCube-v1/rl/sample_pd_ee_delta_pos.mp4": {
+      "bytes": 48637,
+      "sha256": "d22c2f0d82e8a754ffc3f001af0b3b21a7875a5d513c44c9d771e7aafcbab904"
+    },
+    "data/official/PickCube-v1/rl/sample_pd_ee_delta_pose.mp4": {
+      "bytes": 53166,
+      "sha256": "24634249f1b75cc1f231c7cf7a2948b4b5448e4fef62ec1efefb4534b9ab6515"
+    },
+    "data/official/PickCube-v1/rl/sample_pd_joint_delta_pos.mp4": {
+      "bytes": 52033,
+      "sha256": "086b5b7f0ec495db072733b10f1e38c09ea52feab51c6ae3db51b87aeb4ae0d1"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_ee_delta_pos.physx_cuda.h5": {
+      "bytes": 19287452,
+      "sha256": "e4c6c9b9a327217c186171060c5495e2a1acac80c2627e7267df1fabb7735b49"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_ee_delta_pos.physx_cuda.json": {
+      "bytes": 192132,
+      "sha256": "4665c6a9cdb342f13c348de2315995905109ae41246355bec8cbfbac108d9661"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_ee_delta_pose.physx_cuda.h5": {
+      "bytes": 19989526,
+      "sha256": "5a560b8b73d4b2446cbb49f0dcb470b6a00f35236bc660da9a6e519dadbf6530"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_ee_delta_pose.physx_cuda.json": {
+      "bytes": 191461,
+      "sha256": "920fe2fc06c0a5efd879e1735e6b5e3710293fd05af9b52f5caa5e4b97226d5a"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_joint_delta_pos.physx_cuda.h5": {
+      "bytes": 19707932,
+      "sha256": "b05851319021c290ed5e5055c03c776b434af5c9af98e13db2ab9159752b89c8"
+    },
+    "data/official/PickCube-v1/rl/trajectory.none.pd_joint_delta_pos.physx_cuda.json": {
+      "bytes": 190445,
+      "sha256": "f6bb8a6a94ff165fdcb65e6a47cd8c3f6ac8fa01d0ae77bc05613b88e27916d1"
+    },
+    "data/official/PickCube-v1/teleop/sample.mp4": {
+      "bytes": 93089,
+      "sha256": "4905f52b25480cfc51035482824b23f2fbe902581d33fab3e4fc04e31c70d34a"
+    },
+    "data/official/PickCube-v1/teleop/trajectory.h5": {
+      "bytes": 383621,
+      "sha256": "0e6285c5e7a9293fbb1c10590a1be4fc115792cb816e00b37e9914369a0c3c94"
+    },
+    "data/official/PickCube-v1/teleop/trajectory.json": {
+      "bytes": 2702,
+      "sha256": "ed867dd733d307ba2cf50151625060a0728224fcb574713b0298232ac4ea789a"
+    }
+  }
+}

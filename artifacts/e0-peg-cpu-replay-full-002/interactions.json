@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "environments": [
+    {
+      "control_mode": "pd_ee_delta_pose",
+      "obs_mode": "state",
+      "num_envs": 1,
+      "vector_step_calls": 153291,
+      "interactions": 153291
+    },
+    {
+      "control_mode": "pd_joint_pos",
+      "obs_mode": "none",
+      "num_envs": 1,
+      "vector_step_calls": 149055,
+      "interactions": 149055
+    }
+  ],
+  "total_interactions": 302346,
+  "replay_args": {
+    "traj_path": "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-peg-cpu-replay-full-002/trajectory.h5",
+    "sim_backend": "physx_cpu",
+    "obs_mode": "state",
+    "target_control_mode": "pd_ee_delta_pose",
+    "verbose": false,
+    "save_traj": true,
+    "save_video": false,
+    "max_retry": 0,
+    "discard_timeout": false,
+    "allow_failure": true,
+    "vis": false,
+    "use_env_states": false,
+    "use_first_env_state": true,
+    "count": 1000,
+    "reward_mode": "sparse",
+    "record_rewards": true,
+    "shader": null,
+    "video_fps": null,
+    "render_mode": "rgb_array",
+    "num_envs": 1
+  }
+}

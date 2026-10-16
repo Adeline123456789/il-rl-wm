@@ -1,0 +1,2 @@
+{"step": 0, "final": false, "path": "checkpoints/e2-sac-a-smoke-002/step_0.pt", "bytes": 2911594, "sha256": "7da3e6fb82d74129e91c393aa1c2a08f4e1cb84fa0240f76d64929a21075c242"}
+{"step": 4096, "final": true, "path": "checkpoints/e2-sac-a-smoke-002/final.pt", "bytes": 7954878, "sha256": "dd690b27ba4640be95f9742b76317dcda9789dc2ea19584abe6cb69d6a9db8ff"}

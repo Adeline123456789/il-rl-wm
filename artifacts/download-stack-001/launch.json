@@ -1,0 +1,10 @@
+{
+  "pid": 303568,
+  "command": [
+    ".venv/bin/python",
+    "scripts/download_demos.py",
+    "--env-id",
+    "StackCube-v1"
+  ],
+  "started_unix": 1792142662.2713058
+}

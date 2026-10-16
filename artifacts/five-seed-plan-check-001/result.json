@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "old_plans_unchanged": true,
+  "new_seeds": [
+    3,
+    4
+  ],
+  "models": 52,
+  "method_conditions": 88,
+  "evaluation_reserve_seconds": 7200,
+  "new_environment_interactions": 0
+}

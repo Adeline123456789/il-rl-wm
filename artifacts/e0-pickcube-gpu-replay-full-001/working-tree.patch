@@ -1,0 +1,101 @@
+diff --git a/research_state.json b/research_state.json
+index f41d246..bb0014a 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+   "batch_id": "20261016-u0-01",
+-  "phase": "E0_environment_setup",
++  "phase": "E1_BC_full_dataset_preparation",
+   "branch": "research/u0-batch-20261016",
+   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+   "upstreams": {
+@@ -19,31 +19,36 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 0,
++    "gpu_job_seconds_used": 513.3474169420078,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+   "data_version": {
+     "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+     "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+-    "downloaded": false
++    "downloaded": true
+   },
+-  "experiments": [],
++  "experiments": [
++    "e0-pickcube-smoke-001",
++    "e0-peg-smoke-001",
++    "e0-stack-smoke-001",
++    "e0-pickcube-throughput-001",
++    "e0-peg-replay-001",
++    "e0-peg-replay-fixed-001",
++    "e0-pickcube-replay-001",
++    "e0-pickcube-gpu-replay-001",
++    "e0-pickcube-gpu-replay-002",
++    "e1-bc-smoke-001",
++    "e0-pickcube-replay-full-001"
++  ],
+   "results": null,
+-  "next_experiment": "E0 real reset/step and official demonstration replay",
++  "next_experiment": "1000 episode CPU action conversion, GPU replay, whole episode audit; full BC",
+   "blockers": [],
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+-  "background_jobs": [
+-    {
+-      "pid": 297042,
+-      "role": "bounded_bootstrap_then_first_smoke",
+-      "status_file": "artifacts/bootstrap/background-status.json",
+-      "log": "artifacts/bootstrap/background-local-runtime.log"
+-    }
+-  ],
++  "background_jobs": [],
+   "environment": {
+     "python": "3.10.20",
+     "torch": "2.3.0+cu121",
+-    "status": "runtime_copy_then_dependency_install"
++    "status": "verified_ready"
+   }
+ }
+diff --git a/scripts/run_experiment.py b/scripts/run_experiment.py
+index 4beb8d1..854d977 100644
+--- a/scripts/run_experiment.py
++++ b/scripts/run_experiment.py
+@@ -40,6 +40,24 @@ def gpu_sample():
+     return dict(zip(['index', 'memory_mib', 'utilization_percent'], rows[0]))
+ 
+ 
++def host_sample(pid):
++    # Child RSS/HWM excludes driver allocations; whole-device VRAM is sampled separately.
++    status = {}
++    try:
++        for line in Path(f'/proc/{pid}/status').read_text().splitlines():
++            if line.startswith(('VmRSS:', 'VmHWM:')):
++                key, value, _ = line.split()
++                status[key.rstrip(':') + '_kib'] = int(value)
++    except FileNotFoundError:
++        pass
++    for line in Path('/proc/meminfo').read_text().splitlines():
++        if line.startswith('MemAvailable:'):
++            status['host_mem_available_kib'] = int(line.split()[1])
++    filesystem = os.statvfs(ROOT)
++    status['workspace_available_bytes'] = filesystem.f_bavail * filesystem.f_frsize
++    return status
++
++
+ def ensure_gpu_idle():
+     result = subprocess.run(['nvidia-smi', '--query-compute-apps=pid',
+                              '--format=csv,noheader,nounits'], capture_output=True, text=True, timeout=10)
+@@ -107,7 +125,7 @@ def run_locked(args, command):
+             manifest['child_pid'] = process.pid
+             write_json(out / 'manifest.json', manifest)
+             while process.poll() is None:
+-                sample = dict(timestamp=stamp(), elapsed_seconds=time.monotonic()-started, **gpu_sample())
++                sample = dict(timestamp=stamp(), elapsed_seconds=time.monotonic()-started, **gpu_sample(), **host_sample(process.pid))
+                 resources.write(json.dumps(sample)+'\n'); resources.flush()
+                 if sample['memory_mib'] >= args.memory_mib:
+                     manifest['stop_reason'] = 'memory_target'

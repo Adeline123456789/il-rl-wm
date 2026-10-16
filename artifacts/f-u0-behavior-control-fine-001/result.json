@@ -1,0 +1,591 @@
+{
+  "new_environment_interactions": 0,
+  "recorded_real_transitions": 262144,
+  "bins": [
+    {
+      "start": 0,
+      "end": 8192,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.642578125,
+      "grasped_fraction": 0.8345947265625,
+      "action_std": [
+        0.19238749146461487,
+        0.20523397624492645,
+        0.24525737762451172,
+        0.5396687984466553
+      ],
+      "object_displacement_mean_m": 0.0033960521686822176,
+      "object_displacement_p95_m": 0.011111543560400602,
+      "next_goal_distance_mean_m": 0.05034647509455681
+    },
+    {
+      "start": 8192,
+      "end": 16384,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.5523681640625,
+      "grasped_fraction": 0.71435546875,
+      "action_std": [
+        0.24844537675380707,
+        0.2623988389968872,
+        0.29510509967803955,
+        0.6801557540893555
+      ],
+      "object_displacement_mean_m": 0.002941716928035021,
+      "object_displacement_p95_m": 0.009515887964516875,
+      "next_goal_distance_mean_m": 0.07672539353370667
+    },
+    {
+      "start": 16384,
+      "end": 24576,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7259521484375,
+      "grasped_fraction": 0.9140625,
+      "action_std": [
+        0.13551610708236694,
+        0.17445720732212067,
+        0.1883791983127594,
+        0.44233980774879456
+      ],
+      "object_displacement_mean_m": 0.0032102693803608418,
+      "object_displacement_p95_m": 0.006607870850712057,
+      "next_goal_distance_mean_m": 0.03357968479394913
+    },
+    {
+      "start": 24576,
+      "end": 32768,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.62548828125,
+      "grasped_fraction": 0.8331298828125,
+      "action_std": [
+        0.20344915986061096,
+        0.23319265246391296,
+        0.2542422413825989,
+        0.5587275624275208
+      ],
+      "object_displacement_mean_m": 0.003511984832584858,
+      "object_displacement_p95_m": 0.010772380139678713,
+      "next_goal_distance_mean_m": 0.058277107775211334
+    },
+    {
+      "start": 32768,
+      "end": 40960,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6639404296875,
+      "grasped_fraction": 0.854248046875,
+      "action_std": [
+        0.18557274341583252,
+        0.21835839748382568,
+        0.23011347651481628,
+        0.4944121837615967
+      ],
+      "object_displacement_mean_m": 0.002999134361743927,
+      "object_displacement_p95_m": 0.005879697017371654,
+      "next_goal_distance_mean_m": 0.04579615965485573
+    },
+    {
+      "start": 40960,
+      "end": 49152,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6053466796875,
+      "grasped_fraction": 0.84130859375,
+      "action_std": [
+        0.18109306693077087,
+        0.2123894840478897,
+        0.24711166322231293,
+        0.5629321932792664
+      ],
+      "object_displacement_mean_m": 0.0035031763836741447,
+      "object_displacement_p95_m": 0.010022134380415082,
+      "next_goal_distance_mean_m": 0.04247209429740906
+    },
+    {
+      "start": 49152,
+      "end": 57344,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.685791015625,
+      "grasped_fraction": 0.861328125,
+      "action_std": [
+        0.18825294077396393,
+        0.22132430970668793,
+        0.23814411461353302,
+        0.48234906792640686
+      ],
+      "object_displacement_mean_m": 0.0030988981015980244,
+      "object_displacement_p95_m": 0.005955811473540962,
+      "next_goal_distance_mean_m": 0.04531825706362724
+    },
+    {
+      "start": 57344,
+      "end": 65536,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6988525390625,
+      "grasped_fraction": 0.85498046875,
+      "action_std": [
+        0.1742566078901291,
+        0.21283279359340668,
+        0.2409771978855133,
+        0.48455294966697693
+      ],
+      "object_displacement_mean_m": 0.003292359644547105,
+      "object_displacement_p95_m": 0.008339699218049631,
+      "next_goal_distance_mean_m": 0.045428015291690826
+    },
+    {
+      "start": 65536,
+      "end": 73728,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.74365234375,
+      "grasped_fraction": 0.906494140625,
+      "action_std": [
+        0.13054177165031433,
+        0.17345818877220154,
+        0.19632363319396973,
+        0.4463139772415161
+      ],
+      "object_displacement_mean_m": 0.003050742205232382,
+      "object_displacement_p95_m": 0.005898509616963565,
+      "next_goal_distance_mean_m": 0.0344589427113533
+    },
+    {
+      "start": 73728,
+      "end": 81920,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7025146484375,
+      "grasped_fraction": 0.823486328125,
+      "action_std": [
+        0.17705774307250977,
+        0.2328965812921524,
+        0.24095869064331055,
+        0.5856490135192871
+      ],
+      "object_displacement_mean_m": 0.0030237999744713306,
+      "object_displacement_p95_m": 0.007129932381212709,
+      "next_goal_distance_mean_m": 0.039574675261974335
+    },
+    {
+      "start": 81920,
+      "end": 90112,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6947021484375,
+      "grasped_fraction": 0.84326171875,
+      "action_std": [
+        0.1807110756635666,
+        0.22550508379936218,
+        0.24516113102436066,
+        0.5208516120910645
+      ],
+      "object_displacement_mean_m": 0.003262174315750599,
+      "object_displacement_p95_m": 0.008319183299317943,
+      "next_goal_distance_mean_m": 0.054209157824516296
+    },
+    {
+      "start": 90112,
+      "end": 98304,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7449951171875,
+      "grasped_fraction": 0.868408203125,
+      "action_std": [
+        0.18320323526859283,
+        0.20704792439937592,
+        0.2332656979560852,
+        0.46347707509994507
+      ],
+      "object_displacement_mean_m": 0.003005031729117036,
+      "object_displacement_p95_m": 0.0057064444059506045,
+      "next_goal_distance_mean_m": 0.047066580504179
+    },
+    {
+      "start": 98304,
+      "end": 106496,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7498779296875,
+      "grasped_fraction": 0.8819580078125,
+      "action_std": [
+        0.1690741628408432,
+        0.19837729632854462,
+        0.23431441187858582,
+        0.4647076725959778
+      ],
+      "object_displacement_mean_m": 0.0032808175310492516,
+      "object_displacement_p95_m": 0.0065885567804798454,
+      "next_goal_distance_mean_m": 0.04071316495537758
+    },
+    {
+      "start": 106496,
+      "end": 114688,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.6820068359375,
+      "grasped_fraction": 0.7744140625,
+      "action_std": [
+        0.25381916761398315,
+        0.28018486499786377,
+        0.2841521203517914,
+        0.51545250415802
+      ],
+      "object_displacement_mean_m": 0.0025185225531458855,
+      "object_displacement_p95_m": 0.0050638246582821005,
+      "next_goal_distance_mean_m": 0.06389851123094559
+    },
+    {
+      "start": 114688,
+      "end": 122880,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7581787109375,
+      "grasped_fraction": 0.8677978515625,
+      "action_std": [
+        0.18791884183883667,
+        0.2124171108007431,
+        0.24043473601341248,
+        0.4852452278137207
+      ],
+      "object_displacement_mean_m": 0.003076984081417322,
+      "object_displacement_p95_m": 0.005773271899670359,
+      "next_goal_distance_mean_m": 0.03770376369357109
+    },
+    {
+      "start": 122880,
+      "end": 131072,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.8172607421875,
+      "grasped_fraction": 0.914794921875,
+      "action_std": [
+        0.15747886896133423,
+        0.18318744003772736,
+        0.2073736935853958,
+        0.37564003467559814
+      ],
+      "object_displacement_mean_m": 0.0028502061031758785,
+      "object_displacement_p95_m": 0.005079263099469244,
+      "next_goal_distance_mean_m": 0.03415171429514885
+    },
+    {
+      "start": 131072,
+      "end": 139264,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7403564453125,
+      "grasped_fraction": 0.8714599609375,
+      "action_std": [
+        0.19022153317928314,
+        0.21871469914913177,
+        0.2513870894908905,
+        0.430946409702301
+      ],
+      "object_displacement_mean_m": 0.003333424450829625,
+      "object_displacement_p95_m": 0.008145752921700472,
+      "next_goal_distance_mean_m": 0.04604370519518852
+    },
+    {
+      "start": 139264,
+      "end": 147456,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7691650390625,
+      "grasped_fraction": 0.8594970703125,
+      "action_std": [
+        0.20401495695114136,
+        0.22640074789524078,
+        0.26929721236228943,
+        0.4589996933937073
+      ],
+      "object_displacement_mean_m": 0.0031669174786657095,
+      "object_displacement_p95_m": 0.006317965663038172,
+      "next_goal_distance_mean_m": 0.047709837555885315
+    },
+    {
+      "start": 147456,
+      "end": 155648,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.8162841796875,
+      "grasped_fraction": 0.8841552734375,
+      "action_std": [
+        0.18037040531635284,
+        0.19930511713027954,
+        0.23724454641342163,
+        0.3710932433605194
+      ],
+      "object_displacement_mean_m": 0.002681092591956258,
+      "object_displacement_p95_m": 0.0044878690736368295,
+      "next_goal_distance_mean_m": 0.03676444664597511
+    },
+    {
+      "start": 155648,
+      "end": 163840,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.779052734375,
+      "grasped_fraction": 0.886474609375,
+      "action_std": [
+        0.17543505132198334,
+        0.1972740739583969,
+        0.24915485084056854,
+        0.4201311469078064
+      ],
+      "object_displacement_mean_m": 0.0033055124804377556,
+      "object_displacement_p95_m": 0.007124684052541852,
+      "next_goal_distance_mean_m": 0.04379415512084961
+    },
+    {
+      "start": 163840,
+      "end": 172032,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.8533935546875,
+      "grasped_fraction": 0.951416015625,
+      "action_std": [
+        0.11783397942781448,
+        0.1334221512079239,
+        0.1824847310781479,
+        0.3252902925014496
+      ],
+      "object_displacement_mean_m": 0.002966625615954399,
+      "object_displacement_p95_m": 0.004925694200210272,
+      "next_goal_distance_mean_m": 0.024990808218717575
+    },
+    {
+      "start": 172032,
+      "end": 180224,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.83056640625,
+      "grasped_fraction": 0.91796875,
+      "action_std": [
+        0.1590277999639511,
+        0.17735446989536285,
+        0.2239159196615219,
+        0.3983837962150574
+      ],
+      "object_displacement_mean_m": 0.0032518296502530575,
+      "object_displacement_p95_m": 0.006125220772810279,
+      "next_goal_distance_mean_m": 0.03504682332277298
+    },
+    {
+      "start": 180224,
+      "end": 188416,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.820556640625,
+      "grasped_fraction": 0.8880615234375,
+      "action_std": [
+        0.18198955059051514,
+        0.19753584265708923,
+        0.22767269611358643,
+        0.382414311170578
+      ],
+      "object_displacement_mean_m": 0.0026960973627865314,
+      "object_displacement_p95_m": 0.004457831056788563,
+      "next_goal_distance_mean_m": 0.04399102181196213
+    },
+    {
+      "start": 188416,
+      "end": 196608,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7740478515625,
+      "grasped_fraction": 0.8426513671875,
+      "action_std": [
+        0.2134457379579544,
+        0.23070241510868073,
+        0.270832359790802,
+        0.44441062211990356
+      ],
+      "object_displacement_mean_m": 0.0030713388696312904,
+      "object_displacement_p95_m": 0.005607402324676514,
+      "next_goal_distance_mean_m": 0.05279412493109703
+    },
+    {
+      "start": 196608,
+      "end": 204800,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7919921875,
+      "grasped_fraction": 0.8717041015625,
+      "action_std": [
+        0.19736340641975403,
+        0.21951816976070404,
+        0.2421530783176422,
+        0.4024728238582611
+      ],
+      "object_displacement_mean_m": 0.0026422836817801,
+      "object_displacement_p95_m": 0.004601740022189914,
+      "next_goal_distance_mean_m": 0.04530110955238342
+    },
+    {
+      "start": 204800,
+      "end": 212992,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.8179931640625,
+      "grasped_fraction": 0.8873291015625,
+      "action_std": [
+        0.17313030362129211,
+        0.2028549760580063,
+        0.23566657304763794,
+        0.43650078773498535
+      ],
+      "object_displacement_mean_m": 0.0028930888511240482,
+      "object_displacement_p95_m": 0.005166850495152171,
+      "next_goal_distance_mean_m": 0.040210410952568054
+    },
+    {
+      "start": 212992,
+      "end": 221184,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.8291015625,
+      "grasped_fraction": 0.911865234375,
+      "action_std": [
+        0.1547081172466278,
+        0.19221413135528564,
+        0.23346810042858124,
+        0.40007561445236206
+      ],
+      "object_displacement_mean_m": 0.0033946665935218334,
+      "object_displacement_p95_m": 0.008392403461039066,
+      "next_goal_distance_mean_m": 0.03752812743186951
+    },
+    {
+      "start": 221184,
+      "end": 229376,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.83203125,
+      "grasped_fraction": 0.8973388671875,
+      "action_std": [
+        0.1663769632577896,
+        0.18611879646778107,
+        0.23004357516765594,
+        0.39399585127830505
+      ],
+      "object_displacement_mean_m": 0.002800468821078539,
+      "object_displacement_p95_m": 0.0044708360917866214,
+      "next_goal_distance_mean_m": 0.04016827046871185
+    },
+    {
+      "start": 229376,
+      "end": 237568,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.783935546875,
+      "grasped_fraction": 0.859130859375,
+      "action_std": [
+        0.2139439731836319,
+        0.22278527915477753,
+        0.26945894956588745,
+        0.43976864218711853
+      ],
+      "object_displacement_mean_m": 0.0031098562758415937,
+      "object_displacement_p95_m": 0.005690557998605059,
+      "next_goal_distance_mean_m": 0.04921106994152069
+    },
+    {
+      "start": 237568,
+      "end": 245760,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.88232421875,
+      "grasped_fraction": 0.95068359375,
+      "action_std": [
+        0.12583206593990326,
+        0.14457115530967712,
+        0.1859726756811142,
+        0.3354471027851105
+      ],
+      "object_displacement_mean_m": 0.0029546432197093964,
+      "object_displacement_p95_m": 0.004668476944789291,
+      "next_goal_distance_mean_m": 0.022908341139554977
+    },
+    {
+      "start": 245760,
+      "end": 253952,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.7711181640625,
+      "grasped_fraction": 0.8543701171875,
+      "action_std": [
+        0.1969653218984604,
+        0.22287796437740326,
+        0.2675197422504425,
+        0.4756239950656891
+      ],
+      "object_displacement_mean_m": 0.0031485678628087044,
+      "object_displacement_p95_m": 0.0075619417242705714,
+      "next_goal_distance_mean_m": 0.04281733185052872
+    },
+    {
+      "start": 253952,
+      "end": 262144,
+      "source": "bare_SAC",
+      "executions": 8192,
+      "execution_fraction": 1.0,
+      "positive_reward_fraction": 0.799072265625,
+      "grasped_fraction": 0.860107421875,
+      "action_std": [
+        0.19614937901496887,
+        0.21592923998832703,
+        0.24809473752975464,
+        0.4586983919143677
+      ],
+      "object_displacement_mean_m": 0.002759382128715515,
+      "object_displacement_p95_m": 0.004482766264118253,
+      "next_goal_distance_mean_m": 0.0466950386762619
+    }
+  ],
+  "successful_episodes_in_segment": 1219,
+  "episodes_seen": 1312,
+  "first_success_action_source": {
+    "IL": 0,
+    "planned_SAC": 0,
+    "random_SAC": 0,
+    "bare_SAC": 1219
+  },
+  "limitations": "Observed source association, not causal action credit or matched-state comparisons. Segment includes partial boundary episodes. Sustained reward fraction is not episode success rate. Action std is observed dispersion, not policy entropy or evidence of useful exploration."
+}

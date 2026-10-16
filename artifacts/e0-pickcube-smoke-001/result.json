@@ -1,0 +1,37 @@
+{
+  "purpose": "smoke_only",
+  "env_id": "PickCube-v1",
+  "seed": 0,
+  "interactions": 400,
+  "elapsed_seconds": 2.5701683609950123,
+  "steps_per_second": 155.63182788739348,
+  "observation_shape": [
+    4,
+    42
+  ],
+  "action_shape": [
+    4,
+    4
+  ],
+  "action_low": [
+    -1.0,
+    -1.0,
+    -1.0,
+    -1.0
+  ],
+  "action_high": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "control_frequency": 20,
+  "simulation_frequency": 100,
+  "time_limit": null,
+  "completed_episodes": 8,
+  "reward_values": [
+    false
+  ],
+  "torch_peak_allocated_bytes": 8818176,
+  "torch_peak_reserved_bytes": 23068672
+}

@@ -1,0 +1,101 @@
+{
+  "dataset": "data/replay/e0-peg-replay-001/trajectory.state.pd_ee_delta_pose.physx_cpu.h5",
+  "dataset_sha256": "11ac02f571b3f2b491da17752744c56d5304d9392f30f7c3e9398f951c2a767a",
+  "metadata_sha256": "09536818354143d0211c1d5ce241c08e6deb7545857ae280078aeb9873431117",
+  "env_info": {
+    "env_id": "PegInsertionSide-v1",
+    "env_kwargs": {
+      "obs_mode": "state",
+      "control_mode": "pd_ee_delta_pose",
+      "render_mode": "rgb_array",
+      "reward_mode": "sparse",
+      "sensor_configs": {
+        "shader_pack": "default"
+      },
+      "human_render_camera_configs": {
+        "shader_pack": "default"
+      },
+      "viewer_camera_configs": {
+        "shader_pack": "default"
+      },
+      "sim_backend": "physx_cpu",
+      "num_envs": 1
+    },
+    "max_episode_steps": 100
+  },
+  "split_seed": 42,
+  "train_episode_ids": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "validation_episode_ids": [
+    0
+  ],
+  "episodes": [
+    {
+      "episode_id": 0,
+      "episode_seed": 2,
+      "transitions": 178,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 13,
+      "return_": 13.0,
+      "terminated_count": 13,
+      "truncated_count": 79,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 1,
+      "episode_seed": 4,
+      "transitions": 195,
+      "success_once": false,
+      "success_at_end": false,
+      "nonzero_rewards": 0,
+      "return_": 0.0,
+      "terminated_count": 0,
+      "truncated_count": 96,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 2,
+      "episode_seed": 5,
+      "transitions": 216,
+      "success_once": false,
+      "success_at_end": false,
+      "nonzero_rewards": 0,
+      "return_": 0.0,
+      "terminated_count": 0,
+      "truncated_count": 117,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 3,
+      "episode_seed": 6,
+      "transitions": 123,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 11,
+      "return_": 11.0,
+      "terminated_count": 11,
+      "truncated_count": 24,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 4,
+      "episode_seed": 9,
+      "transitions": 189,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 9,
+      "return_": 9.0,
+      "terminated_count": 9,
+      "truncated_count": 90,
+      "beyond_planned_horizon": 0
+    }
+  ],
+  "total_transitions": 901,
+  "planned_horizon": 400,
+  "caution": "Raw terminated flags are preserved. Decide and document continuing-vs-episodic TD masks separately; never concatenate episode boundaries for multi-step WM training."
+}

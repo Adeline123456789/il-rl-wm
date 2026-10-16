@@ -1,0 +1,7 @@
+{
+  "parent": "checkpoints/e3-sac-c-full-001/final.pt",
+  "sha256": "28d677a516434052b9ccbfe03001d0f2fc0bfcc2174233d7f5c1e7519a75c2ea",
+  "inherited_training_interactions": 262144,
+  "parent_gradient_updates": 64528,
+  "recovery": "New simulator segment; learner/optimizers/temperature/replay retained. Fresh configured seed, not an exact interrupted trajectory/RNG continuation."
+}

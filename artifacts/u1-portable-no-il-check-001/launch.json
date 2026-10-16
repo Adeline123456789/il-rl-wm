@@ -1,0 +1,8 @@
+{
+  "pid": 1161637,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/u1-portable-no-il-check-001/check.py"
+  ],
+  "cpu_only": true
+}

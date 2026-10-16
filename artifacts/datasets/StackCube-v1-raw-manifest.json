@@ -1,0 +1,69 @@
+{
+  "env_id": "StackCube-v1",
+  "source_repository": "haosulab/ManiSkill_Demonstrations",
+  "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+  "url": "https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/resolve/d674485bbffdd533914e52d272fdda34c0515608/demos/StackCube-v1.zip?download=true",
+  "elapsed_seconds": 66.16535550999106,
+  "files": {
+    "data/official/StackCube-v1/motionplanning/sample.mp4": {
+      "bytes": 94538,
+      "sha256": "898394591aaec80901c09d82300924f8770b7dd3fc75bea388bcd01373410e3a"
+    },
+    "data/official/StackCube-v1/motionplanning/trajectory.h5": {
+      "bytes": 38745164,
+      "sha256": "61d07df7b52f303d2088e977df5f863be7d2274348ff05791f3a815359815523"
+    },
+    "data/official/StackCube-v1/motionplanning/trajectory.json": {
+      "bytes": 229183,
+      "sha256": "48cb1119c9f5a8f0d7187fc83674a2c401b41466cb1930b2a5c26b706ba3bd81"
+    },
+    "data/official/StackCube-v1/rl/ppo_pd_ee_delta_pos_ckpt.pt": {
+      "bytes": 1164322,
+      "sha256": "ab2525bf1ead6930e5344c8ff08ed3292698a7ce34a056dfdce1690b3ea92e52"
+    },
+    "data/official/StackCube-v1/rl/ppo_pd_ee_delta_pose_ckpt.pt": {
+      "bytes": 1167394,
+      "sha256": "c97bbcafa3e689631b1d243552835de3392fb0f0b6343e4f2ae2deeac2b51563"
+    },
+    "data/official/StackCube-v1/rl/ppo_pd_joint_delta_pos_ckpt.pt": {
+      "bytes": 1168418,
+      "sha256": "680031c3f423bfab33f52547cac89ecf36f1300d5e585151596f3cd52d5a4ca7"
+    },
+    "data/official/StackCube-v1/rl/sample_pd_ee_delta_pos.mp4": {
+      "bytes": 51391,
+      "sha256": "db44268a7344d3038dc2da2cb80114824579aa3c2f432d7f71267358b93b5e7d"
+    },
+    "data/official/StackCube-v1/rl/sample_pd_ee_delta_pose.mp4": {
+      "bytes": 55867,
+      "sha256": "850a597e4154370f4cbd4bfc676402ae1e5d8fab8fc2e2c1562bc23b32363eee"
+    },
+    "data/official/StackCube-v1/rl/sample_pd_joint_delta_pos.mp4": {
+      "bytes": 61255,
+      "sha256": "7856508f688c08f4af33b68295055b988923dbb2e06fec32c702a34b33fd5bae"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_ee_delta_pos.physx_cuda.h5": {
+      "bytes": 16804514,
+      "sha256": "92566bce8046ccb8c602c1d929d61d7a77734fc07d7111c3d01d9ad6b80376df"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_ee_delta_pos.physx_cuda.json": {
+      "bytes": 169636,
+      "sha256": "3b1cc7a591f0330d5b32ac319aa002116d043dfa84436e75472a6efdaa2f37bd"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_ee_delta_pose.physx_cuda.h5": {
+      "bytes": 16094487,
+      "sha256": "6b045c6ef0cbc47fcdd2e9a36dfafbeb187805881f2c4594959e4c0a1054da43"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_ee_delta_pose.physx_cuda.json": {
+      "bytes": 188071,
+      "sha256": "88373dce9b6cc914f047b4194f2175b9f8819c6e9ae45972dfd2aaa1616dfe4f"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_joint_delta_pos.physx_cuda.h5": {
+      "bytes": 16629431,
+      "sha256": "1f21bf527a4036ccc693ff9adc34993029d3570beda57cd693a0d53bf0dfbb03"
+    },
+    "data/official/StackCube-v1/rl/trajectory.none.pd_joint_delta_pos.physx_cuda.json": {
+      "bytes": 178068,
+      "sha256": "f2c5418a04ffca6455f6b145190c8f440051d30aeba56ec511e1d8f8f6e06c04"
+    }
+  }
+}

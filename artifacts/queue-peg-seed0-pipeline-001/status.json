@@ -1,0 +1,17 @@
+{
+  "pid": 860674,
+  "prerequisite": "artifacts/stack-seed0-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_pickcube_repeat.py",
+    "--task",
+    "PegInsertionSide-v1",
+    "--seed",
+    "0",
+    "--output",
+    "artifacts/peg-seed0-pipeline-001"
+  ],
+  "started_at": "2026-10-16T12:28:19.709303+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

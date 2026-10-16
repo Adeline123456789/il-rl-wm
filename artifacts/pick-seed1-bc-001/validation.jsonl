@@ -1,0 +1,10 @@
+{"iteration": 1000, "action_mse": 0.0020906875791794673, "action_values": 55588}
+{"iteration": 2000, "action_mse": 0.0009735099161203932, "action_values": 55588}
+{"iteration": 3000, "action_mse": 0.0007335967667421746, "action_values": 55588}
+{"iteration": 4000, "action_mse": 0.0006342291973508192, "action_values": 55588}
+{"iteration": 5000, "action_mse": 0.000659101976073285, "action_values": 55588}
+{"iteration": 6000, "action_mse": 0.0006110755962725722, "action_values": 55588}
+{"iteration": 7000, "action_mse": 0.0006269216473140141, "action_values": 55588}
+{"iteration": 8000, "action_mse": 0.0006537820508285007, "action_values": 55588}
+{"iteration": 9000, "action_mse": 0.0008130448797246299, "action_values": 55588}
+{"iteration": 10000, "action_mse": 0.0005764569750773681, "action_values": 55588}

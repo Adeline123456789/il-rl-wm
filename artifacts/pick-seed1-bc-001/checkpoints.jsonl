@@ -1,0 +1,11 @@
+{"path": "checkpoints/pick-seed1-bc-001/1000.pt", "bytes": 1746302, "sha256": "a280b2eb00c2a95fd1c7bc971c99fd44d475185681c5142a4d025fdeeb5aeb61", "iteration": 1000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/2000.pt", "bytes": 1746302, "sha256": "0a39be7fbcf01775cb680fe15fbc58e4056d8871fc09f62b6b8bf6fb729ce6e0", "iteration": 2000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/3000.pt", "bytes": 1746302, "sha256": "9cea077d3a2db4cc9727b4044adff21989e6edae93d1075e640480d9f5568529", "iteration": 3000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/4000.pt", "bytes": 1746302, "sha256": "ab459fa6b73b543ca7a25ee4fe3cfd11f588c38572b3f564e03cbb9a659dc17f", "iteration": 4000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/5000.pt", "bytes": 1746302, "sha256": "b0ec721c81b0e05657692631d7a0931604728442e2859ab2f97d69fef6c9ddc5", "iteration": 5000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/6000.pt", "bytes": 1746302, "sha256": "f249799fb2f53e2484ba0434b5a973839039de91fd6da6e53f30dc2f30c6aae0", "iteration": 6000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/7000.pt", "bytes": 1746302, "sha256": "78da6aff3ab4fabf72a9dc2ee8879c77d120503f8fa420d454005f4bb1b36040", "iteration": 7000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/8000.pt", "bytes": 1746302, "sha256": "49bff63e8237333c8b2d843a8703d9b3f2fac2c37d6d19cda0d40a0ed3244fc9", "iteration": 8000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/9000.pt", "bytes": 1746302, "sha256": "40fe8452ff601fa053eea95cadcca192d5b083b8a0eddf4b46077f7a77667928", "iteration": 9000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/10000.pt", "bytes": 1746340, "sha256": "fa5bbbed0e3eeefd1d9414bf11b9dbb4386a9c3a73d900e28417d5d9717eb069", "iteration": 10000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/pick-seed1-bc-001/final.pt", "bytes": 1746340, "sha256": "fecbe06f994f8302676e530112b63401e4c3e1f806741cd0536b7043f9402a3c", "iteration": 10000, "selection": "fixed_final"}

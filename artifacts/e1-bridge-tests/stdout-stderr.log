@@ -1,0 +1,50 @@
+test_equal_means_independent_variance_and_frozen_teacher_after_update (test_policy_bridge.PolicyBridgeTests) ... ok
+test_failure_and_timeout_are_recorded_and_budgeted (test_runner.RunnerTests) ... ok
+test_unfinished_run_blocks_new_work (test_runner.RunnerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.233s
+
+OK
+{
+  "experiment_id": "failure",
+  "started_at": "2026-10-16T09:23:19.949664+00:00",
+  "ended_at": "2026-10-16T09:23:21.952800+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "-c",
+    "raise SystemExit(7)"
+  ],
+  "cwd": "/tmp/tmp_g42c6vq",
+  "limit_seconds": 5.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 302866,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": 7,
+  "stop_reason": null,
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 303085,
+  "elapsed_seconds": 2.0028220070089446
+}
+{
+  "experiment_id": "timeout",
+  "started_at": "2026-10-16T09:23:21.965381+00:00",
+  "ended_at": "2026-10-16T09:23:22.017678+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "-c",
+    "import time; time.sleep(20)"
+  ],
+  "cwd": "/tmp/tmp_g42c6vq",
+  "limit_seconds": 0.05,
+  "memory_limit_mib": 20480,
+  "runner_pid": 302866,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": -15,
+  "stop_reason": "time_budget",
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 303189,
+  "elapsed_seconds": 0.05166007899970282
+}

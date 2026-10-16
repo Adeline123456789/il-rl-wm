@@ -1,0 +1,12 @@
+[
+  {
+    "sha256": "4a7aa817934eceff10381da4ec0ec85ce61d0dbadb06425b8e8971be05dabdd4",
+    "path": "scripts/plot_seed0_diagnosis.py",
+    "experiments": [
+      "e0-stack-cpu-replay-full-001",
+      "e0-stack-cpu-replay-smoke-001",
+      "e0-stack-gpu-replay-smoke-001"
+    ],
+    "reason": "Not recovered from committed source blobs or recorded launch patch; do not substitute current bytes."
+  }
+]

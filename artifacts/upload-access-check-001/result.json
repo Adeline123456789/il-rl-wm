@@ -1,0 +1,11 @@
+{
+  "command": [
+    "git",
+    "push",
+    "--dry-run",
+    "origin",
+    "HEAD:refs/heads/research/u0-batch-20261016"
+  ],
+  "exit_code": 128,
+  "remote_mutation": false
+}

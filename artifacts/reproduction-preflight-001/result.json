@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "registered_models": 36,
+  "method_conditions": 60,
+  "final_test_accessed": false,
+  "rlpd_lock_matches_installed_versions": true,
+  "upstream_commits_match": true,
+  "syntax_validated": true,
+  "limitation": "Final evaluation orchestrator not yet run end-to-end; pending training and GPU RLPD evaluator smoke."
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 817119,
+  "prerequisite": "artifacts/pick-seed2-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "e3-rlpd-full-001",
+    "--seconds",
+    "10800",
+    "--",
+    ".venv-rlpd/bin/python",
+    "external/rlpd/train.py",
+    "--output",
+    "artifacts/e3-rlpd-full-001",
+    "--exp-name",
+    "e3-rlpd-full-001",
+    "--seed",
+    "0"
+  ],
+  "started_at": "2026-10-16T12:06:36.028971+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

@@ -1,0 +1,4 @@
+  0%|          | 0/20 [00:00<?, ?step/s]0step [00:00, ?step/s][33;1m2026-10-16 17:33:59,093 - mani_skill  - WARNING - shader_dir argument will be deprecated after ManiSkill v3.0.0 official release. Please use sensor_configs/human_render_camera_configs to set shaders.[0m
+  0%|          | 0/20 [00:00<?, ?step/s]  0%|          | 0/20 [00:00<?, ?step/s][33;1m2026-10-16 17:34:00,194 - mani_skill  - WARNING - Reset kwargs includes options, which are not supported in GPU sim replay and will be ignored.[0m
+  5%|▌         | 1/20 [00:01<00:33,  1.79s/step] 15%|█▌        | 3/20 [00:02<00:11,  1.46step/s] 25%|██▌       | 5/20 [00:02<00:05,  2.73step/s] 60%|██████    | 12/20 [00:02<00:00,  8.35step/s] 75%|███████▌  | 15/20 [00:02<00:00, 10.37step/s] 90%|█████████ | 18/20 [00:03<00:00, 11.49step/s]100%|██████████| 20/20 [00:03<00:00,  6.41step/s]
+  0%|          | 0/20 [00:04<?, ?step/s]

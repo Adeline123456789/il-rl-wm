@@ -1,0 +1,20 @@
+[
+  [
+    ".venv/bin/python",
+    "scripts/export_deployment.py",
+    "--checkpoint",
+    "checkpoints/u1-pick-seed0-u0-001/final.pt",
+    "--output",
+    "releases/u1-final-001"
+  ],
+  [
+    ".venv/bin/python",
+    "scripts/check_deployment.py",
+    "--checkpoint",
+    "checkpoints/u1-pick-seed0-u0-001/final.pt",
+    "--package",
+    "releases/u1-final-001/policy.pt",
+    "--output",
+    "artifacts/u1-no-il-export-001/action-parity.json"
+  ]
+]

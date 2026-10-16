@@ -1,0 +1,4 @@
+{"step": 0, "final": false, "path": "checkpoints/pick-seed1-b-001/step_0.pt", "bytes": 3489154, "sha256": "644759fe4965142b8411a76ff9b5348579d0c3542bc2b387ce93fce9df44aa0b"}
+{"step": 65536, "final": false, "path": "checkpoints/pick-seed1-b-001/step_65536.pt", "bytes": 32206419, "sha256": "f086ae4e43a7dc00b61b30c859fd609fe3853660bf6a71b4611e216346dc6bd1"}
+{"step": 131072, "final": false, "path": "checkpoints/pick-seed1-b-001/step_131072.pt", "bytes": 57437932, "sha256": "56fcebd2f6958526fa4f36ac7b82d51c384b4062d1185af13186c29c6ef46bbf"}
+{"step": 196608, "final": false, "path": "checkpoints/pick-seed1-b-001/step_196608.pt", "bytes": 82669292, "sha256": "4dee35da63e4f7daa38f3dcd34da3e27a47da6a84c194ac180f9f3c0a3bf757d"}

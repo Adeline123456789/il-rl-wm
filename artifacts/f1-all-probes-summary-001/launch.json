@@ -1,0 +1,17 @@
+{
+  "pid": 1236141,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json",
+    "--output",
+    "artifacts/queue-f1-all-probes-summary-001",
+    "--max-wait-seconds",
+    "1800",
+    "--",
+    ".venv/bin/python",
+    "artifacts/f1-all-probes-summary-001/build.py"
+  ],
+  "cpu_only": true
+}

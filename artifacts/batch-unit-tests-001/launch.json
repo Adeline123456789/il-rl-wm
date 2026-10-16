@@ -1,0 +1,15 @@
+{
+  "pid": 1271532,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/batch-unit-tests-001/run.py"
+  ],
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONPATH": "",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "code_commit": "3f5388580bfe4617ece4b855605d3ae875a6908a"
+}

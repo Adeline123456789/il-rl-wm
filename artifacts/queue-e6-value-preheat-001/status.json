@@ -1,0 +1,30 @@
+{
+  "pid": 517750,
+  "prerequisite": "artifacts/e5-candidates-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "e6-value-preheat-001",
+    "--seconds",
+    "1800",
+    "--",
+    ".venv/bin/python",
+    "scripts/train_task_value.py",
+    "--sac",
+    "checkpoints/e3-sac-c-full-001/final.pt",
+    "--expert-audit",
+    "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+    "--wm",
+    "checkpoints/e4-wm-full-001/final.pt",
+    "--output",
+    "artifacts/e6-value-preheat-001",
+    "--updates",
+    "5000"
+  ],
+  "started_at": "2026-10-16T10:39:24.907888+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 540620,
+  "ended_at": "2026-10-16T10:47:13.529613+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 1329467,
+  "prerequisite": "artifacts/queue-final-evaluation-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/summarize_final_results.py",
+    "--output",
+    "artifacts/final-results-001"
+  ],
+  "started_at": "2026-10-16T14:23:44.182651+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

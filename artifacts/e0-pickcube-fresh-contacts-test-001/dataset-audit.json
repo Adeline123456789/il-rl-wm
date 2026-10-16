@@ -1,0 +1,1255 @@
+{
+  "initial_contact_audit": [
+    {
+      "episode_id": 0,
+      "grasped": false,
+      "distance": 0.16327384114265442
+    },
+    {
+      "episode_id": 1,
+      "grasped": false,
+      "distance": 0.1641474962234497
+    },
+    {
+      "episode_id": 2,
+      "grasped": false,
+      "distance": 0.15394353866577148
+    },
+    {
+      "episode_id": 3,
+      "grasped": false,
+      "distance": 0.19015952944755554
+    },
+    {
+      "episode_id": 4,
+      "grasped": false,
+      "distance": 0.16843724250793457
+    },
+    {
+      "episode_id": 5,
+      "grasped": false,
+      "distance": 0.15323588252067566
+    },
+    {
+      "episode_id": 6,
+      "grasped": false,
+      "distance": 0.13758817315101624
+    },
+    {
+      "episode_id": 7,
+      "grasped": false,
+      "distance": 0.15560667216777802
+    },
+    {
+      "episode_id": 8,
+      "grasped": false,
+      "distance": 0.15236680209636688
+    },
+    {
+      "episode_id": 9,
+      "grasped": false,
+      "distance": 0.12560182809829712
+    },
+    {
+      "episode_id": 10,
+      "grasped": false,
+      "distance": 0.13896943628787994
+    },
+    {
+      "episode_id": 11,
+      "grasped": false,
+      "distance": 0.1755799949169159
+    },
+    {
+      "episode_id": 12,
+      "grasped": false,
+      "distance": 0.16342176496982574
+    },
+    {
+      "episode_id": 13,
+      "grasped": false,
+      "distance": 0.17049424350261688
+    },
+    {
+      "episode_id": 14,
+      "grasped": false,
+      "distance": 0.1781030148267746
+    },
+    {
+      "episode_id": 15,
+      "grasped": false,
+      "distance": 0.21155840158462524
+    },
+    {
+      "episode_id": 16,
+      "grasped": false,
+      "distance": 0.14950339496135712
+    },
+    {
+      "episode_id": 17,
+      "grasped": false,
+      "distance": 0.18952670693397522
+    },
+    {
+      "episode_id": 18,
+      "grasped": false,
+      "distance": 0.18510574102401733
+    },
+    {
+      "episode_id": 19,
+      "grasped": false,
+      "distance": 0.162143275141716
+    },
+    {
+      "episode_id": 20,
+      "grasped": false,
+      "distance": 0.14673608541488647
+    },
+    {
+      "episode_id": 21,
+      "grasped": false,
+      "distance": 0.1398770660161972
+    },
+    {
+      "episode_id": 22,
+      "grasped": false,
+      "distance": 0.16588617861270905
+    },
+    {
+      "episode_id": 23,
+      "grasped": false,
+      "distance": 0.13576726615428925
+    },
+    {
+      "episode_id": 24,
+      "grasped": false,
+      "distance": 0.16840137541294098
+    },
+    {
+      "episode_id": 25,
+      "grasped": false,
+      "distance": 0.14025360345840454
+    },
+    {
+      "episode_id": 26,
+      "grasped": false,
+      "distance": 0.15408217906951904
+    },
+    {
+      "episode_id": 27,
+      "grasped": false,
+      "distance": 0.15785767138004303
+    },
+    {
+      "episode_id": 28,
+      "grasped": false,
+      "distance": 0.18804395198822021
+    },
+    {
+      "episode_id": 29,
+      "grasped": false,
+      "distance": 0.1818985641002655
+    },
+    {
+      "episode_id": 30,
+      "grasped": false,
+      "distance": 0.1869199275970459
+    },
+    {
+      "episode_id": 31,
+      "grasped": false,
+      "distance": 0.20040178298950195
+    },
+    {
+      "episode_id": 32,
+      "grasped": false,
+      "distance": 0.17765818536281586
+    },
+    {
+      "episode_id": 33,
+      "grasped": false,
+      "distance": 0.17054660618305206
+    },
+    {
+      "episode_id": 34,
+      "grasped": false,
+      "distance": 0.1720624715089798
+    },
+    {
+      "episode_id": 35,
+      "grasped": false,
+      "distance": 0.15886449813842773
+    },
+    {
+      "episode_id": 36,
+      "grasped": false,
+      "distance": 0.1614496260881424
+    },
+    {
+      "episode_id": 37,
+      "grasped": false,
+      "distance": 0.1790807843208313
+    },
+    {
+      "episode_id": 38,
+      "grasped": false,
+      "distance": 0.186390683054924
+    },
+    {
+      "episode_id": 39,
+      "grasped": false,
+      "distance": 0.18294309079647064
+    },
+    {
+      "episode_id": 40,
+      "grasped": false,
+      "distance": 0.16202864050865173
+    },
+    {
+      "episode_id": 41,
+      "grasped": false,
+      "distance": 0.1439216583967209
+    },
+    {
+      "episode_id": 42,
+      "grasped": false,
+      "distance": 0.1615440994501114
+    },
+    {
+      "episode_id": 43,
+      "grasped": false,
+      "distance": 0.15044918656349182
+    },
+    {
+      "episode_id": 44,
+      "grasped": false,
+      "distance": 0.16721974313259125
+    },
+    {
+      "episode_id": 45,
+      "grasped": false,
+      "distance": 0.1713286191225052
+    },
+    {
+      "episode_id": 46,
+      "grasped": false,
+      "distance": 0.15567424893379211
+    },
+    {
+      "episode_id": 47,
+      "grasped": false,
+      "distance": 0.15983553230762482
+    },
+    {
+      "episode_id": 48,
+      "grasped": false,
+      "distance": 0.18067575991153717
+    },
+    {
+      "episode_id": 49,
+      "grasped": false,
+      "distance": 0.15054595470428467
+    },
+    {
+      "episode_id": 50,
+      "grasped": false,
+      "distance": 0.1660916954278946
+    },
+    {
+      "episode_id": 51,
+      "grasped": false,
+      "distance": 0.1399778425693512
+    },
+    {
+      "episode_id": 52,
+      "grasped": false,
+      "distance": 0.15510328114032745
+    },
+    {
+      "episode_id": 53,
+      "grasped": false,
+      "distance": 0.1720340996980667
+    },
+    {
+      "episode_id": 54,
+      "grasped": false,
+      "distance": 0.1793081909418106
+    },
+    {
+      "episode_id": 55,
+      "grasped": false,
+      "distance": 0.2243034988641739
+    },
+    {
+      "episode_id": 56,
+      "grasped": false,
+      "distance": 0.19461742043495178
+    },
+    {
+      "episode_id": 57,
+      "grasped": false,
+      "distance": 0.21056026220321655
+    },
+    {
+      "episode_id": 58,
+      "grasped": false,
+      "distance": 0.18332439661026
+    },
+    {
+      "episode_id": 59,
+      "grasped": false,
+      "distance": 0.17166176438331604
+    },
+    {
+      "episode_id": 60,
+      "grasped": false,
+      "distance": 0.19275443255901337
+    },
+    {
+      "episode_id": 61,
+      "grasped": false,
+      "distance": 0.18922726809978485
+    },
+    {
+      "episode_id": 62,
+      "grasped": false,
+      "distance": 0.1896616816520691
+    },
+    {
+      "episode_id": 63,
+      "grasped": false,
+      "distance": 0.21157725155353546
+    }
+  ],
+  "alignment_validated": true,
+  "action_source_sha256": "5f191a5f14a16edb4276fae24fbde21d52aeb3eec1b2e9dceafa309d953d3609",
+  "dataset": "data/replay/e0-pickcube-fresh-contacts-test-001/trajectory.state.pd_ee_delta_pos.physx_cuda.h5",
+  "dataset_sha256": "871397574d042cfe59a819122c20265aa06362926b00768821f0283f0717993a",
+  "metadata_sha256": "f3b0340737faf45d1facc9cc45834c23f32d0811a736cea433d85bf3bb7d8a58",
+  "env_info": {
+    "env_id": "PickCube-v1",
+    "env_kwargs": {
+      "obs_mode": "state",
+      "control_mode": "pd_ee_delta_pos",
+      "render_mode": "rgb_array",
+      "reward_mode": "sparse",
+      "shader_dir": "default",
+      "sim_backend": "physx_cuda",
+      "num_envs": 32,
+      "reconfiguration_freq": 1
+    },
+    "max_episode_steps": 50
+  },
+  "split_seed": 42,
+  "train_episode_ids": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    49,
+    51,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    63
+  ],
+  "validation_episode_ids": [
+    1,
+    2,
+    8,
+    12,
+    13,
+    14,
+    37,
+    40,
+    48,
+    50,
+    52,
+    62
+  ],
+  "episodes": [
+    {
+      "episode_id": 0,
+      "episode_seed": 8,
+      "transitions": 49,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 36,
+      "return_": 36.0,
+      "terminated_count": 36,
+      "truncated_count": 0,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 1,
+      "episode_seed": 2,
+      "transitions": 50,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 1,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 2,
+      "episode_seed": 20,
+      "transitions": 64,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 15,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 3,
+      "episode_seed": 17,
+      "transitions": 67,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 18,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 4,
+      "episode_seed": 22,
+      "transitions": 68,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 19,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 5,
+      "episode_seed": 31,
+      "transitions": 69,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 20,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 6,
+      "episode_seed": 6,
+      "transitions": 71,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 22,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 7,
+      "episode_seed": 12,
+      "transitions": 71,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 22,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 8,
+      "episode_seed": 29,
+      "transitions": 71,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 22,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 9,
+      "episode_seed": 18,
+      "transitions": 72,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 23,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 10,
+      "episode_seed": 21,
+      "transitions": 72,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 23,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 11,
+      "episode_seed": 30,
+      "transitions": 72,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 23,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 12,
+      "episode_seed": 0,
+      "transitions": 74,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 25,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 13,
+      "episode_seed": 1,
+      "transitions": 74,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 25,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 14,
+      "episode_seed": 7,
+      "transitions": 74,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 25,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 15,
+      "episode_seed": 27,
+      "transitions": 74,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 25,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 16,
+      "episode_seed": 4,
+      "transitions": 76,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 1,
+      "return_": 1.0,
+      "terminated_count": 1,
+      "truncated_count": 27,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 17,
+      "episode_seed": 14,
+      "transitions": 76,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 27,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 18,
+      "episode_seed": 16,
+      "transitions": 76,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 27,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 19,
+      "episode_seed": 23,
+      "transitions": 76,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 2,
+      "return_": 2.0,
+      "terminated_count": 2,
+      "truncated_count": 27,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 20,
+      "episode_seed": 15,
+      "transitions": 77,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 9,
+      "return_": 9.0,
+      "terminated_count": 9,
+      "truncated_count": 28,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 21,
+      "episode_seed": 10,
+      "transitions": 79,
+      "success_once": true,
+      "success_at_end": false,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 22,
+      "episode_seed": 24,
+      "transitions": 79,
+      "success_once": false,
+      "success_at_end": false,
+      "nonzero_rewards": 0,
+      "return_": 0.0,
+      "terminated_count": 0,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 23,
+      "episode_seed": 28,
+      "transitions": 79,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 24,
+      "episode_seed": 13,
+      "transitions": 80,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 31,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 25,
+      "episode_seed": 11,
+      "transitions": 82,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 33,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 26,
+      "episode_seed": 25,
+      "transitions": 82,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 33,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 27,
+      "episode_seed": 9,
+      "transitions": 84,
+      "success_once": true,
+      "success_at_end": false,
+      "nonzero_rewards": 1,
+      "return_": 1.0,
+      "terminated_count": 1,
+      "truncated_count": 35,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 28,
+      "episode_seed": 26,
+      "transitions": 84,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 35,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 29,
+      "episode_seed": 3,
+      "transitions": 86,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 37,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 30,
+      "episode_seed": 19,
+      "transitions": 87,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 38,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 31,
+      "episode_seed": 5,
+      "transitions": 88,
+      "success_once": false,
+      "success_at_end": false,
+      "nonzero_rewards": 0,
+      "return_": 0.0,
+      "terminated_count": 0,
+      "truncated_count": 39,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 32,
+      "episode_seed": 58,
+      "transitions": 50,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 34,
+      "return_": 34.0,
+      "terminated_count": 34,
+      "truncated_count": 1,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 33,
+      "episode_seed": 33,
+      "transitions": 57,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 8,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 34,
+      "episode_seed": 46,
+      "transitions": 63,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 14,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 35,
+      "episode_seed": 35,
+      "transitions": 66,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 17,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 36,
+      "episode_seed": 53,
+      "transitions": 68,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 19,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 37,
+      "episode_seed": 45,
+      "transitions": 69,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 20,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 38,
+      "episode_seed": 40,
+      "transitions": 70,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 21,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 39,
+      "episode_seed": 62,
+      "transitions": 70,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 21,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 40,
+      "episode_seed": 54,
+      "transitions": 71,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 8,
+      "return_": 8.0,
+      "terminated_count": 8,
+      "truncated_count": 22,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 41,
+      "episode_seed": 44,
+      "transitions": 72,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 23,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 42,
+      "episode_seed": 57,
+      "transitions": 72,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 23,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 43,
+      "episode_seed": 37,
+      "transitions": 75,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 26,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 44,
+      "episode_seed": 43,
+      "transitions": 75,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 7,
+      "return_": 7.0,
+      "terminated_count": 7,
+      "truncated_count": 26,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 45,
+      "episode_seed": 56,
+      "transitions": 76,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 27,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 46,
+      "episode_seed": 50,
+      "transitions": 78,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 29,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 47,
+      "episode_seed": 38,
+      "transitions": 79,
+      "success_once": true,
+      "success_at_end": false,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 48,
+      "episode_seed": 48,
+      "transitions": 79,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 10,
+      "return_": 10.0,
+      "terminated_count": 10,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 49,
+      "episode_seed": 63,
+      "transitions": 79,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 30,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 50,
+      "episode_seed": 32,
+      "transitions": 80,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 31,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 51,
+      "episode_seed": 36,
+      "transitions": 80,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 8,
+      "return_": 8.0,
+      "terminated_count": 8,
+      "truncated_count": 31,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 52,
+      "episode_seed": 41,
+      "transitions": 80,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 31,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 53,
+      "episode_seed": 52,
+      "transitions": 82,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 33,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 54,
+      "episode_seed": 60,
+      "transitions": 82,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 33,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 55,
+      "episode_seed": 64,
+      "transitions": 82,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 33,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 56,
+      "episode_seed": 47,
+      "transitions": 83,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 34,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 57,
+      "episode_seed": 49,
+      "transitions": 83,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 34,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 58,
+      "episode_seed": 34,
+      "transitions": 85,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 3,
+      "return_": 3.0,
+      "terminated_count": 3,
+      "truncated_count": 36,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 59,
+      "episode_seed": 59,
+      "transitions": 87,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 38,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 60,
+      "episode_seed": 61,
+      "transitions": 88,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 5,
+      "return_": 5.0,
+      "terminated_count": 5,
+      "truncated_count": 39,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 61,
+      "episode_seed": 42,
+      "transitions": 89,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 4,
+      "return_": 4.0,
+      "terminated_count": 4,
+      "truncated_count": 40,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 62,
+      "episode_seed": 39,
+      "transitions": 92,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 8,
+      "return_": 8.0,
+      "terminated_count": 8,
+      "truncated_count": 43,
+      "beyond_planned_horizon": 0
+    },
+    {
+      "episode_id": 63,
+      "episode_seed": 55,
+      "transitions": 96,
+      "success_once": true,
+      "success_at_end": true,
+      "nonzero_rewards": 6,
+      "return_": 6.0,
+      "terminated_count": 6,
+      "truncated_count": 47,
+      "beyond_planned_horizon": 0
+    }
+  ],
+  "total_transitions": 4841,
+  "planned_horizon": 200,
+  "successful_only": true,
+  "excluded_episode_ids": [
+    21,
+    22,
+    27,
+    31,
+    47
+  ],
+  "source_episode_mapping": {
+    "0": 8,
+    "1": 2,
+    "2": 20,
+    "3": 17,
+    "4": 22,
+    "5": 31,
+    "6": 6,
+    "7": 12,
+    "8": 29,
+    "9": 18,
+    "10": 21,
+    "11": 30,
+    "12": 0,
+    "13": 1,
+    "14": 7,
+    "15": 27,
+    "16": 4,
+    "17": 14,
+    "18": 16,
+    "19": 23,
+    "20": 15,
+    "21": 10,
+    "22": 24,
+    "23": 28,
+    "24": 13,
+    "25": 11,
+    "26": 25,
+    "27": 9,
+    "28": 26,
+    "29": 3,
+    "30": 19,
+    "31": 5,
+    "32": 57,
+    "33": 33,
+    "34": 46,
+    "35": 35,
+    "36": 52,
+    "37": 45,
+    "38": 40,
+    "39": 61,
+    "40": 53,
+    "41": 44,
+    "42": 56,
+    "43": 37,
+    "44": 43,
+    "45": 55,
+    "46": 50,
+    "47": 38,
+    "48": 48,
+    "49": 62,
+    "50": 32,
+    "51": 36,
+    "52": 41,
+    "53": 51,
+    "54": 59,
+    "55": 63,
+    "56": 47,
+    "57": 49,
+    "58": 34,
+    "59": 58,
+    "60": 60,
+    "61": 42,
+    "62": 39,
+    "63": 54
+  },
+  "source_metadata_sha256": "16e403cb77bfbdda28c243b96eb90adbae1c0edf42854283be57ee47076a2e90",
+  "caution": "Raw terminated flags are preserved. Decide and document continuing-vs-episodic TD masks separately; never concatenate episode boundaries for multi-step WM training."
+}

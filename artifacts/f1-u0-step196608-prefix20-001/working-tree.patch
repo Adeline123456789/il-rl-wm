@@ -1,0 +1,55 @@
+diff --git a/artifacts/queue-f1-u0-step196608-prefix20-001/status.json b/artifacts/queue-f1-u0-step196608-prefix20-001/status.json
+index 006f441..4f11cac 100644
+--- a/artifacts/queue-f1-u0-step196608-prefix20-001/status.json
++++ b/artifacts/queue-f1-u0-step196608-prefix20-001/status.json
+@@ -25,6 +25,7 @@
+     "2"
+   ],
+   "started_at": "2026-10-16T13:36:36.225484+00:00",
+-  "phase": "waiting",
+-  "exit_code": null
++  "phase": "running",
++  "exit_code": null,
++  "child_pid": 1181504
+ }
+\ No newline at end of file
+diff --git a/artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json b/artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json
+index 2134095..e457a39 100644
+--- a/artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json
++++ b/artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json
+@@ -10,7 +10,8 @@
+     "artifacts/u1-pick-seed0-pipeline-001"
+   ],
+   "started_at": "2026-10-16T12:38:07.441682+00:00",
+-  "phase": "running",
+-  "exit_code": null,
+-  "child_pid": 968476
++  "phase": "completed",
++  "exit_code": 0,
++  "child_pid": 968476,
++  "ended_at": "2026-10-16T13:49:31.413022+00:00"
+ }
+\ No newline at end of file
+diff --git a/research_state.json b/research_state.json
+index 1612bbd..51429f0 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -21,7 +21,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 13244.769644036016,
++    "gpu_job_seconds_used": 14216.818058072007,
+     "local_changes_limit": 2,
+     "local_changes_used": 1,
+     "final_evaluation_reserve_seconds": 7200
+@@ -89,7 +89,8 @@
+     "u1-pick-seed0-c-001",
+     "u1-pick-seed0-wm-001",
+     "u1-pick-seed0-value-001",
+-    "u1-pick-seed0-u0-001"
++    "u1-pick-seed0-u0-001",
++    "u1-pick-seed0-c-continue-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {

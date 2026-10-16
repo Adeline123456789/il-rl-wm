@@ -1,0 +1,11 @@
+{"path": "checkpoints/e1-bc-full-003/1000.pt", "bytes": 1746238, "sha256": "ced44bf638a87b96039e41002b58e5802d9142aeff79f0dc832410aca563bc62", "iteration": 1000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/2000.pt", "bytes": 1746238, "sha256": "b6fadb0d122882ad14aef064e5afa1f5a73f173d01218f7aa2a5c68a3b47fd2c", "iteration": 2000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/3000.pt", "bytes": 1746238, "sha256": "e9a75662ac5e5eec92df36bfbe50d357f598042d084e79ef4d5d88f5fa3e40ce", "iteration": 3000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/4000.pt", "bytes": 1746238, "sha256": "df5286e68ce6801bbab599a9f3330a080278350dc6c90546ae1344172dd1751d", "iteration": 4000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/5000.pt", "bytes": 1746238, "sha256": "4fbed0bf22dad95c214b514c6c6047b258ebbd18472b56632658f02f58a1d562", "iteration": 5000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/6000.pt", "bytes": 1746238, "sha256": "0d76e4cb8aa3f734eec95c8d6c094b50418488f534d4bd8d178f45efc526c85b", "iteration": 6000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/7000.pt", "bytes": 1746238, "sha256": "b9d955b2e46d3e9803f7a92b49c5b31ce7d54985597f26cc493451a1d036b78a", "iteration": 7000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/8000.pt", "bytes": 1746238, "sha256": "a0d3d3549ac8205701ce089101d706c688ffe333e68cfa75e2e296842081f006", "iteration": 8000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/9000.pt", "bytes": 1746238, "sha256": "6e4b978c2a760c9faf7f5679adf0565061eafca80b06e7d3ca23780bec5bf1dc", "iteration": 9000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/10000.pt", "bytes": 1746276, "sha256": "08bc971e98dc0497f32381646c0a4ed99c40608ffefb62408a3f4cc57ca7c778", "iteration": 10000, "selection": "periodic_not_selected"}
+{"path": "checkpoints/e1-bc-full-003/final.pt", "bytes": 1746276, "sha256": "cd838b45252de75739ceb3b71f777edf2c38db2dc0eb455cf5a82ca8f9d858a6", "iteration": 10000, "selection": "fixed_final"}

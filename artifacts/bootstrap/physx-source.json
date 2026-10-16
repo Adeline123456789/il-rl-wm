@@ -1,0 +1,11 @@
+{
+  "release_url": "https://github.com/sapien-sim/physx-precompiled/releases/tag/105.1-physx-5.3.1.patch0",
+  "assets": [
+    {
+      "name": "linux-so.zip",
+      "size": 77938378,
+      "browser_download_url": "https://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip",
+      "digest": null
+    }
+  ]
+}

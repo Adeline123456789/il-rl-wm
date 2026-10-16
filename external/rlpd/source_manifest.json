@@ -1,0 +1,36 @@
+[
+  {
+    "name": "rfcl",
+    "commit": "7bd660f05dbda1ec8881bcfb250a8d1881532dbb",
+    "read_only_checkout_clean": true,
+    "files": {
+      "pyproject.toml": "624177e1ff1735d4556bd7a47c137e0eeb563e7778b91f2f62c40de1d8ea89f4",
+      "rfcl/agents/sac/sac.py": "199b5d65852a1691c51984d765d8275fb0641e0bfd8d4c37abeb38709eebfe15",
+      "rfcl/agents/sac/config.py": "c6dffd14439d8da80b31e8771ae8eebdf8a30e9c99cf77b2cc6bdf2413d8db32",
+      "rfcl/agents/sac/loss.py": "c1e2cddf9e3e25960ab2e97667cddd9b15e14a6ab6797ffb6f1efaf0c0ebff0b",
+      "rfcl/agents/sac/networks.py": "fd8e79559c6f69a3a79e7c8aab8b72418c02ea7a33a2baa9f5753f9e80894930",
+      "rfcl/models/mlp.py": "77a1e5f02665e1cc689a79d16e0f6173f67d27712448ff07dadf8305b4818e81",
+      "rfcl/models/model.py": "5ba102d9d6d7d47d6c574a6fdc243a14c623209089fc821a8ef7a22bb8981fe7",
+      "rfcl/data/loop.py": "835463d6a92db51f80164f86fda33a8cc760407cd607a0f79e3d83131595e9d6",
+      "rfcl/data/buffer.py": "b77053cfd0679870e44b2d0ff0008426f9f3151462cf7efe80990aba737122c1",
+      "rfcl/data/dataset.py": "b05351af0b0899c6f4d22f2dce03d382a9d7015af6ccfa91cfe87f7ff45d512f",
+      "rfcl/utils/tools.py": "1ae89781c8f34dc4d670bdd7e7b1c1c0dcf7504e4d25bbc341dd48aa340fc925"
+    }
+  },
+  {
+    "name": "rlpd-original",
+    "commit": "c90fd4baf28c9c9ef40a81460a2e395092844f88",
+    "read_only_checkout_clean": true,
+    "files": {
+      "LICENCE": "33cad67436247aec6465fc1be5ff075327bfc527851ca9e2340e3e3336cdd63e",
+      "README.md": "6818377e2dd962f2b080863564a548781fb3f6f80e5102dc3703ed7955a0806d",
+      "configs/rlpd_config.py": "566d5328563290321cbf51684e1b48aae260bc594286ff4d10ead20db64e421e",
+      "configs/td_config.py": "178a64f891765c852e7dfc28bb88f066f10057c2fa8c3e53a9a729b9be810d9f",
+      "configs/sac_config.py": "508f03e9a8df54cc16fb08a655e7b86c987ebe0c070ea8d121cb52db96b8208c",
+      "rlpd/agents/sac/sac_learner.py": "a4b3bd6f00c0c526d1c936f3481df797b71f6872f887baedaedf95add2c5b7cb",
+      "rlpd/networks/mlp.py": "2b8b6f646b6e5839bf8057e2e2cd96e717acbad11b02b408d5dd6edef074c635",
+      "rlpd/distributions/tanh_normal.py": "58a52307431ee9ce88460066e2c11bfab8c26c38bd6ee1b5c90cc514e0b42167",
+      "train_finetuning.py": "2b823153be70a93c3b2061f82cd2868313e01ba2619331666ddd22bc705258a4"
+    }
+  }
+]

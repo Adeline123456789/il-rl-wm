@@ -1,0 +1,7 @@
+{
+  "pid": 876650,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/u1-and-task-plan-check-002/check.py"
+  ]
+}

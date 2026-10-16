@@ -1,0 +1,14 @@
+{
+  "pid": 726712,
+  "command": [
+    "git",
+    "-c",
+    "http.version=HTTP/1.1",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/TakuyaHiraoka/Dropout-Q-Functions-for-Doubly-Efficient-Reinforcement-Learning",
+    ".cache/references/droq"
+  ],
+  "log": "artifacts/bootstrap/droq-fetch.log"
+}

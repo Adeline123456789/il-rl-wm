@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "real_transitions": 4096,
+  "raw_labels": {
+    "terminated": 0,
+    "truncated": 16,
+    "success": 0
+  },
+  "physical_final_observation_stored": true,
+  "continuing_mask_all_one": true,
+  "new_environment_interactions": 0
+}

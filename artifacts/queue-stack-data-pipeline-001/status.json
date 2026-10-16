@@ -1,0 +1,17 @@
+{
+  "pid": 702916,
+  "prerequisite": "artifacts/e3-rlpd-smoke-001/manifest.json",
+  "command": [
+    "python",
+    "scripts/prepare_task_data.py",
+    "--task",
+    "StackCube-v1",
+    "--status-path",
+    "artifacts/stack-data-pipeline-001/status.json"
+  ],
+  "started_at": "2026-10-16T11:30:08.614054+00:00",
+  "phase": "cancelled_before_launch",
+  "exit_code": null,
+  "reason": "Insert independent evaluation smoke before data conversion; no running experiment interrupted",
+  "ended_at": "2026-10-16T11:59:25.437418+00:00"
+}

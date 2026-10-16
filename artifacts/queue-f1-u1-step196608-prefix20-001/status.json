@@ -1,0 +1,32 @@
+{
+  "pid": 1128165,
+  "prerequisite": "artifacts/f1-u0-step196608-prefix20-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "f1-u1-step196608-prefix20-001",
+    "--seconds",
+    "900",
+    "--",
+    ".venv/bin/python",
+    "scripts/diagnose_ranking.py",
+    "--checkpoint",
+    "releases/u1-seed0-analysis-step196608-001/weights.pt",
+    "--output",
+    "artifacts/f1-u1-step196608-prefix20-001",
+    "--prefix-steps",
+    "20",
+    "--continuation-steps",
+    "400",
+    "--states",
+    "8",
+    "--repeats",
+    "2"
+  ],
+  "started_at": "2026-10-16T13:36:36.225460+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 1216227,
+  "ended_at": "2026-10-16T14:05:28.262353+00:00"
+}

@@ -1,0 +1,15 @@
+# Separate JAX environment, never installed into the main .venv.
+numpy==1.26.4
+jax[cuda12_pip]==0.4.28
+flax==0.8.4
+optax==0.2.2
+chex==0.1.86
+distrax==0.1.5
+tensorflow-probability==0.24.0
+orbax-checkpoint==0.5.15
+gymnax==0.0.6
+nvidia-cuda-nvcc-cu12==12.1.105
+gymnasium==0.29.1
+sapien==3.0.3
+-e ../../.cache/upstreams/rfcl
+-e ../../.cache/upstreams/ManiSkill

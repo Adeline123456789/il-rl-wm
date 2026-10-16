@@ -1,0 +1,16 @@
+{
+  "path": "releases/u0-analysis-precollapse-001/weights.pt",
+  "bytes": 4462255,
+  "sha256": "c034dd0dbfca99edce065c29dfe7b84a5c778c710ed145e0f87fee42ffd7720c",
+  "source": {
+    "path": "checkpoints/e6-u0-full-001/step_196608.pt",
+    "sha256": "21392fa7ee3f11df4a4801c650cc1a610858272bab6f058470d45d8b97982cd7"
+  },
+  "purpose": "Frozen diagnosis only, includes IL. Use separate deployment package for IL-free inference.",
+  "omitted": [
+    "optimizers",
+    "replay",
+    "RNG"
+  ],
+  "training_resume_supported": false
+}

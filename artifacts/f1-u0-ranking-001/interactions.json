@@ -1,0 +1,22 @@
+{
+  "phases": {
+    "diagnostic_prefix": {
+      "attempted_transitions": 11840,
+      "completed_transitions": 11840,
+      "completed_vector_steps": 1480
+    },
+    "first_action_student": {
+      "attempted_transitions": 57600,
+      "completed_transitions": 57600,
+      "completed_vector_steps": 7200
+    },
+    "sequence_student": {
+      "attempted_transitions": 57600,
+      "completed_transitions": 57600,
+      "completed_vector_steps": 7200
+    }
+  },
+  "total_completed": 127040,
+  "total_attempted": 127040,
+  "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+}

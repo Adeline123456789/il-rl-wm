@@ -1,0 +1,42 @@
+{
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "obs_mode": "state",
+    "reward_mode": "sparse",
+    "sac_candidates": 9,
+    "horizon": 2,
+    "execute_actions": 1,
+    "objective": "pure task return with deterministic student continuation",
+    "observation_normalization": "stored WM/value statistics; actor raw state",
+    "action_bounds": [
+      -1,
+      1
+    ],
+    "candidate_sampling": "stochastic SAC, externally seed Torch for repeatability",
+    "calls_il": false
+  },
+  "source": {
+    "checkpoint": "checkpoints/u1-pick-seed0-u0-001/final.pt",
+    "sha256": "428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704",
+    "lineage_training_interactions": 524288,
+    "warning": "Exports fixed final checkpoint regardless of performance; export is not evidence of successful behavior."
+  },
+  "path": "releases/u1-final-001/policy.pt",
+  "bytes": 1255586,
+  "sha256": "3b1a18bf1c256bf0aedac1b459447bfd0c8b1a7b918e8a857b2b1a0dd7d96fc4",
+  "includes": [
+    "SAC actor",
+    "world model",
+    "pure task value"
+  ],
+  "excludes": [
+    "IL",
+    "training optimizers",
+    "replay"
+  ],
+  "intended_use": "inference; original full training checkpoint remains separate"
+}

@@ -1,0 +1,10 @@
+{
+  "task": "PickCube-v1",
+  "seed": 1,
+  "phase": "running",
+  "completed": [
+    "pick-seed1-bc-001",
+    "pick-seed1-a-001"
+  ],
+  "current": "pick-seed1-b-001"
+}

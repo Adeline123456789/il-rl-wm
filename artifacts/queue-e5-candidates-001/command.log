@@ -1,0 +1,28 @@
+{
+  "experiment_id": "e5-candidates-001",
+  "started_at": "2026-10-16T10:47:00.367933+00:00",
+  "ended_at": "2026-10-16T10:47:04.522922+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/check_candidates.py",
+    "--sac",
+    "checkpoints/e3-sac-c-full-001/final.pt",
+    "--bc",
+    "checkpoints/e1-bc-full-003/final.pt",
+    "--wm",
+    "checkpoints/e4-wm-full-001/final.pt",
+    "--output",
+    "artifacts/e5-candidates-001"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 1800.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 540281,
+  "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "fbb2668feadc1e1747fc4c27cbdc90bc1cab5cfb16c4108e335d681b15e14170",
+  "child_pid": 540299,
+  "elapsed_seconds": 4.090535158000421
+}

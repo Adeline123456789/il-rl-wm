@@ -1,0 +1,26 @@
+{
+  "pid": 680188,
+  "prerequisite": "artifacts/f1-u0-ranking-001/manifest.json",
+  "command": [
+    "python",
+    "scripts/run_experiment.py",
+    "--id",
+    "e3-rlpd-smoke-001",
+    "--seconds",
+    "1800",
+    "--",
+    ".venv-rlpd/bin/python",
+    "external/rlpd/train.py",
+    "--output",
+    "artifacts/e3-rlpd-smoke-001",
+    "--exp-name",
+    "e3-rlpd-smoke-001",
+    "--seed",
+    "0",
+    "--smoke"
+  ],
+  "started_at": "2026-10-16T11:22:40.888075+00:00",
+  "phase": "cancelled_before_launch",
+  "exit_code": null,
+  "reason": "Insert pre-collapse F1 snapshot diagnosis after final-snapshot diagnosis; RLPD smoke requeued below. No GPU job interrupted."
+}

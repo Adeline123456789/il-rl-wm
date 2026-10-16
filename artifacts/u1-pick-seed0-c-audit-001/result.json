@@ -1,0 +1,31 @@
+{
+  "valid": true,
+  "training_interactions": 262144,
+  "critic_updates": 64528,
+  "frozen_il_unchanged": true,
+  "normalization_weight_max_changes": {
+    "qf1": [
+      0.6309340000152588,
+      0.4176076650619507,
+      0.9674004316329956
+    ],
+    "qf2": [
+      0.4922041893005371,
+      0.48874592781066895,
+      1.0889582633972168
+    ],
+    "qf1_target": [
+      0.6321011781692505,
+      0.4175046682357788,
+      0.9674503803253174
+    ],
+    "qf2_target": [
+      0.49484753608703613,
+      0.48810577392578125,
+      1.0889196395874023
+    ]
+  },
+  "truncated_final_observations_distinct_from_reset": 1296,
+  "sparse_labels_equal": true,
+  "continuing_masks_zero": true
+}

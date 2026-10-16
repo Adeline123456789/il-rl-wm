@@ -1,0 +1,7 @@
+{
+  "account": "Adeline123456789",
+  "repository": "Adeline123456789/il-rl-wm",
+  "push_permission": true,
+  "check": "GitHub get_user_login + get_repo, read-only",
+  "write_attempted": false
+}

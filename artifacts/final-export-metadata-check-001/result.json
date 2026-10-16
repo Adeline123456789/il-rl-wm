@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "task": "PickCube-v1",
+  "seed": 0,
+  "training_interactions": 524288,
+  "test_episodes_executed": 0,
+  "source_is_portable_baseline_for_metadata_check_only": true
+}

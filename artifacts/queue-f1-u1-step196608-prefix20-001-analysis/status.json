@@ -1,0 +1,17 @@
+{
+  "pid": 1128166,
+  "prerequisite": "artifacts/f1-u1-step196608-prefix20-001/manifest.json",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=",
+    ".venv/bin/python",
+    "scripts/summarize_ranking.py",
+    "--experiment",
+    "artifacts/f1-u1-step196608-prefix20-001"
+  ],
+  "started_at": "2026-10-16T13:36:36.240464+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 1250245,
+  "ended_at": "2026-10-16T14:05:34.798021+00:00"
+}

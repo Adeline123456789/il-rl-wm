@@ -1,0 +1,47 @@
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 2.490s
+
+OK
+{
+  "experiment_id": "failure",
+  "started_at": "2026-10-16T09:54:31.694835+00:00",
+  "ended_at": "2026-10-16T09:54:33.697619+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "-c",
+    "raise SystemExit(7)"
+  ],
+  "cwd": "/tmp/tmpodjqj14v",
+  "limit_seconds": 5.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 363443,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": 7,
+  "stop_reason": null,
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 363580,
+  "elapsed_seconds": 2.0025566589902155
+}
+{
+  "experiment_id": "timeout",
+  "started_at": "2026-10-16T09:54:33.698434+00:00",
+  "ended_at": "2026-10-16T09:54:33.750155+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "-c",
+    "import time; time.sleep(20)"
+  ],
+  "cwd": "/tmp/tmpodjqj14v",
+  "limit_seconds": 0.05,
+  "memory_limit_mib": 20480,
+  "runner_pid": 363443,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": -15,
+  "stop_reason": "time_budget",
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 363708,
+  "elapsed_seconds": 0.05153060100565199
+}

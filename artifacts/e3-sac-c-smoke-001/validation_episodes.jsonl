@@ -1,0 +1,8 @@
+{"step": 0, "episode": 0, "env": 0, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 0, "episode": 1, "env": 1, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 0, "episode": 2, "env": 2, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 0, "episode": 3, "env": 3, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 4096, "episode": 0, "env": 0, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 4096, "episode": 1, "env": 1, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 4096, "episode": 2, "env": 2, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}
+{"step": 4096, "episode": 3, "env": 3, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0, "is_grasped_once": false, "is_obj_placed_once": false, "is_robot_static_once": true}

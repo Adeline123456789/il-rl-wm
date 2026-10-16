@@ -1,0 +1,23 @@
+diff --git a/research_state.json b/research_state.json
+index 8f417dc..180bc3b 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 2320.1848270320043,
++    "gpu_job_seconds_used": 2441.4734386859927,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+@@ -52,7 +52,8 @@
+     "e2-sac-b-smoke-002",
+     "e1-bc-diagnosis-001",
+     "e2-sac-a-full-001",
+-    "e0-pickcube-fresh-contacts-test-001"
++    "e0-pickcube-fresh-contacts-test-001",
++    "e0-pickcube-gpu-replay-full-003"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {

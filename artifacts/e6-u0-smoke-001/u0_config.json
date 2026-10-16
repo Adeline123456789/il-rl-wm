@@ -1,0 +1,14 @@
+{
+  "horizon": 2,
+  "il_candidates": 1,
+  "sac_candidates": 8,
+  "no_il_sac_candidates": 9,
+  "exploration_probability": 0.2,
+  "wm_update_every_sac_updates": 4,
+  "wm_batch_max": 512,
+  "value_update_every_sac_updates": 1,
+  "wm_checkpoint": "checkpoints/e4-wm-full-001/final.pt",
+  "task_value_checkpoint": "checkpoints/e6-value-preheat-001/final.pt",
+  "objective": "pure task return, deterministic current student continuation",
+  "wm_normalization": "fixed preheat training statistics"
+}

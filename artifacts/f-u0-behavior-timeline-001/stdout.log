@@ -1,0 +1,62 @@
+[
+  {
+    "start": 229376,
+    "end": 237568,
+    "u0_positive_reward_fraction": 0.7125244140625,
+    "u0_grasped_fraction": 0.8150634765625,
+    "u0_next_goal_distance_m": 0.05296599480880104,
+    "u0_il_fraction": 0.2760009765625,
+    "u0_random_sac_fraction": 0.2000732421875,
+    "control_positive_reward_fraction": 0.783935546875,
+    "control_next_goal_distance_m": 0.04921106994152069,
+    "q1_at_start": 32.42877960205078,
+    "q1_at_end": 33.87636184692383,
+    "task_value_loss_at_end": 3.4124531745910645,
+    "wm_loss_at_end": 0.0500839464366436
+  },
+  {
+    "start": 237568,
+    "end": 245760,
+    "u0_positive_reward_fraction": 0.2796630859375,
+    "u0_grasped_fraction": 0.3255615234375,
+    "u0_next_goal_distance_m": 0.16661043986823643,
+    "u0_il_fraction": 0.3355712890625,
+    "u0_random_sac_fraction": 0.2017822265625,
+    "control_positive_reward_fraction": 0.88232421875,
+    "control_next_goal_distance_m": 0.022908341139554977,
+    "q1_at_start": 33.87636184692383,
+    "q1_at_end": 42.2384147644043,
+    "task_value_loss_at_end": 43.635982513427734,
+    "wm_loss_at_end": 0.05069641023874283
+  },
+  {
+    "start": 245760,
+    "end": 253952,
+    "u0_positive_reward_fraction": 0.0108642578125,
+    "u0_grasped_fraction": 0.03759765625,
+    "u0_next_goal_distance_m": 0.33268355800464633,
+    "u0_il_fraction": 0.296630859375,
+    "u0_random_sac_fraction": 0.2069091796875,
+    "control_positive_reward_fraction": 0.7711181640625,
+    "control_next_goal_distance_m": 0.04281733185052872,
+    "q1_at_start": 42.2384147644043,
+    "q1_at_end": 136.52088928222656,
+    "task_value_loss_at_end": 21.333044052124023,
+    "wm_loss_at_end": 0.055240798741579056
+  },
+  {
+    "start": 253952,
+    "end": 262144,
+    "u0_positive_reward_fraction": 0.0,
+    "u0_grasped_fraction": 0.0169677734375,
+    "u0_next_goal_distance_m": 0.6169681316969218,
+    "u0_il_fraction": 0.3153076171875,
+    "u0_random_sac_fraction": 0.2060546875,
+    "control_positive_reward_fraction": 0.799072265625,
+    "control_next_goal_distance_m": 0.0466950386762619,
+    "q1_at_start": 136.52088928222656,
+    "q1_at_end": 312.8917541503906,
+    "task_value_loss_at_end": 8.023401260375977,
+    "wm_loss_at_end": 0.04782687500119209
+  }
+]

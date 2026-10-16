@@ -1,0 +1,13 @@
+{
+  "pid": 1236141,
+  "prerequisite": "artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json",
+  "command": [
+    ".venv/bin/python",
+    "artifacts/f1-all-probes-summary-001/build.py"
+  ],
+  "started_at": "2026-10-16T14:02:10.810612+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 1250546,
+  "ended_at": "2026-10-16T14:05:36.124131+00:00"
+}

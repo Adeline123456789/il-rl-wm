@@ -1,0 +1,15 @@
+{
+  "pid": 767614,
+  "prerequisite": "artifacts/pick-seed1-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_pickcube_repeat.py",
+    "--seed",
+    "2",
+    "--output",
+    "artifacts/pick-seed2-pipeline-001"
+  ],
+  "started_at": "2026-10-16T11:46:53.749449+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

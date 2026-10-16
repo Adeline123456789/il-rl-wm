@@ -1,0 +1,44 @@
+diff --git a/UPSTREAMS.md b/UPSTREAMS.md
+index 8e22613..0119f9c 100644
+--- a/UPSTREAMS.md
++++ b/UPSTREAMS.md
+@@ -5,7 +5,7 @@
+ - Repository: https://github.com/mani-skill/ManiSkill
+ - Locked commit: `62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3`（2026-10-16 取回，禁止自动更新）。
+ - License: Apache-2.0，仓库另含 LICENSE-3RD-PARTY（PyTorch3D BSD）；机器人资产按各自目录许可。缓存 checkout 保持上游不变；后续复制代码时一并保存许可证。
+-- Paper identity: 仓库 CITATION.cff 指向 Stone Tao 等，*ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI*，RSS 2025；当前仅核查了仓库声明，论文页/版本交叉核验待完成。CITATION 软件版本仍为 3.0.0，setup.py 为 3.0.1，实验以 commit 为准。
++- Paper identity: 已核验 [arXiv 2410.00425v2](https://arxiv.org/abs/2410.00425v2)，初版 2024-10-01、v2 2025-05-30；[RSS 2025 正式记录](https://roboticsproceedings.org/rss21/p021.html)，DOI `10.15607/RSS.2025.XXI.021`。两者题名不同：RSS 正式题名以 “Demonstrating” 开头，仓库 CITATION.cff 将预印本题名与 RSS 场合混合，项目 bibliography 采用正式记录并单列预印本。作者/来源见 literature/verified_sources.json；目前完成元数据核验，未宣称精读全文。CITATION 软件版本仍为 3.0.0，setup.py 为 3.0.1，实验以 commit 为准。
+ - `examples/baselines/bc/bc.py`、`behavior_cloning/{evaluate,make_env}.py`：官方 BC，拟逐步适配；其 README 声明源自 CORL，尚未引入该依赖。
+ - `examples/baselines/sac/sac.py`：官方 SAC，拟逐步适配；README 声明源自 CleanRL/ManiSkill Baselines，不另建第二个训练框架。
+ - `mani_skill/utils/download_demo.py`、`mani_skill/trajectory/replay_trajectory.py`、`scripts/data_generation/replay_for_il_baselines.sh`：原样使用工具，显式指定 sparse、record_rewards、state、控制模式；不使用逐步 use_env_states 作为真实转移。
+diff --git a/research_state.json b/research_state.json
+index f41d246..f3d1868 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 0,
++    "gpu_job_seconds_used": 165.59156347998942,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+@@ -28,7 +28,16 @@
+     "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+     "downloaded": false
+   },
+-  "experiments": [],
++  "experiments": [
++    "e0-pickcube-smoke-001",
++    "e0-peg-smoke-001",
++    "e0-stack-smoke-001",
++    "e0-pickcube-throughput-001",
++    "e0-peg-replay-001",
++    "e0-peg-replay-fixed-001",
++    "e0-pickcube-replay-001",
++    "e0-pickcube-gpu-replay-001"
++  ],
+   "results": null,
+   "next_experiment": "E0 real reset/step and official demonstration replay",
+   "blockers": [],

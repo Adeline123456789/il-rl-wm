@@ -1,0 +1,11 @@
+{
+  "pid": 449614,
+  "command": [
+    ".venv/bin/python",
+    "scripts/finish_pickcube_data.py",
+    "--gpu-id",
+    "e0-pickcube-gpu-replay-full-003",
+    "--status-path",
+    "artifacts/pickcube-data-pipeline-003/status.json"
+  ]
+}

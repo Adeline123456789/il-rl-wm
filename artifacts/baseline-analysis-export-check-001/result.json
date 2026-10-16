@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "states": 64,
+  "max_abs_action_error": 0.0,
+  "all_learned_parameters_equal": true,
+  "no_learning_state": true,
+  "il_construction_forbidden": true
+}

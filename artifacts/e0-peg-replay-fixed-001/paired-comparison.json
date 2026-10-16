@@ -1,0 +1,78 @@
+{
+  "failure_id": "F-E0-001",
+  "classification": "implementation_error_fixed",
+  "rows": [
+    {
+      "trajectory": "traj_0",
+      "fixed_initial_state_max_abs_error": 0.0,
+      "obs_equal": true,
+      "obs_max_abs_diff": 0.0,
+      "actions_equal": true,
+      "actions_max_abs_diff": 0.0,
+      "rewards_equal": true,
+      "rewards_max_abs_diff": 0.0,
+      "terminated_equal": true,
+      "terminated_max_abs_diff": 0.0,
+      "truncated_equal": true,
+      "truncated_max_abs_diff": 0.0
+    },
+    {
+      "trajectory": "traj_1",
+      "fixed_initial_state_max_abs_error": 0.0,
+      "obs_equal": true,
+      "obs_max_abs_diff": 0.0,
+      "actions_equal": true,
+      "actions_max_abs_diff": 0.0,
+      "rewards_equal": true,
+      "rewards_max_abs_diff": 0.0,
+      "terminated_equal": true,
+      "terminated_max_abs_diff": 0.0,
+      "truncated_equal": true,
+      "truncated_max_abs_diff": 0.0
+    },
+    {
+      "trajectory": "traj_2",
+      "fixed_initial_state_max_abs_error": 0.0,
+      "obs_equal": true,
+      "obs_max_abs_diff": 0.0,
+      "actions_equal": true,
+      "actions_max_abs_diff": 0.0,
+      "rewards_equal": true,
+      "rewards_max_abs_diff": 0.0,
+      "terminated_equal": true,
+      "terminated_max_abs_diff": 0.0,
+      "truncated_equal": true,
+      "truncated_max_abs_diff": 0.0
+    },
+    {
+      "trajectory": "traj_3",
+      "fixed_initial_state_max_abs_error": 0.0,
+      "obs_equal": true,
+      "obs_max_abs_diff": 0.0,
+      "actions_equal": true,
+      "actions_max_abs_diff": 0.0,
+      "rewards_equal": true,
+      "rewards_max_abs_diff": 0.0,
+      "terminated_equal": true,
+      "terminated_max_abs_diff": 0.0,
+      "truncated_equal": true,
+      "truncated_max_abs_diff": 0.0
+    },
+    {
+      "trajectory": "traj_4",
+      "fixed_initial_state_max_abs_error": 0.0,
+      "obs_equal": true,
+      "obs_max_abs_diff": 0.0,
+      "actions_equal": true,
+      "actions_max_abs_diff": 0.0,
+      "rewards_equal": true,
+      "rewards_max_abs_diff": 0.0,
+      "terminated_equal": true,
+      "terminated_max_abs_diff": 0.0,
+      "truncated_equal": true,
+      "truncated_max_abs_diff": 0.0
+    }
+  ],
+  "all_initial_states_exact": true,
+  "same_observations_actions_rewards": true
+}

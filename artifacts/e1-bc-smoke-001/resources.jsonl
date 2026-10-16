@@ -1,0 +1,8 @@
+{"timestamp": "2026-10-16T09:34:27.574112+00:00", "elapsed_seconds": 0.06259659001079854, "index": 0, "memory_mib": 1012, "utilization_percent": 38}
+{"timestamp": "2026-10-16T09:34:29.608639+00:00", "elapsed_seconds": 2.0971301829995355, "index": 0, "memory_mib": 1310, "utilization_percent": 35}
+{"timestamp": "2026-10-16T09:34:31.627617+00:00", "elapsed_seconds": 4.11610899301013, "index": 0, "memory_mib": 3573, "utilization_percent": 5}
+{"timestamp": "2026-10-16T09:34:33.646587+00:00", "elapsed_seconds": 6.13507946000027, "index": 0, "memory_mib": 3617, "utilization_percent": 73}
+{"timestamp": "2026-10-16T09:34:35.665632+00:00", "elapsed_seconds": 8.154120612001861, "index": 0, "memory_mib": 3573, "utilization_percent": 78}
+{"timestamp": "2026-10-16T09:34:37.686599+00:00", "elapsed_seconds": 10.175093137004296, "index": 0, "memory_mib": 3582, "utilization_percent": 80}
+{"timestamp": "2026-10-16T09:34:39.706304+00:00", "elapsed_seconds": 12.194797224001377, "index": 0, "memory_mib": 3546, "utilization_percent": 81}
+{"timestamp": "2026-10-16T09:34:41.727489+00:00", "elapsed_seconds": 14.215981129003922, "index": 0, "memory_mib": 3590, "utilization_percent": 78}

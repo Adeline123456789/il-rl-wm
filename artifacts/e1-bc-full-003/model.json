@@ -1,0 +1,4 @@
+{
+  "parameters": 143620,
+  "architecture": "3x256 ReLU + mean + tanh; raw state"
+}

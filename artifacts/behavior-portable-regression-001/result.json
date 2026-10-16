@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "models": 2,
+  "bin_sizes": [
+    65536,
+    8192
+  ],
+  "all_statistics_equal": true,
+  "new_environment_interactions": 0
+}

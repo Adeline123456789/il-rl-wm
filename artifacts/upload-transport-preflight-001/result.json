@@ -1,0 +1,11 @@
+{
+  "git_blob": "288dcd72b65d5190b360384d3486d5cd3a2ebfc9",
+  "bytes": 5734080,
+  "chunk_bytes": 393216,
+  "chunks": 15,
+  "all_chunks_complete": true,
+  "combined_base64_characters": 7645440,
+  "expected_base64_characters": 7645440,
+  "direct_read_truncated_at_output_characters": 1048607,
+  "external_write_attempted": false
+}

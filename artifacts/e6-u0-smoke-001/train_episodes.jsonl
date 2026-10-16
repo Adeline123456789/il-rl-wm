@@ -1,0 +1,16 @@
+{"step": 3200, "env": 0, "episode_id": 1312, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 3200, "env": 1, "episode_id": 1313, "success_once": 1.0, "return": 77.0, "episode_len": 200.0, "reward": 0.38499999046325684, "success_at_end": 1.0}
+{"step": 3200, "env": 2, "episode_id": 1314, "success_once": 1.0, "return": 167.0, "episode_len": 200.0, "reward": 0.8349999785423279, "success_at_end": 1.0}
+{"step": 3200, "env": 3, "episode_id": 1315, "success_once": 1.0, "return": 10.0, "episode_len": 200.0, "reward": 0.05000000074505806, "success_at_end": 0.0}
+{"step": 3200, "env": 4, "episode_id": 1316, "success_once": 1.0, "return": 40.0, "episode_len": 200.0, "reward": 0.20000000298023224, "success_at_end": 0.0}
+{"step": 3200, "env": 5, "episode_id": 1317, "success_once": 1.0, "return": 26.0, "episode_len": 200.0, "reward": 0.12999999523162842, "success_at_end": 0.0}
+{"step": 3200, "env": 6, "episode_id": 1318, "success_once": 1.0, "return": 154.0, "episode_len": 200.0, "reward": 0.7699999809265137, "success_at_end": 1.0}
+{"step": 3200, "env": 7, "episode_id": 1319, "success_once": 1.0, "return": 4.0, "episode_len": 200.0, "reward": 0.019999999552965164, "success_at_end": 0.0}
+{"step": 3200, "env": 8, "episode_id": 1320, "success_once": 1.0, "return": 165.0, "episode_len": 200.0, "reward": 0.824999988079071, "success_at_end": 1.0}
+{"step": 3200, "env": 9, "episode_id": 1321, "success_once": 1.0, "return": 153.0, "episode_len": 200.0, "reward": 0.7649999856948853, "success_at_end": 1.0}
+{"step": 3200, "env": 10, "episode_id": 1322, "success_once": 1.0, "return": 153.0, "episode_len": 200.0, "reward": 0.7649999856948853, "success_at_end": 1.0}
+{"step": 3200, "env": 11, "episode_id": 1323, "success_once": 1.0, "return": 146.0, "episode_len": 200.0, "reward": 0.7300000190734863, "success_at_end": 1.0}
+{"step": 3200, "env": 12, "episode_id": 1324, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 3200, "env": 13, "episode_id": 1325, "success_once": 1.0, "return": 161.0, "episode_len": 200.0, "reward": 0.8050000071525574, "success_at_end": 1.0}
+{"step": 3200, "env": 14, "episode_id": 1326, "success_once": 1.0, "return": 63.0, "episode_len": 200.0, "reward": 0.3149999976158142, "success_at_end": 1.0}
+{"step": 3200, "env": 15, "episode_id": 1327, "success_once": 1.0, "return": 30.0, "episode_len": 200.0, "reward": 0.15000000596046448, "success_at_end": 0.0}

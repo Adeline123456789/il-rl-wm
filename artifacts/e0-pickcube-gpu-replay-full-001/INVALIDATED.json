@@ -1,0 +1,1 @@
+{"failure_id":"F-E0-003","reason":"931 episodes violate source length/action/first-state invariants. Prior dataset-audit was insufficient; never use for learning."}

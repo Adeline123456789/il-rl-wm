@@ -1,0 +1,10 @@
+{
+  "pid": 299744,
+  "command": [
+    ".venv/bin/python",
+    "scripts/download_demos.py",
+    "--env-id",
+    "PickCube-v1"
+  ],
+  "started_unix": 1792142204.8421516
+}

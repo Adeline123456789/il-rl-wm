@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/after_success.py", line 53, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/after_success.py", line 44, in main
+    assert record['exit_code']==0, 'Dependent command failed; no retries'
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Dependent command failed; no retries

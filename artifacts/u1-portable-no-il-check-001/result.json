@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "states": 64,
+  "bitexact": true,
+  "il_constructor_forbidden": true,
+  "original_large_checkpoint_required": false,
+  "new_environment_interactions": 0,
+  "source_hashes": {
+    "releases/u1-final-001/policy.pt": "3b1a18bf1c256bf0aedac1b459447bfd0c8b1a7b918e8a857b2b1a0dd7d96fc4",
+    "releases/u1-seed0-analysis-final-001/weights.pt": "c729f93666550b16e95e48f1888e27a0e1fb5917e826eca2ba3ab9776af0097e"
+  }
+}

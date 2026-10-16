@@ -1,0 +1,8 @@
+{
+  "expert_audit": "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+  "online_checkpoint": "checkpoints/u1-pick-seed0-c-001/final.pt",
+  "output": "artifacts/u1-pick-seed0-wm-001",
+  "updates": 10000,
+  "batch_size": 512,
+  "seed": 0
+}

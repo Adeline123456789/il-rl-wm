@@ -1,0 +1,17 @@
+{
+  "pid": 794945,
+  "prerequisite": "artifacts/e7-independent-eval-smoke-001/manifest.json",
+  "command": [
+    "python",
+    "scripts/prepare_task_data.py",
+    "--task",
+    "StackCube-v1",
+    "--status-path",
+    "artifacts/stack-data-pipeline-001/status.json"
+  ],
+  "started_at": "2026-10-16T11:59:25.463067+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 804494,
+  "ended_at": "2026-10-16T12:15:11.164291+00:00"
+}

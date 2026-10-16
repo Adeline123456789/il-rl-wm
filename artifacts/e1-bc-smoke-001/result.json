@@ -1,0 +1,12 @@
+{
+  "iterations": 100,
+  "training_examples": 956,
+  "validation_examples": 286,
+  "validation_interactions": 1600,
+  "training_online_interactions": 0,
+  "elapsed_seconds": 12.008003691997146,
+  "torch_peak_allocated_bytes": 21421056,
+  "torch_peak_reserved_bytes": 27262976,
+  "checkpoint_selection": "fixed_final",
+  "final_test_evaluated": false
+}

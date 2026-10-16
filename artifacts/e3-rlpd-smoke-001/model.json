@@ -1,0 +1,5 @@
+{
+  "trainable_parameters": 1598739,
+  "critic_ensemble": 10,
+  "layer_norm": true
+}

@@ -1,0 +1,24 @@
+{
+  "pid": 587474,
+  "prerequisite": "artifacts/e3-sac-c-continue-full-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "f1-u0-ranking-001",
+    "--seconds",
+    "1800",
+    "--",
+    ".venv/bin/python",
+    "scripts/diagnose_ranking.py",
+    "--checkpoint",
+    "checkpoints/e6-u0-full-001/final.pt",
+    "--output",
+    "artifacts/f1-u0-ranking-001"
+  ],
+  "started_at": "2026-10-16T10:59:06.421816+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 767914,
+  "ended_at": "2026-10-16T11:54:13.542630+00:00"
+}

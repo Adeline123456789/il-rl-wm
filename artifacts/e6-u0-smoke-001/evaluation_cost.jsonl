@@ -1,0 +1,8 @@
+{"step": 0, "method": "il", "wall_seconds": 4.875805410003522, "candidates": 1, "horizon": 1, "environment_interactions": 800}
+{"step": 0, "method": "sac", "wall_seconds": 6.090437603008468, "candidates": 1, "horizon": 1, "environment_interactions": 800}
+{"step": 0, "method": "il_sac_wm", "wall_seconds": 6.396410122004454, "candidates": 9, "horizon": 2, "environment_interactions": 800}
+{"step": 0, "method": "sac_wm", "wall_seconds": 6.317963228997542, "candidates": 9, "horizon": 2, "environment_interactions": 800}
+{"step": 4096, "method": "il", "wall_seconds": 4.874566472004517, "candidates": 1, "horizon": 1, "environment_interactions": 800}
+{"step": 4096, "method": "sac", "wall_seconds": 6.2170963429962285, "candidates": 1, "horizon": 1, "environment_interactions": 800}
+{"step": 4096, "method": "il_sac_wm", "wall_seconds": 6.2999235299939755, "candidates": 9, "horizon": 2, "environment_interactions": 800}
+{"step": 4096, "method": "sac_wm", "wall_seconds": 6.5148634600045625, "candidates": 9, "horizon": 2, "environment_interactions": 800}

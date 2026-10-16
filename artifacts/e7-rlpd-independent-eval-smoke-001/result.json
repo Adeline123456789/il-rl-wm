@@ -1,0 +1,24 @@
+{
+  "policy": "releases/rlpd-smoke-001",
+  "actor_sha256": "42e3324f26b762891bf9ed96acd29e42733028ca60d33da1a8a34ea6dd7a9840",
+  "purpose": "validation",
+  "seed": 10000,
+  "episodes": 4,
+  "num_envs": 4,
+  "success_once": 0.0,
+  "success_at_end": 0.0,
+  "mean_return": 0.0,
+  "interactions": 800,
+  "elapsed_seconds": 5.191722559990012,
+  "new_training_interactions": 0,
+  "checkpoint_selection": "fixed final",
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "reward_mode": "sparse",
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "ignore_terminations": true
+  }
+}

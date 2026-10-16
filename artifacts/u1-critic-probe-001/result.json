@@ -1,0 +1,36 @@
+{
+  "checkpoint": "releases/u0-analysis-precollapse-001/weights.pt",
+  "checkpoint_sha256": "c034dd0dbfca99edce065c29dfe7b84a5c778c710ed145e0f87fee42ffd7720c",
+  "inputs": "artifacts/f-u0-value-drift-002/fixed_batches.npz",
+  "inputs_sha256": "c4f5465d0fa54bdb21796cea2f0985211a0998799768a6545177cd7ce6411933",
+  "samples": 4096,
+  "new_environment_interactions": 0,
+  "new_gradient_updates": 0,
+  "results": {
+    "qf1_original": {
+      "q_mean": 30.253419876098633,
+      "q_std": 9.616312980651855,
+      "mean_action_gradient_norm": 3.0150814056396484,
+      "max_action_gradient_norm": 19.04568099975586
+    },
+    "qf1_inserted_norm": {
+      "q_mean": 6.626107692718506,
+      "q_std": 4.3646464347839355,
+      "mean_action_gradient_norm": 2.5478553771972656,
+      "max_action_gradient_norm": 12.226489067077637
+    },
+    "qf2_original": {
+      "q_mean": 30.277864456176758,
+      "q_std": 9.60224437713623,
+      "mean_action_gradient_norm": 3.2752227783203125,
+      "max_action_gradient_norm": 19.843786239624023
+    },
+    "qf2_inserted_norm": {
+      "q_mean": 6.772625923156738,
+      "q_std": 3.832638740539551,
+      "mean_action_gradient_norm": 1.749541997909546,
+      "max_action_gradient_norm": 22.546810150146484
+    }
+  },
+  "interpretation": "Direct insertion changes the already learned critic function. This is not a calibrated estimate or evidence of better behavior. U1 must use the registered matched-initialization full training comparison, not silently replace a trained critic."
+}

@@ -1,0 +1,7 @@
+{
+  "phase": "completed",
+  "task": "PegInsertionSide-v1",
+  "audit": "artifacts/e0-peg-gpu-replay-full-002/dataset-audit.json",
+  "eligible": 126,
+  "failed_retained": 874
+}

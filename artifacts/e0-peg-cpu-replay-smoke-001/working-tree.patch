@@ -1,0 +1,132 @@
+diff --git a/configs/formal_comparison_plan.md b/configs/formal_comparison_plan.md
+index 58f5421..6192b8d 100644
+--- a/configs/formal_comparison_plan.md
++++ b/configs/formal_comparison_plan.md
+@@ -19,3 +19,5 @@ StackCube与PegInsertionSide先完成数据审计及seed0完整开发训练，
+ 调参与故障研究用validation seed10000及独立诊断seed30000。方法/改动固定后，最终测试seed20000，每个模型100个完整回合；最终测试不参与选择改动或checkpoint。100回合只估计一个训练模型的评测波动，不替代独立训练种子。主报告给逐seed成功率、回报、原始回合数据与训练种子间离散程度；少量seed的统计不作充分性保证。
+ 
+ 各任务所有方法保持相同控制/时限/奖励/继续成功语义，资源记录包括全流程预热、训练、验证、最终测试、反事实诊断、失败作业和整卡峰值。RLPD与C/U0是等在线交互而非等计算比较；若未能完成其等交互预算，明确标成不完整基线，不据此宣称胜过RLPD。
++
++U1预登记补充：critic归一化改变参数化，因此按U1_CHANGE.md从同一冻结BC/同seed/匹配Linear初始化重新训练两阶段，不能将已学习无LN critic直接插入LN后称为等价起点。总在线交互仍524288，C-LN续训另作配套对照。固定快照检查先量化插入导致的尺度变化；完整从头阶段对照与原表短分叉实验分开报告。
+diff --git a/research_state.json b/research_state.json
+index eba1c13..2ab24c5 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,9 +19,9 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 8485.02157654002,
++    "gpu_job_seconds_used": 9141.221294842035,
+     "local_changes_limit": 2,
+-    "local_changes_used": 0
++    "local_changes_used": 1
+   },
+   "data_version": {
+     "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+@@ -74,7 +74,9 @@
+     "e3-rlpd-smoke-001",
+     "e7-independent-eval-smoke-001",
+     "e0-stack-cpu-replay-smoke-001",
+-    "e0-stack-gpu-replay-smoke-001"
++    "e0-stack-gpu-replay-smoke-001",
++    "e0-stack-cpu-replay-full-001",
++    "e0-stack-gpu-replay-full-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {
+@@ -483,5 +485,13 @@
+     "local_git_https": "no credential; dry-run exit128",
+     "github_connector": "authenticated as repository owner; metadata reports push permission",
+     "status": "write not attempted; use connector at batch end"
+-  }
++  },
++  "local_hypotheses": [
++    {
++      "id": "U1",
++      "mechanism": "SAC critic hidden LayerNorm only",
++      "status": "registered_before_implementation",
++      "specification": "U1_CHANGE.md"
++    }
++  ]
+ }
+diff --git a/scripts/diagnose_value_drift.py b/scripts/diagnose_value_drift.py
+index bccce6c..0fb894b 100644
+--- a/scripts/diagnose_value_drift.py
++++ b/scripts/diagnose_value_drift.py
+@@ -50,7 +50,7 @@ def main():
+         env=SimpleNamespace(single_observation_space=SimpleNamespace(shape=(actor.backbone[0].in_features,)),single_action_space=SimpleNamespace(shape=(actor.fc_mean.out_features,)))
+         critics=[]
+         for key in ['qf1','qf2','qf1_target','qf2_target']:
+-            q=SoftQNetwork(env);q.load_state_dict(snapshot[key]);q.eval();critics.append(q)
++            q=SoftQNetwork(env,layer_norm=snapshot['config'].get('critic_layer_norm',False));q.load_state_dict(snapshot[key]);q.eval();critics.append(q)
+         q1,q2,qt1,qt2=critics
+         value=task_value({'value':snapshot['u0']['value']},'cpu')
+         target=task_value({'value':snapshot['u0']['value_target']},'cpu')
+diff --git a/scripts/sac_evidence.py b/scripts/sac_evidence.py
+index f2f39e9..a106955 100644
+--- a/scripts/sac_evidence.py
++++ b/scripts/sac_evidence.py
+@@ -75,6 +75,7 @@ def save_snapshot(output, run_name, step, updates, actor, q1, q2, qt1, qt2, acto
+ 
+ def restore_new_segment(path, actor, q1, q2, qt1, qt2, actor_opt, q_opt, log_alpha, alpha_opt, replay, il, output, args):
+     state=torch.load(path,map_location='cpu')
++    assert state['config'].get('critic_layer_norm',False)==args.critic_layer_norm, 'Resume must preserve critic parameterization'
+     for key in ['env_id','control_mode','max_episode_steps','gamma','reconfiguration_freq','bootstrap_at_done']:
+         assert state['config'][key]==getattr(args,key), f'Resume protocol mismatch: {key}'
+     assert state['replay']['num_envs']==replay.num_envs and state['replay']['capacity']==replay.per_env_buffer_size
+diff --git a/scripts/train_sac.py b/scripts/train_sac.py
+index c6dd5d7..83fca01 100644
+--- a/scripts/train_sac.py
++++ b/scripts/train_sac.py
+@@ -48,6 +48,8 @@ class Args:
+     resume_checkpoint: Optional[str] = None
+     wm_checkpoint: Optional[str] = None
+     task_value_checkpoint: Optional[str] = None
++    critic_layer_norm: bool = False
++    """U1 only: LayerNorm before each critic hidden ReLU; see U1_CHANGE.md."""
+     inherited_training_interactions: int = 0
+     max_episode_steps: int = 200
+     eval_seed: int = 10000
+@@ -229,17 +231,16 @@ class ReplayBuffer:
+ 
+ # ALGO LOGIC: initialize agent here:
+ class SoftQNetwork(nn.Module):
+-    def __init__(self, env):
++    def __init__(self, env, layer_norm=False):
+         super().__init__()
+-        self.net = nn.Sequential(
+-            nn.Linear(np.array(env.single_observation_space.shape).prod() + np.prod(env.single_action_space.shape), 256),
+-            nn.ReLU(),
+-            nn.Linear(256, 256),
+-            nn.ReLU(),
+-            nn.Linear(256, 256),
+-            nn.ReLU(),
+-            nn.Linear(256, 1),
+-        )
++        dims=[np.array(env.single_observation_space.shape).prod()+np.prod(env.single_action_space.shape),256,256,256]
++        layers=[]
++        for source,target in zip(dims[:-1],dims[1:]):
++            layers.append(nn.Linear(source,target))
++            if layer_norm:layers.append(nn.LayerNorm(target,eps=1e-6))
++            layers.append(nn.ReLU())
++        layers.append(nn.Linear(256,1))
++        self.net=nn.Sequential(*layers)
+ 
+     def forward(self, x, a):
+         x = torch.cat([x, a], 1)
+@@ -425,10 +426,10 @@ if __name__ == "__main__":
+         teacher_hash = fingerprint(frozen_il)
+         initialize_sac_mean(bc, actor)
+         del bc
+-    qf1 = SoftQNetwork(envs).to(device)
+-    qf2 = SoftQNetwork(envs).to(device)
+-    qf1_target = SoftQNetwork(envs).to(device)
+-    qf2_target = SoftQNetwork(envs).to(device)
++    qf1 = SoftQNetwork(envs,args.critic_layer_norm).to(device)
++    qf2 = SoftQNetwork(envs,args.critic_layer_norm).to(device)
++    qf1_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
++    qf2_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
+     if args.checkpoint is not None:
+         ckpt = torch.load(args.checkpoint)
+         actor.load_state_dict(ckpt['actor'])

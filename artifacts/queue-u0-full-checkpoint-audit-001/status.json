@@ -1,0 +1,17 @@
+{
+  "pid": 710820,
+  "prerequisite": "artifacts/e6-u0-full-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_u0_checkpoint.py",
+    "--checkpoint",
+    "checkpoints/e6-u0-full-001/final.pt",
+    "--output",
+    "artifacts/e6-u0-full-001/checkpoint-audit.json"
+  ],
+  "started_at": "2026-10-16T11:32:24.536341+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 711110,
+  "ended_at": "2026-10-16T11:32:31.703422+00:00"
+}

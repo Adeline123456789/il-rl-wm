@@ -1,0 +1,32 @@
+{
+  "experiment_id": "u1-pick-seed0-value-001",
+  "started_at": "2026-10-16T13:13:06.490773+00:00",
+  "ended_at": "2026-10-16T13:13:14.626714+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/train_task_value.py",
+    "--sac",
+    "checkpoints/u1-pick-seed0-c-001/final.pt",
+    "--expert-audit",
+    "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+    "--wm",
+    "checkpoints/u1-pick-seed0-wm-001/final.pt",
+    "--output",
+    "artifacts/u1-pick-seed0-value-001",
+    "--updates",
+    "5000",
+    "--seed",
+    "0"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 1800.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 1028143,
+  "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "81d8d9d6443182bf4eee595ae647ea14443b112be443b62275da8073441b17d1",
+  "child_pid": 1028160,
+  "elapsed_seconds": 8.120895854997798
+}

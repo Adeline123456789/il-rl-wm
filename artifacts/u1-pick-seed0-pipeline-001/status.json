@@ -1,0 +1,14 @@
+{
+  "seed": 0,
+  "phase": "completed",
+  "completed": [
+    "u1-pick-seed0-c-001",
+    "u1-pick-seed0-wm-001",
+    "u1-pick-seed0-value-001",
+    "u1-pick-seed0-u0-001",
+    "u1-pick-seed0-c-continue-001"
+  ],
+  "current": null,
+  "limit_seconds": 5400,
+  "elapsed_seconds": 3122.842558338991
+}

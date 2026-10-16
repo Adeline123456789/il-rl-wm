@@ -1,0 +1,241 @@
+{
+  "checkpoint": "releases/u0-analysis-precollapse-001/weights.pt",
+  "checkpoint_sha256": "c034dd0dbfca99edce065c29dfe7b84a5c778c710ed145e0f87fee42ffd7720c",
+  "configuration": {
+    "checkpoint": "releases/u0-analysis-precollapse-001/weights.pt",
+    "output": "artifacts/f1-u0-step196608-prefix20-001",
+    "states": 8,
+    "prefix_steps": 20,
+    "continuation_steps": 400,
+    "repeats": 2
+  },
+  "environment_time_limit": 421,
+  "training_time_limit": 200,
+  "time_limit_note": "Artificial recording time limit extended only in diagnosis to measure continuing return without resetting; physics/control/sparse reward unchanged",
+  "matching_method": "Repeated fresh resets at seed30000 and identical recorded deterministic student prefix; not arbitrary simulator-state restoration",
+  "matching_tolerance": 1e-05,
+  "valid_states": 8,
+  "total_states": 8,
+  "prefix_max_error": 0.0,
+  "score_target": "Infinite continuing task return after H2 commitment and deterministic student continuation",
+  "observed_target": "Finite 400-step discounted real return, no reset during continuation",
+  "unobserved_tail_interval": [
+    0,
+    1.795055327504512
+  ],
+  "finite_return_tie_tolerance": 1.0,
+  "limitations": "Eight matched states and repeated branches are not independent training runs. Unmatched states are retained in raw data but excluded from ranking. Pairwise metrics describe finite-horizon outcomes; differences below the remaining tail bound may change for infinite return. Repeat ranges are empirical spread, not confidence intervals.",
+  "new_training_interactions": 0,
+  "results": {
+    "first_action_student": {
+      "valid_state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "states": [
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 97.76074497289733,
+          "selected_return": 97.76074497289733,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "il",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 93.02849459598892,
+          "selected_return": 93.02849459598892,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "il",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        }
+      ],
+      "repeat_return_range_max": 0.0,
+      "il_prediction_bias_to_finite_return": -17.77830887551589,
+      "sac_prediction_bias_to_finite_return": -17.718712068751287
+    },
+    "sequence_student": {
+      "valid_state_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "states": [
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 97.76074497289733,
+          "selected_return": 97.76074497289733,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "il",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 93.02849459598892,
+          "selected_return": 93.02849459598892,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "il",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        }
+      ],
+      "repeat_return_range_max": 0.0,
+      "il_prediction_bias_to_finite_return": -17.77830887551589,
+      "sac_prediction_bias_to_finite_return": -17.656837068751287
+    }
+  }
+}

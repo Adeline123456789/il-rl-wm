@@ -1,0 +1,131 @@
+{
+  "failure_id": "F-E0-001",
+  "replayed_file": "data/replay/e0-peg-replay-001/trajectory.state.pd_ee_delta_pose.physx_cpu.h5",
+  "comparisons": [
+    {
+      "trajectory": "traj_0",
+      "fields": [
+        {
+          "field": "actors/box_with_hole",
+          "max_abs_vs_original_initial": 3.725290298461914e-09,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/peg",
+          "max_abs_vs_original_initial": 0.006873303558677435,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/table-workspace",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "articulations/panda_wristcam",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        }
+      ]
+    },
+    {
+      "trajectory": "traj_1",
+      "fields": [
+        {
+          "field": "actors/box_with_hole",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/peg",
+          "max_abs_vs_original_initial": 0.007751167751848698,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/table-workspace",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "articulations/panda_wristcam",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        }
+      ]
+    },
+    {
+      "trajectory": "traj_2",
+      "fields": [
+        {
+          "field": "actors/box_with_hole",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/peg",
+          "max_abs_vs_original_initial": 0.0012770937755703926,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/table-workspace",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "articulations/panda_wristcam",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        }
+      ]
+    },
+    {
+      "trajectory": "traj_3",
+      "fields": [
+        {
+          "field": "actors/box_with_hole",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/peg",
+          "max_abs_vs_original_initial": 0.0007672345382161438,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/table-workspace",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "articulations/panda_wristcam",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        }
+      ]
+    },
+    {
+      "trajectory": "traj_4",
+      "fields": [
+        {
+          "field": "actors/box_with_hole",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/peg",
+          "max_abs_vs_original_initial": 0.001834216876886785,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "actors/table-workspace",
+          "max_abs_vs_original_initial": 5.960464477539063e-08,
+          "max_abs_vs_original_second": 0.0
+        },
+        {
+          "field": "articulations/panda_wristcam",
+          "max_abs_vs_original_initial": 0.0,
+          "max_abs_vs_original_second": 0.0
+        }
+      ]
+    }
+  ]
+}

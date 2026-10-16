@@ -1,0 +1,18 @@
+Loading 13 episodes
+Loading 4 episodes
+Iteration 0, loss: 0.2569979429244995
+Iteration 10, loss: 0.22236281633377075
+Iteration 20, loss: 0.16650909185409546
+Iteration 30, loss: 0.0805695429444313
+Iteration 40, loss: 0.03453616797924042
+Iteration 50, loss: 0.01958642154932022
+Iteration 60, loss: 0.024410419166088104
+Iteration 70, loss: 0.01681854948401451
+Iteration 80, loss: 0.019905809313058853
+Iteration 90, loss: 0.016463693231344223
+Evaluated 2 episodes
+success_once: 0.0000
+return: 0.0000
+episode_len: 200.0000
+reward: 0.0000
+success_at_end: 0.0000

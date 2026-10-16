@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "python",
+      "/home/midea/.codex/skills/nature-figure/scripts/validate_figure.py",
+      "scripts/plot_seed0_diagnosis.py"
+    ],
+    "exit_code": 1
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/plot_seed0_diagnosis.py",
+      "--qa-scripts",
+      "/home/midea/.codex/skills/nature-figure/scripts"
+    ],
+    "exit_code": 1
+  },
+  {
+    "command": [
+      "python",
+      "/home/midea/.codex/skills/nature-figure/scripts/audit_pdf_text.py",
+      "figures/seed0-diagnosis/seed0-diagnosis.pdf",
+      "--min-pt",
+      "5",
+      "--json"
+    ],
+    "exit_code": 2
+  },
+  {
+    "command": [
+      "python",
+      "/home/midea/.codex/skills/nature-figure/scripts/audit_figure_collisions.py",
+      "figures/seed0-diagnosis/seed0-diagnosis.pdf",
+      "--json-out",
+      "figures/seed0-diagnosis/collision-audit.json",
+      "--overlay-pdf",
+      "figures/seed0-diagnosis/collision-audit.pdf"
+    ],
+    "exit_code": 2
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "path": "scripts/run_pickcube_repeat.py",
+    "sha256": "7e34816a0f2450130d97d6ecc812b0571ebc3709ca34ebc2c68074d6a3915e45",
+    "experiment": "e0-peg-gpu-replay-smoke-001",
+    "base_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+    "patch_sha256": "91f3be87fd47d0e2d5367379a4b2811de07f64f8ca6950a3ffdbeb423e2fc8b6"
+  },
+  {
+    "path": "scripts/replay_trajectory.py",
+    "sha256": "8a3d37b63ac48f06b26771977ba5318db91ab7ee28c32f5567b57e575327a5fa",
+    "experiment": "e0-pickcube-gpu-replay-boundary-test-001",
+    "base_commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+    "patch_sha256": "745bddcc47f80c5a79771b86681b8121f9b2d360ed0df55d3dd97222baf854dd"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "pid": 1360078,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/u1-pick-seed0-u0-001/manifest.json",
+    "--output",
+    "artifacts/queue-seed0-runtime-costs-001",
+    "--max-wait-seconds",
+    "60",
+    "--",
+    ".venv/bin/python",
+    "artifacts/seed0-runtime-costs-001/build.py"
+  ],
+  "cpu_only": true
+}

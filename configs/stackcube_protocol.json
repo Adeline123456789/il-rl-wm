@@ -1,0 +1,57 @@
+{
+  "protocol_version": 2,
+  "env_id": "StackCube-v1",
+  "obs_mode": "state",
+  "control_mode": "pd_ee_delta_pos",
+  "reward_mode": "sparse",
+  "sim_backend": "physx_cuda",
+  "control_frequency_hz": 20,
+  "max_episode_steps": 300,
+  "horizon_rationale": "Fixed before any learned-policy result on this task. Official motionplanning p95 length 126, maximum 412; use 300 steps for every method on this task. Raw longer demonstrations are retained and flagged; continuing-task targets are not reset by recording boundaries.",
+  "termination_protocol": "Continue after task success; stop episodes at time limit. Preserve raw task termination and truncation labels; effective task terminal mask is false under this continuing-task protocol, and time limits bootstrap from final observation.",
+  "demo_repository": "haosulab/ManiSkill_Demonstrations",
+  "demo_revision": "d674485bbffdd533914e52d272fdda34c0515608",
+  "demo_source_type": "motionplanning",
+  "original_episode_ids": {
+    "first": 0,
+    "last": 999
+  },
+  "conversion": "Official CPU action conversion with first-state recording repair; then true GPU action replay from initial state only. Never force each timestep's state.",
+  "failed_replay_policy": "Retain all raw failures; only final-success GPU-replayed episodes enter the shared BC/expert dataset, matching upstream expert-quality filtering. Log excluded IDs, and split whole eligible episodes 80/20 using seed 42. Never select using policy test performance.",
+  "split_seed": 42,
+  "normalization": "none for policies",
+  "bc": {
+    "iterations": 10000,
+    "batch_size": 1024,
+    "learning_rate": 0.0003,
+    "architecture": "3x256 ReLU + tanh mean",
+    "checkpoint_selection": "fixed_final"
+  },
+  "validation_seed": 10000,
+  "final_test_seed": 20000,
+  "final_test_episodes": 100,
+  "sac_gamma": 0.99,
+  "sac_gamma_note": "Explicit CLI override of upstream0.8, fixed before all methods; task horizon300, continuing sparse reward.",
+  "initial_training_seed": 0,
+  "later_training_seeds": [
+    1,
+    2
+  ],
+  "candidate_counts": {
+    "il": 1,
+    "sac": 8,
+    "sac_without_il": 9
+  },
+  "planning_horizon": 2,
+  "execute_actions_per_replan": 1,
+  "actual_sac_exploration_probability": 0.2,
+  "bc_smoke": {
+    "replay_episodes": 64,
+    "iterations": 100,
+    "batch_size": 256,
+    "validation_episodes": 8,
+    "purpose": "engineering_only"
+  },
+  "reconfiguration_freq": 1,
+  "reset_revision_reason": "Use corrected protocol-v2 fresh scene reset for every task; no separate environment framework."
+}

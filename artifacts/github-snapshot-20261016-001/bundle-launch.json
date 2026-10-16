@@ -1,0 +1,7 @@
+{
+  "pid": 1389878,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/github-snapshot-20261016-001/prepare_history.py"
+  ]
+}

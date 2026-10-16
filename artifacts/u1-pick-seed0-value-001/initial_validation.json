@@ -1,0 +1,22 @@
+{
+  "expert": {
+    "samples": 13717,
+    "td_mse": 0.05216480791568756,
+    "td_mae": 0.05784013494849205,
+    "q_mean": -0.125814288854599,
+    "q_min": -0.22380268573760986,
+    "q_max": -0.03581085428595543,
+    "outside_known_return_range_fraction": 1.0,
+    "caution": "Held-out Bellman consistency, not verified Monte Carlo value accuracy"
+  },
+  "online": {
+    "samples": 52321,
+    "td_mse": 0.2808879315853119,
+    "td_mae": 0.2998255789279938,
+    "q_mean": -0.16018611192703247,
+    "q_min": -1.4409213066101074,
+    "q_max": 0.22246360778808594,
+    "outside_known_return_range_fraction": 0.996636152267456,
+    "caution": "Held-out Bellman consistency, not verified Monte Carlo value accuracy"
+  }
+}

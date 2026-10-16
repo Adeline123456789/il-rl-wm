@@ -1,0 +1,7 @@
+{
+  "parent": "checkpoints/u1-pick-seed0-c-001/final.pt",
+  "sha256": "8547d24ca5cd18518c0ce3727af995fdabb5d64f6ac2e324d21aecc36b8fd2ac",
+  "inherited_training_interactions": 262144,
+  "parent_gradient_updates": 64528,
+  "recovery": "New simulator segment; learner/optimizers/temperature/replay retained. Fresh configured seed, not an exact interrupted trajectory/RNG continuation."
+}

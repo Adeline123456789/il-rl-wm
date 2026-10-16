@@ -1,0 +1,18 @@
+{
+  "pid": 860672,
+  "prerequisite": "artifacts/u1-pick-seed0-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_pickcube_repeat.py",
+    "--seed",
+    "1",
+    "--output",
+    "artifacts/pick-seed1-pipeline-001"
+  ],
+  "started_at": "2026-10-16T12:28:19.709124+00:00",
+  "phase": "cancelled_before_child",
+  "exit_code": null,
+  "ended_at": "2026-10-16T13:36:36.200352+00:00",
+  "reason": "Insert two preregistered prefix20 F1 diagnostics after U1seed0 pipeline; original independent seed1 plan is unchanged.",
+  "replacement": "artifacts/queue-pick-seed1-pipeline-003/status.json"
+}

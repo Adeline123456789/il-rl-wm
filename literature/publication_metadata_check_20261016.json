@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Complete already-used source bibliography and independently verify outstanding publication metadata; no new algorithm mechanism",
+  "search_queries": [
+    "site:proceedings.mlr.press \"Multi-Stage Manipulation with Demonstration-Augmented Reward\"",
+    "site:openreview.net \"Dropout Q-Functions for Doubly Efficient\"",
+    "site:openreview.net \"Randomized Ensembled Double Q-Learning\"",
+    "\"TD-MPC2\" site:openreview.net/forum",
+    "\"Imitation Bootstrapped Reinforcement Learning\" site:roboticsproceedings.org"
+  ],
+  "verified_publishers": {
+    "DEMO3": {
+      "url": "https://proceedings.mlr.press/v267/escoriza25a.html",
+      "venue": "ICML2025",
+      "volume": 267,
+      "pages": "15542-15563"
+    },
+    "IBRL": {
+      "url": "https://roboticsproceedings.org/rss20/p056.html",
+      "venue": "RSS2024",
+      "doi": "10.15607/RSS.2024.XX.056"
+    }
+  },
+  "arxiv_metadata_rechecked": "https://arxiv.org/abs/2410.00425v2",
+  "direct_access_limitations": [
+    "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened",
+    "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened",
+    "2026-10-16 https://openreview.net/forum?id=Oxh5CstDJU returned browser challenge; retain previously checked author-project/arXiv metadata"
+  ],
+  "bibliography_entries": 11,
+  "full_text_review_scope_unchanged": true
+}

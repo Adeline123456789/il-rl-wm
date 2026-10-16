@@ -1,0 +1,21 @@
+--- a/scripts/replay_trajectory.py
++++ b/scripts/replay_trajectory.py
+@@ -1,4 +1,4 @@
+-# Adapted official ManiSkill replay; only F-E0-001 initial-state record repair.
++# Adapted official ManiSkill replay: F-E0-001 initial-state and F-E0-002 seed-type repairs.
+ # Source/Apache-2.0: vendor/maniskill/LICENSE and UPSTREAMS.md.
+ """Replay ManiSkill trajectories stored in HDF5 (.h5) format
+ 
+@@ -136,9 +136,10 @@
+             [episode["control_mode"] == ori_control_mode for episode in episode_batch]
+         ), "Replay trajectory with parallelized environments is only supported for trajectories with the same control mode"
+         episode_batch_max_len = max(episode_lens)
+-        seeds = torch.tensor(
++        # BaseEnv._set_main_rng accepts int/list/ndarray, not a CUDA tensor.
++        seeds = np.asarray(
+             [episode["episode_seed"] for episode in episode_batch],
+-            device=env.base_env.device,
++            dtype=np.int64,
+         )
+         env.reset(seed=seeds)
+ 

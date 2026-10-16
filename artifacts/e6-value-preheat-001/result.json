@@ -1,0 +1,9 @@
+{
+  "updates": 5000,
+  "new_environment_interactions": 0,
+  "elapsed_seconds": 4.364977863006061,
+  "trainable_parameters": 78081,
+  "checkpoint": "checkpoints/e6-value-preheat-001/final.pt",
+  "sha256": "95379de71b58d72cafe263fb5399e37c3780c2fba027809a177c4e930f26658f",
+  "torch_peak_allocated_bytes": 208775168
+}

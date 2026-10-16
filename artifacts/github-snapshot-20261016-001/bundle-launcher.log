@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/github-snapshot-20261016-001/prepare_history.py", line 7, in <module>
+    subprocess.run(['git','-c','pack.threads=2','bundle','create',str(bundle),head],stdout=log,stderr=subprocess.STDOUT,check=True)
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-c', 'pack.threads=2', 'bundle', 'create', '.cache/source-history-20261016-001.bundle', '8ec9714acb3dff8a0badc48f7d26df254bb2de38']' returned non-zero exit status 128.

@@ -1,0 +1,10 @@
+{
+  "episodes": 1000,
+  "initial_grasp_flag_true": 967,
+  "minimum_tcp_to_cube_distance": 0.10989408195018768,
+  "episodes_with_grasp_flag_true_and_distance_over_0_1m": 967,
+  "first_32_grasp_flag_true": 0,
+  "restored_diagnostic_differing_dimension": 18,
+  "restored_sample_count": 16,
+  "restored_initial_grasp_flag_true": 0
+}

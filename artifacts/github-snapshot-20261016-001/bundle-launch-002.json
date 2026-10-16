@@ -1,0 +1,8 @@
+{
+  "pid": 1391344,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/github-snapshot-20261016-001/prepare_history_002.py"
+  ],
+  "reason": "Git bundle requires named reference; first SHA-only invocation produced no bundle."
+}

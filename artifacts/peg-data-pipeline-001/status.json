@@ -1,0 +1,5 @@
+{
+  "phase": "failed",
+  "task": "PegInsertionSide-v1",
+  "error": "CalledProcessError(1, ['/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python', 'scripts/audit_demos.py', '--path', '/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-peg-gpu-replay-smoke-001/trajectory.state.pd_ee_delta_pose.physx_cuda.h5', '--action-source-path', '/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-peg-cpu-replay-smoke-001/trajectory.state.pd_ee_delta_pose.physx_cpu.h5', '--horizon', '400', '--successful-only', '--source-metadata', '/media/midea/F496AC8096AC4548/il-rl-wm/data/official/PegInsertionSide-v1/motionplanning/trajectory.json', '--output', '/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/e0-peg-gpu-replay-smoke-001/dataset-audit.json'])"
+}

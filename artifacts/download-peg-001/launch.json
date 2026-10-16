@@ -1,0 +1,10 @@
+{
+  "pid": 303567,
+  "command": [
+    ".venv/bin/python",
+    "scripts/download_demos.py",
+    "--env-id",
+    "PegInsertionSide-v1"
+  ],
+  "started_unix": 1792142662.2709212
+}

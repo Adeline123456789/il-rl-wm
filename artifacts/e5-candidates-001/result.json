@@ -1,0 +1,42 @@
+{
+  "sac": "checkpoints/e3-sac-c-full-001/final.pt",
+  "bc": "checkpoints/e1-bc-full-003/final.pt",
+  "wm": "checkpoints/e4-wm-full-001/final.pt",
+  "new_environment_interactions": 0,
+  "measured_generation_only": true,
+  "results": {
+    "with_il": {
+      "sources": [
+        "il",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac"
+      ],
+      "latency_ms_per_batch32": 0.9266549099993426,
+      "mean_sac_candidate_std": 0.20491757988929749,
+      "predicted_state_change_mean": 0.10301581770181656
+    },
+    "without_il": {
+      "sources": [
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac",
+        "sac"
+      ],
+      "latency_ms_per_batch32": 0.7938704200205393,
+      "mean_sac_candidate_std": 0.19524407386779785,
+      "predicted_state_change_mean": 0.10916806757450104
+    }
+  },
+  "torch_peak_allocated_bytes": 12200448
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/plot_seed0_diagnosis.py", line 99, in <module>
+    if __name__=='__main__':main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/plot_seed0_diagnosis.py", line 92, in main
+    require_matplotlib_panel_alignment(fig,json_out=args.output/'alignment.json',
+  File "/home/midea/.codex/skills/nature-figure/scripts/audit_panel_alignment.py", line 842, in require_matplotlib_panel_alignment
+    raise PanelAlignmentError(render_text(report, strict=strict))
+audit_panel_alignment.PanelAlignmentError: Panel alignment: REVIEW REQUIRED
+  comparisons: 2
+  fail: 0
+  warn: 1
+  exemptions: 0
+  WARN panel-label-not-auditable [inferred-row-1]: Comparable panels are missing detectable top-left panel-label anchors (a, b, c)
+  strict mode: WARN findings block delivery

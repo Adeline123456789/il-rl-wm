@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/u1-pick-seed0-u0-001/final.pt",
+  "sha256": "428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704",
+  "training_seed": 0,
+  "inherited_interactions": 262144
+}

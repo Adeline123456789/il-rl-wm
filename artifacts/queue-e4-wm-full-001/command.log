@@ -1,0 +1,28 @@
+{
+  "experiment_id": "e4-wm-full-001",
+  "started_at": "2026-10-16T10:46:42.912637+00:00",
+  "ended_at": "2026-10-16T10:46:57.117167+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/train_world_model.py",
+    "--expert-audit",
+    "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+    "--online-checkpoint",
+    "checkpoints/e3-sac-c-full-001/final.pt",
+    "--output",
+    "artifacts/e4-wm-full-001",
+    "--updates",
+    "10000"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 1800.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 539097,
+  "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "c5dbf9e41f08b5b8961d70ead771d48ca89af88014138d8a52cfa5ffccbe714f",
+  "child_pid": 539111,
+  "elapsed_seconds": 14.190194360999158
+}

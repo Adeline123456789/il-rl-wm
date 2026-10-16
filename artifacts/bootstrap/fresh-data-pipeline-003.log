@@ -1,0 +1,7062 @@
+{
+  "experiment_id": "e0-pickcube-gpu-replay-full-003",
+  "started_at": "2026-10-16T10:20:30.460899+00:00",
+  "ended_at": "2026-10-16T10:22:31.759411+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/replay_recorded.py",
+    "artifacts/e0-pickcube-gpu-replay-full-003/interactions.json",
+    "--traj-path",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-pickcube-gpu-replay-full-003/trajectory.h5",
+    "--use-first-env-state",
+    "--target-control-mode",
+    "pd_ee_delta_pos",
+    "--obs-mode",
+    "state",
+    "--save-traj",
+    "--num-envs",
+    "32",
+    "--sim-backend",
+    "physx_cuda",
+    "--reward-mode",
+    "sparse",
+    "--record-rewards",
+    "--count",
+    "1000",
+    "--allow-failure"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 900.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 449619,
+  "code_commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 449627,
+  "elapsed_seconds": 121.28861165398848
+}
+{
+  "initial_contact_audit": [
+    {
+      "episode_id": 0,
+      "grasped": false,
+      "distance": 0.16327384114265442
+    },
+    {
+      "episode_id": 1,
+      "grasped": false,
+      "distance": 0.1641474962234497
+    },
+    {
+      "episode_id": 2,
+      "grasped": false,
+      "distance": 0.15394353866577148
+    },
+    {
+      "episode_id": 3,
+      "grasped": false,
+      "distance": 0.19015952944755554
+    },
+    {
+      "episode_id": 4,
+      "grasped": false,
+      "distance": 0.16843724250793457
+    },
+    {
+      "episode_id": 5,
+      "grasped": false,
+      "distance": 0.15323588252067566
+    },
+    {
+      "episode_id": 6,
+      "grasped": false,
+      "distance": 0.13758817315101624
+    },
+    {
+      "episode_id": 7,
+      "grasped": false,
+      "distance": 0.15560667216777802
+    },
+    {
+      "episode_id": 8,
+      "grasped": false,
+      "distance": 0.15236680209636688
+    },
+    {
+      "episode_id": 9,
+      "grasped": false,
+      "distance": 0.12560182809829712
+    },
+    {
+      "episode_id": 10,
+      "grasped": false,
+      "distance": 0.13896943628787994
+    },
+    {
+      "episode_id": 11,
+      "grasped": false,
+      "distance": 0.1755799949169159
+    },
+    {
+      "episode_id": 12,
+      "grasped": false,
+      "distance": 0.16342176496982574
+    },
+    {
+      "episode_id": 13,
+      "grasped": false,
+      "distance": 0.17049424350261688
+    },
+    {
+      "episode_id": 14,
+      "grasped": false,
+      "distance": 0.1781030148267746
+    },
+    {
+      "episode_id": 15,
+      "grasped": false,
+      "distance": 0.21155840158462524
+    },
+    {
+      "episode_id": 16,
+      "grasped": false,
+      "distance": 0.14950339496135712
+    },
+    {
+      "episode_id": 17,
+      "grasped": false,
+      "distance": 0.18952670693397522
+    },
+    {
+      "episode_id": 18,
+      "grasped": false,
+      "distance": 0.18510574102401733
+    },
+    {
+      "episode_id": 19,
+      "grasped": false,
+      "distance": 0.162143275141716
+    },
+    {
+      "episode_id": 20,
+      "grasped": false,
+      "distance": 0.14673608541488647
+    },
+    {
+      "episode_id": 21,
+      "grasped": false,
+      "distance": 0.1398770660161972
+    },
+    {
+      "episode_id": 22,
+      "grasped": false,
+      "distance": 0.16588617861270905
+    },
+    {
+      "episode_id": 23,
+      "grasped": false,
+      "distance": 0.13576726615428925
+    },
+    {
+      "episode_id": 24,
+      "grasped": false,
+      "distance": 0.16840137541294098
+    },
+    {
+      "episode_id": 25,
+      "grasped": false,
+      "distance": 0.14025360345840454
+    },
+    {
+      "episode_id": 26,
+      "grasped": false,
+      "distance": 0.15408217906951904
+    },
+    {
+      "episode_id": 27,
+      "grasped": false,
+      "distance": 0.15785767138004303
+    },
+    {
+      "episode_id": 28,
+      "grasped": false,
+      "distance": 0.18804395198822021
+    },
+    {
+      "episode_id": 29,
+      "grasped": false,
+      "distance": 0.1818985641002655
+    },
+    {
+      "episode_id": 30,
+      "grasped": false,
+      "distance": 0.1869199275970459
+    },
+    {
+      "episode_id": 31,
+      "grasped": false,
+      "distance": 0.20040178298950195
+    },
+    {
+      "episode_id": 32,
+      "grasped": false,
+      "distance": 0.17765818536281586
+    },
+    {
+      "episode_id": 33,
+      "grasped": false,
+      "distance": 0.17054660618305206
+    },
+    {
+      "episode_id": 34,
+      "grasped": false,
+      "distance": 0.1720624715089798
+    },
+    {
+      "episode_id": 35,
+      "grasped": false,
+      "distance": 0.15886449813842773
+    },
+    {
+      "episode_id": 36,
+      "grasped": false,
+      "distance": 0.1614496260881424
+    },
+    {
+      "episode_id": 37,
+      "grasped": false,
+      "distance": 0.1790807843208313
+    },
+    {
+      "episode_id": 38,
+      "grasped": false,
+      "distance": 0.186390683054924
+    },
+    {
+      "episode_id": 39,
+      "grasped": false,
+      "distance": 0.18294309079647064
+    },
+    {
+      "episode_id": 40,
+      "grasped": false,
+      "distance": 0.16202864050865173
+    },
+    {
+      "episode_id": 41,
+      "grasped": false,
+      "distance": 0.1439216583967209
+    },
+    {
+      "episode_id": 42,
+      "grasped": false,
+      "distance": 0.1615440994501114
+    },
+    {
+      "episode_id": 43,
+      "grasped": false,
+      "distance": 0.15044918656349182
+    },
+    {
+      "episode_id": 44,
+      "grasped": false,
+      "distance": 0.16721974313259125
+    },
+    {
+      "episode_id": 45,
+      "grasped": false,
+      "distance": 0.1713286191225052
+    },
+    {
+      "episode_id": 46,
+      "grasped": false,
+      "distance": 0.15567424893379211
+    },
+    {
+      "episode_id": 47,
+      "grasped": false,
+      "distance": 0.15983553230762482
+    },
+    {
+      "episode_id": 48,
+      "grasped": false,
+      "distance": 0.18067575991153717
+    },
+    {
+      "episode_id": 49,
+      "grasped": false,
+      "distance": 0.15054595470428467
+    },
+    {
+      "episode_id": 50,
+      "grasped": false,
+      "distance": 0.1660916954278946
+    },
+    {
+      "episode_id": 51,
+      "grasped": false,
+      "distance": 0.1399778425693512
+    },
+    {
+      "episode_id": 52,
+      "grasped": false,
+      "distance": 0.15510328114032745
+    },
+    {
+      "episode_id": 53,
+      "grasped": false,
+      "distance": 0.1720340996980667
+    },
+    {
+      "episode_id": 54,
+      "grasped": false,
+      "distance": 0.1793081909418106
+    },
+    {
+      "episode_id": 55,
+      "grasped": false,
+      "distance": 0.2243034988641739
+    },
+    {
+      "episode_id": 56,
+      "grasped": false,
+      "distance": 0.19461742043495178
+    },
+    {
+      "episode_id": 57,
+      "grasped": false,
+      "distance": 0.21056026220321655
+    },
+    {
+      "episode_id": 58,
+      "grasped": false,
+      "distance": 0.18332439661026
+    },
+    {
+      "episode_id": 59,
+      "grasped": false,
+      "distance": 0.17166176438331604
+    },
+    {
+      "episode_id": 60,
+      "grasped": false,
+      "distance": 0.19275443255901337
+    },
+    {
+      "episode_id": 61,
+      "grasped": false,
+      "distance": 0.18922726809978485
+    },
+    {
+      "episode_id": 62,
+      "grasped": false,
+      "distance": 0.1896616816520691
+    },
+    {
+      "episode_id": 63,
+      "grasped": false,
+      "distance": 0.21157725155353546
+    },
+    {
+      "episode_id": 64,
+      "grasped": false,
+      "distance": 0.16519063711166382
+    },
+    {
+      "episode_id": 65,
+      "grasped": false,
+      "distance": 0.16235199570655823
+    },
+    {
+      "episode_id": 66,
+      "grasped": false,
+      "distance": 0.18179158866405487
+    },
+    {
+      "episode_id": 67,
+      "grasped": false,
+      "distance": 0.17140622437000275
+    },
+    {
+      "episode_id": 68,
+      "grasped": false,
+      "distance": 0.1793050915002823
+    },
+    {
+      "episode_id": 69,
+      "grasped": false,
+      "distance": 0.17365817725658417
+    },
+    {
+      "episode_id": 70,
+      "grasped": false,
+      "distance": 0.1668655276298523
+    },
+    {
+      "episode_id": 71,
+      "grasped": false,
+      "distance": 0.17675331234931946
+    },
+    {
+      "episode_id": 72,
+      "grasped": false,
+      "distance": 0.163188174366951
+    },
+    {
+      "episode_id": 73,
+      "grasped": false,
+      "distance": 0.1830962896347046
+    },
+    {
+      "episode_id": 74,
+      "grasped": false,
+      "distance": 0.16221511363983154
+    },
+    {
+      "episode_id": 75,
+      "grasped": false,
+      "distance": 0.14525805413722992
+    },
+    {
+      "episode_id": 76,
+      "grasped": false,
+      "distance": 0.18673652410507202
+    },
+    {
+      "episode_id": 77,
+      "grasped": false,
+      "distance": 0.15438617765903473
+    },
+    {
+      "episode_id": 78,
+      "grasped": false,
+      "distance": 0.17294660210609436
+    },
+    {
+      "episode_id": 79,
+      "grasped": false,
+      "distance": 0.1510997861623764
+    },
+    {
+      "episode_id": 80,
+      "grasped": false,
+      "distance": 0.1722860485315323
+    },
+    {
+      "episode_id": 81,
+      "grasped": false,
+      "distance": 0.1642814725637436
+    },
+    {
+      "episode_id": 82,
+      "grasped": false,
+      "distance": 0.14905250072479248
+    },
+    {
+      "episode_id": 83,
+      "grasped": false,
+      "distance": 0.172205850481987
+    },
+    {
+      "episode_id": 84,
+      "grasped": false,
+      "distance": 0.18433693051338196
+    },
+    {
+      "episode_id": 85,
+      "grasped": false,
+      "distance": 0.1618615984916687
+    },
+    {
+      "episode_id": 86,
+      "grasped": false,
+      "distance": 0.18796373903751373
+    },
+    {
+      "episode_id": 87,
+      "grasped": false,
+      "distance": 0.18199941515922546
+    },
+    {
+      "episode_id": 88,
+      "grasped": false,
+      "distance": 0.19150005280971527
+    },
+    {
+      "episode_id": 89,
+      "grasped": false,
+      "distance": 0.18188875913619995
+    },
+    {
+      "episode_id": 90,
+      "grasped": false,
+      "distance": 0.13972221314907074
+    },
+    {
+      "episode_id": 91,
+      "grasped": false,
+      "distance": 0.18165311217308044
+    },
+    {
+      "episode_id": 92,
+      "grasped": false,
+      "distance": 0.16403526067733765
+    },
+    {
+      "episode_id": 93,
+      "grasped": false,
+      "distance": 0.1646028757095337
+    },
+    {
+      "episode_id": 94,
+      "grasped": false,
+      "distance": 0.17502960562705994
+    },
+    {
+      "episode_id": 95,
+      "grasped": false,
+      "distance": 0.19845788180828094
+    },
+    {
+      "episode_id": 96,
+      "grasped": false,
+      "distance": 0.19290737807750702
+    },
+    {
+      "episode_id": 97,
+      "grasped": false,
+      "distance": 0.17191451787948608
+    },
+    {
+      "episode_id": 98,
+      "grasped": false,
+      "distance": 0.15971234440803528
+    },
+    {
+      "episode_id": 99,
+      "grasped": false,
+      "distance": 0.1565597504377365
+    },
+    {
+      "episode_id": 100,
+      "grasped": false,
+      "distance": 0.1670650839805603
+    },
+    {
+      "episode_id": 101,
+      "grasped": false,
+      "distance": 0.1784423589706421
+    },
+    {
+      "episode_id": 102,
+      "grasped": false,
+      "distance": 0.13427214324474335
+    },
+    {
+      "episode_id": 103,
+      "grasped": false,
+      "distance": 0.1990935206413269
+    },
+    {
+      "episode_id": 104,
+      "grasped": false,
+      "distance": 0.1614414006471634
+    },
+    {
+      "episode_id": 105,
+      "grasped": false,
+      "distance": 0.1758703738451004
+    },
+    {
+      "episode_id": 106,
+      "grasped": false,
+      "distance": 0.14510183036327362
+    },
+    {
+      "episode_id": 107,
+      "grasped": false,
+      "distance": 0.17287291586399078
+    },
+    {
+      "episode_id": 108,
+      "grasped": false,
+      "distance": 0.15945889055728912
+    },
+    {
+      "episode_id": 109,
+      "grasped": false,
+      "distance": 0.13255302608013153
+    },
+    {
+      "episode_id": 110,
+      "grasped": false,
+      "distance": 0.15790797770023346
+    },
+    {
+      "episode_id": 111,
+      "grasped": false,
+      "distance": 0.16946567595005035
+    },
+    {
+      "episode_id": 112,
+      "grasped": false,
+      "distance": 0.1549772471189499
+    },
+    {
+      "episode_id": 113,
+      "grasped": false,
+      "distance": 0.18864373862743378
+    },
+    {
+      "episode_id": 114,
+      "grasped": false,
+      "distance": 0.18387600779533386
+    },
+    {
+      "episode_id": 115,
+      "grasped": false,
+      "distance": 0.18222929537296295
+    },
+    {
+      "episode_id": 116,
+      "grasped": false,
+      "distance": 0.16555623710155487
+    },
+    {
+      "episode_id": 117,
+      "grasped": false,
+      "distance": 0.17006133496761322
+    },
+    {
+      "episode_id": 118,
+      "grasped": false,
+      "distance": 0.15017494559288025
+    },
+    {
+      "episode_id": 119,
+      "grasped": false,
+      "distance": 0.17724904417991638
+    },
+    {
+      "episode_id": 120,
+      "grasped": false,
+      "distance": 0.15321144461631775
+    },
+    {
+      "episode_id": 121,
+      "grasped": false,
+      "distance": 0.22482958436012268
+    },
+    {
+      "episode_id": 122,
+      "grasped": false,
+      "distance": 0.19148175418376923
+    },
+    {
+      "episode_id": 123,
+      "grasped": false,
+      "distance": 0.15549053251743317
+    },
+    {
+      "episode_id": 124,
+      "grasped": false,
+      "distance": 0.15708553791046143
+    },
+    {
+      "episode_id": 125,
+      "grasped": false,
+      "distance": 0.18079763650894165
+    },
+    {
+      "episode_id": 126,
+      "grasped": false,
+      "distance": 0.15931198000907898
+    },
+    {
+      "episode_id": 127,
+      "grasped": false,
+      "distance": 0.1818866729736328
+    },
+    {
+      "episode_id": 128,
+      "grasped": false,
+      "distance": 0.17066754400730133
+    },
+    {
+      "episode_id": 129,
+      "grasped": false,
+      "distance": 0.1845538467168808
+    },
+    {
+      "episode_id": 130,
+      "grasped": false,
+      "distance": 0.14865130186080933
+    },
+    {
+      "episode_id": 131,
+      "grasped": false,
+      "distance": 0.15274615585803986
+    },
+    {
+      "episode_id": 132,
+      "grasped": false,
+      "distance": 0.16966786980628967
+    },
+    {
+      "episode_id": 133,
+      "grasped": false,
+      "distance": 0.1440926492214203
+    },
+    {
+      "episode_id": 134,
+      "grasped": false,
+      "distance": 0.1845918744802475
+    },
+    {
+      "episode_id": 135,
+      "grasped": false,
+      "distance": 0.1545652598142624
+    },
+    {
+      "episode_id": 136,
+      "grasped": false,
+      "distance": 0.17671597003936768
+    },
+    {
+      "episode_id": 137,
+      "grasped": false,
+      "distance": 0.1621210128068924
+    },
+    {
+      "episode_id": 138,
+      "grasped": false,
+      "distance": 0.16226726770401
+    },
+    {
+      "episode_id": 139,
+      "grasped": false,
+      "distance": 0.19511373341083527
+    },
+    {
+      "episode_id": 140,
+      "grasped": false,
+      "distance": 0.16958433389663696
+    },
+    {
+      "episode_id": 141,
+      "grasped": false,
+      "distance": 0.17742764949798584
+    },
+    {
+      "episode_id": 142,
+      "grasped": false,
+      "distance": 0.13542720675468445
+    },
+    {
+      "episode_id": 143,
+      "grasped": false,
+      "distance": 0.15362754464149475
+    },
+    {
+      "episode_id": 144,
+      "grasped": false,
+      "distance": 0.18299365043640137
+    },
+    {
+      "episode_id": 145,
+      "grasped": false,
+      "distance": 0.19400310516357422
+    },
+    {
+      "episode_id": 146,
+      "grasped": false,
+      "distance": 0.18281613290309906
+    },
+    {
+      "episode_id": 147,
+      "grasped": false,
+      "distance": 0.17856216430664062
+    },
+    {
+      "episode_id": 148,
+      "grasped": false,
+      "distance": 0.15267936885356903
+    },
+    {
+      "episode_id": 149,
+      "grasped": false,
+      "distance": 0.1767672896385193
+    },
+    {
+      "episode_id": 150,
+      "grasped": false,
+      "distance": 0.18216250836849213
+    },
+    {
+      "episode_id": 151,
+      "grasped": false,
+      "distance": 0.1644979566335678
+    },
+    {
+      "episode_id": 152,
+      "grasped": false,
+      "distance": 0.19083735346794128
+    },
+    {
+      "episode_id": 153,
+      "grasped": false,
+      "distance": 0.16121189296245575
+    },
+    {
+      "episode_id": 154,
+      "grasped": false,
+      "distance": 0.14298222959041595
+    },
+    {
+      "episode_id": 155,
+      "grasped": false,
+      "distance": 0.1687593013048172
+    },
+    {
+      "episode_id": 156,
+      "grasped": false,
+      "distance": 0.16738435626029968
+    },
+    {
+      "episode_id": 157,
+      "grasped": false,
+      "distance": 0.14895421266555786
+    },
+    {
+      "episode_id": 158,
+      "grasped": false,
+      "distance": 0.18948893249034882
+    },
+    {
+      "episode_id": 159,
+      "grasped": false,
+      "distance": 0.16037490963935852
+    },
+    {
+      "episode_id": 160,
+      "grasped": false,
+      "distance": 0.17703337967395782
+    },
+    {
+      "episode_id": 161,
+      "grasped": false,
+      "distance": 0.14939022064208984
+    },
+    {
+      "episode_id": 162,
+      "grasped": false,
+      "distance": 0.14403265714645386
+    },
+    {
+      "episode_id": 163,
+      "grasped": false,
+      "distance": 0.14484915137290955
+    },
+    {
+      "episode_id": 164,
+      "grasped": false,
+      "distance": 0.1661781370639801
+    },
+    {
+      "episode_id": 165,
+      "grasped": false,
+      "distance": 0.19092760980129242
+    },
+    {
+      "episode_id": 166,
+      "grasped": false,
+      "distance": 0.16896308958530426
+    },
+    {
+      "episode_id": 167,
+      "grasped": false,
+      "distance": 0.21483395993709564
+    },
+    {
+      "episode_id": 168,
+      "grasped": false,
+      "distance": 0.18609170615673065
+    },
+    {
+      "episode_id": 169,
+      "grasped": false,
+      "distance": 0.20273983478546143
+    },
+    {
+      "episode_id": 170,
+      "grasped": false,
+      "distance": 0.1579091101884842
+    },
+    {
+      "episode_id": 171,
+      "grasped": false,
+      "distance": 0.19118621945381165
+    },
+    {
+      "episode_id": 172,
+      "grasped": false,
+      "distance": 0.21232245862483978
+    },
+    {
+      "episode_id": 173,
+      "grasped": false,
+      "distance": 0.17401665449142456
+    },
+    {
+      "episode_id": 174,
+      "grasped": false,
+      "distance": 0.15460745990276337
+    },
+    {
+      "episode_id": 175,
+      "grasped": false,
+      "distance": 0.1566612720489502
+    },
+    {
+      "episode_id": 176,
+      "grasped": false,
+      "distance": 0.16309228539466858
+    },
+    {
+      "episode_id": 177,
+      "grasped": false,
+      "distance": 0.18559786677360535
+    },
+    {
+      "episode_id": 178,
+      "grasped": false,
+      "distance": 0.17309248447418213
+    },
+    {
+      "episode_id": 179,
+      "grasped": false,
+      "distance": 0.18996399641036987
+    },
+    {
+      "episode_id": 180,
+      "grasped": false,
+      "distance": 0.142403244972229
+    },
+    {
+      "episode_id": 181,
+      "grasped": false,
+      "distance": 0.18801671266555786
+    },
+    {
+      "episode_id": 182,
+      "grasped": false,
+      "distance": 0.19429519772529602
+    },
+    {
+      "episode_id": 183,
+      "grasped": false,
+      "distance": 0.15763895213603973
+    },
+    {
+      "episode_id": 184,
+      "grasped": false,
+      "distance": 0.20415686070919037
+    },
+    {
+      "episode_id": 185,
+      "grasped": false,
+      "distance": 0.16025441884994507
+    },
+    {
+      "episode_id": 186,
+      "grasped": false,
+      "distance": 0.15476053953170776
+    },
+    {
+      "episode_id": 187,
+      "grasped": false,
+      "distance": 0.18106473982334137
+    },
+    {
+      "episode_id": 188,
+      "grasped": false,
+      "distance": 0.20102183520793915
+    },
+    {
+      "episode_id": 189,
+      "grasped": false,
+      "distance": 0.21450398862361908
+    },
+    {
+      "episode_id": 190,
+      "grasped": false,
+      "distance": 0.19722039997577667
+    },
+    {
+      "episode_id": 191,
+      "grasped": false,
+      "distance": 0.1910657286643982
+    },
+    {
+      "episode_id": 192,
+      "grasped": false,
+      "distance": 0.13357338309288025
+    },
+    {
+      "episode_id": 193,
+      "grasped": false,
+      "distance": 0.15831327438354492
+    },
+    {
+      "episode_id": 194,
+      "grasped": false,
+      "distance": 0.15408381819725037
+    },
+    {
+      "episode_id": 195,
+      "grasped": false,
+      "distance": 0.189234659075737
+    },
+    {
+      "episode_id": 196,
+      "grasped": false,
+      "distance": 0.1850218027830124
+    },
+    {
+      "episode_id": 197,
+      "grasped": false,
+      "distance": 0.1619386225938797
+    },
+    {
+      "episode_id": 198,
+      "grasped": false,
+      "distance": 0.1512112021446228
+    },
+    {
+      "episode_id": 199,
+      "grasped": false,
+      "distance": 0.15250234305858612
+    },
+    {
+      "episode_id": 200,
+      "grasped": false,
+      "distance": 0.19826820492744446
+    },
+    {
+      "episode_id": 201,
+      "grasped": false,
+      "distance": 0.19055473804473877
+    },
+    {
+      "episode_id": 202,
+      "grasped": false,
+      "distance": 0.17112810909748077
+    },
+    {
+      "episode_id": 203,
+      "grasped": false,
+      "distance": 0.1586286872625351
+    },
+    {
+      "episode_id": 204,
+      "grasped": false,
+      "distance": 0.21571272611618042
+    },
+    {
+      "episode_id": 205,
+      "grasped": false,
+      "distance": 0.1771354079246521
+    },
+    {
+      "episode_id": 206,
+      "grasped": false,
+      "distance": 0.16636526584625244
+    },
+    {
+      "episode_id": 207,
+      "grasped": false,
+      "distance": 0.1858494132757187
+    },
+    {
+      "episode_id": 208,
+      "grasped": false,
+      "distance": 0.13836508989334106
+    },
+    {
+      "episode_id": 209,
+      "grasped": false,
+      "distance": 0.17845840752124786
+    },
+    {
+      "episode_id": 210,
+      "grasped": false,
+      "distance": 0.18093667924404144
+    },
+    {
+      "episode_id": 211,
+      "grasped": false,
+      "distance": 0.17369018495082855
+    },
+    {
+      "episode_id": 212,
+      "grasped": false,
+      "distance": 0.16348814964294434
+    },
+    {
+      "episode_id": 213,
+      "grasped": false,
+      "distance": 0.16496747732162476
+    },
+    {
+      "episode_id": 214,
+      "grasped": false,
+      "distance": 0.17861901223659515
+    },
+    {
+      "episode_id": 215,
+      "grasped": false,
+      "distance": 0.16463814675807953
+    },
+    {
+      "episode_id": 216,
+      "grasped": false,
+      "distance": 0.15676847100257874
+    },
+    {
+      "episode_id": 217,
+      "grasped": false,
+      "distance": 0.12772931158542633
+    },
+    {
+      "episode_id": 218,
+      "grasped": false,
+      "distance": 0.15959027409553528
+    },
+    {
+      "episode_id": 219,
+      "grasped": false,
+      "distance": 0.1904873251914978
+    },
+    {
+      "episode_id": 220,
+      "grasped": false,
+      "distance": 0.16426582634449005
+    },
+    {
+      "episode_id": 221,
+      "grasped": false,
+      "distance": 0.16087281703948975
+    },
+    {
+      "episode_id": 222,
+      "grasped": false,
+      "distance": 0.1797042340040207
+    },
+    {
+      "episode_id": 223,
+      "grasped": false,
+      "distance": 0.17088466882705688
+    },
+    {
+      "episode_id": 224,
+      "grasped": false,
+      "distance": 0.18158283829689026
+    },
+    {
+      "episode_id": 225,
+      "grasped": false,
+      "distance": 0.1762295812368393
+    },
+    {
+      "episode_id": 226,
+      "grasped": false,
+      "distance": 0.16382253170013428
+    },
+    {
+      "episode_id": 227,
+      "grasped": false,
+      "distance": 0.14385010302066803
+    },
+    {
+      "episode_id": 228,
+      "grasped": false,
+      "distance": 0.20234821736812592
+    },
+    {
+      "episode_id": 229,
+      "grasped": false,
+      "distance": 0.15018682181835175
+    },
+    {
+      "episode_id": 230,
+      "grasped": false,
+      "distance": 0.16151723265647888
+    },
+    {
+      "episode_id": 231,
+      "grasped": false,
+      "distance": 0.1645132303237915
+    },
+    {
+      "episode_id": 232,
+      "grasped": false,
+      "distance": 0.1869724690914154
+    },
+    {
+      "episode_id": 233,
+      "grasped": false,
+      "distance": 0.13853305578231812
+    },
+    {
+      "episode_id": 234,
+      "grasped": false,
+      "distance": 0.18268904089927673
+    },
+    {
+      "episode_id": 235,
+      "grasped": false,
+      "distance": 0.16039472818374634
+    },
+    {
+      "episode_id": 236,
+      "grasped": false,
+      "distance": 0.17095112800598145
+    },
+    {
+      "episode_id": 237,
+      "grasped": false,
+      "distance": 0.17666423320770264
+    },
+    {
+      "episode_id": 238,
+      "grasped": false,
+      "distance": 0.17014741897583008
+    },
+    {
+      "episode_id": 239,
+      "grasped": false,
+      "distance": 0.1516692340373993
+    },
+    {
+      "episode_id": 240,
+      "grasped": false,
+      "distance": 0.18871667981147766
+    },
+    {
+      "episode_id": 241,
+      "grasped": false,
+      "distance": 0.17653682827949524
+    },
+    {
+      "episode_id": 242,
+      "grasped": false,
+      "distance": 0.18916523456573486
+    },
+    {
+      "episode_id": 243,
+      "grasped": false,
+      "distance": 0.18089132010936737
+    },
+    {
+      "episode_id": 244,
+      "grasped": false,
+      "distance": 0.13028891384601593
+    },
+    {
+      "episode_id": 245,
+      "grasped": false,
+      "distance": 0.1994917243719101
+    },
+    {
+      "episode_id": 246,
+      "grasped": false,
+      "distance": 0.19198839366436005
+    },
+    {
+      "episode_id": 247,
+      "grasped": false,
+      "distance": 0.16252130270004272
+    },
+    {
+      "episode_id": 248,
+      "grasped": false,
+      "distance": 0.18287897109985352
+    },
+    {
+      "episode_id": 249,
+      "grasped": false,
+      "distance": 0.18141907453536987
+    },
+    {
+      "episode_id": 250,
+      "grasped": false,
+      "distance": 0.13533128798007965
+    },
+    {
+      "episode_id": 251,
+      "grasped": false,
+      "distance": 0.20398302376270294
+    },
+    {
+      "episode_id": 252,
+      "grasped": false,
+      "distance": 0.1903633326292038
+    },
+    {
+      "episode_id": 253,
+      "grasped": false,
+      "distance": 0.18864189088344574
+    },
+    {
+      "episode_id": 254,
+      "grasped": false,
+      "distance": 0.173736110329628
+    },
+    {
+      "episode_id": 255,
+      "grasped": false,
+      "distance": 0.2221497893333435
+    },
+    {
+      "episode_id": 256,
+      "grasped": false,
+      "distance": 0.16037844121456146
+    },
+    {
+      "episode_id": 257,
+      "grasped": false,
+      "distance": 0.17405515909194946
+    },
+    {
+      "episode_id": 258,
+      "grasped": false,
+      "distance": 0.19808009266853333
+    },
+    {
+      "episode_id": 259,
+      "grasped": false,
+      "distance": 0.1496410071849823
+    },
+    {
+      "episode_id": 260,
+      "grasped": false,
+      "distance": 0.17082631587982178
+    },
+    {
+      "episode_id": 261,
+      "grasped": false,
+      "distance": 0.20373648405075073
+    },
+    {
+      "episode_id": 262,
+      "grasped": false,
+      "distance": 0.19677089154720306
+    },
+    {
+      "episode_id": 263,
+      "grasped": false,
+      "distance": 0.1530148684978485
+    },
+    {
+      "episode_id": 264,
+      "grasped": false,
+      "distance": 0.16382037103176117
+    },
+    {
+      "episode_id": 265,
+      "grasped": false,
+      "distance": 0.2001449316740036
+    },
+    {
+      "episode_id": 266,
+      "grasped": false,
+      "distance": 0.1763349026441574
+    },
+    {
+      "episode_id": 267,
+      "grasped": false,
+      "distance": 0.15300317108631134
+    },
+    {
+      "episode_id": 268,
+      "grasped": false,
+      "distance": 0.17867380380630493
+    },
+    {
+      "episode_id": 269,
+      "grasped": false,
+      "distance": 0.14095786213874817
+    },
+    {
+      "episode_id": 270,
+      "grasped": false,
+      "distance": 0.17360439896583557
+    },
+    {
+      "episode_id": 271,
+      "grasped": false,
+      "distance": 0.18323296308517456
+    },
+    {
+      "episode_id": 272,
+      "grasped": false,
+      "distance": 0.13349346816539764
+    },
+    {
+      "episode_id": 273,
+      "grasped": false,
+      "distance": 0.20670609176158905
+    },
+    {
+      "episode_id": 274,
+      "grasped": false,
+      "distance": 0.1585892289876938
+    },
+    {
+      "episode_id": 275,
+      "grasped": false,
+      "distance": 0.1543259620666504
+    },
+    {
+      "episode_id": 276,
+      "grasped": false,
+      "distance": 0.18939991295337677
+    },
+    {
+      "episode_id": 277,
+      "grasped": false,
+      "distance": 0.1752898246049881
+    },
+    {
+      "episode_id": 278,
+      "grasped": false,
+      "distance": 0.18603867292404175
+    },
+    {
+      "episode_id": 279,
+      "grasped": false,
+      "distance": 0.1554131805896759
+    },
+    {
+      "episode_id": 280,
+      "grasped": false,
+      "distance": 0.18600718677043915
+    },
+    {
+      "episode_id": 281,
+      "grasped": false,
+      "distance": 0.15722334384918213
+    },
+    {
+      "episode_id": 282,
+      "grasped": false,
+      "distance": 0.16288800537586212
+    },
+    {
+      "episode_id": 283,
+      "grasped": false,
+      "distance": 0.16661052405834198
+    },
+    {
+      "episode_id": 284,
+      "grasped": false,
+      "distance": 0.17128904163837433
+    },
+    {
+      "episode_id": 285,
+      "grasped": false,
+      "distance": 0.17192788422107697
+    },
+    {
+      "episode_id": 286,
+      "grasped": false,
+      "distance": 0.18453799188137054
+    },
+    {
+      "episode_id": 287,
+      "grasped": false,
+      "distance": 0.18262863159179688
+    },
+    {
+      "episode_id": 288,
+      "grasped": false,
+      "distance": 0.14624889194965363
+    },
+    {
+      "episode_id": 289,
+      "grasped": false,
+      "distance": 0.16681016981601715
+    },
+    {
+      "episode_id": 290,
+      "grasped": false,
+      "distance": 0.18281511962413788
+    },
+    {
+      "episode_id": 291,
+      "grasped": false,
+      "distance": 0.17140159010887146
+    },
+    {
+      "episode_id": 292,
+      "grasped": false,
+      "distance": 0.16137239336967468
+    },
+    {
+      "episode_id": 293,
+      "grasped": false,
+      "distance": 0.16993126273155212
+    },
+    {
+      "episode_id": 294,
+      "grasped": false,
+      "distance": 0.18729545176029205
+    },
+    {
+      "episode_id": 295,
+      "grasped": false,
+      "distance": 0.20517416298389435
+    },
+    {
+      "episode_id": 296,
+      "grasped": false,
+      "distance": 0.17527711391448975
+    },
+    {
+      "episode_id": 297,
+      "grasped": false,
+      "distance": 0.20600654184818268
+    },
+    {
+      "episode_id": 298,
+      "grasped": false,
+      "distance": 0.19598369300365448
+    },
+    {
+      "episode_id": 299,
+      "grasped": false,
+      "distance": 0.17653897404670715
+    },
+    {
+      "episode_id": 300,
+      "grasped": false,
+      "distance": 0.19163857400417328
+    },
+    {
+      "episode_id": 301,
+      "grasped": false,
+      "distance": 0.1721452921628952
+    },
+    {
+      "episode_id": 302,
+      "grasped": false,
+      "distance": 0.18214766681194305
+    },
+    {
+      "episode_id": 303,
+      "grasped": false,
+      "distance": 0.2254483550786972
+    },
+    {
+      "episode_id": 304,
+      "grasped": false,
+      "distance": 0.19067183136940002
+    },
+    {
+      "episode_id": 305,
+      "grasped": false,
+      "distance": 0.19475553929805756
+    },
+    {
+      "episode_id": 306,
+      "grasped": false,
+      "distance": 0.19055341184139252
+    },
+    {
+      "episode_id": 307,
+      "grasped": false,
+      "distance": 0.20623338222503662
+    },
+    {
+      "episode_id": 308,
+      "grasped": false,
+      "distance": 0.16661889851093292
+    },
+    {
+      "episode_id": 309,
+      "grasped": false,
+      "distance": 0.14523015916347504
+    },
+    {
+      "episode_id": 310,
+      "grasped": false,
+      "distance": 0.16407383978366852
+    },
+    {
+      "episode_id": 311,
+      "grasped": false,
+      "distance": 0.19317218661308289
+    },
+    {
+      "episode_id": 312,
+      "grasped": false,
+      "distance": 0.19492653012275696
+    },
+    {
+      "episode_id": 313,
+      "grasped": false,
+      "distance": 0.19853688776493073
+    },
+    {
+      "episode_id": 314,
+      "grasped": false,
+      "distance": 0.1915445774793625
+    },
+    {
+      "episode_id": 315,
+      "grasped": false,
+      "distance": 0.1616135984659195
+    },
+    {
+      "episode_id": 316,
+      "grasped": false,
+      "distance": 0.1950853168964386
+    },
+    {
+      "episode_id": 317,
+      "grasped": false,
+      "distance": 0.16347773373126984
+    },
+    {
+      "episode_id": 318,
+      "grasped": false,
+      "distance": 0.20288218557834625
+    },
+    {
+      "episode_id": 319,
+      "grasped": false,
+      "distance": 0.19985800981521606
+    },
+    {
+      "episode_id": 320,
+      "grasped": false,
+      "distance": 0.17387814819812775
+    },
+    {
+      "episode_id": 321,
+      "grasped": false,
+      "distance": 0.17059986293315887
+    },
+    {
+      "episode_id": 322,
+      "grasped": false,
+      "distance": 0.1614304631948471
+    },
+    {
+      "episode_id": 323,
+      "grasped": false,
+      "distance": 0.17919202148914337
+    },
+    {
+      "episode_id": 324,
+      "grasped": false,
+      "distance": 0.16523198783397675
+    },
+    {
+      "episode_id": 325,
+      "grasped": false,
+      "distance": 0.15897713601589203
+    },
+    {
+      "episode_id": 326,
+      "grasped": false,
+      "distance": 0.17604896426200867
+    },
+    {
+      "episode_id": 327,
+      "grasped": false,
+      "distance": 0.19130036234855652
+    },
+    {
+      "episode_id": 328,
+      "grasped": false,
+      "distance": 0.20632268488407135
+    },
+    {
+      "episode_id": 329,
+      "grasped": false,
+      "distance": 0.15609900653362274
+    },
+    {
+      "episode_id": 330,
+      "grasped": false,
+      "distance": 0.15405437350273132
+    },
+    {
+      "episode_id": 331,
+      "grasped": false,
+      "distance": 0.18331702053546906
+    },
+    {
+      "episode_id": 332,
+      "grasped": false,
+      "distance": 0.19306176900863647
+    },
+    {
+      "episode_id": 333,
+      "grasped": false,
+      "distance": 0.1718648225069046
+    },
+    {
+      "episode_id": 334,
+      "grasped": false,
+      "distance": 0.2032546103000641
+    },
+    {
+      "episode_id": 335,
+      "grasped": false,
+      "distance": 0.15108276903629303
+    },
+    {
+      "episode_id": 336,
+      "grasped": false,
+      "distance": 0.1734144687652588
+    },
+    {
+      "episode_id": 337,
+      "grasped": false,
+      "distance": 0.15919643640518188
+    },
+    {
+      "episode_id": 338,
+      "grasped": false,
+      "distance": 0.15625570714473724
+    },
+    {
+      "episode_id": 339,
+      "grasped": false,
+      "distance": 0.18297529220581055
+    },
+    {
+      "episode_id": 340,
+      "grasped": false,
+      "distance": 0.19570057094097137
+    },
+    {
+      "episode_id": 341,
+      "grasped": false,
+      "distance": 0.16264644265174866
+    },
+    {
+      "episode_id": 342,
+      "grasped": false,
+      "distance": 0.17374753952026367
+    },
+    {
+      "episode_id": 343,
+      "grasped": false,
+      "distance": 0.18011462688446045
+    },
+    {
+      "episode_id": 344,
+      "grasped": false,
+      "distance": 0.19653478264808655
+    },
+    {
+      "episode_id": 345,
+      "grasped": false,
+      "distance": 0.15278467535972595
+    },
+    {
+      "episode_id": 346,
+      "grasped": false,
+      "distance": 0.1757119596004486
+    },
+    {
+      "episode_id": 347,
+      "grasped": false,
+      "distance": 0.23661313951015472
+    },
+    {
+      "episode_id": 348,
+      "grasped": false,
+      "distance": 0.14412319660186768
+    },
+    {
+      "episode_id": 349,
+      "grasped": false,
+      "distance": 0.18867352604866028
+    },
+    {
+      "episode_id": 350,
+      "grasped": false,
+      "distance": 0.17722493410110474
+    },
+    {
+      "episode_id": 351,
+      "grasped": false,
+      "distance": 0.1871066838502884
+    },
+    {
+      "episode_id": 352,
+      "grasped": false,
+      "distance": 0.13987648487091064
+    },
+    {
+      "episode_id": 353,
+      "grasped": false,
+      "distance": 0.18339762091636658
+    },
+    {
+      "episode_id": 354,
+      "grasped": false,
+      "distance": 0.15547148883342743
+    },
+    {
+      "episode_id": 355,
+      "grasped": false,
+      "distance": 0.19601406157016754
+    },
+    {
+      "episode_id": 356,
+      "grasped": false,
+      "distance": 0.16665253043174744
+    },
+    {
+      "episode_id": 357,
+      "grasped": false,
+      "distance": 0.16999883949756622
+    },
+    {
+      "episode_id": 358,
+      "grasped": false,
+      "distance": 0.17943476140499115
+    },
+    {
+      "episode_id": 359,
+      "grasped": false,
+      "distance": 0.15349189937114716
+    },
+    {
+      "episode_id": 360,
+      "grasped": false,
+      "distance": 0.16115988790988922
+    },
+    {
+      "episode_id": 361,
+      "grasped": false,
+      "distance": 0.17661619186401367
+    },
+    {
+      "episode_id": 362,
+      "grasped": false,
+      "distance": 0.1910211741924286
+    },
+    {
+      "episode_id": 363,
+      "grasped": false,
+      "distance": 0.1710970550775528
+    },
+    {
+      "episode_id": 364,
+      "grasped": false,
+      "distance": 0.14628425240516663
+    },
+    {
+      "episode_id": 365,
+      "grasped": false,
+      "distance": 0.17082509398460388
+    },
+    {
+      "episode_id": 366,
+      "grasped": false,
+      "distance": 0.16663071513175964
+    },
+    {
+      "episode_id": 367,
+      "grasped": false,
+      "distance": 0.16866984963417053
+    },
+    {
+      "episode_id": 368,
+      "grasped": false,
+      "distance": 0.13665150105953217
+    },
+    {
+      "episode_id": 369,
+      "grasped": false,
+      "distance": 0.16625148057937622
+    },
+    {
+      "episode_id": 370,
+      "grasped": false,
+      "distance": 0.17647533118724823
+    },
+    {
+      "episode_id": 371,
+      "grasped": false,
+      "distance": 0.19610580801963806
+    },
+    {
+      "episode_id": 372,
+      "grasped": false,
+      "distance": 0.17016814649105072
+    },
+    {
+      "episode_id": 373,
+      "grasped": false,
+      "distance": 0.13166020810604095
+    },
+    {
+      "episode_id": 374,
+      "grasped": false,
+      "distance": 0.1717495620250702
+    },
+    {
+      "episode_id": 375,
+      "grasped": false,
+      "distance": 0.20071986317634583
+    },
+    {
+      "episode_id": 376,
+      "grasped": false,
+      "distance": 0.18908117711544037
+    },
+    {
+      "episode_id": 377,
+      "grasped": false,
+      "distance": 0.19128265976905823
+    },
+    {
+      "episode_id": 378,
+      "grasped": false,
+      "distance": 0.1894143968820572
+    },
+    {
+      "episode_id": 379,
+      "grasped": false,
+      "distance": 0.14979760348796844
+    },
+    {
+      "episode_id": 380,
+      "grasped": false,
+      "distance": 0.20197121798992157
+    },
+    {
+      "episode_id": 381,
+      "grasped": false,
+      "distance": 0.18261834979057312
+    },
+    {
+      "episode_id": 382,
+      "grasped": false,
+      "distance": 0.17596285045146942
+    },
+    {
+      "episode_id": 383,
+      "grasped": false,
+      "distance": 0.2125619798898697
+    },
+    {
+      "episode_id": 384,
+      "grasped": false,
+      "distance": 0.1585642248392105
+    },
+    {
+      "episode_id": 385,
+      "grasped": false,
+      "distance": 0.14692093431949615
+    },
+    {
+      "episode_id": 386,
+      "grasped": false,
+      "distance": 0.1974901556968689
+    },
+    {
+      "episode_id": 387,
+      "grasped": false,
+      "distance": 0.1556079238653183
+    },
+    {
+      "episode_id": 388,
+      "grasped": false,
+      "distance": 0.14707909524440765
+    },
+    {
+      "episode_id": 389,
+      "grasped": false,
+      "distance": 0.16780923306941986
+    },
+    {
+      "episode_id": 390,
+      "grasped": false,
+      "distance": 0.16050279140472412
+    },
+    {
+      "episode_id": 391,
+      "grasped": false,
+      "distance": 0.16415952146053314
+    },
+    {
+      "episode_id": 392,
+      "grasped": false,
+      "distance": 0.14778034389019012
+    },
+    {
+      "episode_id": 393,
+      "grasped": false,
+      "distance": 0.13742978870868683
+    },
+    {
+      "episode_id": 394,
+      "grasped": false,
+      "distance": 0.1323155015707016
+    },
+    {
+      "episode_id": 395,
+      "grasped": false,
+      "distance": 0.20442447066307068
+    },
+    {
+      "episode_id": 396,
+      "grasped": false,
+      "distance": 0.14316688477993011
+    },
+    {
+      "episode_id": 397,
+      "grasped": false,
+      "distance": 0.1738097220659256
+    },
+    {
+      "episode_id": 398,
+      "grasped": false,
+      "distance": 0.19007116556167603
+    },
+    {
+      "episode_id": 399,
+      "grasped": false,
+      "distance": 0.1627318114042282
+    },
+    {
+      "episode_id": 400,
+      "grasped": false,
+      "distance": 0.16254815459251404
+    },
+    {
+      "episode_id": 401,
+      "grasped": false,
+      "distance": 0.1524132937192917
+    },
+    {
+      "episode_id": 402,
+      "grasped": false,
+      "distance": 0.2061605304479599
+    },
+    {
+      "episode_id": 403,
+      "grasped": false,
+      "distance": 0.17874053120613098
+    },
+    {
+      "episode_id": 404,
+      "grasped": false,
+      "distance": 0.19632896780967712
+    },
+    {
+      "episode_id": 405,
+      "grasped": false,
+      "distance": 0.14825445413589478
+    },
+    {
+      "episode_id": 406,
+      "grasped": false,
+      "distance": 0.18090863525867462
+    },
+    {
+      "episode_id": 407,
+      "grasped": false,
+      "distance": 0.15572482347488403
+    },
+    {
+      "episode_id": 408,
+      "grasped": false,
+      "distance": 0.166070818901062
+    },
+    {
+      "episode_id": 409,
+      "grasped": false,
+      "distance": 0.16143500804901123
+    },
+    {
+      "episode_id": 410,
+      "grasped": false,
+      "distance": 0.17070366442203522
+    },
+    {
+      "episode_id": 411,
+      "grasped": false,
+      "distance": 0.1994067132472992
+    },
+    {
+      "episode_id": 412,
+      "grasped": false,
+      "distance": 0.18642251193523407
+    },
+    {
+      "episode_id": 413,
+      "grasped": false,
+      "distance": 0.20328059792518616
+    },
+    {
+      "episode_id": 414,
+      "grasped": false,
+      "distance": 0.18880686163902283
+    },
+    {
+      "episode_id": 415,
+      "grasped": false,
+      "distance": 0.16634829342365265
+    },
+    {
+      "episode_id": 416,
+      "grasped": false,
+      "distance": 0.16683322191238403
+    },
+    {
+      "episode_id": 417,
+      "grasped": false,
+      "distance": 0.15180666744709015
+    },
+    {
+      "episode_id": 418,
+      "grasped": false,
+      "distance": 0.15826626121997833
+    },
+    {
+      "episode_id": 419,
+      "grasped": false,
+      "distance": 0.1627630740404129
+    },
+    {
+      "episode_id": 420,
+      "grasped": false,
+      "distance": 0.16880075633525848
+    },
+    {
+      "episode_id": 421,
+      "grasped": false,
+      "distance": 0.13819779455661774
+    },
+    {
+      "episode_id": 422,
+      "grasped": false,
+      "distance": 0.2146931290626526
+    },
+    {
+      "episode_id": 423,
+      "grasped": false,
+      "distance": 0.18022462725639343
+    },
+    {
+      "episode_id": 424,
+      "grasped": false,
+      "distance": 0.1467350721359253
+    },
+    {
+      "episode_id": 425,
+      "grasped": false,
+      "distance": 0.16351932287216187
+    },
+    {
+      "episode_id": 426,
+      "grasped": false,
+      "distance": 0.19430673122406006
+    },
+    {
+      "episode_id": 427,
+      "grasped": false,
+      "distance": 0.18098458647727966
+    },
+    {
+      "episode_id": 428,
+      "grasped": false,
+      "distance": 0.18087460100650787
+    },
+    {
+      "episode_id": 429,
+      "grasped": false,
+      "distance": 0.17842622101306915
+    },
+    {
+      "episode_id": 430,
+      "grasped": false,
+      "distance": 0.18180207908153534
+    },
+    {
+      "episode_id": 431,
+      "grasped": false,
+      "distance": 0.2018859088420868
+    },
+    {
+      "episode_id": 432,
+      "grasped": false,
+      "distance": 0.15579257905483246
+    },
+    {
+      "episode_id": 433,
+      "grasped": false,
+      "distance": 0.16732923686504364
+    },
+    {
+      "episode_id": 434,
+      "grasped": false,
+      "distance": 0.19208256900310516
+    },
+    {
+      "episode_id": 435,
+      "grasped": false,
+      "distance": 0.17507319152355194
+    },
+    {
+      "episode_id": 436,
+      "grasped": false,
+      "distance": 0.1845351755619049
+    },
+    {
+      "episode_id": 437,
+      "grasped": false,
+      "distance": 0.18282611668109894
+    },
+    {
+      "episode_id": 438,
+      "grasped": false,
+      "distance": 0.15708957612514496
+    },
+    {
+      "episode_id": 439,
+      "grasped": false,
+      "distance": 0.16934366524219513
+    },
+    {
+      "episode_id": 440,
+      "grasped": false,
+      "distance": 0.14804808795452118
+    },
+    {
+      "episode_id": 441,
+      "grasped": false,
+      "distance": 0.189260333776474
+    },
+    {
+      "episode_id": 442,
+      "grasped": false,
+      "distance": 0.17086932063102722
+    },
+    {
+      "episode_id": 443,
+      "grasped": false,
+      "distance": 0.1667589247226715
+    },
+    {
+      "episode_id": 444,
+      "grasped": false,
+      "distance": 0.1767377406358719
+    },
+    {
+      "episode_id": 445,
+      "grasped": false,
+      "distance": 0.18812574446201324
+    },
+    {
+      "episode_id": 446,
+      "grasped": false,
+      "distance": 0.187002032995224
+    },
+    {
+      "episode_id": 447,
+      "grasped": false,
+      "distance": 0.19055677950382233
+    },
+    {
+      "episode_id": 448,
+      "grasped": false,
+      "distance": 0.15233971178531647
+    },
+    {
+      "episode_id": 449,
+      "grasped": false,
+      "distance": 0.1854139268398285
+    },
+    {
+      "episode_id": 450,
+      "grasped": false,
+      "distance": 0.16923470795154572
+    },
+    {
+      "episode_id": 451,
+      "grasped": false,
+      "distance": 0.17981943488121033
+    },
+    {
+      "episode_id": 452,
+      "grasped": false,
+      "distance": 0.20772269368171692
+    },
+    {
+      "episode_id": 453,
+      "grasped": false,
+      "distance": 0.1920018047094345
+    },
+    {
+      "episode_id": 454,
+      "grasped": false,
+      "distance": 0.16309687495231628
+    },
+    {
+      "episode_id": 455,
+      "grasped": false,
+      "distance": 0.13481108844280243
+    },
+    {
+      "episode_id": 456,
+      "grasped": false,
+      "distance": 0.14404405653476715
+    },
+    {
+      "episode_id": 457,
+      "grasped": false,
+      "distance": 0.1628541797399521
+    },
+    {
+      "episode_id": 458,
+      "grasped": false,
+      "distance": 0.17597179114818573
+    },
+    {
+      "episode_id": 459,
+      "grasped": false,
+      "distance": 0.18432842195034027
+    },
+    {
+      "episode_id": 460,
+      "grasped": false,
+      "distance": 0.14761526882648468
+    },
+    {
+      "episode_id": 461,
+      "grasped": false,
+      "distance": 0.17680451273918152
+    },
+    {
+      "episode_id": 462,
+      "grasped": false,
+      "distance": 0.18118992447853088
+    },
+    {
+      "episode_id": 463,
+      "grasped": false,
+      "distance": 0.18182934820652008
+    },
+    {
+      "episode_id": 464,
+      "grasped": false,
+      "distance": 0.16450810432434082
+    },
+    {
+      "episode_id": 465,
+      "grasped": false,
+      "distance": 0.16336177289485931
+    },
+    {
+      "episode_id": 466,
+      "grasped": false,
+      "distance": 0.12667080760002136
+    },
+    {
+      "episode_id": 467,
+      "grasped": false,
+      "distance": 0.1540835201740265
+    },
+    {
+      "episode_id": 468,
+      "grasped": false,
+      "distance": 0.16228574514389038
+    },
+    {
+      "episode_id": 469,
+      "grasped": false,
+      "distance": 0.19385628402233124
+    },
+    {
+      "episode_id": 470,
+      "grasped": false,
+      "distance": 0.16270901262760162
+    },
+    {
+      "episode_id": 471,
+      "grasped": false,
+      "distance": 0.15001341700553894
+    },
+    {
+      "episode_id": 472,
+      "grasped": false,
+      "distance": 0.2001606673002243
+    },
+    {
+      "episode_id": 473,
+      "grasped": false,
+      "distance": 0.18548914790153503
+    },
+    {
+      "episode_id": 474,
+      "grasped": false,
+      "distance": 0.17710235714912415
+    },
+    {
+      "episode_id": 475,
+      "grasped": false,
+      "distance": 0.176908940076828
+    },
+    {
+      "episode_id": 476,
+      "grasped": false,
+      "distance": 0.19293776154518127
+    },
+    {
+      "episode_id": 477,
+      "grasped": false,
+      "distance": 0.13909456133842468
+    },
+    {
+      "episode_id": 478,
+      "grasped": false,
+      "distance": 0.15692612528800964
+    },
+    {
+      "episode_id": 479,
+      "grasped": false,
+      "distance": 0.18751613795757294
+    },
+    {
+      "episode_id": 480,
+      "grasped": false,
+      "distance": 0.16553886234760284
+    },
+    {
+      "episode_id": 481,
+      "grasped": false,
+      "distance": 0.15968547761440277
+    },
+    {
+      "episode_id": 482,
+      "grasped": false,
+      "distance": 0.16839106380939484
+    },
+    {
+      "episode_id": 483,
+      "grasped": false,
+      "distance": 0.1554357260465622
+    },
+    {
+      "episode_id": 484,
+      "grasped": false,
+      "distance": 0.15632712841033936
+    },
+    {
+      "episode_id": 485,
+      "grasped": false,
+      "distance": 0.15745627880096436
+    },
+    {
+      "episode_id": 486,
+      "grasped": false,
+      "distance": 0.14788176119327545
+    },
+    {
+      "episode_id": 487,
+      "grasped": false,
+      "distance": 0.22002224624156952
+    },
+    {
+      "episode_id": 488,
+      "grasped": false,
+      "distance": 0.1447729915380478
+    },
+    {
+      "episode_id": 489,
+      "grasped": false,
+      "distance": 0.18366551399230957
+    },
+    {
+      "episode_id": 490,
+      "grasped": false,
+      "distance": 0.1799248903989792
+    },
+    {
+      "episode_id": 491,
+      "grasped": false,
+      "distance": 0.17323598265647888
+    },
+    {
+      "episode_id": 492,
+      "grasped": false,
+      "distance": 0.17747317254543304
+    },
+    {
+      "episode_id": 493,
+      "grasped": false,
+      "distance": 0.1885751336812973
+    },
+    {
+      "episode_id": 494,
+      "grasped": false,
+      "distance": 0.19045725464820862
+    },
+    {
+      "episode_id": 495,
+      "grasped": false,
+      "distance": 0.1813231259584427
+    },
+    {
+      "episode_id": 496,
+      "grasped": false,
+      "distance": 0.14448273181915283
+    },
+    {
+      "episode_id": 497,
+      "grasped": false,
+      "distance": 0.16394512355327606
+    },
+    {
+      "episode_id": 498,
+      "grasped": false,
+      "distance": 0.15018749237060547
+    },
+    {
+      "episode_id": 499,
+      "grasped": false,
+      "distance": 0.18183410167694092
+    },
+    {
+      "episode_id": 500,
+      "grasped": false,
+      "distance": 0.19503623247146606
+    },
+    {
+      "episode_id": 501,
+      "grasped": false,
+      "distance": 0.17295481264591217
+    },
+    {
+      "episode_id": 502,
+      "grasped": false,
+      "distance": 0.158396914601326
+    },
+    {
+      "episode_id": 503,
+      "grasped": false,
+      "distance": 0.17114903032779694
+    },
+    {
+      "episode_id": 504,
+      "grasped": false,
+      "distance": 0.16627201437950134
+    },
+    {
+      "episode_id": 505,
+      "grasped": false,
+      "distance": 0.16076931357383728
+    },
+    {
+      "episode_id": 506,
+      "grasped": false,
+      "distance": 0.15528349578380585
+    },
+    {
+      "episode_id": 507,
+      "grasped": false,
+      "distance": 0.18860283493995667
+    },
+    {
+      "episode_id": 508,
+      "grasped": false,
+      "distance": 0.21300877630710602
+    },
+    {
+      "episode_id": 509,
+      "grasped": false,
+      "distance": 0.1918424665927887
+    },
+    {
+      "episode_id": 510,
+      "grasped": false,
+      "distance": 0.18365168571472168
+    },
+    {
+      "episode_id": 511,
+      "grasped": false,
+      "distance": 0.18803733587265015
+    },
+    {
+      "episode_id": 512,
+      "grasped": false,
+      "distance": 0.16139517724514008
+    },
+    {
+      "episode_id": 513,
+      "grasped": false,
+      "distance": 0.15609721839427948
+    },
+    {
+      "episode_id": 514,
+      "grasped": false,
+      "distance": 0.184076726436615
+    },
+    {
+      "episode_id": 515,
+      "grasped": false,
+      "distance": 0.16483628749847412
+    },
+    {
+      "episode_id": 516,
+      "grasped": false,
+      "distance": 0.16280601918697357
+    },
+    {
+      "episode_id": 517,
+      "grasped": false,
+      "distance": 0.1847599595785141
+    },
+    {
+      "episode_id": 518,
+      "grasped": false,
+      "distance": 0.1709286868572235
+    },
+    {
+      "episode_id": 519,
+      "grasped": false,
+      "distance": 0.16729629039764404
+    },
+    {
+      "episode_id": 520,
+      "grasped": false,
+      "distance": 0.1851857602596283
+    },
+    {
+      "episode_id": 521,
+      "grasped": false,
+      "distance": 0.14111816883087158
+    },
+    {
+      "episode_id": 522,
+      "grasped": false,
+      "distance": 0.16412381827831268
+    },
+    {
+      "episode_id": 523,
+      "grasped": false,
+      "distance": 0.1560627669095993
+    },
+    {
+      "episode_id": 524,
+      "grasped": false,
+      "distance": 0.15183758735656738
+    },
+    {
+      "episode_id": 525,
+      "grasped": false,
+      "distance": 0.17772461473941803
+    },
+    {
+      "episode_id": 526,
+      "grasped": false,
+      "distance": 0.1921606957912445
+    },
+    {
+      "episode_id": 527,
+      "grasped": false,
+      "distance": 0.19315961003303528
+    },
+    {
+      "episode_id": 528,
+      "grasped": false,
+      "distance": 0.17064256966114044
+    },
+    {
+      "episode_id": 529,
+      "grasped": false,
+      "distance": 0.16422046720981598
+    },
+    {
+      "episode_id": 530,
+      "grasped": false,
+      "distance": 0.14286167919635773
+    },
+    {
+      "episode_id": 531,
+      "grasped": false,
+      "distance": 0.14531299471855164
+    },
+    {
+      "episode_id": 532,
+      "grasped": false,
+      "distance": 0.18419921398162842
+    },
+    {
+      "episode_id": 533,
+      "grasped": false,
+      "distance": 0.1779235601425171
+    },
+    {
+      "episode_id": 534,
+      "grasped": false,
+      "distance": 0.16368547081947327
+    },
+    {
+      "episode_id": 535,
+      "grasped": false,
+      "distance": 0.17758183181285858
+    },
+    {
+      "episode_id": 536,
+      "grasped": false,
+      "distance": 0.14631132781505585
+    },
+    {
+      "episode_id": 537,
+      "grasped": false,
+      "distance": 0.16681012511253357
+    },
+    {
+      "episode_id": 538,
+      "grasped": false,
+      "distance": 0.14275525510311127
+    },
+    {
+      "episode_id": 539,
+      "grasped": false,
+      "distance": 0.1686246693134308
+    },
+    {
+      "episode_id": 540,
+      "grasped": false,
+      "distance": 0.20309583842754364
+    },
+    {
+      "episode_id": 541,
+      "grasped": false,
+      "distance": 0.17460891604423523
+    },
+    {
+      "episode_id": 542,
+      "grasped": false,
+      "distance": 0.19245687127113342
+    },
+    {
+      "episode_id": 543,
+      "grasped": false,
+      "distance": 0.19208212196826935
+    },
+    {
+      "episode_id": 544,
+      "grasped": false,
+      "distance": 0.13984215259552002
+    },
+    {
+      "episode_id": 545,
+      "grasped": false,
+      "distance": 0.16241876780986786
+    },
+    {
+      "episode_id": 546,
+      "grasped": false,
+      "distance": 0.17595039308071136
+    },
+    {
+      "episode_id": 547,
+      "grasped": false,
+      "distance": 0.1509627252817154
+    },
+    {
+      "episode_id": 548,
+      "grasped": false,
+      "distance": 0.17354024946689606
+    },
+    {
+      "episode_id": 549,
+      "grasped": false,
+      "distance": 0.18740884959697723
+    },
+    {
+      "episode_id": 550,
+      "grasped": false,
+      "distance": 0.1585027426481247
+    },
+    {
+      "episode_id": 551,
+      "grasped": false,
+      "distance": 0.15693022310733795
+    },
+    {
+      "episode_id": 552,
+      "grasped": false,
+      "distance": 0.16474854946136475
+    },
+    {
+      "episode_id": 553,
+      "grasped": false,
+      "distance": 0.16498860716819763
+    },
+    {
+      "episode_id": 554,
+      "grasped": false,
+      "distance": 0.1767333298921585
+    },
+    {
+      "episode_id": 555,
+      "grasped": false,
+      "distance": 0.1676555573940277
+    },
+    {
+      "episode_id": 556,
+      "grasped": false,
+      "distance": 0.16246744990348816
+    },
+    {
+      "episode_id": 557,
+      "grasped": false,
+      "distance": 0.16854599118232727
+    },
+    {
+      "episode_id": 558,
+      "grasped": false,
+      "distance": 0.13882236182689667
+    },
+    {
+      "episode_id": 559,
+      "grasped": false,
+      "distance": 0.1833799183368683
+    },
+    {
+      "episode_id": 560,
+      "grasped": false,
+      "distance": 0.16997332870960236
+    },
+    {
+      "episode_id": 561,
+      "grasped": false,
+      "distance": 0.1589917689561844
+    },
+    {
+      "episode_id": 562,
+      "grasped": false,
+      "distance": 0.15669099986553192
+    },
+    {
+      "episode_id": 563,
+      "grasped": false,
+      "distance": 0.15890242159366608
+    },
+    {
+      "episode_id": 564,
+      "grasped": false,
+      "distance": 0.1811331808567047
+    },
+    {
+      "episode_id": 565,
+      "grasped": false,
+      "distance": 0.1465446799993515
+    },
+    {
+      "episode_id": 566,
+      "grasped": false,
+      "distance": 0.1509164571762085
+    },
+    {
+      "episode_id": 567,
+      "grasped": false,
+      "distance": 0.19852237403392792
+    },
+    {
+      "episode_id": 568,
+      "grasped": false,
+      "distance": 0.19393740594387054
+    },
+    {
+      "episode_id": 569,
+      "grasped": false,
+      "distance": 0.1948205679655075
+    },
+    {
+      "episode_id": 570,
+      "grasped": false,
+      "distance": 0.16196879744529724
+    },
+    {
+      "episode_id": 571,
+      "grasped": false,
+      "distance": 0.16116641461849213
+    },
+    {
+      "episode_id": 572,
+      "grasped": false,
+      "distance": 0.1843632310628891
+    },
+    {
+      "episode_id": 573,
+      "grasped": false,
+      "distance": 0.19426771998405457
+    },
+    {
+      "episode_id": 574,
+      "grasped": false,
+      "distance": 0.17586944997310638
+    },
+    {
+      "episode_id": 575,
+      "grasped": false,
+      "distance": 0.17331932485103607
+    },
+    {
+      "episode_id": 576,
+      "grasped": false,
+      "distance": 0.1442808210849762
+    },
+    {
+      "episode_id": 577,
+      "grasped": false,
+      "distance": 0.14161479473114014
+    },
+    {
+      "episode_id": 578,
+      "grasped": false,
+      "distance": 0.1297975778579712
+    },
+    {
+      "episode_id": 579,
+      "grasped": false,
+      "distance": 0.17007140815258026
+    },
+    {
+      "episode_id": 580,
+      "grasped": false,
+      "distance": 0.17251688241958618
+    },
+    {
+      "episode_id": 581,
+      "grasped": false,
+      "distance": 0.193678081035614
+    },
+    {
+      "episode_id": 582,
+      "grasped": false,
+      "distance": 0.1299734115600586
+    },
+    {
+      "episode_id": 583,
+      "grasped": false,
+      "distance": 0.16384373605251312
+    },
+    {
+      "episode_id": 584,
+      "grasped": false,
+      "distance": 0.1784258484840393
+    },
+    {
+      "episode_id": 585,
+      "grasped": false,
+      "distance": 0.17066814005374908
+    },
+    {
+      "episode_id": 586,
+      "grasped": false,
+      "distance": 0.14562346041202545
+    },
+    {
+      "episode_id": 587,
+      "grasped": false,
+      "distance": 0.15643639862537384
+    },
+    {
+      "episode_id": 588,
+      "grasped": false,
+      "distance": 0.15547773241996765
+    },
+    {
+      "episode_id": 589,
+      "grasped": false,
+      "distance": 0.15521518886089325
+    },
+    {
+      "episode_id": 590,
+      "grasped": false,
+      "distance": 0.21248295903205872
+    },
+    {
+      "episode_id": 591,
+      "grasped": false,
+      "distance": 0.17793011665344238
+    },
+    {
+      "episode_id": 592,
+      "grasped": false,
+      "distance": 0.17989902198314667
+    },
+    {
+      "episode_id": 593,
+      "grasped": false,
+      "distance": 0.17298677563667297
+    },
+    {
+      "episode_id": 594,
+      "grasped": false,
+      "distance": 0.15749491751194
+    },
+    {
+      "episode_id": 595,
+      "grasped": false,
+      "distance": 0.16063779592514038
+    },
+    {
+      "episode_id": 596,
+      "grasped": false,
+      "distance": 0.17015685141086578
+    },
+    {
+      "episode_id": 597,
+      "grasped": false,
+      "distance": 0.16888822615146637
+    },
+    {
+      "episode_id": 598,
+      "grasped": false,
+      "distance": 0.20256651937961578
+    },
+    {
+      "episode_id": 599,
+      "grasped": false,
+      "distance": 0.1785801202058792
+    },
+    {
+      "episode_id": 600,
+      "grasped": false,
+      "distance": 0.2187165915966034
+    },
+    {
+      "episode_id": 601,
+      "grasped": false,
+      "distance": 0.16037297248840332
+    },
+    {
+      "episode_id": 602,
+      "grasped": false,
+      "distance": 0.17789612710475922
+    },
+    {
+      "episode_id": 603,
+      "grasped": false,
+      "distance": 0.17565834522247314
+    },
+    {
+      "episode_id": 604,
+      "grasped": false,
+      "distance": 0.14517144858837128
+    },
+    {
+      "episode_id": 605,
+      "grasped": false,
+      "distance": 0.1963503509759903
+    },
+    {
+      "episode_id": 606,
+      "grasped": false,
+      "distance": 0.15573030710220337
+    },
+    {
+      "episode_id": 607,
+      "grasped": false,
+      "distance": 0.15528008341789246
+    },
+    {
+      "episode_id": 608,
+      "grasped": false,
+      "distance": 0.17161715030670166
+    },
+    {
+      "episode_id": 609,
+      "grasped": false,
+      "distance": 0.1819957196712494
+    },
+    {
+      "episode_id": 610,
+      "grasped": false,
+      "distance": 0.15920332074165344
+    },
+    {
+      "episode_id": 611,
+      "grasped": false,
+      "distance": 0.15867111086845398
+    },
+    {
+      "episode_id": 612,
+      "grasped": false,
+      "distance": 0.17420779168605804
+    },
+    {
+      "episode_id": 613,
+      "grasped": false,
+      "distance": 0.16652582585811615
+    },
+    {
+      "episode_id": 614,
+      "grasped": false,
+      "distance": 0.18678271770477295
+    },
+    {
+      "episode_id": 615,
+      "grasped": false,
+      "distance": 0.15023352205753326
+    },
+    {
+      "episode_id": 616,
+      "grasped": false,
+      "distance": 0.1780051440000534
+    },
+    {
+      "episode_id": 617,
+      "grasped": false,
+      "distance": 0.1710737943649292
+    },
+    {
+      "episode_id": 618,
+      "grasped": false,
+      "distance": 0.16542324423789978
+    },
+    {
+      "episode_id": 619,
+      "grasped": false,
+      "distance": 0.1326896697282791
+    },
+    {
+      "episode_id": 620,
+      "grasped": false,
+      "distance": 0.187734916806221
+    },
+    {
+      "episode_id": 621,
+      "grasped": false,
+      "distance": 0.18238285183906555
+    },
+    {
+      "episode_id": 622,
+      "grasped": false,
+      "distance": 0.17636919021606445
+    },
+    {
+      "episode_id": 623,
+      "grasped": false,
+      "distance": 0.1748000830411911
+    },
+    {
+      "episode_id": 624,
+      "grasped": false,
+      "distance": 0.22628086805343628
+    },
+    {
+      "episode_id": 625,
+      "grasped": false,
+      "distance": 0.14685070514678955
+    },
+    {
+      "episode_id": 626,
+      "grasped": false,
+      "distance": 0.14367224276065826
+    },
+    {
+      "episode_id": 627,
+      "grasped": false,
+      "distance": 0.20744138956069946
+    },
+    {
+      "episode_id": 628,
+      "grasped": false,
+      "distance": 0.17627961933612823
+    },
+    {
+      "episode_id": 629,
+      "grasped": false,
+      "distance": 0.1892743706703186
+    },
+    {
+      "episode_id": 630,
+      "grasped": false,
+      "distance": 0.18541336059570312
+    },
+    {
+      "episode_id": 631,
+      "grasped": false,
+      "distance": 0.15475063025951385
+    },
+    {
+      "episode_id": 632,
+      "grasped": false,
+      "distance": 0.17475494742393494
+    },
+    {
+      "episode_id": 633,
+      "grasped": false,
+      "distance": 0.1772496998310089
+    },
+    {
+      "episode_id": 634,
+      "grasped": false,
+      "distance": 0.18032710254192352
+    },
+    {
+      "episode_id": 635,
+      "grasped": false,
+      "distance": 0.16485299170017242
+    },
+    {
+      "episode_id": 636,
+      "grasped": false,
+      "distance": 0.14960932731628418
+    },
+    {
+      "episode_id": 637,
+      "grasped": false,
+      "distance": 0.1681814193725586
+    },
+    {
+      "episode_id": 638,
+      "grasped": false,
+      "distance": 0.18051782250404358
+    },
+    {
+      "episode_id": 639,
+      "grasped": false,
+      "distance": 0.19172514975070953
+    },
+    {
+      "episode_id": 640,
+      "grasped": false,
+      "distance": 0.16868923604488373
+    },
+    {
+      "episode_id": 641,
+      "grasped": false,
+      "distance": 0.17220158874988556
+    },
+    {
+      "episode_id": 642,
+      "grasped": false,
+      "distance": 0.18019357323646545
+    },
+    {
+      "episode_id": 643,
+      "grasped": false,
+      "distance": 0.18040157854557037
+    },
+    {
+      "episode_id": 644,
+      "grasped": false,
+      "distance": 0.18829797208309174
+    },
+    {
+      "episode_id": 645,
+      "grasped": false,
+      "distance": 0.15890072286128998
+    },
+    {
+      "episode_id": 646,
+      "grasped": false,
+      "distance": 0.16324259340763092
+    },
+    {
+      "episode_id": 647,
+      "grasped": false,
+      "distance": 0.16694554686546326
+    },
+    {
+      "episode_id": 648,
+      "grasped": false,
+      "distance": 0.1548233926296234
+    },
+    {
+      "episode_id": 649,
+      "grasped": false,
+      "distance": 0.16686691343784332
+    },
+    {
+      "episode_id": 650,
+      "grasped": false,
+      "distance": 0.18008050322532654
+    },
+    {
+      "episode_id": 651,
+      "grasped": false,
+      "distance": 0.15113095939159393
+    },
+    {
+      "episode_id": 652,
+      "grasped": false,
+      "distance": 0.13603836297988892
+    },
+    {
+      "episode_id": 653,
+      "grasped": false,
+      "distance": 0.17746560275554657
+    },
+    {
+      "episode_id": 654,
+      "grasped": false,
+      "distance": 0.141260027885437
+    },
+    {
+      "episode_id": 655,
+      "grasped": false,
+      "distance": 0.17352811992168427
+    },
+    {
+      "episode_id": 656,
+      "grasped": false,
+      "distance": 0.17735455930233002
+    },
+    {
+      "episode_id": 657,
+      "grasped": false,
+      "distance": 0.19858749210834503
+    },
+    {
+      "episode_id": 658,
+      "grasped": false,
+      "distance": 0.14318375289440155
+    },
+    {
+      "episode_id": 659,
+      "grasped": false,
+      "distance": 0.19838424026966095
+    },
+    {
+      "episode_id": 660,
+      "grasped": false,
+      "distance": 0.201677143573761
+    },
+    {
+      "episode_id": 661,
+      "grasped": false,
+      "distance": 0.15180329978466034
+    },
+    {
+      "episode_id": 662,
+      "grasped": false,
+      "distance": 0.21060815453529358
+    },
+    {
+      "episode_id": 663,
+      "grasped": false,
+      "distance": 0.15266923606395721
+    },
+    {
+      "episode_id": 664,
+      "grasped": false,
+      "distance": 0.16543272137641907
+    },
+    {
+      "episode_id": 665,
+      "grasped": false,
+      "distance": 0.16867798566818237
+    },
+    {
+      "episode_id": 666,
+      "grasped": false,
+      "distance": 0.17085295915603638
+    },
+    {
+      "episode_id": 667,
+      "grasped": false,
+      "distance": 0.1913948357105255
+    },
+    {
+      "episode_id": 668,
+      "grasped": false,
+      "distance": 0.17340420186519623
+    },
+    {
+      "episode_id": 669,
+      "grasped": false,
+      "distance": 0.20242908596992493
+    },
+    {
+      "episode_id": 670,
+      "grasped": false,
+      "distance": 0.16420100629329681
+    },
+    {
+      "episode_id": 671,
+      "grasped": false,
+      "distance": 0.18163353204727173
+    },
+    {
+      "episode_id": 672,
+      "grasped": false,
+      "distance": 0.1777237206697464
+    },
+    {
+      "episode_id": 673,
+      "grasped": false,
+      "distance": 0.17257505655288696
+    },
+    {
+      "episode_id": 674,
+      "grasped": false,
+      "distance": 0.1334753930568695
+    },
+    {
+      "episode_id": 675,
+      "grasped": false,
+      "distance": 0.1781420111656189
+    },
+    {
+      "episode_id": 676,
+      "grasped": false,
+      "distance": 0.16983404755592346
+    },
+    {
+      "episode_id": 677,
+      "grasped": false,
+      "distance": 0.16892293095588684
+    },
+    {
+      "episode_id": 678,
+      "grasped": false,
+      "distance": 0.14077597856521606
+    },
+    {
+      "episode_id": 679,
+      "grasped": false,
+      "distance": 0.16498200595378876
+    },
+    {
+      "episode_id": 680,
+      "grasped": false,
+      "distance": 0.1577622890472412
+    },
+    {
+      "episode_id": 681,
+      "grasped": false,
+      "distance": 0.17228806018829346
+    },
+    {
+      "episode_id": 682,
+      "grasped": false,
+      "distance": 0.14642438292503357
+    },
+    {
+      "episode_id": 683,
+      "grasped": false,
+      "distance": 0.19265678524971008
+    },
+    {
+      "episode_id": 684,
+      "grasped": false,
+      "distance": 0.17686249315738678
+    },
+    {
+      "episode_id": 685,
+      "grasped": false,
+      "distance": 0.16270263493061066
+    },
+    {
+      "episode_id": 686,
+      "grasped": false,
+      "distance": 0.14081604778766632
+    },
+    {
+      "episode_id": 687,
+      "grasped": false,
+      "distance": 0.14682254195213318
+    },
+    {
+      "episode_id": 688,
+      "grasped": false,
+      "distance": 0.17823784053325653
+    },
+    {
+      "episode_id": 689,
+      "grasped": false,
+      "distance": 0.17283321917057037
+    },
+    {
+      "episode_id": 690,
+      "grasped": false,
+      "distance": 0.18484173715114594
+    },
+    {
+      "episode_id": 691,
+      "grasped": false,
+      "distance": 0.1478835493326187
+    },
+    {
+      "episode_id": 692,
+      "grasped": false,
+      "distance": 0.16813458502292633
+    },
+    {
+      "episode_id": 693,
+      "grasped": false,
+      "distance": 0.16857419908046722
+    },
+    {
+      "episode_id": 694,
+      "grasped": false,
+      "distance": 0.18898192048072815
+    },
+    {
+      "episode_id": 695,
+      "grasped": false,
+      "distance": 0.20501388609409332
+    },
+    {
+      "episode_id": 696,
+      "grasped": false,
+      "distance": 0.17309974133968353
+    },
+    {
+      "episode_id": 697,
+      "grasped": false,
+      "distance": 0.1683267503976822
+    },
+    {
+      "episode_id": 698,
+      "grasped": false,
+      "distance": 0.16441458463668823
+    },
+    {
+      "episode_id": 699,
+      "grasped": false,
+      "distance": 0.1875096708536148
+    },
+    {
+      "episode_id": 700,
+      "grasped": false,
+      "distance": 0.15061219036579132
+    },
+    {
+      "episode_id": 701,
+      "grasped": false,
+      "distance": 0.1456061601638794
+    },
+    {
+      "episode_id": 702,
+      "grasped": false,
+      "distance": 0.1663074493408203
+    },
+    {
+      "episode_id": 703,
+      "grasped": false,
+      "distance": 0.1838783472776413
+    },
+    {
+      "episode_id": 704,
+      "grasped": false,
+      "distance": 0.15597093105316162
+    },
+    {
+      "episode_id": 705,
+      "grasped": false,
+      "distance": 0.13791988790035248
+    },
+    {
+      "episode_id": 706,
+      "grasped": false,
+      "distance": 0.15155789256095886
+    },
+    {
+      "episode_id": 707,
+      "grasped": false,
+      "distance": 0.15953585505485535
+    },
+    {
+      "episode_id": 708,
+      "grasped": false,
+      "distance": 0.18082833290100098
+    },
+    {
+      "episode_id": 709,
+      "grasped": false,
+      "distance": 0.1802489012479782
+    },
+    {
+      "episode_id": 710,
+      "grasped": false,
+      "distance": 0.17185673117637634
+    },
+    {
+      "episode_id": 711,
+      "grasped": false,
+      "distance": 0.1881994605064392
+    },
+    {
+      "episode_id": 712,
+      "grasped": false,
+      "distance": 0.14346304535865784
+    },
+    {
+      "episode_id": 713,
+      "grasped": false,
+      "distance": 0.17299167811870575
+    },
+    {
+      "episode_id": 714,
+      "grasped": false,
+      "distance": 0.18414181470870972
+    },
+    {
+      "episode_id": 715,
+      "grasped": false,
+      "distance": 0.155158132314682
+    },
+    {
+      "episode_id": 716,
+      "grasped": false,
+      "distance": 0.134071484208107
+    },
+    {
+      "episode_id": 717,
+      "grasped": false,
+      "distance": 0.15918083488941193
+    },
+    {
+      "episode_id": 718,
+      "grasped": false,
+      "distance": 0.15420697629451752
+    },
+    {
+      "episode_id": 719,
+      "grasped": false,
+      "distance": 0.17467617988586426
+    },
+    {
+      "episode_id": 720,
+      "grasped": false,
+      "distance": 0.17891153693199158
+    },
+    {
+      "episode_id": 721,
+      "grasped": false,
+      "distance": 0.15281438827514648
+    },
+    {
+      "episode_id": 722,
+      "grasped": false,
+      "distance": 0.12997588515281677
+    },
+    {
+      "episode_id": 723,
+      "grasped": false,
+      "distance": 0.15831692516803741
+    },
+    {
+      "episode_id": 724,
+      "grasped": false,
+      "distance": 0.1388564556837082
+    },
+    {
+      "episode_id": 725,
+      "grasped": false,
+      "distance": 0.14334385097026825
+    },
+    {
+      "episode_id": 726,
+      "grasped": false,
+      "distance": 0.17721180617809296
+    },
+    {
+      "episode_id": 727,
+      "grasped": false,
+      "distance": 0.1889439821243286
+    },
+    {
+      "episode_id": 728,
+      "grasped": false,
+      "distance": 0.209309384226799
+    },
+    {
+      "episode_id": 729,
+      "grasped": false,
+      "distance": 0.19580134749412537
+    },
+    {
+      "episode_id": 730,
+      "grasped": false,
+      "distance": 0.16608528792858124
+    },
+    {
+      "episode_id": 731,
+      "grasped": false,
+      "distance": 0.17126615345478058
+    },
+    {
+      "episode_id": 732,
+      "grasped": false,
+      "distance": 0.1239728108048439
+    },
+    {
+      "episode_id": 733,
+      "grasped": false,
+      "distance": 0.1848314106464386
+    },
+    {
+      "episode_id": 734,
+      "grasped": false,
+      "distance": 0.18005047738552094
+    },
+    {
+      "episode_id": 735,
+      "grasped": false,
+      "distance": 0.19471587240695953
+    },
+    {
+      "episode_id": 736,
+      "grasped": false,
+      "distance": 0.15958762168884277
+    },
+    {
+      "episode_id": 737,
+      "grasped": false,
+      "distance": 0.15447814762592316
+    },
+    {
+      "episode_id": 738,
+      "grasped": false,
+      "distance": 0.14533430337905884
+    },
+    {
+      "episode_id": 739,
+      "grasped": false,
+      "distance": 0.17515332996845245
+    },
+    {
+      "episode_id": 740,
+      "grasped": false,
+      "distance": 0.1645173281431198
+    },
+    {
+      "episode_id": 741,
+      "grasped": false,
+      "distance": 0.17063523828983307
+    },
+    {
+      "episode_id": 742,
+      "grasped": false,
+      "distance": 0.1728019267320633
+    },
+    {
+      "episode_id": 743,
+      "grasped": false,
+      "distance": 0.1927853673696518
+    },
+    {
+      "episode_id": 744,
+      "grasped": false,
+      "distance": 0.16902562975883484
+    },
+    {
+      "episode_id": 745,
+      "grasped": false,
+      "distance": 0.1614832580089569
+    },
+    {
+      "episode_id": 746,
+      "grasped": false,
+      "distance": 0.19089457392692566
+    },
+    {
+      "episode_id": 747,
+      "grasped": false,
+      "distance": 0.17312268912792206
+    },
+    {
+      "episode_id": 748,
+      "grasped": false,
+      "distance": 0.16176579892635345
+    },
+    {
+      "episode_id": 749,
+      "grasped": false,
+      "distance": 0.20555998384952545
+    },
+    {
+      "episode_id": 750,
+      "grasped": false,
+      "distance": 0.14298458397388458
+    },
+    {
+      "episode_id": 751,
+      "grasped": false,
+      "distance": 0.1803022027015686
+    },
+    {
+      "episode_id": 752,
+      "grasped": false,
+      "distance": 0.17099766433238983
+    },
+    {
+      "episode_id": 753,
+      "grasped": false,
+      "distance": 0.18311884999275208
+    },
+    {
+      "episode_id": 754,
+      "grasped": false,
+      "distance": 0.16473668813705444
+    },
+    {
+      "episode_id": 755,
+      "grasped": false,
+      "distance": 0.18542392551898956
+    },
+    {
+      "episode_id": 756,
+      "grasped": false,
+      "distance": 0.1857210099697113
+    },
+    {
+      "episode_id": 757,
+      "grasped": false,
+      "distance": 0.19306573271751404
+    },
+    {
+      "episode_id": 758,
+      "grasped": false,
+      "distance": 0.19955651462078094
+    },
+    {
+      "episode_id": 759,
+      "grasped": false,
+      "distance": 0.19982318580150604
+    },
+    {
+      "episode_id": 760,
+      "grasped": false,
+      "distance": 0.18311695754528046
+    },
+    {
+      "episode_id": 761,
+      "grasped": false,
+      "distance": 0.171510711312294
+    },
+    {
+      "episode_id": 762,
+      "grasped": false,
+      "distance": 0.18155057728290558
+    },
+    {
+      "episode_id": 763,
+      "grasped": false,
+      "distance": 0.20442457497119904
+    },
+    {
+      "episode_id": 764,
+      "grasped": false,
+      "distance": 0.1872999668121338
+    },
+    {
+      "episode_id": 765,
+      "grasped": false,
+      "distance": 0.18901196122169495
+    },
+    {
+      "episode_id": 766,
+      "grasped": false,
+      "distance": 0.17627358436584473
+    },
+    {
+      "episode_id": 767,
+      "grasped": false,
+      "distance": 0.19215060770511627
+    },
+    {
+      "episode_id": 768,
+      "grasped": false,
+      "distance": 0.16758820414543152
+    },
+    {
+      "episode_id": 769,
+      "grasped": false,
+      "distance": 0.1567736566066742
+    },
+    {
+      "episode_id": 770,
+      "grasped": false,
+      "distance": 0.15999923646450043
+    },
+    {
+      "episode_id": 771,
+      "grasped": false,
+      "distance": 0.13919274508953094
+    },
+    {
+      "episode_id": 772,
+      "grasped": false,
+      "distance": 0.16591188311576843
+    },
+    {
+      "episode_id": 773,
+      "grasped": false,
+      "distance": 0.18577167391777039
+    },
+    {
+      "episode_id": 774,
+      "grasped": false,
+      "distance": 0.1591869443655014
+    },
+    {
+      "episode_id": 775,
+      "grasped": false,
+      "distance": 0.13786575198173523
+    },
+    {
+      "episode_id": 776,
+      "grasped": false,
+      "distance": 0.1867758184671402
+    },
+    {
+      "episode_id": 777,
+      "grasped": false,
+      "distance": 0.17955002188682556
+    },
+    {
+      "episode_id": 778,
+      "grasped": false,
+      "distance": 0.17249953746795654
+    },
+    {
+      "episode_id": 779,
+      "grasped": false,
+      "distance": 0.15738695859909058
+    },
+    {
+      "episode_id": 780,
+      "grasped": false,
+      "distance": 0.15356770157814026
+    },
+    {
+      "episode_id": 781,
+      "grasped": false,
+      "distance": 0.17173923552036285
+    },
+    {
+      "episode_id": 782,
+      "grasped": false,
+      "distance": 0.19395744800567627
+    },
+    {
+      "episode_id": 783,
+      "grasped": false,
+      "distance": 0.15074707567691803
+    },
+    {
+      "episode_id": 784,
+      "grasped": false,
+      "distance": 0.15737412869930267
+    },
+    {
+      "episode_id": 785,
+      "grasped": false,
+      "distance": 0.17855338752269745
+    },
+    {
+      "episode_id": 786,
+      "grasped": false,
+      "distance": 0.19450002908706665
+    },
+    {
+      "episode_id": 787,
+      "grasped": false,
+      "distance": 0.1983693242073059
+    },
+    {
+      "episode_id": 788,
+      "grasped": false,
+      "distance": 0.1905636340379715
+    },
+    {
+      "episode_id": 789,
+      "grasped": false,
+      "distance": 0.14892128109931946
+    },
+    {
+      "episode_id": 790,
+      "grasped": false,
+      "distance": 0.1812416911125183
+    },
+    {
+      "episode_id": 791,
+      "grasped": false,
+      "distance": 0.1962161362171173
+    },
+    {
+      "episode_id": 792,
+      "grasped": false,
+      "distance": 0.19777938723564148
+    },
+    {
+      "episode_id": 793,
+      "grasped": false,
+      "distance": 0.17536289989948273
+    },
+    {
+      "episode_id": 794,
+      "grasped": false,
+      "distance": 0.19190125167369843
+    },
+    {
+      "episode_id": 795,
+      "grasped": false,
+      "distance": 0.1711454838514328
+    },
+    {
+      "episode_id": 796,
+      "grasped": false,
+      "distance": 0.17632736265659332
+    },
+    {
+      "episode_id": 797,
+      "grasped": false,
+      "distance": 0.18735681474208832
+    },
+    {
+      "episode_id": 798,
+      "grasped": false,
+      "distance": 0.17164410650730133
+    },
+    {
+      "episode_id": 799,
+      "grasped": false,
+      "distance": 0.20495310425758362
+    },
+    {
+      "episode_id": 800,
+      "grasped": false,
+      "distance": 0.15111222863197327
+    },
+    {
+      "episode_id": 801,
+      "grasped": false,
+      "distance": 0.1757199615240097
+    },
+    {
+      "episode_id": 802,
+      "grasped": false,
+      "distance": 0.1797710359096527
+    },
+    {
+      "episode_id": 803,
+      "grasped": false,
+      "distance": 0.16756409406661987
+    },
+    {
+      "episode_id": 804,
+      "grasped": false,
+      "distance": 0.1558428555727005
+    },
+    {
+      "episode_id": 805,
+      "grasped": false,
+      "distance": 0.14903666079044342
+    },
+    {
+      "episode_id": 806,
+      "grasped": false,
+      "distance": 0.18444712460041046
+    },
+    {
+      "episode_id": 807,
+      "grasped": false,
+      "distance": 0.17451056838035583
+    },
+    {
+      "episode_id": 808,
+      "grasped": false,
+      "distance": 0.15546360611915588
+    },
+    {
+      "episode_id": 809,
+      "grasped": false,
+      "distance": 0.18149986863136292
+    },
+    {
+      "episode_id": 810,
+      "grasped": false,
+      "distance": 0.14894577860832214
+    },
+    {
+      "episode_id": 811,
+      "grasped": false,
+      "distance": 0.14154468476772308
+    },
+    {
+      "episode_id": 812,
+      "grasped": false,
+      "distance": 0.15720121562480927
+    },
+    {
+      "episode_id": 813,
+      "grasped": false,
+      "distance": 0.17673900723457336
+    },
+    {
+      "episode_id": 814,
+      "grasped": false,
+      "distance": 0.16831552982330322
+    },
+    {
+      "episode_id": 815,
+      "grasped": false,
+      "distance": 0.17973479628562927
+    },
+    {
+      "episode_id": 816,
+      "grasped": false,
+      "distance": 0.18271686136722565
+    },
+    {
+      "episode_id": 817,
+      "grasped": false,
+      "distance": 0.15469622611999512
+    },
+    {
+      "episode_id": 818,
+      "grasped": false,
+      "distance": 0.19352340698242188
+    },
+    {
+      "episode_id": 819,
+      "grasped": false,
+      "distance": 0.18352673947811127
+    },
+    {
+      "episode_id": 820,
+      "grasped": false,
+      "distance": 0.18738530576229095
+    },
+    {
+      "episode_id": 821,
+      "grasped": false,
+      "distance": 0.15309901535511017
+    },
+    {
+      "episode_id": 822,
+      "grasped": false,
+      "distance": 0.17364536225795746
+    },
+    {
+      "episode_id": 823,
+      "grasped": false,
+      "distance": 0.179123193025589
+    },
+    {
+      "episode_id": 824,
+      "grasped": false,
+      "distance": 0.21416884660720825
+    },
+    {
+      "episode_id": 825,
+      "grasped": false,
+      "distance": 0.18369892239570618
+    },
+    {
+      "episode_id": 826,
+      "grasped": false,
+      "distance": 0.19901373982429504
+    },
+    {
+      "episode_id": 827,
+      "grasped": false,
+      "distance": 0.16969721019268036
+    },
+    {
+      "episode_id": 828,
+      "grasped": false,
+      "distance": 0.17842625081539154
+    },
+    {
+      "episode_id": 829,
+      "grasped": false,
+      "distance": 0.18958701193332672
+    },
+    {
+      "episode_id": 830,
+      "grasped": false,
+      "distance": 0.17794886231422424
+    },
+    {
+      "episode_id": 831,
+      "grasped": false,
+      "distance": 0.15282782912254333
+    },
+    {
+      "episode_id": 832,
+      "grasped": false,
+      "distance": 0.14975032210350037
+    },
+    {
+      "episode_id": 833,
+      "grasped": false,
+      "distance": 0.14855435490608215
+    },
+    {
+      "episode_id": 834,
+      "grasped": false,
+      "distance": 0.18206362426280975
+    },
+    {
+      "episode_id": 835,
+      "grasped": false,
+      "distance": 0.1849638819694519
+    },
+    {
+      "episode_id": 836,
+      "grasped": false,
+      "distance": 0.19041523337364197
+    },
+    {
+      "episode_id": 837,
+      "grasped": false,
+      "distance": 0.1624058037996292
+    },
+    {
+      "episode_id": 838,
+      "grasped": false,
+      "distance": 0.17095130681991577
+    },
+    {
+      "episode_id": 839,
+      "grasped": false,
+      "distance": 0.14511455595493317
+    },
+    {
+      "episode_id": 840,
+      "grasped": false,
+      "distance": 0.1730852574110031
+    },
+    {
+      "episode_id": 841,
+      "grasped": false,
+      "distance": 0.18682609498500824
+    },
+    {
+      "episode_id": 842,
+      "grasped": false,
+      "distance": 0.15354076027870178
+    },
+    {
+      "episode_id": 843,
+      "grasped": false,
+      "distance": 0.15454429388046265
+    },
+    {
+      "episode_id": 844,
+      "grasped": false,
+      "distance": 0.17286834120750427
+    },
+    {
+      "episode_id": 845,
+      "grasped": false,
+      "distance": 0.17228055000305176
+    },
+    {
+      "episode_id": 846,
+      "grasped": false,
+      "distance": 0.18240073323249817
+    },
+    {
+      "episode_id": 847,
+      "grasped": false,
+      "distance": 0.16487562656402588
+    },
+    {
+      "episode_id": 848,
+      "grasped": false,
+      "distance": 0.16667327284812927
+    },
+    {
+      "episode_id": 849,
+      "grasped": false,
+      "distance": 0.1500999480485916
+    },
+    {
+      "episode_id": 850,
+      "grasped": false,
+      "distance": 0.1670636087656021
+    },
+    {
+      "episode_id": 851,
+      "grasped": false,
+      "distance": 0.1877022236585617
+    },
+    {
+      "episode_id": 852,
+      "grasped": false,
+      "distance": 0.18517959117889404
+    },
+    {
+      "episode_id": 853,
+      "grasped": false,
+      "distance": 0.1866525262594223
+    },
+    {
+      "episode_id": 854,
+      "grasped": false,
+      "distance": 0.18203207850456238
+    },
+    {
+      "episode_id": 855,
+      "grasped": false,
+      "distance": 0.19091308116912842
+    },
+    {
+      "episode_id": 856,
+      "grasped": false,
+      "distance": 0.20532487332820892
+    },
+    {
+      "episode_id": 857,
+      "grasped": false,
+      "distance": 0.1922389268875122
+    },
+    {
+      "episode_id": 858,
+      "grasped": false,
+      "distance": 0.17636239528656006
+    },
+    {
+      "episode_id": 859,
+      "grasped": false,
+      "distance": 0.16649609804153442
+    },
+    {
+      "episode_id": 860,
+      "grasped": false,
+      "distance": 0.16379526257514954
+    },
+    {
+      "episode_id": 861,
+      "grasped": false,
+      "distance": 0.15807627141475677
+    },
+    {
+      "episode_id": 862,
+      "grasped": false,
+      "distance": 0.17876601219177246
+    },
+    {
+      "episode_id": 863,
+      "grasped": false,
+      "distance": 0.14708063006401062
+    },
+    {
+      "episode_id": 864,
+      "grasped": false,
+      "distance": 0.16685523092746735
+    },
+    {
+      "episode_id": 865,
+      "grasped": false,
+      "distance": 0.18551574647426605
+    },
+    {
+      "episode_id": 866,
+      "grasped": false,
+      "distance": 0.16926191747188568
+    },
+    {
+      "episode_id": 867,
+      "grasped": false,
+      "distance": 0.15520046651363373
+    },
+    {
+      "episode_id": 868,
+      "grasped": false,
+      "distance": 0.10989408195018768
+    },
+    {
+      "episode_id": 869,
+      "grasped": false,
+      "distance": 0.16895554959774017
+    },
+    {
+      "episode_id": 870,
+      "grasped": false,
+      "distance": 0.189410001039505
+    },
+    {
+      "episode_id": 871,
+      "grasped": false,
+      "distance": 0.16101253032684326
+    },
+    {
+      "episode_id": 872,
+      "grasped": false,
+      "distance": 0.1887402981519699
+    },
+    {
+      "episode_id": 873,
+      "grasped": false,
+      "distance": 0.1655576527118683
+    },
+    {
+      "episode_id": 874,
+      "grasped": false,
+      "distance": 0.17736555635929108
+    },
+    {
+      "episode_id": 875,
+      "grasped": false,
+      "distance": 0.12243881076574326
+    },
+    {
+      "episode_id": 876,
+      "grasped": false,
+      "distance": 0.17346282303333282
+    },
+    {
+      "episode_id": 877,
+      "grasped": false,
+      "distance": 0.18724437057971954
+    },
+    {
+      "episode_id": 878,
+      "grasped": false,
+      "distance": 0.17482376098632812
+    },
+    {
+      "episode_id": 879,
+      "grasped": false,
+      "distance": 0.16916000843048096
+    },
+    {
+      "episode_id": 880,
+      "grasped": false,
+      "distance": 0.1601494699716568
+    },
+    {
+      "episode_id": 881,
+      "grasped": false,
+      "distance": 0.1612812578678131
+    },
+    {
+      "episode_id": 882,
+      "grasped": false,
+      "distance": 0.1655331552028656
+    },
+    {
+      "episode_id": 883,
+      "grasped": false,
+      "distance": 0.1657433956861496
+    },
+    {
+      "episode_id": 884,
+      "grasped": false,
+      "distance": 0.17255519330501556
+    },
+    {
+      "episode_id": 885,
+      "grasped": false,
+      "distance": 0.202453151345253
+    },
+    {
+      "episode_id": 886,
+      "grasped": false,
+      "distance": 0.18195968866348267
+    },
+    {
+      "episode_id": 887,
+      "grasped": false,
+      "distance": 0.19661714136600494
+    },
+    {
+      "episode_id": 888,
+      "grasped": false,
+      "distance": 0.19824914634227753
+    },
+    {
+      "episode_id": 889,
+      "grasped": false,
+      "distance": 0.14396607875823975
+    },
+    {
+      "episode_id": 890,
+      "grasped": false,
+      "distance": 0.15754282474517822
+    },
+    {
+      "episode_id": 891,
+      "grasped": false,
+      "distance": 0.16302962601184845
+    },
+    {
+      "episode_id": 892,
+      "grasped": false,
+      "distance": 0.1807740330696106
+    },
+    {
+      "episode_id": 893,
+      "grasped": false,
+      "distance": 0.19352905452251434
+    },
+    {
+      "episode_id": 894,
+      "grasped": false,
+      "distance": 0.15537762641906738
+    },
+    {
+      "episode_id": 895,
+      "grasped": false,
+      "distance": 0.15466076135635376
+    },
+    {
+      "episode_id": 896,
+      "grasped": false,
+      "distance": 0.16740599274635315
+    },
+    {
+      "episode_id": 897,
+      "grasped": false,
+      "distance": 0.17058035731315613
+    },
+    {
+      "episode_id": 898,
+      "grasped": false,
+      "distance": 0.13680842518806458
+    },
+    {
+      "episode_id": 899,
+      "grasped": false,
+      "distance": 0.19427147507667542
+    },
+    {
+      "episode_id": 900,
+      "grasped": false,
+      "distance": 0.16214649379253387
+    },
+    {
+      "episode_id": 901,
+      "grasped": false,
+      "distance": 0.13480079174041748
+    },
+    {
+      "episode_id": 902,
+      "grasped": false,
+      "distance": 0.17925845086574554
+    },
+    {
+      "episode_id": 903,
+      "grasped": false,
+      "distance": 0.16408470273017883
+    },
+    {
+      "episode_id": 904,
+      "grasped": false,
+      "distance": 0.14942465722560883
+    },
+    {
+      "episode_id": 905,
+      "grasped": false,
+      "distance": 0.17028309404850006
+    },
+    {
+      "episode_id": 906,
+      "grasped": false,
+      "distance": 0.1835031658411026
+    },
+    {
+      "episode_id": 907,
+      "grasped": false,
+      "distance": 0.1437932252883911
+    },
+    {
+      "episode_id": 908,
+      "grasped": false,
+      "distance": 0.19815178215503693
+    },
+    {
+      "episode_id": 909,
+      "grasped": false,
+      "distance": 0.15029005706310272
+    },
+    {
+      "episode_id": 910,
+      "grasped": false,
+      "distance": 0.16695363819599152
+    },
+    {
+      "episode_id": 911,
+      "grasped": false,
+      "distance": 0.1663108915090561
+    },
+    {
+      "episode_id": 912,
+      "grasped": false,
+      "distance": 0.14448116719722748
+    },
+    {
+      "episode_id": 913,
+      "grasped": false,
+      "distance": 0.2272922694683075
+    },
+    {
+      "episode_id": 914,
+      "grasped": false,
+      "distance": 0.18465596437454224
+    },
+    {
+      "episode_id": 915,
+      "grasped": false,
+      "distance": 0.19349494576454163
+    },
+    {
+      "episode_id": 916,
+      "grasped": false,
+      "distance": 0.1586386263370514
+    },
+    {
+      "episode_id": 917,
+      "grasped": false,
+      "distance": 0.16881096363067627
+    },
+    {
+      "episode_id": 918,
+      "grasped": false,
+      "distance": 0.19168789684772491
+    },
+    {
+      "episode_id": 919,
+      "grasped": false,
+      "distance": 0.1844494789838791
+    },
+    {
+      "episode_id": 920,
+      "grasped": false,
+      "distance": 0.2047935575246811
+    },
+    {
+      "episode_id": 921,
+      "grasped": false,
+      "distance": 0.19102521240711212
+    },
+    {
+      "episode_id": 922,
+      "grasped": false,
+      "distance": 0.1566052883863449
+    },
+    {
+      "episode_id": 923,
+      "grasped": false,
+      "distance": 0.17742668092250824
+    },
+    {
+      "episode_id": 924,
+      "grasped": false,
+      "distance": 0.16963955760002136
+    },
+    {
+      "episode_id": 925,
+      "grasped": false,
+      "distance": 0.1804426908493042
+    },
+    {
+      "episode_id": 926,
+      "grasped": false,
+      "distance": 0.19549337029457092
+    },
+    {
+      "episode_id": 927,
+      "grasped": false,
+      "distance": 0.18292006850242615
+    },
+    {
+      "episode_id": 928,
+      "grasped": false,
+      "distance": 0.17070046067237854
+    },
+    {
+      "episode_id": 929,
+      "grasped": false,
+      "distance": 0.15948791801929474
+    },
+    {
+      "episode_id": 930,
+      "grasped": false,
+      "distance": 0.1704426258802414
+    },
+    {
+      "episode_id": 931,
+      "grasped": false,
+      "distance": 0.15767869353294373
+    },
+    {
+      "episode_id": 932,
+      "grasped": false,
+      "distance": 0.16948969662189484
+    },
+    {
+      "episode_id": 933,
+      "grasped": false,
+      "distance": 0.17761708796024323
+    },
+    {
+      "episode_id": 934,
+      "grasped": false,
+      "distance": 0.16430054605007172
+    },
+    {
+      "episode_id": 935,
+      "grasped": false,
+      "distance": 0.18263277411460876
+    },
+    {
+      "episode_id": 936,
+      "grasped": false,
+      "distance": 0.16539429128170013
+    },
+    {
+      "episode_id": 937,
+      "grasped": false,
+      "distance": 0.1442226767539978
+    },
+    {
+      "episode_id": 938,
+      "grasped": false,
+      "distance": 0.16059964895248413
+    },
+    {
+      "episode_id": 939,
+      "grasped": false,
+      "distance": 0.19259338080883026
+    },
+    {
+      "episode_id": 940,
+      "grasped": false,
+      "distance": 0.13649840652942657
+    },
+    {
+      "episode_id": 941,
+      "grasped": false,
+      "distance": 0.1655236929655075
+    },
+    {
+      "episode_id": 942,
+      "grasped": false,
+      "distance": 0.1604483425617218
+    },
+    {
+      "episode_id": 943,
+      "grasped": false,
+      "distance": 0.17402437329292297
+    },
+    {
+      "episode_id": 944,
+      "grasped": false,
+      "distance": 0.15539884567260742
+    },
+    {
+      "episode_id": 945,
+      "grasped": false,
+      "distance": 0.18619808554649353
+    },
+    {
+      "episode_id": 946,
+      "grasped": false,
+      "distance": 0.1860763430595398
+    },
+    {
+      "episode_id": 947,
+      "grasped": false,
+      "distance": 0.16036833822727203
+    },
+    {
+      "episode_id": 948,
+      "grasped": false,
+      "distance": 0.15574465692043304
+    },
+    {
+      "episode_id": 949,
+      "grasped": false,
+      "distance": 0.17651982605457306
+    },
+    {
+      "episode_id": 950,
+      "grasped": false,
+      "distance": 0.1641571968793869
+    },
+    {
+      "episode_id": 951,
+      "grasped": false,
+      "distance": 0.17195163667201996
+    },
+    {
+      "episode_id": 952,
+      "grasped": false,
+      "distance": 0.1822877675294876
+    },
+    {
+      "episode_id": 953,
+      "grasped": false,
+      "distance": 0.18568691611289978
+    },
+    {
+      "episode_id": 954,
+      "grasped": false,
+      "distance": 0.15199634432792664
+    },
+    {
+      "episode_id": 955,
+      "grasped": false,
+      "distance": 0.17512810230255127
+    },
+    {
+      "episode_id": 956,
+      "grasped": false,
+      "distance": 0.19282649457454681
+    },
+    {
+      "episode_id": 957,
+      "grasped": false,
+      "distance": 0.22869381308555603
+    },
+    {
+      "episode_id": 958,
+      "grasped": false,
+      "distance": 0.1566855013370514
+    },
+    {
+      "episode_id": 959,
+      "grasped": false,
+      "distance": 0.21053513884544373
+    },
+    {
+      "episode_id": 960,
+      "grasped": false,
+      "distance": 0.16277626156806946
+    },
+    {
+      "episode_id": 961,
+      "grasped": false,
+      "distance": 0.13458459079265594
+    },
+    {
+      "episode_id": 962,
+      "grasped": false,
+      "distance": 0.14463743567466736
+    },
+    {
+      "episode_id": 963,
+      "grasped": false,
+      "distance": 0.16455011069774628
+    },
+    {
+      "episode_id": 964,
+      "grasped": false,
+      "distance": 0.16617265343666077
+    },
+    {
+      "episode_id": 965,
+      "grasped": false,
+      "distance": 0.16704508662223816
+    },
+    {
+      "episode_id": 966,
+      "grasped": false,
+      "distance": 0.1680079847574234
+    },
+    {
+      "episode_id": 967,
+      "grasped": false,
+      "distance": 0.19647204875946045
+    },
+    {
+      "episode_id": 968,
+      "grasped": false,
+      "distance": 0.15153548121452332
+    },
+    {
+      "episode_id": 969,
+      "grasped": false,
+      "distance": 0.19147443771362305
+    },
+    {
+      "episode_id": 970,
+      "grasped": false,
+      "distance": 0.16600975394248962
+    },
+    {
+      "episode_id": 971,
+      "grasped": false,
+      "distance": 0.15559165179729462
+    },
+    {
+      "episode_id": 972,
+      "grasped": false,
+      "distance": 0.1836681067943573
+    },
+    {
+      "episode_id": 973,
+      "grasped": false,
+      "distance": 0.20355598628520966
+    },
+    {
+      "episode_id": 974,
+      "grasped": false,
+      "distance": 0.17903552949428558
+    },
+    {
+      "episode_id": 975,
+      "grasped": false,
+      "distance": 0.1817443072795868
+    },
+    {
+      "episode_id": 976,
+      "grasped": false,
+      "distance": 0.19174420833587646
+    },
+    {
+      "episode_id": 977,
+      "grasped": false,
+      "distance": 0.1545838564634323
+    },
+    {
+      "episode_id": 978,
+      "grasped": false,
+      "distance": 0.19962742924690247
+    },
+    {
+      "episode_id": 979,
+      "grasped": false,
+      "distance": 0.17142078280448914
+    },
+    {
+      "episode_id": 980,
+      "grasped": false,
+      "distance": 0.17661415040493011
+    },
+    {
+      "episode_id": 981,
+      "grasped": false,
+      "distance": 0.1946437805891037
+    },
+    {
+      "episode_id": 982,
+      "grasped": false,
+      "distance": 0.18504010140895844
+    },
+    {
+      "episode_id": 983,
+      "grasped": false,
+      "distance": 0.19002719223499298
+    },
+    {
+      "episode_id": 984,
+      "grasped": false,
+      "distance": 0.15377017855644226
+    },
+    {
+      "episode_id": 985,
+      "grasped": false,
+      "distance": 0.1807868927717209
+    },
+    {
+      "episode_id": 986,
+      "grasped": false,
+      "distance": 0.14065949618816376
+    },
+    {
+      "episode_id": 987,
+      "grasped": false,
+      "distance": 0.14660117030143738
+    },
+    {
+      "episode_id": 988,
+      "grasped": false,
+      "distance": 0.17084558308124542
+    },
+    {
+      "episode_id": 989,
+      "grasped": false,
+      "distance": 0.18168465793132782
+    },
+    {
+      "episode_id": 990,
+      "grasped": false,
+      "distance": 0.1545293778181076
+    },
+    {
+      "episode_id": 991,
+      "grasped": false,
+      "distance": 0.1693154126405716
+    },
+    {
+      "episode_id": 992,
+      "grasped": false,
+      "distance": 0.1370219886302948
+    },
+    {
+      "episode_id": 993,
+      "grasped": false,
+      "distance": 0.16119632124900818
+    },
+    {
+      "episode_id": 994,
+      "grasped": false,
+      "distance": 0.15669378638267517
+    },
+    {
+      "episode_id": 995,
+      "grasped": false,
+      "distance": 0.18512101471424103
+    },
+    {
+      "episode_id": 996,
+      "grasped": false,
+      "distance": 0.18400396406650543
+    },
+    {
+      "episode_id": 997,
+      "grasped": false,
+      "distance": 0.18086111545562744
+    },
+    {
+      "episode_id": 998,
+      "grasped": false,
+      "distance": 0.18359366059303284
+    },
+    {
+      "episode_id": 999,
+      "grasped": false,
+      "distance": 0.1562683880329132
+    }
+  ],
+  "alignment_validated": true,
+  "action_source_sha256": "5f191a5f14a16edb4276fae24fbde21d52aeb3eec1b2e9dceafa309d953d3609",
+  "dataset": "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-pickcube-gpu-replay-full-003/trajectory.state.pd_ee_delta_pos.physx_cuda.h5",
+  "dataset_sha256": "c7c3dead37db29195a774ac25b575837b5544e4200f941dad25f9e71bee964a4",
+  "metadata_sha256": "907573a0704f708f8fbf3f6eb33ac2abe1817a94209b62ac420865a68f520af1",
+  "split_seed": 42,
+  "train_episode_ids": [
+    0,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    20,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    37,
+    39,
+    40,
+    41,
+    42,
+    44,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    55,
+    56,
+    58,
+    59,
+    60,
+    61,
+    63,
+    64,
+    65,
+    66,
+    67,
+    69,
+    71,
+    72,
+    73,
+    75,
+    76,
+    78,
+    79,
+    80,
+    82,
+    84,
+    85,
+    86,
+    88,
+    90,
+    91,
+    95,
+    96,
+    97,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    116,
+    117,
+    120,
+    121,
+    122,
+    123,
+    125,
+    129,
+    130,
+    132,
+    133,
+    134,
+    135,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    149,
+    150,
+    151,
+    153,
+    154,
+    155,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    187,
+    188,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    198,
+    199,
+    200,
+    201,
+    203,
+    204,
+    205,
+    206,
+    211,
+    212,
+    213,
+    215,
+    218,
+    219,
+    220,
+    221,
+    222,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    245,
+    246,
+    247,
+    248,
+    251,
+    253,
+    254,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    296,
+    297,
+    298,
+    299,
+    301,
+    302,
+    304,
+    306,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    316,
+    317,
+    321,
+    322,
+    323,
+    324,
+    325,
+    327,
+    328,
+    329,
+    332,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    342,
+    345,
+    346,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    361,
+    362,
+    367,
+    368,
+    369,
+    371,
+    372,
+    375,
+    376,
+    378,
+    379,
+    380,
+    381,
+    384,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    396,
+    397,
+    398,
+    399,
+    401,
+    403,
+    404,
+    407,
+    409,
+    410,
+    412,
+    414,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    426,
+    427,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    437,
+    438,
+    439,
+    440,
+    443,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    455,
+    456,
+    457,
+    458,
+    459,
+    461,
+    462,
+    463,
+    464,
+    465,
+    466,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    474,
+    476,
+    479,
+    481,
+    482,
+    483,
+    484,
+    487,
+    488,
+    490,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    505,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    528,
+    529,
+    531,
+    533,
+    534,
+    535,
+    536,
+    539,
+    540,
+    542,
+    544,
+    545,
+    548,
+    549,
+    550,
+    551,
+    552,
+    553,
+    554,
+    555,
+    557,
+    561,
+    563,
+    564,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    573,
+    574,
+    576,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    586,
+    589,
+    590,
+    591,
+    596,
+    598,
+    599,
+    600,
+    602,
+    603,
+    605,
+    606,
+    607,
+    610,
+    611,
+    612,
+    613,
+    615,
+    617,
+    618,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    647,
+    648,
+    650,
+    651,
+    652,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    661,
+    663,
+    664,
+    666,
+    667,
+    668,
+    669,
+    672,
+    673,
+    675,
+    677,
+    678,
+    679,
+    681,
+    683,
+    684,
+    685,
+    689,
+    690,
+    691,
+    692,
+    693,
+    696,
+    697,
+    698,
+    699,
+    704,
+    705,
+    707,
+    708,
+    712,
+    713,
+    714,
+    715,
+    716,
+    718,
+    719,
+    721,
+    722,
+    724,
+    725,
+    726,
+    727,
+    728,
+    729,
+    730,
+    731,
+    732,
+    734,
+    735,
+    736,
+    738,
+    740,
+    741,
+    743,
+    744,
+    746,
+    747,
+    748,
+    749,
+    750,
+    751,
+    752,
+    754,
+    755,
+    756,
+    758,
+    760,
+    762,
+    763,
+    767,
+    768,
+    769,
+    770,
+    771,
+    772,
+    773,
+    775,
+    776,
+    778,
+    779,
+    780,
+    782,
+    783,
+    784,
+    785,
+    787,
+    788,
+    789,
+    790,
+    793,
+    794,
+    796,
+    799,
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    808,
+    810,
+    812,
+    815,
+    816,
+    817,
+    819,
+    820,
+    822,
+    824,
+    825,
+    826,
+    827,
+    829,
+    830,
+    832,
+    833,
+    835,
+    836,
+    837,
+    838,
+    839,
+    840,
+    843,
+    844,
+    845,
+    846,
+    847,
+    848,
+    849,
+    850,
+    851,
+    852,
+    855,
+    856,
+    857,
+    858,
+    862,
+    864,
+    866,
+    867,
+    868,
+    869,
+    870,
+    871,
+    873,
+    874,
+    875,
+    876,
+    878,
+    879,
+    880,
+    881,
+    882,
+    883,
+    886,
+    887,
+    888,
+    891,
+    892,
+    893,
+    896,
+    897,
+    898,
+    899,
+    901,
+    902,
+    903,
+    904,
+    906,
+    907,
+    909,
+    910,
+    911,
+    914,
+    915,
+    916,
+    917,
+    918,
+    920,
+    923,
+    925,
+    929,
+    930,
+    931,
+    932,
+    934,
+    935,
+    936,
+    937,
+    938,
+    940,
+    941,
+    942,
+    943,
+    944,
+    946,
+    947,
+    949,
+    950,
+    951,
+    953,
+    954,
+    956,
+    960,
+    961,
+    962,
+    963,
+    965,
+    966,
+    967,
+    969,
+    970,
+    971,
+    972,
+    973,
+    975,
+    976,
+    977,
+    978,
+    979,
+    980,
+    981,
+    983,
+    984,
+    985,
+    986,
+    988,
+    989,
+    992,
+    993,
+    995,
+    996,
+    997,
+    998,
+    999
+  ],
+  "validation_episode_ids": [
+    1,
+    5,
+    10,
+    15,
+    36,
+    38,
+    43,
+    45,
+    46,
+    54,
+    57,
+    62,
+    68,
+    70,
+    74,
+    83,
+    89,
+    98,
+    115,
+    118,
+    119,
+    124,
+    127,
+    128,
+    131,
+    136,
+    137,
+    152,
+    158,
+    184,
+    189,
+    197,
+    202,
+    207,
+    208,
+    209,
+    210,
+    216,
+    235,
+    244,
+    252,
+    294,
+    295,
+    300,
+    303,
+    305,
+    307,
+    314,
+    315,
+    320,
+    326,
+    330,
+    331,
+    333,
+    341,
+    343,
+    344,
+    348,
+    360,
+    363,
+    364,
+    373,
+    377,
+    382,
+    385,
+    395,
+    400,
+    402,
+    405,
+    406,
+    408,
+    411,
+    422,
+    423,
+    425,
+    428,
+    435,
+    436,
+    447,
+    454,
+    460,
+    480,
+    485,
+    489,
+    491,
+    499,
+    500,
+    501,
+    503,
+    527,
+    537,
+    538,
+    546,
+    547,
+    556,
+    558,
+    559,
+    560,
+    565,
+    577,
+    584,
+    585,
+    587,
+    588,
+    592,
+    593,
+    594,
+    601,
+    604,
+    608,
+    609,
+    614,
+    616,
+    625,
+    646,
+    649,
+    653,
+    660,
+    662,
+    665,
+    674,
+    676,
+    680,
+    682,
+    686,
+    687,
+    694,
+    701,
+    703,
+    706,
+    709,
+    710,
+    711,
+    717,
+    720,
+    723,
+    737,
+    739,
+    742,
+    745,
+    759,
+    761,
+    774,
+    777,
+    781,
+    786,
+    795,
+    797,
+    798,
+    807,
+    809,
+    813,
+    814,
+    831,
+    834,
+    841,
+    842,
+    853,
+    854,
+    865,
+    872,
+    877,
+    884,
+    900,
+    905,
+    908,
+    912,
+    913,
+    919,
+    928,
+    933,
+    939,
+    948,
+    952,
+    955,
+    964,
+    968,
+    974,
+    982,
+    994
+  ],
+  "total_transitions": 77976,
+  "planned_horizon": 200,
+  "successful_only": true,
+  "excluded_episode_ids": [
+    21,
+    22,
+    27,
+    31,
+    47,
+    77,
+    81,
+    87,
+    92,
+    93,
+    94,
+    113,
+    114,
+    126,
+    148,
+    156,
+    157,
+    185,
+    186,
+    190,
+    214,
+    217,
+    223,
+    249,
+    250,
+    255,
+    269,
+    287,
+    318,
+    319,
+    347,
+    365,
+    366,
+    370,
+    374,
+    383,
+    413,
+    415,
+    424,
+    441,
+    442,
+    444,
+    445,
+    446,
+    467,
+    475,
+    477,
+    478,
+    486,
+    502,
+    504,
+    506,
+    530,
+    532,
+    541,
+    543,
+    562,
+    572,
+    575,
+    595,
+    597,
+    638,
+    639,
+    670,
+    671,
+    688,
+    695,
+    700,
+    702,
+    733,
+    753,
+    757,
+    764,
+    765,
+    766,
+    791,
+    792,
+    811,
+    818,
+    821,
+    823,
+    828,
+    859,
+    860,
+    861,
+    863,
+    885,
+    889,
+    890,
+    894,
+    895,
+    921,
+    922,
+    924,
+    926,
+    927,
+    945,
+    957,
+    958,
+    959,
+    987,
+    990,
+    991
+  ],
+  "source_episode_mapping": {
+    "0": 8,
+    "1": 2,
+    "2": 20,
+    "3": 17,
+    "4": 22,
+    "5": 31,
+    "6": 6,
+    "7": 12,
+    "8": 29,
+    "9": 18,
+    "10": 21,
+    "11": 30,
+    "12": 0,
+    "13": 1,
+    "14": 7,
+    "15": 27,
+    "16": 4,
+    "17": 14,
+    "18": 16,
+    "19": 23,
+    "20": 15,
+    "21": 10,
+    "22": 24,
+    "23": 28,
+    "24": 13,
+    "25": 11,
+    "26": 25,
+    "27": 9,
+    "28": 26,
+    "29": 3,
+    "30": 19,
+    "31": 5,
+    "32": 57,
+    "33": 33,
+    "34": 46,
+    "35": 35,
+    "36": 52,
+    "37": 45,
+    "38": 40,
+    "39": 61,
+    "40": 53,
+    "41": 44,
+    "42": 56,
+    "43": 37,
+    "44": 43,
+    "45": 55,
+    "46": 50,
+    "47": 38,
+    "48": 48,
+    "49": 62,
+    "50": 32,
+    "51": 36,
+    "52": 41,
+    "53": 51,
+    "54": 59,
+    "55": 63,
+    "56": 47,
+    "57": 49,
+    "58": 34,
+    "59": 58,
+    "60": 60,
+    "61": 42,
+    "62": 39,
+    "63": 54,
+    "64": 78,
+    "65": 67,
+    "66": 77,
+    "67": 70,
+    "68": 85,
+    "69": 81,
+    "70": 74,
+    "71": 94,
+    "72": 72,
+    "73": 79,
+    "74": 83,
+    "75": 84,
+    "76": 86,
+    "77": 75,
+    "78": 73,
+    "79": 76,
+    "80": 68,
+    "81": 71,
+    "82": 69,
+    "83": 88,
+    "84": 91,
+    "85": 89,
+    "86": 93,
+    "87": 95,
+    "88": 65,
+    "89": 82,
+    "90": 87,
+    "91": 64,
+    "92": 90,
+    "93": 66,
+    "94": 92,
+    "95": 80,
+    "96": 103,
+    "97": 106,
+    "98": 117,
+    "99": 102,
+    "100": 100,
+    "101": 104,
+    "102": 108,
+    "103": 123,
+    "104": 113,
+    "105": 118,
+    "106": 119,
+    "107": 107,
+    "108": 101,
+    "109": 122,
+    "110": 124,
+    "111": 110,
+    "112": 116,
+    "113": 109,
+    "114": 98,
+    "115": 105,
+    "116": 121,
+    "117": 96,
+    "118": 112,
+    "119": 99,
+    "120": 120,
+    "121": 111,
+    "122": 115,
+    "123": 114,
+    "124": 97,
+    "125": 125,
+    "126": 127,
+    "127": 126,
+    "128": 159,
+    "129": 144,
+    "130": 136,
+    "131": 134,
+    "132": 129,
+    "133": 145,
+    "134": 158,
+    "135": 139,
+    "136": 152,
+    "137": 132,
+    "138": 138,
+    "139": 154,
+    "140": 141,
+    "141": 155,
+    "142": 157,
+    "143": 149,
+    "144": 130,
+    "145": 146,
+    "146": 128,
+    "147": 143,
+    "148": 133,
+    "149": 137,
+    "150": 131,
+    "151": 142,
+    "152": 147,
+    "153": 150,
+    "154": 148,
+    "155": 151,
+    "156": 140,
+    "157": 156,
+    "158": 153,
+    "159": 135,
+    "160": 181,
+    "161": 168,
+    "162": 164,
+    "163": 162,
+    "164": 184,
+    "165": 186,
+    "166": 174,
+    "167": 180,
+    "168": 170,
+    "169": 188,
+    "170": 190,
+    "171": 160,
+    "172": 169,
+    "173": 177,
+    "174": 182,
+    "175": 191,
+    "176": 183,
+    "177": 187,
+    "178": 163,
+    "179": 179,
+    "180": 167,
+    "181": 189,
+    "182": 172,
+    "183": 175,
+    "184": 161,
+    "185": 173,
+    "186": 176,
+    "187": 178,
+    "188": 166,
+    "189": 185,
+    "190": 165,
+    "191": 171,
+    "192": 195,
+    "193": 197,
+    "194": 207,
+    "195": 210,
+    "196": 213,
+    "197": 204,
+    "198": 215,
+    "199": 211,
+    "200": 201,
+    "201": 205,
+    "202": 220,
+    "203": 203,
+    "204": 194,
+    "205": 200,
+    "206": 221,
+    "207": 219,
+    "208": 193,
+    "209": 209,
+    "210": 216,
+    "211": 223,
+    "212": 208,
+    "213": 218,
+    "214": 196,
+    "215": 217,
+    "216": 206,
+    "217": 199,
+    "218": 222,
+    "219": 192,
+    "220": 202,
+    "221": 214,
+    "222": 198,
+    "223": 212,
+    "224": 248,
+    "225": 254,
+    "226": 243,
+    "227": 234,
+    "228": 228,
+    "229": 251,
+    "230": 255,
+    "231": 230,
+    "232": 233,
+    "233": 229,
+    "234": 231,
+    "235": 250,
+    "236": 236,
+    "237": 238,
+    "238": 232,
+    "239": 253,
+    "240": 227,
+    "241": 241,
+    "242": 245,
+    "243": 246,
+    "244": 240,
+    "245": 239,
+    "246": 226,
+    "247": 237,
+    "248": 224,
+    "249": 244,
+    "250": 247,
+    "251": 249,
+    "252": 235,
+    "253": 242,
+    "254": 225,
+    "255": 252,
+    "256": 272,
+    "257": 273,
+    "258": 262,
+    "259": 275,
+    "260": 279,
+    "261": 286,
+    "262": 267,
+    "263": 280,
+    "264": 283,
+    "265": 261,
+    "266": 268,
+    "267": 269,
+    "268": 260,
+    "269": 270,
+    "270": 271,
+    "271": 265,
+    "272": 284,
+    "273": 281,
+    "274": 287,
+    "275": 258,
+    "276": 263,
+    "277": 285,
+    "278": 274,
+    "279": 259,
+    "280": 266,
+    "281": 257,
+    "282": 278,
+    "283": 264,
+    "284": 282,
+    "285": 276,
+    "286": 256,
+    "287": 277,
+    "288": 299,
+    "289": 288,
+    "290": 298,
+    "291": 307,
+    "292": 303,
+    "293": 315,
+    "294": 310,
+    "295": 295,
+    "296": 304,
+    "297": 293,
+    "298": 301,
+    "299": 308,
+    "300": 306,
+    "301": 309,
+    "302": 318,
+    "303": 300,
+    "304": 294,
+    "305": 314,
+    "306": 289,
+    "307": 305,
+    "308": 311,
+    "309": 313,
+    "310": 317,
+    "311": 319,
+    "312": 291,
+    "313": 296,
+    "314": 302,
+    "315": 292,
+    "316": 312,
+    "317": 297,
+    "318": 290,
+    "319": 316,
+    "320": 334,
+    "321": 324,
+    "322": 341,
+    "323": 348,
+    "324": 349,
+    "325": 323,
+    "326": 339,
+    "327": 331,
+    "328": 342,
+    "329": 351,
+    "330": 320,
+    "331": 343,
+    "332": 328,
+    "333": 340,
+    "334": 346,
+    "335": 321,
+    "336": 332,
+    "337": 335,
+    "338": 336,
+    "339": 347,
+    "340": 350,
+    "341": 330,
+    "342": 322,
+    "343": 329,
+    "344": 337,
+    "345": 326,
+    "346": 333,
+    "347": 344,
+    "348": 338,
+    "349": 327,
+    "350": 345,
+    "351": 325,
+    "352": 370,
+    "353": 383,
+    "354": 358,
+    "355": 375,
+    "356": 352,
+    "357": 366,
+    "358": 380,
+    "359": 367,
+    "360": 379,
+    "361": 361,
+    "362": 363,
+    "363": 374,
+    "364": 353,
+    "365": 357,
+    "366": 373,
+    "367": 355,
+    "368": 359,
+    "369": 377,
+    "370": 378,
+    "371": 360,
+    "372": 369,
+    "373": 368,
+    "374": 372,
+    "375": 376,
+    "376": 354,
+    "377": 356,
+    "378": 371,
+    "379": 382,
+    "380": 364,
+    "381": 381,
+    "382": 365,
+    "383": 362,
+    "384": 409,
+    "385": 400,
+    "386": 402,
+    "387": 396,
+    "388": 388,
+    "389": 394,
+    "390": 407,
+    "391": 413,
+    "392": 389,
+    "393": 393,
+    "394": 410,
+    "395": 414,
+    "396": 386,
+    "397": 399,
+    "398": 387,
+    "399": 415,
+    "400": 406,
+    "401": 403,
+    "402": 398,
+    "403": 384,
+    "404": 390,
+    "405": 412,
+    "406": 397,
+    "407": 404,
+    "408": 385,
+    "409": 408,
+    "410": 411,
+    "411": 395,
+    "412": 401,
+    "413": 392,
+    "414": 405,
+    "415": 391,
+    "416": 442,
+    "417": 432,
+    "418": 440,
+    "419": 435,
+    "420": 426,
+    "421": 437,
+    "422": 422,
+    "423": 439,
+    "424": 430,
+    "425": 433,
+    "426": 447,
+    "427": 424,
+    "428": 425,
+    "429": 444,
+    "430": 434,
+    "431": 428,
+    "432": 431,
+    "433": 421,
+    "434": 438,
+    "435": 418,
+    "436": 417,
+    "437": 441,
+    "438": 420,
+    "439": 427,
+    "440": 445,
+    "441": 416,
+    "442": 423,
+    "443": 436,
+    "444": 443,
+    "445": 429,
+    "446": 419,
+    "447": 446,
+    "448": 466,
+    "449": 477,
+    "450": 467,
+    "451": 469,
+    "452": 465,
+    "453": 458,
+    "454": 449,
+    "455": 459,
+    "456": 460,
+    "457": 456,
+    "458": 457,
+    "459": 461,
+    "460": 464,
+    "461": 479,
+    "462": 452,
+    "463": 453,
+    "464": 462,
+    "465": 470,
+    "466": 478,
+    "467": 463,
+    "468": 474,
+    "469": 455,
+    "470": 450,
+    "471": 454,
+    "472": 468,
+    "473": 451,
+    "474": 448,
+    "475": 473,
+    "476": 471,
+    "477": 475,
+    "478": 476,
+    "479": 472,
+    "480": 508,
+    "481": 509,
+    "482": 486,
+    "483": 492,
+    "484": 498,
+    "485": 511,
+    "486": 481,
+    "487": 487,
+    "488": 494,
+    "489": 485,
+    "490": 499,
+    "491": 502,
+    "492": 490,
+    "493": 495,
+    "494": 501,
+    "495": 510,
+    "496": 482,
+    "497": 484,
+    "498": 496,
+    "499": 504,
+    "500": 488,
+    "501": 489,
+    "502": 506,
+    "503": 505,
+    "504": 507,
+    "505": 503,
+    "506": 497,
+    "507": 483,
+    "508": 500,
+    "509": 480,
+    "510": 493,
+    "511": 491,
+    "512": 537,
+    "513": 522,
+    "514": 527,
+    "515": 533,
+    "516": 525,
+    "517": 532,
+    "518": 538,
+    "519": 513,
+    "520": 542,
+    "521": 530,
+    "522": 540,
+    "523": 512,
+    "524": 539,
+    "525": 524,
+    "526": 536,
+    "527": 519,
+    "528": 526,
+    "529": 529,
+    "530": 520,
+    "531": 521,
+    "532": 528,
+    "533": 531,
+    "534": 516,
+    "535": 534,
+    "536": 515,
+    "537": 514,
+    "538": 518,
+    "539": 535,
+    "540": 543,
+    "541": 523,
+    "542": 517,
+    "543": 541,
+    "544": 546,
+    "545": 572,
+    "546": 552,
+    "547": 562,
+    "548": 551,
+    "549": 566,
+    "550": 575,
+    "551": 555,
+    "552": 563,
+    "553": 573,
+    "554": 569,
+    "555": 561,
+    "556": 567,
+    "557": 550,
+    "558": 559,
+    "559": 547,
+    "560": 556,
+    "561": 545,
+    "562": 554,
+    "563": 560,
+    "564": 558,
+    "565": 574,
+    "566": 565,
+    "567": 549,
+    "568": 553,
+    "569": 557,
+    "570": 564,
+    "571": 568,
+    "572": 548,
+    "573": 544,
+    "574": 571,
+    "575": 570,
+    "576": 602,
+    "577": 590,
+    "578": 589,
+    "579": 606,
+    "580": 599,
+    "581": 604,
+    "582": 579,
+    "583": 583,
+    "584": 584,
+    "585": 598,
+    "586": 597,
+    "587": 607,
+    "588": 576,
+    "589": 578,
+    "590": 582,
+    "591": 585,
+    "592": 588,
+    "593": 592,
+    "594": 594,
+    "595": 595,
+    "596": 601,
+    "597": 591,
+    "598": 577,
+    "599": 600,
+    "600": 605,
+    "601": 586,
+    "602": 593,
+    "603": 603,
+    "604": 580,
+    "605": 587,
+    "606": 581,
+    "607": 596,
+    "608": 622,
+    "609": 610,
+    "610": 616,
+    "611": 633,
+    "612": 635,
+    "613": 620,
+    "614": 624,
+    "615": 612,
+    "616": 621,
+    "617": 608,
+    "618": 609,
+    "619": 619,
+    "620": 627,
+    "621": 629,
+    "622": 632,
+    "623": 614,
+    "624": 638,
+    "625": 615,
+    "626": 634,
+    "627": 637,
+    "628": 639,
+    "629": 611,
+    "630": 623,
+    "631": 631,
+    "632": 613,
+    "633": 630,
+    "634": 636,
+    "635": 617,
+    "636": 625,
+    "637": 618,
+    "638": 626,
+    "639": 628,
+    "640": 666,
+    "641": 665,
+    "642": 653,
+    "643": 656,
+    "644": 645,
+    "645": 641,
+    "646": 647,
+    "647": 658,
+    "648": 662,
+    "649": 663,
+    "650": 671,
+    "651": 642,
+    "652": 646,
+    "653": 661,
+    "654": 643,
+    "655": 649,
+    "656": 654,
+    "657": 652,
+    "658": 667,
+    "659": 650,
+    "660": 655,
+    "661": 660,
+    "662": 651,
+    "663": 670,
+    "664": 644,
+    "665": 648,
+    "666": 664,
+    "667": 669,
+    "668": 640,
+    "669": 657,
+    "670": 659,
+    "671": 668,
+    "672": 689,
+    "673": 696,
+    "674": 686,
+    "675": 700,
+    "676": 676,
+    "677": 680,
+    "678": 687,
+    "679": 701,
+    "680": 672,
+    "681": 690,
+    "682": 679,
+    "683": 698,
+    "684": 692,
+    "685": 677,
+    "686": 703,
+    "687": 683,
+    "688": 682,
+    "689": 694,
+    "690": 681,
+    "691": 695,
+    "692": 702,
+    "693": 673,
+    "694": 688,
+    "695": 691,
+    "696": 693,
+    "697": 674,
+    "698": 675,
+    "699": 684,
+    "700": 685,
+    "701": 678,
+    "702": 697,
+    "703": 699,
+    "704": 726,
+    "705": 713,
+    "706": 710,
+    "707": 712,
+    "708": 715,
+    "709": 718,
+    "710": 711,
+    "711": 707,
+    "712": 719,
+    "713": 732,
+    "714": 705,
+    "715": 716,
+    "716": 723,
+    "717": 706,
+    "718": 728,
+    "719": 717,
+    "720": 724,
+    "721": 730,
+    "722": 733,
+    "723": 735,
+    "724": 708,
+    "725": 709,
+    "726": 725,
+    "727": 721,
+    "728": 722,
+    "729": 731,
+    "730": 729,
+    "731": 704,
+    "732": 734,
+    "733": 714,
+    "734": 720,
+    "735": 727,
+    "736": 754,
+    "737": 739,
+    "738": 747,
+    "739": 762,
+    "740": 744,
+    "741": 755,
+    "742": 751,
+    "743": 760,
+    "744": 746,
+    "745": 756,
+    "746": 764,
+    "747": 738,
+    "748": 765,
+    "749": 752,
+    "750": 748,
+    "751": 742,
+    "752": 753,
+    "753": 757,
+    "754": 743,
+    "755": 749,
+    "756": 761,
+    "757": 763,
+    "758": 736,
+    "759": 741,
+    "760": 745,
+    "761": 766,
+    "762": 740,
+    "763": 758,
+    "764": 759,
+    "765": 737,
+    "766": 750,
+    "767": 767,
+    "768": 785,
+    "769": 775,
+    "770": 772,
+    "771": 797,
+    "772": 777,
+    "773": 784,
+    "774": 793,
+    "775": 779,
+    "776": 798,
+    "777": 787,
+    "778": 791,
+    "779": 768,
+    "780": 792,
+    "781": 773,
+    "782": 788,
+    "783": 790,
+    "784": 774,
+    "785": 796,
+    "786": 782,
+    "787": 795,
+    "788": 786,
+    "789": 794,
+    "790": 770,
+    "791": 778,
+    "792": 783,
+    "793": 780,
+    "794": 769,
+    "795": 781,
+    "796": 776,
+    "797": 771,
+    "798": 799,
+    "799": 789,
+    "800": 827,
+    "801": 828,
+    "802": 826,
+    "803": 801,
+    "804": 804,
+    "805": 816,
+    "806": 821,
+    "807": 829,
+    "808": 810,
+    "809": 813,
+    "810": 825,
+    "811": 830,
+    "812": 809,
+    "813": 805,
+    "814": 808,
+    "815": 818,
+    "816": 812,
+    "817": 806,
+    "818": 819,
+    "819": 802,
+    "820": 807,
+    "821": 831,
+    "822": 814,
+    "823": 824,
+    "824": 803,
+    "825": 820,
+    "826": 815,
+    "827": 817,
+    "828": 823,
+    "829": 822,
+    "830": 800,
+    "831": 811,
+    "832": 836,
+    "833": 853,
+    "834": 858,
+    "835": 855,
+    "836": 857,
+    "837": 847,
+    "838": 860,
+    "839": 843,
+    "840": 854,
+    "841": 845,
+    "842": 859,
+    "843": 862,
+    "844": 848,
+    "845": 842,
+    "846": 835,
+    "847": 856,
+    "848": 832,
+    "849": 850,
+    "850": 861,
+    "851": 841,
+    "852": 852,
+    "853": 863,
+    "854": 838,
+    "855": 839,
+    "856": 840,
+    "857": 834,
+    "858": 844,
+    "859": 846,
+    "860": 851,
+    "861": 837,
+    "862": 833,
+    "863": 849,
+    "864": 865,
+    "865": 891,
+    "866": 888,
+    "867": 889,
+    "868": 893,
+    "869": 870,
+    "870": 885,
+    "871": 867,
+    "872": 866,
+    "873": 872,
+    "874": 868,
+    "875": 880,
+    "876": 864,
+    "877": 884,
+    "878": 886,
+    "879": 890,
+    "880": 892,
+    "881": 882,
+    "882": 871,
+    "883": 874,
+    "884": 877,
+    "885": 881,
+    "886": 894,
+    "887": 873,
+    "888": 875,
+    "889": 878,
+    "890": 883,
+    "891": 876,
+    "892": 887,
+    "893": 895,
+    "894": 879,
+    "895": 869,
+    "896": 922,
+    "897": 915,
+    "898": 910,
+    "899": 913,
+    "900": 918,
+    "901": 920,
+    "902": 905,
+    "903": 909,
+    "904": 896,
+    "905": 917,
+    "906": 919,
+    "907": 911,
+    "908": 921,
+    "909": 900,
+    "910": 902,
+    "911": 914,
+    "912": 907,
+    "913": 897,
+    "914": 903,
+    "915": 916,
+    "916": 904,
+    "917": 926,
+    "918": 899,
+    "919": 908,
+    "920": 923,
+    "921": 912,
+    "922": 927,
+    "923": 898,
+    "924": 925,
+    "925": 924,
+    "926": 906,
+    "927": 901,
+    "928": 932,
+    "929": 938,
+    "930": 944,
+    "931": 957,
+    "932": 935,
+    "933": 933,
+    "934": 930,
+    "935": 941,
+    "936": 943,
+    "937": 946,
+    "938": 931,
+    "939": 942,
+    "940": 936,
+    "941": 950,
+    "942": 958,
+    "943": 949,
+    "944": 953,
+    "945": 928,
+    "946": 940,
+    "947": 948,
+    "948": 947,
+    "949": 937,
+    "950": 956,
+    "951": 934,
+    "952": 952,
+    "953": 955,
+    "954": 951,
+    "955": 939,
+    "956": 945,
+    "957": 929,
+    "958": 959,
+    "959": 954,
+    "960": 970,
+    "961": 971,
+    "962": 977,
+    "963": 976,
+    "964": 984,
+    "965": 962,
+    "966": 965,
+    "967": 982,
+    "968": 963,
+    "969": 969,
+    "970": 990,
+    "971": 974,
+    "972": 986,
+    "973": 987,
+    "974": 988,
+    "975": 981,
+    "976": 983,
+    "977": 968,
+    "978": 980,
+    "979": 989,
+    "980": 991,
+    "981": 985,
+    "982": 979,
+    "983": 975,
+    "984": 972,
+    "985": 966,
+    "986": 961,
+    "987": 967,
+    "988": 960,
+    "989": 973,
+    "990": 978,
+    "991": 964,
+    "992": 995,
+    "993": 996,
+    "994": 997,
+    "995": 992,
+    "996": 998,
+    "997": 994,
+    "998": 993,
+    "999": 999
+  },
+  "source_metadata_sha256": "16e403cb77bfbdda28c243b96eb90adbae1c0edf42854283be57ee47076a2e90",
+  "caution": "Raw terminated flags are preserved. Decide and document continuing-vs-episodic TD masks separately; never concatenate episode boundaries for multi-step WM training."
+}

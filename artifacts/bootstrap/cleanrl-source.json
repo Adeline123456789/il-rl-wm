@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/vwxyzjn/cleanrl",
+  "commit": "fe8d8a03c41a7ef5b523e2e354bd01c363e786bb",
+  "files": {
+    "cleanrl/sac_continuous_action.py": {
+      "sha256": "f411ff829c864f1312dbca6a01b7a8c8830a4d9640e37beffa41630ff71bb7e0",
+      "path": ".cache/references/cleanrl/cleanrl__sac_continuous_action.py"
+    },
+    "LICENSE": {
+      "sha256": "c6c269472eecb009754856b5fe1029ee53b99b986f57bf22ad7c747b04799c69",
+      "path": ".cache/references/cleanrl/LICENSE"
+    },
+    "README.md": {
+      "sha256": "874fade1a9cd053004c77579100bf12fc4223cb2bbc03d0b3bd1356ab30b55a5",
+      "path": ".cache/references/cleanrl/README.md"
+    }
+  },
+  "role": "read_only_math_check_no_dependencies_installed"
+}

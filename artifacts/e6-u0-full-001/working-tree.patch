@@ -1,0 +1,102 @@
+diff --git a/.gitignore b/.gitignore
+index d19757e..f471cd9 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,5 +1,6 @@
+ .cache/
+ .venv/
++.venv-rlpd/
+ __pycache__/
+ .pytest_cache/
+ data/
+diff --git a/research_state.json b/research_state.json
+index 2497e61..2b90c9a 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 4739.077155240011,
++    "gpu_job_seconds_used": 5496.754332032011,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+@@ -63,7 +63,8 @@
+     "e5-candidates-001",
+     "e6-value-preheat-001",
+     "e6-u0-smoke-001",
+-    "e2-sac-a-full-002"
++    "e2-sac-a-full-002",
++    "e2-sac-b-full-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {
+@@ -240,6 +241,18 @@
+         "optimizer_steps_preserved": true,
+         "note": "CPU recomputation tolerates floating-point kernel differences; logged executed actions and replay match exactly. This is an engineering audit, not a performance conclusion."
+       }
++    },
++    "e2_sac_a_full_002": {
++      "training_interactions": 262144,
++      "inherited_training_interactions": 0,
++      "gradient_updates": 64528,
++      "validation_interactions": 16000,
++      "final_test_evaluated": false,
++      "elapsed_seconds": 762.0496437780093,
++      "frozen_il_verified": false,
++      "torch_peak_allocated_bytes": 141894656,
++      "final_validation_success_once": 0.0,
++      "final_validation_episodes": 16
+     }
+   },
+   "next_experiment": "Complete corrected A/B and full U0 plus same-parent C continuation; frozen F1 repeated-prefix diagnostics, then evidence-directed local research. U0 smoke is not full-batch completion.",
+@@ -247,12 +260,8 @@
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+   "background_jobs": [
+     {
+-      "role": "A_v2_full",
+-      "manifest": "artifacts/e2-sac-a-full-002/manifest.json"
+-    },
+-    {
+-      "role": "e2-sac-b-full-001",
+-      "status_file": "artifacts/queue-e2-sac-b-full-001/status.json"
++      "role": "B_v2_full",
++      "manifest": "artifacts/e2-sac-b-full-001/manifest.json"
+     },
+     {
+       "role": "e6-u0-full-001",
+diff --git a/scripts/bootstrap_local_runtime.py b/scripts/bootstrap_local_runtime.py
+index baa1baf..144ab5d 100644
+--- a/scripts/bootstrap_local_runtime.py
++++ b/scripts/bootstrap_local_runtime.py
+@@ -5,6 +5,7 @@ Do not copy unrelated frameworks, editable packages, or paths outside purelib.
+ The public package versions remain independently installable from PyPI.
+ """
+ import base64
++import argparse
+ import hashlib
+ from importlib.metadata import distributions
+ import json
+@@ -15,7 +16,7 @@ SOURCE = Path('/home/midea/miniconda3/envs/avp_clean/lib/python3.10/site-package
+ TARGET = Path('.venv/lib/python3.10/site-packages')
+ 
+ 
+-def main():
++def main(SOURCE=SOURCE,TARGET=TARGET,manifest_path=Path('artifacts/bootstrap/local-runtime-manifest.json')):
+     assert TARGET.exists()
+     manifest = dict(source=str(SOURCE), target=str(TARGET), packages=[], skipped_entrypoints=[])
+     names = {'torch', 'torchvision', 'triton'}
+@@ -48,8 +49,10 @@ def main():
+         print(json.dumps(entry), flush=True)
+     found = {x['name'].lower() for x in manifest['packages']}
+     assert names.issubset(found)
+-    Path('artifacts/bootstrap/local-runtime-manifest.json').write_text(json.dumps(manifest, indent=2))
++    manifest_path.write_text(json.dumps(manifest, indent=2))
+ 
+ 
+ if __name__ == '__main__':
+-    main()
++    parser=argparse.ArgumentParser();parser.add_argument('--source',type=Path,default=SOURCE);parser.add_argument('--target',type=Path,default=TARGET)
++    parser.add_argument('--manifest',type=Path,default=Path('artifacts/bootstrap/local-runtime-manifest.json'))
++    args=parser.parse_args();main(args.source,args.target,args.manifest)

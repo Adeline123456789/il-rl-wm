@@ -1,0 +1,5 @@
+{"step": 1024, "wm_updates": 16, "value_updates": 64, "wm_loss": 0.11210360378026962, "value_loss": 1.2646043300628662, "executed_il": 305, "executed_planned_sac": 483, "executed_random_sac": 236}
+{"step": 2048, "wm_updates": 32, "value_updates": 128, "wm_loss": 0.13947856426239014, "value_loss": 0.9230681657791138, "executed_il": 636, "executed_planned_sac": 961, "executed_random_sac": 451}
+{"step": 3072, "wm_updates": 48, "value_updates": 192, "wm_loss": 0.08568912744522095, "value_loss": 0.8031443357467651, "executed_il": 931, "executed_planned_sac": 1484, "executed_random_sac": 657}
+{"step": 4096, "wm_updates": 64, "value_updates": 256, "wm_loss": 0.14174118638038635, "value_loss": 2.087768077850342, "executed_il": 1218, "executed_planned_sac": 2027, "executed_random_sac": 851}
+{"step": 4096, "wm_updates": 64, "value_updates": 256, "wm_loss": 0.14174118638038635, "value_loss": 2.087768077850342, "executed_il": 1218, "executed_planned_sac": 2027, "executed_random_sac": 851}

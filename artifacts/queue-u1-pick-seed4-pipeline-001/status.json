@@ -1,0 +1,15 @@
+{
+  "pid": 1061073,
+  "prerequisite": "artifacts/pick-seed4-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_u1_repeat.py",
+    "--seed",
+    "4",
+    "--output",
+    "artifacts/u1-pick-seed4-pipeline-001"
+  ],
+  "started_at": "2026-10-16T13:20:46.152795+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

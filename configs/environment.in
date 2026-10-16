@@ -1,0 +1,10 @@
+# Constraints for the isolated main environment; resolved versions go in requirements.lock.
+torch==2.3.0
+torchvision==0.18.0
+numpy==1.26.4
+gymnasium==1.1.1
+sapien==3.0.3
+tensorboard
+pytest
+psutil
+# ManiSkill installed from .cache/upstreams/ManiSkill at the commit in UPSTREAMS.md.

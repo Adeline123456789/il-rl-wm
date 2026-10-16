@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "states": 64,
+  "bit_exact_cpu": true,
+  "no_il_constructor": true,
+  "new_environment_interactions": 0,
+  "limitation": "Frozen policy loading only; independent environment evaluation smoke remains queued"
+}

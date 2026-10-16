@@ -1,0 +1,28 @@
+{
+  "pid": 477033,
+  "prerequisite": "artifacts/e3-sac-c-full-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_experiment.py",
+    "--id",
+    "e4-wm-smoke-001",
+    "--seconds",
+    "1800",
+    "--",
+    ".venv/bin/python",
+    "scripts/train_world_model.py",
+    "--expert-audit",
+    "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+    "--online-checkpoint",
+    "checkpoints/e3-sac-c-full-001/final.pt",
+    "--output",
+    "artifacts/e4-wm-smoke-001",
+    "--updates",
+    "200"
+  ],
+  "started_at": "2026-10-16T10:28:31.867524+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 538785,
+  "ended_at": "2026-10-16T10:46:42.037504+00:00"
+}

@@ -1,0 +1,106 @@
+{
+  "source_head": "8ec9714acb3dff8a0badc48f7d26df254bb2de38",
+  "bundle_bytes": 52057243,
+  "bundle_sha256": "598aa89218f5514562559fdfe00761e56ebacef9f6fdd3fe92bbe940b9f7f28c",
+  "parts": [
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part000",
+      "bytes": 4194304,
+      "sha256": "5d9f381f206ad0fd7b2e4b4fcb3f27f7763ed27f2748cfb11bb61dbd49663f52"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part001",
+      "bytes": 4194304,
+      "sha256": "06aa27c4a1e9d25605fc2b756cd3f5c710feb2f59e77e02f8cac396f181c139d"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part002",
+      "bytes": 4194304,
+      "sha256": "611e3f4439304369ef641ecc98f80fa361805560e9c3354d86929e8b4c8072e1"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part003",
+      "bytes": 4194304,
+      "sha256": "199aa4f24cff38dbbf73754fa150e51a9fab5bb2679f9a8b742f7445dc02ab10"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part004",
+      "bytes": 4194304,
+      "sha256": "4897523d5a34bef748b7d6c08336202d62a825d339b910127c5dd8f064691214"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part005",
+      "bytes": 4194304,
+      "sha256": "017bed16ec28e790cce449bc0fadb68e54840f193f660a692dd60b2c03e6a373"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part006",
+      "bytes": 4194304,
+      "sha256": "3c5e4c028f3748026c9c9d8e5a83caa35fb9ebe08d32fd9b8039c60578a7b50b"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part007",
+      "bytes": 4194304,
+      "sha256": "07808ce8daa12d2453eac2797e248a19ab1358f5a4d1667076862c6c265f1bf3"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part008",
+      "bytes": 4194304,
+      "sha256": "a92928d45b4c31dc33b7945d1d75d467e7facb5ca4146346f97e643b62eda8f5"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part009",
+      "bytes": 4194304,
+      "sha256": "abf07c5379ad13400e86bfa3ee5e8f27e23683aa39792c1e44706263f47ef58e"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part010",
+      "bytes": 4194304,
+      "sha256": "4c021161a889300fc134943d39d49e145bf7734ff681747f38bea4c4e3414e04"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part011",
+      "bytes": 4194304,
+      "sha256": "bc5fe1f7f18fa6ff83b0972825402c22dc2eb41ba2b85d6973063f497ab57134"
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part012",
+      "bytes": 1725595,
+      "sha256": "3a9af4e2bc09eed8ba3f09aedd802e2f1cd8af3df73aa7e6beced4c76c1fdc3e"
+    }
+  ],
+  "experiment_code_commits_verified_in_fresh_bare_repository": [
+    "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+    "04f6162f6667b6bc28cadfb977da8e288db46a46",
+    "09d606712540920e0134a46bda539600ba3c1ca9",
+    "0e379ba50a1016467851df5e9714cff70fce5850",
+    "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+    "1b3f57f089a2301e209e3ec147288bf9b38b42e6",
+    "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+    "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+    "47599319c50930fabc73dbd76ee2da7d973fdacf",
+    "4ab1909c1157c1c0198242e17bb8fb82623e4b52",
+    "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+    "6b2e2d91a7a6b45debffaa4b418a08c016c10db7",
+    "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+    "779129b1b0d9c8c72f7d22f99f1d485112e29241",
+    "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0",
+    "865f0dd61fac39451c2c65b296b9e004d2e11ff1",
+    "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+    "94d3ab7994c7b4ca8959f406f5079b6c7a4b6bb0",
+    "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+    "ab52d12370ee35d5a7f49e33af31077a104e6161",
+    "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+    "c5a8791fdf2efd40b887a4c4390b6f0950158c69",
+    "c7b318b47cd8f24091564aec629779783d2b9826",
+    "cbcea4f997caa40f224542b53047f91cb38a6bee",
+    "d699acb9cdd6e36845cbdb89df9e85b6f5e408ae",
+    "ddf0c6a546520842e316b637b4e3176994f896d8",
+    "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+    "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+    "f0dc12f4e31292b88bb4b785aef53fa8da5273e7",
+    "f3bbfea82c3946ffb5fbf77f280e171bef0ba672",
+    "f3cbe8d1884b253193e5c30ee67683da9e42eeb9"
+  ],
+  "full_offline_restore_verified": true
+}

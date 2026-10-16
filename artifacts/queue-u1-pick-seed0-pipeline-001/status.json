@@ -1,0 +1,18 @@
+{
+  "pid": 860671,
+  "prerequisite": "artifacts/peg-data-pipeline-002/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_u1_repeat.py",
+    "--seed",
+    "0",
+    "--output",
+    "artifacts/u1-pick-seed0-pipeline-001"
+  ],
+  "started_at": "2026-10-16T12:28:19.713387+00:00",
+  "phase": "cancelled_before_child_launch",
+  "exit_code": null,
+  "ended_at": "2026-10-16T12:38:07.405319+00:00",
+  "reason": "Insert validated portable RLPD evaluator GPU smoke before U1; no training interrupted",
+  "replacement": "artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json"
+}

@@ -1,0 +1,10 @@
+{
+  "training_interactions": 4096,
+  "critic_updates": 61440,
+  "actor_updates": 3072,
+  "expert_samples": 7864320,
+  "online_samples": 7864320,
+  "elapsed_seconds": 53.463688215008005,
+  "validation_interactions": 1600,
+  "final_test_evaluated": false
+}

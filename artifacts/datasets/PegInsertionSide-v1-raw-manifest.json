@@ -1,0 +1,33 @@
+{
+  "env_id": "PegInsertionSide-v1",
+  "source_repository": "haosulab/ManiSkill_Demonstrations",
+  "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+  "url": "https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/resolve/d674485bbffdd533914e52d272fdda34c0515608/demos/PegInsertionSide-v1.zip?download=true",
+  "elapsed_seconds": 42.17968147699139,
+  "files": {
+    "data/official/PegInsertionSide-v1/motionplanning/sample.mp4": {
+      "bytes": 112270,
+      "sha256": "400e034d6499bd41b54d1e90a537e4239857ded01148f882cf6b33715fe21070"
+    },
+    "data/official/PegInsertionSide-v1/motionplanning/trajectory.h5": {
+      "bytes": 50058783,
+      "sha256": "6fa7e4df4cd1980a9cccd23b3ecae11a46a9e068c70b2d96597f4b1656b07b5a"
+    },
+    "data/official/PegInsertionSide-v1/motionplanning/trajectory.json": {
+      "bytes": 229547,
+      "sha256": "8f666019744d4a96b846f717ecbdfb4ac5207c742207a10ad87a3559c1859e78"
+    },
+    "data/official/PegInsertionSide-v1/rl/sample.mp4": {
+      "bytes": 78153,
+      "sha256": "e6ae04c8631c241b6b85f15b50fd01100d488bfb575be1eec4a2cf3a2d73db1a"
+    },
+    "data/official/PegInsertionSide-v1/rl/trajectory.h5": {
+      "bytes": 18741772,
+      "sha256": "6948b407728f3995db85b526f6f827ef26d16e60cc8a308af45938e4048a9666"
+    },
+    "data/official/PegInsertionSide-v1/rl/trajectory.json": {
+      "bytes": 219643,
+      "sha256": "61a9ada0a8518c6a36289c62fcf4130709fd20e48f660b967e31a5276a400d44"
+    }
+  }
+}

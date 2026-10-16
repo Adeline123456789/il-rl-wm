@@ -1,0 +1,57 @@
+{
+  "valid": true,
+  "all_arrays_bitexact": true,
+  "completed_commands": [
+    [
+      ".venv/bin/python",
+      "scripts/export_analysis_checkpoint.py",
+      "--checkpoint",
+      "checkpoints/u1-pick-seed0-u0-001/step_196608.pt",
+      "--output",
+      "releases/u1-seed0-analysis-step196608-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/export_analysis_checkpoint.py",
+      "--checkpoint",
+      "checkpoints/u1-pick-seed0-u0-001/final.pt",
+      "--output",
+      "releases/u1-seed0-analysis-final-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_value_drift.py",
+      "--before",
+      "checkpoints/u1-pick-seed0-u0-001/step_196608.pt",
+      "--after",
+      "checkpoints/u1-pick-seed0-u0-001/final.pt",
+      "--output",
+      "artifacts/u1-seed0-own-input-drift-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_value_drift.py",
+      "--before",
+      "releases/u1-seed0-analysis-step196608-001/weights.pt",
+      "--after",
+      "releases/u1-seed0-analysis-final-001/weights.pt",
+      "--fixed-batches",
+      "artifacts/f-u0-value-drift-portable-001/fixed_batches.npz",
+      "--output",
+      "artifacts/u1-seed0-common-input-drift-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_value_drift.py",
+      "--before",
+      "releases/u1-seed0-analysis-step196608-001/weights.pt",
+      "--after",
+      "releases/u1-seed0-analysis-final-001/weights.pt",
+      "--fixed-batches",
+      "artifacts/u1-seed0-own-input-drift-001/fixed_batches.npz",
+      "--output",
+      "artifacts/u1-seed0-own-input-drift-portable-001"
+    ]
+  ],
+  "new_environment_interactions": 0
+}

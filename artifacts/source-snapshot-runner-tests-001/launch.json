@@ -1,0 +1,11 @@
+{
+  "pid": 1078095,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_runner.py"
+  ],
+  "mocked_gpu_no_training": true
+}

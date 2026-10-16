@@ -1,0 +1,27 @@
+{
+  "experiment_id": "e0-pickcube-throughput-001",
+  "pid": 303571,
+  "started_at": "2026-10-16T09:24:22.302138+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py",
+    "--id",
+    "e0-pickcube-throughput-001",
+    "--seconds",
+    "300.0",
+    "--memory-mib",
+    "20480",
+    "--",
+    ".venv/bin/python",
+    "scripts/smoke_env.py",
+    "--env-id",
+    "PickCube-v1",
+    "--num-envs",
+    "32",
+    "--steps",
+    "200",
+    "--output",
+    "artifacts/e0-pickcube-throughput-001"
+  ],
+  "log": "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/launches/e0-pickcube-throughput-001/runner.log"
+}

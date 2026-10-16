@@ -1,0 +1,9 @@
+{
+  "updates": 200,
+  "elapsed_seconds": 0.36500221099413466,
+  "trainable_parameters": 88875,
+  "new_environment_interactions": 0,
+  "checkpoint": "checkpoints/e4-wm-smoke-001/final.pt",
+  "sha256": "68eb509edeea69ea0ba349abe65401e152427eb6ee4fbd59fa8b03c6d9e61554",
+  "torch_peak_allocated_bytes": 208573440
+}

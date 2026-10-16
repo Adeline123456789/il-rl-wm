@@ -1,0 +1,31 @@
+  0%|          | 0/20 [00:00<?, ?step/s]0step [00:00, ?step/s][33;1m2026-10-16 17:32:02,556 - mani_skill  - WARNING - shader_dir argument will be deprecated after ManiSkill v3.0.0 official release. Please use sensor_configs/human_render_camera_configs to set shaders.[0m
+  0%|          | 0/20 [00:00<?, ?step/s]  0%|          | 0/20 [00:00<?, ?step/s]Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/replay_recorded.py", line 70, in <module>
+    main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/replay_recorded.py", line 62, in main
+    replay.main(args)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/replay_trajectory.py", line 559, in main
+    _, replay_result = _main(
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/replay_trajectory.py", line 472, in _main
+    replay_result = replay_parallelized_sim(args, env, pbar, episodes, ori_h5_file)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/replay_trajectory.py", line 143, in replay_parallelized_sim
+    env.reset(seed=seeds)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.cache/upstreams/ManiSkill/mani_skill/utils/wrappers/record.py", line 378, in reset
+    obs, info = super().reset(*args, seed=seed, options=options, **kwargs)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/gymnasium/core.py", line 333, in reset
+    return self.env.reset(seed=seed, options=options)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/gymnasium/core.py", line 333, in reset
+    return self.env.reset(seed=seed, options=options)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/gymnasium/core.py", line 333, in reset
+    return self.env.reset(seed=seed, options=options)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/gymnasium/wrappers/common.py", line 400, in reset
+    return super().reset(seed=seed, options=options)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/gymnasium/core.py", line 333, in reset
+    return self.env.reset(seed=seed, options=options)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.cache/upstreams/ManiSkill/mani_skill/envs/sapien_env.py", line 911, in reset
+    self._set_main_rng(seed)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.cache/upstreams/ManiSkill/mani_skill/envs/sapien_env.py", line 1000, in _set_main_rng
+    assert isinstance(seed_list, np.ndarray)
+AssertionError
+  0%|          | 0/20 [00:00<?, ?step/s]
+  0%|          | 0/20 [00:01<?, ?step/s]

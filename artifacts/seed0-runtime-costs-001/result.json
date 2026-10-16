@@ -1,0 +1,429 @@
+{
+  "summaries": [
+    {
+      "variant": "U0",
+      "experiment": "e6-u0-full-001",
+      "model": {
+        "trainable_parameters": 599351,
+        "additional_u0_parameters": 166956,
+        "frozen_il_parameters": 143620
+      },
+      "new_training_interactions": 262144,
+      "lineage_training_interactions": 524288,
+      "validation_interactions": 64000,
+      "gpu_job_wall_seconds": 1093.2034210550046,
+      "learner_and_validation_wall_seconds": 1087.0780696529982,
+      "measured_action_selection_batches": 256,
+      "batch_size": 16,
+      "action_selection_ms_mean": 2.0431187890039837,
+      "action_selection_ms_median": 2.0367805045680143,
+      "action_selection_ms_p95": 2.3176157592388336,
+      "action_selection_ms_max": 5.255908996332437,
+      "sampled_whole_gpu_peak_mib": 4703,
+      "sampled_process_peak_rss_kib": 4180036,
+      "torch_peak_allocated_bytes": 145830400
+    },
+    {
+      "variant": "U1",
+      "experiment": "u1-pick-seed0-u0-001",
+      "model": {
+        "trainable_parameters": 602423,
+        "additional_u0_parameters": 166956,
+        "frozen_il_parameters": 143620
+      },
+      "new_training_interactions": 262144,
+      "lineage_training_interactions": 524288,
+      "validation_interactions": 64000,
+      "gpu_job_wall_seconds": 1204.581878033001,
+      "learner_and_validation_wall_seconds": 1199.1064646220038,
+      "measured_action_selection_batches": 256,
+      "batch_size": 16,
+      "action_selection_ms_mean": 2.074273234370594,
+      "action_selection_ms_median": 2.0526024964055978,
+      "action_selection_ms_p95": 2.277182495163288,
+      "action_selection_ms_max": 2.636277989950031,
+      "sampled_whole_gpu_peak_mib": 4703,
+      "sampled_process_peak_rss_kib": 4173104,
+      "torch_peak_allocated_bytes": 151175680
+    }
+  ],
+  "evaluation_costs": [
+    {
+      "variant": "U0",
+      "step": 0,
+      "method": "il",
+      "wall_seconds": 5.507163327987655,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 0,
+      "method": "sac",
+      "wall_seconds": 6.330927664996125,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 0,
+      "method": "il_sac_wm",
+      "wall_seconds": 6.763623527003801,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 0,
+      "method": "sac_wm",
+      "wall_seconds": 6.5731473509949865,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 65536,
+      "method": "il",
+      "wall_seconds": 5.5111141499946825,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 65536,
+      "method": "sac",
+      "wall_seconds": 6.384247653011698,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 65536,
+      "method": "il_sac_wm",
+      "wall_seconds": 6.808502865009359,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 65536,
+      "method": "sac_wm",
+      "wall_seconds": 6.580554265005048,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 131072,
+      "method": "il",
+      "wall_seconds": 5.5477225329959765,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 131072,
+      "method": "sac",
+      "wall_seconds": 6.367136712986394,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 131072,
+      "method": "il_sac_wm",
+      "wall_seconds": 6.725675815992872,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 131072,
+      "method": "sac_wm",
+      "wall_seconds": 6.650833876003162,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 196608,
+      "method": "il",
+      "wall_seconds": 5.50788297400868,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 196608,
+      "method": "sac",
+      "wall_seconds": 6.16894590499578,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 196608,
+      "method": "il_sac_wm",
+      "wall_seconds": 6.647609381994698,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 196608,
+      "method": "sac_wm",
+      "wall_seconds": 6.455000722009572,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 262144,
+      "method": "il",
+      "wall_seconds": 5.588514495000709,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 262144,
+      "method": "sac",
+      "wall_seconds": 6.38237073700293,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 262144,
+      "method": "il_sac_wm",
+      "wall_seconds": 6.20402490599372,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U0",
+      "step": 262144,
+      "method": "sac_wm",
+      "wall_seconds": 6.243192642010399,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 0,
+      "method": "il",
+      "wall_seconds": 5.966881359010586,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 0,
+      "method": "sac",
+      "wall_seconds": 6.900455775001319,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 0,
+      "method": "il_sac_wm",
+      "wall_seconds": 7.5808362079988,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 0,
+      "method": "sac_wm",
+      "wall_seconds": 7.141615574990283,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 65536,
+      "method": "il",
+      "wall_seconds": 6.005570359004196,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 65536,
+      "method": "sac",
+      "wall_seconds": 6.868568301011692,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 65536,
+      "method": "il_sac_wm",
+      "wall_seconds": 7.369919752993155,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 65536,
+      "method": "sac_wm",
+      "wall_seconds": 7.368243850010913,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 131072,
+      "method": "il",
+      "wall_seconds": 6.0232159290026175,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 131072,
+      "method": "sac",
+      "wall_seconds": 6.972921377004241,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 131072,
+      "method": "il_sac_wm",
+      "wall_seconds": 7.208195568993688,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 131072,
+      "method": "sac_wm",
+      "wall_seconds": 7.137588851997862,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 196608,
+      "method": "il",
+      "wall_seconds": 6.053522747999523,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 196608,
+      "method": "sac",
+      "wall_seconds": 6.9090488250076305,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 196608,
+      "method": "il_sac_wm",
+      "wall_seconds": 7.540611019998323,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 196608,
+      "method": "sac_wm",
+      "wall_seconds": 7.27371605100052,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 262144,
+      "method": "il",
+      "wall_seconds": 6.059390472000814,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 262144,
+      "method": "sac",
+      "wall_seconds": 7.00513861401123,
+      "candidates": 1,
+      "horizon": 1,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 262144,
+      "method": "il_sac_wm",
+      "wall_seconds": 7.493478017990128,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    },
+    {
+      "variant": "U1",
+      "step": 262144,
+      "method": "sac_wm",
+      "wall_seconds": 7.3816509489988675,
+      "candidates": 9,
+      "horizon": 2,
+      "environment_interactions": 3200
+    }
+  ],
+  "sources": {
+    "artifacts/e6-u0-full-001/manifest.json": "ee49a5e1f847c74782b356a1361d3d7c32ea518794904337a647674635649102",
+    "artifacts/e6-u0-full-001/result.json": "6442c6ad0735cc57109e8ab0448006d894fbe1370763816c30789935a58b9a9e",
+    "artifacts/e6-u0-full-001/model.json": "a6b21b90aaa8877bfdcfa0c47c958459ebf13d661f117c10795ff8cc36ddc11c",
+    "artifacts/e6-u0-full-001/planning.jsonl": "35d0483d307c40ab5dc801113a4ad303cc18e936ed978d850d309218c2317986",
+    "artifacts/e6-u0-full-001/resources.jsonl": "be229c6b98cd3d6133b428059daac89c9974667cc3972a8bc0cf00a166477402",
+    "artifacts/e6-u0-full-001/evaluation_cost.jsonl": "9d6b3f111fef790acd3c7e545b334ed806e0be8913a70cff8d94e209b697ce71",
+    "artifacts/u1-pick-seed0-u0-001/manifest.json": "890ec71e6d5e71fc08a5763a30d7e1b10570e67c402380e0e688785131fddfbb",
+    "artifacts/u1-pick-seed0-u0-001/result.json": "caf4e31c23636e33b9028a906fe5e0b726f84d6e85f52c07946f6757e5de11f5",
+    "artifacts/u1-pick-seed0-u0-001/model.json": "bf5c67f9d3a7bc2a4dfefe4dd43d3b2d7d13fb94f0a06f78b54e9e0665091345",
+    "artifacts/u1-pick-seed0-u0-001/planning.jsonl": "f30517bfb276f32f8529ba35f7f1318d5e2b6d99f3e662caaa05176162cb09e3",
+    "artifacts/u1-pick-seed0-u0-001/resources.jsonl": "27ef329a3a4702fd3d7c1211d72046a8ccd6be6fbad19ac36e16293220bab2aa",
+    "artifacts/u1-pick-seed0-u0-001/evaluation_cost.jsonl": "e55972d931060f9750d709b4b7fee4873f2d6c2f279f1638d97fb00012ebc3b8"
+  },
+  "new_environment_interactions": 0,
+  "measurement_scope": "Action selection includes H2 candidate generation, task-value scoring, exploration sampling and source counters, with CUDA synchronization; excludes env.step, gradient updates and JSON serialization. Evaluation wall time includes simulator steps and episode bookkeeping.",
+  "limitations": "One development training run per variant. Sparse timing samples every 1024 transitions, not an independent hardware benchmark. Quantiles are descriptive, not confidence intervals. Resource sampling every two seconds can miss transient peaks. These training samples use IL and batch16; they are not standalone no-IL or batch1 deployment latency."
+}

@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/StoneT2000/rfcl",
+  "commit": "7bd660f05dbda1ec8881bcfb250a8d1881532dbb",
+  "files": {
+    "rfcl/agents/sac/sac.py": {
+      "path": ".cache/references/rfcl/rfcl__agents__sac__sac.py",
+      "sha256": "199b5d65852a1691c51984d765d8275fb0641e0bfd8d4c37abeb38709eebfe15"
+    },
+    "rfcl/data/dataset.py": {
+      "path": ".cache/references/rfcl/rfcl__data__dataset.py",
+      "sha256": "b05351af0b0899c6f4d22f2dce03d382a9d7015af6ccfa91cfe87f7ff45d512f"
+    },
+    "configs/ms3-gpu/base_sac_ms3.yml": {
+      "path": ".cache/references/rfcl/configs__ms3-gpu__base_sac_ms3.yml",
+      "sha256": "695fb4161a0f44b2e1a709b159ccbdb5cb2ad27d6e0e1c8dc0262a5ca9899b69"
+    },
+    "train.py": {
+      "path": ".cache/references/rfcl/train.py",
+      "sha256": "49a7919b32f4a123f3d4f001ae8265e66eaf387963bad6ce876d21611be81752"
+    }
+  },
+  "role": "read_only_no_dependencies_installed"
+}

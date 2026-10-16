@@ -1,0 +1,49 @@
+test_failure_and_timeout_are_recorded_and_budgeted (test_runner.RunnerTests.test_failure_and_timeout_are_recorded_and_budgeted) ... ok
+test_unfinished_run_blocks_new_work (test_runner.RunnerTests.test_unfinished_run_blocks_new_work) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 2.063s
+
+OK
+{
+  "experiment_id": "failure",
+  "started_at": "2026-10-16T09:06:00.111581+00:00",
+  "ended_at": "2026-10-16T09:06:02.112780+00:00",
+  "command": [
+    "/home/midea/miniconda3/bin/python",
+    "-c",
+    "raise SystemExit(7)"
+  ],
+  "cwd": "/tmp/tmpe7uxvcz6",
+  "limit_seconds": 5.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 297523,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": 7,
+  "stop_reason": null,
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 297524,
+  "elapsed_seconds": 2.000888248992851
+}
+{
+  "experiment_id": "timeout",
+  "started_at": "2026-10-16T09:06:02.115634+00:00",
+  "ended_at": "2026-10-16T09:06:02.168103+00:00",
+  "command": [
+    "/home/midea/miniconda3/bin/python",
+    "-c",
+    "import time; time.sleep(20)"
+  ],
+  "cwd": "/tmp/tmpe7uxvcz6",
+  "limit_seconds": 0.05,
+  "memory_limit_mib": 20480,
+  "runner_pid": 297523,
+  "code_commit": "test-commit",
+  "code_dirty": false,
+  "exit_code": -15,
+  "stop_reason": "time_budget",
+  "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "child_pid": 297537,
+  "elapsed_seconds": 0.05158348700206261
+}

@@ -1,0 +1,7 @@
+{
+  "pid": 1057846,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/five-seed-plan-check-001/check.py"
+  ]
+}

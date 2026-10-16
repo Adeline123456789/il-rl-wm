@@ -1,0 +1,18 @@
+{
+  "pid": 449533,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_demos.py",
+    "--path",
+    "data/replay/e0-pickcube-fresh-contacts-test-001/trajectory.state.pd_ee_delta_pos.physx_cuda.h5",
+    "--action-source-path",
+    "data/replay/e0-pickcube-replay-full-001/trajectory.state.pd_ee_delta_pos.physx_cpu.h5",
+    "--source-metadata",
+    "data/official/PickCube-v1/motionplanning/trajectory.json",
+    "--horizon",
+    "200",
+    "--successful-only",
+    "--output",
+    "artifacts/e0-pickcube-fresh-contacts-test-001/dataset-audit.json"
+  ]
+}

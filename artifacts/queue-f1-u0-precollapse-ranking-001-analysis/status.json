@@ -1,0 +1,17 @@
+{
+  "pid": 778725,
+  "prerequisite": "artifacts/f1-u0-precollapse-ranking-001/manifest.json",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=",
+    ".venv/bin/python",
+    "scripts/summarize_ranking.py",
+    "--experiment",
+    "artifacts/f1-u0-precollapse-ranking-001"
+  ],
+  "started_at": "2026-10-16T11:52:42.308293+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 799989,
+  "ended_at": "2026-10-16T12:01:54.744463+00:00"
+}

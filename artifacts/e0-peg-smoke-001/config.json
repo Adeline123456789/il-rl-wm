@@ -1,0 +1,10 @@
+{
+  "env_id": "PegInsertionSide-v1",
+  "num_envs": 4,
+  "obs_mode": "state",
+  "control_mode": "pd_ee_delta_pose",
+  "reward_mode": "sparse",
+  "sim_backend": "gpu",
+  "reconfiguration_freq": 1,
+  "render_mode": null
+}

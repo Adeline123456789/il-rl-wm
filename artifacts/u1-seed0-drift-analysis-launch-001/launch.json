@@ -1,0 +1,17 @@
+{
+  "pid": 1098892,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/u1-pick-seed0-u0-001/manifest.json",
+    "--output",
+    "artifacts/queue-u1-seed0-drift-analysis-001",
+    "--max-wait-seconds",
+    "3600",
+    "--",
+    ".venv/bin/python",
+    "artifacts/u1-seed0-drift-analysis-launch-001/run.py"
+  ],
+  "cpu_only": true
+}

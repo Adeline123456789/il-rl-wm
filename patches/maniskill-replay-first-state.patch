@@ -1,0 +1,27 @@
+--- a/mani_skill/trajectory/replay_trajectory.py
++++ b/scripts/replay_trajectory.py
+@@ -1,3 +1,5 @@
++# Adapted official ManiSkill replay; only F-E0-001 initial-state record repair.
++# Source/Apache-2.0: vendor/maniskill/LICENSE and UPSTREAMS.md.
+ """Replay ManiSkill trajectories stored in HDF5 (.h5) format
+ 
+ The replayed trajectory can use different observation modes and control modes.
+@@ -278,6 +280,9 @@
+                 if ori_env is not None:
+                     ori_env.unwrapped.set_state_dict(ori_env_states[0])
+                 env.base_env.set_state_dict(ori_env_states[0])
++                # Local correctness fix F-E0-001: preserve the true initial
++                # state before shifting the per-step restore sequence.
++                initial_env_state = ori_env_states[0]
+                 ori_env_states = ori_env_states[1:]
+                 if args.save_traj:
+                     # replace the first saved env state
+@@ -290,7 +295,7 @@
+                                 recursive_replace(x[k], y[k])
+ 
+                     recursive_replace(
+-                        env._trajectory_buffer.state, common.batch(ori_env_states[0])
++                        env._trajectory_buffer.state, common.batch(initial_env_state)
+                     )
+                     fixed_obs = env.base_env.get_obs()
+                     recursive_replace(

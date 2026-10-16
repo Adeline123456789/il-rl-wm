@@ -1,0 +1,1 @@
+{"pid": 689070, "environment_overrides": {"PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1", "PYTHONPATH": ""}, "reason": "Avoid inherited ROS pytest entrypoint; prior attempt failed before collection"}

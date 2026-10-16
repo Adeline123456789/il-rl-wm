@@ -1,0 +1,11 @@
+{
+  "pid": 733974,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_sac_initial_contact.py",
+    "--checkpoint",
+    "checkpoints/e6-u0-full-001/final.pt",
+    "--output",
+    "artifacts/e6-u0-full-001/initial-contact-audit.json"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "phase": "completed",
+  "task": "StackCube-v1",
+  "audit": "artifacts/e0-stack-gpu-replay-full-001/dataset-audit.json",
+  "eligible": 769,
+  "failed_retained": 231
+}

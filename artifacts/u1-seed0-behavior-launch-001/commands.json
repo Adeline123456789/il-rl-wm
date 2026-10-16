@@ -1,0 +1,22 @@
+[
+  [
+    ".venv/bin/python",
+    "scripts/diagnose_behavior.py",
+    "--checkpoint",
+    "checkpoints/u1-pick-seed0-u0-001/final.pt",
+    "--bin-size",
+    "8192",
+    "--output",
+    "artifacts/u1-seed0-behavior-001"
+  ],
+  [
+    ".venv/bin/python",
+    "scripts/diagnose_behavior.py",
+    "--input-arrays",
+    "artifacts/u1-seed0-behavior-001/transitions.npz",
+    "--bin-size",
+    "8192",
+    "--output",
+    "artifacts/u1-seed0-behavior-portable-001"
+  ]
+]

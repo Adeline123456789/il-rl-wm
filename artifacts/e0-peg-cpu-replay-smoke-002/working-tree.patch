@@ -1,0 +1,23 @@
+diff --git a/research_state.json b/research_state.json
+index d8e4285..3f6e602 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 9248.722276432018,
++    "gpu_job_seconds_used": 9291.223728285011,
+     "local_changes_limit": 2,
+     "local_changes_used": 1
+   },
+@@ -78,7 +78,8 @@
+     "e0-stack-cpu-replay-full-001",
+     "e0-stack-gpu-replay-full-001",
+     "e0-peg-cpu-replay-smoke-001",
+-    "e0-peg-gpu-replay-smoke-001"
++    "e0-peg-gpu-replay-smoke-001",
++    "u1-sac-c-smoke-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {

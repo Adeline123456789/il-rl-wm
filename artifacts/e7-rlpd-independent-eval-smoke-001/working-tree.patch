@@ -1,0 +1,281 @@
+diff --git a/artifacts/queue-e7-rlpd-independent-eval-smoke-001/status.json b/artifacts/queue-e7-rlpd-independent-eval-smoke-001/status.json
+index 146bbc5..d725503 100644
+--- a/artifacts/queue-e7-rlpd-independent-eval-smoke-001/status.json
++++ b/artifacts/queue-e7-rlpd-independent-eval-smoke-001/status.json
+@@ -23,6 +23,7 @@
+     "4"
+   ],
+   "started_at": "2026-10-16T12:38:07.431829+00:00",
+-  "phase": "waiting",
+-  "exit_code": null
++  "phase": "running",
++  "exit_code": null,
++  "child_pid": 967483
+ }
+\ No newline at end of file
+diff --git a/artifacts/queue-peg-data-pipeline-002/status.json b/artifacts/queue-peg-data-pipeline-002/status.json
+index 6374cba..fcd59e1 100644
+--- a/artifacts/queue-peg-data-pipeline-002/status.json
++++ b/artifacts/queue-peg-data-pipeline-002/status.json
+@@ -12,7 +12,8 @@
+     "artifacts/peg-data-pipeline-002/status.json"
+   ],
+   "started_at": "2026-10-16T12:26:38.876254+00:00",
+-  "phase": "running",
+-  "exit_code": null,
+-  "child_pid": 856062
++  "phase": "completed",
++  "exit_code": 0,
++  "child_pid": 856062,
++  "ended_at": "2026-10-16T12:57:09.665576+00:00"
+ }
+\ No newline at end of file
+diff --git a/literature/F-U0-001_value_stability_sources.md b/literature/F-U0-001_value_stability_sources.md
+index 90548bb..6ac01e6 100644
+--- a/literature/F-U0-001_value_stability_sources.md
++++ b/literature/F-U0-001_value_stability_sources.md
+@@ -11,3 +11,5 @@
+ 固定源码：RLPD `c90fd4baf28c9c9ef40a81460a2e395092844f88`（MIT，LICENCE），DroQ `4c7adddbaf7573ff9256b16091a3bbdbd536aad4`（MIT），REDQ `7b5d1bff39291a57325a2836bd397a55728960bb`（MIT）。具体文件与SHA256见 value_stability_source_manifest.json。DroQ/REDQ保持只读缓存，未安装依赖，未拷入主工程。
+ 
+ 证据限制：OpenReview PDF遇浏览器验证，改读作者列出的arXiv v2；ICLR年份由arXiv comments与作者README交叉核对，未声称OpenReview页面访问成功。DroQ网页表格的学习率显示异常，不能照抄；本项目学习率仍取锁定配置/源码。这里不把三项机制全部加入U0。先完成C续训与真实分支诊断，再写唯一主要改动、等预算对照及失败判据。
++
++后续状态（2026-10-16）：上述为U1实施前的来源核对记录。C续训及两组prefix40真实F1现已完成，均没有可辨识候选排名；U1_CHANGE.md随后预登记“只对SAC critic隐藏层加LayerNorm”，CPU/真实GPU smoke已通过，完整效果尚待训练。DroQ/REDQ仍未安装或运行。再次直接打开其OpenReview PDF仍遇验证页；搜索索引可见原始PDF会议页眉，不把这种检索结果写成成功打开或精读全文。
+diff --git a/literature/ibrl_method_check.md b/literature/ibrl_method_check.md
+index d5597b2..9dd29ea 100644
+--- a/literature/ibrl_method_check.md
++++ b/literature/ibrl_method_check.md
+@@ -9,3 +9,5 @@
+ 对本项目的意义是检查“候选评分对应谁续接”，以及是否因低分而持续缺少学生数据。这些机制与本项目 F1 的首动作/完整序列后统一学生续接诊断有关；它们不证明当前模型排序错误，也不证明增加 softmax 会有效。U0 已有 0.2 实际随机 SAC 执行，不能把额外软选择、价值改造和蒸馏一起加入。待完整 U0/F1 证据后再决定是否提出单一局部假设。
+ 
+ 额外成本与边界：IBRL 需独立 BC 推理及候选 critic 评估；其实现还包含不同网络与环境。论文的任务、数据和奖励时序不同，不能用其分数与我们的 ManiSkill continuing 协议直接比较。这里仅借鉴目标核对，不安装另一套训练框架。
++
++出版身份补核：2026-10-16直接读取RSS官方页面，确认IBRL为RSS2024、DOI10.15607/RSS.2024.XX.056，作者与既有arXiv记录一致。来源：https://roboticsproceedings.org/rss20/p056.html 。这只补充出版元数据，不扩大此前方法阅读范围或改变源码许可判断。
+diff --git a/literature/references.bib b/literature/references.bib
+index df25e03..9d41956 100644
+--- a/literature/references.bib
++++ b/literature/references.bib
+@@ -20,3 +20,85 @@
+   year={2019}, eprint={1812.05905}, archivePrefix={arXiv},
+   url={https://arxiv.org/abs/1812.05905v2}
+ }
++
++@misc{tao2025maniskill3arxiv,
++  title={ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI},
++  author={Stone Tao and Fanbo Xiang and Arth Shukla and Yuzhe Qin and Xander Hinrichsen and Xiaodi Yuan and Chen Bao and Xinsong Lin and Yulin Liu and Tse-kai Chan and Yuan Gao and Xuanlin Li and Tongzhou Mu and Nan Xiao and Arnav Gurha and Viswesh Nagaswamy Rajesh and Yong Woo Choi and Yen-Ru Chen and Zhiao Huang and Roberto Calandra and Rui Chen and Shan Luo and Hao Su},
++  year={2025},
++  eprint={2410.00425v2},
++  archivePrefix={arXiv},
++  note={Version2 revised2025-05-30; original submission2024-10-01. Title differs from RSS publication.},
++  url={https://arxiv.org/abs/2410.00425v2}
++}
++
++@inproceedings{hansen2024tdmpc2,
++  title={TD-MPC2: Scalable, Robust World Models for Continuous Control},
++  author={Nicklas Hansen and Hao Su and Xiaolong Wang},
++  year={2024},
++  booktitle={International Conference on Learning Representations},
++  eprint={2310.16828v2},
++  archivePrefix={arXiv},
++  url={https://arxiv.org/abs/2310.16828v2}
++}
++
++@inproceedings{ball2023rlpd,
++  title={Efficient Online Reinforcement Learning with Offline Data},
++  author={Philip J. Ball and Laura Smith and Ilya Kostrikov and Sergey Levine},
++  year={2023},
++  booktitle={Proceedings of the 40th International Conference on Machine Learning},
++  volume={202},
++  pages={1577--1594},
++  publisher={PMLR},
++  url={https://proceedings.mlr.press/v202/ball23a.html}
++}
++
++@inproceedings{hu2024ibrl,
++  title={Imitation Bootstrapped Reinforcement Learning},
++  author={Hengyuan Hu and Suvir Mirchandani and Dorsa Sadigh},
++  year={2024},
++  booktitle={Proceedings of Robotics: Science and Systems},
++  doi={10.15607/RSS.2024.XX.056},
++  url={https://roboticsproceedings.org/rss20/p056.html}
++}
++
++@inproceedings{escoriza2025demo3,
++  title={Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning},
++  author={Adrià López Escoriza and Nicklas Hansen and Stone Tao and Tongzhou Mu and Hao Su},
++  year={2025},
++  booktitle={Proceedings of the 42nd International Conference on Machine Learning},
++  volume={267},
++  pages={15542--15563},
++  publisher={PMLR},
++  url={https://proceedings.mlr.press/v267/escoriza25a.html}
++}
++
++@inproceedings{ross2011dagger,
++  title={A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning},
++  author={Stephane Ross and Geoffrey Gordon and Drew Bagnell},
++  year={2011},
++  booktitle={Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
++  volume={15},
++  pages={627--635},
++  publisher={PMLR},
++  url={https://proceedings.mlr.press/v15/ross11a.html}
++}
++
++@inproceedings{hiraoka2022droq,
++  title={Dropout Q-Functions for Doubly Efficient Reinforcement Learning},
++  author={Takuya Hiraoka and Takahisa Imagawa and Taisei Hashimoto and Takashi Onishi and Yoshimasa Tsuruoka},
++  year={2022},
++  booktitle={International Conference on Learning Representations},
++  eprint={2110.02034v2},
++  archivePrefix={arXiv},
++  url={https://arxiv.org/abs/2110.02034v2}
++}
++
++@inproceedings{chen2021redq,
++  title={Randomized Ensembled Double Q-Learning: Learning Fast Without a Model},
++  author={Xinyue Chen and Che Wang and Zijian Zhou and Keith Ross},
++  year={2021},
++  booktitle={International Conference on Learning Representations},
++  eprint={2101.05982v2},
++  archivePrefix={arXiv},
++  url={https://arxiv.org/abs/2101.05982v2}
++}
+diff --git a/literature/verified_sources.json b/literature/verified_sources.json
+index 57d7cce..638b10e 100644
+--- a/literature/verified_sources.json
++++ b/literature/verified_sources.json
+@@ -48,7 +48,33 @@
+       "version_date": "2025-05-30",
+       "source": "https://arxiv.org/abs/2410.00425v2",
+       "status": "verified_arxiv_metadata",
+-      "full_text_reviewed": false
++      "full_text_reviewed": false,
++      "authors": [
++        "Stone Tao",
++        "Fanbo Xiang",
++        "Arth Shukla",
++        "Yuzhe Qin",
++        "Xander Hinrichsen",
++        "Xiaodi Yuan",
++        "Chen Bao",
++        "Xinsong Lin",
++        "Yulin Liu",
++        "Tse-kai Chan",
++        "Yuan Gao",
++        "Xuanlin Li",
++        "Tongzhou Mu",
++        "Nan Xiao",
++        "Arnav Gurha",
++        "Viswesh Nagaswamy Rajesh",
++        "Yong Woo Choi",
++        "Yen-Ru Chen",
++        "Zhiao Huang",
++        "Roberto Calandra",
++        "Rui Chen",
++        "Shan Luo",
++        "Hao Su"
++      ],
++      "year": 2025
+     },
+     {
+       "key": "haarnoja2018sac",
+@@ -105,7 +131,8 @@
+       "source": "https://arxiv.org/abs/2310.16828v2",
+       "author_project": "https://www.tdmpc2.com/",
+       "status": "verified_arxiv_and_author_project_metadata",
+-      "full_text_reviewed": false
++      "full_text_reviewed": false,
++      "direct_openreview_access": "2026-10-16 https://openreview.net/forum?id=Oxh5CstDJU returned browser challenge; retain previously checked author-project/arXiv metadata"
+     },
+     {
+       "key": "ball2023rlpd",
+@@ -143,7 +170,7 @@
+       "initial_submission": "2023-11-03",
+       "version_date": "2024-05-20",
+       "source": "https://arxiv.org/abs/2311.02198v6",
+-      "status": "verified_arxiv_metadata",
++      "status": "verified_arxiv_and_publisher_metadata",
+       "full_text_reviewed": false,
+       "reviewed_sections": [
+         "IV-A core algorithm",
+@@ -151,7 +178,11 @@
+         "V-A experimental setup"
+       ],
+       "method_source": "https://arxiv.org/html/2311.02198v6",
+-      "source_code_commit": "3c457da3689cc90f881bcdf42a0a578f4a1f60aa"
++      "source_code_commit": "3c457da3689cc90f881bcdf42a0a578f4a1f60aa",
++      "venue": "Robotics: Science and Systems XX",
++      "year": 2024,
++      "doi": "10.15607/RSS.2024.XX.056",
++      "publisher_source": "https://roboticsproceedings.org/rss20/p056.html"
+     },
+     {
+       "key": "escoriza2025demo3",
+@@ -166,11 +197,15 @@
+       "arxiv_id": "2503.01837v2",
+       "initial_submission": "2025-03-03",
+       "version_date": "2025-06-23",
+-      "venue": "ICML 2025 per arXiv journal reference; publisher page not yet independently verified",
++      "venue": "ICML / PMLR 267",
+       "source": "https://arxiv.org/abs/2503.01837v2",
+-      "status": "verified_arxiv_metadata_and_author_project",
++      "status": "verified_arxiv_author_project_and_publisher_metadata",
+       "full_text_reviewed": false,
+-      "note": "Repository README Paper link incorrectly targets TD-MPC2 arxiv2310.16828; verified identity separately. OpenReview page hit browser verification."
++      "note": "Repository README Paper link incorrectly targets TD-MPC2 arxiv2310.16828; verified identity separately. OpenReview page hit browser verification.",
++      "previous_venue_note": "ICML 2025 per arXiv journal reference; publisher page not yet independently verified",
++      "year": 2025,
++      "pages": "15542-15563",
++      "publisher_source": "https://proceedings.mlr.press/v267/escoriza25a.html"
+     },
+     {
+       "key": "ross2011dagger",
+@@ -212,7 +247,9 @@
+         "H",
+         "I"
+       ],
+-      "code_manifest": "literature/value_stability_source_manifest.json"
++      "code_manifest": "literature/value_stability_source_manifest.json",
++      "publication_header_indexed_source": "https://openreview.net/pdf?id=xCVJMsPv3RT",
++      "direct_openreview_access": "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened"
+     },
+     {
+       "key": "chen2021redq",
+@@ -234,8 +271,11 @@
+       "reviewed_sections": [
+         "3"
+       ],
+-      "code_manifest": "literature/value_stability_source_manifest.json"
++      "code_manifest": "literature/value_stability_source_manifest.json",
++      "publication_header_indexed_source": "https://openreview.net/pdf?id=AY8zfZm0tDd",
++      "direct_openreview_access": "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened"
+     }
+   ],
+-  "finding": "Upstream CITATION.cff uses preprint title with RSS 2025 venue. Publisher RSS title differs; preserve both records instead of silently conflating them."
++  "finding": "Upstream CITATION.cff uses preprint title with RSS 2025 venue. Publisher RSS title differs; preserve both records instead of silently conflating them.",
++  "followup_publication_check": "2026-10-16: DEMO3 PMLR267 pages15542-15563 and IBRL RSS2024 DOI independently verified from publisher pages; indexed OpenReview PDF headers do not imply successful direct access or a new full-text review."
+ }
+diff --git a/research_state.json b/research_state.json
+index 4492f19..39cff28 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 9500.257005037012,
++    "gpu_job_seconds_used": 11084.119058969023,
+     "local_changes_limit": 2,
+     "local_changes_used": 1
+   },
+@@ -79,7 +79,9 @@
+     "e0-peg-gpu-replay-smoke-001",
+     "u1-sac-c-smoke-001",
+     "e0-peg-cpu-replay-smoke-002",
+-    "e0-peg-gpu-replay-smoke-002"
++    "e0-peg-gpu-replay-smoke-002",
++    "e0-peg-cpu-replay-full-002",
++    "e0-peg-gpu-replay-full-002"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {

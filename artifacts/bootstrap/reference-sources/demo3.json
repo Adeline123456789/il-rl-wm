@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/adrialopezescoriza/demo3",
+  "commit": "5a5424821498da07b6dcf6ee257e4171c35b4b83",
+  "files": {
+    "demo3/common/world_model.py": {
+      "path": ".cache/references/demo3/demo3__common__world_model.py",
+      "sha256": "f19a412b9ff45e22dfd184009bb55894e98c7f904fc44182889fceffc776121e"
+    },
+    "demo3/trainer/demo3_trainer.py": {
+      "path": ".cache/references/demo3/demo3__trainer__demo3_trainer.py",
+      "sha256": "c1de0eb0b73ed97fcf73f5c866a5dfdf5e0d017299b490e523ce7345d17e9b8b"
+    },
+    "demo3/envs/tasks/maniskill_stages.py": {
+      "path": ".cache/references/demo3/demo3__envs__tasks__maniskill_stages.py",
+      "sha256": "64c1d019c5d8227e19104acef7e98d411cdc92844437235c7d31a1d8e00a0767"
+    }
+  },
+  "role": "read_only_no_dependencies_installed"
+}

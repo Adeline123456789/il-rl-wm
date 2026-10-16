@@ -1,0 +1,13 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "scripts/probe_critic_layernorm.py",
+    "--checkpoint",
+    "releases/u0-analysis-precollapse-001/weights.pt",
+    "--inputs",
+    "artifacts/f-u0-value-drift-002/fixed_batches.npz",
+    "--output",
+    "artifacts/u1-critic-probe-001"
+  ],
+  "exit_code": 0
+}

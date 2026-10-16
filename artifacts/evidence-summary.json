@@ -1,0 +1,2008 @@
+{
+  "experiments": [
+    {
+      "experiment_id": "e0-peg-replay-001",
+      "commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.19692672599922,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1016,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-peg-replay-fixed-001",
+      "commit": "865f0dd61fac39451c2c65b296b9e004d2e11ff1",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.186968830996193,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1049,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-peg-smoke-001",
+      "commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 6.127222872004495,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3570,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "purpose": "smoke_only",
+        "env_id": "PegInsertionSide-v1",
+        "seed": 0,
+        "interactions": 400,
+        "elapsed_seconds": 2.5046765229926677,
+        "steps_per_second": 159.70126135173223,
+        "observation_shape": [
+          4,
+          43
+        ],
+        "action_shape": [
+          4,
+          7
+        ],
+        "action_low": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "action_high": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "control_frequency": 20,
+        "simulation_frequency": 100,
+        "time_limit": 100,
+        "completed_episodes": 4,
+        "reward_dtype": "bool",
+        "reward_values": [
+          0.0
+        ],
+        "torch_peak_allocated_bytes": 8803328,
+        "torch_peak_reserved_bytes": 23068672
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-fresh-contacts-test-001",
+      "commit": "c5a8791fdf2efd40b887a4c4390b6f0950158c69",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 12.184609146992443,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3567,
+      "child_rss_kib_peak_sampled": 3176092,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 32,
+            "vector_step_calls": 184,
+            "interactions": 5888
+          }
+        ],
+        "total_interactions": 5888,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-fresh-contacts-test-001/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 64,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 32
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-001",
+      "commit": "0e379ba50a1016467851df5e9714cff70fce5850",
+      "exit_code": 1,
+      "stop_reason": null,
+      "elapsed_seconds": 4.116071017997456,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 2394,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": false,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 20,
+            "vector_step_calls": 0,
+            "interactions": 0
+          }
+        ],
+        "total_interactions": 0,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-gpu-replay-001/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 20,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 20
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-002",
+      "commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 8.173551849002251,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 2467,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 20,
+            "vector_step_calls": 88,
+            "interactions": 1760
+          }
+        ],
+        "total_interactions": 1760,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-gpu-replay-002/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 20,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 20
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-boundary-test-001",
+      "commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.19390378400567,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 2832,
+      "child_rss_kib_peak_sampled": 2345128,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 4,
+            "vector_step_calls": 174,
+            "interactions": 696
+          }
+        ],
+        "total_interactions": 696,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-gpu-replay-boundary-test-001/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 8,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 4
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-001",
+      "commit": "ddf0c6a546520842e316b637b4e3176994f896d8",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 123.32487735500035,
+      "completed": true,
+      "invalidated": true,
+      "gpu_memory_mib_peak_sampled": 2697,
+      "child_rss_kib_peak_sampled": 2462140,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 32,
+            "vector_step_calls": 3035,
+            "interactions": 97120
+          }
+        ],
+        "total_interactions": 97120,
+        "replay_args": {
+          "traj_path": "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-pickcube-gpu-replay-full-001/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 1000,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 32
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-002",
+      "commit": "c7b318b47cd8f24091564aec629779783d2b9826",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 121.28641765500652,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 2806,
+      "child_rss_kib_peak_sampled": 2464192,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 32,
+            "vector_step_calls": 3035,
+            "interactions": 97120
+          }
+        ],
+        "total_interactions": 97120,
+        "replay_args": {
+          "traj_path": "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-pickcube-gpu-replay-full-002/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 1000,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 32
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-003",
+      "commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 121.28861165398848,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3542,
+      "child_rss_kib_peak_sampled": 3212524,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 32,
+            "vector_step_calls": 3035,
+            "interactions": 97120
+          }
+        ],
+        "total_interactions": 97120,
+        "replay_args": {
+          "traj_path": "/media/midea/F496AC8096AC4548/il-rl-wm/data/replay/e0-pickcube-gpu-replay-full-003/trajectory.h5",
+          "sim_backend": "physx_cuda",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 1000,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 32
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-replay-001",
+      "commit": "0e379ba50a1016467851df5e9714cff70fce5850",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.176577614998678,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1023,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 1,
+            "vector_step_calls": 1493,
+            "interactions": 1493
+          },
+          {
+            "control_mode": "pd_joint_pos",
+            "obs_mode": "none",
+            "num_envs": 1,
+            "vector_step_calls": 1493,
+            "interactions": 1493
+          }
+        ],
+        "total_interactions": 2986,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-replay-001/trajectory.h5",
+          "sim_backend": "physx_cpu",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 20,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 1
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-replay-full-001",
+      "commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 323.34548172600626,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1204,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "complete": true,
+        "environments": [
+          {
+            "control_mode": "pd_ee_delta_pos",
+            "obs_mode": "state",
+            "num_envs": 1,
+            "vector_step_calls": 77976,
+            "interactions": 77976
+          },
+          {
+            "control_mode": "pd_joint_pos",
+            "obs_mode": "none",
+            "num_envs": 1,
+            "vector_step_calls": 77976,
+            "interactions": 77976
+          }
+        ],
+        "total_interactions": 155952,
+        "replay_args": {
+          "traj_path": "data/replay/e0-pickcube-replay-full-001/trajectory.h5",
+          "sim_backend": "physx_cpu",
+          "obs_mode": "state",
+          "target_control_mode": "pd_ee_delta_pos",
+          "verbose": false,
+          "save_traj": true,
+          "save_video": false,
+          "max_retry": 0,
+          "discard_timeout": false,
+          "allow_failure": true,
+          "vis": false,
+          "use_env_states": false,
+          "use_first_env_state": true,
+          "count": 1000,
+          "reward_mode": "sparse",
+          "record_rewards": true,
+          "shader": null,
+          "video_fps": null,
+          "render_mode": "rgb_array",
+          "num_envs": 1
+        }
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-smoke-001",
+      "commit": "4ab1909c1157c1c0198242e17bb8fb82623e4b52",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 108.47946602699813,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3582,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "purpose": "smoke_only",
+        "env_id": "PickCube-v1",
+        "seed": 0,
+        "interactions": 400,
+        "elapsed_seconds": 2.5701683609950123,
+        "steps_per_second": 155.63182788739348,
+        "observation_shape": [
+          4,
+          42
+        ],
+        "action_shape": [
+          4,
+          4
+        ],
+        "action_low": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "action_high": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "control_frequency": 20,
+        "simulation_frequency": 100,
+        "time_limit": null,
+        "completed_episodes": 8,
+        "reward_values": [
+          false
+        ],
+        "torch_peak_allocated_bytes": 8818176,
+        "torch_peak_reserved_bytes": 23068672
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-pickcube-throughput-001",
+      "commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.18741506000515,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3555,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "purpose": "smoke_only",
+        "env_id": "PickCube-v1",
+        "seed": 0,
+        "interactions": 6400,
+        "elapsed_seconds": 5.819155545992544,
+        "steps_per_second": 1099.8159353907397,
+        "observation_shape": [
+          32,
+          42
+        ],
+        "action_shape": [
+          32,
+          4
+        ],
+        "action_low": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "action_high": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "control_frequency": 20,
+        "simulation_frequency": 100,
+        "time_limit": 50,
+        "completed_episodes": 128,
+        "reward_dtype": "bool",
+        "reward_values": [
+          0.0
+        ],
+        "torch_peak_allocated_bytes": 8930304,
+        "torch_peak_reserved_bytes": 23068672
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e0-stack-smoke-001",
+      "commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 6.120915330990101,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3576,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "purpose": "smoke_only",
+        "env_id": "StackCube-v1",
+        "seed": 0,
+        "interactions": 400,
+        "elapsed_seconds": 2.5405625349958427,
+        "steps_per_second": 157.44544544370152,
+        "observation_shape": [
+          4,
+          48
+        ],
+        "action_shape": [
+          4,
+          4
+        ],
+        "action_low": [
+          -1.0,
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "action_high": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "control_frequency": 20,
+        "simulation_frequency": 100,
+        "time_limit": 50,
+        "completed_episodes": 8,
+        "reward_dtype": "bool",
+        "reward_values": [
+          0.0
+        ],
+        "torch_peak_allocated_bytes": 8821760,
+        "torch_peak_reserved_bytes": 23068672
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e1-bc-diagnosis-001",
+      "commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 20.260315144012566,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3868,
+      "child_rss_kib_peak_sampled": 3098020,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "phases": {
+          "expert_source_initial": {
+            "attempted_transitions": 1424,
+            "completed_transitions": 1424,
+            "completed_vector_steps": 89
+          },
+          "bc_source_initial": {
+            "attempted_transitions": 3200,
+            "completed_transitions": 3200,
+            "completed_vector_steps": 200
+          },
+          "bc_independent_reset": {
+            "attempted_transitions": 3200,
+            "completed_transitions": 3200,
+            "completed_vector_steps": 200
+          }
+        },
+        "total_completed": 7824,
+        "total_attempted": 7824,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e1-bc-full-001",
+      "commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+      "exit_code": -15,
+      "stop_reason": "KeyboardInterrupt: Received signal 15; terminating child and saving ledger",
+      "elapsed_seconds": 86.79829274798976,
+      "completed": true,
+      "invalidated": true,
+      "gpu_memory_mib_peak_sampled": 3944,
+      "child_rss_kib_peak_sampled": 3255432,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "model": {
+        "parameters": 143620,
+        "architecture": "3x256 ReLU + mean + tanh; raw state"
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "1000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          }
+        }
+      },
+      "limitation": "Interrupted/failed before live interaction counters were introduced; completed episode counts are lower bounds, not exact total steps."
+    },
+    {
+      "experiment_id": "e1-bc-full-002",
+      "commit": "1b3f57f089a2301e209e3ec147288bf9b38b42e6",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 592.0261714350054,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3947,
+      "child_rss_kib_peak_sampled": 3235908,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "iterations": 10000,
+        "training_examples": 55150,
+        "validation_examples": 13898,
+        "validation_interactions": 80000,
+        "training_online_interactions": 0,
+        "elapsed_seconds": 585.6210737869987,
+        "torch_peak_allocated_bytes": 27623936,
+        "torch_peak_reserved_bytes": 33554432,
+        "checkpoint_selection": "fixed_final",
+        "final_test_evaluated": false
+      },
+      "model": {
+        "parameters": 143620,
+        "architecture": "3x256 ReLU + mean + tanh; raw state"
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "1000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "2000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "3000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "4000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "5000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "6000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "7000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "8000": {
+            "episodes": 40,
+            "success_once": 0.025,
+            "success_at_end": 0.0,
+            "mean_return": 0.775,
+            "completed_episode_interactions": 8000.0
+          },
+          "9000": {
+            "episodes": 40,
+            "success_once": 0.025,
+            "success_at_end": 0.0,
+            "mean_return": 0.15,
+            "completed_episode_interactions": 8000.0
+          },
+          "10000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e1-bc-full-003",
+      "commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 557.6309004130017,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3550,
+      "child_rss_kib_peak_sampled": 3276284,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "iterations": 10000,
+        "training_examples": 55092,
+        "validation_examples": 13897,
+        "validation_interactions": 80000,
+        "training_online_interactions": 0,
+        "elapsed_seconds": 552.1467530759983,
+        "torch_peak_allocated_bytes": 27623424,
+        "torch_peak_reserved_bytes": 33554432,
+        "checkpoint_selection": "fixed_final",
+        "final_test_evaluated": false
+      },
+      "interactions": {
+        "phases": {
+          "validation": {
+            "attempted_transitions": 80000,
+            "completed_transitions": 80000,
+            "completed_vector_steps": 10000
+          }
+        },
+        "total_completed": 80000,
+        "total_attempted": 80000,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "parameters": 143620,
+        "architecture": "3x256 ReLU + mean + tanh; raw state"
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "1000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "2000": {
+            "episodes": 40,
+            "success_once": 0.025,
+            "success_at_end": 0.0,
+            "mean_return": 0.175,
+            "completed_episode_interactions": 8000.0
+          },
+          "3000": {
+            "episodes": 40,
+            "success_once": 0.025,
+            "success_at_end": 0.0,
+            "mean_return": 0.15,
+            "completed_episode_interactions": 8000.0
+          },
+          "4000": {
+            "episodes": 40,
+            "success_once": 0.025,
+            "success_at_end": 0.0,
+            "mean_return": 1.2,
+            "completed_episode_interactions": 8000.0
+          },
+          "5000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "6000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "7000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "8000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "9000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          },
+          "10000": {
+            "episodes": 40,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 8000.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e1-bc-smoke-001",
+      "commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 16.236819887009915,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 3617,
+      "child_rss_kib_peak_sampled": null,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "iterations": 100,
+        "training_examples": 956,
+        "validation_examples": 286,
+        "validation_interactions": 1600,
+        "training_online_interactions": 0,
+        "elapsed_seconds": 12.008003691997146,
+        "torch_peak_allocated_bytes": 21421056,
+        "torch_peak_reserved_bytes": 27262976,
+        "checkpoint_selection": "fixed_final",
+        "final_test_evaluated": false
+      },
+      "model": {
+        "parameters": 143620,
+        "architecture": "3x256 ReLU + mean + tanh; raw state"
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "100": {
+            "episodes": 8,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 1600.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e2-sac-a-full-001",
+      "commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 761.8367111629923,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 5060,
+      "child_rss_kib_peak_sampled": 4002492,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 262144,
+        "gradient_updates": 64528,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 755.3615927790088,
+        "frozen_il_verified": false,
+        "torch_peak_allocated_bytes": 139144192
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 262144,
+            "completed_transitions": 262144,
+            "completed_vector_steps": 16384
+          },
+          "validation": {
+            "attempted_transitions": 16000,
+            "completed_transitions": 16000,
+            "completed_vector_steps": 1000
+          }
+        },
+        "total_completed": 278144,
+        "total_attempted": 278144,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432394,
+        "frozen_il_parameters": 0
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e2-sac-a-full-002",
+      "commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 767.7672613760078,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4684,
+      "child_rss_kib_peak_sampled": 4030468,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 262144,
+        "inherited_training_interactions": 0,
+        "gradient_updates": 64528,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 762.0496437780093,
+        "frozen_il_verified": false,
+        "torch_peak_allocated_bytes": 141894656
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 262144,
+            "completed_transitions": 262144,
+            "completed_vector_steps": 16384
+          },
+          "validation": {
+            "attempted_transitions": 16000,
+            "completed_transitions": 16000,
+            "completed_vector_steps": 1000
+          }
+        },
+        "total_completed": 278144,
+        "total_attempted": 278144,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432395,
+        "additional_u0_parameters": 0,
+        "frozen_il_parameters": 0
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e2-sac-a-smoke-002",
+      "commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 38.460274915996706,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4959,
+      "child_rss_kib_peak_sampled": 3933256,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 4096,
+        "gradient_updates": 244,
+        "validation_interactions": 1600,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 33.127683978003915,
+        "frozen_il_verified": false,
+        "torch_peak_allocated_bytes": 30726656
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 4096,
+            "completed_transitions": 4096,
+            "completed_vector_steps": 1024
+          },
+          "validation": {
+            "attempted_transitions": 1600,
+            "completed_transitions": 1600,
+            "completed_vector_steps": 400
+          }
+        },
+        "total_completed": 5696,
+        "total_attempted": 5696,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432394,
+        "frozen_il_parameters": 0
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e2-sac-b-full-001",
+      "commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 757.677176792,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4713,
+      "child_rss_kib_peak_sampled": 4081696,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 262144,
+        "inherited_training_interactions": 0,
+        "gradient_updates": 64528,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 751.9436836099921,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 142469632
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 262144,
+            "completed_transitions": 262144,
+            "completed_vector_steps": 16384
+          },
+          "validation": {
+            "attempted_transitions": 16000,
+            "completed_transitions": 16000,
+            "completed_vector_steps": 1000
+          }
+        },
+        "total_completed": 278144,
+        "total_attempted": 278144,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432395,
+        "additional_u0_parameters": 0,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e2-sac-b-smoke-002",
+      "commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 40.465836742994725,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4961,
+      "child_rss_kib_peak_sampled": 3894280,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 4096,
+        "gradient_updates": 244,
+        "validation_interactions": 1600,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 35.05440744498628,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 31301632
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 4096,
+            "completed_transitions": 4096,
+            "completed_vector_steps": 1024
+          },
+          "validation": {
+            "attempted_transitions": 1600,
+            "completed_transitions": 1600,
+            "completed_vector_steps": 400
+          }
+        },
+        "total_completed": 5696,
+        "total_attempted": 5696,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432394,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e3-sac-c-continue-full-001",
+      "commit": "f0dc12f4e31292b88bb4b785aef53fa8da5273e7",
+      "exit_code": null,
+      "stop_reason": null,
+      "elapsed_seconds": null,
+      "completed": false,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4684,
+      "child_rss_kib_peak_sampled": 4033424,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 228000,
+            "completed_transitions": 228000,
+            "completed_vector_steps": 14250
+          },
+          "validation": {
+            "attempted_transitions": 12800,
+            "completed_transitions": 12800,
+            "completed_vector_steps": 800
+          }
+        },
+        "total_completed": 240800,
+        "total_attempted": 240800,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432395,
+        "additional_u0_parameters": 0,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.75,
+            "mean_return": 142.8125,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.8125,
+            "mean_return": 146.5625,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.8125,
+            "mean_return": 149.9375,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.9375,
+            "success_at_end": 0.9375,
+            "mean_return": 175.0625,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      },
+      "limitation": "Running experiment: final counters and job duration are not yet available."
+    },
+    {
+      "experiment_id": "e3-sac-c-full-001",
+      "commit": "04f6162f6667b6bc28cadfb977da8e288db46a46",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 838.5592918790062,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4762,
+      "child_rss_kib_peak_sampled": 4056708,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 262144,
+        "gradient_updates": 64528,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 832.2523459490039,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 142051840
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 262144,
+            "completed_transitions": 262144,
+            "completed_vector_steps": 16384
+          },
+          "validation": {
+            "attempted_transitions": 16000,
+            "completed_transitions": 16000,
+            "completed_vector_steps": 1000
+          }
+        },
+        "total_completed": 278144,
+        "total_attempted": 278144,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432394,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.25,
+            "success_at_end": 0.125,
+            "mean_return": 18.6875,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.4375,
+            "success_at_end": 0.25,
+            "mean_return": 62.875,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.75,
+            "mean_return": 142.8125,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e3-sac-c-smoke-001",
+      "commit": "04f6162f6667b6bc28cadfb977da8e288db46a46",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 38.443887270012056,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4606,
+      "child_rss_kib_peak_sampled": 3913752,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 4096,
+        "gradient_updates": 244,
+        "validation_interactions": 1600,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 32.787777017001645,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 31611392
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 4096,
+            "completed_transitions": 4096,
+            "completed_vector_steps": 1024
+          },
+          "validation": {
+            "attempted_transitions": 1600,
+            "completed_transitions": 1600,
+            "completed_vector_steps": 400
+          }
+        },
+        "total_completed": 5696,
+        "total_attempted": 5696,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 432394,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "policy": {
+          "0": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e4-wm-full-001",
+      "commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 14.190194360999158,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1447,
+      "child_rss_kib_peak_sampled": 952096,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "updates": 10000,
+        "elapsed_seconds": 11.066713558000629,
+        "trainable_parameters": 88875,
+        "new_environment_interactions": 0,
+        "checkpoint": "checkpoints/e4-wm-full-001/final.pt",
+        "sha256": "4188556652e6bae1aa4e22cf480916c0bf4a2b67b136d55d4037c76091ffc7ef",
+        "torch_peak_allocated_bytes": 208573440
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e4-wm-smoke-001",
+      "commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 4.0970752839930356,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1440,
+      "child_rss_kib_peak_sampled": 956896,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "updates": 200,
+        "elapsed_seconds": 0.36500221099413466,
+        "trainable_parameters": 88875,
+        "new_environment_interactions": 0,
+        "checkpoint": "checkpoints/e4-wm-smoke-001/final.pt",
+        "sha256": "68eb509edeea69ea0ba349abe65401e152427eb6ee4fbd59fa8b03c6d9e61554",
+        "torch_peak_allocated_bytes": 208573440
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e5-candidates-001",
+      "commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 4.090535158000421,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1250,
+      "child_rss_kib_peak_sampled": 987436,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "sac": "checkpoints/e3-sac-c-full-001/final.pt",
+        "bc": "checkpoints/e1-bc-full-003/final.pt",
+        "wm": "checkpoints/e4-wm-full-001/final.pt",
+        "new_environment_interactions": 0,
+        "measured_generation_only": true,
+        "results": {
+          "with_il": {
+            "sources": [
+              "il",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac"
+            ],
+            "latency_ms_per_batch32": 0.9266549099993426,
+            "mean_sac_candidate_std": 0.20491757988929749,
+            "predicted_state_change_mean": 0.10301581770181656
+          },
+          "without_il": {
+            "sources": [
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac",
+              "sac"
+            ],
+            "latency_ms_per_batch32": 0.7938704200205393,
+            "mean_sac_candidate_std": 0.19524407386779785,
+            "predicted_state_change_mean": 0.10916806757450104
+          }
+        },
+        "torch_peak_allocated_bytes": 12200448
+      },
+      "validation_by_method_and_checkpoint": {}
+    },
+    {
+      "experiment_id": "e6-u0-full-001",
+      "commit": "cbcea4f997caa40f224542b53047f91cb38a6bee",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 1093.2034210550046,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4703,
+      "child_rss_kib_peak_sampled": 4114332,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 262144,
+        "inherited_training_interactions": 262144,
+        "gradient_updates": 65536,
+        "validation_interactions": 64000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 1087.0780696529982,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 145830400
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 262144,
+            "completed_transitions": 262144,
+            "completed_vector_steps": 16384
+          },
+          "validation": {
+            "attempted_transitions": 64000,
+            "completed_transitions": 64000,
+            "completed_vector_steps": 4000
+          }
+        },
+        "total_completed": 326144,
+        "total_attempted": 326144,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 599351,
+        "additional_u0_parameters": 166956,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "il": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        },
+        "sac": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.75,
+            "mean_return": 142.8125,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 1.0,
+            "success_at_end": 0.8125,
+            "mean_return": 165.5625,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.9375,
+            "success_at_end": 0.875,
+            "mean_return": 173.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 1.0,
+            "success_at_end": 0.9375,
+            "mean_return": 186.0,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        },
+        "il_sac_wm": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.625,
+            "success_at_end": 0.3125,
+            "mean_return": 66.8125,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 0.5625,
+            "success_at_end": 0.25,
+            "mean_return": 64.8125,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.75,
+            "success_at_end": 0.4375,
+            "mean_return": 65.375,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 0.8125,
+            "success_at_end": 0.5,
+            "mean_return": 77.9375,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        },
+        "sac_wm": {
+          "0": {
+            "episodes": 16,
+            "success_once": 0.875,
+            "success_at_end": 0.625,
+            "mean_return": 126.8125,
+            "completed_episode_interactions": 3200.0
+          },
+          "65536": {
+            "episodes": 16,
+            "success_once": 1.0,
+            "success_at_end": 0.8125,
+            "mean_return": 145.5,
+            "completed_episode_interactions": 3200.0
+          },
+          "131072": {
+            "episodes": 16,
+            "success_once": 0.9375,
+            "success_at_end": 0.875,
+            "mean_return": 152.25,
+            "completed_episode_interactions": 3200.0
+          },
+          "196608": {
+            "episodes": 16,
+            "success_once": 1.0,
+            "success_at_end": 0.875,
+            "mean_return": 180.625,
+            "completed_episode_interactions": 3200.0
+          },
+          "262144": {
+            "episodes": 16,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e6-u0-smoke-001",
+      "commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 64.68224519799696,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 4703,
+      "child_rss_kib_peak_sampled": 4050116,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "training_interactions": 4096,
+        "inherited_training_interactions": 262144,
+        "gradient_updates": 256,
+        "validation_interactions": 6400,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 57.82833518298867,
+        "frozen_il_verified": true,
+        "torch_peak_allocated_bytes": 134657536
+      },
+      "interactions": {
+        "phases": {
+          "training": {
+            "attempted_transitions": 4096,
+            "completed_transitions": 4096,
+            "completed_vector_steps": 256
+          },
+          "validation": {
+            "attempted_transitions": 6400,
+            "completed_transitions": 6400,
+            "completed_vector_steps": 1600
+          }
+        },
+        "total_completed": 10496,
+        "total_attempted": 10496,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "model": {
+        "trainable_parameters": 599351,
+        "additional_u0_parameters": 166956,
+        "frozen_il_parameters": 143620
+      },
+      "validation_by_method_and_checkpoint": {
+        "il": {
+          "0": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.0,
+            "completed_episode_interactions": 800.0
+          }
+        },
+        "sac": {
+          "0": {
+            "episodes": 4,
+            "success_once": 1.0,
+            "success_at_end": 0.5,
+            "mean_return": 158.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.75,
+            "success_at_end": 0.25,
+            "mean_return": 114.0,
+            "completed_episode_interactions": 800.0
+          }
+        },
+        "il_sac_wm": {
+          "0": {
+            "episodes": 4,
+            "success_once": 0.75,
+            "success_at_end": 0.25,
+            "mean_return": 43.0,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 0.25,
+            "success_at_end": 0.0,
+            "mean_return": 25.5,
+            "completed_episode_interactions": 800.0
+          }
+        },
+        "sac_wm": {
+          "0": {
+            "episodes": 4,
+            "success_once": 1.0,
+            "success_at_end": 0.25,
+            "mean_return": 153.25,
+            "completed_episode_interactions": 800.0
+          },
+          "4096": {
+            "episodes": 4,
+            "success_once": 1.0,
+            "success_at_end": 1.0,
+            "mean_return": 174.0,
+            "completed_episode_interactions": 800.0
+          }
+        }
+      }
+    },
+    {
+      "experiment_id": "e6-value-preheat-001",
+      "commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 8.142325615001027,
+      "completed": true,
+      "invalidated": false,
+      "gpu_memory_mib_peak_sampled": 1445,
+      "child_rss_kib_peak_sampled": 1070776,
+      "resource_sampling_note": "Sampled peaks can miss sub-2-second spikes; child RSS excludes other host processes and driver VRAM.",
+      "result": {
+        "updates": 5000,
+        "new_environment_interactions": 0,
+        "elapsed_seconds": 4.364977863006061,
+        "trainable_parameters": 78081,
+        "checkpoint": "checkpoints/e6-value-preheat-001/final.pt",
+        "sha256": "95379de71b58d72cafe263fb5399e37c3780c2fba027809a177c4e930f26658f",
+        "torch_peak_allocated_bytes": 208775168
+      },
+      "validation_by_method_and_checkpoint": {}
+    }
+  ],
+  "completed_gpu_job_seconds": 6589.957753087016,
+  "ongoing_experiments": [
+    "e3-sac-c-continue-full-001"
+  ],
+  "definition": "Conservative whole GPU-job walltime includes downloads, replay, validation and initialization. Failed and invalidated jobs are charged. No claims of convergence or statistical significance."
+}

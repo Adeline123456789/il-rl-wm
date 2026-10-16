@@ -1,0 +1,13 @@
+{
+  "pid": 1360078,
+  "prerequisite": "artifacts/u1-pick-seed0-u0-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "artifacts/seed0-runtime-costs-001/build.py"
+  ],
+  "started_at": "2026-10-16T14:30:58.705342+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 1360080,
+  "ended_at": "2026-10-16T14:30:58.834441+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/hengyuan-hu/ibrl",
+  "commit": "3c457da3689cc90f881bcdf42a0a578f4a1f60aa",
+  "files": {
+    "rl/q_agent.py": {
+      "path": ".cache/references/ibrl/rl__q_agent.py",
+      "sha256": "787f13cd7bfe9036d6e966703109c4cfb8d8b182eda8ffe9e9076bc842be5cd7"
+    }
+  },
+  "role": "read_only_no_dependencies_installed"
+}

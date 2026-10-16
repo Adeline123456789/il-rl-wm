@@ -1,0 +1,19 @@
+{
+  "pid": 853621,
+  "prerequisite": "artifacts/u1-sac-c-smoke-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_task_data.py",
+    "--task",
+    "PegInsertionSide-v1",
+    "--revision",
+    "002",
+    "--status-path",
+    "artifacts/peg-data-pipeline-002/status.json"
+  ],
+  "started_at": "2026-10-16T12:26:38.876254+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 856062,
+  "ended_at": "2026-10-16T12:57:09.665576+00:00"
+}

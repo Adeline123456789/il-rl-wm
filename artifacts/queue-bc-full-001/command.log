@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py", line 165, in <module>
+    raise SystemExit(main())
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py", line 81, in main
+    return run_locked(args, command)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py", line 136, in run_locked
+    time.sleep(min(2, max(0.01, duration-sample['elapsed_seconds'])))
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py", line 163, in stop
+    raise KeyboardInterrupt(f'Received signal {signum}; terminating child and saving ledger')
+KeyboardInterrupt: Received signal 15; terminating child and saving ledger

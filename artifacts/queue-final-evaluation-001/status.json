@@ -1,0 +1,15 @@
+{
+  "pid": 1329466,
+  "prerequisite": "artifacts/queue-u1-pick-seed4-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_final_evaluation.py",
+    "--plan",
+    "configs/final_evaluation_plan.json",
+    "--output",
+    "artifacts/final-evaluation-001"
+  ],
+  "started_at": "2026-10-16T14:23:44.181760+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

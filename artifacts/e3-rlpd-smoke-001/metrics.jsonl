@@ -1,0 +1,1 @@
+{"step": 4096, "critic_updates": 61440, "actor_updates": 3072, "elapsed_seconds": 48.79767580500629, "actor/actor_loss": -1.1028512716293335, "actor/entropy": 2.7139244079589844, "critic/critic_loss": 0.006111534312367439, "critic/q": -0.06574784219264984, "temp/temp_loss": 2.1166460514068604, "temp/temp": 0.4490199387073517}

@@ -1,0 +1,1 @@
+{"pid": 363417, "command": ["python", "-c", "import subprocess,json; from pathlib import Path; p=subprocess.run(['.venv/bin/python','-m','unittest','tests.test_runner','tests.test_policy_bridge','tests.test_sac_contract']); Path('artifacts/e2-all-unit-tests-002/exit.json').write_text(json.dumps({'exit_code':p.returncode}))"]}

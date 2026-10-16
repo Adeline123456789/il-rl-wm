@@ -1,0 +1,11 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_critic_layernorm.py",
+    "tests/test_sac_contract.py"
+  ],
+  "exit_code": 0
+}

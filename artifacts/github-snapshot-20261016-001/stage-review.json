@@ -1,0 +1,799 @@
+{
+  "captured_at_utc": "2026-10-16T14:39:58.803067+00:00",
+  "files": [
+    {
+      "path": "artifacts/bootstrap/background-local-runtime.log",
+      "bytes": 1823
+    },
+    {
+      "path": "artifacts/bootstrap/background-pid.json",
+      "bytes": 118
+    },
+    {
+      "path": "artifacts/bootstrap/background-status.json",
+      "bytes": 185
+    },
+    {
+      "path": "artifacts/bootstrap/background.log",
+      "bytes": 150
+    },
+    {
+      "path": "artifacts/bootstrap/bc-action-audit-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/cleanrl-fetch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/clone-maniskill-retry.log",
+      "bytes": 3825
+    },
+    {
+      "path": "artifacts/bootstrap/copy-runtime-pid.json",
+      "bytes": 15
+    },
+    {
+      "path": "artifacts/bootstrap/copy-runtime.log",
+      "bytes": 1629
+    },
+    {
+      "path": "artifacts/bootstrap/dependency-check.log",
+      "bytes": 66
+    },
+    {
+      "path": "artifacts/bootstrap/e0-launch.log",
+      "bytes": 761
+    },
+    {
+      "path": "artifacts/bootstrap/evidence-summary-current.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/evidence-summary.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/fresh-data-pipeline-003-launch.json",
+      "bytes": 233
+    },
+    {
+      "path": "artifacts/bootstrap/fresh-data-pipeline-003.log",
+      "bytes": 126457
+    },
+    {
+      "path": "artifacts/bootstrap/install-maniskill.log",
+      "bytes": 3043
+    },
+    {
+      "path": "artifacts/bootstrap/install-torch-pypi.log",
+      "bytes": 866
+    },
+    {
+      "path": "artifacts/bootstrap/install-torch.log",
+      "bytes": 2864
+    },
+    {
+      "path": "artifacts/bootstrap/physx-source.json",
+      "bytes": 351
+    },
+    {
+      "path": "artifacts/bootstrap/queue-a-after-u0-smoke.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-bc-full-002-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-bc-full-003.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-bc-full-launch.log",
+      "bytes": 386
+    },
+    {
+      "path": "artifacts/bootstrap/queue-c-full.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-c-smoke.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-a-full-001-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-a-full-002.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-a-smoke-001-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-a-smoke-002-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-b-full-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-b-smoke-001-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e2-sac-b-smoke-002-launch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e3-rlpd-full-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e3-rlpd-smoke-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e3-rlpd-smoke-after-precollapse.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e3-sac-c-continue-full-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e4-wm-full-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e4-wm-smoke-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e5-candidates-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e6-u0-full-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e6-u0-smoke-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e6-value-preheat-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e7-independent-eval-smoke-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-e7-rlpd-independent-eval-smoke-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-precollapse-ranking-001-analysis.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-precollapse-ranking-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-ranking-001-analysis.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-ranking-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-step196608-prefix20-001-analysis.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u0-step196608-prefix20-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u1-step196608-prefix20-001-analysis.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-f1-u1-step196608-prefix20-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-fresh-contacts-test.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-peg-data-pipeline-001.log",
+      "bytes": 458
+    },
+    {
+      "path": "artifacts/bootstrap/queue-peg-data-pipeline-002.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-peg-seed0-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed1-pipeline-001.log",
+      "bytes": 1063
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed1-pipeline-002.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed1-pipeline-003.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed2-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed3-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-pick-seed4-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-stack-data-after-eval-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-stack-data-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-stack-seed0-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u0-full-checkpoint-audit-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed0-after-rlpd-eval-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed0-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed1-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed2-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed3-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/queue-u1-pick-seed4-pipeline-001.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/reference-sources-launch.json",
+      "bytes": 60
+    },
+    {
+      "path": "artifacts/bootstrap/reference-sources.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/reference-trees-launch.json",
+      "bytes": 58
+    },
+    {
+      "path": "artifacts/bootstrap/reference-trees.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/rfcl-history.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/tdmpc2-fetch.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/bootstrap/torch-import.log",
+      "bytes": 12
+    },
+    {
+      "path": "artifacts/bootstrap/torch-metadata.log",
+      "bytes": 6
+    },
+    {
+      "path": "artifacts/bootstrap/upstream-setup.py",
+      "bytes": 4552
+    },
+    {
+      "path": "artifacts/evidence-summary.json",
+      "bytes": 66545
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-002.log",
+      "bytes": 896
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-launch-002.json",
+      "bytes": 231
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-launch.json",
+      "bytes": 129
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-launcher-002.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-launcher.log",
+      "bytes": 657
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle-status.json",
+      "bytes": 4464
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/bundle.log",
+      "bytes": 38
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/prepare_history.py",
+      "bytes": 1883
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/prepare_history_002.py",
+      "bytes": 1890
+    },
+    {
+      "path": "artifacts/github-snapshot-20261016-001/snapshot.json",
+      "bytes": 15548
+    },
+    {
+      "path": "artifacts/launches/e1-bc-diagnosis-001/launch.json",
+      "bytes": 761
+    },
+    {
+      "path": "artifacts/launches/e1-bc-diagnosis-001/runner.log",
+      "bytes": 859
+    },
+    {
+      "path": "artifacts/launches/u1-sac-c-smoke-001/launch.json",
+      "bytes": 1494
+    },
+    {
+      "path": "artifacts/launches/u1-sac-c-smoke-001/runner.log",
+      "bytes": 1593
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/bridge.json",
+      "bytes": 143
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/checkpoints.jsonl",
+      "bytes": 727
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/interactions.json",
+      "bytes": 511
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/manifest.json",
+      "bytes": 1429
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/metrics.jsonl",
+      "bytes": 52308
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/model.json",
+      "bytes": 95
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/reset_checks.jsonl",
+      "bytes": 27660
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/resources.jsonl",
+      "bytes": 92979
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/sac_config.json",
+      "bytes": 1498
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/source_hashes.json",
+      "bytes": 9895
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/source_snapshot.tar.gz",
+      "bytes": 123134
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/stderr.log",
+      "bytes": 236425
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/stdout.log",
+      "bytes": 17
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/train_episodes.jsonl",
+      "bytes": 163514
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/validation_episodes.jsonl",
+      "bytes": 14173
+    },
+    {
+      "path": "artifacts/pick-seed1-b-001/working-tree.patch",
+      "bytes": 663
+    },
+    {
+      "path": "artifacts/pick-seed1-pipeline-001/plan.json",
+      "bytes": 7774
+    },
+    {
+      "path": "artifacts/pick-seed1-pipeline-001/status.json",
+      "bytes": 166
+    },
+    {
+      "path": "artifacts/pickcube-data-pipeline-003/status.json",
+      "bytes": 82
+    },
+    {
+      "path": "artifacts/queue-bc-action-audit-002/command.log",
+      "bytes": 1175
+    },
+    {
+      "path": "artifacts/queue-bc-action-audit-002/status.json",
+      "bytes": 536
+    },
+    {
+      "path": "artifacts/queue-bc-full-002/command.log",
+      "bytes": 1364
+    },
+    {
+      "path": "artifacts/queue-bc-full-002/status.json",
+      "bytes": 1196
+    },
+    {
+      "path": "artifacts/queue-bc-full-003/command.log",
+      "bytes": 1364
+    },
+    {
+      "path": "artifacts/queue-bc-full-003/status.json",
+      "bytes": 1196
+    },
+    {
+      "path": "artifacts/queue-e0-pickcube-fresh-contacts-test-001/command.log",
+      "bytes": 1116
+    },
+    {
+      "path": "artifacts/queue-e0-pickcube-fresh-contacts-test-001/status.json",
+      "bytes": 940
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-full-001/command.log",
+      "bytes": 1293
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-full-001/status.json",
+      "bytes": 1120
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-full-002-after-u0-smoke/command.log",
+      "bytes": 1332
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-full-002-after-u0-smoke/status.json",
+      "bytes": 1155
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-full-002/status.json",
+      "bytes": 1201
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-smoke-002/command.log",
+      "bytes": 1289
+    },
+    {
+      "path": "artifacts/queue-e2-sac-a-smoke-002/status.json",
+      "bytes": 1110
+    },
+    {
+      "path": "artifacts/queue-e2-sac-b-full-001/command.log",
+      "bytes": 1394
+    },
+    {
+      "path": "artifacts/queue-e2-sac-b-full-001/status.json",
+      "bytes": 1223
+    },
+    {
+      "path": "artifacts/queue-e2-sac-b-smoke-002/command.log",
+      "bytes": 1355
+    },
+    {
+      "path": "artifacts/queue-e2-sac-b-smoke-002/status.json",
+      "bytes": 1180
+    },
+    {
+      "path": "artifacts/queue-e3-rlpd-smoke-001-after-precollapse/command.log",
+      "bytes": 766
+    },
+    {
+      "path": "artifacts/queue-e3-rlpd-smoke-001-after-precollapse/status.json",
+      "bytes": 594
+    },
+    {
+      "path": "artifacts/queue-e3-rlpd-smoke-001/status.json",
+      "bytes": 667
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-continue-full-001/command.log",
+      "bytes": 1707
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-continue-full-001/status.json",
+      "bytes": 1529
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-full-001/command.log",
+      "bytes": 1610
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-full-001/status.json",
+      "bytes": 1436
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-smoke-001/command.log",
+      "bytes": 1567
+    },
+    {
+      "path": "artifacts/queue-e3-sac-c-smoke-001/status.json",
+      "bytes": 1388
+    },
+    {
+      "path": "artifacts/queue-e4-wm-full-001/command.log",
+      "bytes": 875
+    },
+    {
+      "path": "artifacts/queue-e4-wm-full-001/status.json",
+      "bytes": 697
+    },
+    {
+      "path": "artifacts/queue-e4-wm-smoke-001/command.log",
+      "bytes": 875
+    },
+    {
+      "path": "artifacts/queue-e4-wm-smoke-001/status.json",
+      "bytes": 699
+    },
+    {
+      "path": "artifacts/queue-e5-candidates-001/command.log",
+      "bytes": 855
+    },
+    {
+      "path": "artifacts/queue-e5-candidates-001/status.json",
+      "bytes": 677
+    },
+    {
+      "path": "artifacts/queue-e6-u0-full-001/command.log",
+      "bytes": 1818
+    },
+    {
+      "path": "artifacts/queue-e6-u0-full-001/status.json",
+      "bytes": 1642
+    },
+    {
+      "path": "artifacts/queue-e6-u0-smoke-001/command.log",
+      "bytes": 1816
+    },
+    {
+      "path": "artifacts/queue-e6-u0-smoke-001/status.json",
+      "bytes": 1644
+    },
+    {
+      "path": "artifacts/queue-e6-value-preheat-001/command.log",
+      "bytes": 925
+    },
+    {
+      "path": "artifacts/queue-e6-value-preheat-001/status.json",
+      "bytes": 750
+    },
+    {
+      "path": "artifacts/queue-e7-independent-eval-smoke-001/command.log",
+      "bytes": 931
+    },
+    {
+      "path": "artifacts/queue-e7-independent-eval-smoke-001/status.json",
+      "bytes": 756
+    },
+    {
+      "path": "artifacts/queue-e7-rlpd-independent-eval-smoke-001/command.log",
+      "bytes": 850
+    },
+    {
+      "path": "artifacts/queue-f1-u0-precollapse-ranking-001-analysis/command.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/queue-f1-u0-precollapse-ranking-001-analysis/status.json",
+      "bytes": 447
+    },
+    {
+      "path": "artifacts/queue-f1-u0-precollapse-ranking-001/command.log",
+      "bytes": 780
+    },
+    {
+      "path": "artifacts/queue-f1-u0-precollapse-ranking-001/status.json",
+      "bytes": 594
+    },
+    {
+      "path": "artifacts/queue-f1-u0-ranking-001-analysis/command.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/queue-f1-u0-ranking-001-analysis/status.json",
+      "bytes": 423
+    },
+    {
+      "path": "artifacts/queue-f1-u0-ranking-001/command.log",
+      "bytes": 750
+    },
+    {
+      "path": "artifacts/queue-f1-u0-ranking-001/status.json",
+      "bytes": 583
+    },
+    {
+      "path": "artifacts/queue-f1-u0-step196608-prefix20-001/command.log",
+      "bytes": 1005
+    },
+    {
+      "path": "artifacts/queue-f1-u1-step196608-prefix20-001-analysis/command.log",
+      "bytes": 0
+    },
+    {
+      "path": "artifacts/queue-f1-u1-step196608-prefix20-001/command.log",
+      "bytes": 1010
+    },
+    {
+      "path": "artifacts/queue-peg-data-pipeline-001/command.log",
+      "bytes": 4331
+    },
+    {
+      "path": "artifacts/queue-peg-data-pipeline-001/status.json",
+      "bytes": 501
+    },
+    {
+      "path": "artifacts/queue-peg-data-pipeline-002/command.log",
+      "bytes": 34418
+    },
+    {
+      "path": "artifacts/queue-pick-seed1-pipeline-003/command.log",
+      "bytes": 2897
+    },
+    {
+      "path": "artifacts/queue-stack-data-after-eval-001/command.log",
+      "bytes": 32722
+    },
+    {
+      "path": "artifacts/queue-stack-data-after-eval-001/status.json",
+      "bytes": 438
+    },
+    {
+      "path": "artifacts/queue-stack-data-pipeline-001/status.json",
+      "bytes": 530
+    },
+    {
+      "path": "artifacts/queue-u0-full-checkpoint-audit-001/command.log",
+      "bytes": 698
+    },
+    {
+      "path": "artifacts/queue-u0-full-checkpoint-audit-001/status.json",
+      "bytes": 460
+    },
+    {
+      "path": "artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/command.log",
+      "bytes": 7269
+    },
+    {
+      "path": "releases/source-history-20261016-001/README.md",
+      "bytes": 1148
+    },
+    {
+      "path": "releases/source-history-20261016-001/manifest.json",
+      "bytes": 4446
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part000",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part001",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part002",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part003",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part004",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part005",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part006",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part007",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part008",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part009",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part010",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part011",
+      "bytes": 4194304
+    },
+    {
+      "path": "releases/source-history-20261016-001/source-history.bundle.part012",
+      "bytes": 1725595
+    },
+    {
+      "path": "PROGRESS_SNAPSHOT.md",
+      "bytes": 5013
+    },
+    {
+      "path": "README.md",
+      "bytes": 961
+    },
+    {
+      "path": "RESEARCH_LOG.md",
+      "bytes": 39668
+    },
+    {
+      "path": "research_state.json",
+      "bytes": 27850
+    }
+  ],
+  "credential_pattern_hits": [],
+  "scope": "explicit task artifact paths; excludes ignored datasets, replay, environments and caches"
+}

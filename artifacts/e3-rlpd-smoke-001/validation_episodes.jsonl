@@ -1,0 +1,8 @@
+{"step": 0, "env": 0, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 0, "env": 1, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 0, "env": 2, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 0, "env": 3, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 4096, "env": 0, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 4096, "env": 1, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 4096, "env": 2, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}
+{"step": 4096, "env": 3, "success_once": 0.0, "return": 0.0, "episode_len": 200.0, "reward": 0.0, "success_at_end": 0.0}

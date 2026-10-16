@@ -1,0 +1,19 @@
+{
+  "pid": 385881,
+  "prerequisite": "artifacts/e1-bc-full-002/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_bc_actions.py",
+    "--checkpoint",
+    "checkpoints/e1-bc-full-002/final.pt",
+    "--audit",
+    "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
+    "--output",
+    "artifacts/e1-bc-full-002/action-audit.json"
+  ],
+  "started_at": "2026-10-16T10:00:20.500780+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 395162,
+  "ended_at": "2026-10-16T10:03:42.583497+00:00"
+}

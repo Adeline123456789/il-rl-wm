@@ -1,0 +1,2 @@
+{"timestamp": "2026-10-16T10:46:37.983935+00:00", "elapsed_seconds": 0.05132384899479803, "index": 0, "memory_mib": 919, "utilization_percent": 1, "VmHWM_kib": 9932, "VmRSS_kib": 9932, "host_mem_available_kib": 50388380, "workspace_available_bytes": 237977419776}
+{"timestamp": "2026-10-16T10:46:40.009561+00:00", "elapsed_seconds": 2.076979853998637, "index": 0, "memory_mib": 1440, "utilization_percent": 4, "VmHWM_kib": 956896, "VmRSS_kib": 956896, "host_mem_available_kib": 49396980, "workspace_available_bytes": 237977370624}

@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "states": 64,
+  "max_abs_error": 0.0,
+  "actor_bytes": 578938,
+  "no_critic_or_optimizer_in_package": true
+}

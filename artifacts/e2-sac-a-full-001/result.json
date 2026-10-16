@@ -1,0 +1,9 @@
+{
+  "training_interactions": 262144,
+  "gradient_updates": 64528,
+  "validation_interactions": 16000,
+  "final_test_evaluated": false,
+  "elapsed_seconds": 755.3615927790088,
+  "frozen_il_verified": false,
+  "torch_peak_allocated_bytes": 139144192
+}

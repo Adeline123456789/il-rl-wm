@@ -1,0 +1,1 @@
+{"failure_id":"F-E0-004","reason":"Initial grasp observation retains previous batch contact impulses. Do not use this data for further BC/expert training until fresh-scene replay is verified. All source-state physical alignment and subsequent transitions remain recorded; prior evidence is preserved."}

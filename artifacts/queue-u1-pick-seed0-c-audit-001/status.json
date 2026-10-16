@@ -1,0 +1,17 @@
+{
+  "pid": 1023505,
+  "prerequisite": "artifacts/u1-pick-seed0-c-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_critic_checkpoint.py",
+    "--checkpoint",
+    "checkpoints/u1-pick-seed0-c-001/final.pt",
+    "--output",
+    "artifacts/u1-pick-seed0-c-audit-001/result.json"
+  ],
+  "started_at": "2026-10-16T13:12:02.715912+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 1027049,
+  "ended_at": "2026-10-16T13:12:54.756544+00:00"
+}

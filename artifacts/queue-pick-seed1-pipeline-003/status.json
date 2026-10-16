@@ -1,0 +1,16 @@
+{
+  "pid": 1128167,
+  "prerequisite": "artifacts/f1-u1-step196608-prefix20-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_pickcube_repeat.py",
+    "--seed",
+    "1",
+    "--output",
+    "artifacts/pick-seed1-pipeline-001"
+  ],
+  "started_at": "2026-10-16T13:36:36.229035+00:00",
+  "phase": "running",
+  "exit_code": null,
+  "child_pid": 1250244
+}

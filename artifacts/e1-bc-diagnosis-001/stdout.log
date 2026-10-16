@@ -1,0 +1,20 @@
+{
+  "expert_source_initial": {
+    "success_once": 16,
+    "grasped_once": 16,
+    "placed_once": 16,
+    "initial_obs_error": 1.0
+  },
+  "bc_source_initial": {
+    "success_once": 0,
+    "grasped_once": 2,
+    "placed_once": 1,
+    "initial_obs_error": 1.0
+  },
+  "bc_independent_reset": {
+    "success_once": 0,
+    "grasped_once": 2,
+    "placed_once": 0,
+    "initial_obs_error": null
+  }
+}

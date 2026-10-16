@@ -1,0 +1,281 @@
+{
+  "checked_date": "2026-10-16",
+  "queries": [
+    "\"ManiSkill3\" \"GPU Parallelized\" site:roboticsproceedings.org",
+    "\"ManiSkill3\" site:arxiv.org/abs"
+  ],
+  "method": "Web primary-source search/open; academic-search MCP unavailable",
+  "records": [
+    {
+      "key": "tao2025maniskill3rss",
+      "title": "Demonstrating GPU Parallelized Robot Simulation and Rendering for Generalizable Embodied AI with ManiSkill3",
+      "year": 2025,
+      "venue": "Robotics: Science and Systems XXI",
+      "doi": "10.15607/RSS.2025.XXI.021",
+      "source": "https://roboticsproceedings.org/rss21/p021.html",
+      "status": "verified_publisher_metadata",
+      "authors": [
+        "Stone Tao",
+        "Fanbo Xiang",
+        "Arth Shukla",
+        "Yuzhe Qin",
+        "Xander Hinrichsen",
+        "Xiaodi Yuan",
+        "Chen Bao",
+        "Xinsong Lin",
+        "Yulin Liu",
+        "Tse-Kai Chan",
+        "Yuan Gao",
+        "Xuanlin Li",
+        "Tongzhou Mu",
+        "Nan Xiao",
+        "Arnav Gurha",
+        "Viswesh Nagaswamy Rajesh",
+        "Yong Woo Choi",
+        "Yen-Ru Chen",
+        "Zhiao Huang",
+        "Roberto Calandra",
+        "Rui Chen",
+        "Shan Luo",
+        "Hao Su"
+      ]
+    },
+    {
+      "key": "tao2025maniskill3arxiv",
+      "title": "ManiSkill3: GPU Parallelized Robotics Simulation and Rendering for Generalizable Embodied AI",
+      "arxiv_id": "2410.00425v2",
+      "initial_submission": "2024-10-01",
+      "version_date": "2025-05-30",
+      "source": "https://arxiv.org/abs/2410.00425v2",
+      "status": "verified_arxiv_metadata",
+      "full_text_reviewed": false,
+      "authors": [
+        "Stone Tao",
+        "Fanbo Xiang",
+        "Arth Shukla",
+        "Yuzhe Qin",
+        "Xander Hinrichsen",
+        "Xiaodi Yuan",
+        "Chen Bao",
+        "Xinsong Lin",
+        "Yulin Liu",
+        "Tse-kai Chan",
+        "Yuan Gao",
+        "Xuanlin Li",
+        "Tongzhou Mu",
+        "Nan Xiao",
+        "Arnav Gurha",
+        "Viswesh Nagaswamy Rajesh",
+        "Yong Woo Choi",
+        "Yen-Ru Chen",
+        "Zhiao Huang",
+        "Roberto Calandra",
+        "Rui Chen",
+        "Shan Luo",
+        "Hao Su"
+      ],
+      "year": 2025
+    },
+    {
+      "key": "haarnoja2018sac",
+      "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+      "authors": [
+        "Tuomas Haarnoja",
+        "Aurick Zhou",
+        "Pieter Abbeel",
+        "Sergey Levine"
+      ],
+      "year": 2018,
+      "venue": "ICML / PMLR 80",
+      "pages": "1861-1870",
+      "source": "https://proceedings.mlr.press/v80/haarnoja18b.html",
+      "status": "verified_publisher_metadata",
+      "note": "Upstream ManiSkill README copied DBLP pages 1856-1865, which disagree with PMLR; use publisher pages.",
+      "full_text_reviewed": false
+    },
+    {
+      "key": "haarnoja2019sacapplications",
+      "title": "Soft Actor-Critic Algorithms and Applications",
+      "authors": [
+        "Tuomas Haarnoja",
+        "Aurick Zhou",
+        "Kristian Hartikainen",
+        "George Tucker",
+        "Sehoon Ha",
+        "Jie Tan",
+        "Vikash Kumar",
+        "Henry Zhu",
+        "Abhishek Gupta",
+        "Pieter Abbeel",
+        "Sergey Levine"
+      ],
+      "arxiv_id": "1812.05905v2",
+      "initial_submission": "2018-12-13",
+      "version_date": "2019-01-29",
+      "source": "https://arxiv.org/abs/1812.05905v2",
+      "status": "verified_arxiv_metadata",
+      "full_text_reviewed": false
+    },
+    {
+      "key": "hansen2024tdmpc2",
+      "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
+      "authors": [
+        "Nicklas Hansen",
+        "Hao Su",
+        "Xiaolong Wang"
+      ],
+      "arxiv_id": "2310.16828v2",
+      "initial_submission": "2023-10-25",
+      "version_date": "2024-03-21",
+      "venue": "ICLR 2024 (Spotlight)",
+      "source": "https://arxiv.org/abs/2310.16828v2",
+      "author_project": "https://www.tdmpc2.com/",
+      "status": "verified_arxiv_and_author_project_metadata",
+      "full_text_reviewed": false,
+      "direct_openreview_access": "2026-10-16 https://openreview.net/forum?id=Oxh5CstDJU returned browser challenge; retain previously checked author-project/arXiv metadata"
+    },
+    {
+      "key": "ball2023rlpd",
+      "title": "Efficient Online Reinforcement Learning with Offline Data",
+      "authors": [
+        "Philip J. Ball",
+        "Laura Smith",
+        "Ilya Kostrikov",
+        "Sergey Levine"
+      ],
+      "year": 2023,
+      "venue": "ICML / PMLR 202",
+      "pages": "1577-1594",
+      "source": "https://proceedings.mlr.press/v202/ball23a.html",
+      "status": "verified_publisher_metadata",
+      "full_text_reviewed": false,
+      "reviewed_sections": [
+        "4.1 symmetric sampling",
+        "4.2 LayerNorm",
+        "4.3 high UTD and ensemble",
+        "B.2 hyperparameter tables"
+      ],
+      "method_source": "https://proceedings.mlr.press/v202/ball23a/ball23a.pdf",
+      "source_code_commit": "c90fd4baf28c9c9ef40a81460a2e395092844f88"
+    },
+    {
+      "key": "hu2024ibrl",
+      "title": "Imitation Bootstrapped Reinforcement Learning",
+      "authors": [
+        "Hengyuan Hu",
+        "Suvir Mirchandani",
+        "Dorsa Sadigh"
+      ],
+      "arxiv_id": "2311.02198v6",
+      "initial_submission": "2023-11-03",
+      "version_date": "2024-05-20",
+      "source": "https://arxiv.org/abs/2311.02198v6",
+      "status": "verified_arxiv_and_publisher_metadata",
+      "full_text_reviewed": false,
+      "reviewed_sections": [
+        "IV-A core algorithm",
+        "IV-B benefits",
+        "V-A experimental setup"
+      ],
+      "method_source": "https://arxiv.org/html/2311.02198v6",
+      "source_code_commit": "3c457da3689cc90f881bcdf42a0a578f4a1f60aa",
+      "venue": "Robotics: Science and Systems XX",
+      "year": 2024,
+      "doi": "10.15607/RSS.2024.XX.056",
+      "publisher_source": "https://roboticsproceedings.org/rss20/p056.html"
+    },
+    {
+      "key": "escoriza2025demo3",
+      "title": "Multi-Stage Manipulation with Demonstration-Augmented Reward, Policy, and World Model Learning",
+      "authors": [
+        "Adrià López Escoriza",
+        "Nicklas Hansen",
+        "Stone Tao",
+        "Tongzhou Mu",
+        "Hao Su"
+      ],
+      "arxiv_id": "2503.01837v2",
+      "initial_submission": "2025-03-03",
+      "version_date": "2025-06-23",
+      "venue": "ICML / PMLR 267",
+      "source": "https://arxiv.org/abs/2503.01837v2",
+      "status": "verified_arxiv_author_project_and_publisher_metadata",
+      "full_text_reviewed": false,
+      "note": "Repository README Paper link incorrectly targets TD-MPC2 arxiv2310.16828; verified identity separately. OpenReview page hit browser verification.",
+      "previous_venue_note": "ICML 2025 per arXiv journal reference; publisher page not yet independently verified",
+      "year": 2025,
+      "pages": "15542-15563",
+      "publisher_source": "https://proceedings.mlr.press/v267/escoriza25a.html"
+    },
+    {
+      "key": "ross2011dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "authors": [
+        "Stephane Ross",
+        "Geoffrey Gordon",
+        "Drew Bagnell"
+      ],
+      "year": 2011,
+      "venue": "AISTATS / PMLR 15",
+      "pages": "627-635",
+      "source": "https://proceedings.mlr.press/v15/ross11a.html",
+      "status": "verified_publisher_metadata",
+      "full_text_reviewed": false
+    },
+    {
+      "key": "hiraoka2022droq",
+      "title": "Dropout Q-Functions for Doubly Efficient Reinforcement Learning",
+      "authors": [
+        "Takuya Hiraoka",
+        "Takahisa Imagawa",
+        "Taisei Hashimoto",
+        "Takashi Onishi",
+        "Yoshimasa Tsuruoka"
+      ],
+      "arxiv_id": "2110.02034v2",
+      "initial_submission": "2021-10-05",
+      "version_date": "2022-03-16",
+      "venue": "ICLR 2022 per arXiv comments and author README",
+      "source": "https://arxiv.org/abs/2110.02034v2",
+      "method_source": "https://arxiv.org/html/2110.02034v2",
+      "status": "verified_arxiv_and_author_repository",
+      "full_text_reviewed": false,
+      "reviewed_sections": [
+        "3",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "code_manifest": "literature/value_stability_source_manifest.json",
+      "publication_header_indexed_source": "https://openreview.net/pdf?id=xCVJMsPv3RT",
+      "direct_openreview_access": "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened"
+    },
+    {
+      "key": "chen2021redq",
+      "title": "Randomized Ensembled Double Q-Learning: Learning Fast Without a Model",
+      "authors": [
+        "Xinyue Chen",
+        "Che Wang",
+        "Zijian Zhou",
+        "Keith Ross"
+      ],
+      "arxiv_id": "2101.05982v2",
+      "initial_submission": "2021-01-15",
+      "version_date": "2021-03-18",
+      "venue": "ICLR 2021 per arXiv comments and author README",
+      "source": "https://arxiv.org/abs/2101.05982v2",
+      "method_source": "https://arxiv.org/html/2101.05982v2",
+      "status": "verified_arxiv_and_author_repository",
+      "full_text_reviewed": false,
+      "reviewed_sections": [
+        "3"
+      ],
+      "code_manifest": "literature/value_stability_source_manifest.json",
+      "publication_header_indexed_source": "https://openreview.net/pdf?id=AY8zfZm0tDd",
+      "direct_openreview_access": "2026-10-16 retry still returned browser challenge; primary PDF title/venue indexed in web search, not directly opened"
+    }
+  ],
+  "finding": "Upstream CITATION.cff uses preprint title with RSS 2025 venue. Publisher RSS title differs; preserve both records instead of silently conflating them.",
+  "followup_publication_check": "2026-10-16: DEMO3 PMLR267 pages15542-15563 and IBRL RSS2024 DOI independently verified from publisher pages; indexed OpenReview PDF headers do not imply successful direct access or a new full-text review."
+}

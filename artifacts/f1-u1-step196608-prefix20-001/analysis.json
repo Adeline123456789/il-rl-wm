@@ -1,0 +1,270 @@
+{
+  "valid_state_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "tail_aware_tolerance": 1.795055327504512,
+  "new_environment_interactions": 0,
+  "targets": {
+    "first_action_student": {
+      "states": [
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 0.0,
+          "selected_return": 0.0,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 97.6922010358635,
+          "selected_return": 97.6922010358635,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        }
+      ],
+      "rankable_pairs": 0,
+      "weighted_pairwise_accuracy": null,
+      "near_tie_pairs": 288,
+      "mean_regret": 0.0
+    },
+    "sequence_student": {
+      "states": [
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 0.0,
+          "selected_return": 0.0,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 97.6922010358635,
+          "selected_return": 97.6922010358635,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        },
+        {
+          "candidate_best_return": 98.20494467249539,
+          "selected_return": 98.20494467249539,
+          "regret": 0.0,
+          "rankable_pairs": 0,
+          "near_tie_pairs": 36,
+          "pairwise_accuracy": null,
+          "selected_source": "sac",
+          "wrong_takeover": false,
+          "wrong_rejection": false
+        }
+      ],
+      "rankable_pairs": 0,
+      "weighted_pairwise_accuracy": null,
+      "near_tie_pairs": 288,
+      "mean_regret": 0.0
+    }
+  },
+  "sequence_score_error_components": {
+    "il": {
+      "reward_error": {
+        "count": 16,
+        "mean": -0.004210061966936102,
+        "mae": 0.004210567534406656,
+        "rmse": 0.009703998581040329
+      },
+      "dynamics_terminal_error": {
+        "count": 16,
+        "mean": 0.5905921926975255,
+        "mae": 1.723455436468126,
+        "rmse": 2.202672606695546
+      },
+      "real_state_value_residual": {
+        "count": 16,
+        "mean": -13.37317424955616,
+        "mae": 22.578154937555887,
+        "rmse": 27.819169717147048
+      }
+    },
+    "sac": {
+      "reward_error": {
+        "count": 128,
+        "mean": 0.00445508496859905,
+        "mae": 0.08720776693919535,
+        "rmse": 0.21937551727517748
+      },
+      "dynamics_terminal_error": {
+        "count": 128,
+        "mean": 0.5234378514230279,
+        "mae": 1.7786362785041332,
+        "rmse": 2.113191676590096
+      },
+      "real_state_value_residual": {
+        "count": 128,
+        "mean": -13.073680704923964,
+        "mae": 22.212133222695684,
+        "rmse": 27.26603120519284
+      }
+    }
+  },
+  "sequence_minus_first_return": {
+    "il": {
+      "count": 16,
+      "mean": 0.0,
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "sac": {
+      "count": 128,
+      "mean": -0.030937500000000284,
+      "mae": 0.030937500000000284,
+      "rmse": 0.17500892834367213
+    }
+  },
+  "real_state_value_tail_bounds": {
+    "below_observed_suffix_lower_bound_fraction": 0.875,
+    "above_observed_suffix_tail_upper_bound_fraction": 0.125,
+    "definition": "Fractions across observed valid branches, not confidence bounds on expected value; residual includes gamma^2 and is relative to the finite real suffix."
+  },
+  "limitations": "Descriptive decomposition, not causal attribution. Component MAEs need not add because errors cancel. Tail-aware pair ranks address only the unobserved nonnegative return tail, not statistical uncertainty. Repeated branches and candidates are not independent training runs."
+}

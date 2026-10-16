@@ -1,0 +1,219 @@
+diff --git a/RESEARCH_LOG.md b/RESEARCH_LOG.md
+index e60bed8..d375567 100644
+--- a/RESEARCH_LOG.md
++++ b/RESEARCH_LOG.md
+@@ -78,3 +78,13 @@ SAC A 最终 replay 检查补充：1312个初始观测中发现1个远距离 is_
+ 参考核验发现两个不能照抄的入口问题：DEMO³ README Paper链接误指TD-MPC2，真实论文为2503.01837v2；rfcl当前main缺少ManiSkill README指定RLPD入口，默认train.py是带课程的RFCL，尚不能作为RLPD启动。已记录commit/文件树/许可声明限制，继续只读核对，不改主环境。
+ 
+ BC003完成10000更新、80000验证交互；固定最终40回合0成功，验证动作MSE 0.0006853084。新数据修复后闭环失败仍存在，不能将F-E1-001全部归因于F-E0-004；尚未通过新训练种子或充分训练验证。C smoke实际完成4096训练交互/244次SAC更新/1600验证交互，expert与online各31232样本，IL冻结检查通过，退出0。C full已启动，之后有限串行队列为WM200更新smoke→WM10000更新→修订协议A full→B full；每作业仍受单卡锁/时限/24h总预算约束。E4代码在独立入口准备，不改变当前SAC采样行为。
++
++## E3–E7 真实执行进展
++
++完整C完成262144训练交互、64528次SAC更新、16000验证交互，最终固定验证13/16成功；只是一条seed0开发训练，不能归因于BC初始化单因素，A/B修订协议完整运行仍在串行推进。
++
++E4两步WM完成200更新smoke及10000更新固定训练，88875参数。H2专家验证状态归一化MSE .0022617、reward Brier .0039913；在线验证分别 .211997、.0180690，分零/非零奖励及成功前窗口/失败回合的原始计数全部保存。没有将平均loss当作排序可靠性的证明。E5真实快照候选测试通过，32状态×9候选×H2生成（不含评分/物理步）平均0.927ms含IL、0.794ms无IL。E6独立纯任务价值头完成5000次TD更新，78081参数；它在在线验证仍有23.55%预测低于0或高于100，当前最大值44.14，说明负值预测问题尚存；未添加裁剪、集成或惩罚。
++
++最小完整U0真实smoke exit0：保留C父模型262144交互，从新reset仿真段执行4096新交互、256次SAC更新、64次WM更新、256次任务价值更新，四方法合计6400验证交互。独立CPU审计从保存replay复算出IL执行1218、规划SAC2027、随机SAC851（20.776%）；4个采样日志批次动作/来源与replay完全一致，IL重算最大CPU浮点差3.16e-6且权重不变；WM/价值权重和Adam步数真实更新。总可训练参数599351，整卡实测峰值4703MiB、进程RSS约3.86GiB。最终每方法仅4回合：IL0/4、裸SAC3/4、IL+SAC+WM1/4、无IL的SAC+WM4/4，均为工程测试，不能视为有效性结论。
++
++完整U0与同一个C父checkpoint、seed和262144新增交互的C续训对照已锁定配置并排队；不从smoke权重挑选起点。F1诊断准备采用8个匹配reset+40步固定学生动作前缀、9条冻结候选、2次重复，以及首动作/整段H2后分别由同一冻结学生续接400步。额外诊断时间限制只为避免continuing回报被自动reset打断；全部诊断交互独立计数、不进入训练。实际配对一致性将按原始观测差验证，不声称已支持任意中途状态精确恢复。
+diff --git a/UPSTREAMS.md b/UPSTREAMS.md
+index e270047..7155e38 100644
+--- a/UPSTREAMS.md
++++ b/UPSTREAMS.md
+@@ -47,3 +47,7 @@ Repository https://github.com/nicklashansen/tdmpc2；commit `e9f59321933cbc8e11a
+ - DEMO³ `5a5424821498da07b6dcf6ee257e4171c35b4b83`，来源 https://github.com/adrialopezescoriza/demo3 。README 声明 MIT 并指向 LICENSE，但完整树没有该文件；尚不复制代码。README 的 Paper 链误指 TD-MPC2，独立查得正确论文为 arXiv2503.01837v2，题名见 literature/verified_sources.json。项目页明确使用多阶段奖励，不能与本项目无额外阶段监督的 sparse 协议直接比较。仅下载 world_model、demo3_trainer 和 maniskill_stages 用于核对。
+ 
+ 上述文件树/逐文件哈希位于 artifacts/bootstrap/reference-trees 与 reference-sources；三者均未安装依赖，未运行，不属于主训练框架。
++
++## 当前最小U0适配（已通过真实短实验）
++
++SAC核心actor/twin-Q/熵/Polyak公式仍来自ManiSkill官方。新增原state残差WM、独立pure-task TD评价头与批量双策略候选为本项目实现，局部参考TD-MPC2多步递推/短期奖励接终端价值思想；没有复制其整体agent或策略更新。E4旁路10000更新、E5真实候选检查、E6价值预热和U0真实4096交互均完成。新仿真段恢复明确保存/加载learner、replay、温度、模型、目标及优化器；采用新reset/seed而非声称精确恢复中途模拟器。完整训练与F1诊断仍未完成。
+diff --git a/research_state.json b/research_state.json
+index 5349aa0..2497e61 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+   "batch_id": "20261016-u0-01",
+-  "phase": "E3_C_smoke_verified_full_running_E4_prepared",
++  "phase": "U0_smoke_verified_full_and_matched_control_queued",
+   "branch": "research/u0-batch-20261016",
+   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+   "upstreams": {
+@@ -19,7 +19,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 3037.5482263690064,
++    "gpu_job_seconds_used": 4739.077155240011,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+@@ -56,7 +56,14 @@
+     "e0-pickcube-fresh-contacts-test-001",
+     "e0-pickcube-gpu-replay-full-003",
+     "e1-bc-full-003",
+-    "e3-sac-c-smoke-001"
++    "e3-sac-c-smoke-001",
++    "e3-sac-c-full-001",
++    "e4-wm-smoke-001",
++    "e4-wm-full-001",
++    "e5-candidates-001",
++    "e6-value-preheat-001",
++    "e6-u0-smoke-001",
++    "e2-sac-a-full-002"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {
+@@ -125,31 +132,139 @@
+         "online_samples": 31232,
+         "expert_fraction": 0.5
+       }
++    },
++    "e3_sac_c_full_001": {
++      "training_interactions": 262144,
++      "gradient_updates": 64528,
++      "validation_interactions": 16000,
++      "final_test_evaluated": false,
++      "elapsed_seconds": 832.2523459490039,
++      "frozen_il_verified": true,
++      "torch_peak_allocated_bytes": 142051840,
++      "final_validation_success_once": 13,
++      "final_validation_episodes": 16
++    },
++    "e4_wm_smoke_001": {
++      "updates": 200,
++      "elapsed_seconds": 0.36500221099413466,
++      "trainable_parameters": 88875,
++      "new_environment_interactions": 0,
++      "checkpoint": "checkpoints/e4-wm-smoke-001/final.pt",
++      "sha256": "68eb509edeea69ea0ba349abe65401e152427eb6ee4fbd59fa8b03c6d9e61554",
++      "torch_peak_allocated_bytes": 208573440
++    },
++    "e4_wm_full_001": {
++      "updates": 10000,
++      "elapsed_seconds": 11.066713558000629,
++      "trainable_parameters": 88875,
++      "new_environment_interactions": 0,
++      "checkpoint": "checkpoints/e4-wm-full-001/final.pt",
++      "sha256": "4188556652e6bae1aa4e22cf480916c0bf4a2b67b136d55d4037c76091ffc7ef",
++      "torch_peak_allocated_bytes": 208573440
++    },
++    "e5_candidates_001": {
++      "sac": "checkpoints/e3-sac-c-full-001/final.pt",
++      "bc": "checkpoints/e1-bc-full-003/final.pt",
++      "wm": "checkpoints/e4-wm-full-001/final.pt",
++      "new_environment_interactions": 0,
++      "measured_generation_only": true,
++      "results": {
++        "with_il": {
++          "sources": [
++            "il",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac"
++          ],
++          "latency_ms_per_batch32": 0.9266549099993426,
++          "mean_sac_candidate_std": 0.20491757988929749,
++          "predicted_state_change_mean": 0.10301581770181656
++        },
++        "without_il": {
++          "sources": [
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac",
++            "sac"
++          ],
++          "latency_ms_per_batch32": 0.7938704200205393,
++          "mean_sac_candidate_std": 0.19524407386779785,
++          "predicted_state_change_mean": 0.10916806757450104
++        }
++      },
++      "torch_peak_allocated_bytes": 12200448
++    },
++    "e6_value_preheat_001": {
++      "updates": 5000,
++      "new_environment_interactions": 0,
++      "elapsed_seconds": 4.364977863006061,
++      "trainable_parameters": 78081,
++      "checkpoint": "checkpoints/e6-value-preheat-001/final.pt",
++      "sha256": "95379de71b58d72cafe263fb5399e37c3780c2fba027809a177c4e930f26658f",
++      "torch_peak_allocated_bytes": 208775168
++    },
++    "e6_u0_smoke_001": {
++      "training_interactions": 4096,
++      "inherited_training_interactions": 262144,
++      "gradient_updates": 256,
++      "validation_interactions": 6400,
++      "final_test_evaluated": false,
++      "elapsed_seconds": 57.82833518298867,
++      "frozen_il_verified": true,
++      "torch_peak_allocated_bytes": 134657536,
++      "checkpoint_audit": {
++        "valid": true,
++        "checkpoint": "checkpoints/e6-u0-smoke-001/final.pt",
++        "new_real_transitions": 4096,
++        "executed_il": 1218,
++        "executed_planned_sac": 2027,
++        "executed_random_sac": 851,
++        "actual_exploration_fraction": 0.207763671875,
++        "logged_batches_exactly_match_replay": 4,
++        "il_action_max_abs_cpu_recompute_error": 3.159046173095703e-06,
++        "il_weights_unchanged": true,
++        "wm_weights_updated": true,
++        "value_weights_updated": true,
++        "wm_updates": 64,
++        "value_updates": 256,
++        "optimizer_steps_preserved": true,
++        "note": "CPU recomputation tolerates floating-point kernel differences; logged executed actions and replay match exactly. This is an engineering audit, not a performance conclusion."
++      }
+     }
+   },
+-  "next_experiment": "Inspect full C then E4 fixed real-data smoke/full, corrected A/B; implement candidate scoring only after model side-training checks",
++  "next_experiment": "Complete corrected A/B and full U0 plus same-parent C continuation; frozen F1 repeated-prefix diagnostics, then evidence-directed local research. U0 smoke is not full-batch completion.",
+   "blockers": [],
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+   "background_jobs": [
+     {
+-      "role": "C_full",
+-      "manifest": "artifacts/e3-sac-c-full-001/manifest.json"
++      "role": "A_v2_full",
++      "manifest": "artifacts/e2-sac-a-full-002/manifest.json"
+     },
+     {
+-      "role": "e4-wm-smoke-001",
+-      "status_file": "artifacts/queue-e4-wm-smoke-001/status.json"
++      "role": "e2-sac-b-full-001",
++      "status_file": "artifacts/queue-e2-sac-b-full-001/status.json"
+     },
+     {
+-      "role": "e4-wm-full-001",
+-      "status_file": "artifacts/queue-e4-wm-full-001/status.json"
++      "role": "e6-u0-full-001",
++      "status_file": "artifacts/queue-e6-u0-full-001/status.json"
+     },
+     {
+-      "role": "e2-sac-a-full-002",
+-      "status_file": "artifacts/queue-e2-sac-a-full-002/status.json"
++      "role": "e3-sac-c-continue-full-001",
++      "status_file": "artifacts/queue-e3-sac-c-continue-full-001/status.json"
+     },
+     {
+-      "role": "e2-sac-b-full-001",
+-      "status_file": "artifacts/queue-e2-sac-b-full-001/status.json"
++      "role": "f1-u0-ranking-001",
++      "status_file": "artifacts/queue-f1-u0-ranking-001/status.json"
+     }
+   ],
+   "environment": {

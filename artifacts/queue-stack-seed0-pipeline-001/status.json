@@ -1,0 +1,17 @@
+{
+  "pid": 860673,
+  "prerequisite": "artifacts/e3-rlpd-full-001/manifest.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_pickcube_repeat.py",
+    "--task",
+    "StackCube-v1",
+    "--seed",
+    "0",
+    "--output",
+    "artifacts/stack-seed0-pipeline-001"
+  ],
+  "started_at": "2026-10-16T12:28:19.719764+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}

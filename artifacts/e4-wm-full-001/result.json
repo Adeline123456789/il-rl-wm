@@ -1,0 +1,9 @@
+{
+  "updates": 10000,
+  "elapsed_seconds": 11.066713558000629,
+  "trainable_parameters": 88875,
+  "new_environment_interactions": 0,
+  "checkpoint": "checkpoints/e4-wm-full-001/final.pt",
+  "sha256": "4188556652e6bae1aa4e22cf480916c0bf4a2b67b136d55d4037c76091ffc7ef",
+  "torch_peak_allocated_bytes": 208573440
+}

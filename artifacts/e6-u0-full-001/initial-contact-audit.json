@@ -1,0 +1,9 @@
+{
+  "checkpoint": "checkpoints/e6-u0-full-001/final.pt",
+  "global_step": 262144,
+  "initial_observations": 1312,
+  "grasped_true": 0,
+  "grasped_true_and_tcp_distance_over_0_1m": 0,
+  "min_tcp_distance": 0.1118946447968483,
+  "note": "Dim18 follows locked PickCube state dict agent qpos/qvel then extra is_grasped. This checks returned observations, not a learned reward or policy score."
+}

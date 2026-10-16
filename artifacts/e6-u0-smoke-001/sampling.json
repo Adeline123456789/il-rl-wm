@@ -1,0 +1,5 @@
+{
+  "expert_samples": 32768,
+  "online_samples": 32768,
+  "expert_fraction": 0.5
+}

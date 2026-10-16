@@ -1,0 +1,5 @@
+{
+  "failure_id": "F-E0-003",
+  "reason": "GPU replay length mismatch after first vector batch; training data provenance boundary invalid. Do not compare this BC or use its checkpoint.",
+  "action": "stop runner and dependent queues, preserve artifacts, repair replay and rerun from scratch"
+}

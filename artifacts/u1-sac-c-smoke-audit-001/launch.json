@@ -1,0 +1,11 @@
+{
+  "pid": 857242,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_critic_checkpoint.py",
+    "--checkpoint",
+    "checkpoints/u1-sac-c-smoke-001/final.pt",
+    "--output",
+    "artifacts/u1-sac-c-smoke-audit-001/result.json"
+  ]
+}

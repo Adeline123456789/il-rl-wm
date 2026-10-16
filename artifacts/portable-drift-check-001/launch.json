@@ -1,0 +1,43 @@
+{
+  "pid": 777731,
+  "commands": [
+    [
+      ".venv/bin/python",
+      "scripts/export_analysis_checkpoint.py",
+      "--checkpoint",
+      "checkpoints/e6-u0-full-001/step_196608.pt",
+      "--output",
+      "releases/u0-analysis-precollapse-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/export_analysis_checkpoint.py",
+      "--checkpoint",
+      "checkpoints/e6-u0-full-001/final.pt",
+      "--output",
+      "releases/u0-analysis-final-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_value_drift.py",
+      "--before",
+      "checkpoints/e6-u0-full-001/step_196608.pt",
+      "--after",
+      "checkpoints/e6-u0-full-001/final.pt",
+      "--output",
+      "artifacts/f-u0-value-drift-002"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_value_drift.py",
+      "--before",
+      "releases/u0-analysis-precollapse-001/weights.pt",
+      "--after",
+      "releases/u0-analysis-final-001/weights.pt",
+      "--fixed-batches",
+      "artifacts/f-u0-value-drift-002/fixed_batches.npz",
+      "--output",
+      "artifacts/f-u0-value-drift-portable-001"
+    ]
+  ]
+}

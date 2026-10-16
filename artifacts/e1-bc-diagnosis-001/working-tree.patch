@@ -1,0 +1,103 @@
+diff --git a/research_state.json b/research_state.json
+index f41d246..02fe6d0 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+   "batch_id": "20261016-u0-01",
+-  "phase": "E0_environment_setup",
++  "phase": "E1_full_BC_training",
+   "branch": "research/u0-batch-20261016",
+   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+   "upstreams": {
+@@ -19,31 +19,78 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 0,
++    "gpu_job_seconds_used": 1525.903191578007,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+   "data_version": {
+     "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+     "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+-    "downloaded": false
++    "downloaded": true,
++    "active_pickcube_audit": "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
++    "invalidated_gpu_replay": "e0-pickcube-gpu-replay-full-001"
+   },
+-  "experiments": [],
+-  "results": null,
+-  "next_experiment": "E0 real reset/step and official demonstration replay",
++  "experiments": [
++    "e0-pickcube-smoke-001",
++    "e0-peg-smoke-001",
++    "e0-stack-smoke-001",
++    "e0-pickcube-throughput-001",
++    "e0-peg-replay-001",
++    "e0-peg-replay-fixed-001",
++    "e0-pickcube-replay-001",
++    "e0-pickcube-gpu-replay-001",
++    "e0-pickcube-gpu-replay-002",
++    "e1-bc-smoke-001",
++    "e0-pickcube-replay-full-001",
++    "e0-pickcube-gpu-replay-full-001",
++    "e1-bc-full-001",
++    "e0-pickcube-gpu-replay-boundary-test-001",
++    "e0-pickcube-gpu-replay-full-002",
++    "e1-bc-full-002",
++    "e2-sac-a-smoke-002",
++    "e2-sac-b-smoke-002"
++  ],
++  "results": {
++    "e1_bc_smoke_001": {
++      "validation_action_mse": 0.014878595312992175,
++      "success_episodes": 0,
++      "validation_episodes": 8,
++      "engineering_only": true
++    },
++    "pickcube_gpu_replay_full_002": {
++      "episodes": 1000,
++      "success_at_end": 898,
++      "excluded_failures": 102,
++      "transitions": 77976,
++      "all_action_and_first_state_alignment_verified": true
++    }
++  },
++  "next_experiment": "Finish verified BC-full-002; queued official SAC A/B smoke-002, then inspect real update/frozen IL evidence before adding expert mixing",
+   "blockers": [],
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+   "background_jobs": [
+     {
+-      "pid": 297042,
+-      "role": "bounded_bootstrap_then_first_smoke",
+-      "status_file": "artifacts/bootstrap/background-status.json",
+-      "log": "artifacts/bootstrap/background-local-runtime.log"
++      "pid": 360549,
++      "role": "bounded_BC_runner",
++      "manifest": "artifacts/e1-bc-full-002/manifest.json"
++    },
++    {
++      "pid": 354486,
++      "role": "SAC_A_smoke_after_BC",
++      "status_file": "artifacts/queue-e2-sac-a-smoke-002/status.json"
++    },
++    {
++      "pid": 354487,
++      "role": "SAC_B_smoke_after_A",
++      "status_file": "artifacts/queue-e2-sac-b-smoke-002/status.json"
+     }
+   ],
+   "environment": {
+     "python": "3.10.20",
+     "torch": "2.3.0+cu121",
+-    "status": "runtime_copy_then_dependency_install"
+-  }
++    "status": "verified_ready"
++  },
++  "invalidated_experiments": [
++    "e1-bc-full-001"
++  ]
+ }

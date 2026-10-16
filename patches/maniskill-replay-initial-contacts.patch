@@ -1,0 +1,11 @@
+--- replay-after-batch-boundary-fix.py
++++ replay-with-fresh-contact-state.py
+@@ -561,6 +561,8 @@
+         env_kwargs["sim_backend"] = "physx_cpu"
+     env_kwargs["num_envs"] = args.num_envs
+     if env_kwargs["sim_backend"] not in CPU_SIM_BACKENDS:
++        # Initial contact queries must not retain the previous batch's grasp forces.
++        env_kwargs["reconfiguration_freq"] = 1
+         record_episode_kwargs["max_steps_per_video"] = env_info["max_episode_steps"]
+         _, replay_result = _main(
+             args,

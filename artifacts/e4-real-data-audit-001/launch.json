@@ -1,0 +1,8 @@
+{
+  "pid": 492500,
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "import json; from pathlib import Path; import torch; from scripts.wm_data import load_sequences; torch.set_num_threads(2); d,m=load_sequences('artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json','checkpoints/e3-sac-c-smoke-001/final.pt'); Path('artifacts/e4-real-data-audit-001/data.json').write_text(json.dumps(m,indent=2)); print(m['sequence_counts'])"
+  ]
+}

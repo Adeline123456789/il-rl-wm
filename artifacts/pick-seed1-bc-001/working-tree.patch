@@ -1,0 +1,69 @@
+diff --git a/artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json b/artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json
+index ca21f73..22f5a81 100644
+--- a/artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json
++++ b/artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json
+@@ -10,6 +10,7 @@
+     "artifacts/f1-u1-step196608-prefix20-001"
+   ],
+   "started_at": "2026-10-16T13:36:36.240464+00:00",
+-  "phase": "waiting",
+-  "exit_code": null
++  "phase": "running",
++  "exit_code": null,
++  "child_pid": 1250245
+ }
+\ No newline at end of file
+diff --git a/artifacts/queue-f1-u1-step196608-prefix20-001/status.json b/artifacts/queue-f1-u1-step196608-prefix20-001/status.json
+index 0d10b1a..0db5063 100644
+--- a/artifacts/queue-f1-u1-step196608-prefix20-001/status.json
++++ b/artifacts/queue-f1-u1-step196608-prefix20-001/status.json
+@@ -25,6 +25,8 @@
+     "2"
+   ],
+   "started_at": "2026-10-16T13:36:36.225460+00:00",
+-  "phase": "waiting",
+-  "exit_code": null
++  "phase": "completed",
++  "exit_code": 0,
++  "child_pid": 1216227,
++  "ended_at": "2026-10-16T14:05:28.262353+00:00"
+ }
+\ No newline at end of file
+diff --git a/artifacts/queue-pick-seed1-pipeline-003/status.json b/artifacts/queue-pick-seed1-pipeline-003/status.json
+index 54e8a29..5ddd409 100644
+--- a/artifacts/queue-pick-seed1-pipeline-003/status.json
++++ b/artifacts/queue-pick-seed1-pipeline-003/status.json
+@@ -10,6 +10,7 @@
+     "artifacts/pick-seed1-pipeline-001"
+   ],
+   "started_at": "2026-10-16T13:36:36.229035+00:00",
+-  "phase": "waiting",
+-  "exit_code": null
++  "phase": "running",
++  "exit_code": null,
++  "child_pid": 1250244
+ }
+\ No newline at end of file
+diff --git a/research_state.json b/research_state.json
+index 35df43d..74e6a5e 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -21,7 +21,7 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 14699.724318425011,
++    "gpu_job_seconds_used": 15170.55489857,
+     "local_changes_limit": 2,
+     "local_changes_used": 1,
+     "final_evaluation_reserve_seconds": 7200
+@@ -91,7 +91,8 @@
+     "u1-pick-seed0-value-001",
+     "u1-pick-seed0-u0-001",
+     "u1-pick-seed0-c-continue-001",
+-    "f1-u0-step196608-prefix20-001"
++    "f1-u0-step196608-prefix20-001",
++    "f1-u1-step196608-prefix20-001"
+   ],
+   "results": {
+     "e1_bc_smoke_001": {

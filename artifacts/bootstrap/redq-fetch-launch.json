@@ -1,0 +1,14 @@
+{
+  "pid": 726713,
+  "command": [
+    "git",
+    "-c",
+    "http.version=HTTP/1.1",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/watchernyu/REDQ",
+    ".cache/references/redq"
+  ],
+  "log": "artifacts/bootstrap/redq-fetch.log"
+}

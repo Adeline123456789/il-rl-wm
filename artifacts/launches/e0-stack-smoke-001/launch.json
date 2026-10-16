@@ -1,0 +1,25 @@
+{
+  "experiment_id": "e0-stack-smoke-001",
+  "pid": 301435,
+  "started_at": "2026-10-16T09:19:18.574409+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_experiment.py",
+    "--id",
+    "e0-stack-smoke-001",
+    "--seconds",
+    "300.0",
+    "--memory-mib",
+    "20480",
+    "--",
+    ".venv/bin/python",
+    "scripts/smoke_env.py",
+    "--env-id",
+    "StackCube-v1",
+    "--steps",
+    "100",
+    "--output",
+    "artifacts/e0-stack-smoke-001"
+  ],
+  "log": "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/launches/e0-stack-smoke-001/runner.log"
+}

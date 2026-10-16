@@ -1,0 +1,14 @@
+{
+  "pid": 725100,
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_value_drift.py",
+    "--before",
+    "checkpoints/e6-u0-full-001/step_196608.pt",
+    "--after",
+    "checkpoints/e6-u0-full-001/final.pt",
+    "--output",
+    "artifacts/f-u0-value-drift-001"
+  ],
+  "log": "artifacts/bootstrap/f-u0-value-drift-001.log"
+}

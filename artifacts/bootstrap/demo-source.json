@@ -1,0 +1,15 @@
+{
+  "repository": "haosulab/ManiSkill_Demonstrations",
+  "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+  "queried_url": "https://huggingface.co/api/datasets/haosulab/ManiSkill_Demonstrations",
+  "required_files": {
+    "demos/PickCube-v1.zip": true,
+    "demos/PegInsertionSide-v1.zip": true,
+    "demos/StackCube-v1.zip": true
+  },
+  "required_file_bytes": {
+    "demos/PegInsertionSide-v1.zip": 29475456,
+    "demos/PickCube-v1.zip": 36590010,
+    "demos/StackCube-v1.zip": 43486191
+  }
+}

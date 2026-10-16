@@ -1,0 +1,84 @@
+{
+  "checked_date": "2026-10-16",
+  "sources": [
+    {
+      "name": "DroQ",
+      "repository": "https://github.com/TakuyaHiraoka/Dropout-Q-Functions-for-Doubly-Efficient-Reinforcement-Learning",
+      "commit": "4c7adddbaf7573ff9256b16091a3bbdbd536aad4",
+      "license": "MIT",
+      "use": "readonly mechanism review; no code copied or dependency installed in main environment",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "bea699d46567573a9264d16154c13c04e57b30eb8c3ce870406c03e4b82de4f6"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "bd9702c64430509ea51b727c695abb6086d58889fea46b65752e46183ff91681"
+        },
+        {
+          "path": "OriginalREDQCodebase/redq/algos/core.py",
+          "sha256": "16fec92b1de1ce5942599f57079bc3a002b2869429515b4cd68606bda8fb52db"
+        },
+        {
+          "path": "OriginalREDQCodebase/redq/algos/redq_sac.py",
+          "sha256": "1417451e076f59584e1d5f3cdea1c47366c6625dff5591e3d864dd7c88152cf7"
+        }
+      ]
+    },
+    {
+      "name": "REDQ",
+      "repository": "https://github.com/watchernyu/REDQ",
+      "commit": "7b5d1bff39291a57325a2836bd397a55728960bb",
+      "license": "MIT",
+      "use": "readonly mechanism review; no code copied or dependency installed in main environment",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "988e6154dde02b33d9d503665646654c5d105f98e51b3c62fb5b11fd53ff23a9"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "58e71a4694af7cc9c908b3456e12baddd4cda15f185523975a42361ab2ff8a49"
+        },
+        {
+          "path": "redq/algos/core.py",
+          "sha256": "cb2ff8dd198a8531d06048bd26872f2606da16c53135b3609ca9d7b22a92dc35"
+        },
+        {
+          "path": "redq/algos/redq_sac.py",
+          "sha256": "0a113f8910e12fc8a2adcbb7b7d8b53882db43fa9bace8cc85583d897f31ed58"
+        }
+      ]
+    },
+    {
+      "name": "RLPD",
+      "repository": "https://github.com/ikostrikov/rlpd",
+      "commit": "c90fd4baf28c9c9ef40a81460a2e395092844f88",
+      "license": "MIT",
+      "use": "readonly mechanism review; no code copied or dependency installed in main environment",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "6818377e2dd962f2b080863564a548781fb3f6f80e5102dc3703ed7955a0806d"
+        },
+        {
+          "path": "LICENCE",
+          "sha256": "33cad67436247aec6465fc1be5ff075327bfc527851ca9e2340e3e3336cdd63e"
+        },
+        {
+          "path": "rlpd/networks/mlp.py",
+          "sha256": "2b8b6f646b6e5839bf8057e2e2cd96e717acbad11b02b408d5dd6edef074c635"
+        },
+        {
+          "path": "rlpd/agents/sac/sac_learner.py",
+          "sha256": "a4b3bd6f00c0c526d1c936f3481df797b71f6872f887baedaedf95add2c5b7cb"
+        },
+        {
+          "path": "configs/rlpd_config.py",
+          "sha256": "566d5328563290321cbf51684e1b48aae260bc594286ff4d10ead20db64e421e"
+        }
+      ]
+    }
+  ]
+}

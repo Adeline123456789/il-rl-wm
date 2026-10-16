@@ -1,0 +1,195 @@
+diff --git a/UPSTREAMS.md b/UPSTREAMS.md
+index 7955115..9e8bdab 100644
+--- a/UPSTREAMS.md
++++ b/UPSTREAMS.md
+@@ -35,3 +35,7 @@ Repository https://github.com/vwxyzjn/cleanrl；commit `fe8d8a03c41a7ef5b523e2e3
+ 
+ - 第三处 replay 必要补丁 F-E0-003：GPU 每批结束调用 flush_trajectory(save=False) 丢弃各环境已保存轨迹之后的 padding 残留，避免跨 batch 拼入下一 episode；真实两批及全量重放审计分别记录。scripts/audit_replay_alignment.py 新实现长度/动作/首状态来源检查，不能仅凭 HDF5 shape 自洽认定可训练。
+ - scripts/bc_evaluate.py 对官方 BC evaluate 仅增加显式 reset seed 与整向量回合数断言；避免调用方先 seeded reset 再被 helper 第二次 reset。原始 vendor helper 保留不变。
++
++## TD-MPC2：世界模型阶段只读机制参考
++
++Repository https://github.com/nicklashansen/tdmpc2；commit `e9f59321933cbc8e11a002b842adc7d4ffae8ff1`；MIT (Nicklas Hansen, 2023)。源码哈希见 artifacts/bootstrap/tdmpc2-source.json。已读 world_model.py 的动作条件 next/reward 与 tdmpc2.py 的 _update、_estimate_value、_plan：从一个编码状态自由递推，逐步监督预测状态/奖励，短期折扣奖励接终端 Q；策略候选后续输入各自预测状态。其隐式潜空间、two-hot 价值、Q ensemble、MPPI 和策略更新不直接移入本项目。主项目将使用兼容 BC/SAC 的原 state 接口和独立 pure-task 价值定义；不把其 Q 与 SAC soft Q 混用。此时仅阅读来源，尚未引入 WM 模块或安装依赖。论文元数据已核验，未宣称精读全文。
+diff --git a/literature/verified_sources.json b/literature/verified_sources.json
+index 0af750d..ab50cf3 100644
+--- a/literature/verified_sources.json
++++ b/literature/verified_sources.json
+@@ -89,7 +89,24 @@
+       "source": "https://arxiv.org/abs/1812.05905v2",
+       "status": "verified_arxiv_metadata",
+       "full_text_reviewed": false
++    },
++    {
++      "key": "hansen2024tdmpc2",
++      "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
++      "authors": [
++        "Nicklas Hansen",
++        "Hao Su",
++        "Xiaolong Wang"
++      ],
++      "arxiv_id": "2310.16828v2",
++      "initial_submission": "2023-10-25",
++      "version_date": "2024-03-21",
++      "venue": "ICLR 2024 (Spotlight)",
++      "source": "https://arxiv.org/abs/2310.16828v2",
++      "author_project": "https://www.tdmpc2.com/",
++      "status": "verified_arxiv_and_author_project_metadata",
++      "full_text_reviewed": false
+     }
+   ],
+   "finding": "Upstream CITATION.cff uses preprint title with RSS 2025 venue. Publisher RSS title differs; preserve both records instead of silently conflating them."
+-}
+\ No newline at end of file
++}
+diff --git a/research_state.json b/research_state.json
+index f41d246..01e64c2 100644
+--- a/research_state.json
++++ b/research_state.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+   "batch_id": "20261016-u0-01",
+-  "phase": "E0_environment_setup",
++  "phase": "E2_SAC_A_B_smoke_verified",
+   "branch": "research/u0-batch-20261016",
+   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+   "upstreams": {
+@@ -19,31 +19,87 @@
+   ],
+   "budget": {
+     "gpu_hours_limit": 24,
+-    "gpu_job_seconds_used": 0,
++    "gpu_job_seconds_used": 2308.000217885012,
+     "local_changes_limit": 2,
+     "local_changes_used": 0
+   },
+   "data_version": {
+     "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+     "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+-    "downloaded": false
++    "downloaded": true,
++    "active_pickcube_audit": "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
++    "invalidated_gpu_replay": "e0-pickcube-gpu-replay-full-001"
+   },
+-  "experiments": [],
+-  "results": null,
+-  "next_experiment": "E0 real reset/step and official demonstration replay",
++  "experiments": [
++    "e0-pickcube-smoke-001",
++    "e0-peg-smoke-001",
++    "e0-stack-smoke-001",
++    "e0-pickcube-throughput-001",
++    "e0-peg-replay-001",
++    "e0-peg-replay-fixed-001",
++    "e0-pickcube-replay-001",
++    "e0-pickcube-gpu-replay-001",
++    "e0-pickcube-gpu-replay-002",
++    "e1-bc-smoke-001",
++    "e0-pickcube-replay-full-001",
++    "e0-pickcube-gpu-replay-full-001",
++    "e1-bc-full-001",
++    "e0-pickcube-gpu-replay-boundary-test-001",
++    "e0-pickcube-gpu-replay-full-002",
++    "e1-bc-full-002",
++    "e2-sac-a-smoke-002",
++    "e2-sac-b-smoke-002",
++    "e1-bc-diagnosis-001",
++    "e2-sac-a-full-001"
++  ],
++  "results": {
++    "e1_bc_smoke_001": {
++      "validation_action_mse": 0.014878595312992175,
++      "success_episodes": 0,
++      "validation_episodes": 8,
++      "engineering_only": true
++    },
++    "pickcube_gpu_replay_full_002": {
++      "episodes": 1000,
++      "success_at_end": 898,
++      "excluded_failures": 102,
++      "transitions": 77976,
++      "all_action_and_first_state_alignment_verified": true
++    },
++    "e1_bc_full_002": {
++      "iterations": 10000,
++      "final_validation_success_once": 0,
++      "validation_episodes": 40,
++      "final_test_evaluated": false
++    },
++    "e2_sac_a_b_smoke_002": {
++      "each_training_interactions": 4096,
++      "each_gradient_updates": 244,
++      "each_validation_interactions": 1600,
++      "B_frozen_il_verified": true
++    }
++  },
++  "next_experiment": "Inspect BC diagnosis; full SAC A queued (262144 transitions), then add minimal fixed-ratio expert replay C; WM only after tested BC/SAC flow",
+   "blockers": [],
+   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+   "background_jobs": [
+     {
+-      "pid": 297042,
+-      "role": "bounded_bootstrap_then_first_smoke",
+-      "status_file": "artifacts/bootstrap/background-status.json",
+-      "log": "artifacts/bootstrap/background-local-runtime.log"
++      "pid": 397444,
++      "role": "BC_diagnosis",
++      "manifest": "artifacts/e1-bc-diagnosis-001/manifest.json"
++    },
++    {
++      "pid": 398317,
++      "role": "full_SAC_A_after_diagnosis",
++      "status_file": "artifacts/queue-e2-sac-a-full-001/status.json"
+     }
+   ],
+   "environment": {
+     "python": "3.10.20",
+     "torch": "2.3.0+cu121",
+-    "status": "runtime_copy_then_dependency_install"
+-  }
++    "status": "verified_ready"
++  },
++  "invalidated_experiments": [
++    "e1-bc-full-001"
++  ]
+ }
+diff --git a/scripts/audit_demos.py b/scripts/audit_demos.py
+index 3a34879..947806b 100644
+--- a/scripts/audit_demos.py
++++ b/scripts/audit_demos.py
+@@ -40,6 +40,7 @@ def audit(path, seed, horizon, successful_only=False, source_metadata=None, acti
+     ids = [e['episode_id'] for e in episodes]
+     assert len(set(ids)) == len(ids) and len(ids) >= 2
+     rows = []
++    initial_contacts = []
+     with h5py.File(path, 'r') as dataset:
+         for episode in episodes:
+             key = f'traj_{episode["episode_id"]}'
+@@ -56,6 +57,10 @@ def audit(path, seed, horizon, successful_only=False, source_metadata=None, acti
+             for array in [obs, action, reward]:
+                 assert np.isfinite(array).all(), key
+             assert np.max(np.abs(action)) <= 1.00001, (key,'expected normalized actions')
++            if env_info['env_id'] == 'PickCube-v1':
++                # Locked state order: qpos(9), qvel(9), is_grasped, ..., tcp_to_obj(3).
++                initial_contacts.append(dict(episode_id=episode['episode_id'],
++                    grasped=bool(obs[0,18] > 0.5), distance=float(np.linalg.norm(obs[0,36:39]))))
+             # Locked task evaluate methods have success and no fail: reward == success.
+             assert 'fail' not in data, 'Re-audit reward semantics if a failure label is present'
+             assert np.array_equal(reward, data['success'][:].astype(float)), key
+@@ -67,6 +72,7 @@ def audit(path, seed, horizon, successful_only=False, source_metadata=None, acti
+                              terminated_count=int(data['terminated'][:].sum()),
+                              truncated_count=int(data['truncated'][:].sum()),
+                              beyond_planned_horizon=max(n-horizon,0)))
++    assert not any(r['grasped'] and r['distance'] > .1 for r in initial_contacts), 'F-E0-004: stale initial contact observation'
+     eligible = [r['episode_id'] for r in rows if not successful_only or r['success_at_end']]
+     if len(eligible) < 2:
+         raise ValueError('Need at least two eligible episodes for an independent split')
+@@ -79,7 +85,7 @@ def audit(path, seed, horizon, successful_only=False, source_metadata=None, acti
+         by_seed = {int(e['episode_seed']):e['episode_id'] for e in original['episodes']}
+         assert len(by_seed) == len(original['episodes']), 'Ambiguous duplicate source seeds'
+         source_mapping = {str(r['episode_id']):by_seed[int(r['episode_seed'])] for r in rows}
+-    return dict(alignment_validated=alignment is not None and alignment['valid'], action_source_sha256=digest(action_source_path) if action_source_path else None, dataset=str(path), dataset_sha256=digest(path), metadata_sha256=digest(metadata_path),
++    return dict(initial_contact_audit=initial_contacts, alignment_validated=alignment is not None and alignment['valid'], action_source_sha256=digest(action_source_path) if action_source_path else None, dataset=str(path), dataset_sha256=digest(path), metadata_sha256=digest(metadata_path),
+                 env_info=env_info, split_seed=seed, train_episode_ids=sorted(order[:cut]),
+                 validation_episode_ids=sorted(order[cut:]), episodes=rows,
+                 total_transitions=sum(r['transitions'] for r in rows), planned_horizon=horizon,

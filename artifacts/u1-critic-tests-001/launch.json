@@ -1,0 +1,11 @@
+{
+  "pid": 839530,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_critic_layernorm.py",
+    "tests/test_sac_contract.py"
+  ]
+}

@@ -1,0 +1,1 @@
+{"checkpoint": "checkpoints/e2-sac-a-full-001/step_65536.pt", "global_step": 65536, "initial_observations": 336, "grasped_true": 0, "grasped_true_and_tcp_distance_over_0_1m": 0, "min_tcp_distance": 0.12260401248931885, "note": "Dim18 follows locked PickCube state dict agent qpos/qvel then extra is_grasped. This checks returned observations, not a learned reward or policy score."}

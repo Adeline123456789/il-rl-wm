@@ -1,0 +1,23 @@
+{
+  "repository": "https://github.com/nicklashansen/tdmpc2",
+  "commit": "e9f59321933cbc8e11a002b842adc7d4ffae8ff1",
+  "files": {
+    "tdmpc2/common/world_model.py": {
+      "sha256": "55b85a9481d131b6b42265e15ece17bcc05f4ddf83dfd12c5be74e3a04f0d737",
+      "path": ".cache/references/tdmpc2/tdmpc2__common__world_model.py"
+    },
+    "tdmpc2/tdmpc2.py": {
+      "sha256": "de4531ce18fc1dd459f91a664c011a2db14324d34d1fc7b52e058db050c07ab8",
+      "path": ".cache/references/tdmpc2/tdmpc2__tdmpc2.py"
+    },
+    "LICENSE": {
+      "sha256": "440d4088a83d19c522dff58918bd92ccb9701c278a35295b92db2456373c4759",
+      "path": ".cache/references/tdmpc2/LICENSE"
+    },
+    "README.md": {
+      "sha256": "a51fb57e7ef47ac5755a3958739d08d2651cea8d41edf36e82a052138d29d214",
+      "path": ".cache/references/tdmpc2/README.md"
+    }
+  },
+  "role": "read_only_world_model_mechanisms_no_dependencies_installed"
+}

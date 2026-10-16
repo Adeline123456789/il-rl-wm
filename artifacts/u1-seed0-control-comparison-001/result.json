@@ -1,0 +1,122 @@
+{
+  "rows": [
+    {
+      "variant": "C continuation",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac",
+      "episodes": 16,
+      "success_once": 16.0,
+      "mean_return": 188.0625,
+      "source": "artifacts/e3-sac-c-continue-full-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "C-LN continuation",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac",
+      "episodes": 16,
+      "success_once": 16.0,
+      "mean_return": 187.375,
+      "source": "artifacts/u1-pick-seed0-c-continue-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U0",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "il",
+      "episodes": 16,
+      "success_once": 0.0,
+      "mean_return": 0.0,
+      "source": "artifacts/e6-u0-full-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U0",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "il_sac_wm",
+      "episodes": 16,
+      "success_once": 0.0,
+      "mean_return": 0.0,
+      "source": "artifacts/e6-u0-full-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U0",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac",
+      "episodes": 16,
+      "success_once": 0.0,
+      "mean_return": 0.0,
+      "source": "artifacts/e6-u0-full-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U0",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac_wm",
+      "episodes": 16,
+      "success_once": 0.0,
+      "mean_return": 0.0,
+      "source": "artifacts/e6-u0-full-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U1",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "il",
+      "episodes": 16,
+      "success_once": 0.0,
+      "mean_return": 0.0,
+      "source": "artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U1",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "il_sac_wm",
+      "episodes": 16,
+      "success_once": 13.0,
+      "mean_return": 121.25,
+      "source": "artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U1",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac",
+      "episodes": 16,
+      "success_once": 16.0,
+      "mean_return": 187.0,
+      "source": "artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl"
+    },
+    {
+      "variant": "U1",
+      "training_seed": 0,
+      "training_role": "development",
+      "total_training_interactions": 524288,
+      "method": "sac_wm",
+      "episodes": 16,
+      "success_once": 15.0,
+      "mean_return": 172.6875,
+      "source": "artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl"
+    }
+  ],
+  "sources": {
+    "artifacts/e3-sac-c-continue-full-001/validation_episodes.jsonl": "e7a670a4bd4da84546d0fff2f8da6096d83ad2688c902a7664ce23902679b176",
+    "artifacts/u1-pick-seed0-c-continue-001/validation_episodes.jsonl": "7f0e8942288618434106ffbbc68487ebd821e5e6c2dd7736ff245b21e2b26018",
+    "artifacts/e6-u0-full-001/validation_episodes.jsonl": "2e816d75fecd44470215b2d0d9d831e68d5208a2679743ff516269760f301d40",
+    "artifacts/u1-pick-seed0-u0-001/validation_episodes.jsonl": "357bc356bca7dacde8c31f5000a8e5ab2ebc391e46ab8fd894abe08986174872"
+  },
+  "final_test_accessed": false,
+  "limitation": "One development training seed; fixed validation16, not final100. C continuations share the respective C parent with U0/U1; normalization changes the C training trajectories."
+}

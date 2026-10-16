@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/diagnose_behavior.py",
+      "--input-arrays",
+      "artifacts/f-u0-behavior-u0-001/transitions.npz",
+      "--bin-size",
+      "8192",
+      "--output",
+      "artifacts/f-u0-behavior-u0-fine-001"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/diagnose_behavior.py",
+      "--input-arrays",
+      "artifacts/f-u0-behavior-control-001/transitions.npz",
+      "--bin-size",
+      "8192",
+      "--output",
+      "artifacts/f-u0-behavior-control-fine-001"
+    ],
+    "exit_code": 0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/export_deployment.py",
+      "--checkpoint",
+      "checkpoints/e6-u0-full-001/final.pt",
+      "--output",
+      "checkpoints/deployment-u0-final-001"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      ".venv/bin/python",
+      "scripts/check_deployment.py",
+      "--checkpoint",
+      "checkpoints/e6-u0-full-001/final.pt",
+      "--package",
+      "checkpoints/deployment-u0-final-001/policy.pt",
+      "--output",
+      "artifacts/deployment-u0-final-001/validation.json"
+    ],
+    "exit_code": 0
+  }
+]
