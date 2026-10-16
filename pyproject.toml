@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "il-rl-wm-lab"
+version = "0.1.0"
+description = "Evidence-backed IL/SAC/world-model experiments and persistent research handoff"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4", "requests>=2"]
+
+[project.optional-dependencies]
+simulation = ["metaworld==3.0.0", "torch==2.10.0", "h5py", "tyro", "tensorboard", "stable-baselines3==2.9.0"]
+bridge = ["mcp>=2,<3"]
+test = ["pytest>=8"]
+
+[project.scripts]
+research-lab = "lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
