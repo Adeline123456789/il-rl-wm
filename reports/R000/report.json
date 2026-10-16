@@ -1,0 +1,221 @@
+{
+  "round_id": "R000",
+  "synthetic": false,
+  "code_commit": "e3c2390ae8f33761f21150f180bc97033d533256",
+  "plan_sha256": "03f8b4c8d48f1acbbbf6d199bacd8af09b522c736c2d52f7729185922cd8d33d",
+  "experiment": "bootstrap_probe",
+  "result": {
+    "suite_smoke": {
+      "benchmark": "MT50",
+      "environments": 50,
+      "observation_shape": [
+        50,
+        39
+      ],
+      "actual_transitions": 200,
+      "finite": true
+    },
+    "datasets": [
+      {
+        "task": "reach-v3",
+        "source": "official Meta-World scripted expert",
+        "expert_class": "SawyerReachV3Policy",
+        "episodes": 10,
+        "transitions": 5000,
+        "success_rate": 1.0,
+        "split_episode_ids": {
+          "train": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "validation": [
+            6,
+            7
+          ],
+          "test": [
+            8,
+            9
+          ]
+        },
+        "dataset_path": "runtime/datasets/R000/reach-v3/trajectories.npz",
+        "sha256": "b8edc5d71b19410073dce7c7f5860ecf0ecb5798aaed75052d68abeb49cd7f7a"
+      },
+      {
+        "task": "push-v3",
+        "source": "official Meta-World scripted expert",
+        "expert_class": "SawyerPushV3Policy",
+        "episodes": 10,
+        "transitions": 5000,
+        "success_rate": 1.0,
+        "split_episode_ids": {
+          "train": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "validation": [
+            6,
+            7
+          ],
+          "test": [
+            8,
+            9
+          ]
+        },
+        "dataset_path": "runtime/datasets/R000/push-v3/trajectories.npz",
+        "sha256": "4c5ec27e1fc84e184812aa5f0dd0e3ffa728cdc85533592df120105f640146a2"
+      },
+      {
+        "task": "pick-place-v3",
+        "source": "official Meta-World scripted expert",
+        "expert_class": "SawyerPickPlaceV3Policy",
+        "episodes": 10,
+        "transitions": 5000,
+        "success_rate": 1.0,
+        "split_episode_ids": {
+          "train": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "validation": [
+            6,
+            7
+          ],
+          "test": [
+            8,
+            9
+          ]
+        },
+        "dataset_path": "runtime/datasets/R000/pick-place-v3/trajectories.npz",
+        "sha256": "9a54880ce8df7afa573308bd239f5180b0967486f7ed0dc56932db3d71a6e7fd"
+      }
+    ],
+    "bc_models": [
+      {
+        "task": "reach-v3",
+        "device": "cuda",
+        "gradient_updates": 1000,
+        "validation_mse": 0.0007921650540083647,
+        "heldout_action_mse": 0.00852123275399208,
+        "checkpoint": "runtime/checkpoints/R000/reach-v3/bc.pt",
+        "checkpoint_sha256": "d32e799107a2178be1a98514861af4dd1408e264b6a5671923fc726c2a007558"
+      },
+      {
+        "task": "push-v3",
+        "device": "cuda",
+        "gradient_updates": 1000,
+        "validation_mse": 0.011229061521589756,
+        "heldout_action_mse": 0.15216724574565887,
+        "checkpoint": "runtime/checkpoints/R000/push-v3/bc.pt",
+        "checkpoint_sha256": "64894313412093da5e7bf35f3a14da663806fc688f88670b8dfb349177532abc"
+      },
+      {
+        "task": "pick-place-v3",
+        "device": "cuda",
+        "gradient_updates": 1000,
+        "validation_mse": 0.0087892459705472,
+        "heldout_action_mse": 0.04542442411184311,
+        "checkpoint": "runtime/checkpoints/R000/pick-place-v3/bc.pt",
+        "checkpoint_sha256": "79cabaee9cabb49ae1ed9ced2b41f68b7d60180f02fc1889a89d48b85466ea48"
+      }
+    ],
+    "evaluations": [
+      {
+        "task": "reach-v3",
+        "policy": "random",
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_return": 592.7853968667476
+      },
+      {
+        "task": "reach-v3",
+        "policy": "expert",
+        "episodes": 3,
+        "successes": 3,
+        "success_rate": 1.0,
+        "mean_return": 4826.796742880534
+      },
+      {
+        "task": "reach-v3",
+        "policy": "bc",
+        "episodes": 3,
+        "successes": 3,
+        "success_rate": 1.0,
+        "mean_return": 4619.101123079691
+      },
+      {
+        "task": "push-v3",
+        "policy": "random",
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_return": 22.80966644549906
+      },
+      {
+        "task": "push-v3",
+        "policy": "expert",
+        "episodes": 3,
+        "successes": 3,
+        "success_rate": 1.0,
+        "mean_return": 4555.433080263675
+      },
+      {
+        "task": "push-v3",
+        "policy": "bc",
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_return": 33.276575016809296
+      },
+      {
+        "task": "pick-place-v3",
+        "policy": "random",
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_return": 6.154530563249339
+      },
+      {
+        "task": "pick-place-v3",
+        "policy": "expert",
+        "episodes": 3,
+        "successes": 3,
+        "success_rate": 1.0,
+        "mean_return": 4529.261679088195
+      },
+      {
+        "task": "pick-place-v3",
+        "policy": "bc",
+        "episodes": 3,
+        "successes": 0,
+        "success_rate": 0.0,
+        "mean_return": 4.24422492688483
+      }
+    ],
+    "scope": "Real data/BC/handoff engineering pilot; not a U0/U1 experiment or a multi-task MT50 score",
+    "env_transition_ledger": {
+      "smoke": 200,
+      "expert_collection": 15000,
+      "evaluation_random": 4500,
+      "evaluation_expert": 4500,
+      "evaluation_bc": 4500
+    },
+    "actual_env_transitions": 28700,
+    "seconds": 35.93448976399668,
+    "synthetic": false,
+    "torch_peak_allocated_gib": 0.021454811096191406
+  },
+  "conclusion": "engineering_validation_only"
+}

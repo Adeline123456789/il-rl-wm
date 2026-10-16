@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14",
+  "packages": {
+    "metaworld": "3.0.0",
+    "mujoco": "3.16.0",
+    "torch": "2.10.0",
+    "gymnasium": "1.4.0"
+  },
+  "cuda_available": true,
+  "cuda_runtime": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 3090"
+}
