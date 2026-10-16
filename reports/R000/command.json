@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/il_sac_wm_lab/.venv/bin/python",
+    "-u",
+    "-m",
+    "lab.tasks",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/il_sac_wm_lab/runs/R000/plan.json"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm/il_sac_wm_lab",
+  "started": "2026-10-16T07:12:36.181848+00:00",
+  "attempt": 1
+}

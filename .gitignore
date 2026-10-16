@@ -1,0 +1,13 @@
+.venv/
+runtime/
+runs/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pt
+*.h5
+*.npz
+*.zip
+.env
+/core
+/core.[0-9]*

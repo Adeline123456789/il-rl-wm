@@ -1,0 +1,19 @@
+{
+  "base_code_commit": "e3c2390ae8f33761f21150f180bc97033d533256",
+  "charter_sha256": "ae4c360e628615b73413092268822d5e3fbd85670edb870b440df80605f66b78",
+  "config": {
+    "bc_updates": 1000,
+    "benchmark": "MT1",
+    "eval_episodes": 3,
+    "expert_trajectories": 10,
+    "task": "reach-v3"
+  },
+  "env_transitions": 65536,
+  "experiment": "bootstrap_probe",
+  "num_envs": 1,
+  "parent_manifest_sha256": null,
+  "parent_round_id": null,
+  "round_id": "R000",
+  "seed": 0,
+  "timeout_seconds": 1800
+}
