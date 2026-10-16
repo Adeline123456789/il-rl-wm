@@ -9,5 +9,5 @@ __pycache__/
 *.npz
 *.zip
 .env
-core
-core.*
+/core
+/core.[0-9]*
