@@ -1,0 +1,7 @@
+{
+  "pid": 37503,
+  "command": [
+    "/home/midea/miniconda3/envs/avp_clean/bin/python3.10",
+    "artifacts/act-r0-evidence-001/run.py"
+  ]
+}

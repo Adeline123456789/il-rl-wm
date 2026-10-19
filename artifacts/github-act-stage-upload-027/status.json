@@ -1,0 +1,41 @@
+{
+  "tree": "42b3ea6a79f781298b9dd7435b3aaba47c549ebd",
+  "base_tree": "32dbc13271144062a8d7c9dda0d09355c08c5eba",
+  "remote_parent": "adb13582c7ebdadd50e803fe9e884e7d2c883a22",
+  "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "capture": "Both resource gates passed; R0 full run active at snapshot; full results not claimed",
+  "phase": "completed",
+  "started_at": 1792401691.9580364,
+  "exit_code": 0,
+  "pid": null,
+  "executor": "background connector cell",
+  "uploaded": [
+    "fab24e5e5fd01d43e9078134961a57ea83da2d91",
+    "b6a2e73a820c1392d7829c191e8ec93401eadf19",
+    "0301e46b25a9cef113ce8db949a2ea605208f1c1",
+    "8dd71a71979b0ce05232dbe22211ddbb91b11672",
+    "fce7a39e87bf123b7f6c822cc869899d66819b8e",
+    "877af42f5e74ad1e65fc5f7539c7abbc2445d9e2",
+    "cb4343b94877888fb766a8497e99d265c283e94f",
+    "75bd7135c1a3610c339eb0a537d9bc5c61445586",
+    "f8de083d7bdd6ed3d025754f7ec395f7bf39eabe",
+    "19e68d0ca2eb23a289d96750356d4536f9a746e0",
+    "9a79e511d256a204720ad356f45c7188844a799f",
+    "042b9642bb74c3024001cea289b083084a18b97a",
+    "52117d776ea8c41c9ea71347720396148996dd08",
+    "510d13e4f196eb7da7f383c9721559ab9ddc0c0e",
+    "e1172c8190dd1405f1a6e6feee4850a43747f834",
+    "0ab6050500260dfdf520fc5fda7401932384902c",
+    "4685dc3f4fbbd83d61584fa6f196c5a5b0b53d8a",
+    "cc09bf380b3942d1f5ddb3d829d6161cecc48313"
+  ],
+  "remote_commit": "76d3f79a05844a162d433cc3821c1a37caf08f77",
+  "verified_files": 3542,
+  "main_unchanged": true,
+  "draft_pr": 2,
+  "background_tool_cells": [
+    "39",
+    "41"
+  ],
+  "verified_at": "2026-10-19T09:22:55.275Z"
+}

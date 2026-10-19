@@ -1,0 +1,17 @@
+{"step": 0, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_0.pt", "bytes": 2943170, "sha256": "ed08940feabd1d26dfe869c2984bcc68102e6fb578037b25026580658a86c506"}
+{"step": 16384, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_16384.pt", "bytes": 12772743, "sha256": "d3491835ce496f140f360caa7a463831e7ccf18eb51fbbf764da9db824986561"}
+{"step": 32768, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_32768.pt", "bytes": 19080583, "sha256": "240f791644b05940c4d2aeff51adba0d5a577d2012fb4695a6dd96fd54e101ee"}
+{"step": 49152, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_49152.pt", "bytes": 25388423, "sha256": "84ede2c8eaa13bfb5faa7b0d03f0391d685a693eb0452154323c29c8bf3e3164"}
+{"step": 65536, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_65536.pt", "bytes": 31696327, "sha256": "fc7210346c720ef930ef77c273a0abe13390bce1553c68d4d5c9680089a16436"}
+{"step": 81920, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_81920.pt", "bytes": 38004167, "sha256": "2553d95c583b48e47f5b9d826cf74e9f575125836ec5237acf7bfb6dbd921408"}
+{"step": 98304, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_98304.pt", "bytes": 44312007, "sha256": "01181200da8ad443fa9d83cd9f9eaf72ec04fcb0effd21d74c281443fd861d97"}
+{"step": 114688, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_114688.pt", "bytes": 50620052, "sha256": "18a41aa9e4cd48a0938ba843095d9af145cd23f1dc3438bf29b46cb7ea0d9879"}
+{"step": 131072, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_131072.pt", "bytes": 56927892, "sha256": "039de0f7e858e057df73d40f8271fbbf8d10c329f27170548b6831499490f84b"}
+{"step": 147456, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_147456.pt", "bytes": 63235732, "sha256": "6f2c9b5187aeece190e2690f174538114a5091314c1c9f65fa805e581a9ecf33"}
+{"step": 163840, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_163840.pt", "bytes": 69543572, "sha256": "814d7110f909215c0b0547f914ee56b8594cf7a815f0c7e930d2cb2f57e54852"}
+{"step": 180224, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_180224.pt", "bytes": 75851412, "sha256": "569655684cf411a982dc156d456e018aa49524ad0ffe1301a9dc8fcaac48a3e8"}
+{"step": 196608, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_196608.pt", "bytes": 82159252, "sha256": "ea288cd93b276643ca315291cecd18e991ff2b22bbf2dae34e692500dc2a0cc7"}
+{"step": 212992, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_212992.pt", "bytes": 88467092, "sha256": "068dd97cf6513af0925b5d90350d43076fae97b614813927978d5cc4a4fa2e65"}
+{"step": 229376, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_229376.pt", "bytes": 94774932, "sha256": "89f2dd31e4964c1e123fa34f7312e5c08bd9eb3feea6e4f3de26add8fc368575"}
+{"step": 245760, "final": false, "path": "checkpoints/act-r0-expert50-seed0-001/step_245760.pt", "bytes": 101082772, "sha256": "041f0cc344a714f068ca5299c0c7251fb595d5162d0f9193c9bef0c3b8f2d37f"}
+{"step": 262144, "final": true, "path": "checkpoints/act-r0-expert50-seed0-001/final.pt", "bytes": 107380294, "sha256": "c0f9c8a17740ec36164b278f4eab5a9cf5ba247a37aad2ea88f0c0a0f48d6f2d"}
