@@ -1,0 +1,26 @@
+{
+  "act-r0-expert50-smoke-001": {
+    "one_time_setup_cleanup_seconds": 16.26552665199995,
+    "in_loop_other_seconds": 44.50240281000026,
+    "projected_full_seconds": 1266.9106074461647,
+    "previous_all_overhead_scaled_seconds": 1388.9020573361643,
+    "measured_seconds": 80.98360866399992,
+    "update_seconds": 7.50421912899958,
+    "rollout_seconds": 12.711460073000126,
+    "projected_with_margin": 1770.3293200523224,
+    "cap_seconds": 1900,
+    "rule": "One-time startup/cleanup once; scale in-loop residual 2 to17 evaluations, updates/rollouts;35% +60s. No score-based gate"
+  },
+  "act-r3-expert50-smoke-001": {
+    "one_time_setup_cleanup_seconds": 4.984087458999966,
+    "in_loop_other_seconds": 53.90338819799854,
+    "projected_full_seconds": 3815.0536583674975,
+    "previous_all_overhead_scaled_seconds": 3852.4343143099973,
+    "measured_seconds": 119.255392798,
+    "update_seconds": 47.26453275800054,
+    "rollout_seconds": 13.103384383000957,
+    "projected_with_margin": 5210.322438796122,
+    "cap_seconds": 6200,
+    "rule": "One-time startup/cleanup once; scale in-loop residual 2 to17 evaluations, updates/rollouts;35% +60s. No score-based gate"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "Authorized controls queue002: R0 smoke reused, R3 resource smoke then full controls if fit",
+  "phase": "Authorized initialization controls: both resource gates passed; R0 full training active in queue002",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -252,7 +252,8 @@
     "e7-test-act-u2-final-mean-001",
     "e7-test-act-u2-final-mean-002",
     "e7-test-act-u2-final-stochastic-002",
-    "act-r0-expert50-smoke-001"
+    "act-r0-expert50-smoke-001",
+    "act-r3-expert50-smoke-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1394,7 +1395,7 @@
       "not_efficacy_evidence": true
     }
   },
-  "next_experiment": "act-r3-expert50-smoke-001",
+  "next_experiment": "Queue002 continues R0 then R1 then R3, export and8 fixed-final tests; do not duplicate",
   "blockers": [],
   "resume": "Read FINAL_BATCH_REPORT.md and completion audit; do not restart original or completion queues; hourly automation remains deleted.",
   "background_jobs": [
@@ -1611,10 +1612,11 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "status": "106 conditions and R0 CPU prerequisite delivered; awaiting new GPU authorization",
-    "final_report": "FINAL_BATCH_REPORT.md",
-    "audit": "artifacts/act-final-completion-postprocess-001/audit.json",
-    "data_delivery_commit": "ecdc9d8f40f90f1a8f63c2a167c4a20eb14c416a"
+    "status": "Authorized initialization controls: both resource gates passed; R0 full training active in queue002",
+    "queue": "artifacts/act-initialization-batch-002/status.json",
+    "resource_gate": "artifacts/act-initialization-batch-002/resource_gate.json",
+    "gpu_budget": "configs/act_initialization_budget.json",
+    "original_batch_report": "FINAL_BATCH_REPORT.md"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -2035,7 +2037,7 @@
     "act-initialization-controls-20261019": {
       "authorization": "configs/act_initialization_budget.json",
       "limit_seconds": 11500,
-      "gpu_job_seconds_used": 80.98360866399992
+      "gpu_job_seconds_used": 200.23900146199992
     }
   }
 }
