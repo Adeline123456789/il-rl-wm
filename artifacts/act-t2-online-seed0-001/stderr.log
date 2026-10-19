@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/train_sac.py", line 10, in <module>
+    from scripts.sac_evidence import RawLabels, append_json, evaluate_policy, save_snapshot, restore_new_segment
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/sac_evidence.py", line 7, in <module>
+    import gymnasium as gym
+ModuleNotFoundError: No module named 'gymnasium'

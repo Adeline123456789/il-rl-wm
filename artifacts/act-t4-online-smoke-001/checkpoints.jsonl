@@ -1,0 +1,2 @@
+{"step": 0, "final": false, "path": "checkpoints/act-t4-online-smoke-001/step_0.pt", "bytes": 2943042, "sha256": "902a0d1a83f463ad68dd4eaa21a372e830b06cae2333bd2fe392c2c110e6d92c"}
+{"step": 8192, "final": true, "path": "checkpoints/act-t4-online-smoke-001/final.pt", "bytes": 9608582, "sha256": "e50cb9d4bffe9dd08e2e909709c7418af18e3d260e3bf27d12d99d6bb33bd463"}
