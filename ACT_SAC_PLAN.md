@@ -49,3 +49,11 @@ D1沿用3×256官方MLP Actor，原始state、单位动作范围、首动作MSE�
 CPU审计发现D1与T0虽首次reset同seed，后续批次初态不配对。锁定ManiSkill `sapien_env.py:950` 无seed且非enhanced_determinism时直接初始化；PickCube使用全局torch.rand，向量wrapper自动reset不传seed，因而策略采样/训练消耗可改变后续初态。动作重算误差仅3.15e-6，不能把此问题归为动作执行错误。
 
 新评测每8回合显式reset seed=10000+已完成回合数，保存实际seed并逐维核对40初态。固定既有K8/16/30教师的首动作/集成和D1均值/随机共8条件，各40回合；无重训、无checkpoint重选、不访问test，单次≤600秒，保持7200秒reserve。旧结果不改写，其8/40与1/40差值降为非配对描述。该项为正确性修复，不算新研究机制。旧BC/U0/U1的评测是否受同类问题影响另审查，不能把新旧协议混作严格配对。
+
+## ACT-C1 参数移植登记（2026-10-19）
+
+D1在修正配对下仍失败后，按原顺序独立研究参数迁移，不叠加在线state标签或新正则。复制冻结K30的state projection、Transformer encoder/decoder、全部30个query、zero-latent projection、位置embedding和action head；不复制CVAE训练后验encoder。教师与学生无共享storage，逐参数name/shape/dtype/hash核对。
+
+均值明确取atanh(clip(ACT copied linear head(h0), -1+1e-6, 1-1e-6))，再用标准SAC tanh-Gaussian采样/修正log_prob；这是一种已授权的数值动作映射，非把ACT输出当pre-tanh或CVAE posterior当log_prob。新的log_std head初始化-2；后续SAC时可训练。为保持条件分布定义，推理骨干dropout在训练和评测均关闭，但参数允许梯度；所有query仍参与自注意力。饱和处clamp梯度为0是明确限制，统计比例，不预先宣称在线优化有效。
+
+先CPU独立存储、全部decoder梯度、极值log_prob测试；真实GPU接口+闭环单作业≤300秒，先2次接口检查，再40回合均值与随机验证。用刚冻结的matched-reset种子和40初态核验，不重训教师、不用test。检查实际演示state上复制动作误差、饱和比例，隔离副本做一次SAC形式Actor/温度梯度探针（随机critic，仅工程检查），闭环只评估未更新的参数复制模型。无在线训练或WM，不能将初始动作对齐称为SAC学得更好。保留7200秒reserve。

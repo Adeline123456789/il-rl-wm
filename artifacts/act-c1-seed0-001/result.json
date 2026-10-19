@@ -1,0 +1,55 @@
+{
+  "real_expert_states": 55092,
+  "initial_action_max_abs": 1.0728836059570312e-06,
+  "initial_action_mse": 2.548404300855337e-13,
+  "saturated_action_fraction": 0.24777190880708633,
+  "copied_tensor_count": 70,
+  "teacher_unchanged": true,
+  "methods": {
+    "transfer_mean": {
+      "method": "transfer_mean",
+      "episodes": 40,
+      "success_once": 8.0,
+      "success_at_end": 4.0,
+      "mean_return": 12.3,
+      "stage_counts": {
+        "approached": 28,
+        "is_grasped": 28,
+        "lifted": 14,
+        "is_obj_placed": 8
+      },
+      "latency_batch8_ms_mean": 1.373218371940311,
+      "latency_batch8_ms_p95": 1.5253929130267352,
+      "inference_scope": "transfer_mean; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_vs_teacher": 0.0
+    },
+    "transfer_stochastic": {
+      "method": "transfer_stochastic",
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.025,
+      "stage_counts": {
+        "approached": 33,
+        "is_grasped": 13,
+        "lifted": 9,
+        "is_obj_placed": 3
+      },
+      "latency_batch8_ms_mean": 1.6432184736477211,
+      "latency_batch8_ms_p95": 1.8280131014762446,
+      "inference_scope": "transfer_stochastic; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_vs_teacher": 0.0
+    }
+  },
+  "elapsed_seconds": 81.30926746997284,
+  "torch_peak_allocated_bytes": 231443456,
+  "train_interactions": 0,
+  "final_test_accessed": false,
+  "actor_parameters": 940808,
+  "online_learning_verified": false,
+  "note": "Initial parameter preservation and stochastic execution only; online SAC superiority/forgetting untested"
+}

@@ -1,0 +1,1 @@
+{"pid": 2776528, "command": [".venv/bin/python", "-m", "pytest", "-q", "tests"]}

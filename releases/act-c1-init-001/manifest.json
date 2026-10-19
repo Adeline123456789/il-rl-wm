@@ -1,0 +1,19 @@
+{
+  "source_teacher": {
+    "experiment": "act-t0-k30-seed0-001",
+    "chunk_size": 30,
+    "checkpoint": "checkpoints/act-t0-k30-seed0-001/final.pt",
+    "checkpoint_sha256": "ce576c9632c3fb4c44d9a49df8ec8996443287a8bcefb8ac2b441a5914f35acc",
+    "portable": "releases/act-teacher-k30-001/weights.pt",
+    "portable_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+    "mode": "current-state first action; latent=0; no temporal ensemble",
+    "normalization": "none; raw state; action clamp [-1,1]",
+    "seed": 10000,
+    "selection": "fixed final; first-action success_once then success_at_end then smaller K",
+    "limitation": "single development seed; 8/40 first-action successes, 4/40 end successes; usable threshold only"
+  },
+  "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271",
+  "teacher_required_at_deployment": false,
+  "requires_class": "scripts.act_sac_actor.ACTSACActor",
+  "online_training_completed": false
+}

@@ -42,6 +42,10 @@ import mani_skill.envs
 @dataclass
 class Args:
     output: str = ""
+    actor_init_checkpoint: Optional[str] = None
+    actor_init_kind: str = 'mlp'
+    initial_log_std: Optional[float] = None
+    matched_eval_resets: bool = False
     bc_checkpoint: Optional[str] = None
     expert_dataset: Optional[str] = None
     expert_audit: Optional[str] = None
@@ -321,6 +325,8 @@ class Logger:
 
 if __name__ == "__main__":
     args = tyro.cli(Args)
+    assert args.actor_init_kind in {'mlp','act'}
+    assert not (args.actor_init_checkpoint and (args.bc_checkpoint or args.resume_checkpoint or args.wm_checkpoint)), 'Offline ACT initialization is a separate no-planning experiment'
     assert bool(args.expert_dataset) == bool(args.expert_audit)
     assert bool(args.wm_checkpoint)==bool(args.task_value_checkpoint)
     if args.wm_checkpoint:
@@ -328,7 +334,7 @@ if __name__ == "__main__":
     if args.resume_checkpoint:
         assert args.autotune and args.learning_starts==0, 'Resume as a new segment with retained replay and immediate updates'
     if args.expert_dataset:
-        assert args.bc_checkpoint and args.batch_size % 2 == 0, 'C uses BC initialization and exactly 50% expert samples'
+        assert (args.bc_checkpoint or args.actor_init_checkpoint) and args.batch_size % 2 == 0, 'Expert mixture requires explicit offline initialization and exactly 50% expert samples'
     assert args.output and not args.track and not args.capture_video and not args.save_trajectory
     assert not args.evaluate and args.checkpoint is None, 'Use explicit evaluation/restart entry; no implicit optimizer reset'
     assert not args.partial_reset and not args.eval_partial_reset and args.bootstrap_at_done == 'always'
@@ -416,6 +422,9 @@ if __name__ == "__main__":
     max_action = float(envs.single_action_space.high[0])
 
     actor = Actor(envs).to(device)
+    from scripts.sac_actor_initialization import initialize_actor
+    actor, actor_initialization = initialize_actor(actor, args.actor_init_checkpoint,
+        args.actor_init_kind, args.initial_log_std)
     frozen_il = None
     if args.bc_checkpoint:
         # Loading BC must not shift fresh critic/variance initialization or rollout RNG.
@@ -430,6 +439,11 @@ if __name__ == "__main__":
     qf2 = SoftQNetwork(envs,args.critic_layer_norm).to(device)
     qf1_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
     qf2_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
+    if args.actor_init_checkpoint or args.initial_log_std is not None:
+        actor_initialization.update(actor_hash=fingerprint(actor),critic1_hash=fingerprint(qf1),
+            critic2_hash=fingerprint(qf2),critic_layer_norm=args.critic_layer_norm,
+            bc_checkpoint=args.bc_checkpoint,teacher_calls_in_sac_updates=False)
+        (output/'actor_initialization.json').write_text(json.dumps(actor_initialization,indent=2))
     if args.checkpoint is not None:
         ckpt = torch.load(args.checkpoint)
         actor.load_state_dict(ckpt['actor'])

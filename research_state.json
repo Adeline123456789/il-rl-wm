@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 65485.73694442492,
+    "gpu_job_seconds_used": 65570.63855017291,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -168,7 +168,8 @@
     "act-t0-k30-seed0-001",
     "act-d1-smoke-001",
     "act-d1-seed0-001",
-    "act-matched-eval-001"
+    "act-matched-eval-001",
+    "act-c1-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1077,9 +1078,64 @@
       "checkpoint_selection": "original fixed-final K30 frozen before D1; no reselection from this corrected evaluation",
       "final_test_accessed": false,
       "torch_peak_allocated_bytes": 33825280
+    },
+    "act_c1_seed0_001": {
+      "real_expert_states": 55092,
+      "initial_action_max_abs": 1.0728836059570312e-06,
+      "initial_action_mse": 2.548404300855337e-13,
+      "saturated_action_fraction": 0.24777190880708633,
+      "copied_tensor_count": 70,
+      "teacher_unchanged": true,
+      "methods": {
+        "transfer_mean": {
+          "method": "transfer_mean",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.373218371940311,
+          "latency_batch8_ms_p95": 1.5253929130267352,
+          "inference_scope": "transfer_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        },
+        "transfer_stochastic": {
+          "method": "transfer_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.025,
+          "stage_counts": {
+            "approached": 33,
+            "is_grasped": 13,
+            "lifted": 9,
+            "is_obj_placed": 3
+          },
+          "latency_batch8_ms_mean": 1.6432184736477211,
+          "latency_batch8_ms_p95": 1.8280131014762446,
+          "inference_scope": "transfer_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        }
+      },
+      "elapsed_seconds": 81.30926746997284,
+      "torch_peak_allocated_bytes": 231443456,
+      "train_interactions": 0,
+      "final_test_accessed": false,
+      "actor_parameters": 940808,
+      "online_learning_verified": false,
+      "note": "Initial parameter preservation and stochastic execution only; online SAC superiority/forgetting untested"
     }
   },
-  "next_experiment": "Independent ACT inference-parameter transfer, copied tensor/storage audit and matched-reset closed-loop evaluation; D1 mean1/40 stochastic0/40 vs fixed K30 teacher8/40. No WM before migration validation.",
+  "next_experiment": "Bounded T5/T4 no-planning SAC smokes at common LN critic and log_std=-2; full training not yet scheduled.",
   "blockers": [],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
@@ -1253,9 +1309,10 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "f06a11b11bea25e34a89f744eb2d263b5b236fdc",
-    "local_snapshot_commit": "9a38aadd63388177a99063a68728183e3e6e3be3",
-    "verification": "artifacts/github-act-stage-upload-001/status.json"
+    "remote_commit": "73be557fcf96aba795f0f54625134b2cdf49dfb8",
+    "local_snapshot_commit": "acefcbf02f59f96341df34e6dbaec0d2ae43936f",
+    "verification": "artifacts/github-act-stage-upload-002/status.json",
+    "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
     {
@@ -1283,7 +1340,7 @@
   "act_research": {
     "task": "ACT→SAC transfer, user authorized 2026-10-17",
     "plan": "ACT_SAC_PLAN.md",
-    "phase": "teacher_validated_D1_negative_matched_resets",
+    "phase": "C1_mean_preserved_online_smoke_ready",
     "branch": "research/act-sac-transfer",
     "cpu_tests": "artifacts/act-cpu-tests-003",
     "cpu_real_data": "artifacts/act-real-data-cpu-002",
@@ -1292,7 +1349,7 @@
     "old_training_preserved": true,
     "budget_reset": false,
     "distillation_first_data": "expert_train_states_only",
-    "parameter_transfer": "not_started",
+    "parameter_transfer": "artifacts/act-c1-seed0-001/result.json",
     "wm": "unchanged",
     "upload": "each validated small stage, background, new branch; no main merge",
     "cpu_preflight": {
@@ -1305,14 +1362,14 @@
     "continuation": {
       "automation_id": "il-rl-wm-act",
       "kind": "heartbeat",
-      "hourly_checks_limit": 24,
-      "stage": "D1_completed_failure_diagnosis_then_independent_parameter_transfer",
-      "stop_on": "batch complete or shared GPU budget exhausted"
+      "hourly_checks_limit": null,
+      "stage": "independent_parameter_transfer_next",
+      "stop_on": "batch completion, original shared budget exhausted, or no authorized progress; pause automation"
     },
     "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
     "distillation": "artifacts/act-d1-seed0-001/result.json",
     "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
-    "next_stage": "independent ACT inference parameter transfer with matched reset protocol; no WM",
+    "next_stage": "T5/T4 online interface/resource smokes, then register common full budget",
     "teacher_selection_unchanged": true
   }
 }
