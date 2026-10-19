@@ -1,0 +1,20 @@
+{
+  "path": "releases/final-u1-pick-seed1-u0-001/weights.pt",
+  "bytes": 4493864,
+  "sha256": "dfd5900571aae93184dacf7d1a3ac30e3f8d7144eb8e439f0d40c3b6b39d814a",
+  "source": {
+    "path": "checkpoints/u1-pick-seed1-u0-001/final.pt",
+    "sha256": "12c7bf6a76bd83044f231c9c5f98a1693e51fa3f54c3430ea88b8b0483655e40"
+  },
+  "env_id": "PickCube-v1",
+  "training_seed": 1,
+  "lineage_training_interactions": 524288,
+  "purpose": "Frozen diagnosis and independent evaluation. Use separate deployment package for IL-free planning.",
+  "includes_frozen_il": true,
+  "omitted": [
+    "optimizers",
+    "replay",
+    "RNG"
+  ],
+  "training_resume_supported": false
+}

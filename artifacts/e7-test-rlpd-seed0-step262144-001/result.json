@@ -1,0 +1,27 @@
+{
+  "policy": "releases/final-rlpd-seed0-step262144-001",
+  "actor_sha256": "773f1a125222635ac833c95797620a1acf644993b7c290f9fd111304f461a2ff",
+  "training_seed": 0,
+  "training_interactions": 262144,
+  "purpose": "final_test",
+  "seed": 20000,
+  "episodes": 100,
+  "num_envs": 10,
+  "success_once": 30.0,
+  "success_at_end": 21.0,
+  "mean_return": 41.37,
+  "interactions": 20000,
+  "elapsed_seconds": 63.867349356005434,
+  "new_training_interactions": 0,
+  "checkpoint_selection": "fixed final",
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "reward_mode": "sparse",
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "ignore_terminations": true,
+    "reset_protocol": "explicit_batch_seed"
+  }
+}
