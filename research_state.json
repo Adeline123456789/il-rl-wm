@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 69055.98003123282,
+    "gpu_job_seconds_used": 72799.44164531078,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -175,7 +175,8 @@
     "act-t2-online-seed0-001",
     "act-t2-online-seed0-002",
     "act-t3-online-seed0-001",
-    "act-t4-online-seed0-001"
+    "act-t4-online-seed0-001",
+    "act-t5-online-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1250,6 +1251,43 @@
           "final": -0.2760038673877716
         }
       }
+    },
+    "act_t5_online_seed0_001": {
+      "id": "act-t5-online-seed0-001",
+      "status": "completed",
+      "initial_success": 8,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 3743.461614077969,
+      "peak_device_mib": 5769,
+      "actor_parameters": 940808,
+      "checkpoint_sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 1.3786185490971548e-06,
+          "max": 0.7408556342124939,
+          "final": 1.3786185490971548e-06
+        },
+        "losses/qf1_values": {
+          "min": 0.2759428918361664,
+          "max": 56.315406799316406,
+          "final": 0.2759428918361664
+        },
+        "losses/qf2_values": {
+          "min": 0.2799265384674072,
+          "max": 56.315059661865234,
+          "final": 0.2799265384674072
+        },
+        "losses/actor_loss": {
+          "min": -56.79010772705078,
+          "max": -0.2783903181552887,
+          "final": -0.2783903181552887
+        }
+      }
     }
   },
   "next_experiment": "Frozen T2-T6 same-critic equal-interaction online comparison, original 24h cap and 7200s reserve; analyze full results before local retention changes.",
@@ -1419,7 +1457,7 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "act-t5-online-seed0-001",
+    "experiment": "act-t6-online-seed0-001",
     "authoritative_live_file": "artifacts/act-online-batch-002/status.json",
     "note": "Snapshot; check authoritative live status before acting"
   },
@@ -1432,9 +1470,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "3eedce553466c0809101fd55d856645d3520a97c",
-    "local_snapshot_commit": "2588d7f7f8d3ffde02a49c7cfc255100ad06f27b",
-    "verification": "artifacts/github-act-stage-upload-010/status.json",
+    "remote_commit": "f32a7d6f795d67fb93d4ab9f239415daeba2190c",
+    "local_snapshot_commit": "7892c38541e7e24aae9450852e10bfcd61f091a6",
+    "verification": "artifacts/github-act-stage-upload-011/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1500,7 +1538,7 @@
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
-    "latest_online_summary": "artifacts/act-online-summary-003/summary.json",
+    "latest_online_summary": "artifacts/act-online-summary-004/summary.json",
     "inference_export_stage": {
       "tests": "artifacts/act-inference-cpu-tests-001",
       "tests_passed": 16,
@@ -1521,9 +1559,11 @@
       "existing_probe_parity": "artifacts/act-drift-parity-001/result.json",
       "postprocess_status": "artifacts/act-online-postprocess-001/status.json",
       "full_run_drift_completed": [
-        "act-t4-online-seed0-001"
+        "act-t4-online-seed0-001",
+        "act-t5-online-seed0-001"
       ]
     },
-    "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json"
+    "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json",
+    "t5_actual_online_behavior_audit": "artifacts/act-online-behavior-audit-002/portable-manifest.json"
   }
 }

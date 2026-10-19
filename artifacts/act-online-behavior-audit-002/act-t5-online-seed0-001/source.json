@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/act-t5-online-seed0-001/final.pt",
+  "sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+  "training_seed": 0,
+  "inherited_interactions": 0
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "experiment": "act-t5-online-seed0-001",
+    "transitions": 262144,
+    "positive_reward_transitions": 0,
+    "grasped_observation_transitions": 10,
+    "unique_grasped_episodes": 2,
+    "episodes_seen": 1312,
+    "successful_episodes": 0
+  }
+]

@@ -1,5 +1,16 @@
 # 后续工作（首批执行中）
 
+## 2026-10-19 ACT 阶段更新
+
+以下2026-10-16内容保留为历史计划。旧注册训练现已完成，原始证据复算见HISTORICAL_VALIDATION.md；当前任务改由ACT_SAC_PLAN.md、research_state.json及真实队列状态控制。T2/T3/T4/T5均已完成同262144交互对照，T5从初始8/40降为final0/40；T6仍运行。下一步：
+
+1. 等待原T6及CPU后处理队列结束，统一比较T2–T6；不启动重复作业。根据完整结果和扣除7200秒reserve后的实际余量，决定是否还能进行一项有界、单机制技能保持实验；不足时保留负结果及未完成研究项。
+2. GPU空闲且预算足够时，经run_experiment执行act-independent-eval-smoke-001（≤300秒），用validation seed10000验证6模式×10回合、10环境及初态一致；当前尚未执行，不能跳过。
+3. 比较与checkpoint选择规则冻结或明确关闭有限负结果阶段后，记录理由并释放configs/act_final_test_gate.json。以新队列ID执行configs/act_final_evaluation_plan.json：原88条件不变，加16个ACT条件，共享原7200秒总上限。旧最终等待器已超时，不复用其ID；尚未访问seed20000。
+4. 从原始episode文件汇总全部104条件，报告失败/缺失；完成ACT十二问题与原PROMPT十问题的证据对应、源码历史归档和最终后台交付。迁移没有得到验证前，ACT-WM阶段仍不放行；旧U0/U1主干与负结果保持原样。
+
+每个经过验证的小阶段已按用户新要求增量后台更新研究分支/PR #2；不等整批结束才上传，不自动合并main。
+
 截至 2026-10-16，本文件记录未完成事项，不代表批次结项。实时任务以 `research_state.json` 和各管线 `status.json` 为准；总限额仍为 24 GPU 作业小时，其中保留 2 小时最终评测。只使用一个已登记研究改动 U1（SAC critic LayerNorm）。
 
 1. 完成已排队的独立 PickCube 训练种子、隔离 RLPD 完整基线和 StackCube/PegInsertionSide 开发运行。Pick seeds1–4 分别从头训练 BC；U0/U1 与各自 C 续训对照按累计交互预算配对。失败或预算不足的条件保留，不以零分填充或按成绩删除。

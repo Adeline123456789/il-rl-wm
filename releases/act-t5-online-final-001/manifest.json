@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-t5-online-seed0-001/final.pt",
+  "source_sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+  "portable": "releases/act-t5-online-final-001/weights.pt",
+  "portable_sha256": "1ac068d572bbf9d8fdc1fa08d016fefbdd72d684dd34de025f5c77f1f01ad44b",
+  "bytes": 3791992,
+  "actor_kind": "act",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}
