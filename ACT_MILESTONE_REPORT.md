@@ -1,15 +1,15 @@
 # ACT→SAC 研究里程碑：证据边界与问题回答
 
-2026-10-19。**阶段稿，尚未结项**：U2全长实验及审计已结束，106个最终测试条件已放行、尚无完成结果。以下数值均为固定末次开发验证，不能替代最终测试或独立训练重复。方法、检查点选择与局部假设额度已固定，不再按最终测试成绩调参。
+2026-10-19。**阶段稿，尚未结项**：U2全长实验及审计已结束，106个最终测试条件已放行、部分条目完成但整批尚未结束。以下数值均为固定末次开发验证，不能替代最终测试或独立训练重复。方法、检查点选择与局部假设额度已固定，不再按最终测试成绩调参。
 
 ## 证据入口
 
 - 教师和初始化：`ACT_TRANSFER_REPORT.md`、`artifacts/act-matched-eval-001/`、`artifacts/act-c1-seed0-001/`。
-- 完整T2–T6：`artifacts/act-online-summary-005/{summary.json,curves.csv}`；每项262144真实训练交互、64528更新、136000验证交互、同fresh双LN Critic。
+- 完整T2–T6：`artifacts/act-online-summary-006/{summary.json,curves.csv}`；每项262144真实训练交互、64528更新、136000验证交互、同fresh双LN Critic。
 - 失败及真实行为：`ACT_FAILURES.md`、`artifacts/act-t4-online-drift-001/`、`artifacts/act-t5-online-drift-001/`、`artifacts/act-t6-online-drift-001/`和各真实replay便携审计。
 - U2：`U2_CHANGE.md`及`artifacts/act-u2-budget-001/plan.json`；只有早期Actor均值保持一项改动，不向Critic加入专家转移。全长末次0/40，完整结论见文末U2记录。
 - 历史完整U0/U1/外部基线：`HISTORICAL_VALIDATION.md`与`artifacts/historical-evidence-001/`；88个历史条件的原始验证证据可解包复算。
-- 正式测试计划：`configs/act_final_evaluation_plan.json`，88历史+18ACT，共106条件，各100回合，整批共用7200秒。开发比较已冻结、gate放行，所有正式成绩仍待实际结果。
+- 正式测试计划：`configs/act_final_evaluation_plan.json`，88历史+18ACT，共106条件，各100回合，整批共用7200秒。开发比较已冻结、gate放行，正式结果按原始episode逐项核验，整批终态汇总仍待完成。
 
 ## ACT任务的12个问题
 
@@ -55,3 +55,5 @@ U2完成262144真实训练交互/64528更新，3735.248300秒，整卡峰值5770
 F-ACT-02/U2：固定专家状态夹爪MSE在16384步仅0.003594（T5约0.98048），65536步0.017949，末次1.142592；但65536时闭环已经失败。这说明专家状态均值保持不能直接保证在线随机探索或闭环成功；不能把失败全部归因于约束归零，失败发生在截止前。分布覆盖、方差和Critic因素未独立识别，不追加机制。原始证据为act-online-summary-006、act-u2-online-drift-001、act-u2-online-behavior-001和act-u2-comparison-audit-001。
 
 开发阶段有界关闭，方法/模型选择冻结，放行原106条件最终评测；ACT-WM、多seed/多任务仍未完成。最终评测前总账78026.169781秒，剩余8373.830219秒，其中7200秒保持原最终整批上限。新队列002恢复评测，不重用旧超时队列，不改main。
+
+本批逐项完成性核对见BATCH_REQUIREMENTS_AUDIT.md，U2详细验收和开发图见ACT_U2_FINAL_REVIEW.md。只读终态审计已接至原最终003后，不启动新GPU；不能把运行中预审当最终交付。

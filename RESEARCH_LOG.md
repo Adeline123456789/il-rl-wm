@@ -354,3 +354,7 @@ K30首动作/集成逐阶段复算：抓取28/40→40/40、抬升14→36、放�
 WSRL/DAWN论文方法与作者代码定向核验、11文件Git blob/SHA验证；WSRL未见LICENSE，DAWN空LICENSE且依赖缺项，均只读参考、不混装框架。源码版本和边界保存literature/wsrl_dawn_source_manifest.json及ACT_RELATED_WORK。R0/R1/R3完整配置与总11500秒新预算草案已准备但未授权/未排队；R0当前入口禁止无离线初始化的expert混合，作为下一批前置接口修复记录，不伪造随机checkpoint。
 
 已生成ACT_U2_FINAL_REVIEW/ACT_TRANSFER_CAUSAL_GAPS/NEXT_RESEARCH_BATCH，含10问回答及因果边界。修正research_state中过时“U2仍在运行、final未访问”的派生字段，旧字段快照保留act-next-stage-intake-001；不改预算账本和实验条目。最终吞吐只依据已完成计时，14条完成时剩余5712.91秒，余项预测5978.72–7603.40秒（含当前在跑项全额，保守）。可能无法覆盖106条件，仍按既定顺序和原cap，不按分数取子集，不新增预算，未完成保持null。
+
+2026-10-19 上一goal turn为progress：U2验收、真实状态梯度、WSRL/DAWN核验、下一批方案及远端ac6dce2的2491文件核对完成。本轮实际PID3003841仍活跃，继续同一最终评测，不重启。新增只读终态交付审计，预审正常退出：当前已完成正式条目原始回合汇总/源码tar/patch/权重hash一致，全部已结束GPU作业总账79869.991407秒逐项相等，无manifest时间重叠。预审非终态完成声明；CPU等待器3048031将在003 launcher完成或失败后复算终态，不启动GPU。
+
+补充两张开发科研图，包含全部102个成功率点和10个固定专家状态漂移点，零新增仿真。001静态检查对字体/动态导出表达式识别失败，改为明确字体/导出后002源审计与绘图通过；项目Python缺PyMuPDF使PDF碰撞检查退出2，未安装依赖，使用已有host Python仅做中立PDF检查，QA001两图均通过并目视检查。失败日志保留。新增BATCH_REQUIREMENTS_AUDIT逐项区分实现、科学证据不足、运行中和待授权；不能由机械审计或文档存在宣称完整目标完成。

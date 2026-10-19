@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 79601.06649224384,
+    "gpu_job_seconds_used": 80490.47367936885,
     "local_changes_limit": 2,
     "local_changes_used": 2,
     "final_evaluation_reserve_seconds": 7200
@@ -196,7 +196,13 @@
     "e7-test-pick-seed2-c-001",
     "e7-test-pick-seed2-c-continue-001",
     "e7-test-pick-seed2-u0-001",
-    "e7-test-stack-seed0-a-001"
+    "e7-test-stack-seed0-a-001",
+    "e7-test-stack-seed0-b-001",
+    "e7-test-stack-seed0-c-001",
+    "e7-test-stack-seed0-c-continue-001",
+    "e7-test-stack-seed0-u0-001",
+    "e7-test-peg-seed0-a-001",
+    "e7-test-peg-seed0-b-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1547,11 +1553,11 @@
   "upload_access": {
     "local_git_https": "no credential; dry-run exit128",
     "github_connector": "authenticated as repository owner; metadata reports push permission",
-    "status": "Stage17 tree verified; latest CPU next-stage evidence pending incremental upload",
+    "status": "Stage18 CPU review/config/raw evidence uploaded; all2491 remote file blobs/modes verified; PR2 draft",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "d3cc98339c00dd197953926cd659b6e82753902a",
+    "remote_commit": "ac6dce22612546d53b091dbdb9435ff52f611277",
     "local_snapshot_commit": null,
-    "verification": "artifacts/github-act-stage-upload-017/status.json",
+    "verification": "artifacts/github-act-stage-upload-018/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2",
     "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c"
   },

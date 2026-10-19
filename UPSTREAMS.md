@@ -91,3 +91,9 @@ F-E0-005本地replay补丁在CPU/GPU保存时附加source/original episode ID，
 - Read: `sf_examples/nethack/algo/learning/learner.py` retention losses/schedule; `sf_examples/nethack/models/kickstarter.py` teacher freezing and execution; LICENSE.
 - Role: read-only NetHack implementation reference for F-ACT-02. No code copied, no dependencies installed. Does not verify the paper's RoboticSequence SAC supplementary code.
 - Hash manifest: `literature/forgetting_mitigation_source_manifest.json`; interpretation and limits: `ACT_RELATED_WORK.md`.
+
+## 2026-10-19 只读补充与状态校正
+
+前文“教师闭环/完整U0/RLPD尚未完成”为初次接入时的历史记录；实际这些开发作业现均完成，最终测试仍进行。各阶段当前结果以ACT_TRANSFER_REPORT、HISTORICAL_VALIDATION、research_state及manifest为准。
+
+WSRL https://github.com/zhouzypaul/wsrl 锁定ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2，ICLR2025论文2412.07762；树内未发现LICENSE，许可不推定。DAWN https://github.com/Guozheng-Ma/DAWN 锁定71122b7fa89568bc2d49831fed8cb1b01e5a91e8，ICML2026论文见PMLR306/ma26s；LICENSE为0字节，未验证可运行依赖完整性。两者11文件Git blob/SHA见literature/wsrl_dawn_source_manifest.json，具体读取范围和机制边界见ACT_RELATED_WORK。全部只读，无源码复用/修改/新增主环境依赖。

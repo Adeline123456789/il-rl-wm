@@ -48,3 +48,11 @@ CPU001的严格float32恒等导数容差失败（最大差4.59e−5），保留�
 T5/U2整GPU作业分别3743.462/3735.248秒，峰值5769/5770MiB；这些作业时间含17次验证，未单独记录每次验证GPU时间，不伪造拆分。CPU诊断新增环境交互0、优化更新0。
 
 证据链：F-ACT-02 → 早期策略退化 → IBRL/RFT和遗忘保持文献 → 单一有限均值约束 → T5/U2配对初始条件完整对照 → 固定末次同为0/40 → 有界关闭此假设。未扩大λ搜索，不加入第三机制。方差、真实状态覆盖、Critic与warmup仍为竞争解释。
+
+## 可复算图
+
+![Online development success](artifacts/act-development-figures-002/figures/online_success.png)
+
+![Expert-state gripper mean drift](artifacts/act-development-figures-002/figures/gripper_mean_drift.png)
+
+两图使用全部已记录开发点，不使用正式测试；一训练seed不绘制伪造的seed误差带。CSV、来源哈希、PDF/SVG/PNG与绘图脚本一并保存。文字/碰撞审计和逐图目视检查见artifacts/act-development-figure-qa-001。
