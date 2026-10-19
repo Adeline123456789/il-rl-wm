@@ -2,7 +2,7 @@
 
 先读FINAL_BATCH_REPORT.md、research_state和终态审计。104/106条件完成；不再等待已退出的3003841/3048031，不重跑原001/002/003队列。每小时自动化已由用户删除，不恢复。
 
-当前只可继续CPU证据交付。补齐U2两项测试的300秒final-cap扩展提案位于configs/act_final_completion_proposal.json，从24小时剩余1268.454秒内支付，但尚未获准；无新训练。R0/R1/R3训练11500秒另须明确授权，见NEXT_RESEARCH_BATCH.md。模型与seed冻结，失败记录保留，补评必须新attempt ID并完整记费。
+本批CPU证据和报告已交付a00ff2c，当前没有已授权的新GPU作业。补齐U2两项测试的300秒final-cap扩展提案位于configs/act_final_completion_proposal.json，从24小时剩余1268.454秒内支付，但尚未获准；无新训练。R0/R1/R3训练11500秒另须明确授权，见NEXT_RESEARCH_BATCH.md。模型与seed冻结，失败记录保留，补评必须新attempt ID并完整记费。
 
 以下为历史续接记录，不代表现有作业仍运行：
 

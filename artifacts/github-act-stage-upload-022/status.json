@@ -1,0 +1,19 @@
+{
+  "phase": "completed",
+  "exit_code": 0,
+  "pid": null,
+  "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "tree": "212eca403a0fbf7e4f626cb9040b431c40370441",
+  "remote_parent": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
+  "started_at": "2026-10-19T08:08:55.838Z",
+  "uploaded": 194,
+  "background_tool_cells": [
+    "90",
+    "94"
+  ],
+  "remote_commit": "a00ff2cd852dd2cc16847995c529f9ed918f451f",
+  "verified_files": 3398,
+  "main_unchanged": true,
+  "draft_pr": 2,
+  "verified_at": "2026-10-19T08:19:05.058Z"
+}

@@ -1,0 +1,1725 @@
+{
+  "audit_path": "artifacts/act-final-delivery-audit-001/audit/result.json",
+  "audit_sha256": "0c4a012659921d693d12afbb8c956bfdee71c8181f666b3a9bcba22e6e399563",
+  "job_count": 214,
+  "commit_count": 46,
+  "archive_regenerated": false,
+  "reason": "Existing restored base+increment archive contains all46 execution commits; final runtime snapshots/patches are delivered with each job. No recursive inclusion of the published archive into a new bundle.",
+  "limitations": [
+    "Coverage proves commit presence, not recovery of every old uncommitted file; historical missing plot bytes remain documented."
+  ],
+  "jobs": [
+    {
+      "experiment_id": "act-c1-seed0-001",
+      "code_commit": "33b07a71a68967b21ce7c9fb7eac59470ddd6b81",
+      "manifest_path": "artifacts/act-c1-seed0-001/manifest.json",
+      "manifest_sha256": "1c1a350c17ccc00ad62ea5622ed90782f824de31e9ab465cde507cd30d29bc0f",
+      "source_snapshot_sha256": "4a7e2e1efc4c91a42efa5d6b9608ebfbbf9b261b089b29f42de3fe99dda07e71",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "act-d1-seed0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-d1-seed0-001/manifest.json",
+      "manifest_sha256": "55100a63b0c5fb86ccf0d909ae29cdc5f8a0688c50e243fc1f90e514d4a7e377",
+      "source_snapshot_sha256": "aa0dfe52226862180603323c367eb988de1c1d9575793086c96cc9f7f6b71cfb",
+      "tracked_patch_sha256": "cabbd3b31f72abd87a8ac5197feee05baf33c6c0e8e0d97fac7fcb1588832c96"
+    },
+    {
+      "experiment_id": "act-d1-smoke-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-d1-smoke-001/manifest.json",
+      "manifest_sha256": "b1cbb40612247b3ba3dde9391753efa5e4e5bc724d479ffc33d45b171454dd5c",
+      "source_snapshot_sha256": "a8385878e371fbe71f831f36b71f38211cda5e1a5254b09b4ba6c6a645adff13",
+      "tracked_patch_sha256": "54de5cdb336b5c74ff6c8149d2ebc46f761fa850582f6bb3b8d9629ecd2bddcf"
+    },
+    {
+      "experiment_id": "act-independent-eval-smoke-001",
+      "code_commit": "261b0b525cc0fe3fbbf0de853602cea3065ee376",
+      "manifest_path": "artifacts/act-independent-eval-smoke-001/manifest.json",
+      "manifest_sha256": "b340594b38a1b34a53a276442627ef22d8af03898f2f80849ec01f336d5585e7",
+      "source_snapshot_sha256": "8129f559d945b949b27ca19fbb36020fa4009f6eafb7368004446ec8b83b1788",
+      "tracked_patch_sha256": "9dd0376e79e95b8eeb1c7d91fa74a96dcdf99776fa95eca85b3a9c0a0a44133f"
+    },
+    {
+      "experiment_id": "act-matched-eval-001",
+      "code_commit": "9a38aadd63388177a99063a68728183e3e6e3be3",
+      "manifest_path": "artifacts/act-matched-eval-001/manifest.json",
+      "manifest_sha256": "9bcd98519e545a0b4c68c347958d84c1dc5924f8f4154d6a2852af538238ab88",
+      "source_snapshot_sha256": "08ab7c904bbd3dcfeedc1c956e24b94c0df0eb6ee0dd7093f12673b01354ff69",
+      "tracked_patch_sha256": "9454983939726c365f30827b4a8e4531fd534962bcb1a69da6564fe375b074be"
+    },
+    {
+      "experiment_id": "act-t0-k16-seed0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-t0-k16-seed0-001/manifest.json",
+      "manifest_sha256": "eb0f50f5ec94770a331aade8338bb42911494d91aeda32ead2b2b76968488b14",
+      "source_snapshot_sha256": "8cf5c089a6666f783a143fbb46118dd2d7c784cb9c711667dfb646c31d3ce0d4",
+      "tracked_patch_sha256": "38f51745a0210d5243df80b9dfd02766bfcc133f774e656a967db466dea4cbcc"
+    },
+    {
+      "experiment_id": "act-t0-k30-seed0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-t0-k30-seed0-001/manifest.json",
+      "manifest_sha256": "ea1090cf4ac9cbb43c04633cd2d949f850ecf4ba9189111637b1c8aed931e927",
+      "source_snapshot_sha256": "d9e1e1660a6e106d710ea08cd6260c307bf0eb06137a8b9f560b5fba9a8a397a",
+      "tracked_patch_sha256": "b8aa2877c1a0dd6238c28143c5b094a6e1777d026154f353bafe17e446c643f5"
+    },
+    {
+      "experiment_id": "act-t0-seed0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-t0-seed0-001/manifest.json",
+      "manifest_sha256": "c14490ace01ce023ffa248be7d3788f0ea5359ae7ec0056e0f17992598c0bfb4",
+      "source_snapshot_sha256": "8e8de0c2b2052805a9ec5720aea93aa2a333cf513042a9de61a63a23da22c396",
+      "tracked_patch_sha256": "baa59bf32f96ffd610667b622efb64810e6eb788595fe2d01087055b31d034eb"
+    },
+    {
+      "experiment_id": "act-t0-smoke-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/act-t0-smoke-001/manifest.json",
+      "manifest_sha256": "60fdd16fdc2b6d5f6e5a0050be0bda16b5c7cd893aca4d7113a82d6de11813bd",
+      "source_snapshot_sha256": "bf3e8f25980b4a7da0294f838b0c820cfeb990ca0f4b991497d8489396e3ce73",
+      "tracked_patch_sha256": "2777193d836ddcdff6144c1abea1186dcd7dbdea4597cdf87a5b2fd953ced66a"
+    },
+    {
+      "experiment_id": "act-t2-online-seed0-001",
+      "code_commit": "69d7b9e36cb367549844278c311760cdf556b9b7",
+      "manifest_path": "artifacts/act-t2-online-seed0-001/manifest.json",
+      "manifest_sha256": "322cc20a4d0ddd714b0343e09b8d95c2355bf8757ec8765d627c84bdb651af4f",
+      "source_snapshot_sha256": "8a629a12f9128f5d9053be98e93d46fc7641412941712c735a703e062979d7b3",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "act-t2-online-seed0-002",
+      "code_commit": "a74017d719a6536dfe7e627213b39d616232ddda",
+      "manifest_path": "artifacts/act-t2-online-seed0-002/manifest.json",
+      "manifest_sha256": "f8a277ca2e679f245ad0927a9e83dfeed9bd0564be905abe30188e21907fcacb",
+      "source_snapshot_sha256": "7d74f05a4dae91912bd12ba448f88a6c3bbd26e150b64d2a907d02b5bc2f17b2",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "act-t3-online-seed0-001",
+      "code_commit": "613e527ec62f1d2d86a50443e58e52fcf6ad1e76",
+      "manifest_path": "artifacts/act-t3-online-seed0-001/manifest.json",
+      "manifest_sha256": "12fb05d43f07c45bdcf5caab7d3871549d49f08fd2bec3cc81ca74ff680f3a1e",
+      "source_snapshot_sha256": "bd5408bed16407901d76da4772c874c9af0f91afce0a902c8c38d821c640e0e8",
+      "tracked_patch_sha256": "22ef36ca8c0da43576d68eb4210f56f0f55e14b749503770db1455a6cdaa7b18"
+    },
+    {
+      "experiment_id": "act-t4-online-seed0-001",
+      "code_commit": "f6f399bd03bc3b6503b7ebee7a733d1f10659221",
+      "manifest_path": "artifacts/act-t4-online-seed0-001/manifest.json",
+      "manifest_sha256": "2d67d4ea05c6129933f7ac639a5b1ae1239649f4e4fff5830a6e40889941477f",
+      "source_snapshot_sha256": "391ba48cddf14424b36a05264be64bad67f5d868257289db43b84b98ee7be33e",
+      "tracked_patch_sha256": "337189d010a8f542384d53c402bece62dcdf069e098a8175a90196cd05d8a8d6"
+    },
+    {
+      "experiment_id": "act-t4-online-smoke-001",
+      "code_commit": "f3ec73ecf49357cbedcf0d6feeb89aefe70d3ce5",
+      "manifest_path": "artifacts/act-t4-online-smoke-001/manifest.json",
+      "manifest_sha256": "e62be711b0209fc5b75f23dde68da2c72035f6bde4a930f69976b9c4a1fee779",
+      "source_snapshot_sha256": "911c1f42f62848c86dff432f84b1fec5cbaf37f9529f16f24f615e25068ee560",
+      "tracked_patch_sha256": "d07f415ef62480dde4531ce05aa8cded44897b4b376bf47bf030a76dbb44ffd6"
+    },
+    {
+      "experiment_id": "act-t5-online-seed0-001",
+      "code_commit": "d19e129acbb16a59ea6e98f052315d80a8786365",
+      "manifest_path": "artifacts/act-t5-online-seed0-001/manifest.json",
+      "manifest_sha256": "072f5ae39bf7ea080897ded465b7da7a45987ad95b2fea61264c966d0e4e3118",
+      "source_snapshot_sha256": "43e347385fa1374a11704b5232b005d97aaa98bf1cf884e51de9560a4b7b3a83",
+      "tracked_patch_sha256": "f8cf35d831d81209c45397fddc39d3d9437829ac487090813312df92ed1efbc4"
+    },
+    {
+      "experiment_id": "act-t5-online-smoke-001",
+      "code_commit": "f3ec73ecf49357cbedcf0d6feeb89aefe70d3ce5",
+      "manifest_path": "artifacts/act-t5-online-smoke-001/manifest.json",
+      "manifest_sha256": "90ebeb302c0aad8d950728b038819fe1ca26611c59659ac216f62fb00f359ebb",
+      "source_snapshot_sha256": "f9b5ac5f48742877e819d633487fdb8a42be7ae5683bab4b2aab208ae29f8950",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "act-t6-online-seed0-001",
+      "code_commit": "7892c38541e7e24aae9450852e10bfcd61f091a6",
+      "manifest_path": "artifacts/act-t6-online-seed0-001/manifest.json",
+      "manifest_sha256": "1c568ef9c77c190f05f127b744b6f44ba28a49e065826e7002029d4b21399617",
+      "source_snapshot_sha256": "c7f3c10cc5a8648dc8b1dc7c9fe17105f62e78a48199e5e900b7b1cad877911b",
+      "tracked_patch_sha256": "a29bcf61f8615ce568baf878c4a7834bacdbdf1de33fc5c036bdb5109a4f12f7"
+    },
+    {
+      "experiment_id": "act-u2-retention-seed0-001",
+      "code_commit": "922077e293ee74f14ec37a389caa5bd2a2725daa",
+      "manifest_path": "artifacts/act-u2-retention-seed0-001/manifest.json",
+      "manifest_sha256": "d8e56ceb818e014e8bec92ccc6ba5d3bd73439f2ce2ec97cb52cc8abd431b9a2",
+      "source_snapshot_sha256": "3f50b9a0fc85ce5eea5f8cdb7cad41f37a0923ec21ce8e87ed2609dc3c861aee",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "act-u2-retention-smoke-001",
+      "code_commit": "e27870bc95f8967c09cc5c1fb1838d034fed873f",
+      "manifest_path": "artifacts/act-u2-retention-smoke-001/manifest.json",
+      "manifest_sha256": "3b8f058a30e76d6ec6149d4bad290a0110be5d28acb1e25a7a031cc405e70c92",
+      "source_snapshot_sha256": "8d7c076de9c8e383de6dc4f26855ce02982af9000d0eae9f3779c6d0f961bc27",
+      "tracked_patch_sha256": "ecccdbc187d9a1eb61808457153dd9e774697e18eb4f2f954b52ca2861840973"
+    },
+    {
+      "experiment_id": "e0-peg-cpu-replay-full-002",
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161",
+      "manifest_path": "artifacts/e0-peg-cpu-replay-full-002/manifest.json",
+      "manifest_sha256": "db58fca26a0839bcb822c6fb1fa47d373bef7c79aac8a6eb46d7e55d5f1a2648",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "fa22f0176ba44cc3a7da418ad5f057ab2f169d5856532932aa7a07cb25edbe87"
+    },
+    {
+      "experiment_id": "e0-peg-cpu-replay-smoke-001",
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+      "manifest_path": "artifacts/e0-peg-cpu-replay-smoke-001/manifest.json",
+      "manifest_sha256": "dedad833faffa411568e5f5ca3b47d8d30fd7534bab39119969a6aadf4e02061",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "53cb2662143be369a849881ba1dd19524be704c5412865bedf67732c66913ef0"
+    },
+    {
+      "experiment_id": "e0-peg-cpu-replay-smoke-002",
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161",
+      "manifest_path": "artifacts/e0-peg-cpu-replay-smoke-002/manifest.json",
+      "manifest_sha256": "11ec9eaecb225aa049c70783a7461839d7f5bdca4a5026125b7853926b9edc51",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "cf03f2fb73aa3e0ce49fd19a2a7eb4fdf538fecf8f312998ad6e22ae1730ab0e"
+    },
+    {
+      "experiment_id": "e0-peg-gpu-replay-full-002",
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+      "manifest_path": "artifacts/e0-peg-gpu-replay-full-002/manifest.json",
+      "manifest_sha256": "e5f0e6f48dbb7ba8e70cb6b24be1b192b0a2ed20870826bf0821fd6c0e9c93e2",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "85e4d0c49d2076955b5f89f754de1663135c6f493db4d97981747843fbfadf06"
+    },
+    {
+      "experiment_id": "e0-peg-gpu-replay-smoke-001",
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+      "manifest_path": "artifacts/e0-peg-gpu-replay-smoke-001/manifest.json",
+      "manifest_sha256": "bfd0ff5664bf78d71387e8a1d183b4caa24463f3caa388b6166857f72949f2fe",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "91f3be87fd47d0e2d5367379a4b2811de07f64f8ca6950a3ffdbeb423e2fc8b6"
+    },
+    {
+      "experiment_id": "e0-peg-gpu-replay-smoke-002",
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161",
+      "manifest_path": "artifacts/e0-peg-gpu-replay-smoke-002/manifest.json",
+      "manifest_sha256": "64ade1fb9be5a0453eab439c60d498187d8f1508493aeb83168cade0a3fda7c1",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "c949bfca1bbec06c1796958e88e47996437c4fb772201e6b4996247a4be33bfb"
+    },
+    {
+      "experiment_id": "e0-peg-replay-001",
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "manifest_path": "artifacts/e0-peg-replay-001/manifest.json",
+      "manifest_sha256": "52c3ce24f280d4db43f68a6fc235c01fd80fb861b0a4f29d3f3fc03e3780f725",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "e7a56ae8b39968183798411442850f95140cb80440c8bd8ab95d1839e4d19c2d"
+    },
+    {
+      "experiment_id": "e0-peg-replay-fixed-001",
+      "code_commit": "865f0dd61fac39451c2c65b296b9e004d2e11ff1",
+      "manifest_path": "artifacts/e0-peg-replay-fixed-001/manifest.json",
+      "manifest_sha256": "8d16f3729037fcebad9c2278278c841b5e9367d05ea4cae28f993522ab8a1c2a",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "af84b0ba286d824631d0233e4d4c85c7c247a867f54050ac7baf71fae9d2651e"
+    },
+    {
+      "experiment_id": "e0-peg-smoke-001",
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "manifest_path": "artifacts/e0-peg-smoke-001/manifest.json",
+      "manifest_sha256": "378d3739077a010935806aadc9acf840e3f71ef93de37241f221e4da0741509a",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "d6a3bc7315553db9d4a5b955006ffb8d67a44945a77b4dd5aa2d238e5647cdb3"
+    },
+    {
+      "experiment_id": "e0-pickcube-fresh-contacts-test-001",
+      "code_commit": "c5a8791fdf2efd40b887a4c4390b6f0950158c69",
+      "manifest_path": "artifacts/e0-pickcube-fresh-contacts-test-001/manifest.json",
+      "manifest_sha256": "cc94eb629475ab03366c3b0085ef9a62ec57b2506ebc4a5f5621d655bd80c4c6",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "df377c66edc45f60c74a483fa3b5ea0ad1d732002a43a950af7ff5da83afa8d1"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-001",
+      "code_commit": "0e379ba50a1016467851df5e9714cff70fce5850",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-001/manifest.json",
+      "manifest_sha256": "94d647ce9fdcaac0e92ec51a314f09730b74358e4218f74269f52c3be418f8d6",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "1a7b68ebdb9381ace332718c675d650086e2eb36328619b4dfdba17078440810"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-002",
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-002/manifest.json",
+      "manifest_sha256": "13b8d10f285313ca1fa0a661345d89d1788b0c50959326af0cbbb0ca744dfc57",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "b8766ef41584b73155c271b4a41a9a0f1438cfdcdbca32eb2e1732b2bc44fd32"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-boundary-test-001",
+      "code_commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-boundary-test-001/manifest.json",
+      "manifest_sha256": "ba3436cf477b38fa45c5a603a30dc4fa8e56414ff7bbd464b72e101633c51c5b",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "745bddcc47f80c5a79771b86681b8121f9b2d360ed0df55d3dd97222baf854dd"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-001",
+      "code_commit": "ddf0c6a546520842e316b637b4e3176994f896d8",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-full-001/manifest.json",
+      "manifest_sha256": "9cd38bf5e5034ba2a00ee87e7551c43613ffe6362634d1afb425fba60e55a85a",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "18d7a909cb072569b969da0e29996bcb313d426c76d210eccc120260da919fc4"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-002",
+      "code_commit": "c7b318b47cd8f24091564aec629779783d2b9826",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-full-002/manifest.json",
+      "manifest_sha256": "e1f438ee8c4d72ff93ad952509a21c223793d438ae707ef4b08ce96183de38eb",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "343133cae731f5510fa8837499b5e6a04770ea67e71c8e2360500591945ea6dd"
+    },
+    {
+      "experiment_id": "e0-pickcube-gpu-replay-full-003",
+      "code_commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+      "manifest_path": "artifacts/e0-pickcube-gpu-replay-full-003/manifest.json",
+      "manifest_sha256": "b198cc59c5fa5047e906df9835da976deea7a6a8613addafd6e37b98249e8c91",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "experiment_id": "e0-pickcube-replay-001",
+      "code_commit": "0e379ba50a1016467851df5e9714cff70fce5850",
+      "manifest_path": "artifacts/e0-pickcube-replay-001/manifest.json",
+      "manifest_sha256": "65cfe55c6fede3ceef94d6aa4685585dec49c347ec0a4e2ffa92163f3b078786",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "1f233092adb828fbb29805e877ab53169cdb6987b82272a8204c6c7e31cd0dd1"
+    },
+    {
+      "experiment_id": "e0-pickcube-replay-full-001",
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "manifest_path": "artifacts/e0-pickcube-replay-full-001/manifest.json",
+      "manifest_sha256": "5f260fa3d924a93e4ad43244cd364c6a1229847624eca534b534e9ca556ff489",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "6e44df1fa1afb2b00867e285093449d4847ba52f5aa20abef0dfc6cdd9861a1f"
+    },
+    {
+      "experiment_id": "e0-pickcube-smoke-001",
+      "code_commit": "4ab1909c1157c1c0198242e17bb8fb82623e4b52",
+      "manifest_path": "artifacts/e0-pickcube-smoke-001/manifest.json",
+      "manifest_sha256": "3d721872d84b208118178ecd82d970b5b7deb89ed38242b8fc8e420ff121ea12",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "experiment_id": "e0-pickcube-throughput-001",
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "manifest_path": "artifacts/e0-pickcube-throughput-001/manifest.json",
+      "manifest_sha256": "12f717e9d957f3a925e3741b359831b5394568b5eb82890b251643ba260efe35",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "aab93dae8fdf7e09d5fa82bc5f99dcd917a8c57251abefc73c0963d02ec16479"
+    },
+    {
+      "experiment_id": "e0-stack-cpu-replay-full-001",
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+      "manifest_path": "artifacts/e0-stack-cpu-replay-full-001/manifest.json",
+      "manifest_sha256": "f5ca0db3e537213d8f2ab0ba218fb516f489ec47d5078159e628612afb17f5b8",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "1e165dd6fb09c8e9c7e6f3c1fdf4cc6027571cf19d3af2652d1968b8098c0871"
+    },
+    {
+      "experiment_id": "e0-stack-cpu-replay-smoke-001",
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+      "manifest_path": "artifacts/e0-stack-cpu-replay-smoke-001/manifest.json",
+      "manifest_sha256": "0973b5634227053e05c54e8dc827c1629eac799a9394f7c5fff4a5c25de2c93f",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "727e176cb1d099418613ca1f65b8a190ba69071ec4e0410f503b94cb67d136b5"
+    },
+    {
+      "experiment_id": "e0-stack-gpu-replay-full-001",
+      "code_commit": "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+      "manifest_path": "artifacts/e0-stack-gpu-replay-full-001/manifest.json",
+      "manifest_sha256": "ea54b649e4d695a9a695e7e03b160691aba567193afae8806cf2bf4e114623e6",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "c2c86cf990fffa226f3023a78528e699c5bf66a57c05334183ed97dbdadfe923"
+    },
+    {
+      "experiment_id": "e0-stack-gpu-replay-smoke-001",
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+      "manifest_path": "artifacts/e0-stack-gpu-replay-smoke-001/manifest.json",
+      "manifest_sha256": "5bb416873c6b35ebe842a18cf94d18a7aaa23c2eba39de89491a57dc7900da3f",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "f174f8cad777a0e5b3d516634f2079c87024eb0ee9fbcf6416ed885f48e64cfc"
+    },
+    {
+      "experiment_id": "e0-stack-smoke-001",
+      "code_commit": "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+      "manifest_path": "artifacts/e0-stack-smoke-001/manifest.json",
+      "manifest_sha256": "95f631195292d006399406f2b06cf6abb4668241343b83a80e50c44c07a0d45c",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "75c524d83b5aae41f11ed3c5314c5ae93f9fcb291770747268174a95e878d60d"
+    },
+    {
+      "experiment_id": "e1-bc-diagnosis-001",
+      "code_commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+      "manifest_path": "artifacts/e1-bc-diagnosis-001/manifest.json",
+      "manifest_sha256": "d3c23c1c25a046898d94a63707dfcab28a3b751a61f991f3924e50e188e05ea9",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "2f2c7797d757dbdb781ddcb093a0935f2e02337cd8382ef2aec94ba77fdc9a78"
+    },
+    {
+      "experiment_id": "e1-bc-full-001",
+      "code_commit": "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+      "manifest_path": "artifacts/e1-bc-full-001/manifest.json",
+      "manifest_sha256": "b9abb06e6593811a5415c4abbde9997f4df68445d5230619a2323a9e317073c8",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "b3b303f235c29f3e7fff9cbc53eaa4e7bc29953c8d7394c8be0940629acf4b61"
+    },
+    {
+      "experiment_id": "e1-bc-full-002",
+      "code_commit": "1b3f57f089a2301e209e3ec147288bf9b38b42e6",
+      "manifest_path": "artifacts/e1-bc-full-002/manifest.json",
+      "manifest_sha256": "acfda8205edbab5f5568d4c541505ae347fc6aca4e5d5174c8b8ff3efebd61d3",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "ad55fc869e45d49be8c0faf266246b0394d5c629d81d6830665ec38e79e8878a"
+    },
+    {
+      "experiment_id": "e1-bc-full-003",
+      "code_commit": "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+      "manifest_path": "artifacts/e1-bc-full-003/manifest.json",
+      "manifest_sha256": "b3dd7b8491e01de69c21e58260d90b1f60c826bb6b2f8dac2743192a0f8e6967",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "72fabf916405a75c55412edd4d8fbbaf5731899fcfe13adba6e66031a4808dfd"
+    },
+    {
+      "experiment_id": "e1-bc-smoke-001",
+      "code_commit": "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+      "manifest_path": "artifacts/e1-bc-smoke-001/manifest.json",
+      "manifest_sha256": "0aee154e0ed1b7307f8f50f8cc23711da3746cdd71a7787492f47d90a06a1c9d",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "88771e92d8fa8d93bbc2c81ed94dd42e0bdc14108595d5240ba1797f7559a3b3"
+    },
+    {
+      "experiment_id": "e2-sac-a-full-001",
+      "code_commit": "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+      "manifest_path": "artifacts/e2-sac-a-full-001/manifest.json",
+      "manifest_sha256": "ca5d095da862b16975494c34872813b5688428e2b36fa10c5d6e1c0fe7a7b368",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "6e9288302b5d636af8dedd3c9ff177c5dd97f14b7ed3069cafe51760189c33c2"
+    },
+    {
+      "experiment_id": "e2-sac-a-full-002",
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "manifest_path": "artifacts/e2-sac-a-full-002/manifest.json",
+      "manifest_sha256": "59adaad695dcf0f08d66f6b35469e537dfa8a379e5685fc3d4afaad80d863c26",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "d12562c65ca8d0f5d63c2fed3a7808ce25625e90c7985ab6520f7cfe40138ad8"
+    },
+    {
+      "experiment_id": "e2-sac-a-smoke-002",
+      "code_commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+      "manifest_path": "artifacts/e2-sac-a-smoke-002/manifest.json",
+      "manifest_sha256": "c583c814fb59e737d014d6aa9249679bc1ddd7467fc132a6f3cd5d7143ba3d96",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "cdad0412245576af675fed836f58070028bf3e7701665b56f1a8ceff00346f86"
+    },
+    {
+      "experiment_id": "e2-sac-b-full-001",
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "manifest_path": "artifacts/e2-sac-b-full-001/manifest.json",
+      "manifest_sha256": "d7a336d66f61bdbb0deb900b08fea90dff3d762f41d5a4f58ac5f175a501de67",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "e9fc8174dd2eb60e96473ea70993a9815fb519df8f165c3452ec4cb4fd031ee6"
+    },
+    {
+      "experiment_id": "e2-sac-b-smoke-002",
+      "code_commit": "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+      "manifest_path": "artifacts/e2-sac-b-smoke-002/manifest.json",
+      "manifest_sha256": "771e925f39d79f560324fc1a36a161288321e6f23f0de22b4bd4edb4f5225977",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "b7e0261e00efab0db3c39449f48781d6b32319136e6fe44c050d7d2786d307ca"
+    },
+    {
+      "experiment_id": "e3-rlpd-full-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/e3-rlpd-full-001/manifest.json",
+      "manifest_sha256": "8b680316711a9d56e4570272d8c25a92267bd451b28223c64b7a4c71e165b76f",
+      "source_snapshot_sha256": "9ec810726e21cd2752c349fd793d7f548ccb68a9d72b6cc53034fd5f72dc270e",
+      "tracked_patch_sha256": "10728db9aeaee29e69428260d1b6d3f7cc01976d8979318e2a1a15c3a54e7361"
+    },
+    {
+      "experiment_id": "e3-rlpd-smoke-001",
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+      "manifest_path": "artifacts/e3-rlpd-smoke-001/manifest.json",
+      "manifest_sha256": "928bfc05449e14eb7903f06807dff9faf1c60c15848d13658822aec431704d22",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "3dd0c5e4ee20cf473d5ca325c730de6e6ff777c48a345133af04a649f610857c"
+    },
+    {
+      "experiment_id": "e3-sac-c-continue-full-001",
+      "code_commit": "f0dc12f4e31292b88bb4b785aef53fa8da5273e7",
+      "manifest_path": "artifacts/e3-sac-c-continue-full-001/manifest.json",
+      "manifest_sha256": "217692b78413982fc8aa0505c27bc112d195d999b4f3e2cc52f112e4d82e4676",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "2c0a4e925ac44375e3533798cf3b02c117192a0a17e6bdcacc07847ac1efd119"
+    },
+    {
+      "experiment_id": "e3-sac-c-full-001",
+      "code_commit": "04f6162f6667b6bc28cadfb977da8e288db46a46",
+      "manifest_path": "artifacts/e3-sac-c-full-001/manifest.json",
+      "manifest_sha256": "4182f5b36c0bbfea40b8d396299de0e1997c785c6dac11fab69f8a08863275f2",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "2f12402eb9e1adab60b06b6f587ee7ddbd7bb86771d3572693a37787075bb5ce"
+    },
+    {
+      "experiment_id": "e3-sac-c-smoke-001",
+      "code_commit": "04f6162f6667b6bc28cadfb977da8e288db46a46",
+      "manifest_path": "artifacts/e3-sac-c-smoke-001/manifest.json",
+      "manifest_sha256": "03a45d2391e627fc5b74464211828dfd4c38694e88c2889395d859a642d6fef0",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "9393e066f10a1d3c597ca13fc452580ca55775b022da7b70896919611661ea26"
+    },
+    {
+      "experiment_id": "e4-wm-full-001",
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "manifest_path": "artifacts/e4-wm-full-001/manifest.json",
+      "manifest_sha256": "7e08cd60429462af16448f18db4fabb4281a0bd91f943fc522e9c53a35e4db37",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "c5dbf9e41f08b5b8961d70ead771d48ca89af88014138d8a52cfa5ffccbe714f"
+    },
+    {
+      "experiment_id": "e4-wm-smoke-001",
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "manifest_path": "artifacts/e4-wm-smoke-001/manifest.json",
+      "manifest_sha256": "4919bc75148f4c16e30c436efad95210b0d849be2092b36a9b6833d1bcf43df7",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "5a0a7d69914336e6b55f196ef60275a2bbbde7805c5bbde184cb67ffd5e0a316"
+    },
+    {
+      "experiment_id": "e5-candidates-001",
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "manifest_path": "artifacts/e5-candidates-001/manifest.json",
+      "manifest_sha256": "da205a94913099f285fa48840bb1c9ef092e53ad7912e20b3be215bf089e5829",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "fbb2668feadc1e1747fc4c27cbdc90bc1cab5cfb16c4108e335d681b15e14170"
+    },
+    {
+      "experiment_id": "e6-u0-full-001",
+      "code_commit": "cbcea4f997caa40f224542b53047f91cb38a6bee",
+      "manifest_path": "artifacts/e6-u0-full-001/manifest.json",
+      "manifest_sha256": "ee49a5e1f847c74782b356a1361d3d7c32ea518794904337a647674635649102",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "0b81c8a92c8a80f76ee8c3e3c99d6a3da217241ede9198b2677a7185e74f0176"
+    },
+    {
+      "experiment_id": "e6-u0-smoke-001",
+      "code_commit": "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+      "manifest_path": "artifacts/e6-u0-smoke-001/manifest.json",
+      "manifest_sha256": "3c005e90a66141196f83bc39577324fa08b88530155f38961a6942ebaf749a29",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "be8d48738cc4e4beca03849b5ffc3e16c203afa9dd8a7398dbb68a9b55876e79"
+    },
+    {
+      "experiment_id": "e6-value-preheat-001",
+      "code_commit": "09d606712540920e0134a46bda539600ba3c1ca9",
+      "manifest_path": "artifacts/e6-value-preheat-001/manifest.json",
+      "manifest_sha256": "b2aef8371ea63df76f9eb47e2876a037fb6514585e2e79faf01a01bcb217baf6",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "f25722d3cdbc933844fafdb376cdad7025dc790c85aba551271beef8acd0e6bf"
+    },
+    {
+      "experiment_id": "e7-independent-eval-smoke-001",
+      "code_commit": "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+      "manifest_path": "artifacts/e7-independent-eval-smoke-001/manifest.json",
+      "manifest_sha256": "e2acdf8a9ab427baf2358cdd7237ede614f2a2de732a5b16da254d909076bf05",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "d1128b4f9b7b590ebf903057d580b63100eb678347ed16f0647ea4d34f40719e"
+    },
+    {
+      "experiment_id": "e7-rlpd-independent-eval-smoke-001",
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+      "manifest_path": "artifacts/e7-rlpd-independent-eval-smoke-001/manifest.json",
+      "manifest_sha256": "033352ba9c7554b68ab94c5819a98fe65c5cc11511b8237a065bed43cea62bb9",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "bda4f7c100808dd0e5b75ab6637e1e3b33788e3460345c6f2014a0292b0fceac"
+    },
+    {
+      "experiment_id": "e7-test-act-c1-initial-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-c1-initial-mean-001/manifest.json",
+      "manifest_sha256": "1fe50ee2b7c29b1024f5f6dbf94ddedd5a3d4a465e5954d5ddaf70826b7b33bf",
+      "source_snapshot_sha256": "cb0c61835c7f8bdc3c96169c4109ae224d227f22b1aa9d89714d7f8be1937274",
+      "tracked_patch_sha256": "f1418cc03e41f95edb5c650f995707126471ef1a07a770a3d3c58fbdaca803d3"
+    },
+    {
+      "experiment_id": "e7-test-act-c1-initial-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-c1-initial-stochastic-001/manifest.json",
+      "manifest_sha256": "b42833e097dba33a8aedf492bc8ad586e3a7fb5f43866ae5cb0a6cf4006d3007",
+      "source_snapshot_sha256": "c25820b0bb1722a794e200ef1ccd55f775401336fe38d9cefadc45fdd5a33a63",
+      "tracked_patch_sha256": "f3ff49eeaa90981fd3c0122e895d42ba8b9260eaab8bc2595b9ad9efc97cbfd9"
+    },
+    {
+      "experiment_id": "e7-test-act-d1-initial-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-d1-initial-mean-001/manifest.json",
+      "manifest_sha256": "f59e1b1a2a533065726ba7f9928c40e047570788eed4060956858a06dd7a2f45",
+      "source_snapshot_sha256": "f8384dc9d56bb88754a2ee6212af50c67ffb577976f573a0ba621aa2a93272e7",
+      "tracked_patch_sha256": "c66cbadb2b3ae4869dd533af73c2c51d4badb6c0c780eb6f24232d0c4c96827a"
+    },
+    {
+      "experiment_id": "e7-test-act-d1-initial-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-d1-initial-stochastic-001/manifest.json",
+      "manifest_sha256": "94344071e5ee40b84e96f084477b3485d19dd45c30f12fdb80fe47db502fac26",
+      "source_snapshot_sha256": "a89ef4c981cba7781b57e7bc44789aa073a064960b5e1c5633a7c1c4b6105043",
+      "tracked_patch_sha256": "0bf586ea038cbf968ed3c019efe249a76a854874ee26c50558b1604b7e864767"
+    },
+    {
+      "experiment_id": "e7-test-act-t2-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t2-final-mean-001/manifest.json",
+      "manifest_sha256": "7342623a4d23c1cc425c344a62024ec7675e6111019fbd2acddcbb86ba831a16",
+      "source_snapshot_sha256": "0e2b272d1c81fa0256b1028885a6db5ac0d2c599a6d324d56dc775c67fb63fea",
+      "tracked_patch_sha256": "07bf2790cfaaff3303ea2597f3da49d215599130046a7350cc5c2a13e0e4017a"
+    },
+    {
+      "experiment_id": "e7-test-act-t2-final-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t2-final-stochastic-001/manifest.json",
+      "manifest_sha256": "337b55704d754c62ae67b01620b200748233885423352fb9ec9139af19b184a1",
+      "source_snapshot_sha256": "f2f717b2d9723fa729c6e670fa7b5ca218b86479483fdb8559bf6cde2fc094b9",
+      "tracked_patch_sha256": "aac9bf9b0bd9a0b450aa0166861d285956c5db0b880f95fbac9c0cea6d7f41d6"
+    },
+    {
+      "experiment_id": "e7-test-act-t3-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t3-final-mean-001/manifest.json",
+      "manifest_sha256": "4bd867b4ac2301cc57b5326df88a57774e8df8d86bf26ccff8c8651afd1eaa11",
+      "source_snapshot_sha256": "7cf8579fe4983044f46ae1203b4c778e33f90ed6eb15f50d72a52d57ce450eb3",
+      "tracked_patch_sha256": "b311e88d9fec9e3428346e4f42ee942c41a6efcee42bb1bcb7a9af1de00b3483"
+    },
+    {
+      "experiment_id": "e7-test-act-t3-final-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t3-final-stochastic-001/manifest.json",
+      "manifest_sha256": "abff613d0559705b2e04b3def2c834623045a4d40f335c06dd4d537f5d72cb4c",
+      "source_snapshot_sha256": "ab42d33674a3edafa94b362117bc0f2e3f0ebf9ac6e1f2f8d4c5f29e54120f5b",
+      "tracked_patch_sha256": "33213d705a5685782d74ee7309e42f4d3ee24e242e0a0c5e739d6454923153d0"
+    },
+    {
+      "experiment_id": "e7-test-act-t4-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t4-final-mean-001/manifest.json",
+      "manifest_sha256": "da7331197dde1e2ca2b73b20f28723667009441926078fa407b487a58d669b2d",
+      "source_snapshot_sha256": "eb135ed1d4289f52c2754c492a15d9cf627178eaa0dbd2badeb67dd55b753fb2",
+      "tracked_patch_sha256": "f1552beb4e1be7b70b39b0d85fc9af3e7863e03e5fce06b6000cc173216db34b"
+    },
+    {
+      "experiment_id": "e7-test-act-t4-final-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t4-final-stochastic-001/manifest.json",
+      "manifest_sha256": "28271bc3c3fcd07000d20b0b1fe11914935586c90097623f51493aa9b2d2721c",
+      "source_snapshot_sha256": "113dcab5ff0fb76c373573bef5bf8a1bfc1d7149416398558f9d52ac21ad581e",
+      "tracked_patch_sha256": "83e280004eaf4fda3e223b40474d6159f0a928012e16630c888f71b79fcfbc1a"
+    },
+    {
+      "experiment_id": "e7-test-act-t5-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t5-final-mean-001/manifest.json",
+      "manifest_sha256": "609a4717df2a873f7ee64628ad06f7ed8f58e0405dbb2cd0d4d9896a93c9991b",
+      "source_snapshot_sha256": "3ee4e96b9cfeb646ca275e391b4e9187b301382435e7c436206ab05e522ac3db",
+      "tracked_patch_sha256": "0610cf5c2d060a6360f35b54986c3c45ee0f88b331729b7da9ac4f1b53e017eb"
+    },
+    {
+      "experiment_id": "e7-test-act-t5-final-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t5-final-stochastic-001/manifest.json",
+      "manifest_sha256": "9264ef41b56ab142d3b7b4b725fc3b18f5e11538727bf41cc7b7103335c658b0",
+      "source_snapshot_sha256": "e47bc809b2000d8bd5999e365c23387ab04ccce799ee8c5f086b63fc65b8c0a8",
+      "tracked_patch_sha256": "8c68df40a16f69519eac453a0f44fb337270c94f0e3157ec54088e14643e46a7"
+    },
+    {
+      "experiment_id": "e7-test-act-t6-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t6-final-mean-001/manifest.json",
+      "manifest_sha256": "09222977703cdba40255afc170bdc7e65a934403b38c63a25610a35fe9a9d335",
+      "source_snapshot_sha256": "343b9f51c886a452043ed238d0d56da8c636a4147c82499aeafda00d9883787c",
+      "tracked_patch_sha256": "16a71899cf5b13f9f2a830e46762a313e9baed8ca54dc410f5bdba20ebf0a553"
+    },
+    {
+      "experiment_id": "e7-test-act-t6-final-stochastic-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-t6-final-stochastic-001/manifest.json",
+      "manifest_sha256": "7e5b87dc59b2cd5a44846ff4f436180b0a0c5ff75b4791cae4bcaf3be5ae7245",
+      "source_snapshot_sha256": "7095bd3766f6f45bbed4bb40268167e04c3259dda994409f71fafcad864f4b39",
+      "tracked_patch_sha256": "3ba653b6a368e20bfa200e56a4cbe3de3389f361a096714b685f744f993310ad"
+    },
+    {
+      "experiment_id": "e7-test-act-teacher-k30-ensemble-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-teacher-k30-ensemble-001/manifest.json",
+      "manifest_sha256": "521f05ccd26334db5eb5098480f4497a3c3d0dfbd4102b5d654056edf83537ff",
+      "source_snapshot_sha256": "27d752cc4374eb9c3e3574cedf11e7824f6fa20c55f984cbf0821d9f2fed6da7",
+      "tracked_patch_sha256": "5790893e5a3431905149e7a546d6b2d927edcac6a22fcc1b47bc65f5be8767eb"
+    },
+    {
+      "experiment_id": "e7-test-act-teacher-k30-first-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-teacher-k30-first-001/manifest.json",
+      "manifest_sha256": "8bec7416c4792cd73147ac48f81c0a8c0fa52eac3a02178cf6f6cdeb52208e97",
+      "source_snapshot_sha256": "9ca6c4424a62ea1e3450175277ae28a865f04515e2d583fee4569a6527e67e98",
+      "tracked_patch_sha256": "1f60d51dc79d567646b4598d355b70daeff28336d5a16a9b4036d371aad45e6d"
+    },
+    {
+      "experiment_id": "e7-test-act-u2-final-mean-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-act-u2-final-mean-001/manifest.json",
+      "manifest_sha256": "1b5cc0cecf580c8955b331b4f57c294ed48ce14c4a0656c78b32bd26c270a012",
+      "source_snapshot_sha256": "6d427c39fae75f0b70db09ade3360110e8653f974e19fb83527923f7cb317342",
+      "tracked_patch_sha256": "43d7be31e10c4ef0cac617204147e58631586c79ea4bf1582fa37dc94385cdbc"
+    },
+    {
+      "experiment_id": "e7-test-peg-seed0-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-peg-seed0-a-001/manifest.json",
+      "manifest_sha256": "8c254db591591b1da7f00f422712d80e456530e0d65807edbd7a837d4ea435cb",
+      "source_snapshot_sha256": "84ad550158bcdc14a6b26a916094002bd5dc088b3c3ed9c364b3a13ffbdc0fd5",
+      "tracked_patch_sha256": "8f8da0420fb35254290aae8b1fd0c55a3a2e521387be1bc022843936ccc09eef"
+    },
+    {
+      "experiment_id": "e7-test-peg-seed0-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-peg-seed0-b-001/manifest.json",
+      "manifest_sha256": "d723be3df5a272969fdb8700bbc0410d4da55a73c7ead48448c901b776e1ea7a",
+      "source_snapshot_sha256": "f303feb905fe250347e2cf316cf047d682063ffd0a953969107e2cac0a4a4caf",
+      "tracked_patch_sha256": "2ec16d6ee75b7d42da616f7ac4f2a0a0e6aa8203073c054108725818c2127007"
+    },
+    {
+      "experiment_id": "e7-test-peg-seed0-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-peg-seed0-c-001/manifest.json",
+      "manifest_sha256": "713965a04fa99e9377e71af42bf37f460eb1cbadd913593494d55faecf87922d",
+      "source_snapshot_sha256": "de0c15a54be10bd829561d886cb252d597de9999d14d74d0979d8adbdf03b448",
+      "tracked_patch_sha256": "0f9b9d79306c9163e14f6fb61223157e5a8f5fc7dc105162f8b7585d308875de"
+    },
+    {
+      "experiment_id": "e7-test-peg-seed0-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-peg-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "0c7c8111566c8a677822dca5da186412a3dfa7a96d6dd6444f6d95d560c5dc56",
+      "source_snapshot_sha256": "3fea121a66de63646c852118c4574970fe85b3b8dfad33e461219b993530c594",
+      "tracked_patch_sha256": "b3cec6ea9ecb3394860ee3cebf398f5d63460aa355f262ee60609ef7f32e3ce6"
+    },
+    {
+      "experiment_id": "e7-test-peg-seed0-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-peg-seed0-u0-001/manifest.json",
+      "manifest_sha256": "09e3ce18edbef7ebdb4f879071920cf01d40a26eaf4edcd3e883548bb5b3726a",
+      "source_snapshot_sha256": "0c53220ee035b55c99e0a46e7d10aa1e4f054a933788187ad5bdbb6923af5d83",
+      "tracked_patch_sha256": "a7432516c6a3bc8bfd7acdd93406646bc18cb904597e7e851672bbccdc885e9e"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed0-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed0-a-001/manifest.json",
+      "manifest_sha256": "f083c84a9f37492c12822f4159b1dfa0a9bb642061ce929f26c06952ac94941e",
+      "source_snapshot_sha256": "12155fdb52bcc2d7b9ef086cf26a7428d0140b8789cc6326216a177f5ca8124f",
+      "tracked_patch_sha256": "57933894274a1540ec63951078ed4243be60f4b9bb68ceec8d668317d454772a"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed0-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed0-b-001/manifest.json",
+      "manifest_sha256": "2fa6a59b8af93fa7a4869df6bcfa3d6c7dce4460b7db75efa703f8e24d20712f",
+      "source_snapshot_sha256": "4f818c46086129d27ba23eede0313b3e4309f524c455c46226f5d90a205c165b",
+      "tracked_patch_sha256": "8cdd8c4565f7aa88dabc42c824003ec8254a24f1316698f217b5eb258160ed06"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed0-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed0-c-001/manifest.json",
+      "manifest_sha256": "f4aba11129dc0fec42e91fbc4d9bbe4a088e696066409524a9eeab2df9f88646",
+      "source_snapshot_sha256": "639344b953aa1152132227320773ce4129a871384d5930f9d493371c21b1ccbe",
+      "tracked_patch_sha256": "613f64fb9d3b1991bf7444a330ecf566c4c42483700b71c00d77ba7796ae5773"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed0-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "95ad02e4edd476e1225c7eb90d105a2afa89a9ccad283aa7e91903637acf2e63",
+      "source_snapshot_sha256": "0ec5c70a22f5b9c206dfe00a36720aa91b323654a22869437044bc5ff9e4d2ad",
+      "tracked_patch_sha256": "1bbc38ffeeb6225e24e30de4519916bc3bc9c9979fc0876932fcb59e52bf6ba4"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed0-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed0-u0-001/manifest.json",
+      "manifest_sha256": "ed2d7468d27537db7fdb2675b54b413d96ef66d31e2c0960880c80b7230ddd89",
+      "source_snapshot_sha256": "45a01375389f71b403c2f75e7ecf41aee596e5ef928b7b54aa4af99e34345c35",
+      "tracked_patch_sha256": "ef10614ee24735e506d354c17e3f6c649cbec3c6557ff263a7e6cce8e5862257"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed1-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed1-a-001/manifest.json",
+      "manifest_sha256": "96ce2e1a406a1d270f048b47f1fd090a40cbad7619be8f9ec535018873d7460f",
+      "source_snapshot_sha256": "80281620e325dbbdc6301f677b65ae1136c4fda3790ef79ace33d9a943baf9cf",
+      "tracked_patch_sha256": "53b11efaa05f36aeffe81db443e99103f577be6ef8ce673af31d0cbdcb1775b9"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed1-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed1-b-001/manifest.json",
+      "manifest_sha256": "c51bc16139933a7343dde4072bd756e5741a2b96098a80825b245e9a4d9d9518",
+      "source_snapshot_sha256": "0f5331b49d9c0d36d4d333c65584062cb733f61a80e1c5d5503039bef3799cb4",
+      "tracked_patch_sha256": "94d284ec8b998cb539394204b200a1de0252f9b432e9f558daec690c461775a3"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed1-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed1-c-001/manifest.json",
+      "manifest_sha256": "fa5311239913a0eb9776d22dd61ea53c8d813459e00f9bd74b3ccb340985c9b0",
+      "source_snapshot_sha256": "e5b7e342bc5c94c586fd1575d973f5f273cc0ffbf8b496b47eee131062b99f8d",
+      "tracked_patch_sha256": "63c3aabccf248d9c24c807b3104e895d1fb7bccd4df46023751876c6b7d92b09"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed1-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed1-c-continue-001/manifest.json",
+      "manifest_sha256": "f1aa6faedfc0b0ebf0d7d349e713f1b5e36b4d8c27eba29581e48099c6e63715",
+      "source_snapshot_sha256": "c1ab4f8b7d2a46dbc3a8cc52b3a6f58be68587ac9877747eccc5fb453e3683bf",
+      "tracked_patch_sha256": "2671b839474396bb9da8952b456cb14be37115f3f2f56f4c6f2b9f76acfbc175"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed1-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed1-u0-001/manifest.json",
+      "manifest_sha256": "25a23ba4b859d6c6381ecb89389943bf1aa6de15a4292301c859996e1adcea1d",
+      "source_snapshot_sha256": "834493bdabc8fc8e0008b65a60ea96af88098ae32923e2d92f600ced92ca7a01",
+      "tracked_patch_sha256": "bcccb575239a359daf5384f0c60733e855ead538949e275b564a5902bdf543bd"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed2-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed2-a-001/manifest.json",
+      "manifest_sha256": "4702a467328ec8a8da5d2838c72c359c359a0407b9f07b33fb04a095f81eebd2",
+      "source_snapshot_sha256": "c9b3d98fdaf84c8ad3546873a7d7989fb587289feefda2403bf7b39da9c5010d",
+      "tracked_patch_sha256": "dc37f9d3dd8dd7b2a713a8e767ef9f6fdc82913ad2a1bf9e169b862f454608aa"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed2-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed2-b-001/manifest.json",
+      "manifest_sha256": "0b5ac26783927826044e0a8484cb2f7cc302933866abc355a36e4b6c0d6e91f1",
+      "source_snapshot_sha256": "1bf5c7a192b404b63c3f29facca244aba18a3723efefa1d5ee23e4b47bf8cabb",
+      "tracked_patch_sha256": "0a54d848d7b42b4160aeec18160bf27899d347e1a00a8550502866b4249db4b0"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed2-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed2-c-001/manifest.json",
+      "manifest_sha256": "88052a7464ce77e5c3fbc891a97ac84f621e377d5f44601a370c50518868f15f",
+      "source_snapshot_sha256": "c5ee6a09b2e05ab83b7220be69acc0077f4984e28bebdd4a003cd04bed2c042b",
+      "tracked_patch_sha256": "d63dfce4b38a0360c23198a30a44f10704e5cfac8667659e2a040b55efd7e971"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed2-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed2-c-continue-001/manifest.json",
+      "manifest_sha256": "5f76453e314f17c4f17cb05b521f38f67e1b317d4e8d55aef642a2d3517a8771",
+      "source_snapshot_sha256": "3de611eab1eb538945d38cd6cb3ab97ad31e8b9b8fb833f4d54eb954b5b1534d",
+      "tracked_patch_sha256": "d0acb254e944d3fba3ee7a24b134d29ee19b0ac7817e357925f7d01c4f7a397f"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed2-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed2-u0-001/manifest.json",
+      "manifest_sha256": "d82d529d13dfbf15a6a3ea25e1ac74a7f7828a130fd9079f4918e5587f9d21e6",
+      "source_snapshot_sha256": "310dbeec406763cf6dc5eb308b45bde3e9dee8e726eb86de6d3b1a74c370038d",
+      "tracked_patch_sha256": "1944bfcb202b8efd3a4250b2229d42574e46b12a9b2b6d89aa5ad838b49366fb"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed3-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed3-a-001/manifest.json",
+      "manifest_sha256": "c06ff1648f500202f1e2a2a6b8bc1d19b43e2c54efd3fd7386f57538cf163268",
+      "source_snapshot_sha256": "5df3843f6960254ebb92f02721a1540deb43ba733a163983e625314c3967dc22",
+      "tracked_patch_sha256": "323e052c3b76a3ed4bf9ccb141189231003f43b1c5972d51d61805391fdd180e"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed3-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed3-b-001/manifest.json",
+      "manifest_sha256": "de23382ea6b87a2e6e1ed7e1aaed6a08a5f00288364a5e4b77d13d2c9d078143",
+      "source_snapshot_sha256": "9be722c497a396549c3d17de865bf749fa1b155d050ab482bdf499f2d6a764ae",
+      "tracked_patch_sha256": "6da999f92c4bdbd9b4b2d12be74e3c6720caa3d098821968e54f58b082c7a853"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed3-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed3-c-001/manifest.json",
+      "manifest_sha256": "5f15343e55971bf6b325ee64c7037570b884b81b33609b2bacb9ca52a6802cd9",
+      "source_snapshot_sha256": "dbf94b54716bcbcefb4ca0dbbca7eac385321cc012c1a7fa5ff3286aba60bb36",
+      "tracked_patch_sha256": "170d3e53739b2cf1e55ffb206b016b221ce033357efe25a86d338c8d2d96dc15"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed3-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed3-c-continue-001/manifest.json",
+      "manifest_sha256": "a000934828760253914a799e2799163ffca852253e1899820cc3f1e661630753",
+      "source_snapshot_sha256": "ab07d290fcd1aa91db8241eceee0feb204afdccac493ac79ef5d191e0099b2a7",
+      "tracked_patch_sha256": "ddfbffb5a10402501323fb5adbcbab314ea63622c9677d406c658987629a066c"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed3-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed3-u0-001/manifest.json",
+      "manifest_sha256": "a9a98b95d93fa2d10c1cf6a131a2138ca7b5ca24649a64d3b8fb33df468686ec",
+      "source_snapshot_sha256": "cfb82be9edeb98fb0f3709a8542307c1725b992c5db45534967ab277be41bb88",
+      "tracked_patch_sha256": "7f099fa7c8f4ed276a87833eb20bf768b0692de8624737f940ffa394d154376a"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed4-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed4-a-001/manifest.json",
+      "manifest_sha256": "de6b9a1527f8156fb8af5df8c128d994e08a2ec0a53f1edc3f1ac4f46279e8e3",
+      "source_snapshot_sha256": "d67f626553810b1cf3421a9afe25870ad91cf51e65877955a5f92fb166fb06a0",
+      "tracked_patch_sha256": "10aa0710215a197f39288673a902ffae2c8aca220aaa00c50fab5386c3fcbea1"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed4-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed4-b-001/manifest.json",
+      "manifest_sha256": "25168056099fc17659f6a79fefe657321bb873dcceb304fce346a793080383eb",
+      "source_snapshot_sha256": "9213bed42a5dc8230810ff31a9382b72b5c7cf83a38c354349b35cc16d0a6741",
+      "tracked_patch_sha256": "2931d43c457bec2aa37c54d659c417f79c476fcb37845799791afcf62022551f"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed4-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed4-c-001/manifest.json",
+      "manifest_sha256": "7405ee93586efd56f7356eaea632079b4db172a7f1b8b83e8af2a94f85d0cc97",
+      "source_snapshot_sha256": "7b9c04497eb5d3858ea25e70f7e1c0cc1f537d8f6dab3e925f01223c54eaae2d",
+      "tracked_patch_sha256": "b1035cbc3dd5dc6db08f2208c7db0a9b0bd1ecfdbdf21165efe483228de5d727"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed4-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed4-c-continue-001/manifest.json",
+      "manifest_sha256": "8e50ac38d574ffcd968a9ba9e14135c2020daa711f4e551d128a5c99bb8c3441",
+      "source_snapshot_sha256": "f8eae26e60b7f3c8bffd980cc149089bb67b34d514bc6283d6ac73be9ccf08dc",
+      "tracked_patch_sha256": "f88616911b2a8a8a22766dacfe95db697f70f44eeaf9e13ba5e00cfaaacc36db"
+    },
+    {
+      "experiment_id": "e7-test-pick-seed4-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-pick-seed4-u0-001/manifest.json",
+      "manifest_sha256": "23bf746f4f080c1c7d95736d9f86ad087b340713ffe030c81e8ce16833740cd6",
+      "source_snapshot_sha256": "3a03e56a27664ca40c91be83876f442981a2852d361f9c85fabe3c37097033be",
+      "tracked_patch_sha256": "28f292656feae9d4792c59b27f5e01e5110d8517638cfebd63ba1cfaaa575074"
+    },
+    {
+      "experiment_id": "e7-test-rlpd-seed0-step262144-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-rlpd-seed0-step262144-001/manifest.json",
+      "manifest_sha256": "fd287b70b4209f8eacfa045df50af563666b54074a00a896a473f1752c18042d",
+      "source_snapshot_sha256": "1149ad70d107ed6fe251f92f53066b3524aebc82d509aec364f160555dbe1a65",
+      "tracked_patch_sha256": "22cc28462cb6270126f8744c36c4c6cf1fe2235511fc894f088440b488b34cc6"
+    },
+    {
+      "experiment_id": "e7-test-rlpd-seed0-step524288-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-rlpd-seed0-step524288-001/manifest.json",
+      "manifest_sha256": "07dc9318faa2470ac5266859615cdc9ed625c248ea764d95f8f4de7c3ba8e564",
+      "source_snapshot_sha256": "638622c6a905898dd109c2384ea3a54833ca05e89e02e906cc1e60ad9952108d",
+      "tracked_patch_sha256": "1f60cac089a3cbbf8476be4ca91f67c8fb17ed385760a9a732f018d589cefbaf"
+    },
+    {
+      "experiment_id": "e7-test-stack-seed0-a-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-stack-seed0-a-001/manifest.json",
+      "manifest_sha256": "918a8d72dc9f996adb2697100db60b6f8c159cd21858b74fdd6026f69f2f5974",
+      "source_snapshot_sha256": "d8245a1092075aeedec3fc520edf69ed6bf08ec7d3d66c99f70387461f8ddafd",
+      "tracked_patch_sha256": "ed36ea99cc085ce60dff39388011cd74af6bdbb8aae989ca6c5371aeb2d98241"
+    },
+    {
+      "experiment_id": "e7-test-stack-seed0-b-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-stack-seed0-b-001/manifest.json",
+      "manifest_sha256": "13392bc83b75a46c0f71dc7ac5dc4eea37a1683543186ba26d2a70f8886e73aa",
+      "source_snapshot_sha256": "eef754bbbd8d469920c9ebeb6dd41b8348df79965ea440dd5fc1ad8e18ef5e4d",
+      "tracked_patch_sha256": "429f92b0d1273e03dcc30966e9e6b7864e96fd9bac8b7ffb604fdf1397e64080"
+    },
+    {
+      "experiment_id": "e7-test-stack-seed0-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-stack-seed0-c-001/manifest.json",
+      "manifest_sha256": "42d5db2b8ff3a1eeb0dfbc43f4a1f2594bab233c8ca4e15bd8b171545e2616e6",
+      "source_snapshot_sha256": "7f183346150069d4495edb4449b7b56ec7f760488c7ff68f47ce8fa7330fa559",
+      "tracked_patch_sha256": "3dad9db6469b1b86df6525e48715e6b536cc2e1602b491b2ea75ad373571f959"
+    },
+    {
+      "experiment_id": "e7-test-stack-seed0-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-stack-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "7b5ead954c1d8fc2820e8f778e2178b68b5b8df13f0db72f824acdbbd1d70fcd",
+      "source_snapshot_sha256": "c1a1c06699085ca68706918a3405838e954e094dbd574983c213541c5a9587b3",
+      "tracked_patch_sha256": "fcbdf5783472367e5632be2519a5d1ca437ef5ffadd20ce0b0bc28cdfe0b3914"
+    },
+    {
+      "experiment_id": "e7-test-stack-seed0-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-stack-seed0-u0-001/manifest.json",
+      "manifest_sha256": "868398d833ad1b5ae82a5094cdf31a9b94ac9528a1f567d0d15a636fc98976e8",
+      "source_snapshot_sha256": "8c4a4475ba161e28d47035a88f4d620fcda2a319cb7dccc4ef9e9101e86d5cbe",
+      "tracked_patch_sha256": "adf9763fa0f6011f8f5e2e025469b13a3fa6e39109ecce77824d0316f095c3f2"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed0-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed0-c-001/manifest.json",
+      "manifest_sha256": "13402b50894de750d7b7b0581da9e44bfa43c6dee0b0188141d705421b7a2336",
+      "source_snapshot_sha256": "40f3f4afe7523b5eefc3482fc2efaea0c88dbf7022d4c70afbf33fdb7e885ded",
+      "tracked_patch_sha256": "07653c4812a967976512d3e0f3592e9ac43a086669ab7e07ffe22a823427a7bc"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed0-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "6d2b29996a389bc96b4a1a573de2114910fd69b0c99293ffbe47508a54eed830",
+      "source_snapshot_sha256": "db17b18ce31d35546d808560de28b9de1e4ae8457b5fb7b52c41947a8e0fcf89",
+      "tracked_patch_sha256": "8766b6998dcc5042a50a9e1cc0a91cb418ca829023f0ccfee8ae3670b87cfa69"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed0-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed0-u0-001/manifest.json",
+      "manifest_sha256": "fe17bdcf7e0aa002da5345d0b54bc18cf6f26f3ac3e248ff67f174e0eb652d35",
+      "source_snapshot_sha256": "06dc1dc94d3718a3314d9c4a12f6d5233695f177d192728fd04f351998b33136",
+      "tracked_patch_sha256": "ba6832165455af99af24230a28ed341a6242e3b388938c91155ae6f1e7ccb976"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed1-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed1-c-001/manifest.json",
+      "manifest_sha256": "1707a61a3d4d410b4380b1ed91fd3f18ae70fc44558203ada5a66fc3c10a0cb8",
+      "source_snapshot_sha256": "a147e7810c1a3cafde9fcdcbc36f2c36b78cf4aae189a016d17d286e39b80b58",
+      "tracked_patch_sha256": "4d559e19af4ad3f0295863f0629e7d736d8fb61866a3fcb4d4e65c984db5258d"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed1-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed1-c-continue-001/manifest.json",
+      "manifest_sha256": "a2fbd54b601e739cf4e6bcbc583eabbaa7d3468c2c7d85a11a49a9285e5806c0",
+      "source_snapshot_sha256": "5afb2ab5998eed5b40313f7891166a5fafb154c40f990c044d474c38d5f64e60",
+      "tracked_patch_sha256": "1aa5e8175255f7c0a459f7f27bea697e80fcf8da5ae00356692aac28c89665a9"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed1-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed1-u0-001/manifest.json",
+      "manifest_sha256": "2101ef24759ed2f3b5d8b6fc23c8c20308cae5d7ba4d93dc384a98e37a6b9291",
+      "source_snapshot_sha256": "beb3650278bacfc374b7ec91bbe393d88641fe357f0fb1e14ae9ae4f738eb819",
+      "tracked_patch_sha256": "d222c5f8e4b9f76d0ba810b5c9cbe6931e69c80227ec96bbba3336711d6a32eb"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed2-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed2-c-001/manifest.json",
+      "manifest_sha256": "a4f34ec62ed4c799b9ea97219a623ff324731ade7be9046dcb8c24931a8919c3",
+      "source_snapshot_sha256": "a0cfc7bb9fa92033f960d61560349e8b6e74be4348b83d2160fc5d5c413808e4",
+      "tracked_patch_sha256": "b0c780a63f0fe0431de2a062d174c78202248ace38b9f4b57b47cfdc1c9a604c"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed2-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed2-c-continue-001/manifest.json",
+      "manifest_sha256": "6fd50a1bf6dc9d54b450da36af406a98f26b49b632f10feb8f858bf9dbbe3d1f",
+      "source_snapshot_sha256": "9b7826d85fc5692a3aaba6cd36849a8eee43eb57c6a73818acfd44fed7b0ed97",
+      "tracked_patch_sha256": "86030417764f0b617fe02fcb8f4fae594e2b5ad03963e0fb562307ad9bd05aa5"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed2-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed2-u0-001/manifest.json",
+      "manifest_sha256": "7b0ea5bffe462018f57bb014bee9114508d13094381854f0a10a8b2e4331770d",
+      "source_snapshot_sha256": "abd7b8a2566d23cc207c49e0a27cbbaef0dd3cd84f7ec47e52d2a61ed9fc6c34",
+      "tracked_patch_sha256": "b9b8ded73f8ae76fd95b048e28e6bb275b85c583bec808fd0c22996e65db8899"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed3-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed3-c-001/manifest.json",
+      "manifest_sha256": "f2273dafbb3bbe67f2fb4418fe89362c55bcc6a207e0916bc5bc351e83121b0c",
+      "source_snapshot_sha256": "fe28b1f6c36045ca5c4e5dc50331d362f8d1c7fb86633d37fd4986bdb6fc82b2",
+      "tracked_patch_sha256": "cf7b52a1c33ce7540cf790417c711fbbed46003b5f2d3ea69a379fb12d7e0cda"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed3-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed3-c-continue-001/manifest.json",
+      "manifest_sha256": "a8cdcc690d0b8d9dd29fa5310710c5382faa1d969d6a281d065c421db51018c7",
+      "source_snapshot_sha256": "ff11052d18ba4414e566476c5396ac16ee71e82a71548ecbefee0d74203f7fc6",
+      "tracked_patch_sha256": "0b0d7b5914642fd52ab6582f421b400be2fd14c9b75e38c61b3e68aa90b1c836"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed3-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed3-u0-001/manifest.json",
+      "manifest_sha256": "c53e92ed0c972da72aa94f3d3fea7d823be86cdb5b11082baf65a534fc55cd37",
+      "source_snapshot_sha256": "094fc1db17625f46fc6d3ae630b659e4f24c598f4498bd14f88cccdd50237b8c",
+      "tracked_patch_sha256": "e79b27b832ae782556ab8af8c3fc7c6388ef79456bae476812f41611517b562c"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed4-c-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed4-c-001/manifest.json",
+      "manifest_sha256": "232712a3c294883bfca1654658bba95bf456ee2a990183181ce0d630327a6fcc",
+      "source_snapshot_sha256": "7fab572c5545e129f1d9a994980719bd0a234bda76b0c3b882c52595bd28b7e8",
+      "tracked_patch_sha256": "2f29c1979bc7f87a7a31cb9114d772a622e2c9b2a7cadc5e7d343bcc6a2b4f9e"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed4-c-continue-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed4-c-continue-001/manifest.json",
+      "manifest_sha256": "fa85fafd052694c7936ac2a1dedfc52a03a9586a0387c016dcac930b8e473220",
+      "source_snapshot_sha256": "82706ee413d7bd381dc53cb7a685c38e2c8a9ddfb98f31db37378fe052d3670f",
+      "tracked_patch_sha256": "04eb6bc90147f0df1e51c6b19ec7ff25e972af44055162dddf46ecf6482fecea"
+    },
+    {
+      "experiment_id": "e7-test-u1-pick-seed4-u0-001",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "manifest_path": "artifacts/e7-test-u1-pick-seed4-u0-001/manifest.json",
+      "manifest_sha256": "0ca7882bbdec78c71b4bdabfad40b78b66a0a33224a51171ea4cac4296450445",
+      "source_snapshot_sha256": "50d55471e0cc46d8566ff302cac4dda3bad0e620963170aec6182a247a66dce0",
+      "tracked_patch_sha256": "4bb5f703145a048a9bcb776213b80693c4bbd908091a1b7088577637e27700e4"
+    },
+    {
+      "experiment_id": "f1-u0-precollapse-ranking-001",
+      "code_commit": "6b2e2d91a7a6b45debffaa4b418a08c016c10db7",
+      "manifest_path": "artifacts/f1-u0-precollapse-ranking-001/manifest.json",
+      "manifest_sha256": "6586b85e6508230e4781c1a32c6afae36c182931e1d06752e80ea9ba18bb4e6d",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "015c422b5b98ffab09a90408719b5ac3889680f0893710a67dc43f8fdc95e0ca"
+    },
+    {
+      "experiment_id": "f1-u0-ranking-001",
+      "code_commit": "94d3ab7994c7b4ca8959f406f5079b6c7a4b6bb0",
+      "manifest_path": "artifacts/f1-u0-ranking-001/manifest.json",
+      "manifest_sha256": "cc9fcd4300e10db3b4fb69503f3f37e3eaf2b1cde50af7ae7aaad9d9019a71ae",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "4a95b8cbebdd8f50c1fe37b9ff0e176495bf25c92d8aa0ba9afe8d4802303af9"
+    },
+    {
+      "experiment_id": "f1-u0-step196608-prefix20-001",
+      "code_commit": "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0",
+      "manifest_path": "artifacts/f1-u0-step196608-prefix20-001/manifest.json",
+      "manifest_sha256": "f8153472cda1e10a971242b03aa5539bf55c42005ae167e2ca994ee7ab3ef39b",
+      "source_snapshot_sha256": "ec48a168dfd48aff7e6ed2c6f6a8a0c6de8268f87fa67a5c635e34a6f814d104",
+      "tracked_patch_sha256": "e83672f1a73b064462d76dbb16e8e2294ed987be5ad9d4fee908e4817ef6a4fd"
+    },
+    {
+      "experiment_id": "f1-u1-step196608-prefix20-001",
+      "code_commit": "f3cbe8d1884b253193e5c30ee67683da9e42eeb9",
+      "manifest_path": "artifacts/f1-u1-step196608-prefix20-001/manifest.json",
+      "manifest_sha256": "0f60c23386e01ac9c7d659ac3386d4c6fc45d0c91c5cac50a89f9d335a15105a",
+      "source_snapshot_sha256": "3c36a74fc6891917763c920a1951ff1a90b5757e194c3407b7be991a572cd240",
+      "tracked_patch_sha256": "4f58eb76a6b701113c20843d9d29efc43f4469bf3f14d69ede37808e6e3ed609"
+    },
+    {
+      "experiment_id": "peg-seed0-a-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-a-001/manifest.json",
+      "manifest_sha256": "b0db2fc51f334cb439017fad0ff8989f7372cd90c6407be6b42f79f2b2327dfb",
+      "source_snapshot_sha256": "eebc9bb159d272dfa1bcfdd90234a52c89ad118c293ee1e6539e394b53fd4a45",
+      "tracked_patch_sha256": "e1eac4f471c6d969048e370f38bc0e43cfe5775fcc3e24370967d64e3d2f580b"
+    },
+    {
+      "experiment_id": "peg-seed0-b-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-b-001/manifest.json",
+      "manifest_sha256": "dbd715c5027f59bf35df4d1f8bb958f7a93e276d4349ef97c561816be0ccde84",
+      "source_snapshot_sha256": "2dd7a6dbabafc02fe2fb4b1bb2d70c3b29b814901dba54cf4a3c6835f97a4366",
+      "tracked_patch_sha256": "0c778acb99b8e9b26178530138323ae401853ab737fd893893fd4c0bacdd5d23"
+    },
+    {
+      "experiment_id": "peg-seed0-bc-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-bc-001/manifest.json",
+      "manifest_sha256": "69f9af5032d2b55f1e820f29881b51246bd1ebcec763891b0f1eaed1b7f6b3d6",
+      "source_snapshot_sha256": "51c18f730b2a957443d4d65b302258b7d5358390886559817dfc2a00174b5517",
+      "tracked_patch_sha256": "bfe6020183300ea5af1a63cfecaf7dd8622ebbb755940c53a20bb66d4975d401"
+    },
+    {
+      "experiment_id": "peg-seed0-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-c-001/manifest.json",
+      "manifest_sha256": "03ac3c3160988be947e445abf9c1f28d5ccd3aa127a62cf214af3604a0bee9c8",
+      "source_snapshot_sha256": "b2eabb59fbef52b31a910ccbbe833b228597e331a9255eb0e5ded0cd71d1e5c3",
+      "tracked_patch_sha256": "35597ec478991d61ae1f41b8c93428b9079c5a68c12ecd130a460dc0747d152e"
+    },
+    {
+      "experiment_id": "peg-seed0-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "6a037148bc68b66d8f98c691e67ed77a67e94a1af85e5f4afd02cf7b16802261",
+      "source_snapshot_sha256": "2bf3b570a548f3092a8ee4d91ed3947954a43de280cbdf509879f40312ba2a5f",
+      "tracked_patch_sha256": "2f5a82d8b424d00036441085dc07de11475993ead32d854f82821f81697789b8"
+    },
+    {
+      "experiment_id": "peg-seed0-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-u0-001/manifest.json",
+      "manifest_sha256": "554baa7515e835ae7f8273b94c98f64f156ae6b3cfde1fa31fa427b4fb6134e6",
+      "source_snapshot_sha256": "3f8f4482b2a388670dd4d2215e24775e0628676e812a6ff4935a399b043374a0",
+      "tracked_patch_sha256": "b33b3cce259f0a3aec592d8de0a14c40ac50e3b06399e74fcdb63146ad5265cf"
+    },
+    {
+      "experiment_id": "peg-seed0-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-value-001/manifest.json",
+      "manifest_sha256": "a767b74845cd68589426b3129188dae068f5c20a83f4c1ba1f70218ce9941733",
+      "source_snapshot_sha256": "f7634f94e9d7e2d1f06a20df97979a7de74af95752260a473b5aadbd70c95c6c",
+      "tracked_patch_sha256": "f5efcd6cc6b9bd033135db4f13c20a8ea4920939d75d3bcb02e38c380371614b"
+    },
+    {
+      "experiment_id": "peg-seed0-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/peg-seed0-wm-001/manifest.json",
+      "manifest_sha256": "b3aca2117be2e798fa0384a58b6b433a22f738bd1bb0b820ea232590ac34dd3a",
+      "source_snapshot_sha256": "e5d57101d2a979e72f18a3c3be3ad2767a31960ead39a9851d6fd14be3561625",
+      "tracked_patch_sha256": "b320c85db2d6a9cb061976ab26759ae097c53ee27276785faef4dafd8cbbfcfe"
+    },
+    {
+      "experiment_id": "pick-seed1-a-001",
+      "code_commit": "d699acb9cdd6e36845cbdb89df9e85b6f5e408ae",
+      "manifest_path": "artifacts/pick-seed1-a-001/manifest.json",
+      "manifest_sha256": "530d8b26339b3dea91525b42429e809dd311e56357dfcb890342b992e6d0c961",
+      "source_snapshot_sha256": "4e7903c32c0cb7c292af06fdcb20f701b31fa9eeb670dd305ff9e4ad74f79923",
+      "tracked_patch_sha256": "16eed015a143aac90308b4620bc15e0e56fd28d52b7e39b547438c4979aa1766"
+    },
+    {
+      "experiment_id": "pick-seed1-b-001",
+      "code_commit": "47599319c50930fabc73dbd76ee2da7d973fdacf",
+      "manifest_path": "artifacts/pick-seed1-b-001/manifest.json",
+      "manifest_sha256": "de1aa0b52957172f00bd375d6a9497fff8ee5a38b28cf86c767343059933d4cb",
+      "source_snapshot_sha256": "3901e58a6c6d4c14d3ae10b0b16b644767cd6d9e46459bbbbe88322e9396fd5f",
+      "tracked_patch_sha256": "a60ea27fbd4c29ccd681f221903be643d8cb32f02515f292c9847c61d2ac11c2"
+    },
+    {
+      "experiment_id": "pick-seed1-bc-001",
+      "code_commit": "779129b1b0d9c8c72f7d22f99f1d485112e29241",
+      "manifest_path": "artifacts/pick-seed1-bc-001/manifest.json",
+      "manifest_sha256": "a66839118f509c68e4ea7b8f7ddac39c95d1af1e97f108ee08a012723953ab9b",
+      "source_snapshot_sha256": "a5795322704db1ae93ea221f2a0188d4dfed6f110fe5a22f9e5a5ee3f095db85",
+      "tracked_patch_sha256": "020d22eda073ee3e3b5d0e403726a983b0cf459439320a7bef7d1408a26b28fa"
+    },
+    {
+      "experiment_id": "pick-seed1-c-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed1-c-001/manifest.json",
+      "manifest_sha256": "496d75e9ebfe1933df27523197d793b57f7cd7665f3e84fcbbccfa077b2bc0e9",
+      "source_snapshot_sha256": "86578cb0eed507c53f488455448999b8dc1e37e99e0a303537c0e34dfe85e78e",
+      "tracked_patch_sha256": "f38651e58b3848b88130c81b07df0f6cff0155a0367860f14f053ad3b890bbe7"
+    },
+    {
+      "experiment_id": "pick-seed1-c-continue-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed1-c-continue-001/manifest.json",
+      "manifest_sha256": "85a3f2f13194b3f9e154da933d79c9b2a5da83f2c4f6c4fd5c6841fec84acfdd",
+      "source_snapshot_sha256": "2c1088de5842511924c98749babcc9f6c77f9e4bc14582be3f3fdc9dcb352bde",
+      "tracked_patch_sha256": "4a2e6198f65f4419236e043c5bdb039a7ed08efc56ad3aaf5d7c044cd17f5290"
+    },
+    {
+      "experiment_id": "pick-seed1-u0-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed1-u0-001/manifest.json",
+      "manifest_sha256": "be4186e325ebc0c50feac19e5764d26c89033215191373e09ba30e20ce8b79d3",
+      "source_snapshot_sha256": "52d135a4d0662910ec267f21ba50397f60b50ee33d61752adcbd242a0bdf48f2",
+      "tracked_patch_sha256": "b21626ac0e98626a94fe3923aa4dd8f370263916546754b37b03433e43d5c761"
+    },
+    {
+      "experiment_id": "pick-seed1-value-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed1-value-001/manifest.json",
+      "manifest_sha256": "865bf579d66045aa887d0c4c0316d59dc233f72fa8a1445a365c243201470403",
+      "source_snapshot_sha256": "96633c66691b7732261f5f7e4983a010ac7a7fd86e434e1d43b33a56aa947877",
+      "tracked_patch_sha256": "9c1482196b3546dd3d6d551dfcfe01ba68e1631347c6dd45027d102c988b99fe"
+    },
+    {
+      "experiment_id": "pick-seed1-wm-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed1-wm-001/manifest.json",
+      "manifest_sha256": "b4cb82ea2ebb2e44e8195ede05d7d182e109be3dc444542f2514fdf2cda57b5e",
+      "source_snapshot_sha256": "06a8adedb4a2e36054a0e4437962be93a2426cb485bad45fc0632aee77f1ed64",
+      "tracked_patch_sha256": "bec978588291cd42d4b7c99a2902a2d5a321dade400b6edd9da14f204e294692"
+    },
+    {
+      "experiment_id": "pick-seed2-a-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-a-001/manifest.json",
+      "manifest_sha256": "c01c0547fd510b2cd2c4e33dba98fafb878b81eec0039adb1e5a649df24d1484",
+      "source_snapshot_sha256": "f0fca2d09b069ffd83140d620539065029841081b7ada3ab7d3cb35df0844374",
+      "tracked_patch_sha256": "fb7d8dbd21da9dcd2b1e8e555e9ddcfde6039c163b04aedc87e762259edbc28e"
+    },
+    {
+      "experiment_id": "pick-seed2-b-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-b-001/manifest.json",
+      "manifest_sha256": "ec867cb3156e49ef34bd8132ba27050ab78e70f15622845c9cf6bcb1a7fc5de0",
+      "source_snapshot_sha256": "c8374e90d72adade5f95495b60a607a9cf61d64866742da1feac012a07746400",
+      "tracked_patch_sha256": "4f20482d055805ed94bfe3b945b0bdb748ae260ecde973dfcf4159a1d04b7e69"
+    },
+    {
+      "experiment_id": "pick-seed2-bc-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-bc-001/manifest.json",
+      "manifest_sha256": "1caa8ac8e273fe7cd1de65ba5858890d15d42a1b07c30d73f576ad2827f3a8f4",
+      "source_snapshot_sha256": "4f827e8676720594cc0448a9a4f4cda335cba2f7bc51e39cff4edc11f97c81df",
+      "tracked_patch_sha256": "06032a563913364ea452e7b79d1965797366243958480c16ed0ed775d2d852ce"
+    },
+    {
+      "experiment_id": "pick-seed2-c-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-c-001/manifest.json",
+      "manifest_sha256": "26a71fe30c0f812011d8aa8ce143e697d74329af37cc1d44ea752be7e3e9ac8c",
+      "source_snapshot_sha256": "13526334d1d8f58537d0a35f90b96187c34f5ab6cf1044be0e8f7279e47416d8",
+      "tracked_patch_sha256": "c92c6ee13e30d047665396601b66d88828de60057eec754fbfe008b14c31bdee"
+    },
+    {
+      "experiment_id": "pick-seed2-c-continue-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-c-continue-001/manifest.json",
+      "manifest_sha256": "a69325e351f1d4d820e479fb50583f3ed95d0b7d70b8635510ab0f49a0dd3f6d",
+      "source_snapshot_sha256": "18f5b98da7410b112ff2ae907ffd3265f6c4e7de0c71691adeefdb9db6f8d147",
+      "tracked_patch_sha256": "00f81640ffee02182aaf4ffd2e38110bc1189ff01823b796d2bae2d3cf08ad45"
+    },
+    {
+      "experiment_id": "pick-seed2-u0-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-u0-001/manifest.json",
+      "manifest_sha256": "7e2f40a8450a04dbf1836e7fccf82f9a8919b70b40e6124dfa46cd8e7aa04f35",
+      "source_snapshot_sha256": "28976ca3687a7725afa0d58e86db10157875fb8b15b2517183c07a0ba745f858",
+      "tracked_patch_sha256": "fdd8f6fb963198ecf912ed3f8d4105024e338eb814df6f30a7b49ceca90ca0d6"
+    },
+    {
+      "experiment_id": "pick-seed2-value-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-value-001/manifest.json",
+      "manifest_sha256": "2eacda4a8869c8cdb917768b12a6a952a30101f3cfefc389954442925be3929e",
+      "source_snapshot_sha256": "649a857f9d991322c6eb5cd7e5ea9803f3bf6b606d4e8795c4dad5deff069948",
+      "tracked_patch_sha256": "0dd23344cc1e285a9c6b0cb17b4405595be705e36d7e67613da66617d3f36b2a"
+    },
+    {
+      "experiment_id": "pick-seed2-wm-001",
+      "code_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+      "manifest_path": "artifacts/pick-seed2-wm-001/manifest.json",
+      "manifest_sha256": "82c0620afb00c3d063c41dd01e90c2e6df036bc87517b9ad5234adbb3705c27b",
+      "source_snapshot_sha256": "a08a4e572dfc532d0e2499ca2107ad1b676147aa06b9a6ebdc85078a5902d400",
+      "tracked_patch_sha256": "344c981ce58821005f8a3f15b11dcf1a5da572e4b8f21786250effe9598df447"
+    },
+    {
+      "experiment_id": "pick-seed3-a-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-a-001/manifest.json",
+      "manifest_sha256": "52c0b5027a05388a44ac058bbb806e35c316a05caabcbbea6f5461ac6b722dd1",
+      "source_snapshot_sha256": "717a2bbf6b626875b368f1e6610056d90755b727dfce9be886d41c03c969ecec",
+      "tracked_patch_sha256": "f080ca4f84b870df19f86c8165ada098ffff5c9621577ee1e4478d5b91d9c579"
+    },
+    {
+      "experiment_id": "pick-seed3-b-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-b-001/manifest.json",
+      "manifest_sha256": "16e98d49405af48df842f8ca88350b7dc27edaa4165717637d06b7a02968027b",
+      "source_snapshot_sha256": "24cd31a4b33db7cff569a6d3059c014ea698426c8989b2fff35f8dfd83269b7f",
+      "tracked_patch_sha256": "5fd15cbc5083a2db948d2e5c76a1532251650651bb684743447861c28170b3bc"
+    },
+    {
+      "experiment_id": "pick-seed3-bc-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-bc-001/manifest.json",
+      "manifest_sha256": "c6ad1c8e90f9fae8519dd2c54ec301f5bb36add4a3fc5f67e368afed69cab787",
+      "source_snapshot_sha256": "17758e570eaadc42a443363c2a624ec628d1515adc000ea8faa2736766cb21a6",
+      "tracked_patch_sha256": "359738d0f000cb7b47c4fdf824e986f49fdd4f2f3327b221531750317362f207"
+    },
+    {
+      "experiment_id": "pick-seed3-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-c-001/manifest.json",
+      "manifest_sha256": "50cb9e8d4813515bb6472d88850e682704681335365c4dd23b0253c739ae2f82",
+      "source_snapshot_sha256": "58e629ed7562cf3a5b4c631bcec274ec3bda3d43f087ba3d16d1f05ba7674cba",
+      "tracked_patch_sha256": "bfc4674699474d6d9a066b02dd2ccfae0bb80893645d5617ead26425fb24e76a"
+    },
+    {
+      "experiment_id": "pick-seed3-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-c-continue-001/manifest.json",
+      "manifest_sha256": "788b4a6aedbd47fd6c6213d9295d6503a841d1911e2d956bb5be7d2e0c02daaa",
+      "source_snapshot_sha256": "1d7ecd0eec93db793c6fa8a30a43a57bb9e77db15f554ceee801cfb49eaa43c6",
+      "tracked_patch_sha256": "f85fa82c931f2af2508334e5cc90f5ee75718f7095b031dcace6ad4b40c65f32"
+    },
+    {
+      "experiment_id": "pick-seed3-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-u0-001/manifest.json",
+      "manifest_sha256": "b63bad4c2496f18d4ffe38a73ed250f62644d11e09341ec7e10b079a21bacef4",
+      "source_snapshot_sha256": "c001aa3d377a219679155fe18ebcae488354889eb7573806dfde2da6c5a686d9",
+      "tracked_patch_sha256": "af40926b8122bd5af19752cc5bcfdf9567ebc3346610df40f9f5082f09e51f21"
+    },
+    {
+      "experiment_id": "pick-seed3-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-value-001/manifest.json",
+      "manifest_sha256": "144257e35c854da8c7cd7356e892609938ac66f05cbc33f154f3b71a21172b19",
+      "source_snapshot_sha256": "fa1d94a535e4f6d539218319e9fcc7e2753f670c57d40abd181875da6216b0ca",
+      "tracked_patch_sha256": "1f18f0f5782caab8f3c6aa6985fe2e0d1d4f0ab22f860b14ffd3d9a8420bed65"
+    },
+    {
+      "experiment_id": "pick-seed3-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed3-wm-001/manifest.json",
+      "manifest_sha256": "4e4a0f631827c29addeb93928bb9a1333bed0bc69f7063ae0604f5e4fd7a7005",
+      "source_snapshot_sha256": "4b5f2f5c946fa36130b19589a4ecdf860324d7e9fd158f5f478ca8779261f48b",
+      "tracked_patch_sha256": "605e29e41be0c80f7341753846af6f83410074d5739bc46c909620d306842eb7"
+    },
+    {
+      "experiment_id": "pick-seed4-a-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-a-001/manifest.json",
+      "manifest_sha256": "cd17dc9aced6af9c94f2c08a34d58b49dfd68538d3926b91573dc218e753baad",
+      "source_snapshot_sha256": "1f0cd7def8b809ad38d6d3c5dcb2111b636117fd699f017f2d3ab41cbd931882",
+      "tracked_patch_sha256": "54ad2827e729917f583855ab8d1ad55c93bd20d9a8d1e3569c0248a25f0e25b5"
+    },
+    {
+      "experiment_id": "pick-seed4-b-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-b-001/manifest.json",
+      "manifest_sha256": "9b3bfeb03e43ec9c3f37cc9195ab4a81872cfba37dee96b0f1ab7415e43d75a9",
+      "source_snapshot_sha256": "6933c66d7802ef4fe0123e62e1e1f42eac35a8bd0659fb35089ce0bbb65a99d9",
+      "tracked_patch_sha256": "987efedccac02a0105cd2a9ab54797a65b3a83a9f1681ca0cf02f5c667616c25"
+    },
+    {
+      "experiment_id": "pick-seed4-bc-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-bc-001/manifest.json",
+      "manifest_sha256": "610eb162f3a52bdaf8d6ff6c8b1bcb6917f3921430e68a5a2cffbd640a975edb",
+      "source_snapshot_sha256": "89e318cfcf5b461dc88498e117d4b41720e40561458a24b8c6d4411433be43c4",
+      "tracked_patch_sha256": "6dab5fa286d2696acf8e3b1830ec81432d8e8316fcf33cbae1896fba6fbc0ad2"
+    },
+    {
+      "experiment_id": "pick-seed4-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-c-001/manifest.json",
+      "manifest_sha256": "4c487c2360be7f5179895e4343e4ff17895f7e7443cf378b9afc937d6540d951",
+      "source_snapshot_sha256": "19adef83883ea6cd4e02fba546cf63df8445f78614c65b2c2a3130cf17146756",
+      "tracked_patch_sha256": "d06bcd9f6049e11013ff1ff082823203ddc92b9cbfe1d6d855d3d5ebfd80ec85"
+    },
+    {
+      "experiment_id": "pick-seed4-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-c-continue-001/manifest.json",
+      "manifest_sha256": "7cc915d9328f363dd7d5f5a2a103a87f5a8774f1bc6c17eb9d578dc65ba0d6ca",
+      "source_snapshot_sha256": "ecddd6b6b163ffe498ba3b4ca94062aeaa4ce58a34cad38ea997f1d8ae558be5",
+      "tracked_patch_sha256": "610cd3bb30efb7bfb3d72962b9fca8ab51b02f31ac2319472266e8cbe3f2a889"
+    },
+    {
+      "experiment_id": "pick-seed4-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-u0-001/manifest.json",
+      "manifest_sha256": "f6f8f82fbdefac077fb1cbd29ef46f59c55b12bd8ef55556350f88563bfe5f0a",
+      "source_snapshot_sha256": "c35c061a3d9704a2b842cfbf1d5bedc742d84f76fc634af8425672f0901ac2eb",
+      "tracked_patch_sha256": "58c13c36f7bd4af27dbd92ddf6853c26cc9c21e277a3f4e9ee37608c4b5da6e9"
+    },
+    {
+      "experiment_id": "pick-seed4-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-value-001/manifest.json",
+      "manifest_sha256": "8e5c345115cd18458a8eb45024aa0cc6e1ec9ad4bec9d7dfdc9b66ea788fb797",
+      "source_snapshot_sha256": "5a1f446ba9a18952c4c52550547f351edb93160fdb3881e6728ab3d91a56089c",
+      "tracked_patch_sha256": "b7badc86a913d08b7b799fe8fe6ae8c0ccec8abf464b97c26749219ac528c783"
+    },
+    {
+      "experiment_id": "pick-seed4-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/pick-seed4-wm-001/manifest.json",
+      "manifest_sha256": "97b8f5c53cb096a2b928127e8bc4738f6e5f872977301b0371e38ad925cf4c9e",
+      "source_snapshot_sha256": "469a478a477454b5ffaaa3d375c2540ac8dd6e1231e492cbafba63c899d84c55",
+      "tracked_patch_sha256": "9f461548cae5ce3bdc3197a08e78e8b6cbbbe5fe319b4afba26c058cf3f37014"
+    },
+    {
+      "experiment_id": "stack-seed0-a-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-a-001/manifest.json",
+      "manifest_sha256": "5537e0b072dc49b83e409e4083208e6a0185397dc2f93aad155ed2f5bdf9cdfb",
+      "source_snapshot_sha256": "3f7029aac8225d30b0711d0c5207656fbf2e812871d0a1b66d0636b33c10a673",
+      "tracked_patch_sha256": "45a3f63555bee2bf9f504ee2aa6314ba652ae1810f718d24c0e69fbca857cb90"
+    },
+    {
+      "experiment_id": "stack-seed0-b-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-b-001/manifest.json",
+      "manifest_sha256": "a328a44a6d9510a4788e3c38408fc708f788a81e13202f85591c1880888b4eb5",
+      "source_snapshot_sha256": "5d4cef152d984782555fd3a0a78fb5e11f7380d451a48dd9610b666879070d74",
+      "tracked_patch_sha256": "bb57bd885ff28e7d0668d3fb36210195fea33e8270979fc7f1a5dc1e809f7bd9"
+    },
+    {
+      "experiment_id": "stack-seed0-bc-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-bc-001/manifest.json",
+      "manifest_sha256": "cacaa19a2d994f5d0453c16d2b84bff674463b42e287723b0645aa385fde55ae",
+      "source_snapshot_sha256": "3fd9c7f191d6075afd13634fb557727d4fb29b850010d572643e0f45d3107fe4",
+      "tracked_patch_sha256": "db0d28051450d8ea86c4b1d8f000aa4fd498c6d8e19a32bd18ee707bc530d126"
+    },
+    {
+      "experiment_id": "stack-seed0-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-c-001/manifest.json",
+      "manifest_sha256": "a0171acb9644cc9ab2d447b443ab823e93ae9c86ce4dc4494c59874729294a91",
+      "source_snapshot_sha256": "c004ae08942d7fdca3969f10bdab5dfffb61fddc27c43ce0af88f5cb87b6bba3",
+      "tracked_patch_sha256": "fa04be583dd8d3caf02c66ff48691033904aad9be72807b9d229b72546109f2e"
+    },
+    {
+      "experiment_id": "stack-seed0-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "4cd7664fff91d534165491868c1547fff9c43b191417fc9e241c69bf17cc9199",
+      "source_snapshot_sha256": "77d2ed537db7f9809eb15b0771d8aa23cd75da322831d451db02860c68c6b9d3",
+      "tracked_patch_sha256": "2e67d25e0b8a85663115d9ba835ab76c44a8fd00720e71f3b9d440a6469a58eb"
+    },
+    {
+      "experiment_id": "stack-seed0-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-u0-001/manifest.json",
+      "manifest_sha256": "a52af3de1aa5ec250ae4235695c32e105239ef7878a87fde821b9048305ffd1e",
+      "source_snapshot_sha256": "d199a8a02d6382f7bb6d83aa2d848c84ece890199e78c41a4ba27333b02c833e",
+      "tracked_patch_sha256": "f3c4aafec1e09ca74a2b3fee3f76caa669bb962383d4e044ffb972dc4030733c"
+    },
+    {
+      "experiment_id": "stack-seed0-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-value-001/manifest.json",
+      "manifest_sha256": "e17a4b658d575ae88af1536ff2a49b88eec0cd07fa58a3b7109bebec25c6b409",
+      "source_snapshot_sha256": "8479f82a0b455672c984ac52b4ad7b2ba2c53342b6c9e835cdc780ff5c0ea979",
+      "tracked_patch_sha256": "7befcc9a7a937385f922c987eda228655855a8506ad1c169352884b2a27d0964"
+    },
+    {
+      "experiment_id": "stack-seed0-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/stack-seed0-wm-001/manifest.json",
+      "manifest_sha256": "8fce8d3f1ac4424e27f1f298c578e0e0f5d3b9f89dd448c9bfd3cf254f6b523b",
+      "source_snapshot_sha256": "0d25aa4c8f26249fecc359e0ebb171b7f03b0ceea19703a77b557ad6614dccb7",
+      "tracked_patch_sha256": "a4bc9694a42bf4faed6cb49a42791fdd2862d572aff489535d8eb19f11e4f21b"
+    },
+    {
+      "experiment_id": "u1-pick-seed0-c-001",
+      "code_commit": "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+      "manifest_path": "artifacts/u1-pick-seed0-c-001/manifest.json",
+      "manifest_sha256": "17ba7873e8f08802e6d749b3a65931a011aae1192b9f1ede3d88e320ed282906",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "9b39c9481d31654684877f6b42177c224fa0842ab00bcb907189f885017df8f6"
+    },
+    {
+      "experiment_id": "u1-pick-seed0-c-continue-001",
+      "code_commit": "f3bbfea82c3946ffb5fbf77f280e171bef0ba672",
+      "manifest_path": "artifacts/u1-pick-seed0-c-continue-001/manifest.json",
+      "manifest_sha256": "eed13a71014eac88045ea1f408cd53a32d1472650f2c4c6d281e632103a4e748",
+      "source_snapshot_sha256": "f455bbfc1cf3b77d4478b515c0a8ffb8fb2cdfc34eb414c5915adbfa4a76da00",
+      "tracked_patch_sha256": "8a83b5f2c4f49655c3731117ae71ccf7da8a6f589486f966779f477c33da159f"
+    },
+    {
+      "experiment_id": "u1-pick-seed0-u0-001",
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+      "manifest_path": "artifacts/u1-pick-seed0-u0-001/manifest.json",
+      "manifest_sha256": "890ec71e6d5e71fc08a5763a30d7e1b10570e67c402380e0e688785131fddfbb",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "4621b77246d68e850e6905b3d37fba635c1f4d0ef8d3a038e225ac1dce054358"
+    },
+    {
+      "experiment_id": "u1-pick-seed0-value-001",
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+      "manifest_path": "artifacts/u1-pick-seed0-value-001/manifest.json",
+      "manifest_sha256": "7e766a3a203c17de72d14227606d50242acecac46787e31b7330eac8e9e466df",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "81d8d9d6443182bf4eee595ae647ea14443b112be443b62275da8073441b17d1"
+    },
+    {
+      "experiment_id": "u1-pick-seed0-wm-001",
+      "code_commit": "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+      "manifest_path": "artifacts/u1-pick-seed0-wm-001/manifest.json",
+      "manifest_sha256": "eba3bc9990d73ee542892e8e9354974b4657e12c08592802fc289d4f50705c5a",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "529f3c4c0314baa1266d0bb30b579c858f89152e225ab7ca583063d3a50a95be"
+    },
+    {
+      "experiment_id": "u1-pick-seed1-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed1-c-001/manifest.json",
+      "manifest_sha256": "bcfa95121d88806c7c0a7301197c769e06e13263327c1a818039b3c908b4e87e",
+      "source_snapshot_sha256": "cf5bef3f2fdef1dda93cf300e43c7f356ba46a7a2687fea048c470926b77118e",
+      "tracked_patch_sha256": "d12ddb05c9615cce2779cbac60800ea7ffeab5f3e307409478dc2b68343908e2"
+    },
+    {
+      "experiment_id": "u1-pick-seed1-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed1-c-continue-001/manifest.json",
+      "manifest_sha256": "fcd1b11fedf0376589512018ce69358c6192a479002d4c3e37dc5fef90c242fd",
+      "source_snapshot_sha256": "69db6f437e31e190a83f83d5cb928b63cab2df8f8ae55e339698d10d15b19868",
+      "tracked_patch_sha256": "932fb9895b592011c1f86ffa8960bd9657c26e9877cf1f9a2948c6dfbab03d15"
+    },
+    {
+      "experiment_id": "u1-pick-seed1-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed1-u0-001/manifest.json",
+      "manifest_sha256": "b6ceecfad979e3715fcdd3fdd0e623f4420fea8e1cc0f4bc77a4b75a20dc4989",
+      "source_snapshot_sha256": "d948229d6690839e8879ba63de716a5ba3cb108fb5d4e4945ee7dc1d4d29bca1",
+      "tracked_patch_sha256": "d97b4b65de2993f4f902b00215041ab0de17902610ee3b5d1eefa888d58a9a08"
+    },
+    {
+      "experiment_id": "u1-pick-seed1-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed1-value-001/manifest.json",
+      "manifest_sha256": "2ab37016a83a531aa6dae42626bef7bc83391529dcd9c442b735a013dc6ed515",
+      "source_snapshot_sha256": "e170659933806bd48130cb0e35941d2767ac686ea0b6ab9258c7042d34ef7551",
+      "tracked_patch_sha256": "ce76e758bc2cc97f7451c7d3786c5adfb0c719da19b8863d26a4e9e8bc1c0867"
+    },
+    {
+      "experiment_id": "u1-pick-seed1-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed1-wm-001/manifest.json",
+      "manifest_sha256": "4cd04123a871a52c10ad7b25dc6e993238b88764cad18bc08d52608519c0a244",
+      "source_snapshot_sha256": "ff77d78b17bb6d8f129eacf3e2e3048f0b71ca000a8edd840729bed3e762498d",
+      "tracked_patch_sha256": "2eb193ae0359045ce7ca527fcb4d4537ef4a565d395832b62a7696216485548d"
+    },
+    {
+      "experiment_id": "u1-pick-seed2-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed2-c-001/manifest.json",
+      "manifest_sha256": "3da015ccd6ed7547c7cd15057c553966eef5be6d4c1b35b33451a750f416fb24",
+      "source_snapshot_sha256": "7184cc3832a9c976f77e318c3e2d14fd2906195c0e33058ac96011b8e2b49d27",
+      "tracked_patch_sha256": "b536ecc18f7be248d3878eccb78afffa7607337617a904a5dd08ab8efcfcb0e3"
+    },
+    {
+      "experiment_id": "u1-pick-seed2-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed2-c-continue-001/manifest.json",
+      "manifest_sha256": "00d12b6df87c037442946ec00ede4c0e54710a31f31afb1a6a299028f936e2bc",
+      "source_snapshot_sha256": "d99f52ff0d3f6575a54b157605515e53f91b83bc1d3a37e11e4d05cc39ee1297",
+      "tracked_patch_sha256": "526cccd6585ce93bf3597a5fa93f69f445750a6979b9763f2d0c4f50a0a1979b"
+    },
+    {
+      "experiment_id": "u1-pick-seed2-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed2-u0-001/manifest.json",
+      "manifest_sha256": "3bf935d33c6cac0f49497ea9138a16a460e3264dfe9ba3125f02038e700cd714",
+      "source_snapshot_sha256": "105b972815a28e6ff44234fc1d44d2767141be673045a96d81027fc2af8afd1b",
+      "tracked_patch_sha256": "d8499dc913cd02614f215dd42d209ed32bf389540859430b26b601d2d523d2d6"
+    },
+    {
+      "experiment_id": "u1-pick-seed2-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed2-value-001/manifest.json",
+      "manifest_sha256": "7c6d6fdb8cba793098a5cef51bca23795bceac23f1a218ddee0630be0145a296",
+      "source_snapshot_sha256": "d0bea7f64ebf2677209146df1113c0866984a9d223bbde5eac5330411754e4ec",
+      "tracked_patch_sha256": "610b20f0b7b14abf420ce855dcd2f3b6e35841543959549c9fa34c3fb196d147"
+    },
+    {
+      "experiment_id": "u1-pick-seed2-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed2-wm-001/manifest.json",
+      "manifest_sha256": "1cf0e433ef0918242d0bc0eb6ab5572b615cdc11ce453e8a4766654e947dc7f3",
+      "source_snapshot_sha256": "6a0f07679e5542a937afa862bc4a453d7400ad236a76fa3bc4a760167c5b9804",
+      "tracked_patch_sha256": "e066dcff5ca55e31fd55a4cf3a635099e1473447368635ee51035047d66099e4"
+    },
+    {
+      "experiment_id": "u1-pick-seed3-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed3-c-001/manifest.json",
+      "manifest_sha256": "ac85692c4c8fbbd6cb819e34d4195020a801fbf99d9095e155ef2d1ba83940a2",
+      "source_snapshot_sha256": "3e450cc2bd0e11af7f297002e7371abc9727faf97bff5e94da2ca7e5966ff764",
+      "tracked_patch_sha256": "10a1678af71bb5e71d725aeb737f6e4582d1eae5813c4c951a1e13fad517a5fc"
+    },
+    {
+      "experiment_id": "u1-pick-seed3-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed3-c-continue-001/manifest.json",
+      "manifest_sha256": "21ea624fbfaf872b2ddf5f637882fefde67a31f820bd0ffa8e2f70ced8179ce7",
+      "source_snapshot_sha256": "4aeb9391e67c1ce15137b144ec59854c9bd61277bf38d96b8abd08331e0877ed",
+      "tracked_patch_sha256": "b2df1ac2bd4ae2621d2cecae3257b8d18a28c7bf60bb51e2e2383f1db502cb3d"
+    },
+    {
+      "experiment_id": "u1-pick-seed3-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed3-u0-001/manifest.json",
+      "manifest_sha256": "ba4fb81e71bbb6b8f9e8b04749e55f54d15fcac8f78b21650c70f61ea360666a",
+      "source_snapshot_sha256": "685ef5f53185c2fa5b5914f599e38ab95dffa3ad524dab2683b70a4acfe116fe",
+      "tracked_patch_sha256": "9e4deb97163dbd5ee67981a929dd5adfd855e6fec8c6dc412a347315224779e4"
+    },
+    {
+      "experiment_id": "u1-pick-seed3-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed3-value-001/manifest.json",
+      "manifest_sha256": "aac685407a60329053537930e451993bd22e54e080e8849883f0e93148387a6b",
+      "source_snapshot_sha256": "9f2839aca5b5c2d64a5ea8870e0218ef833a6bcf26adbf53f21b1874eafcc704",
+      "tracked_patch_sha256": "2acfdc6bd56a4c8d5f2c75fbaedd586844030eb5189c4829551392cec1f52ae6"
+    },
+    {
+      "experiment_id": "u1-pick-seed3-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed3-wm-001/manifest.json",
+      "manifest_sha256": "c1c31379826b5d259c81cfac2de1df8e62cfe2b263e83bf248f4fa0385190908",
+      "source_snapshot_sha256": "fff58e090721206070d539a00de92358dde2c1a9490a36be9e5efb4d72b6edcf",
+      "tracked_patch_sha256": "95a471b65df15c59172c507f1ac4b09b36f9c1ff71cf74916277cdf76d8a808f"
+    },
+    {
+      "experiment_id": "u1-pick-seed4-c-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed4-c-001/manifest.json",
+      "manifest_sha256": "5ccb3a44419e104ba2e1023954cf4777968de9657f1270339794b5131e110e9f",
+      "source_snapshot_sha256": "ac30e94ae278a4b3a38a8365d9d272449306b76eb1db0b3d7fe0c1ab5f1c9ce0",
+      "tracked_patch_sha256": "df3e10cd1cee79f4534e4651f57b2d1b807d6a1c2ae1fa1f38f57cf5063a13c0"
+    },
+    {
+      "experiment_id": "u1-pick-seed4-c-continue-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed4-c-continue-001/manifest.json",
+      "manifest_sha256": "33268a4ea96fb520914be39301bcce30b2c04f9e0e380ac2d3fa96e6633aa465",
+      "source_snapshot_sha256": "0ea574243db2e45baa586e9af8453e38dab1be7e7ecc3ef1e3dd31f6eecce0b9",
+      "tracked_patch_sha256": "8a8aca97d5f5fe4ed647a7b559b2b7b27c3f0ef87325f2e500eb99e620a5b295"
+    },
+    {
+      "experiment_id": "u1-pick-seed4-u0-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed4-u0-001/manifest.json",
+      "manifest_sha256": "ff360d630ee38be43b7910b090944fc7892b2e5c4ef8506cb4d4b0e9174ae200",
+      "source_snapshot_sha256": "18e718a68377554c45b06be6660711b46b6c1bb13390ba44ab6ab3c58d668ea0",
+      "tracked_patch_sha256": "a8fcd0ff23886098a29b504b084effba909765607b98e71fee3c155fa7af5227"
+    },
+    {
+      "experiment_id": "u1-pick-seed4-value-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed4-value-001/manifest.json",
+      "manifest_sha256": "357e65e7a40638140120b436ea22c8fdff49d9e057f003e5eb2126d57004336d",
+      "source_snapshot_sha256": "5d67609f2cf5b0beacb2113f6755e4e90d8b9969e850a764afc44e61eeaa2205",
+      "tracked_patch_sha256": "bee55197d6afef6fe48a3cbf863eb884b5961777803c38adef917b5e1c9d6a9d"
+    },
+    {
+      "experiment_id": "u1-pick-seed4-wm-001",
+      "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+      "manifest_path": "artifacts/u1-pick-seed4-wm-001/manifest.json",
+      "manifest_sha256": "827c55d05407c729b3e90058747abb9dca889044952b1ca634e2fecb8dc006d3",
+      "source_snapshot_sha256": "c1995d63fcfbb8a2f79e7587436d92b24b29005151179301ccaba21f55c2cd22",
+      "tracked_patch_sha256": "8da4d9a8266aa0c415ed07aeccadd27d3e0194daad0135248c4b06538b0bbb27"
+    },
+    {
+      "experiment_id": "u1-sac-c-smoke-001",
+      "code_commit": "ab52d12370ee35d5a7f49e33af31077a104e6161",
+      "manifest_path": "artifacts/u1-sac-c-smoke-001/manifest.json",
+      "manifest_sha256": "fd7e11725436b56dde8d49f2f215a5a7da59f361e657d3abda719075837125ff",
+      "source_snapshot_sha256": null,
+      "tracked_patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

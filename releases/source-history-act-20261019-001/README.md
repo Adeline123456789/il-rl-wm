@@ -17,3 +17,5 @@ git --git-dir=/tmp/il-rl-wm-restored-history/history.git show 922077e293ee74f14e
 ```
 
 The history capture excludes publication of its own parts, avoiding self-inclusion. While U2 and the registered final evaluations run, local source HEAD remains frozen; evidence can be published as a Git tree snapshot without changing that source HEAD. Final delivery must recheck that every later experiment code_commit is covered; additional source commits, if required by a real fix, need a separate small increment before claiming full coverage.
+
+2026-10-19 终态覆盖：214份实际作业manifest涉及46个code_commit，终态审计均在原base+increment离线恢复仓库验证存在，详见final_execution_coverage.json。归档无需递归重打；每次最终评测的实际source tar/patch单独交付。原145作业/45commit检验是归档生成时的快照，不替代本次终态覆盖；旧未提交plot文件字节缺口仍保留。

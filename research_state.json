@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "Bounded batch stopped at final-evaluation cap: 104/106 complete; CPU closeout and delivery; additional GPU work requires authorization",
+  "phase": "Bounded batch evidence delivered; 104/106 final conditions complete; awaiting explicit final-cap decision, no project GPU job queued",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -1590,9 +1590,10 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "status": "GPU evaluation terminal; CPU accounting/review completed; final evidence publication pending",
+    "status": "Original GPU evaluation and CPU audits terminal; bounded evidence delivered; no further authorized executable work",
     "final_report": "FINAL_BATCH_REPORT.md",
-    "audit": "artifacts/act-final-delivery-audit-001/audit/result.json"
+    "audit": "artifacts/act-final-delivery-audit-001/audit/result.json",
+    "data_delivery_commit": "a00ff2cd852dd2cc16847995c529f9ed918f451f"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1600,10 +1601,10 @@
   },
   "upload_access": {
     "phase": "verified",
-    "commit": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
-    "tree": "5d0bd5304c83d1a39fd05069cf491a0ef2880164",
-    "receipt": "artifacts/github-act-stage-upload-021/status.json",
-    "verified_files": 3156,
+    "commit": "a00ff2cd852dd2cc16847995c529f9ed918f451f",
+    "tree": "212eca403a0fbf7e4f626cb9040b431c40370441",
+    "receipt": "artifacts/github-act-stage-upload-022/status.json",
+    "verified_files": 3398,
     "draft_pr": 2,
     "main_unchanged": true
   },
@@ -1898,10 +1899,10 @@
     "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
     "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
     "archive": "releases/source-history-act-20261019-001/manifest.json",
-    "latest_publication_plan": ".cache/github-act-stage-021/plan.json",
-    "note": "Stage21 verified3156 files; final actual execution commits all present in offline history. Continue temporary-index delivery without resetting local user work.",
-    "latest_verified_remote": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
-    "latest_verified_tree": "5d0bd5304c83d1a39fd05069cf491a0ef2880164"
+    "latest_publication_plan": ".cache/github-act-stage-022/plan.json",
+    "note": "Stage22 verified3398 files; all214 charged jobs and46 execution commits covered by final index. Metadata receipt follow-up does not rerun evaluation.",
+    "latest_verified_remote": "a00ff2cd852dd2cc16847995c529f9ed918f451f",
+    "latest_verified_tree": "212eca403a0fbf7e4f626cb9040b431c40370441"
   },
   "hourly_automation": {
     "id": "il-rl-wm-act",
