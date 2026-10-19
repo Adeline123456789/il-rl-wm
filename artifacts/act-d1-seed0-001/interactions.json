@@ -1,0 +1,12 @@
+{
+  "phases": {
+    "validation": {
+      "attempted_transitions": 16000,
+      "completed_transitions": 16000,
+      "completed_vector_steps": 2000
+    }
+  },
+  "total_completed": 16000,
+  "total_attempted": 16000,
+  "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+}

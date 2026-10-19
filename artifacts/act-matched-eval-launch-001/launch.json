@@ -1,0 +1,1 @@
+{"pid": 2753766, "command": [".venv/bin/python", "scripts/run_experiment.py", "--id", "act-matched-eval-001", "--seconds", "600", "--", ".venv/bin/python", "scripts/evaluate_act_matched.py"]}

@@ -16,3 +16,11 @@ PAC-ACT已涉及ACT参数迁移，故不主张“首次ACT→Actor-Critic”。�
 Policy Decorator：已阅读[论文v1方法§4及失败分析附录F相关段落](https://arxiv.org/html/2412.13630v1)，并核对[作者BeT残差训练/评测实现](https://github.com/tongzhoumu/policy_decorator/blob/92ba9ba442587ae5989c286355ace2200a0537fb/online/pi_dec_bet_maniskill2.py)。小残差以受限幅度和逐渐增加的执行概率进行探索，教师参数冻结；evaluate仍调用教师，故不能作为最终无教师方案。论文报告随机critic导致技能退化的现象，可用于后续F-ACT-02的竞争解释，不证明本项目已发生。源码还保留BeT dropout、修改reward为r−1，训练协议不等于本项目。README声称MIT但LICENSE实际为空；只读研究、不复制或安装。来源hash见manifest。
 
 继续阅读清单：DAWN价值预热/LN、Q2RL/QWM/MRS.Q/TD-M(PC)^2仅按具体失败阶段核查；在读到准确源码前不宣称已复用或复现。原RLPD/IBRL/TD-MPC2的已锁定SHA、许可与源码范围沿用 `UPSTREAMS.md`，不重新安装或更换锁定版本。未发现ACT闭环或迁移故障前，不引入新的ensemble、悲观评分或探索奖励。
+
+## 2026-10-19：F-ACT-01 定向补核（当前仅摘要/书目）
+
+- Ross, Gordon, Bagnell. A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning. AISTATS 2011, PMLR15:627–635. https://proceedings.mlr.press/v15/ross11a.html 。出版方书目和摘要核验；策略动作影响下一状态，监督样本IID假设不适用。关联当前学生自身状态夹爪误差扩大，但这是候选解释，不是本实验因果结论。实施DAgger式扩展前还需方法/源码核验，不把验证states回灌训练。
+- Rusu et al. Policy Distillation. https://arxiv.org/abs/1511.06295v2 ，v2于2016-01-07，页面注明Submitted to ICLR2016，未据此声称已录用。摘要证据是Atari/DQN策略压缩，不能作为ACT→连续标准SAC成功保证。本次未复用代码，无新增依赖。
+- Czarnecki et al. Distilling Policy Distillation. https://arxiv.org/abs/1902.02186 。定位并打开元数据页；未完成方法精读，暂不据此设计新机制。
+
+没有将行为蒸馏或ACT参数复用称为原创。下一阶段只比较参数移植，后续改进须另登记单一机制和实际数据权限。

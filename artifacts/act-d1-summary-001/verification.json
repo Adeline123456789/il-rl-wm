@@ -1,0 +1,15 @@
+{
+  "mean_success_recomputed": 1.0,
+  "teacher_success": 8,
+  "episodes": 40,
+  "gap": 0.175,
+  "training_interactions": 0,
+  "final_test_accessed": false,
+  "budget": {
+    "gpu_hours_limit": 24,
+    "gpu_job_seconds_used": 65166.48974858591,
+    "local_changes_limit": 2,
+    "local_changes_used": 1,
+    "final_evaluation_reserve_seconds": 7200
+  }
+}

@@ -46,7 +46,8 @@ def offline_errors(model, dataset, batch_size):
 
 
 @torch.no_grad()
-def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=False, method=None):
+def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=False, method=None,
+                matched_resets=True):
     from scripts.interaction_counter import CountedEnv
     from vendor.maniskill.bc.behavior_cloning.make_env import make_eval_envs
     method = method or ('act_temporal_ensemble' if temporal else 'act_requery_first')
@@ -55,7 +56,8 @@ def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=
         render_mode='rgb_array'), video_dir=str(out/('videos_ensemble' if temporal else 'videos')) if video else None,
         wrappers=[lambda e: CountedEnv(e, counter, 'validation')])
     assert episodes > 0 and episodes % 8 == 0
-    obs, _ = env.reset(seed=10000)
+    reset_seed = 10000
+    obs, _ = env.reset(seed=reset_seed)
     episode_count = 0; rows = []; latencies = []
     memory = TemporalEnsemble(8, model.config.num_queries, 4, 'cuda') if temporal else None
     events = {k: torch.zeros(8, dtype=torch.bool, device='cuda')
@@ -86,7 +88,7 @@ def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=
             assert truncated.all()
             metrics = {k: v.float().cpu().numpy() for k,v in current['episode'].items()}
             for i in range(8):
-                row = dict(iteration=iteration, episode_index=episode_count+i, eval_seed=10000,
+                row = dict(iteration=iteration, episode_index=episode_count+i, eval_seed=reset_seed,
                     method=method,
                     first_grasp_step=int(first_grasp[i]) if first_grasp[i]>=0 else None,
                     **{k: float(v[i]) for k,v in metrics.items()},
@@ -96,6 +98,11 @@ def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=
             first_grasp.fill_(-1); episode_step = 0
             if memory is not None: memory.reset(truncated)
             episode_count += 8
+            if matched_resets and episode_count < episodes:
+                # Unseeded auto-resets consume global Torch RNG, including policy draws.
+                # Discard that reset observation and explicitly seed the next full batch.
+                reset_seed = 10000 + episode_count
+                obs, _ = env.reset(seed=reset_seed)
     env.close(); counter.flush()
     append(out/'inference_latency.jsonl', dict(iteration=iteration, method=method,
         batch_size=8, milliseconds=latencies))
@@ -108,7 +115,7 @@ def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=
         latency_batch8_ms_mean=float(np.mean(latencies)), latency_batch8_ms_p95=float(np.quantile(latencies,.95)),
         inference_scope=('prior full chunk + temporal aggregation + clamp' if temporal else
                          method)+'; synchronized CUDA; excludes env.step/render',
-        validation_seed=10000)
+        validation_seed=10000, reset_protocol='explicit seed 10000+episode_batch_start' if matched_resets else 'legacy initial seed only')
 
 
 def main():

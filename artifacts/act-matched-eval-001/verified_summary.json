@@ -1,0 +1,68 @@
+{
+  "methods": {
+    "act_k8_first": {
+      "success_once": 1.0,
+      "success_at_end": 0.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "act_k8_ensemble": {
+      "success_once": 18.0,
+      "success_at_end": 1.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "act_k16_first": {
+      "success_once": 10.0,
+      "success_at_end": 0.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "act_k16_ensemble": {
+      "success_once": 31.0,
+      "success_at_end": 5.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "act_k30_first": {
+      "success_once": 8.0,
+      "success_at_end": 4.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "act_k30_ensemble": {
+      "success_once": 30.0,
+      "success_at_end": 5.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "student_mean": {
+      "success_once": 1.0,
+      "success_at_end": 1.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    },
+    "student_stochastic": {
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "episodes": 40,
+      "initial_obs_error": 0.0
+    }
+  },
+  "paired_counts": {
+    "student_mean": {
+      "both": 1,
+      "teacher_only": 7,
+      "student_only": 0,
+      "neither": 32
+    },
+    "student_stochastic": {
+      "both": 0,
+      "teacher_only": 8,
+      "student_only": 0,
+      "neither": 32
+    }
+  },
+  "final_test_accessed": false,
+  "checkpoint_reselection": false
+}

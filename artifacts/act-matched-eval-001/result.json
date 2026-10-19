@@ -1,0 +1,161 @@
+{
+  "methods": {
+    "act_k8_first": {
+      "method": "act_k8_first",
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.65,
+      "stage_counts": {
+        "approached": 24,
+        "is_grasped": 24,
+        "lifted": 9,
+        "is_obj_placed": 1
+      },
+      "latency_batch8_ms_mean": 1.3256626125075854,
+      "latency_batch8_ms_p95": 1.493290325743146,
+      "inference_scope": "act_k8_first; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "act_k8_ensemble": {
+      "method": "act_k8_ensemble",
+      "episodes": 40,
+      "success_once": 18.0,
+      "success_at_end": 1.0,
+      "mean_return": 12.325,
+      "stage_counts": {
+        "approached": 40,
+        "is_grasped": 40,
+        "lifted": 39,
+        "is_obj_placed": 19
+      },
+      "latency_batch8_ms_mean": 1.452313132584095,
+      "latency_batch8_ms_p95": 1.6720712766982613,
+      "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "act_k16_first": {
+      "method": "act_k16_first",
+      "episodes": 40,
+      "success_once": 10.0,
+      "success_at_end": 0.0,
+      "mean_return": 5.85,
+      "stage_counts": {
+        "approached": 38,
+        "is_grasped": 38,
+        "lifted": 26,
+        "is_obj_placed": 13
+      },
+      "latency_batch8_ms_mean": 1.326911490643397,
+      "latency_batch8_ms_p95": 1.5169636608334258,
+      "inference_scope": "act_k16_first; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "act_k16_ensemble": {
+      "method": "act_k16_ensemble",
+      "episodes": 40,
+      "success_once": 31.0,
+      "success_at_end": 5.0,
+      "mean_return": 34.35,
+      "stage_counts": {
+        "approached": 40,
+        "is_grasped": 40,
+        "lifted": 37,
+        "is_obj_placed": 31
+      },
+      "latency_batch8_ms_mean": 1.4834239052142948,
+      "latency_batch8_ms_p95": 1.6739258891902864,
+      "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "act_k30_first": {
+      "method": "act_k30_first",
+      "episodes": 40,
+      "success_once": 8.0,
+      "success_at_end": 4.0,
+      "mean_return": 12.3,
+      "stage_counts": {
+        "approached": 28,
+        "is_grasped": 28,
+        "lifted": 14,
+        "is_obj_placed": 8
+      },
+      "latency_batch8_ms_mean": 1.3679431031341664,
+      "latency_batch8_ms_p95": 1.5403787343529982,
+      "inference_scope": "act_k30_first; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "act_k30_ensemble": {
+      "method": "act_k30_ensemble",
+      "episodes": 40,
+      "success_once": 30.0,
+      "success_at_end": 5.0,
+      "mean_return": 31.725,
+      "stage_counts": {
+        "approached": 40,
+        "is_grasped": 40,
+        "lifted": 36,
+        "is_obj_placed": 30
+      },
+      "latency_batch8_ms_mean": 1.4852700061164796,
+      "latency_batch8_ms_p95": 1.6976981831248847,
+      "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "student_mean": {
+      "method": "student_mean",
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 1.0,
+      "mean_return": 2.925,
+      "stage_counts": {
+        "approached": 28,
+        "is_grasped": 19,
+        "lifted": 5,
+        "is_obj_placed": 1
+      },
+      "latency_batch8_ms_mean": 0.14382142905378714,
+      "latency_batch8_ms_p95": 0.1774639298673719,
+      "inference_scope": "student_mean; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    },
+    "student_stochastic": {
+      "method": "student_stochastic",
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0,
+      "stage_counts": {
+        "approached": 5,
+        "is_grasped": 1,
+        "lifted": 0,
+        "is_obj_placed": 0
+      },
+      "latency_batch8_ms_mean": 0.4209939423017204,
+      "latency_batch8_ms_p95": 0.49498847511131316,
+      "inference_scope": "student_stochastic; synchronized CUDA; excludes env.step/render",
+      "validation_seed": 10000,
+      "reset_protocol": "explicit seed 10000+episode_batch_start",
+      "initial_obs_max_abs_from_first_condition": 0.0
+    }
+  },
+  "protocol": "matched batch reset seeds 10000,10008,10016,10024,10032; state42/pd_ee_delta_pos/sparse/GPU/horizon200",
+  "training_interactions": 0,
+  "checkpoint_selection": "original fixed-final K30 frozen before D1; no reselection from this corrected evaluation",
+  "final_test_accessed": false,
+  "torch_peak_allocated_bytes": 33825280
+}

@@ -1,0 +1,14 @@
+{
+  "failure_id": "F-ACT-EVAL-01",
+  "legacy_results": "valid observed returns but not matched all-episode initial states",
+  "mean_action_cpu_max_abs": 3.1515955924987793e-06,
+  "initial_obs_max_abs": 1.9714267253875732,
+  "correction_experiment": "act-matched-eval-001",
+  "upstream_commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "source_locations": [
+    "mani_skill/envs/sapien_env.py:950",
+    "mani_skill/envs/tasks/tabletop/pick_cube.py:112",
+    "mani_skill/vector/wrappers/gymnasium.py:168"
+  ],
+  "old_sac_note": "sac_evidence.evaluate_policy seeds all global RNGs per evaluation, so deterministic policies can still match; stochastic planners consume extra RNG and require direct state audit. Do not label all old results invalid solely from ACT evidence."
+}

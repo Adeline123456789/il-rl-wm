@@ -1,0 +1,8 @@
+....................................                                     [100%]
+36 passed in 4.31s
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/diagnose_act_distillation.py", line 32, in <module>
+    if __name__=='__main__':main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/diagnose_act_distillation.py", line 24, in main
+    assert action_error<1e-4 and initial_error<1e-4
+AssertionError

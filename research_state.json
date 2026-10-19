@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "independent_training_repeats",
+  "phase": "act_d1_validated_negative_parameter_transfer_next",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 25225.871549465985,
+    "gpu_job_seconds_used": 65485.73694442492,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -108,7 +108,67 @@
     "pick-seed2-wm-001",
     "pick-seed2-value-001",
     "pick-seed2-u0-001",
-    "pick-seed2-c-continue-001"
+    "pick-seed2-c-continue-001",
+    "e3-rlpd-full-001",
+    "stack-seed0-bc-001",
+    "stack-seed0-a-001",
+    "stack-seed0-b-001",
+    "stack-seed0-c-001",
+    "stack-seed0-wm-001",
+    "stack-seed0-value-001",
+    "stack-seed0-u0-001",
+    "stack-seed0-c-continue-001",
+    "peg-seed0-bc-001",
+    "peg-seed0-a-001",
+    "peg-seed0-b-001",
+    "peg-seed0-c-001",
+    "peg-seed0-wm-001",
+    "peg-seed0-value-001",
+    "peg-seed0-u0-001",
+    "peg-seed0-c-continue-001",
+    "u1-pick-seed1-c-001",
+    "u1-pick-seed1-wm-001",
+    "u1-pick-seed1-value-001",
+    "u1-pick-seed1-u0-001",
+    "u1-pick-seed1-c-continue-001",
+    "u1-pick-seed2-c-001",
+    "u1-pick-seed2-wm-001",
+    "u1-pick-seed2-value-001",
+    "u1-pick-seed2-u0-001",
+    "u1-pick-seed2-c-continue-001",
+    "pick-seed3-bc-001",
+    "pick-seed3-a-001",
+    "pick-seed3-b-001",
+    "pick-seed3-c-001",
+    "pick-seed3-wm-001",
+    "pick-seed3-value-001",
+    "pick-seed3-u0-001",
+    "pick-seed3-c-continue-001",
+    "u1-pick-seed3-c-001",
+    "u1-pick-seed3-wm-001",
+    "u1-pick-seed3-value-001",
+    "u1-pick-seed3-u0-001",
+    "u1-pick-seed3-c-continue-001",
+    "pick-seed4-bc-001",
+    "pick-seed4-a-001",
+    "pick-seed4-b-001",
+    "pick-seed4-c-001",
+    "pick-seed4-wm-001",
+    "pick-seed4-value-001",
+    "pick-seed4-u0-001",
+    "pick-seed4-c-continue-001",
+    "u1-pick-seed4-c-001",
+    "u1-pick-seed4-wm-001",
+    "u1-pick-seed4-value-001",
+    "u1-pick-seed4-u0-001",
+    "u1-pick-seed4-c-continue-001",
+    "act-t0-smoke-001",
+    "act-t0-seed0-001",
+    "act-t0-k16-seed0-001",
+    "act-t0-k30-seed0-001",
+    "act-d1-smoke-001",
+    "act-d1-seed0-001",
+    "act-matched-eval-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -632,9 +692,394 @@
       "final_validation_success_once": 0.0,
       "final_validation_episodes": 16,
       "final_validation_mean_return": 0.0
+    },
+    "act_teacher_stage": {
+      "phase": "completed",
+      "completed": [
+        "act-t0-smoke-001",
+        "act-t0-seed0-001",
+        "act-t0-k16-seed0-001",
+        "act-t0-k30-seed0-001"
+      ],
+      "current": null,
+      "stage": "ACT-T0",
+      "start_budget_used_seconds": 64210.38123582094,
+      "available_training_seconds": 14989.61876417906,
+      "stage_limit_seconds": 5700,
+      "final_test_reserve_seconds": 7200,
+      "teacher_gate_passed": true,
+      "results": {
+        "act-t0-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 1.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.475,
+            "stage_counts": {
+              "approached": 21,
+              "is_grasped": 21,
+              "lifted": 8,
+              "is_obj_placed": 1
+            },
+            "latency_batch8_ms_mean": 1.310010996821802,
+            "latency_batch8_ms_p95": 1.4260436160839163,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 21.0,
+            "success_at_end": 2.0,
+            "mean_return": 12.125,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 37,
+              "is_obj_placed": 22
+            },
+            "latency_batch8_ms_mean": 1.434493591048522,
+            "latency_batch8_ms_p95": 1.569708454189822,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k16-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 4.0,
+            "success_at_end": 0.0,
+            "mean_return": 1.275,
+            "stage_counts": {
+              "approached": 38,
+              "is_grasped": 38,
+              "lifted": 25,
+              "is_obj_placed": 4
+            },
+            "latency_batch8_ms_mean": 1.3082224410609342,
+            "latency_batch8_ms_p95": 1.4422476509935223,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 25.0,
+            "success_at_end": 3.0,
+            "mean_return": 24.2,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 33,
+              "is_obj_placed": 26
+            },
+            "latency_batch8_ms_mean": 1.4404641865403391,
+            "latency_batch8_ms_p95": 1.58610910148127,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k30-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 8.0,
+            "success_at_end": 4.0,
+            "mean_return": 10.65,
+            "stage_counts": {
+              "approached": 33,
+              "is_grasped": 33,
+              "lifted": 19,
+              "is_obj_placed": 8
+            },
+            "latency_batch8_ms_mean": 1.3071189032052644,
+            "latency_batch8_ms_p95": 1.4343991031637415,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 30.0,
+            "success_at_end": 5.0,
+            "mean_return": 27.625,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 35,
+              "is_obj_placed": 30
+            },
+            "latency_batch8_ms_mean": 1.4436877749976702,
+            "latency_batch8_ms_p95": 1.587704653502442,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        }
+      },
+      "next_stage": "ACT-D1 expert-state-only distillation; freeze teacher using development validation"
+    },
+    "act_d1_seed0_001": {
+      "offline": {
+        "train": {
+          "mse": 0.0011683952761813998,
+          "per_action_mse": [
+            5.895331560168415e-05,
+            9.716527711134404e-05,
+            0.00018628367979545146,
+            0.004331178497523069
+          ]
+        },
+        "validation": {
+          "mse": 0.0014863813994452357,
+          "per_action_mse": [
+            6.033515091985464e-05,
+            9.930053784046322e-05,
+            0.00018460136197973043,
+            0.005601288750767708
+          ]
+        }
+      },
+      "closed_loop": {
+        "sac_mean": {
+          "method": "sac_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 26,
+            "is_grasped": 18,
+            "lifted": 8,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.5367771469755098,
+          "latency_batch8_ms_p95": 1.7210612626513466,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.0011058506788685918,
+            0.0005616182461380959,
+            0.003956533502787352,
+            0.2522466778755188
+          ],
+          "sample_mean_action_mse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sac_stochastic": {
+          "method": "sac_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.2,
+          "stage_counts": {
+            "approached": 8,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.9728537137852982,
+          "latency_batch8_ms_p95": 2.360487577971071,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.004126774612814188,
+            0.004568456672132015,
+            0.020549971610307693,
+            0.2841547727584839
+          ],
+          "sample_mean_action_mse": [
+            0.01767021231353283,
+            0.01756623014807701,
+            0.01524823997169733,
+            0.00021377734083216637
+          ]
+        }
+      },
+      "teacher_success_once": 8,
+      "teacher_episodes": 40,
+      "success_gap_teacher_minus_student": {
+        "sac_mean": 0.17500000000000002,
+        "sac_stochastic": 0.17500000000000002
+      },
+      "paired_teacher_state_mse": 0.002725261729210615,
+      "teacher_frozen": true,
+      "log_std_frozen": -2.0,
+      "temperature_gradient": -10.852874755859375,
+      "elapsed_seconds": 82.9625137639814,
+      "torch_peak_allocated_bytes": 111528448,
+      "new_training_interactions": 0,
+      "final_test_accessed": false,
+      "smoke": false
+    },
+    "act_matched_eval_001": {
+      "methods": {
+        "act_k8_first": {
+          "method": "act_k8_first",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.65,
+          "stage_counts": {
+            "approached": 24,
+            "is_grasped": 24,
+            "lifted": 9,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.3256626125075854,
+          "latency_batch8_ms_p95": 1.493290325743146,
+          "inference_scope": "act_k8_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k8_ensemble": {
+          "method": "act_k8_ensemble",
+          "episodes": 40,
+          "success_once": 18.0,
+          "success_at_end": 1.0,
+          "mean_return": 12.325,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 39,
+            "is_obj_placed": 19
+          },
+          "latency_batch8_ms_mean": 1.452313132584095,
+          "latency_batch8_ms_p95": 1.6720712766982613,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_first": {
+          "method": "act_k16_first",
+          "episodes": 40,
+          "success_once": 10.0,
+          "success_at_end": 0.0,
+          "mean_return": 5.85,
+          "stage_counts": {
+            "approached": 38,
+            "is_grasped": 38,
+            "lifted": 26,
+            "is_obj_placed": 13
+          },
+          "latency_batch8_ms_mean": 1.326911490643397,
+          "latency_batch8_ms_p95": 1.5169636608334258,
+          "inference_scope": "act_k16_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_ensemble": {
+          "method": "act_k16_ensemble",
+          "episodes": 40,
+          "success_once": 31.0,
+          "success_at_end": 5.0,
+          "mean_return": 34.35,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 37,
+            "is_obj_placed": 31
+          },
+          "latency_batch8_ms_mean": 1.4834239052142948,
+          "latency_batch8_ms_p95": 1.6739258891902864,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_first": {
+          "method": "act_k30_first",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.3679431031341664,
+          "latency_batch8_ms_p95": 1.5403787343529982,
+          "inference_scope": "act_k30_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_ensemble": {
+          "method": "act_k30_ensemble",
+          "episodes": 40,
+          "success_once": 30.0,
+          "success_at_end": 5.0,
+          "mean_return": 31.725,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 36,
+            "is_obj_placed": 30
+          },
+          "latency_batch8_ms_mean": 1.4852700061164796,
+          "latency_batch8_ms_p95": 1.6976981831248847,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_mean": {
+          "method": "student_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 19,
+            "lifted": 5,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 0.14382142905378714,
+          "latency_batch8_ms_p95": 0.1774639298673719,
+          "inference_scope": "student_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_stochastic": {
+          "method": "student_stochastic",
+          "episodes": 40,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0,
+          "stage_counts": {
+            "approached": 5,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 0
+          },
+          "latency_batch8_ms_mean": 0.4209939423017204,
+          "latency_batch8_ms_p95": 0.49498847511131316,
+          "inference_scope": "student_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        }
+      },
+      "protocol": "matched batch reset seeds 10000,10008,10016,10024,10032; state42/pd_ee_delta_pos/sparse/GPU/horizon200",
+      "training_interactions": 0,
+      "checkpoint_selection": "original fixed-final K30 frozen before D1; no reselection from this corrected evaluation",
+      "final_test_accessed": false,
+      "torch_peak_allocated_bytes": 33825280
     }
   },
-  "next_experiment": "Existing registered old training chain continues; ACT-T0 after last old training if shared remaining budget permits. Final test waits for explicit comparison freeze. ACT-D1 must await usable teacher.",
+  "next_experiment": "Independent ACT inference-parameter transfer, copied tensor/storage audit and matched-reset closed-loop evaluation; D1 mean1/40 stochastic0/40 vs fixed K30 teacher8/40. No WM before migration validation.",
   "blockers": [],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
@@ -788,16 +1233,16 @@
     "real_gpu_training_completed": true,
     "gpu_smoke": "completed_and_replay_audited",
     "real_gpu_smoke_completed": true,
-    "full_training_completed": false,
-    "full_training": "queued_after_pick_seed2",
+    "full_training_completed": true,
+    "full_training": "completed; see artifacts/e3-rlpd-full-001",
     "full_limit_seconds": 10800,
     "smoke_peak_gpu_mib": 4893,
     "portable_smoke_actor": "releases/rlpd-smoke-001",
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "e3-rlpd-full-001",
-    "authoritative_live_file": "artifacts/e3-rlpd-full-001/manifest.json"
+    "experiment": null,
+    "authoritative_live_file": null
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -807,10 +1252,10 @@
     "local_git_https": "no credential; dry-run exit128",
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
-    "remote_branch": "research/u0-batch-20261016",
-    "remote_commit": "4e014a582be095eec4571495998f5cc433cc2664",
-    "local_snapshot_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
-    "verification": "artifacts/github-upload-receipt-001/verification.json"
+    "remote_branch": "research/act-sac-transfer",
+    "remote_commit": "f06a11b11bea25e34a89f744eb2d263b5b236fdc",
+    "local_snapshot_commit": "9a38aadd63388177a99063a68728183e3e6e3be3",
+    "verification": "artifacts/github-act-stage-upload-001/status.json"
   },
   "local_hypotheses": [
     {
@@ -821,7 +1266,7 @@
     }
   ],
   "final_evaluation": {
-    "status": "queued_with_ACT_comparison_freeze_gate",
+    "status": "gate_wait_timeout_no_test_access; resume new queue after comparison freeze",
     "plan": "configs/final_evaluation_plan.json",
     "models_or_stages": 52,
     "method_conditions": 88,
@@ -838,7 +1283,7 @@
   "act_research": {
     "task": "ACT→SAC transfer, user authorized 2026-10-17",
     "plan": "ACT_SAC_PLAN.md",
-    "phase": "teacher_cpu_verified_gpu_queued",
+    "phase": "teacher_validated_D1_negative_matched_resets",
     "branch": "research/act-sac-transfer",
     "cpu_tests": "artifacts/act-cpu-tests-003",
     "cpu_real_data": "artifacts/act-real-data-cpu-002",
@@ -849,7 +1294,7 @@
     "distillation_first_data": "expert_train_states_only",
     "parameter_transfer": "not_started",
     "wm": "unchanged",
-    "upload": "background at complete ACT transfer milestone; new branch and PR, no main merge",
+    "upload": "each validated small stage, background, new branch; no main merge",
     "cpu_preflight": {
       "tests": "artifacts/act-cpu-tests-004",
       "tests_passed": 35,
@@ -861,8 +1306,13 @@
       "automation_id": "il-rl-wm-act",
       "kind": "heartbeat",
       "hourly_checks_limit": 24,
-      "stage": "teacher_queued",
+      "stage": "D1_completed_failure_diagnosis_then_independent_parameter_transfer",
       "stop_on": "batch complete or shared GPU budget exhausted"
-    }
+    },
+    "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
+    "distillation": "artifacts/act-d1-seed0-001/result.json",
+    "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
+    "next_stage": "independent ACT inference parameter transfer with matched reset protocol; no WM",
+    "teacher_selection_unchanged": true
   }
 }

@@ -1,0 +1,12 @@
+{
+  "pid": 2746411,
+  "phase": "completed",
+  "completed": [
+    "act-d1-smoke-001",
+    "act-d1-seed0-001"
+  ],
+  "started_at": 1792373060.5233347,
+  "current": "act-d1-seed0-001",
+  "exit_code": 0,
+  "ended_at": 1792373165.9179382
+}

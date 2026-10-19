@@ -10,6 +10,9 @@
     "artifacts/final-evaluation-001"
   ],
   "started_at": "2026-10-16T14:23:44.181760+00:00",
-  "phase": "waiting",
-  "exit_code": null
+  "phase": "failed",
+  "exit_code": 1,
+  "child_pid": 2576581,
+  "error": "AssertionError('Dependent command failed; no retries')",
+  "ended_at": "2026-10-18T03:43:40.431424+00:00"
 }
