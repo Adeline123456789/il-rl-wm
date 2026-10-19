@@ -18,7 +18,7 @@ def test_extension_preserves_history_and_shared_budget():
     assert new['entries'][:len(old['entries'])]==old['entries']
     assert new['historical_plan_sha256']==hashlib.sha256(original.read_bytes()).hexdigest()
     assert new['total_evaluation_limit_seconds']==old['total_evaluation_limit_seconds']==7200
-    assert sum(len(e['methods']) for e in new['entries'])==104
+    assert sum(len(e['methods']) for e in new['entries'])==106
     assert len({e['id'] for e in new['entries']})==len(new['entries'])
 
 

@@ -1,0 +1,6 @@
+{
+  "error": "TypeError: background_jobs is a list, not a dict; occurred after Popen and saved launch receipt",
+  "existing_pid": 2936685,
+  "existing_status": "artifacts/queue-act-u2-postprocess-001/status.json",
+  "new_process_started_for_recovery": false
+}

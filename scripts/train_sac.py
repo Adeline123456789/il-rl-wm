@@ -42,6 +42,7 @@ import mani_skill.envs
 @dataclass
 class Args:
     output: str = ""
+    retention_config: Optional[str] = None
     actor_init_checkpoint: Optional[str] = None
     actor_init_kind: str = 'mlp'
     initial_log_std: Optional[float] = None
@@ -326,6 +327,9 @@ class Logger:
 if __name__ == "__main__":
     args = tyro.cli(Args)
     assert args.actor_init_kind in {'mlp','act'}
+    if args.retention_config:
+        assert args.actor_init_checkpoint and args.actor_init_kind == 'act'
+        assert not (args.expert_dataset or args.resume_checkpoint or args.wm_checkpoint or args.bc_checkpoint)
     assert not (args.actor_init_checkpoint and (args.bc_checkpoint or args.resume_checkpoint or args.wm_checkpoint)), 'Offline ACT initialization is a separate no-planning experiment'
     assert bool(args.expert_dataset) == bool(args.expert_audit)
     assert bool(args.wm_checkpoint)==bool(args.task_value_checkpoint)
@@ -481,6 +485,10 @@ if __name__ == "__main__":
         (output / 'expert_manifest.json').write_text(json.dumps(dict(**expert.manifest, expert_fraction=0.5),indent=2))
     sampled_expert = 0
     sampled_online = 0
+    retention = None
+    if args.retention_config:
+        from scripts.act_retention import MeanRetention
+        retention = MeanRetention.from_config(args.retention_config, device, output)
 
     # TRY NOT TO MODIFY: start the game
     obs, info = envs.reset(seed=args.seed) # in Gymnasium, seed is given to reset() instead of seed()
@@ -621,6 +629,9 @@ if __name__ == "__main__":
                 qf2_pi = qf2(data.obs, pi)
                 min_qf_pi = torch.min(qf1_pi, qf2_pi)
                 actor_loss = ((alpha * log_pi) - min_qf_pi).mean()
+                if retention is not None:
+                    retention_mse, retention_coefficient = retention.loss(actor, global_step)
+                    actor_loss = actor_loss + retention_coefficient * retention_mse
 
                 actor_optimizer.zero_grad()
                 actor_loss.backward()
@@ -661,6 +672,10 @@ if __name__ == "__main__":
             logger.add_scalar("losses/qf2_loss", qf2_loss.item(), global_step)
             logger.add_scalar("losses/qf_loss", qf_loss.item() / 2.0, global_step)
             logger.add_scalar("losses/actor_loss", actor_loss.item(), global_step)
+            if retention is not None:
+                logger.add_scalar("retention/mse", retention_mse.item(), global_step)
+                logger.add_scalar("retention/coefficient", retention_coefficient, global_step)
+                logger.add_scalar("retention/samples", retention.samples, global_step)
             logger.add_scalar("losses/alpha", alpha, global_step)
             logger.add_scalar("time/update_time", update_time, global_step)
             logger.add_scalar("time/rollout_time", rollout_time, global_step)
@@ -683,6 +698,10 @@ if __name__ == "__main__":
         (output/'executed_sources.json').write_text(json.dumps(dict(il=int(u0.counts[0]),planned_sac=int(u0.counts[1]),random_sac=int(u0.counts[2]),wm_updates=u0.wm_updates,task_value_updates=u0.value_updates),indent=2))
     (output / 'result.json').write_text(json.dumps(dict(training_interactions=global_step,inherited_training_interactions=args.inherited_training_interactions, gradient_updates=global_update, validation_interactions=validation_interactions, final_test_evaluated=False, elapsed_seconds=time.perf_counter()-started_at, frozen_il_verified=frozen_il is not None, torch_peak_allocated_bytes=torch.cuda.max_memory_allocated()), indent=2))
     interaction_counter.flush()
+    if retention is not None:
+        (output/'retention_result.json').write_text(json.dumps(dict(updates=retention.updates,
+            samples=retention.samples, final_coefficient=retention.coefficient(global_step),
+            teacher_calls_in_sac_updates=False, teacher_required_at_deployment=False), indent=2)+'\n')
     assert interaction_counter.counts['training']['completed_transitions'] == global_step
     assert interaction_counter.counts['validation']['completed_transitions'] == validation_interactions
     logger.close()

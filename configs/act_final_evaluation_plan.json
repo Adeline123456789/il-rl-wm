@@ -1,5 +1,5 @@
 {
-  "status": "registered ACT extension; comparison not frozen; no final test access",
+  "status": "registered 106 conditions; U2 full control approved by measured resource gate; final test remains closed",
   "selection": "fixed final per training segment; RLPD262144 is predeclared equal-interaction intermediate",
   "seed": 20000,
   "episodes_per_model_method": 100,
@@ -1032,6 +1032,38 @@
       "variant": "T6 ACT-distilled expert-mix SAC",
       "training_interactions": 262144,
       "training_role": "development"
+    },
+    {
+      "id": "act-u2-final-mean",
+      "framework": "act",
+      "training_experiment": "act-u2-retention-seed0-001",
+      "checkpoint": "releases/act-u2-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "mean",
+      "methods": [
+        "act_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-u2-retention-seed0-001",
+      "checkpoint": "releases/act-u2-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "stochastic",
+      "methods": [
+        "act_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development"
     }
   ],
   "limitations": "Initial registry covers currently queued seeds/tasks. Additional preregistered training seeds must be appended before their final-test access. No test result may select a checkpoint or trigger method tuning.",
@@ -1039,5 +1071,6 @@
   "historical_plan_sha256": "b3485b55adf79bea80118c8744afbbe0cd4f0b0375a17ea536f7ad05a1100671",
   "historical_entries_unchanged": true,
   "budget_note": "Single shared 7200-second batch cap across historical and ACT entries; no added GPU budget",
-  "required_act_validation_smoke": "artifacts/act-independent-eval-smoke-001/status.json"
+  "required_act_validation_smoke": "artifacts/act-independent-eval-smoke-001/status.json",
+  "u2_registration": "2026-10-19: fixed final mean/stochastic before full U2 or final-test access; same shared7200s cap"
 }

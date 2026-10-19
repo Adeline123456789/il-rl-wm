@@ -1,0 +1,9 @@
+{
+  "teacher": "releases/act-teacher-k30-001/weights.pt",
+  "teacher_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+  "audit": "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+  "weight": 10.0,
+  "end_step": 65536,
+  "batch_size": 64,
+  "sampling_seed": 0
+}

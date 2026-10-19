@@ -1,0 +1,2 @@
+{"step": 0, "final": false, "path": "checkpoints/act-u2-retention-smoke-001/step_0.pt", "bytes": 6149880, "sha256": "2b41774c24e02f539a66ba90465415af950aef391fa17ea0cc8fd6064f1992fd"}
+{"step": 8192, "final": true, "path": "checkpoints/act-u2-retention-smoke-001/final.pt", "bytes": 19225958, "sha256": "ae72996222ce78906a4d12c8c1846e73ae3fb8df3a931ad165a66383c960b5e8"}
