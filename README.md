@@ -2,10 +2,15 @@
 就是让rl以il为基础然后通过世界模型改进最后rl的性能超过wm
 
 
-当前科研执行规则见 [PROMPT.md](PROMPT.md)、[RESEARCH_CHARTER.md](RESEARCH_CHARTER.md)；实际进展与原始实验索引见 [research_state.json](research_state.json) 和 [RESEARCH_LOG.md](RESEARCH_LOG.md)。首批尚在执行，开发seed0的完整U0末期退化已保留，不能将工程smoke当作成功结论。
+当前规则见 [PROMPT.md](PROMPT.md)、[RESEARCH_CHARTER.md](RESEARCH_CHARTER.md)、[最新任务](ACT_NEXT_STAGE_TASK_2026-10-19.md)。实际作业与共享预算见 [research_state.json](research_state.json) 和 [RESEARCH_LOG.md](RESEARCH_LOG.md)，运行时以各manifest/status为准。
 
-环境、数据、便携权重、离线复算和最终测试入口见 [REPRODUCING.md](REPRODUCING.md)。当前仅使用ManiSkill官方BC/SAC主训练器；RLPD在独立JAX环境对照。U1只测试critic LayerNorm，预登记与边界见 [U1_CHANGE.md](U1_CHANGE.md)。所有任务保持真实稀疏奖励，最终部署包不包含IL。
+2026-10-19：ACT教师、D1行为蒸馏、C1独立参数迁移、同协议T2–T6在线对照及U2有限均值保持均已完成开发运行。T6专家混合fixed-final为34/40；其他纯在线方法与U2为0/40。T6收益不能直接归因ACT初始化；ACT-WM仍未验证。
 
-用户要求的当前阶段上传入口：[PROGRESS_SNAPSHOT.md](PROGRESS_SNAPSHOT.md)。这是仍在训练中的进度快照，包含原始实验文件与便携权重，不是最终测试结论。
+- [U2完整验收](ACT_U2_FINAL_REVIEW.md)：闭环、均值/方差、真实奖励、Critic日志和真实状态梯度证据。
+- [因果缺口与10问](ACT_TRANSFER_CAUSAL_GAPS.md)：区分强教师、初始化、专家回放和RL贡献。
+- [下一批协议与预算草案](NEXT_RESEARCH_BATCH.md)：R0/R1/R3未获GPU授权，未启动。
+- [完整历史报告](ACT_TRANSFER_REPORT.md)、[失败记录](ACT_FAILURES.md)、[文献/源码核验](ACT_RELATED_WORK.md)。
 
-ACT→SAC独立研究进度（2026-10-19）见 [ACT_TRANSFER_REPORT.md](ACT_TRANSFER_REPORT.md)、[ACT_FAILURES.md](ACT_FAILURES.md) 和 [阶段权重复算](releases/ACT_REPRODUCTION.md)。保留原MLP-BC/U0/U1对照；教师阶段与首轮专家状态蒸馏已实际运行，发现技能损失及自动reset评测配对问题，正在固定模型核验。每个可验证小阶段后台增量更新研究分支，不自动合并main，尚无完整ACT→SAC→WM有效性结论。
+原106条件正式评测在方法冻结后后台执行，共享原7200秒限额；未完成条件保持空值。单卡24小时总预算不重置。阶段代码、配置与原始证据增量上传research/act-sac-transfer，保留Draft PR #2，不合并main。
+
+[复算说明](REPRODUCING.md)、[ACT便携权重](releases/ACT_REPRODUCTION.md)、[阶段快照与历史](PROGRESS_SNAPSHOT.md)。保留全部MLP-BC/U0/U1及失败结果，ManiSkill官方BC/SAC仍是主训练底座；其他框架只读参考或隔离对照。核心目标仍是最终不依赖ACT的SAC+WM。

@@ -1,0 +1,115 @@
+{
+  "sources": [
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "finetune.py",
+      "blob_sha": "8abf6e8b8da2107ef327d65071a0b756e9da2995",
+      "sha256": "44878d65edca80a82795c922f310a59fccac255e02f4ddacb9ab3debe4811873",
+      "bytes": 15004,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/finetune.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "experiments/configs/wsrl_config.py",
+      "blob_sha": "703e138491e07b0db898d7c7772cf2d3b4ad0779",
+      "sha256": "6a5378bfbbb8592e121174f799ee3cdaf64b6176c0643da2381fe5e6e912c5d0",
+      "bytes": 457,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/experiments/configs/wsrl_config.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "experiments/configs/sac_config.py",
+      "blob_sha": "dd9d1b9e4d05462dba32e02946d605dc9f712e76",
+      "sha256": "a7352d5505c3b2c852398fd44df6dfa2fa8ab8f9ef93b9d2fd580dc7168f9722",
+      "bytes": 1368,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/experiments/configs/sac_config.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "wsrl/agents/sac.py",
+      "blob_sha": "78997b22356f1532650d70699926c8bdfc4322e4",
+      "sha256": "6b3a342afd0ce589ba70122ea9d207a582e87bb611b2dedffa0228843cf8a243",
+      "bytes": 23249,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/wsrl/agents/sac.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "experiments/scripts/antmaze/launch_wsrl_finetune.sh",
+      "blob_sha": "4079d69ea0b9007856201bcdbd19f537454d7c19",
+      "sha256": "34b0b89efbcd9cb999ab96d2bd7324ea01d6890e92182f134449b64b15a055ca",
+      "bytes": 380,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/experiments/scripts/antmaze/launch_wsrl_finetune.sh",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "zhouzypaul/wsrl",
+      "commit": "ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2",
+      "path": "README.md",
+      "blob_sha": "a32708947eb0b27c3ea57b4e09e5aeb6c45a4ae0",
+      "sha256": "d4c205476c79a5ff0b545928a6410c2a9315c9517addd13e518b1048d3f8a7bb",
+      "bytes": 6063,
+      "local_path": ".cache/upstream-warmup/zhouzypaul/wsrl/README.md",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "Guozheng-Ma/DAWN",
+      "commit": "71122b7fa89568bc2d49831fed8cb1b01e5a91e8",
+      "path": "LICENSE",
+      "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "local_path": ".cache/upstream-warmup/Guozheng-Ma/DAWN/LICENSE",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "Guozheng-Ma/DAWN",
+      "commit": "71122b7fa89568bc2d49831fed8cb1b01e5a91e8",
+      "path": "nets/dawn.py",
+      "blob_sha": "61d029f412fb6a36ca1081423c4506f350c9a1ae",
+      "sha256": "94cc5b0b1cc13526c505841b296cda204e094fea9da19b10c4598e85dee10b36",
+      "bytes": 4210,
+      "local_path": ".cache/upstream-warmup/Guozheng-Ma/DAWN/nets/dawn.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "Guozheng-Ma/DAWN",
+      "commit": "71122b7fa89568bc2d49831fed8cb1b01e5a91e8",
+      "path": "online_dawn/pi_dec_diffusion_maniskill2_dawn.py",
+      "blob_sha": "774d3ad42cf08c90c3a6fa7429874106f4d5ec3b",
+      "sha256": "993f0a6da957aa4899415750bf68dfe2a74fced15f1989c9c02e57467719988a",
+      "bytes": 46122,
+      "local_path": ".cache/upstream-warmup/Guozheng-Ma/DAWN/online_dawn/pi_dec_diffusion_maniskill2_dawn.py",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "Guozheng-Ma/DAWN",
+      "commit": "71122b7fa89568bc2d49831fed8cb1b01e5a91e8",
+      "path": "online_dawn/run_dawn_maniskill.sh",
+      "blob_sha": "5c7c38054e629d488d53895265cff2d0fd377a7e",
+      "sha256": "ed97afc3599031ce8f1e2d4375876e91efab3c977075f5cb8c060986d86a5d03",
+      "bytes": 2434,
+      "local_path": ".cache/upstream-warmup/Guozheng-Ma/DAWN/online_dawn/run_dawn_maniskill.sh",
+      "role": "read-only reference; no code reused"
+    },
+    {
+      "repo": "Guozheng-Ma/DAWN",
+      "commit": "71122b7fa89568bc2d49831fed8cb1b01e5a91e8",
+      "path": "README.md",
+      "blob_sha": "7248d4de5b834fb466ff0cbd938180f2e168d431",
+      "sha256": "3fe651b4643678bb64ac552abe2d0dd3858d991c5baa67dc250af113739646e8",
+      "bytes": 5126,
+      "local_path": ".cache/upstream-warmup/Guozheng-Ma/DAWN/README.md",
+      "role": "read-only reference; no code reused"
+    }
+  ],
+  "retrieval_note": "First response was parsed as API JSON but connector returns decoded text; retried decoding correctly. All source Git blob hashes verified. WSRL tree has no LICENSE; DAWN LICENSE is zero bytes. No licensing permission assumed."
+}

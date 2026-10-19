@@ -58,3 +58,5 @@ ACT单步/集成/随机评测补充统一训练身份和种子字段；final run
 最终批次002完成pick-seed0-a/b后，在第三项pick-seed0-c的CPU导出处因缺少lineage_training_interactions失败，尚未启动该项GPU评测；前两项结果保留，禁止重跑。原训练commit04f6162的save_snapshot只有global_step，且该运行不是续训。修复仅在缺少总计数且没有resume/inherited数据时采用global_step；续训缺失元数据则拒绝猜测。未修改任何模型参数、训练或评测协议。50个历史主框架登记检查点预检仅发现这一旧字段缺失；旧模型各网络张量导出前后完全相同。15项导出/最终证据测试通过。初次CPU测试因环境自动加载外部pytest插件缺lark启动失败，原日志保留；第二次沿用项目禁用插件自动加载的环境通过，未新增依赖。
 
 批次002实际墙钟121.403654秒计入原7200秒；新队列003仅选择余下68登记项，剩余上限7078.596346秒，原106条件计划与检查点选择不变。CPU修复与预检不构成新增训练假设或算力额度。证据：act-final-export-repair-001/002、act-final-evaluation-batch-002、act-final-evaluation-launch-003/resume.json。最终源代码HEAD仍为9f1536，实际修复代码由各次source_snapshot和working-tree.patch精确保存。
+
+2026-10-19：新任务原文、U2/T5完整CPU复算、真实状态clamp梯度诊断、时间集成阶段差、WSRL/DAWN源码核验、R0/R1/R3无执行授权配置和三份研究报告完成；更新状态入口，不改训练算法/模型/评测注册顺序。保留CPU诊断001失败，002通过。正式003继续后台；新GPU训练未授权。

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "Registered final evaluation resumed after verified legacy export repair",
+  "phase": "U2 bounded negative result audited; original106-condition final evaluation running; next-batch proposals CPU only",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 78143.45925607177,
+    "gpu_job_seconds_used": 79601.06649224384,
     "local_changes_limit": 2,
     "local_changes_used": 2,
     "final_evaluation_reserve_seconds": 7200
@@ -182,7 +182,21 @@
     "act-u2-retention-smoke-001",
     "act-u2-retention-seed0-001",
     "e7-test-pick-seed0-a-001",
-    "e7-test-pick-seed0-b-001"
+    "e7-test-pick-seed0-b-001",
+    "e7-test-pick-seed0-c-001",
+    "e7-test-pick-seed0-c-continue-001",
+    "e7-test-pick-seed0-u0-001",
+    "e7-test-pick-seed1-a-001",
+    "e7-test-pick-seed1-b-001",
+    "e7-test-pick-seed1-c-001",
+    "e7-test-pick-seed1-c-continue-001",
+    "e7-test-pick-seed1-u0-001",
+    "e7-test-pick-seed2-a-001",
+    "e7-test-pick-seed2-b-001",
+    "e7-test-pick-seed2-c-001",
+    "e7-test-pick-seed2-c-continue-001",
+    "e7-test-pick-seed2-u0-001",
+    "e7-test-stack-seed0-a-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1521,9 +1535,10 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "act-t6-online-seed0-001",
-    "authoritative_live_file": "artifacts/act-online-batch-002/status.json",
-    "note": "Snapshot; check authoritative live status before acting"
+    "experiment": "final-evaluation-batch003",
+    "authoritative_live_file": "artifacts/act-final-evaluation-batch-003/status.json",
+    "launcher": "artifacts/act-final-evaluation-launch-003/status.json",
+    "note": "Check actual process and manifests; do not restart or expand budget"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1532,36 +1547,43 @@
   "upload_access": {
     "local_git_https": "no credential; dry-run exit128",
     "github_connector": "authenticated as repository owner; metadata reports push permission",
-    "status": "In-progress snapshot uploaded and remote tree/files verified",
+    "status": "Stage17 tree verified; latest CPU next-stage evidence pending incremental upload",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "f32a7d6f795d67fb93d4ab9f239415daeba2190c",
-    "local_snapshot_commit": "7892c38541e7e24aae9450852e10bfcd61f091a6",
-    "verification": "artifacts/github-act-stage-upload-011/status.json",
-    "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
+    "remote_commit": "d3cc98339c00dd197953926cd659b6e82753902a",
+    "local_snapshot_commit": null,
+    "verification": "artifacts/github-act-stage-upload-017/status.json",
+    "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2",
+    "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c"
   },
   "local_hypotheses": [
     {
       "id": "U1",
       "mechanism": "SAC critic hidden LayerNorm only",
-      "status": "seed0_stability_supported_independent_confirmation_pending",
+      "status": "independent seeds1-4 complete; stability gain but no WM net gain in validation",
       "specification": "U1_CHANGE.md"
+    },
+    {
+      "id": "U2",
+      "mechanism": "finite early actor mean retention only",
+      "status": "completed bounded negative; classification B; no third hypothesis authorized",
+      "specification": "U2_CHANGE.md"
     }
   ],
   "final_evaluation": {
-    "status": "gate_wait_timeout_no_test_access; resume new queue after comparison freeze",
+    "status": "running original budget; export compatibility repair verified; no repeated completed entries",
     "plan": "configs/act_final_evaluation_plan.json",
-    "models_or_stages": 68,
-    "method_conditions": 104,
+    "models_or_stages": 70,
+    "method_conditions": 106,
     "episodes_per_condition": 100,
     "limit_seconds": 7200,
-    "final_test_accessed": false,
-    "queue": "artifacts/queue-final-evaluation-001/status.json",
-    "summary_queue": "artifacts/queue-final-results-001/status.json",
-    "method_fixed": false,
+    "final_test_accessed": true,
+    "queue": "artifacts/act-final-evaluation-batch-003/status.json",
+    "summary_queue": "artifacts/act-final-evaluation-launch-003/status.json",
+    "method_fixed": true,
     "release_gate": "configs/act_final_test_gate.json",
     "historical_plan": "configs/final_evaluation_plan.json",
     "historical_method_fixed": true,
-    "act_validation_smoke": "completed: artifacts/act-independent-eval-smoke-001/status.json; gate remains closed",
+    "act_validation_smoke": "completed; comparison frozen and gate released before first test access",
     "cpu_evidence_tests": "artifacts/act-final-evidence-tests-001/status.json",
     "resume003": {
       "failure_id": "F-ACT-EVAL-02",
@@ -1717,14 +1739,15 @@
         "act-u2-final-mean",
         "act-u2-final-stochastic"
       ]
-    }
+    },
+    "throughput_forecast": "artifacts/act-final-throughput-review-001/result.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
   "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
   "act_research": {
     "task": "ACT→SAC transfer, user authorized 2026-10-17",
     "plan": "ACT_SAC_PLAN.md",
-    "phase": "online_comparison_running",
+    "phase": "U2 full audited; final evaluation ongoing",
     "branch": "research/act-sac-transfer",
     "cpu_tests": "artifacts/act-cpu-tests-003",
     "cpu_real_data": "artifacts/act-real-data-cpu-002",
@@ -1745,19 +1768,16 @@
     },
     "continuation": {
       "automation_id": "il-rl-wm-act",
-      "kind": "heartbeat",
-      "hourly_checks_limit": null,
-      "stage": "T2-T6 full online comparison; verify existing queue before launching anything",
-      "stop_on": "batch completion, original shared budget exhausted, or no authorized progress; pause automation"
+      "stage": "final evaluation and CPU delivery; pause after batch ends or no authorized work"
     },
     "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
     "distillation": "artifacts/act-d1-seed0-001/result.json",
     "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
-    "next_stage": "Finish frozen T2-T6 comparisons, analyze forgetting before any retention mechanism or WM",
+    "next_stage": "Complete authorized final batch; no new GPU training; CPU causal-gap review and R0/R1/R3 proposal",
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
-    "latest_online_summary": "artifacts/act-online-summary-004/summary.json",
+    "latest_online_summary": "artifacts/act-online-summary-006/summary.json",
     "inference_export_stage": {
       "tests": "artifacts/act-inference-cpu-tests-001",
       "tests_passed": 16,
@@ -1798,15 +1818,23 @@
       "remaining_total_seconds": 8373.830219083233,
       "final_batch_cap_seconds": 7200,
       "new_budget": false
-    }
+    },
+    "new_task": "ACT_NEXT_STAGE_TASK_2026-10-19.md",
+    "next_gpu_training_authorized": false,
+    "next_plan": "configs/act_next_initialization_controls.json",
+    "reviews": [
+      "ACT_U2_FINAL_REVIEW.md",
+      "ACT_TRANSFER_CAUSAL_GAPS.md",
+      "NEXT_RESEARCH_BATCH.md"
+    ]
   },
   "source_publication": {
     "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
     "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
     "archive": "releases/source-history-act-20261019-001/manifest.json",
-    "latest_publication_plan": ".cache/github-act-stage-015/plan.json",
-    "note": "Stage16 verified2402 files. Keep local HEAD frozen; code repair preserved by per-run source snapshot/patch and next published tree.",
-    "latest_verified_remote": "6de7192596f3feee1de2f2b09232644ca3468fb3",
-    "latest_verified_tree": "4f36d687fbd59776748b58dca772d173cb5bf1e4"
+    "latest_publication_plan": ".cache/github-act-stage-017/plan.json",
+    "note": "Stage17 verified2448 blobs/modes; local HEAD frozen and repairs in execution snapshots/patches. Continue temporary-index publication from this tree.",
+    "latest_verified_remote": "d3cc98339c00dd197953926cd659b6e82753902a",
+    "latest_verified_tree": "2395e860d7f3d223c76732cb28d7deb420f35af4"
   }
 }

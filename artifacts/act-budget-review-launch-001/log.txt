@@ -1,0 +1,6 @@
+{
+  "completed_entries": 14,
+  "remaining_original_batch_seconds": 5712.905789196549,
+  "remaining_projection_low": 5978.717203859342,
+  "remaining_projection_high": 7603.398766737191
+}

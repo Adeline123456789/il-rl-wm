@@ -1,0 +1,15 @@
+{
+  "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "files": {
+    "ACT_NEXT_STAGE_TASK_2026-10-19.md": "7e60faa1d5e078099b8d9d261ebf294b7b0470a0da7a5d2967d4a8118091e1cb",
+    "scripts/diagnose_act_mapping_gradients.py": "364597959f92db1257d8fd7f72bb4040d9853bc0278be310303e801bab2a987f",
+    "scripts/review_act_u2_evidence.py": "13202e0703466e5bbb26002262cb25cd6e127281b4a02a72c526a87be40f042d",
+    "configs/act_next_initialization_controls.json": "8d1ae055cc17d345c877b21e8c1155eaf405cd04e339ceaf42d315dcc160d915",
+    "scripts/act_sac_actor.py": "46b95dc3e054e085d451379a35476ca941f6396c3ba35631017b1f21c9dd8a30",
+    "scripts/act_inference.py": "90769627ae9604fa41a808c5b5e091b6cbd60637ecdb3cd911eb1fd52ff7b2b8",
+    "scripts/diagnose_act_online_drift.py": "b212dc5235af5a2676725b492cc0e69aaeb9cc51cea667d02b9c67a72b8685b8"
+  },
+  "new_gpu_training_started": false,
+  "models_changed": false,
+  "active_final_queue_preserved": true
+}

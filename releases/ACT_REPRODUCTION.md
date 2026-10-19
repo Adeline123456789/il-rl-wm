@@ -5,7 +5,7 @@
 ## 便携权重
 
 - `act-teacher-k30-001/weights.pt`：固定10000更新K30教师；包含完整模型张量（含仅训练时使用的后验参数以支持strict加载），不含优化器、回放、RNG。manifest记录完整checkpoint来源及两个哈希。
-- `act-d1-negative-001/weights.pt`：D1失败学生的SAC Actor；不依赖教师推理，不含critic/优化器/回放，不能直接称完整SAC恢复点。构造 `scripts.train_sac.Actor` 时使用42维state和4维[-1,1]动作Box，再strict加载`actor`。评测时 `eval()`，均值`get_eval_action(s)`，随机`get_action(s)[0]`。在线训练前应明确启用log_std梯度并初始化critic/温度，当前尚未验证在线迁移。
+- `act-d1-negative-001/weights.pt`：D1失败学生的SAC Actor；不依赖教师推理，不含critic/优化器/回放，不能直接称完整SAC恢复点。构造 `scripts.train_sac.Actor` 时使用42维state和4维[-1,1]动作Box，再strict加载`actor`。评测时 `eval()`，均值`get_eval_action(s)`，随机`get_action(s)[0]`。在线训练前应明确启用log_std梯度并初始化critic/温度，完整在线T2–T6和U2现已运行，负结果与资源成本见根目录报告。
 
 教师加载示例（repo根目录）：
 
@@ -28,3 +28,9 @@ T0原评测和首个D1使用“仅首次seed”协议，F-ACT-EVAL-01审计发�
 每次真实GPU作业的manifest中code_commit是本机实际提交，dirty部分由working-tree.patch及source_snapshot.tar.gz逐文件补全。GitHub连接器发布的是等内容snapshot commit，因此远端commit ID与本机ID可能不同，映射见 `artifacts/github-act-stage-upload-001/status.json`。复算历史算法应在独立目录解包对应source_snapshot，并校验source_hashes；当前HEAD可能已经包含评测修复，不应把新代码生成结果冒称旧实验复现。
 
 当前修复评测需要原K8/K16完整checkpoint来复算全网格；它们未上传，来源配置、训练日志、哈希完整保存，可据固定配置重训但不承诺跨GPU逐位相同。便携K30和D1则可直接加载评测。所有新GPU运行仍须使用run_experiment.py账本、单卡锁与明确时限，不直接重复当前experiment ID。
+
+## 2026-10-19 新增便携Actor与证据
+
+`act-c1-init-001`独立Transformer-SAC初始化；`act-t2-online-final-001`至`act-t6-online-final-001`及`act-u2-online-final-001`为固定末次Actor。严格加载统一使用`scripts.act_inference.load_model`，kind为mlp或act；学生推理不构造教师，保存已学习log_std。每包manifest关联完整checkpoint hash并验证逐张量相等；不能把Actor包当含replay/优化器的完整恢复点。
+
+T2–T6/U2完整曲线及成本：`artifacts/act-online-summary-006/`；固定训练状态漂移见各`act-*-online-drift-001/`；T5/U2原始梯度见`artifacts/act-mapping-gradient-cpu-002/analysis/`。原始训练和验证日志完整保留，所有最终测试条件仍遵守独立注册表及原预算。正式批次完成后由`summarize_final_results.py`生成总表，未执行值为null，不能作为0分。

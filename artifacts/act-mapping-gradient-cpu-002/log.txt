@@ -1,0 +1,306 @@
+[
+  {
+    "method": "T5",
+    "step": 0,
+    "checkpoint": {
+      "path": "releases/act-c1-init-001/weights.pt",
+      "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.990234375
+    ],
+    "raw_abs_max": [
+      0.13974937796592712,
+      0.2688983082771301,
+      0.38278165459632874,
+      1.0187382698059082
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.990234375
+    ],
+    "nonclipped_action_derivative_max_error": 2.849102020263672e-05
+  },
+  {
+    "method": "T5",
+    "step": 16384,
+    "checkpoint": {
+      "step": 16384,
+      "final": false,
+      "path": "checkpoints/act-t5-online-seed0-001/step_16384.pt",
+      "bytes": 22403071,
+      "sha256": "68590e5739d4308d0919981492cdcb015fbd777edfa2d09d24780e6035a6727e"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      0.019669830799102783,
+      0.02400854229927063,
+      0.02618234232068062,
+      0.022158488631248474
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 1.1920928955078125e-07
+  },
+  {
+    "method": "T5",
+    "step": 65536,
+    "checkpoint": {
+      "step": 65536,
+      "final": false,
+      "path": "checkpoints/act-t5-online-seed0-001/step_65536.pt",
+      "bytes": 41326655,
+      "sha256": "dd079ca6ba18fe4f62f1a3ff97cbcaebc94edcddaa29c7b3043373ba824f6719"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      0.00912121869623661,
+      0.003911163657903671,
+      0.01472504623234272,
+      0.031279854476451874
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 0.0
+  },
+  {
+    "method": "T5",
+    "step": 131072,
+    "checkpoint": {
+      "step": 131072,
+      "final": false,
+      "path": "checkpoints/act-t5-online-seed0-001/step_131072.pt",
+      "bytes": 66558468,
+      "sha256": "abf27644f936ce49b8e27c41ac01a01ce5407dfa201b2742256dbb748110e3d4"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      0.4601708650588989,
+      0.193006694316864,
+      0.49169090390205383,
+      0.16036227345466614
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 1.1920928955078125e-07
+  },
+  {
+    "method": "T5",
+    "step": 262144,
+    "checkpoint": {
+      "step": 262144,
+      "final": true,
+      "path": "checkpoints/act-t5-online-seed0-001/final.pt",
+      "bytes": 116997478,
+      "sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0986328125,
+      0.06640625,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      1.0780901908874512,
+      1.055562138557434,
+      0.9582847356796265,
+      0.8631758689880371
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0986328125,
+      0.06640625,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 4.589557647705078e-05
+  },
+  {
+    "method": "U2",
+    "step": 0,
+    "checkpoint": {
+      "path": "releases/act-c1-init-001/weights.pt",
+      "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.990234375
+    ],
+    "raw_abs_max": [
+      0.13974937796592712,
+      0.2688983082771301,
+      0.38278165459632874,
+      1.0187382698059082
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.990234375
+    ],
+    "nonclipped_action_derivative_max_error": 2.849102020263672e-05
+  },
+  {
+    "method": "U2",
+    "step": 16384,
+    "checkpoint": {
+      "step": 16384,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_16384.pt",
+      "bytes": 22403135,
+      "sha256": "29ea07b2dfd82202f4af61ce1fcda496224c7d0d0aea5877e278c6f6bda7eeb3"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.8720703125
+    ],
+    "raw_abs_max": [
+      0.13971222937107086,
+      0.26519232988357544,
+      0.3646709620952606,
+      1.2548983097076416
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.8720703125
+    ],
+    "nonclipped_action_derivative_max_error": 7.545948028564453e-05
+  },
+  {
+    "method": "U2",
+    "step": 65536,
+    "checkpoint": {
+      "step": 65536,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_65536.pt",
+      "bytes": 41326719,
+      "sha256": "3658cece05018156d11fa4818c6a81cc9c283a6154e3f6ee03e83c816bfec026"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.7919921875
+    ],
+    "raw_abs_max": [
+      0.15212708711624146,
+      0.23852689564228058,
+      0.3669045567512512,
+      1.251559853553772
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.7919921875
+    ],
+    "nonclipped_action_derivative_max_error": 3.814697265625e-06
+  },
+  {
+    "method": "U2",
+    "step": 131072,
+    "checkpoint": {
+      "step": 131072,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_131072.pt",
+      "bytes": 66558532,
+      "sha256": "022b5dfb6e0d71f6aa39a38a7060e33beaac19b48a87d0030cbd2b74b7d55821"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      0.5918014049530029,
+      0.638073205947876,
+      0.8071413636207581,
+      0.9594851732254028
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 1.7881393432617188e-07
+  },
+  {
+    "method": "U2",
+    "step": 262144,
+    "checkpoint": {
+      "step": 262144,
+      "final": true,
+      "path": "checkpoints/act-u2-retention-seed0-001/final.pt",
+      "bytes": 116997542,
+      "sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae"
+    },
+    "model_unchanged": true,
+    "clipped_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "raw_abs_max": [
+      0.9357962608337402,
+      0.8793286085128784,
+      0.8617627024650574,
+      0.7013033628463745
+    ],
+    "zero_action_derivative_fraction_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonclipped_action_derivative_max_error": 2.384185791015625e-07
+  }
+]

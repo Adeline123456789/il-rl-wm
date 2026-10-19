@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/diagnose_act_mapping_gradients.py", line 68, in <module>
+    if __name__=='__main__':main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/diagnose_act_mapping_gradients.py", line 53, in main
+    np.testing.assert_allclose(d['daction_draw'][~sat],1,atol=2e-5,rtol=2e-5)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=2e-05, atol=2e-05
+
+Mismatched elements: 1 / 3927 (0.0255%)
+Max absolute difference: 4.5895576e-05
+Max relative difference: 4.58955765e-05
+ x: array([1., 1., 1., ..., 1., 1., 1.], dtype=float32)
+ y: array(1)

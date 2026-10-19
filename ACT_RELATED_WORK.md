@@ -42,3 +42,25 @@ Policy Decorator：已阅读[论文v1方法§4及失败分析附录F相关段落
 论文直接链接的[作者仓库](https://github.com/BartekCupial/finetuning-RL-as-CL/tree/390d2041a2829a9ca609594d11e5567e0f1368d2)锁定`390d2041a2829a9ca609594d11e5567e0f1368d2`。实际读取NetHack `learner.py`的`_distillation_loss`、`_kickstarting_loss`和系数调度，以及`models/kickstarter.py`：categorical teacher→student KL；KS过滤invalid样本；teacher eval/no-grad，wrapper forward仍调用teacher并保留其RNN state，因此不能直接当作本项目无教师部署。代码还包含保持系数与探索系数的可选联动，本项目不复制它。三文件含MIT LICENSE逐Git blob验证，见`literature/forgetting_mitigation_source_manifest.json`。机器人SAC补充源码尚未核验，未安装NetHack或SampleFactory。
 
 对F-ACT-02的下一步启发仍是待验证推断：区分专家训练状态上的技能保持与在线覆盖不足；本项目ACT为确定性零latent教师，不能直接定义其categorical/Gaussian KL。若测试均值MSE保持，必须说明它没有约束SAC方差；若测试初始随机SAC分布KL，应另立单机制对照，不能把二者一起加入。当前仅来源核验，未启动改进实验。
+
+## 2026-10-19：WSRL / DAWN 定向核验（不新增训练机制）
+
+**Observed problem**：T5缺乏真实成功转移，U2保持期仍无正奖励；T6专家混合可学习但初始化贡献未分离。下一候选仅改变4096预热动作来源，不复制整套算法，不叠加U2。
+
+### WSRL
+
+Zhou、Peng、Li、Levine、Kumar，*Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data*，ICLR2025；arXiv2412.07762预印本发表于2024。已核对[正式论文入口](https://proceedings.iclr.cc/paper_files/paper/2025/hash/504491292cb71e7681eedfe0e602b72f-Abstract-Conference.html)、[方法/算法与附录F–I](https://arxiv.org/html/2412.07762v2)。研究起点含离线RL策略及价值函数；短期策略rollout支持在线价值重校准，论文中的初期冻结Actor实验也未消除解冻后的下降。这里没有预训练Critic，因此不能照搬“价值重校准成功”。
+
+作者仓库锁定`ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2`：`finetune.py`302–341行始终由当前策略采集，warmup期间不更新，之后才进行在线更新；`sac.py:update_high_utd`将batch分成多个Critic子批，再一次Actor/temperature更新。实际antmaze启动脚本为5000 warmup、UTD4、batch1024，wsrl配置10个Q并取2、策略与Critic均LN；奖励也有scale/bias。这些都与当前单步双Q SAC不同，不移植。核验树未包含LICENSE，未推定授权，不复用源码。
+
+### DAWN
+
+Ma、Li、Wang、Liu、Bacon、Tao，*What Makes Value Learning Efficient in Residual Reinforcement Learning?*，ICML2026/PMLR306:84569–84601。[出版入口](https://proceedings.mlr.press/v306/ma26s.html)链接作者源码。正文3.1/3.2比较基础策略数据锚定、额外Critic预训练、归一化；方法针对冻结基础策略的有界残差RL。其默认不需要额外Critic-only阶段；这与“必须先长时间单练Critic”的解释不同。
+
+作者仓库锁定`71122b7fa89568bc2d49831fed8cb1b01e5a91e8`：`run_dawn_maniskill.sh`默认learning-starts20000、warmup-strategy none（零残差，实际执行基础策略）、critic-warmup-updates0。训练入口535–559行实现预热，635–731行是可选Critic-only路径而非默认；299–315行最终evaluate仍调用基础策略。`nets/dawn.py`的LN Critic是残差块网络，不等于本项目原U1。LICENSE文件实际0字节；且入口依赖仓库树内未见的`utils.profiling`，未验证可直接运行。不安装框架、不复制代码。
+
+### 有界适配与证据边界
+
+论文和源码支持提出数据支持假设，不证明当前4096 uniform是唯一根因。未来只改预热动作来源，保留现有双LN Critic/更新/熵/预算；初始4096真实步计入总交互，ACT执行显式计费并在部署移除。额外Critic更新、UTD、残差、归一化改动均不捆绑。本轮只完成只读核验与计划，实验结果=未运行，结论=待检验，原创性=已有预热思想在此迁移接口下的受控验证。
+
+11份作者源文件逐Git blob和SHA256验证，准确路径/版本/字节数见`literature/wsrl_dawn_source_manifest.json`。源文件只留本地.cache、未纳入训练或分发；复用文件=无，修改=无，新增训练依赖=无。DAWN论文PDF hash与获取记录见`artifacts/wsrl-dawn-literature-001/status.json`。网络PDF读取工具失败后从出版链接后台获取并本地提取；首次GitHub连接器返回的是解码文本而非API JSON，纠正解析后全部blob哈希匹配，未把失败当完成。
