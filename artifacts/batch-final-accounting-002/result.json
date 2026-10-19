@@ -1,0 +1,103 @@
+{
+  "job_count": 214,
+  "gpu_job_seconds": 85131.54638952191,
+  "gpu_job_hours": 23.6476517748672,
+  "remaining_under_24h_seconds": 1268.4536104780855,
+  "whole_gpu_sampled_peak_mib": 5770,
+  "reported_interactions_by_phase": {
+    "validation": {
+      "attempted_transitions": 3396000,
+      "completed_transitions": 3396000,
+      "completed_vector_steps": 326000
+    },
+    "training": {
+      "attempted_transitions": 15515648,
+      "completed_transitions": 15515648,
+      "completed_vector_steps": 972800
+    },
+    "demo_replay_physx_cpu": {
+      "reported_replay_interactions": 748424
+    },
+    "demo_replay_physx_cuda": {
+      "reported_replay_interactions": 732184
+    },
+    "expert_source_initial": {
+      "attempted_transitions": 1424,
+      "completed_transitions": 1424,
+      "completed_vector_steps": 89
+    },
+    "bc_source_initial": {
+      "attempted_transitions": 3200,
+      "completed_transitions": 3200,
+      "completed_vector_steps": 200
+    },
+    "bc_independent_reset": {
+      "attempted_transitions": 3200,
+      "completed_transitions": 3200,
+      "completed_vector_steps": 200
+    },
+    "final_test": {
+      "attempted_transitions": 2334190,
+      "completed_transitions": 2334180,
+      "completed_vector_steps": 233418
+    },
+    "diagnostic_prefix": {
+      "attempted_transitions": 35520,
+      "completed_transitions": 35520,
+      "completed_vector_steps": 4440
+    },
+    "first_action_student": {
+      "attempted_transitions": 230400,
+      "completed_transitions": 230400,
+      "completed_vector_steps": 28800
+    },
+    "sequence_student": {
+      "attempted_transitions": 230400,
+      "completed_transitions": 230400,
+      "completed_vector_steps": 28800
+    }
+  },
+  "missing_interaction_files": [
+    "act-independent-eval-smoke-001",
+    "act-t2-online-seed0-001",
+    "e0-peg-replay-001",
+    "e0-peg-replay-fixed-001",
+    "e0-peg-smoke-001",
+    "e0-pickcube-smoke-001",
+    "e0-pickcube-throughput-001",
+    "e0-stack-smoke-001",
+    "e1-bc-full-001",
+    "e1-bc-full-002",
+    "e1-bc-smoke-001",
+    "e4-wm-full-001",
+    "e4-wm-smoke-001",
+    "e5-candidates-001",
+    "e6-value-preheat-001",
+    "peg-seed0-value-001",
+    "peg-seed0-wm-001",
+    "pick-seed1-value-001",
+    "pick-seed1-wm-001",
+    "pick-seed2-value-001",
+    "pick-seed2-wm-001",
+    "pick-seed3-value-001",
+    "pick-seed3-wm-001",
+    "pick-seed4-value-001",
+    "pick-seed4-wm-001",
+    "stack-seed0-value-001",
+    "stack-seed0-wm-001",
+    "u1-pick-seed0-value-001",
+    "u1-pick-seed0-wm-001",
+    "u1-pick-seed1-value-001",
+    "u1-pick-seed1-wm-001",
+    "u1-pick-seed2-value-001",
+    "u1-pick-seed2-wm-001",
+    "u1-pick-seed3-value-001",
+    "u1-pick-seed3-wm-001",
+    "u1-pick-seed4-value-001",
+    "u1-pick-seed4-wm-001"
+  ],
+  "final_test_completed": 2334180,
+  "definition": "GPU job elapsed seconds include failed attempts; interaction totals are reported counters only, with missing files explicit; legacy replay step counters stay separate from completed/attempted transition counters. Resource peak is sampled whole-card memory, not a continuous guarantee.",
+  "new_environment_interactions": 0,
+  "new_training_updates": 0
+}

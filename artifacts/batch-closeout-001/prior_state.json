@@ -1,0 +1,1897 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261016-u0-01",
+  "phase": "U2 bounded negative result audited; original106-condition final evaluation running; next-batch proposals CPU only",
+  "branch": "research/act-sac-transfer",
+  "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
+  "upstreams": {
+    "ManiSkill": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"
+  },
+  "tasks": [
+    "PickCube-v1",
+    "PegInsertionSide-v1",
+    "StackCube-v1"
+  ],
+  "training_seeds_planned": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "budget": {
+    "gpu_hours_limit": 24,
+    "gpu_job_seconds_used": 85131.54638952191,
+    "local_changes_limit": 2,
+    "local_changes_used": 2,
+    "final_evaluation_reserve_seconds": 7200
+  },
+  "data_version": {
+    "official_demo_repository": "haosulab/ManiSkill_Demonstrations",
+    "revision": "d674485bbffdd533914e52d272fdda34c0515608",
+    "downloaded": true,
+    "active_pickcube_audit": "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+    "invalidated_gpu_replay": "e0-pickcube-gpu-replay-full-001",
+    "caveated_pickcube_audit": "artifacts/e0-pickcube-gpu-replay-full-002/dataset-audit.json",
+    "contact_reset_protocol": 2
+  },
+  "experiments": [
+    "e0-pickcube-smoke-001",
+    "e0-peg-smoke-001",
+    "e0-stack-smoke-001",
+    "e0-pickcube-throughput-001",
+    "e0-peg-replay-001",
+    "e0-peg-replay-fixed-001",
+    "e0-pickcube-replay-001",
+    "e0-pickcube-gpu-replay-001",
+    "e0-pickcube-gpu-replay-002",
+    "e1-bc-smoke-001",
+    "e0-pickcube-replay-full-001",
+    "e0-pickcube-gpu-replay-full-001",
+    "e1-bc-full-001",
+    "e0-pickcube-gpu-replay-boundary-test-001",
+    "e0-pickcube-gpu-replay-full-002",
+    "e1-bc-full-002",
+    "e2-sac-a-smoke-002",
+    "e2-sac-b-smoke-002",
+    "e1-bc-diagnosis-001",
+    "e2-sac-a-full-001",
+    "e0-pickcube-fresh-contacts-test-001",
+    "e0-pickcube-gpu-replay-full-003",
+    "e1-bc-full-003",
+    "e3-sac-c-smoke-001",
+    "e3-sac-c-full-001",
+    "e4-wm-smoke-001",
+    "e4-wm-full-001",
+    "e5-candidates-001",
+    "e6-value-preheat-001",
+    "e6-u0-smoke-001",
+    "e2-sac-a-full-002",
+    "e2-sac-b-full-001",
+    "e6-u0-full-001",
+    "e3-sac-c-continue-full-001",
+    "f1-u0-ranking-001",
+    "f1-u0-precollapse-ranking-001",
+    "e3-rlpd-smoke-001",
+    "e7-independent-eval-smoke-001",
+    "e0-stack-cpu-replay-smoke-001",
+    "e0-stack-gpu-replay-smoke-001",
+    "e0-stack-cpu-replay-full-001",
+    "e0-stack-gpu-replay-full-001",
+    "e0-peg-cpu-replay-smoke-001",
+    "e0-peg-gpu-replay-smoke-001",
+    "u1-sac-c-smoke-001",
+    "e0-peg-cpu-replay-smoke-002",
+    "e0-peg-gpu-replay-smoke-002",
+    "e0-peg-cpu-replay-full-002",
+    "e0-peg-gpu-replay-full-002",
+    "e7-rlpd-independent-eval-smoke-001",
+    "u1-pick-seed0-c-001",
+    "u1-pick-seed0-wm-001",
+    "u1-pick-seed0-value-001",
+    "u1-pick-seed0-u0-001",
+    "u1-pick-seed0-c-continue-001",
+    "f1-u0-step196608-prefix20-001",
+    "f1-u1-step196608-prefix20-001",
+    "pick-seed1-bc-001",
+    "pick-seed1-a-001",
+    "pick-seed1-b-001",
+    "pick-seed1-c-001",
+    "pick-seed1-wm-001",
+    "pick-seed1-value-001",
+    "pick-seed1-u0-001",
+    "pick-seed1-c-continue-001",
+    "pick-seed2-bc-001",
+    "pick-seed2-a-001",
+    "pick-seed2-b-001",
+    "pick-seed2-c-001",
+    "pick-seed2-wm-001",
+    "pick-seed2-value-001",
+    "pick-seed2-u0-001",
+    "pick-seed2-c-continue-001",
+    "e3-rlpd-full-001",
+    "stack-seed0-bc-001",
+    "stack-seed0-a-001",
+    "stack-seed0-b-001",
+    "stack-seed0-c-001",
+    "stack-seed0-wm-001",
+    "stack-seed0-value-001",
+    "stack-seed0-u0-001",
+    "stack-seed0-c-continue-001",
+    "peg-seed0-bc-001",
+    "peg-seed0-a-001",
+    "peg-seed0-b-001",
+    "peg-seed0-c-001",
+    "peg-seed0-wm-001",
+    "peg-seed0-value-001",
+    "peg-seed0-u0-001",
+    "peg-seed0-c-continue-001",
+    "u1-pick-seed1-c-001",
+    "u1-pick-seed1-wm-001",
+    "u1-pick-seed1-value-001",
+    "u1-pick-seed1-u0-001",
+    "u1-pick-seed1-c-continue-001",
+    "u1-pick-seed2-c-001",
+    "u1-pick-seed2-wm-001",
+    "u1-pick-seed2-value-001",
+    "u1-pick-seed2-u0-001",
+    "u1-pick-seed2-c-continue-001",
+    "pick-seed3-bc-001",
+    "pick-seed3-a-001",
+    "pick-seed3-b-001",
+    "pick-seed3-c-001",
+    "pick-seed3-wm-001",
+    "pick-seed3-value-001",
+    "pick-seed3-u0-001",
+    "pick-seed3-c-continue-001",
+    "u1-pick-seed3-c-001",
+    "u1-pick-seed3-wm-001",
+    "u1-pick-seed3-value-001",
+    "u1-pick-seed3-u0-001",
+    "u1-pick-seed3-c-continue-001",
+    "pick-seed4-bc-001",
+    "pick-seed4-a-001",
+    "pick-seed4-b-001",
+    "pick-seed4-c-001",
+    "pick-seed4-wm-001",
+    "pick-seed4-value-001",
+    "pick-seed4-u0-001",
+    "pick-seed4-c-continue-001",
+    "u1-pick-seed4-c-001",
+    "u1-pick-seed4-wm-001",
+    "u1-pick-seed4-value-001",
+    "u1-pick-seed4-u0-001",
+    "u1-pick-seed4-c-continue-001",
+    "act-t0-smoke-001",
+    "act-t0-seed0-001",
+    "act-t0-k16-seed0-001",
+    "act-t0-k30-seed0-001",
+    "act-d1-smoke-001",
+    "act-d1-seed0-001",
+    "act-matched-eval-001",
+    "act-c1-seed0-001",
+    "act-t5-online-smoke-001",
+    "act-t4-online-smoke-001",
+    "act-t2-online-seed0-001",
+    "act-t2-online-seed0-002",
+    "act-t3-online-seed0-001",
+    "act-t4-online-seed0-001",
+    "act-t5-online-seed0-001",
+    "act-t6-online-seed0-001",
+    "act-independent-eval-smoke-001",
+    "act-u2-retention-smoke-001",
+    "act-u2-retention-seed0-001",
+    "e7-test-pick-seed0-a-001",
+    "e7-test-pick-seed0-b-001",
+    "e7-test-pick-seed0-c-001",
+    "e7-test-pick-seed0-c-continue-001",
+    "e7-test-pick-seed0-u0-001",
+    "e7-test-pick-seed1-a-001",
+    "e7-test-pick-seed1-b-001",
+    "e7-test-pick-seed1-c-001",
+    "e7-test-pick-seed1-c-continue-001",
+    "e7-test-pick-seed1-u0-001",
+    "e7-test-pick-seed2-a-001",
+    "e7-test-pick-seed2-b-001",
+    "e7-test-pick-seed2-c-001",
+    "e7-test-pick-seed2-c-continue-001",
+    "e7-test-pick-seed2-u0-001",
+    "e7-test-stack-seed0-a-001",
+    "e7-test-stack-seed0-b-001",
+    "e7-test-stack-seed0-c-001",
+    "e7-test-stack-seed0-c-continue-001",
+    "e7-test-stack-seed0-u0-001",
+    "e7-test-peg-seed0-a-001",
+    "e7-test-peg-seed0-b-001",
+    "e7-test-peg-seed0-c-001",
+    "e7-test-peg-seed0-c-continue-001",
+    "e7-test-peg-seed0-u0-001",
+    "e7-test-u1-pick-seed0-c-001",
+    "e7-test-u1-pick-seed0-c-continue-001",
+    "e7-test-u1-pick-seed0-u0-001",
+    "e7-test-u1-pick-seed1-c-001",
+    "e7-test-u1-pick-seed1-c-continue-001",
+    "e7-test-u1-pick-seed1-u0-001",
+    "e7-test-u1-pick-seed2-c-001",
+    "e7-test-u1-pick-seed2-c-continue-001",
+    "e7-test-u1-pick-seed2-u0-001",
+    "e7-test-rlpd-seed0-step262144-001",
+    "e7-test-rlpd-seed0-step524288-001",
+    "e7-test-pick-seed3-a-001",
+    "e7-test-pick-seed3-b-001",
+    "e7-test-pick-seed3-c-001",
+    "e7-test-pick-seed3-c-continue-001",
+    "e7-test-pick-seed3-u0-001",
+    "e7-test-u1-pick-seed3-c-001",
+    "e7-test-u1-pick-seed3-c-continue-001",
+    "e7-test-u1-pick-seed3-u0-001",
+    "e7-test-pick-seed4-a-001",
+    "e7-test-pick-seed4-b-001",
+    "e7-test-pick-seed4-c-001",
+    "e7-test-pick-seed4-c-continue-001",
+    "e7-test-pick-seed4-u0-001",
+    "e7-test-u1-pick-seed4-c-001",
+    "e7-test-u1-pick-seed4-c-continue-001",
+    "e7-test-u1-pick-seed4-u0-001",
+    "e7-test-act-teacher-k30-first-001",
+    "e7-test-act-teacher-k30-ensemble-001",
+    "e7-test-act-d1-initial-mean-001",
+    "e7-test-act-d1-initial-stochastic-001",
+    "e7-test-act-c1-initial-mean-001",
+    "e7-test-act-c1-initial-stochastic-001",
+    "e7-test-act-t2-final-mean-001",
+    "e7-test-act-t2-final-stochastic-001",
+    "e7-test-act-t3-final-mean-001",
+    "e7-test-act-t3-final-stochastic-001",
+    "e7-test-act-t4-final-mean-001",
+    "e7-test-act-t4-final-stochastic-001",
+    "e7-test-act-t5-final-mean-001",
+    "e7-test-act-t5-final-stochastic-001",
+    "e7-test-act-t6-final-mean-001",
+    "e7-test-act-t6-final-stochastic-001",
+    "e7-test-act-u2-final-mean-001"
+  ],
+  "results": {
+    "e1_bc_smoke_001": {
+      "validation_action_mse": 0.014878595312992175,
+      "success_episodes": 0,
+      "validation_episodes": 8,
+      "engineering_only": true
+    },
+    "pickcube_gpu_replay_full_002": {
+      "episodes": 1000,
+      "success_at_end": 898,
+      "excluded_failures": 102,
+      "transitions": 77976,
+      "all_action_and_first_state_alignment_verified": true,
+      "initial_observations_valid": false
+    },
+    "e1_bc_full_002": {
+      "iterations": 10000,
+      "final_validation_success_once": 0,
+      "validation_episodes": 40,
+      "final_test_evaluated": false,
+      "caveat": "F-E0-004: stale initial contact observations in training demonstrations"
+    },
+    "e2_sac_a_b_smoke_002": {
+      "each_training_interactions": 4096,
+      "each_gradient_updates": 244,
+      "each_validation_interactions": 1600,
+      "B_frozen_il_verified": true
+    },
+    "e2_sac_a_full_001": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_validation_success_once": 0,
+      "final_validation_episodes": 16,
+      "final_test_evaluated": false,
+      "caveat": "protocol1; 1 stale initial contact observation; rerun A with v2 before comparison"
+    },
+    "pickcube_gpu_replay_full_003": {
+      "episodes": 1000,
+      "success_at_end": 897,
+      "transitions": 77976,
+      "alignment_verified": true,
+      "initial_grasped_flags": 0
+    },
+    "e1_bc_full_003": {
+      "iterations": 10000,
+      "training_examples": 55092,
+      "validation_examples": 13897,
+      "validation_interactions": 80000,
+      "final_validation_success_once": 0,
+      "final_validation_episodes": 40,
+      "validation_action_mse": 0.0006853083974638971,
+      "final_test_evaluated": false
+    },
+    "e3_sac_c_smoke_001": {
+      "training_interactions": 4096,
+      "gradient_updates": 244,
+      "validation_interactions": 1600,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 32.787777017001645,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 31611392,
+      "sampling": {
+        "expert_samples": 31232,
+        "online_samples": 31232,
+        "expert_fraction": 0.5
+      }
+    },
+    "e3_sac_c_full_001": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 832.2523459490039,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142051840,
+      "final_validation_success_once": 13,
+      "final_validation_episodes": 16
+    },
+    "e4_wm_smoke_001": {
+      "updates": 200,
+      "elapsed_seconds": 0.36500221099413466,
+      "trainable_parameters": 88875,
+      "new_environment_interactions": 0,
+      "checkpoint": "checkpoints/e4-wm-smoke-001/final.pt",
+      "sha256": "68eb509edeea69ea0ba349abe65401e152427eb6ee4fbd59fa8b03c6d9e61554",
+      "torch_peak_allocated_bytes": 208573440
+    },
+    "e4_wm_full_001": {
+      "updates": 10000,
+      "elapsed_seconds": 11.066713558000629,
+      "trainable_parameters": 88875,
+      "new_environment_interactions": 0,
+      "checkpoint": "checkpoints/e4-wm-full-001/final.pt",
+      "sha256": "4188556652e6bae1aa4e22cf480916c0bf4a2b67b136d55d4037c76091ffc7ef",
+      "torch_peak_allocated_bytes": 208573440
+    },
+    "e5_candidates_001": {
+      "sac": "checkpoints/e3-sac-c-full-001/final.pt",
+      "bc": "checkpoints/e1-bc-full-003/final.pt",
+      "wm": "checkpoints/e4-wm-full-001/final.pt",
+      "new_environment_interactions": 0,
+      "measured_generation_only": true,
+      "results": {
+        "with_il": {
+          "sources": [
+            "il",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac"
+          ],
+          "latency_ms_per_batch32": 0.9266549099993426,
+          "mean_sac_candidate_std": 0.20491757988929749,
+          "predicted_state_change_mean": 0.10301581770181656
+        },
+        "without_il": {
+          "sources": [
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac",
+            "sac"
+          ],
+          "latency_ms_per_batch32": 0.7938704200205393,
+          "mean_sac_candidate_std": 0.19524407386779785,
+          "predicted_state_change_mean": 0.10916806757450104
+        }
+      },
+      "torch_peak_allocated_bytes": 12200448
+    },
+    "e6_value_preheat_001": {
+      "updates": 5000,
+      "new_environment_interactions": 0,
+      "elapsed_seconds": 4.364977863006061,
+      "trainable_parameters": 78081,
+      "checkpoint": "checkpoints/e6-value-preheat-001/final.pt",
+      "sha256": "95379de71b58d72cafe263fb5399e37c3780c2fba027809a177c4e930f26658f",
+      "torch_peak_allocated_bytes": 208775168
+    },
+    "e6_u0_smoke_001": {
+      "training_interactions": 4096,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 256,
+      "validation_interactions": 6400,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 57.82833518298867,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 134657536,
+      "checkpoint_audit": {
+        "valid": true,
+        "checkpoint": "checkpoints/e6-u0-smoke-001/final.pt",
+        "new_real_transitions": 4096,
+        "executed_il": 1218,
+        "executed_planned_sac": 2027,
+        "executed_random_sac": 851,
+        "actual_exploration_fraction": 0.207763671875,
+        "logged_batches_exactly_match_replay": 4,
+        "il_action_max_abs_cpu_recompute_error": 3.159046173095703e-06,
+        "il_weights_unchanged": true,
+        "wm_weights_updated": true,
+        "value_weights_updated": true,
+        "wm_updates": 64,
+        "value_updates": 256,
+        "optimizer_steps_preserved": true,
+        "note": "CPU recomputation tolerates floating-point kernel differences; logged executed actions and replay match exactly. This is an engineering audit, not a performance conclusion."
+      }
+    },
+    "e2_sac_a_full_002": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 762.0496437780093,
+      "frozen_il_verified": false,
+      "torch_peak_allocated_bytes": 141894656,
+      "final_validation_success_once": 0.0,
+      "final_validation_episodes": 16
+    },
+    "e2_sac_b_full_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 751.9436836099921,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142469632,
+      "final_validation_success_once": 0,
+      "final_validation_episodes": 16
+    },
+    "e6_u0_full_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 64000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 1087.0780696529982,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 145830400,
+      "final_validation_by_method": {
+        "IL": {
+          "success": 0,
+          "episodes": 16
+        },
+        "SAC": {
+          "success": 0,
+          "episodes": 16
+        },
+        "IL+SAC+WM": {
+          "success": 0,
+          "episodes": 16
+        },
+        "SAC+WM": {
+          "success": 0,
+          "episodes": 16
+        }
+      },
+      "checkpoint_audit": "artifacts/e6-u0-full-001/checkpoint-audit.json",
+      "failure": "F-U0-001",
+      "no_il_package": "releases/u0-final-001"
+    },
+    "e3_sac_c_continue_full_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 862.4647736070037,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142838272,
+      "final_validation_success_once": 16,
+      "final_validation_episodes": 16
+    },
+    "f1_u0_ranking_001": {
+      "valid_states": 8,
+      "prefix_max_error": 0,
+      "rankable_pairs_each_target": 0,
+      "ranking_identifiable": false,
+      "new_training_interactions": 0,
+      "diagnostic_interactions": 127040,
+      "analysis": "artifacts/f1-u0-ranking-001/analysis.json"
+    },
+    "f1_u0_precollapse_ranking_001": {
+      "valid_states": 8,
+      "prefix_max_error": 0,
+      "rankable_pairs_each_target": 0,
+      "ranking_identifiable": false,
+      "diagnostic_interactions": 127040,
+      "analysis": "artifacts/f1-u0-precollapse-ranking-001/analysis.json"
+    },
+    "e3_rlpd_smoke_001": {
+      "training_interactions": 4096,
+      "critic_updates": 61440,
+      "actor_updates": 3072,
+      "expert_samples": 7864320,
+      "online_samples": 7864320,
+      "elapsed_seconds": 53.463688215008005,
+      "validation_interactions": 1600,
+      "final_test_evaluated": false
+    },
+    "e7_independent_eval_smoke_001": {
+      "checkpoint": "releases/u0-analysis-final-001/weights.pt",
+      "sha256": "ed8d8b5cff7284212084a8b2f58f06715d1e297348433b4466085f225a50e4ad",
+      "purpose": "validation",
+      "seed": 10000,
+      "episodes_per_method": 4,
+      "num_envs": 4,
+      "protocol": {
+        "env_id": "PickCube-v1",
+        "control_mode": "pd_ee_delta_pos",
+        "max_episode_steps": 200,
+        "gamma": 0.99,
+        "reconfiguration_freq": 1
+      },
+      "checkpoint_selection": "explicit fixed checkpoint; no selection by this evaluation",
+      "methods": {
+        "il": {
+          "interactions": 800,
+          "wall_seconds": 4.878522273997078,
+          "candidates": 1,
+          "calls_il": true,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0
+        },
+        "sac": {
+          "interactions": 800,
+          "wall_seconds": 5.555598138002097,
+          "candidates": 1,
+          "calls_il": false,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0
+        },
+        "il_sac_wm": {
+          "interactions": 800,
+          "wall_seconds": 5.206895469993469,
+          "candidates": 9,
+          "calls_il": true,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0
+        },
+        "sac_wm": {
+          "interactions": 800,
+          "wall_seconds": 4.886061001001508,
+          "candidates": 9,
+          "calls_il": false,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0
+        }
+      },
+      "new_training_interactions": 0
+    },
+    "u1_sac_c_smoke_001": {
+      "training_interactions": 4096,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 244,
+      "validation_interactions": 1600,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 36.373792001002585,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 33006080
+    },
+    "peg_smoke002": {
+      "episodes": 128,
+      "cpu_success": 116,
+      "gpu_success": 14,
+      "train": 10,
+      "validation": 4,
+      "alignment_validated": true,
+      "duplicate_seed_groups_disjoint": true
+    },
+    "f_u0_behavior_audit": {
+      "new_environment_interactions": 0,
+      "original_and_portable_summary_equal": true,
+      "timeline": "artifacts/f-u0-behavior-timeline-001/timeline.json",
+      "u0_last8192_positive_reward_fraction": 0,
+      "control_last8192_positive_reward_fraction": 0.799072265625,
+      "u0_last8192_random_sac_fraction": 0.2060546875,
+      "interpretation": "behavior deterioration precedes large final soft-Q values; observational, not unique causal identification"
+    },
+    "peg_full002": {
+      "episodes": 1000,
+      "transitions": 153291,
+      "successful_episodes": 126,
+      "failed_retained": 874,
+      "train_episodes": 98,
+      "validation_episodes": 28,
+      "train_source_groups": 70,
+      "validation_source_groups": 18,
+      "train_transitions": 12897,
+      "validation_transitions": 3621,
+      "dataset_sha256": "e408799bb4fac4566dcac053ef5f8663259fad45284449ce70a953b91ee00604",
+      "alignment_validated": true,
+      "train_validation_seed_groups_disjoint": true
+    },
+    "e7_rlpd_independent_eval_smoke_001": {
+      "policy": "releases/rlpd-smoke-001",
+      "actor_sha256": "42e3324f26b762891bf9ed96acd29e42733028ca60d33da1a8a34ea6dd7a9840",
+      "purpose": "validation",
+      "seed": 10000,
+      "episodes": 4,
+      "num_envs": 4,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0,
+      "interactions": 800,
+      "elapsed_seconds": 5.191722559990012,
+      "new_training_interactions": 0,
+      "checkpoint_selection": "fixed final",
+      "protocol": {
+        "env_id": "PickCube-v1",
+        "control_mode": "pd_ee_delta_pos",
+        "max_episode_steps": 200,
+        "reward_mode": "sparse",
+        "gamma": 0.99,
+        "reconfiguration_freq": 1,
+        "ignore_terminations": true
+      }
+    },
+    "u1_pick_seed0_c_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 917.2815625689982,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 148183552,
+      "final_validation_success_once": 14.0,
+      "final_validation_episodes": 16,
+      "checkpoint_audit": "artifacts/u1-pick-seed0-c-audit-001/result.json"
+    },
+    "u1_pick_seed0_wm_001": {
+      "updates": 10000,
+      "elapsed_seconds": 11.20751358999405,
+      "trainable_parameters": 88875,
+      "new_environment_interactions": 0,
+      "checkpoint": "checkpoints/u1-pick-seed0-wm-001/final.pt",
+      "sha256": "2a23f446c96d86add686d7011c97cd81a37a5ef82539461fda8d8e35298eb53b",
+      "torch_peak_allocated_bytes": 208573440
+    },
+    "u1_pick_seed0_value_001": {
+      "updates": 5000,
+      "new_environment_interactions": 0,
+      "elapsed_seconds": 4.351284891003161,
+      "trainable_parameters": 78081,
+      "checkpoint": "checkpoints/u1-pick-seed0-value-001/final.pt",
+      "sha256": "58de9cdd5de374ee0a1c61b4c09d4cf30ac5ce6016e47a1e8976311d392315c5",
+      "torch_peak_allocated_bytes": 208775168
+    },
+    "u1_pick_seed0_u0_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 64000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 1199.1064646220038,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 151175680,
+      "final_validation_by_method": {
+        "il": {
+          "success": 0.0,
+          "episodes": 16
+        },
+        "sac": {
+          "success": 16.0,
+          "episodes": 16
+        },
+        "il_sac_wm": {
+          "success": 13.0,
+          "episodes": 16
+        },
+        "sac_wm": {
+          "success": 15.0,
+          "episodes": 16
+        }
+      },
+      "checkpoint_audit": "artifacts/u1-pick-seed0-u0-audit-001/result.json",
+      "diagnosis": "diagnostics/U1_seed0.md",
+      "no_il_package": "releases/u1-final-001",
+      "portable_no_il_check": "artifacts/u1-portable-no-il-check-001/result.json"
+    },
+    "u1_pick_seed0_c_continue_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 966.4657356230018,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 148183552,
+      "final_validation_success_once": 16,
+      "final_validation_episodes": 16,
+      "final_validation_mean_return": 187.375
+    },
+    "f1_u0_step196608_prefix20_001": {
+      "valid_states": 8,
+      "prefix_max_error": 0,
+      "rankable_pairs_each_target": 0,
+      "ranking_identifiable": false,
+      "diagnostic_interactions": 121120,
+      "new_training_interactions": 0,
+      "analysis": "artifacts/f1-u0-step196608-prefix20-001/analysis.json"
+    },
+    "f1_u1_step196608_prefix20_001": {
+      "valid_states": 8,
+      "prefix_max_error": 0,
+      "rankable_pairs_each_target": 0,
+      "ranking_identifiable": false,
+      "diagnostic_interactions": 121120,
+      "new_training_interactions": 0,
+      "analysis": "artifacts/f1-u1-step196608-prefix20-001/analysis.json"
+    },
+    "f1_all_probes_summary": {
+      "summary": "artifacts/f1-all-probes-summary-001/summary.json",
+      "probes": 4,
+      "rankable_pairs_each_probe_target": 0,
+      "diagnostic_interactions_total": 496320,
+      "new_training_interactions": 0,
+      "prefix_followup_complete": true,
+      "further_prefix_search_this_batch": false
+    },
+    "pick_seed1_bc_001": {
+      "iterations": 10000,
+      "training_examples": 55092,
+      "validation_examples": 13897,
+      "validation_interactions": 80000,
+      "training_online_interactions": 0,
+      "elapsed_seconds": 571.7126377650129,
+      "torch_peak_allocated_bytes": 27623424,
+      "torch_peak_reserved_bytes": 33554432,
+      "checkpoint_selection": "fixed_final",
+      "final_test_evaluated": false,
+      "final_validation_success_once": 0.0,
+      "final_validation_episodes": 40,
+      "validation_action_mse": 0.0005764569750773681
+    },
+    "pick_seed1_a_001": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 788.6934191179898,
+      "frozen_il_verified": false,
+      "torch_peak_allocated_bytes": 141894656,
+      "final_validation_success_once": 0.0,
+      "final_validation_episodes": 16,
+      "final_validation_mean_return": 0.0
+    },
+    "act_teacher_stage": {
+      "phase": "completed",
+      "completed": [
+        "act-t0-smoke-001",
+        "act-t0-seed0-001",
+        "act-t0-k16-seed0-001",
+        "act-t0-k30-seed0-001"
+      ],
+      "current": null,
+      "stage": "ACT-T0",
+      "start_budget_used_seconds": 64210.38123582094,
+      "available_training_seconds": 14989.61876417906,
+      "stage_limit_seconds": 5700,
+      "final_test_reserve_seconds": 7200,
+      "teacher_gate_passed": true,
+      "results": {
+        "act-t0-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 1.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.475,
+            "stage_counts": {
+              "approached": 21,
+              "is_grasped": 21,
+              "lifted": 8,
+              "is_obj_placed": 1
+            },
+            "latency_batch8_ms_mean": 1.310010996821802,
+            "latency_batch8_ms_p95": 1.4260436160839163,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 21.0,
+            "success_at_end": 2.0,
+            "mean_return": 12.125,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 37,
+              "is_obj_placed": 22
+            },
+            "latency_batch8_ms_mean": 1.434493591048522,
+            "latency_batch8_ms_p95": 1.569708454189822,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k16-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 4.0,
+            "success_at_end": 0.0,
+            "mean_return": 1.275,
+            "stage_counts": {
+              "approached": 38,
+              "is_grasped": 38,
+              "lifted": 25,
+              "is_obj_placed": 4
+            },
+            "latency_batch8_ms_mean": 1.3082224410609342,
+            "latency_batch8_ms_p95": 1.4422476509935223,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 25.0,
+            "success_at_end": 3.0,
+            "mean_return": 24.2,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 33,
+              "is_obj_placed": 26
+            },
+            "latency_batch8_ms_mean": 1.4404641865403391,
+            "latency_batch8_ms_p95": 1.58610910148127,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k30-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 8.0,
+            "success_at_end": 4.0,
+            "mean_return": 10.65,
+            "stage_counts": {
+              "approached": 33,
+              "is_grasped": 33,
+              "lifted": 19,
+              "is_obj_placed": 8
+            },
+            "latency_batch8_ms_mean": 1.3071189032052644,
+            "latency_batch8_ms_p95": 1.4343991031637415,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 30.0,
+            "success_at_end": 5.0,
+            "mean_return": 27.625,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 35,
+              "is_obj_placed": 30
+            },
+            "latency_batch8_ms_mean": 1.4436877749976702,
+            "latency_batch8_ms_p95": 1.587704653502442,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        }
+      },
+      "next_stage": "ACT-D1 expert-state-only distillation; freeze teacher using development validation"
+    },
+    "act_d1_seed0_001": {
+      "offline": {
+        "train": {
+          "mse": 0.0011683952761813998,
+          "per_action_mse": [
+            5.895331560168415e-05,
+            9.716527711134404e-05,
+            0.00018628367979545146,
+            0.004331178497523069
+          ]
+        },
+        "validation": {
+          "mse": 0.0014863813994452357,
+          "per_action_mse": [
+            6.033515091985464e-05,
+            9.930053784046322e-05,
+            0.00018460136197973043,
+            0.005601288750767708
+          ]
+        }
+      },
+      "closed_loop": {
+        "sac_mean": {
+          "method": "sac_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 26,
+            "is_grasped": 18,
+            "lifted": 8,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.5367771469755098,
+          "latency_batch8_ms_p95": 1.7210612626513466,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.0011058506788685918,
+            0.0005616182461380959,
+            0.003956533502787352,
+            0.2522466778755188
+          ],
+          "sample_mean_action_mse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sac_stochastic": {
+          "method": "sac_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.2,
+          "stage_counts": {
+            "approached": 8,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.9728537137852982,
+          "latency_batch8_ms_p95": 2.360487577971071,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.004126774612814188,
+            0.004568456672132015,
+            0.020549971610307693,
+            0.2841547727584839
+          ],
+          "sample_mean_action_mse": [
+            0.01767021231353283,
+            0.01756623014807701,
+            0.01524823997169733,
+            0.00021377734083216637
+          ]
+        }
+      },
+      "teacher_success_once": 8,
+      "teacher_episodes": 40,
+      "success_gap_teacher_minus_student": {
+        "sac_mean": 0.17500000000000002,
+        "sac_stochastic": 0.17500000000000002
+      },
+      "paired_teacher_state_mse": 0.002725261729210615,
+      "teacher_frozen": true,
+      "log_std_frozen": -2.0,
+      "temperature_gradient": -10.852874755859375,
+      "elapsed_seconds": 82.9625137639814,
+      "torch_peak_allocated_bytes": 111528448,
+      "new_training_interactions": 0,
+      "final_test_accessed": false,
+      "smoke": false
+    },
+    "act_matched_eval_001": {
+      "methods": {
+        "act_k8_first": {
+          "method": "act_k8_first",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.65,
+          "stage_counts": {
+            "approached": 24,
+            "is_grasped": 24,
+            "lifted": 9,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.3256626125075854,
+          "latency_batch8_ms_p95": 1.493290325743146,
+          "inference_scope": "act_k8_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k8_ensemble": {
+          "method": "act_k8_ensemble",
+          "episodes": 40,
+          "success_once": 18.0,
+          "success_at_end": 1.0,
+          "mean_return": 12.325,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 39,
+            "is_obj_placed": 19
+          },
+          "latency_batch8_ms_mean": 1.452313132584095,
+          "latency_batch8_ms_p95": 1.6720712766982613,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_first": {
+          "method": "act_k16_first",
+          "episodes": 40,
+          "success_once": 10.0,
+          "success_at_end": 0.0,
+          "mean_return": 5.85,
+          "stage_counts": {
+            "approached": 38,
+            "is_grasped": 38,
+            "lifted": 26,
+            "is_obj_placed": 13
+          },
+          "latency_batch8_ms_mean": 1.326911490643397,
+          "latency_batch8_ms_p95": 1.5169636608334258,
+          "inference_scope": "act_k16_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_ensemble": {
+          "method": "act_k16_ensemble",
+          "episodes": 40,
+          "success_once": 31.0,
+          "success_at_end": 5.0,
+          "mean_return": 34.35,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 37,
+            "is_obj_placed": 31
+          },
+          "latency_batch8_ms_mean": 1.4834239052142948,
+          "latency_batch8_ms_p95": 1.6739258891902864,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_first": {
+          "method": "act_k30_first",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.3679431031341664,
+          "latency_batch8_ms_p95": 1.5403787343529982,
+          "inference_scope": "act_k30_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_ensemble": {
+          "method": "act_k30_ensemble",
+          "episodes": 40,
+          "success_once": 30.0,
+          "success_at_end": 5.0,
+          "mean_return": 31.725,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 36,
+            "is_obj_placed": 30
+          },
+          "latency_batch8_ms_mean": 1.4852700061164796,
+          "latency_batch8_ms_p95": 1.6976981831248847,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_mean": {
+          "method": "student_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 19,
+            "lifted": 5,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 0.14382142905378714,
+          "latency_batch8_ms_p95": 0.1774639298673719,
+          "inference_scope": "student_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_stochastic": {
+          "method": "student_stochastic",
+          "episodes": 40,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0,
+          "stage_counts": {
+            "approached": 5,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 0
+          },
+          "latency_batch8_ms_mean": 0.4209939423017204,
+          "latency_batch8_ms_p95": 0.49498847511131316,
+          "inference_scope": "student_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        }
+      },
+      "protocol": "matched batch reset seeds 10000,10008,10016,10024,10032; state42/pd_ee_delta_pos/sparse/GPU/horizon200",
+      "training_interactions": 0,
+      "checkpoint_selection": "original fixed-final K30 frozen before D1; no reselection from this corrected evaluation",
+      "final_test_accessed": false,
+      "torch_peak_allocated_bytes": 33825280
+    },
+    "act_c1_seed0_001": {
+      "real_expert_states": 55092,
+      "initial_action_max_abs": 1.0728836059570312e-06,
+      "initial_action_mse": 2.548404300855337e-13,
+      "saturated_action_fraction": 0.24777190880708633,
+      "copied_tensor_count": 70,
+      "teacher_unchanged": true,
+      "methods": {
+        "transfer_mean": {
+          "method": "transfer_mean",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.373218371940311,
+          "latency_batch8_ms_p95": 1.5253929130267352,
+          "inference_scope": "transfer_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        },
+        "transfer_stochastic": {
+          "method": "transfer_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.025,
+          "stage_counts": {
+            "approached": 33,
+            "is_grasped": 13,
+            "lifted": 9,
+            "is_obj_placed": 3
+          },
+          "latency_batch8_ms_mean": 1.6432184736477211,
+          "latency_batch8_ms_p95": 1.8280131014762446,
+          "inference_scope": "transfer_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        }
+      },
+      "elapsed_seconds": 81.30926746997284,
+      "torch_peak_allocated_bytes": 231443456,
+      "train_interactions": 0,
+      "final_test_accessed": false,
+      "actor_parameters": 940808,
+      "online_learning_verified": false,
+      "note": "Initial parameter preservation and stochastic execution only; online SAC superiority/forgetting untested"
+    },
+    "act_t2_online_seed0_002": {
+      "id": "act-t2-online-seed0-002",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1094.9869961909717,
+      "peak_device_mib": 4713,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 9.482948371442035e-06,
+          "max": 0.7388117909431458,
+          "final": 1.0021742127719335e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3010726571083069,
+          "max": 55.92681121826172,
+          "final": 0.3010726571083069
+        },
+        "losses/qf2_values": {
+          "min": 0.30020055174827576,
+          "max": 55.926055908203125,
+          "final": 0.30020055174827576
+        },
+        "losses/actor_loss": {
+          "min": -56.39734649658203,
+          "max": -0.29817888140678406,
+          "final": -0.29817888140678406
+        }
+      }
+    },
+    "act_t3_online_seed0_001": {
+      "id": "act-t3-online-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1105.1090763889952,
+      "peak_device_mib": 4709,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 2,
+      "losses": {
+        "losses/alpha": {
+          "min": 7.17740931577282e-06,
+          "max": 0.7639744877815247,
+          "final": 3.9408761949744076e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3190631568431854,
+          "max": 53.60826110839844,
+          "final": 0.3190631568431854
+        },
+        "losses/qf2_values": {
+          "min": 0.3017781972885132,
+          "max": 53.60850524902344,
+          "final": 0.3017781972885132
+        },
+        "losses/actor_loss": {
+          "min": -54.09770584106445,
+          "max": -0.3055709898471832,
+          "final": -0.3055709898471832
+        }
+      }
+    },
+    "act_t4_online_seed0_001": {
+      "id": "act-t4-online-seed0-001",
+      "status": "completed",
+      "initial_success": 1,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1099.1932152470108,
+      "peak_device_mib": 4864,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 1.145498799814959e-06,
+          "max": 0.7554770708084106,
+          "final": 1.145498799814959e-06
+        },
+        "losses/qf1_values": {
+          "min": 0.2754051685333252,
+          "max": 54.03567123413086,
+          "final": 0.2754051685333252
+        },
+        "losses/qf2_values": {
+          "min": 0.2761397957801819,
+          "max": 54.036903381347656,
+          "final": 0.2761397957801819
+        },
+        "losses/actor_loss": {
+          "min": -54.52239990234375,
+          "max": -0.2760038673877716,
+          "final": -0.2760038673877716
+        }
+      }
+    },
+    "act_t5_online_seed0_001": {
+      "id": "act-t5-online-seed0-001",
+      "status": "completed",
+      "initial_success": 8,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 3743.461614077969,
+      "peak_device_mib": 5769,
+      "actor_parameters": 940808,
+      "checkpoint_sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 1.3786185490971548e-06,
+          "max": 0.7408556342124939,
+          "final": 1.3786185490971548e-06
+        },
+        "losses/qf1_values": {
+          "min": 0.2759428918361664,
+          "max": 56.315406799316406,
+          "final": 0.2759428918361664
+        },
+        "losses/qf2_values": {
+          "min": 0.2799265384674072,
+          "max": 56.315059661865234,
+          "final": 0.2799265384674072
+        },
+        "losses/actor_loss": {
+          "min": -56.79010772705078,
+          "max": -0.2783903181552887,
+          "final": -0.2783903181552887
+        }
+      }
+    },
+    "act_online_comparison_complete": {
+      "summary": "artifacts/act-online-summary-005/summary.json",
+      "fixed_final_success_of_40": {
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "T6": 34
+      },
+      "training_seed": 0,
+      "final_test_accessed": false
+    },
+    "act_independent_eval_smoke_001": {
+      "status": "completed",
+      "gpu_job_seconds": 56.67084224300925,
+      "validation_interactions": 12000,
+      "training_interactions": 0,
+      "all_initial_state_max_error": 0
+    },
+    "act_u2_resource_smoke": {
+      "id": "act-u2-retention-smoke-001",
+      "success_once_initial": 8,
+      "success_once_final": 1,
+      "episodes": 40,
+      "gpu_job_seconds": 121.30759384500561,
+      "resource_gate_passed": true,
+      "not_efficacy_evidence": true
+    }
+  },
+  "next_experiment": "Run registered 106 final conditions once under shared7200s cap; then evidence delivery, no further tuning.",
+  "blockers": [],
+  "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+  "background_jobs": [
+    {
+      "role": "e6-u0-full-001",
+      "status_file": "artifacts/queue-e6-u0-full-001/status.json"
+    },
+    {
+      "role": "e3-sac-c-continue-full-001",
+      "status_file": "artifacts/queue-e3-sac-c-continue-full-001/status.json"
+    },
+    {
+      "role": "f1-u0-ranking-001",
+      "status_file": "artifacts/queue-f1-u0-ranking-001/status.json"
+    },
+    {
+      "role": "e3-rlpd-smoke-001",
+      "status_file": "artifacts/queue-e3-rlpd-smoke-001-after-precollapse/status.json"
+    },
+    {
+      "role": "stack_data_pipeline",
+      "status_file": "artifacts/queue-stack-data-after-eval-001/status.json"
+    },
+    {
+      "role": "peg_data_pipeline",
+      "status_file": "artifacts/queue-peg-data-pipeline-001/status.json"
+    },
+    {
+      "role": "f1-u0-precollapse-ranking-001",
+      "status_file": "artifacts/queue-f1-u0-precollapse-ranking-001/status.json"
+    },
+    {
+      "role": "pick_seed1_independent_repeat",
+      "status_file": "artifacts/queue-pick-seed1-pipeline-001/status.json"
+    },
+    {
+      "role": "pick_seed2_independent_repeat",
+      "status_file": "artifacts/queue-pick-seed2-pipeline-001/status.json"
+    },
+    {
+      "role": "independent_eval_smoke",
+      "status_file": "artifacts/queue-e7-independent-eval-smoke-001/status.json"
+    },
+    {
+      "role": "rlpd_full_seed0",
+      "status_file": "artifacts/queue-e3-rlpd-full-001/status.json"
+    },
+    {
+      "role": "peg_data_revision002",
+      "status_file": "artifacts/queue-peg-data-pipeline-002/status.json"
+    },
+    {
+      "role": "u1_seed0",
+      "status_file": "artifacts/queue-u1-pick-seed0-after-rlpd-eval-001/status.json"
+    },
+    {
+      "role": "pick_seed1_recovered",
+      "status_file": "artifacts/queue-pick-seed1-pipeline-002/status.json"
+    },
+    {
+      "role": "stack_seed0",
+      "status_file": "artifacts/queue-stack-seed0-pipeline-001/status.json"
+    },
+    {
+      "role": "peg_seed0",
+      "status_file": "artifacts/queue-peg-seed0-pipeline-001/status.json"
+    },
+    {
+      "role": "u1_seed1",
+      "status_file": "artifacts/queue-u1-pick-seed1-pipeline-001/status.json"
+    },
+    {
+      "role": "u1_seed2",
+      "status_file": "artifacts/queue-u1-pick-seed2-pipeline-001/status.json"
+    },
+    {
+      "role": "rlpd_independent_eval_smoke",
+      "status_file": "artifacts/queue-e7-rlpd-independent-eval-smoke-001/status.json"
+    },
+    {
+      "role": "u1_seed0_cpu_execution_audit",
+      "status_file": "artifacts/queue-u1-pick-seed0-u0-audit-001/status.json"
+    },
+    {
+      "role": "pick-seed3-pipeline-001",
+      "status_file": "artifacts/queue-pick-seed3-pipeline-001/status.json",
+      "launched_pid": 1061070
+    },
+    {
+      "role": "u1-pick-seed3-pipeline-001",
+      "status_file": "artifacts/queue-u1-pick-seed3-pipeline-001/status.json",
+      "launched_pid": 1061071
+    },
+    {
+      "role": "pick-seed4-pipeline-001",
+      "status_file": "artifacts/queue-pick-seed4-pipeline-001/status.json",
+      "launched_pid": 1061072
+    },
+    {
+      "role": "u1-pick-seed4-pipeline-001",
+      "status_file": "artifacts/queue-u1-pick-seed4-pipeline-001/status.json",
+      "launched_pid": 1061073
+    },
+    {
+      "role": "u1_seed0_fixed_input_drift",
+      "status_file": "artifacts/queue-u1-seed0-drift-analysis-001/status.json"
+    },
+    {
+      "role": "queue-f1-u0-step196608-prefix20-001",
+      "status_file": "artifacts/queue-f1-u0-step196608-prefix20-001/status.json",
+      "launched_pid": 1128163
+    },
+    {
+      "role": "queue-f1-u0-step196608-prefix20-001-analysis",
+      "status_file": "artifacts/queue-f1-u0-step196608-prefix20-001-analysis/status.json",
+      "launched_pid": 1128164
+    },
+    {
+      "role": "queue-f1-u1-step196608-prefix20-001",
+      "status_file": "artifacts/queue-f1-u1-step196608-prefix20-001/status.json",
+      "launched_pid": 1128165
+    },
+    {
+      "role": "queue-f1-u1-step196608-prefix20-001-analysis",
+      "status_file": "artifacts/queue-f1-u1-step196608-prefix20-001-analysis/status.json",
+      "launched_pid": 1128166
+    },
+    {
+      "role": "queue-pick-seed1-pipeline-003",
+      "status_file": "artifacts/queue-pick-seed1-pipeline-003/status.json",
+      "launched_pid": 1128167
+    },
+    {
+      "role": "ACT-T0 teacher stage",
+      "status_file": "artifacts/queue-act-t0-stage-001/status.json",
+      "launched_pid": 1959272
+    },
+    {
+      "role": "ACT T4-T6 CPU evidence/export/drift postprocessing",
+      "status_file": "artifacts/act-online-postprocess-001/status.json",
+      "launched_pid": 2829356
+    },
+    {
+      "role": "ACT independent 10-env validation entry after T6 and CPU postprocessing",
+      "status_file": "artifacts/queue-act-eval-entry-001/status.json",
+      "launched_pid": 2915393
+    },
+    {
+      "role": "U2 bounded full ACT retention control",
+      "status_file": "artifacts/act-u2-full-batch-001/status.json",
+      "launched_pid": 2935565
+    },
+    {
+      "role": "U2 CPU-only postprocessing after successful full run",
+      "status_file": "artifacts/queue-act-u2-postprocess-001/status.json",
+      "launched_pid": 2936685
+    },
+    {
+      "role": "U2 read-only single-mechanism/source/retention audit after existing CPU queue",
+      "status_file": "artifacts/queue-act-u2-audit-001/status.json",
+      "launched_pid": 2981751
+    },
+    {
+      "role": "Frozen106-condition final evaluation and raw summary",
+      "status_file": "artifacts/act-final-evaluation-launch-002/status.json",
+      "launched_pid": 2996780
+    },
+    {
+      "role": "Final evaluation003 remaining68 entries, shared original cap",
+      "status_file": "artifacts/act-final-evaluation-launch-003/status.json",
+      "launched_pid": 3003841
+    }
+  ],
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.3.0+cu121",
+    "status": "verified_ready"
+  },
+  "invalidated_experiments": [
+    "e1-bc-full-001"
+  ],
+  "external_rlpd": {
+    "environment": "isolated_ready_cpu_verified",
+    "protocol": "external/rlpd/protocol.json",
+    "cpu_check": "artifacts/rlpd-components-cpu-001/result.json",
+    "real_gpu_training_completed": true,
+    "gpu_smoke": "completed_and_replay_audited",
+    "real_gpu_smoke_completed": true,
+    "full_training_completed": true,
+    "full_training": "completed; see artifacts/e3-rlpd-full-001",
+    "full_limit_seconds": 10800,
+    "smoke_peak_gpu_mib": 4893,
+    "portable_smoke_actor": "releases/rlpd-smoke-001",
+    "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
+  },
+  "ongoing_progress": {
+    "experiment": "final-evaluation-batch003",
+    "authoritative_live_file": "artifacts/act-final-evaluation-batch-003/status.json",
+    "launcher": "artifacts/act-final-evaluation-launch-003/status.json",
+    "note": "Check actual process and manifests; do not restart or expand budget"
+  },
+  "task_data_preparation": {
+    "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
+    "PegInsertionSide-v1": "full1000_revision002_audited_126_eligible_88_distinct_source_groups_874_failed_retained"
+  },
+  "upload_access": {
+    "phase": "verified",
+    "commit": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
+    "tree": "5d0bd5304c83d1a39fd05069cf491a0ef2880164",
+    "receipt": "artifacts/github-act-stage-upload-021/status.json",
+    "verified_files": 3156,
+    "draft_pr": 2,
+    "main_unchanged": true
+  },
+  "local_hypotheses": [
+    {
+      "id": "U1",
+      "mechanism": "SAC critic hidden LayerNorm only",
+      "status": "independent seeds1-4 complete; stability gain but no WM net gain in validation",
+      "specification": "U1_CHANGE.md"
+    },
+    {
+      "id": "U2",
+      "mechanism": "finite early actor mean retention only",
+      "status": "completed bounded negative; classification B; no third hypothesis authorized",
+      "specification": "U2_CHANGE.md"
+    }
+  ],
+  "final_evaluation": {
+    "status": "running original budget; export compatibility repair verified; no repeated completed entries",
+    "plan": "configs/act_final_evaluation_plan.json",
+    "models_or_stages": 70,
+    "method_conditions": 106,
+    "episodes_per_condition": 100,
+    "limit_seconds": 7200,
+    "final_test_accessed": true,
+    "queue": "artifacts/act-final-evaluation-batch-003/status.json",
+    "summary_queue": "artifacts/act-final-evaluation-launch-003/status.json",
+    "method_fixed": true,
+    "release_gate": "configs/act_final_test_gate.json",
+    "historical_plan": "configs/final_evaluation_plan.json",
+    "historical_method_fixed": true,
+    "act_validation_smoke": "completed; comparison frozen and gate released before first test access",
+    "cpu_evidence_tests": "artifacts/act-final-evidence-tests-001/status.json",
+    "resume003": {
+      "failure_id": "F-ACT-EVAL-02",
+      "prior_batch": "artifacts/act-final-evaluation-batch-002/status.json",
+      "prior_elapsed_seconds": 121.40365356201073,
+      "remaining_seconds": 7078.596346437989,
+      "skip_completed": [
+        "pick-seed0-a",
+        "pick-seed0-b"
+      ],
+      "selected": [
+        "pick-seed0-c",
+        "pick-seed0-c-continue",
+        "pick-seed0-u0",
+        "pick-seed1-a",
+        "pick-seed1-b",
+        "pick-seed1-c",
+        "pick-seed1-c-continue",
+        "pick-seed1-u0",
+        "pick-seed2-a",
+        "pick-seed2-b",
+        "pick-seed2-c",
+        "pick-seed2-c-continue",
+        "pick-seed2-u0",
+        "stack-seed0-a",
+        "stack-seed0-b",
+        "stack-seed0-c",
+        "stack-seed0-c-continue",
+        "stack-seed0-u0",
+        "peg-seed0-a",
+        "peg-seed0-b",
+        "peg-seed0-c",
+        "peg-seed0-c-continue",
+        "peg-seed0-u0",
+        "u1-pick-seed0-c",
+        "u1-pick-seed0-c-continue",
+        "u1-pick-seed0-u0",
+        "u1-pick-seed1-c",
+        "u1-pick-seed1-c-continue",
+        "u1-pick-seed1-u0",
+        "u1-pick-seed2-c",
+        "u1-pick-seed2-c-continue",
+        "u1-pick-seed2-u0",
+        "rlpd-seed0-step262144",
+        "rlpd-seed0-step524288",
+        "pick-seed3-a",
+        "pick-seed3-b",
+        "pick-seed3-c",
+        "pick-seed3-c-continue",
+        "pick-seed3-u0",
+        "u1-pick-seed3-c",
+        "u1-pick-seed3-c-continue",
+        "u1-pick-seed3-u0",
+        "pick-seed4-a",
+        "pick-seed4-b",
+        "pick-seed4-c",
+        "pick-seed4-c-continue",
+        "pick-seed4-u0",
+        "u1-pick-seed4-c",
+        "u1-pick-seed4-c-continue",
+        "u1-pick-seed4-u0",
+        "act-teacher-k30-first",
+        "act-teacher-k30-ensemble",
+        "act-d1-initial-mean",
+        "act-d1-initial-stochastic",
+        "act-c1-initial-mean",
+        "act-c1-initial-stochastic",
+        "act-t2-final-mean",
+        "act-t2-final-stochastic",
+        "act-t3-final-mean",
+        "act-t3-final-stochastic",
+        "act-t4-final-mean",
+        "act-t4-final-stochastic",
+        "act-t5-final-mean",
+        "act-t5-final-stochastic",
+        "act-t6-final-mean",
+        "act-t6-final-stochastic",
+        "act-u2-final-mean",
+        "act-u2-final-stochastic"
+      ],
+      "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "new_budget": false,
+      "arguments": [
+        "--remaining-seconds",
+        "7078.596346437989",
+        "--ids",
+        "pick-seed0-c",
+        "pick-seed0-c-continue",
+        "pick-seed0-u0",
+        "pick-seed1-a",
+        "pick-seed1-b",
+        "pick-seed1-c",
+        "pick-seed1-c-continue",
+        "pick-seed1-u0",
+        "pick-seed2-a",
+        "pick-seed2-b",
+        "pick-seed2-c",
+        "pick-seed2-c-continue",
+        "pick-seed2-u0",
+        "stack-seed0-a",
+        "stack-seed0-b",
+        "stack-seed0-c",
+        "stack-seed0-c-continue",
+        "stack-seed0-u0",
+        "peg-seed0-a",
+        "peg-seed0-b",
+        "peg-seed0-c",
+        "peg-seed0-c-continue",
+        "peg-seed0-u0",
+        "u1-pick-seed0-c",
+        "u1-pick-seed0-c-continue",
+        "u1-pick-seed0-u0",
+        "u1-pick-seed1-c",
+        "u1-pick-seed1-c-continue",
+        "u1-pick-seed1-u0",
+        "u1-pick-seed2-c",
+        "u1-pick-seed2-c-continue",
+        "u1-pick-seed2-u0",
+        "rlpd-seed0-step262144",
+        "rlpd-seed0-step524288",
+        "pick-seed3-a",
+        "pick-seed3-b",
+        "pick-seed3-c",
+        "pick-seed3-c-continue",
+        "pick-seed3-u0",
+        "u1-pick-seed3-c",
+        "u1-pick-seed3-c-continue",
+        "u1-pick-seed3-u0",
+        "pick-seed4-a",
+        "pick-seed4-b",
+        "pick-seed4-c",
+        "pick-seed4-c-continue",
+        "pick-seed4-u0",
+        "u1-pick-seed4-c",
+        "u1-pick-seed4-c-continue",
+        "u1-pick-seed4-u0",
+        "act-teacher-k30-first",
+        "act-teacher-k30-ensemble",
+        "act-d1-initial-mean",
+        "act-d1-initial-stochastic",
+        "act-c1-initial-mean",
+        "act-c1-initial-stochastic",
+        "act-t2-final-mean",
+        "act-t2-final-stochastic",
+        "act-t3-final-mean",
+        "act-t3-final-stochastic",
+        "act-t4-final-mean",
+        "act-t4-final-stochastic",
+        "act-t5-final-mean",
+        "act-t5-final-stochastic",
+        "act-t6-final-mean",
+        "act-t6-final-stochastic",
+        "act-u2-final-mean",
+        "act-u2-final-stochastic"
+      ]
+    },
+    "throughput_forecast": "artifacts/act-final-throughput-review-001/result.json",
+    "terminal_audit": "artifacts/act-final-delivery-audit-001/status.json"
+  },
+  "diagnostic_followup": "configs/f1_prefix20_followup.json",
+  "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
+  "act_research": {
+    "task": "ACT→SAC transfer, user authorized 2026-10-17",
+    "plan": "ACT_SAC_PLAN.md",
+    "phase": "U2 full audited; final evaluation ongoing",
+    "branch": "research/act-sac-transfer",
+    "cpu_tests": "artifacts/act-cpu-tests-003",
+    "cpu_real_data": "artifacts/act-real-data-cpu-002",
+    "teacher_queue": "artifacts/queue-act-t0-stage-001/status.json",
+    "teacher_max_gpu_seconds": 5700,
+    "old_training_preserved": true,
+    "budget_reset": false,
+    "distillation_first_data": "expert_train_states_only",
+    "parameter_transfer": "artifacts/act-c1-seed0-001/result.json",
+    "wm": "unchanged",
+    "upload": "each validated small stage, background, new branch; no main merge",
+    "cpu_preflight": {
+      "tests": "artifacts/act-cpu-tests-004",
+      "tests_passed": 35,
+      "real_data": "artifacts/act-real-data-cpu-003",
+      "updates": 10,
+      "new_environment_interactions": 0
+    },
+    "continuation": {
+      "automation_id": "il-rl-wm-act",
+      "stage": "final evaluation and CPU delivery; pause after batch ends or no authorized work"
+    },
+    "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
+    "distillation": "artifacts/act-d1-seed0-001/result.json",
+    "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
+    "next_stage": "Complete authorized final batch; no new GPU training; CPU causal-gap review and R0/R1/R3 proposal",
+    "teacher_selection_unchanged": true,
+    "online_plan": "artifacts/act-online-budget-002/plan.json",
+    "online_stage": "artifacts/act-online-batch-002/status.json",
+    "latest_online_summary": "artifacts/act-online-summary-006/summary.json",
+    "inference_export_stage": {
+      "tests": "artifacts/act-inference-cpu-tests-001",
+      "tests_passed": 16,
+      "portable_t2": "releases/act-t2-online-final-001/manifest.json",
+      "real_independent_entry_evaluated": false,
+      "final_test_accessed": false
+    },
+    "online_drift_diagnostic": {
+      "script": "scripts/diagnose_act_online_drift.py",
+      "fixed_expert_train_states": 1024,
+      "full_run_steps": [
+        16384,
+        65536,
+        131072,
+        262144
+      ],
+      "smoke_validation": "artifacts/act-t5-smoke-drift-002/result.json",
+      "existing_probe_parity": "artifacts/act-drift-parity-001/result.json",
+      "postprocess_status": "artifacts/act-online-postprocess-001/status.json",
+      "full_run_drift_completed": [
+        "act-t4-online-seed0-001",
+        "act-t5-online-seed0-001"
+      ]
+    },
+    "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json",
+    "t5_actual_online_behavior_audit": "artifacts/act-online-behavior-audit-002/portable-manifest.json",
+    "u2_full_closure": {
+      "frozen_at": "2026-10-19T05:41:53.918084+00:00",
+      "development_closed": true,
+      "reason": "Bounded T2-T6 and U2 comparison complete. U2 failed to retain final skill; no more local hypotheses or tuning. Preserve all negative results. ACT-WM and independent ACT repeats remain uncompleted, not replaced by final testing.",
+      "selection": "Existing registered checkpoints only; online fixed final, offline preselected packages. No final-score-driven changes.",
+      "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "conditions": 106,
+      "entries": 70,
+      "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "audit": "artifacts/act-u2-comparison-audit-001/result.json",
+      "gpu_job_seconds_used": 78026.16978091677,
+      "remaining_total_seconds": 8373.830219083233,
+      "final_batch_cap_seconds": 7200,
+      "new_budget": false
+    },
+    "new_task": "ACT_NEXT_STAGE_TASK_2026-10-19.md",
+    "next_gpu_training_authorized": false,
+    "next_plan": "configs/act_next_initialization_controls.json",
+    "reviews": [
+      "ACT_U2_FINAL_REVIEW.md",
+      "ACT_TRANSFER_CAUSAL_GAPS.md",
+      "NEXT_RESEARCH_BATCH.md"
+    ]
+  },
+  "source_publication": {
+    "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+    "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
+    "archive": "releases/source-history-act-20261019-001/manifest.json",
+    "latest_publication_plan": ".cache/github-act-stage-017/plan.json",
+    "note": "Stage17 verified2448 blobs/modes; local HEAD frozen and repairs in execution snapshots/patches. Continue temporary-index publication from this tree.",
+    "latest_verified_remote": "d3cc98339c00dd197953926cd659b6e82753902a",
+    "latest_verified_tree": "2395e860d7f3d223c76732cb28d7deb420f35af4"
+  },
+  "hourly_automation": {
+    "id": "il-rl-wm-act",
+    "status": "deleted",
+    "reason": "User explicitly cancelled the hourly scheduled task; existing bounded processes were not terminated."
+  }
+}

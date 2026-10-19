@@ -1,5 +1,7 @@
 # 2026-10-19 增量进度
 
+> 2026-10-19 终态更新：正式测试104/106条件完成，U2均值预算中断、随机未启动。详见[FINAL_BATCH_REPORT.md](FINAL_BATCH_REPORT.md)。共享总账23.647652小时；原最终cap已用完，未安排重试或新训练。下文开发记录/早期状态保留为历史，不能当作仍在运行。
+
 U2完整开发阶段已验收为有限负结果，最新入口为ACT_U2_FINAL_REVIEW.md、ACT_TRANSFER_CAUSAL_GAPS.md和NEXT_RESEARCH_BATCH.md。当前106条件正式评测003仍在后台，尚非最终批次结项。新R0/R1/R3/预热实验未获GPU授权。阶段上传回执见artifacts/github-act-stage-upload-*，以最新完成且回读验证的回执为准。
 
 以下2026-10-16快照原文作为历史保留，其“尚未完成/测试未访问”表述仅适用于当时。

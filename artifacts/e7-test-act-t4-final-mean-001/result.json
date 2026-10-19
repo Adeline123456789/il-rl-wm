@@ -1,0 +1,40 @@
+{
+  "method": "mlp_mean",
+  "episodes": 100,
+  "success_once": 0.0,
+  "success_at_end": 0.0,
+  "mean_return": 0.0,
+  "stage_counts": {
+    "approached": 0,
+    "is_grasped": 0,
+    "lifted": 0,
+    "is_obj_placed": 0
+  },
+  "latency_batch10_ms_mean": 0.13135284101008438,
+  "latency_batch10_ms_p95": 0.16543167585041374,
+  "inference_scope": "mlp_mean; synchronized CUDA; excludes env.step/render",
+  "test_seed": 20000,
+  "reset_protocol": "explicit seed 20000+episode_batch_start",
+  "seed": 20000,
+  "training_seed": 0,
+  "training_interactions": 262144,
+  "checkpoint": "releases/act-t4-online-final-001/weights.pt",
+  "checkpoint_sha256": "9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80",
+  "kind": "mlp",
+  "mode": "mean",
+  "purpose": "final_test",
+  "num_envs": 10,
+  "new_training_interactions": 0,
+  "interactions": 20000,
+  "selection": "explicit fixed checkpoint",
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "obs_mode": "state",
+    "control_mode": "pd_ee_delta_pos",
+    "reward_mode": "sparse",
+    "horizon": 200,
+    "max_episode_steps": 200,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "torch_peak_allocated_bytes": 11024896
+}

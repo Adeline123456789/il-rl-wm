@@ -1,0 +1,414 @@
+{
+  "phase": "failed",
+  "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "selected": [
+    "pick-seed0-c",
+    "pick-seed0-c-continue",
+    "pick-seed0-u0",
+    "pick-seed1-a",
+    "pick-seed1-b",
+    "pick-seed1-c",
+    "pick-seed1-c-continue",
+    "pick-seed1-u0",
+    "pick-seed2-a",
+    "pick-seed2-b",
+    "pick-seed2-c",
+    "pick-seed2-c-continue",
+    "pick-seed2-u0",
+    "stack-seed0-a",
+    "stack-seed0-b",
+    "stack-seed0-c",
+    "stack-seed0-c-continue",
+    "stack-seed0-u0",
+    "peg-seed0-a",
+    "peg-seed0-b",
+    "peg-seed0-c",
+    "peg-seed0-c-continue",
+    "peg-seed0-u0",
+    "u1-pick-seed0-c",
+    "u1-pick-seed0-c-continue",
+    "u1-pick-seed0-u0",
+    "u1-pick-seed1-c",
+    "u1-pick-seed1-c-continue",
+    "u1-pick-seed1-u0",
+    "u1-pick-seed2-c",
+    "u1-pick-seed2-c-continue",
+    "u1-pick-seed2-u0",
+    "rlpd-seed0-step262144",
+    "rlpd-seed0-step524288",
+    "pick-seed3-a",
+    "pick-seed3-b",
+    "pick-seed3-c",
+    "pick-seed3-c-continue",
+    "pick-seed3-u0",
+    "u1-pick-seed3-c",
+    "u1-pick-seed3-c-continue",
+    "u1-pick-seed3-u0",
+    "pick-seed4-a",
+    "pick-seed4-b",
+    "pick-seed4-c",
+    "pick-seed4-c-continue",
+    "pick-seed4-u0",
+    "u1-pick-seed4-c",
+    "u1-pick-seed4-c-continue",
+    "u1-pick-seed4-u0",
+    "act-teacher-k30-first",
+    "act-teacher-k30-ensemble",
+    "act-d1-initial-mean",
+    "act-d1-initial-stochastic",
+    "act-c1-initial-mean",
+    "act-c1-initial-stochastic",
+    "act-t2-final-mean",
+    "act-t2-final-stochastic",
+    "act-t3-final-mean",
+    "act-t3-final-stochastic",
+    "act-t4-final-mean",
+    "act-t4-final-stochastic",
+    "act-t5-final-mean",
+    "act-t5-final-stochastic",
+    "act-t6-final-mean",
+    "act-t6-final-stochastic",
+    "act-u2-final-mean",
+    "act-u2-final-stochastic"
+  ],
+  "unselected_pending": [
+    "pick-seed0-a",
+    "pick-seed0-b"
+  ],
+  "completed": [
+    {
+      "id": "pick-seed0-c",
+      "experiment": "e7-test-pick-seed0-c-001",
+      "package": "releases/final-pick-seed0-c-001"
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "experiment": "e7-test-pick-seed0-c-continue-001",
+      "package": "releases/final-pick-seed0-c-continue-001"
+    },
+    {
+      "id": "pick-seed0-u0",
+      "experiment": "e7-test-pick-seed0-u0-001",
+      "package": "releases/final-pick-seed0-u0-001"
+    },
+    {
+      "id": "pick-seed1-a",
+      "experiment": "e7-test-pick-seed1-a-001",
+      "package": "releases/final-pick-seed1-a-001"
+    },
+    {
+      "id": "pick-seed1-b",
+      "experiment": "e7-test-pick-seed1-b-001",
+      "package": "releases/final-pick-seed1-b-001"
+    },
+    {
+      "id": "pick-seed1-c",
+      "experiment": "e7-test-pick-seed1-c-001",
+      "package": "releases/final-pick-seed1-c-001"
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "experiment": "e7-test-pick-seed1-c-continue-001",
+      "package": "releases/final-pick-seed1-c-continue-001"
+    },
+    {
+      "id": "pick-seed1-u0",
+      "experiment": "e7-test-pick-seed1-u0-001",
+      "package": "releases/final-pick-seed1-u0-001"
+    },
+    {
+      "id": "pick-seed2-a",
+      "experiment": "e7-test-pick-seed2-a-001",
+      "package": "releases/final-pick-seed2-a-001"
+    },
+    {
+      "id": "pick-seed2-b",
+      "experiment": "e7-test-pick-seed2-b-001",
+      "package": "releases/final-pick-seed2-b-001"
+    },
+    {
+      "id": "pick-seed2-c",
+      "experiment": "e7-test-pick-seed2-c-001",
+      "package": "releases/final-pick-seed2-c-001"
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "experiment": "e7-test-pick-seed2-c-continue-001",
+      "package": "releases/final-pick-seed2-c-continue-001"
+    },
+    {
+      "id": "pick-seed2-u0",
+      "experiment": "e7-test-pick-seed2-u0-001",
+      "package": "releases/final-pick-seed2-u0-001"
+    },
+    {
+      "id": "stack-seed0-a",
+      "experiment": "e7-test-stack-seed0-a-001",
+      "package": "releases/final-stack-seed0-a-001"
+    },
+    {
+      "id": "stack-seed0-b",
+      "experiment": "e7-test-stack-seed0-b-001",
+      "package": "releases/final-stack-seed0-b-001"
+    },
+    {
+      "id": "stack-seed0-c",
+      "experiment": "e7-test-stack-seed0-c-001",
+      "package": "releases/final-stack-seed0-c-001"
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "experiment": "e7-test-stack-seed0-c-continue-001",
+      "package": "releases/final-stack-seed0-c-continue-001"
+    },
+    {
+      "id": "stack-seed0-u0",
+      "experiment": "e7-test-stack-seed0-u0-001",
+      "package": "releases/final-stack-seed0-u0-001"
+    },
+    {
+      "id": "peg-seed0-a",
+      "experiment": "e7-test-peg-seed0-a-001",
+      "package": "releases/final-peg-seed0-a-001"
+    },
+    {
+      "id": "peg-seed0-b",
+      "experiment": "e7-test-peg-seed0-b-001",
+      "package": "releases/final-peg-seed0-b-001"
+    },
+    {
+      "id": "peg-seed0-c",
+      "experiment": "e7-test-peg-seed0-c-001",
+      "package": "releases/final-peg-seed0-c-001"
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "experiment": "e7-test-peg-seed0-c-continue-001",
+      "package": "releases/final-peg-seed0-c-continue-001"
+    },
+    {
+      "id": "peg-seed0-u0",
+      "experiment": "e7-test-peg-seed0-u0-001",
+      "package": "releases/final-peg-seed0-u0-001"
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "experiment": "e7-test-u1-pick-seed0-c-001",
+      "package": "releases/final-u1-pick-seed0-c-001"
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "experiment": "e7-test-u1-pick-seed0-c-continue-001",
+      "package": "releases/final-u1-pick-seed0-c-continue-001"
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "experiment": "e7-test-u1-pick-seed0-u0-001",
+      "package": "releases/final-u1-pick-seed0-u0-001"
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "experiment": "e7-test-u1-pick-seed1-c-001",
+      "package": "releases/final-u1-pick-seed1-c-001"
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "experiment": "e7-test-u1-pick-seed1-c-continue-001",
+      "package": "releases/final-u1-pick-seed1-c-continue-001"
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "experiment": "e7-test-u1-pick-seed1-u0-001",
+      "package": "releases/final-u1-pick-seed1-u0-001"
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "experiment": "e7-test-u1-pick-seed2-c-001",
+      "package": "releases/final-u1-pick-seed2-c-001"
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "experiment": "e7-test-u1-pick-seed2-c-continue-001",
+      "package": "releases/final-u1-pick-seed2-c-continue-001"
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "experiment": "e7-test-u1-pick-seed2-u0-001",
+      "package": "releases/final-u1-pick-seed2-u0-001"
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "experiment": "e7-test-rlpd-seed0-step262144-001",
+      "package": "releases/final-rlpd-seed0-step262144-001"
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "experiment": "e7-test-rlpd-seed0-step524288-001",
+      "package": "releases/final-rlpd-seed0-step524288-001"
+    },
+    {
+      "id": "pick-seed3-a",
+      "experiment": "e7-test-pick-seed3-a-001",
+      "package": "releases/final-pick-seed3-a-001"
+    },
+    {
+      "id": "pick-seed3-b",
+      "experiment": "e7-test-pick-seed3-b-001",
+      "package": "releases/final-pick-seed3-b-001"
+    },
+    {
+      "id": "pick-seed3-c",
+      "experiment": "e7-test-pick-seed3-c-001",
+      "package": "releases/final-pick-seed3-c-001"
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "experiment": "e7-test-pick-seed3-c-continue-001",
+      "package": "releases/final-pick-seed3-c-continue-001"
+    },
+    {
+      "id": "pick-seed3-u0",
+      "experiment": "e7-test-pick-seed3-u0-001",
+      "package": "releases/final-pick-seed3-u0-001"
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "experiment": "e7-test-u1-pick-seed3-c-001",
+      "package": "releases/final-u1-pick-seed3-c-001"
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "experiment": "e7-test-u1-pick-seed3-c-continue-001",
+      "package": "releases/final-u1-pick-seed3-c-continue-001"
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "experiment": "e7-test-u1-pick-seed3-u0-001",
+      "package": "releases/final-u1-pick-seed3-u0-001"
+    },
+    {
+      "id": "pick-seed4-a",
+      "experiment": "e7-test-pick-seed4-a-001",
+      "package": "releases/final-pick-seed4-a-001"
+    },
+    {
+      "id": "pick-seed4-b",
+      "experiment": "e7-test-pick-seed4-b-001",
+      "package": "releases/final-pick-seed4-b-001"
+    },
+    {
+      "id": "pick-seed4-c",
+      "experiment": "e7-test-pick-seed4-c-001",
+      "package": "releases/final-pick-seed4-c-001"
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "experiment": "e7-test-pick-seed4-c-continue-001",
+      "package": "releases/final-pick-seed4-c-continue-001"
+    },
+    {
+      "id": "pick-seed4-u0",
+      "experiment": "e7-test-pick-seed4-u0-001",
+      "package": "releases/final-pick-seed4-u0-001"
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "experiment": "e7-test-u1-pick-seed4-c-001",
+      "package": "releases/final-u1-pick-seed4-c-001"
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "experiment": "e7-test-u1-pick-seed4-c-continue-001",
+      "package": "releases/final-u1-pick-seed4-c-continue-001"
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "experiment": "e7-test-u1-pick-seed4-u0-001",
+      "package": "releases/final-u1-pick-seed4-u0-001"
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "experiment": "e7-test-act-teacher-k30-first-001",
+      "package": "releases/act-teacher-k30-001"
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "experiment": "e7-test-act-teacher-k30-ensemble-001",
+      "package": "releases/act-teacher-k30-001"
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "experiment": "e7-test-act-d1-initial-mean-001",
+      "package": "releases/act-d1-negative-001"
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "experiment": "e7-test-act-d1-initial-stochastic-001",
+      "package": "releases/act-d1-negative-001"
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "experiment": "e7-test-act-c1-initial-mean-001",
+      "package": "releases/act-c1-init-001"
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "experiment": "e7-test-act-c1-initial-stochastic-001",
+      "package": "releases/act-c1-init-001"
+    },
+    {
+      "id": "act-t2-final-mean",
+      "experiment": "e7-test-act-t2-final-mean-001",
+      "package": "releases/act-t2-online-final-001"
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "experiment": "e7-test-act-t2-final-stochastic-001",
+      "package": "releases/act-t2-online-final-001"
+    },
+    {
+      "id": "act-t3-final-mean",
+      "experiment": "e7-test-act-t3-final-mean-001",
+      "package": "releases/act-t3-online-final-001"
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "experiment": "e7-test-act-t3-final-stochastic-001",
+      "package": "releases/act-t3-online-final-001"
+    },
+    {
+      "id": "act-t4-final-mean",
+      "experiment": "e7-test-act-t4-final-mean-001",
+      "package": "releases/act-t4-online-final-001"
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "experiment": "e7-test-act-t4-final-stochastic-001",
+      "package": "releases/act-t4-online-final-001"
+    },
+    {
+      "id": "act-t5-final-mean",
+      "experiment": "e7-test-act-t5-final-mean-001",
+      "package": "releases/act-t5-online-final-001"
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "experiment": "e7-test-act-t5-final-stochastic-001",
+      "package": "releases/act-t5-online-final-001"
+    },
+    {
+      "id": "act-t6-final-mean",
+      "experiment": "e7-test-act-t6-final-mean-001",
+      "package": "releases/act-t6-online-final-001"
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "experiment": "e7-test-act-t6-final-stochastic-001",
+      "package": "releases/act-t6-online-final-001"
+    }
+  ],
+  "current": "act-u2-final-mean",
+  "effective_limit_seconds": 7078.596346437989,
+  "elapsed_seconds": 7079.37477274402,
+  "error": "CalledProcessError(1, ['/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python', 'scripts/run_experiment.py', '--id', 'e7-test-act-u2-final-mean-001', '--seconds', '37.4742158500012', '--', '/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python', 'scripts/evaluate_act_checkpoint.py', '--checkpoint', 'releases/act-u2-online-final-001/weights.pt', '--kind', 'act', '--mode', 'mean', '--training-seed', '0', '--training-interactions', '262144', '--output', 'artifacts/e7-test-act-u2-final-mean-001', '--seed', '20000', '--episodes', '100', '--num-envs', '10'])"
+}

@@ -1,5 +1,7 @@
 # ACT 阶段包复算
 
+> 最终证据更新：原批次104/106条件完成、U2两项未完成；复算命令和范围见[FINAL_BATCH_REPORT](../FINAL_BATCH_REPORT.md)。原始summary与逐回合记录保留，未完成分数为null。
+
 固定环境与原始演示重建先遵循根目录 `REPRODUCING.md`；ManiSkill commit仍为62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3。PickCube有效演示拆分为 `artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json`（717 train /180 validation）。不把validation/test状态加入训练。
 
 ## 便携权重

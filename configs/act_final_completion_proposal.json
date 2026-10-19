@@ -1,0 +1,29 @@
+{
+  "status": "proposal_only_requires_explicit_user_budget_authorization",
+  "reason": "Original 7200-second final cap ended with U2 mean interrupted and U2 stochastic not started.",
+  "original_plan": "configs/act_final_evaluation_plan.json",
+  "original_plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "requested_final_cap_extension_seconds": 300,
+  "funding": "Within original 86400 GPU job seconds; do not expand total training budget.",
+  "current_gpu_job_seconds": 85131.54638952191,
+  "remaining_original_gpu_job_seconds": 1268.4536104780855,
+  "per_job_cap_seconds": 120,
+  "shutdown_and_export_margin_seconds": 60,
+  "conditions": ["act-u2-final-mean", "act-u2-final-stochastic"],
+  "checkpoint": "releases/act-u2-online-final-001/weights.pt",
+  "checkpoint_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+  "episodes_per_condition": 100,
+  "num_envs": 10,
+  "seed": 20000,
+  "new_training_updates": 0,
+  "scheduled": false,
+  "constraints": [
+    "Keep all models and protocols frozen; no selection based on final results.",
+    "Preserve failed mean attempt and its 70 completed episodes; new attempt ID required.",
+    "Repeat full 100 episodes rather than claiming exact simulator continuation; count repeated interactions.",
+    "Do not rerun the other 104 completed conditions.",
+    "Use an explicit evidence mapping for replacement attempt; never overwrite the original failed record.",
+    "Stop on failure without automatic retry; reconcile actual shared budget before launch.",
+    "This proposal does not authorize R0/R1/R3 training or restore the deleted hourly automation."
+  ]
+}

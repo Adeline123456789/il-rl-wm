@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "U2 bounded negative result audited; original106-condition final evaluation running; next-batch proposals CPU only",
+  "phase": "Bounded batch stopped at final-evaluation cap: 104/106 complete; CPU closeout and delivery; additional GPU work requires authorization",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 80490.47367936885,
+    "gpu_job_seconds_used": 85131.54638952191,
     "local_changes_limit": 2,
     "local_changes_used": 2,
     "final_evaluation_reserve_seconds": 7200
@@ -202,7 +202,54 @@
     "e7-test-stack-seed0-c-continue-001",
     "e7-test-stack-seed0-u0-001",
     "e7-test-peg-seed0-a-001",
-    "e7-test-peg-seed0-b-001"
+    "e7-test-peg-seed0-b-001",
+    "e7-test-peg-seed0-c-001",
+    "e7-test-peg-seed0-c-continue-001",
+    "e7-test-peg-seed0-u0-001",
+    "e7-test-u1-pick-seed0-c-001",
+    "e7-test-u1-pick-seed0-c-continue-001",
+    "e7-test-u1-pick-seed0-u0-001",
+    "e7-test-u1-pick-seed1-c-001",
+    "e7-test-u1-pick-seed1-c-continue-001",
+    "e7-test-u1-pick-seed1-u0-001",
+    "e7-test-u1-pick-seed2-c-001",
+    "e7-test-u1-pick-seed2-c-continue-001",
+    "e7-test-u1-pick-seed2-u0-001",
+    "e7-test-rlpd-seed0-step262144-001",
+    "e7-test-rlpd-seed0-step524288-001",
+    "e7-test-pick-seed3-a-001",
+    "e7-test-pick-seed3-b-001",
+    "e7-test-pick-seed3-c-001",
+    "e7-test-pick-seed3-c-continue-001",
+    "e7-test-pick-seed3-u0-001",
+    "e7-test-u1-pick-seed3-c-001",
+    "e7-test-u1-pick-seed3-c-continue-001",
+    "e7-test-u1-pick-seed3-u0-001",
+    "e7-test-pick-seed4-a-001",
+    "e7-test-pick-seed4-b-001",
+    "e7-test-pick-seed4-c-001",
+    "e7-test-pick-seed4-c-continue-001",
+    "e7-test-pick-seed4-u0-001",
+    "e7-test-u1-pick-seed4-c-001",
+    "e7-test-u1-pick-seed4-c-continue-001",
+    "e7-test-u1-pick-seed4-u0-001",
+    "e7-test-act-teacher-k30-first-001",
+    "e7-test-act-teacher-k30-ensemble-001",
+    "e7-test-act-d1-initial-mean-001",
+    "e7-test-act-d1-initial-stochastic-001",
+    "e7-test-act-c1-initial-mean-001",
+    "e7-test-act-c1-initial-stochastic-001",
+    "e7-test-act-t2-final-mean-001",
+    "e7-test-act-t2-final-stochastic-001",
+    "e7-test-act-t3-final-mean-001",
+    "e7-test-act-t3-final-stochastic-001",
+    "e7-test-act-t4-final-mean-001",
+    "e7-test-act-t4-final-stochastic-001",
+    "e7-test-act-t5-final-mean-001",
+    "e7-test-act-t5-final-stochastic-001",
+    "e7-test-act-t6-final-mean-001",
+    "e7-test-act-t6-final-stochastic-001",
+    "e7-test-act-u2-final-mean-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1344,8 +1391,10 @@
       "not_efficacy_evidence": true
     }
   },
-  "next_experiment": "Run registered 106 final conditions once under shared7200s cap; then evidence delivery, no further tuning.",
-  "blockers": [],
+  "next_experiment": "No GPU job queued. Proposed 300-second final-cap extension within remaining original budget for only two U2 evaluations; R0/R1/R3 11500-second training proposal remains separate and unauthorized.",
+  "blockers": [
+    "Original final-evaluation cap exhausted; U2 mean incomplete and stochastic not started. No permission to extend this cap or launch new training. ACT-WM and ACT independent seeds/tasks remain incomplete."
+  ],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
     {
@@ -1541,25 +1590,22 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "final-evaluation-batch003",
-    "authoritative_live_file": "artifacts/act-final-evaluation-batch-003/status.json",
-    "launcher": "artifacts/act-final-evaluation-launch-003/status.json",
-    "note": "Check actual process and manifests; do not restart or expand budget"
+    "status": "GPU evaluation terminal; CPU accounting/review completed; final evidence publication pending",
+    "final_report": "FINAL_BATCH_REPORT.md",
+    "audit": "artifacts/act-final-delivery-audit-001/audit/result.json"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
     "PegInsertionSide-v1": "full1000_revision002_audited_126_eligible_88_distinct_source_groups_874_failed_retained"
   },
   "upload_access": {
-    "local_git_https": "no credential; dry-run exit128",
-    "github_connector": "authenticated as repository owner; metadata reports push permission",
-    "status": "Stage18 CPU review/config/raw evidence uploaded; all2491 remote file blobs/modes verified; PR2 draft",
-    "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "ac6dce22612546d53b091dbdb9435ff52f611277",
-    "local_snapshot_commit": null,
-    "verification": "artifacts/github-act-stage-upload-018/status.json",
-    "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2",
-    "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c"
+    "phase": "verified",
+    "commit": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
+    "tree": "5d0bd5304c83d1a39fd05069cf491a0ef2880164",
+    "receipt": "artifacts/github-act-stage-upload-021/status.json",
+    "verified_files": 3156,
+    "draft_pr": 2,
+    "main_unchanged": true
   },
   "local_hypotheses": [
     {
@@ -1576,7 +1622,7 @@
     }
   ],
   "final_evaluation": {
-    "status": "running original budget; export compatibility repair verified; no repeated completed entries",
+    "status": "terminal_partial_budget_limit",
     "plan": "configs/act_final_evaluation_plan.json",
     "models_or_stages": 70,
     "method_conditions": 106,
@@ -1746,14 +1792,27 @@
         "act-u2-final-stochastic"
       ]
     },
-    "throughput_forecast": "artifacts/act-final-throughput-review-001/result.json"
+    "throughput_forecast": "artifacts/act-final-throughput-review-001/result.json",
+    "terminal_audit": "artifacts/act-final-delivery-audit-001/audit/result.json",
+    "completed_conditions": 104,
+    "failed_conditions": 1,
+    "not_started_conditions": 1,
+    "summary": "artifacts/act-final-summary-003/summary.json",
+    "actual_final_batch_wall_seconds": 7200.778426306031,
+    "shutdown_cleanup_overhead_seconds": 0.7784263060311787,
+    "missing_conditions": [
+      "act-u2-final-mean:act_mean",
+      "act-u2-final-stochastic:act_stochastic"
+    ],
+    "retry_authorized": false,
+    "completion_proposal": "configs/act_final_completion_proposal.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
   "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
   "act_research": {
     "task": "ACT→SAC transfer, user authorized 2026-10-17",
     "plan": "ACT_SAC_PLAN.md",
-    "phase": "U2 full audited; final evaluation ongoing",
+    "phase": "bounded development closed; 16/18 ACT final conditions complete",
     "branch": "research/act-sac-transfer",
     "cpu_tests": "artifacts/act-cpu-tests-003",
     "cpu_real_data": "artifacts/act-real-data-cpu-002",
@@ -1774,12 +1833,13 @@
     },
     "continuation": {
       "automation_id": "il-rl-wm-act",
-      "stage": "final evaluation and CPU delivery; pause after batch ends or no authorized work"
+      "status": "deleted_by_user_request",
+      "recreate_authorized": false
     },
     "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
     "distillation": "artifacts/act-d1-seed0-001/result.json",
     "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
-    "next_stage": "Complete authorized final batch; no new GPU training; CPU causal-gap review and R0/R1/R3 proposal",
+    "next_stage": "Await explicit decision for U2 completion cap extension or separately proposed next research batch; no GPU work queued",
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
@@ -1838,9 +1898,14 @@
     "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
     "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
     "archive": "releases/source-history-act-20261019-001/manifest.json",
-    "latest_publication_plan": ".cache/github-act-stage-017/plan.json",
-    "note": "Stage17 verified2448 blobs/modes; local HEAD frozen and repairs in execution snapshots/patches. Continue temporary-index publication from this tree.",
-    "latest_verified_remote": "d3cc98339c00dd197953926cd659b6e82753902a",
-    "latest_verified_tree": "2395e860d7f3d223c76732cb28d7deb420f35af4"
+    "latest_publication_plan": ".cache/github-act-stage-021/plan.json",
+    "note": "Stage21 verified3156 files; final actual execution commits all present in offline history. Continue temporary-index delivery without resetting local user work.",
+    "latest_verified_remote": "8e91f23044bca9dfcde55f926743027c6dc2c49c",
+    "latest_verified_tree": "5d0bd5304c83d1a39fd05069cf491a0ef2880164"
+  },
+  "hourly_automation": {
+    "id": "il-rl-wm-act",
+    "status": "deleted",
+    "reason": "User explicitly cancelled the hourly scheduled task; existing bounded processes were not terminated."
   }
 }

@@ -1,3 +1,11 @@
+# 当前恢复入口：原批次已停止计算（2026-10-19）
+
+先读FINAL_BATCH_REPORT.md、research_state和终态审计。104/106条件完成；不再等待已退出的3003841/3048031，不重跑原001/002/003队列。每小时自动化已由用户删除，不恢复。
+
+当前只可继续CPU证据交付。补齐U2两项测试的300秒final-cap扩展提案位于configs/act_final_completion_proposal.json，从24小时剩余1268.454秒内支付，但尚未获准；无新训练。R0/R1/R3训练11500秒另须明确授权，见NEXT_RESEARCH_BATCH.md。模型与seed冻结，失败记录保留，补评必须新attempt ID并完整记费。
+
+以下为历史续接记录，不代表现有作业仍运行：
+
 # 当前续接入口（2026-10-19）
 
 优先读取ACT_NEXT_STAGE_TASK_2026-10-19.md和三份最新研究报告。U2已完成，不重训。实际最终003队列继续原106条件、原7200秒上限，当前结果不足时不自动追加预算；权威状态artifacts/act-final-evaluation-batch-003/status.json。新R0/R1/R3草案只含配置和预算，未获GPU授权。

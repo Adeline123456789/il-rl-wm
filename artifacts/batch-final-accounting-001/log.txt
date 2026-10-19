@@ -1,0 +1,5 @@
+{'pid': 3151161, 'phase': 'failed', 'exit_code': 1, 'error': "KeyError('phases')", 'elapsed_seconds': 0.022484540939331055}
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/batch-final-accounting-001/run.py", line 15, in <module>
+    for phase,values in counts['phases'].items():phase_counts[phase].update(values)
+KeyError: 'phases'

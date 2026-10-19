@@ -1,1 +1,8 @@
-{"pid": 3048031, "phase": "waiting", "exit_code": null, "depends_on": "artifacts/act-final-evaluation-launch-003/status.json"}
+{
+  "pid": 3048031,
+  "phase": "completed",
+  "exit_code": 0,
+  "depends_on": "artifacts/act-final-evaluation-launch-003/status.json",
+  "upstream_exit_code": 1,
+  "elapsed_seconds": 4922.908878564835
+}
