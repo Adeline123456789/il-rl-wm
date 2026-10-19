@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-t6-online-seed0-001/final.pt",
+  "source_sha256": "4d9607af76782f4c9c70262383967dc89685ec409624b1f2e90dc5fd584520de",
+  "portable": "releases/act-t6-online-final-001/weights.pt",
+  "portable_sha256": "1edd54abe8df9c775b53841ecfaaea0adc6ff17489ea046f941bca1cb3800171",
+  "bytes": 584306,
+  "actor_kind": "mlp",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}

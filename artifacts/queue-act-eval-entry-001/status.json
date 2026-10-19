@@ -1,0 +1,13 @@
+{
+  "pid": 2915393,
+  "prerequisite": "artifacts/act-online-postprocess-001/status.json",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "artifacts/act-eval-entry-launch-001/run.py"
+  ],
+  "started_at": "2026-10-19T04:09:28.910037+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 2927412,
+  "ended_at": "2026-10-19T04:23:36.484678+00:00"
+}

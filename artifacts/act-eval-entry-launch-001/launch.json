@@ -1,0 +1,22 @@
+{
+  "pid": 2915393,
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/act-online-postprocess-001/status.json",
+    "--output",
+    "artifacts/queue-act-eval-entry-001",
+    "--max-wait-seconds",
+    "3600",
+    "--",
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "artifacts/act-eval-entry-launch-001/run.py"
+  ],
+  "new_gpu_budget": false,
+  "registered_gpu_cap_seconds": 300,
+  "final_test_reserve_seconds": 7200,
+  "remaining_after_completed_jobs_and_reserve": 6400.558354689216,
+  "current_t6_cap_seconds": 1630,
+  "launch_condition": "T6 and existing CPU postprocessing both completed successfully"
+}

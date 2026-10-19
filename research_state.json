@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "act_equal_budget_online_comparison_running",
+  "phase": "act_online_comparison_complete_bounded_retention_next",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 72799.44164531078,
+    "gpu_job_seconds_used": 74169.61388679378,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -176,7 +176,9 @@
     "act-t2-online-seed0-002",
     "act-t3-online-seed0-001",
     "act-t4-online-seed0-001",
-    "act-t5-online-seed0-001"
+    "act-t5-online-seed0-001",
+    "act-t6-online-seed0-001",
+    "act-independent-eval-smoke-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1288,9 +1290,28 @@
           "final": -0.2783903181552887
         }
       }
+    },
+    "act_online_comparison_complete": {
+      "summary": "artifacts/act-online-summary-005/summary.json",
+      "fixed_final_success_of_40": {
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "T6": 34
+      },
+      "training_seed": 0,
+      "final_test_accessed": false
+    },
+    "act_independent_eval_smoke_001": {
+      "status": "completed",
+      "gpu_job_seconds": 56.67084224300925,
+      "validation_interactions": 12000,
+      "training_interactions": 0,
+      "all_initial_state_max_error": 0
     }
   },
-  "next_experiment": "Frozen T2-T6 same-critic equal-interaction online comparison, original 24h cap and 7200s reserve; analyze full results before local retention changes.",
+  "next_experiment": "Register one bounded actor-only retention control from T5, within 5030.386 research seconds; then freeze comparisons and run final evaluation from reserved 7200 seconds.",
   "blockers": [],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
@@ -1432,6 +1453,11 @@
       "role": "ACT T4-T6 CPU evidence/export/drift postprocessing",
       "status_file": "artifacts/act-online-postprocess-001/status.json",
       "launched_pid": 2829356
+    },
+    {
+      "role": "ACT independent 10-env validation entry after T6 and CPU postprocessing",
+      "status_file": "artifacts/queue-act-eval-entry-001/status.json",
+      "launched_pid": 2915393
     }
   ],
   "environment": {
@@ -1497,7 +1523,7 @@
     "release_gate": "configs/act_final_test_gate.json",
     "historical_plan": "configs/final_evaluation_plan.json",
     "historical_method_fixed": true,
-    "act_validation_smoke": "prepared_not_launched; artifacts/act-independent-eval-smoke-001/status.json",
+    "act_validation_smoke": "completed: artifacts/act-independent-eval-smoke-001/status.json; gate remains closed",
     "cpu_evidence_tests": "artifacts/act-final-evidence-tests-001/status.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
