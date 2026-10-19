@@ -1,7 +1,9 @@
 {
-  "released": false,
-  "reason": "New user-requested ACT comparison is not frozen. Preserve seed20000; validation seed10000 only until milestone review of actual teacher/transfer evidence.",
+  "released": true,
+  "released_at": "2026-10-19T05:41:53.918084+00:00",
+  "reason": "Bounded T2-T6 and U2 comparison complete. U2 failed to retain final skill; no more local hypotheses or tuning. Preserve all negative results. ACT-WM and independent ACT repeats remain uncompleted, not replaced by final testing.",
+  "freeze_evidence": "artifacts/act-comparison-freeze-001/result.json",
   "old_registered_conditions_changed": false,
   "old_training_queue_changed": false,
-  "release_requires": "Record frozen method/config/checkpoint-selection/comparison scope or explicitly close the ACT milestone as unsuccessful; retain all negative results."
+  "final_scores_may_not_select_models": true
 }

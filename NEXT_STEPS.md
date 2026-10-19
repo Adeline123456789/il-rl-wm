@@ -8,7 +8,7 @@ T2–T6全部完整结束，fixed-final成功0/0/0/0/34（各40回合），真�
 2. 两个局部假设额度已登记用完。冻结比较或明确关闭有限负结果阶段后，记录理由并释放configs/act_final_test_gate.json。用新队列ID运行configs/act_final_evaluation_plan.json：88历史+18ACT条件，共106条件，仍共享原7200秒总cap；不使用测试结果调参。若U2失败/未完成，显式保留未测试行，按runner的--ids选择实际已完成的模型，不能把缺失当零分。
 3. 从原始逐回合记录汇总，回答ACT十二问题及PROMPT十问题，刷新并验证完整源码历史归档，后台上传并核对远端。保留全部失败与未完成项。ACT多种子/多任务和新WM尚未完成，不能用T6成功代替ACT迁移/WM贡献证据。
 
-每个可验证小阶段后台增量更新研究分支与Draft PR #2，不合并main。旧训练和以下2026-10-16历史计划完整保留。真实剩余预算以全部GPU manifest加当前运行时间为准，7200秒最终评测额度不可挪作研究调参。
+每个可验证小阶段后台增量更新研究分支与Draft PR #2，不合并main。 当前本地源码HEAD固定为9f1536c直到最终评测结束；归档及后续证据通过临时Git index的tree后台发布，正常index与HEAD不改。下次发布必须以最新已核验远端tree为base并只添加本阶段文件，不能从HEAD重建而丢失已发布归档；最后评测结束再做本地交付提交。详情见research_state.json.source_publication和最新github-act-stage-upload回执。旧训练和以下2026-10-16历史计划完整保留。真实剩余预算以全部GPU manifest加当前运行时间为准，7200秒最终评测额度不可挪作研究调参。
 
 截至 2026-10-16，本文件记录未完成事项，不代表批次结项。实时任务以 `research_state.json` 和各管线 `status.json` 为准；总限额仍为 24 GPU 作业小时，其中保留 2 小时最终评测。只使用一个已登记研究改动 U1（SAC critic LayerNorm）。
 
@@ -22,3 +22,5 @@ T2–T6全部完整结束，fixed-final成功0/0/0/0/34（各40回合），真�
 四次 F1 诊断均缺少可排序候选对，本批已停止前缀搜索。后续若单独研究排序，最有信息量的是在预登记的接近/抓取转换/扰动状态覆盖下，验证同状态候选能产生可辨别的真实回报差异，再评价评分；不应继续重复成功平台或降低容限。该工作不在当前已排队实验内。
 
 Stack/Peg 额外训练 seeds1/2 与 RLPD 额外种子仍未排队，是否能执行取决于实际剩余预算；视觉阶段未实施。Peg 只有 126 条 GPU 成功轨迹、88 个不同来源组，CPU/GPU 开环回放成功差异尚未消除，不能借用 CPU 标签或把重复组当独立演示。
+
+2026-10-19 05:42 UTC：U2完整结束，CPU诊断和单因素审计exit0。比较冻结见artifacts/act-comparison-freeze-001/result.json，gate已放行。仅启动一次act-final-evaluation-launch-002/run.py；其批次输出act-final-evaluation-batch-002和汇总act-final-summary-002。不得重复启动或以final结果调参。所有106条件后更新报告/原始证据/源码commit覆盖并后台交付，之后暂停本批自动化。

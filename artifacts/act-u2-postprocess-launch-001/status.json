@@ -1,0 +1,47 @@
+{
+  "pid": 2995095,
+  "phase": "completed",
+  "completed": [
+    [
+      ".venv/bin/python",
+      "scripts/summarize_act_online.py",
+      "--plan",
+      "artifacts/act-u2-postprocess-launch-001/comparison_plan.json",
+      "--output",
+      "artifacts/act-online-summary-006"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/export_act_online_actor.py",
+      "--checkpoint",
+      "checkpoints/act-u2-retention-seed0-001/final.pt",
+      "--output",
+      "releases/act-u2-online-final-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_act_online_drift.py",
+      "--experiment",
+      "act-u2-retention-seed0-001",
+      "--steps",
+      "16384",
+      "65536",
+      "131072",
+      "262144",
+      "--output",
+      "artifacts/act-u2-online-drift-001"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_behavior.py",
+      "--checkpoint",
+      "checkpoints/act-u2-retention-seed0-001/final.pt",
+      "--bin-size",
+      "8192",
+      "--output",
+      "artifacts/act-u2-online-behavior-001"
+    ]
+  ],
+  "exit_code": 0,
+  "GPU_use": false
+}

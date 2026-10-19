@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "act_u2_full_control_running",
+  "phase": "Registered final evaluation running",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 74290.92148063879,
+    "gpu_job_seconds_used": 78026.16978091677,
     "local_changes_limit": 2,
     "local_changes_used": 2,
     "final_evaluation_reserve_seconds": 7200
@@ -179,7 +179,8 @@
     "act-t5-online-seed0-001",
     "act-t6-online-seed0-001",
     "act-independent-eval-smoke-001",
-    "act-u2-retention-smoke-001"
+    "act-u2-retention-smoke-001",
+    "act-u2-retention-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1321,7 +1322,7 @@
       "not_efficacy_evidence": true
     }
   },
-  "next_experiment": "Run sole registered U2 full control (4500s cap); freeze comparisons afterwards; restore final evaluation under shared7200s reserve.",
+  "next_experiment": "Run registered 106 final conditions once under shared7200s cap; then evidence delivery, no further tuning.",
   "blockers": [],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
@@ -1478,6 +1479,16 @@
       "role": "U2 CPU-only postprocessing after successful full run",
       "status_file": "artifacts/queue-act-u2-postprocess-001/status.json",
       "launched_pid": 2936685
+    },
+    {
+      "role": "U2 read-only single-mechanism/source/retention audit after existing CPU queue",
+      "status_file": "artifacts/queue-act-u2-audit-001/status.json",
+      "launched_pid": 2981751
+    },
+    {
+      "role": "Frozen106-condition final evaluation and raw summary",
+      "status_file": "artifacts/act-final-evaluation-launch-002/status.json",
+      "launched_pid": 2996780
     }
   ],
   "environment": {
@@ -1610,6 +1621,30 @@
       ]
     },
     "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json",
-    "t5_actual_online_behavior_audit": "artifacts/act-online-behavior-audit-002/portable-manifest.json"
+    "t5_actual_online_behavior_audit": "artifacts/act-online-behavior-audit-002/portable-manifest.json",
+    "u2_full_closure": {
+      "frozen_at": "2026-10-19T05:41:53.918084+00:00",
+      "development_closed": true,
+      "reason": "Bounded T2-T6 and U2 comparison complete. U2 failed to retain final skill; no more local hypotheses or tuning. Preserve all negative results. ACT-WM and independent ACT repeats remain uncompleted, not replaced by final testing.",
+      "selection": "Existing registered checkpoints only; online fixed final, offline preselected packages. No final-score-driven changes.",
+      "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "conditions": 106,
+      "entries": 70,
+      "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "audit": "artifacts/act-u2-comparison-audit-001/result.json",
+      "gpu_job_seconds_used": 78026.16978091677,
+      "remaining_total_seconds": 8373.830219083233,
+      "final_batch_cap_seconds": 7200,
+      "new_budget": false
+    }
+  },
+  "source_publication": {
+    "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+    "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
+    "archive": "releases/source-history-act-20261019-001/manifest.json",
+    "latest_publication_plan": ".cache/github-act-stage-015/plan.json",
+    "note": "Stage15 verified2351 files. Future temporary-index publication starts from this published tree; local HEAD remains frozen during final evaluation.",
+    "latest_verified_remote": "5277d6b5c981d3d5c4a994c0d23179eef4397431",
+    "latest_verified_tree": "08606f143b7c504d7324e08a0d7ed5868de172cb"
   }
 }

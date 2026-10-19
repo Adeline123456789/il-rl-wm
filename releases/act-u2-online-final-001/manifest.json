@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-u2-retention-seed0-001/final.pt",
+  "source_sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae",
+  "portable": "releases/act-u2-online-final-001/weights.pt",
+  "portable_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+  "bytes": 3792120,
+  "actor_kind": "act",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}
