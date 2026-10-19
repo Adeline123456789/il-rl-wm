@@ -25,13 +25,13 @@ def fixture(root):
         write(folder / 'manifest.json', dict(ended_at='synthetic', exit_code=0, stop_reason=None))
         success = 20 * (entry['training_seed'] + 1) + (10 if entry['variant'] == 'U1' else 0)
         method = entry['methods'][0]
-        episodes = [dict(method=method, episode=i, step=262144, episode_len=200,
+        episodes = [dict(method=method, episode=i, step=262144, episode_len=200, eval_seed=20000+i//10*10,
                          success_once=int(i < success), success_at_end=int(i < success),
                          **{'return': 100.0 if i < success else 0.0}) for i in range(100)]
         (folder / 'episodes.jsonl').write_text('\n'.join(json.dumps(ep) for ep in episodes))
         metrics = dict(success_once=success, success_at_end=success, mean_return=float(success), interactions=20000)
         result = dict(purpose='final_test', seed=20000, num_envs=10, new_training_interactions=0,
-                      protocol=dict(env_id=entry['task'], max_episode_steps=200), training_seed=entry['training_seed'])
+                      protocol=dict(env_id=entry['task'], max_episode_steps=200,reset_protocol='explicit_batch_seed'), training_seed=entry['training_seed'])
         if entry['framework'] == 'main':
             result.update(methods={method: metrics}, lineage_training_interactions=entry['training_interactions'])
         else:
@@ -67,7 +67,7 @@ def test_failed_and_missing_runs_are_not_zero_scores(tmp_path):
     assert len(result['paired_differences']) == 2
 
 
-@pytest.mark.parametrize('fault', ['seed', 'budget', 'validation', 'duplicate_episode', 'partial_episode'])
+@pytest.mark.parametrize('fault', ['seed', 'budget', 'validation', 'duplicate_episode', 'partial_episode', 'reset_seed'])
 def test_reject_mislabelled_or_incomplete_evidence(tmp_path, fault):
     plan = fixture(tmp_path); folder = tmp_path / 'e7-test-U0-0-001'
     if fault in ['seed', 'budget', 'validation']:
@@ -78,6 +78,7 @@ def test_reject_mislabelled_or_incomplete_evidence(tmp_path, fault):
     else:
         episodes = [json.loads(line) for line in (folder / 'episodes.jsonl').read_text().splitlines()]
         if fault == 'duplicate_episode': episodes[-1] = copy.deepcopy(episodes[0])
+        elif fault == 'reset_seed': episodes[-1]['eval_seed'] = 20000
         else: episodes[-1]['episode_len'] = 199
         (folder / 'episodes.jsonl').write_text('\n'.join(json.dumps(ep) for ep in episodes))
     with pytest.raises(AssertionError): summarize(plan, tmp_path)

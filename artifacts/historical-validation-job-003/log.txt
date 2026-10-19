@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 119, in <module>
+    main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 108, in main
+    result = summarize(read(args.plan), args.root)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 55, in summarize
+    checkpoint = [c for c in checkpoints if c['path'] == entry['checkpoint']]
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 55, in <listcomp>
+    checkpoint = [c for c in checkpoints if c['path'] == entry['checkpoint']]
+KeyError: 'path'

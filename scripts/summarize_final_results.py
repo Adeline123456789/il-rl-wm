@@ -43,6 +43,7 @@ def summarize(plan, root):
         assert result['purpose'] == 'final_test' and result['seed'] == 20000
         assert result['num_envs'] == 10 and result['new_training_interactions'] == 0
         assert result['protocol']['env_id'] == entry['task']
+        assert result['protocol']['reset_protocol'] == 'explicit_batch_seed'
         assert result['training_seed'] == entry['training_seed']
         budget_key = 'lineage_training_interactions' if entry['framework'] == 'main' else 'training_interactions'
         assert result[budget_key] == entry['training_interactions']
@@ -53,6 +54,7 @@ def summarize(plan, root):
         for row in rows:
             selected = [ep for ep in episodes if ep['method'] == row['method']]
             assert len(selected) == 100 and {ep['episode'] for ep in selected} == set(range(100))
+            assert all(ep['eval_seed'] == 20000 + ep['episode'] // 10 * 10 for ep in selected)
             assert len({ep['step'] for ep in selected}) == 1
             assert all(ep['episode_len'] == result['protocol']['max_episode_steps'] for ep in selected)
             assert all(ep['success_once'] in [0, 1] and ep['success_at_end'] in [0, 1]

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 112, in <module>
+    main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 101, in main
+    result = summarize(read(args.plan), args.root)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 55, in summarize
+    assert len(selected) == expected_count
+AssertionError

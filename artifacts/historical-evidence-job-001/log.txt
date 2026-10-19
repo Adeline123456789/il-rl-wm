@@ -1,0 +1,1 @@
+{"source_bytes": 122691716, "archive_bytes": 34020522, "archive_sha256": "b502cd919c85274e247f122c191b3ea1b12ef1e3e723a9210cf9fea45e2df3ae", "extracted_recomputation_equal": true, "conditions": 88, "excludes": "Large checkpoints, replay, original demonstrations, videos, active ACT online runs; no final-test data."}

@@ -17,3 +17,7 @@ GPU作业尚未启动时的预检修正：smoke batch从64改为与正式K8相�
 完成教师K8/16/30证据逐回合复算和K30固定选择，导出严格张量相等的便携权重。新增仅专家状态的MLP-SAC蒸馏入口及均值/方差契约测试，7项ACT相关测试通过。GPU smoke与完整D1按300+1200秒后台串行；用户要求每个小阶段后台上传已持久化。
 
 D1真实闭环负结果后，追加36项CPU回归全通过。独立初态审计暴露F-ACT-EVAL-01，保留失败断言和002逐维诊断。最小修复每批显式reset seed，固定旧模型8条件重评，不训练、不从新成绩重选K。GitHub阶段1已完成并核对全部tree/blob；阶段2将携带负结果、修复和原始重评证据。
+
+## 2026-10-19 最终评测入口同步显式reset（正确性修复）
+
+审查发现独立主SAC和隔离RLPD评测入口未传matched_eval_resets，虽主helper已支持，最终多批次仍会回到旧自动reset语义。两个入口改为显式batch seed=base_seed+completed_episodes，并在result.protocol记录explicit_batch_seed；最终汇总拒绝缺失或错误的逐回合eval_seed。原88条件/权重选择/任务/预算不变，原历史验证不重写。9项CPU契约测试通过，包括不同策略随机数消耗、训练RNG恢复、错误reset seed拒绝；不声称这是新GPU评测，seed20000门控保持false。首个pytest启动因宿主ROS自动插件缺少lark失败，采用既有禁用插件自动加载和项目PYTHONPATH隔离后成功，未安装或修改训练依赖。
