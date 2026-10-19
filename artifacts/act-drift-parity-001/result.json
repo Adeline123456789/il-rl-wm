@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "exact_existing_probe_parity": {
+    "observations": true,
+    "initial": true,
+    "step8192": true,
+    "initial_log_std": true,
+    "step8192_log_std": true
+  },
+  "source_hashes": {
+    "scripts/diagnose_act_online_drift.py": "b212dc5235af5a2676725b492cc0e69aaeb9cc51cea667d02b9c67a72b8685b8",
+    "tests/test_act_online_drift.py": "406375026cfc3f3339e99f7bdf6a6ed584c2d4980ace67c7b6aa0de693d21aaa"
+  },
+  "new_environment_interactions": 0
+}

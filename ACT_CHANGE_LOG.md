@@ -25,3 +25,9 @@ D1真实闭环负结果后，追加36项CPU回归全通过。独立初态审计�
 ## 2026-10-19：独立 ACT 评测门控与在线权重导出
 
 新增统一严格推理加载和完成作业的轻量actor导出；学生加载不构造教师，保留已学习方差。T2便携权重584114字节，全部actor张量与原final相等，CPU序列化动作逐位相等，见releases/act-t2-online-final-001与artifacts/act-t2-export-001。新增ACT独立评测入口，扩展既有闭环helper至10环境/100回合最终协议，逐批显式reset，最终gate在模型/CUDA/环境启动前检查；原默认8环境验证不变。16项CPU推理/门控/参数复制/reset/最终汇总测试通过（2.05秒），见artifacts/act-inference-cpu-tests-001；新10环境入口尚未真实GPU验证，未访问最终测试、未登记额外GPU预算。当前T3训练继续，未改在线算法。所有程序和上传按用户要求后台执行。
+
+## 2026-10-19 固定训练状态的在线漂移诊断
+
+新增CPU诊断入口scripts/diagnose_act_online_drift.py，只读取已成功完成的在线作业和哈希匹配检查点，不训练/采样/访问最终测试。固定前1024个expert-train转移，逐状态保存episode ID与时间索引，排除terminal obs和validation episode；报告与冻结K30首动作教师及初始学生的逐动作MSE、log_std、边界比例、逐参数L2和初始→当前pre-tanh Gaussian KL，关联既有40回合验证记录。它只检验固定专家分布上的变化，不能证明在线状态覆盖、Q校准或遗忘原因。
+
+两项数据隔离/KL数学测试exit0；在已完成T5 smoke上核验，obs/初始与末次动作/log_std全部逐位复现原诊断（artifacts/act-drift-parity-001）。新增结果：gripper动作漂移MSE .942503、对教师MSE .942505、pre-tanh KL均值38.3999；初始8/40→末次0/40为原真实短检结果，未新增闭环仿真。完整T4/T5/T6均预先固定诊断step16384/65536/131072/262144，CPU后台队列2829356等待各作业成功后依次汇总、导出和诊断，失败停止、不重启GPU。启动回执写入时缺hashlib导入报错发生在Popen之后，已通过实际存活PID和status恢复回执，没有重复启动；原错误记录保留。

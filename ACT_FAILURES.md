@@ -67,3 +67,7 @@ Proposed Mechanism → If full T2–T6 controls confirm persistent forgetting, c
 Controlled Experiment → Not registered or launched yet. First compare the completed T5/T4/T6 controls and actual remaining budget; then fix one parent, one coefficient/schedule and equal interactions before any new run. No parameter sweep, no combined variance/freeze/critic changes. Extra expert-state supervision must be reported distinctly from expert transitions supplied to Critic.
 Result → Pending; no new mechanism implemented.
 Conclusion → A mean-only constraint may preserve mean behavior while failing to preserve stochastic skill; it cannot be assumed to solve the observed variance growth. If resources cannot support the corresponding full control, retain the bounded negative finding and incomplete follow-up instead of silently shortening one method.
+
+### F-ACT-02 补充：固定输入的可复算漂移（2026-10-19）
+
+artifacts/act-t5-smoke-drift-002新增逐状态episode/timestep来源、教师标签及Gaussian KL，旧1024状态/动作/log_std逐位复现。gripper mean动作漂移MSE .942503，pre-tanh KL(initial||current)均值38.3999，所有最终动作分量在这些状态上均离开|a|≥.999边界；log_std约-.12。该证据与短检成功8/40→0/40一致，但尚不能区分熵压力、随机warmup、critic偏差或梯度参数化效应。完整在线固定四快照诊断已排CPU依赖队列；没有将短检外推为全程失败，没有引入新训练机制。

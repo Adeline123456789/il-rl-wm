@@ -1351,6 +1351,11 @@
       "role": "ACT-T0 teacher stage",
       "status_file": "artifacts/queue-act-t0-stage-001/status.json",
       "launched_pid": 1959272
+    },
+    {
+      "role": "ACT T4-T6 CPU evidence/export/drift postprocessing",
+      "status_file": "artifacts/act-online-postprocess-001/status.json",
+      "launched_pid": 2829356
     }
   ],
   "environment": {
@@ -1389,9 +1394,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "6f989625a876942af6b59f4dd5323506c1710f91",
-    "local_snapshot_commit": "f6f399bd03bc3b6503b7ebee7a733d1f10659221",
-    "verification": "artifacts/github-act-stage-upload-006/status.json",
+    "remote_commit": "9d55d475e28b7bb19b4ef21cb6731442e2dc1ab9",
+    "local_snapshot_commit": "2775b7794c88f19c869c9e4eae7ef37b56d9a214",
+    "verification": "artifacts/github-act-stage-upload-007/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1460,6 +1465,20 @@
       "portable_t2": "releases/act-t2-online-final-001/manifest.json",
       "real_independent_entry_evaluated": false,
       "final_test_accessed": false
+    },
+    "online_drift_diagnostic": {
+      "script": "scripts/diagnose_act_online_drift.py",
+      "fixed_expert_train_states": 1024,
+      "full_run_steps": [
+        16384,
+        65536,
+        131072,
+        262144
+      ],
+      "smoke_validation": "artifacts/act-t5-smoke-drift-002/result.json",
+      "existing_probe_parity": "artifacts/act-drift-parity-001/result.json",
+      "postprocess_status": "artifacts/act-online-postprocess-001/status.json",
+      "full_run_drift_completed": []
     }
   }
 }
