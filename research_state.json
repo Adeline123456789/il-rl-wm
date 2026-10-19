@@ -1351,9 +1351,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "533f479c0f47c96878cc7c635f442b770fcdfe9c",
-    "local_snapshot_commit": "613e527ec62f1d2d86a50443e58e52fcf6ad1e76",
-    "verification": "artifacts/github-history-stage-upload-001/status.json",
+    "remote_commit": "06ff01bd39fcefca3b037d5d7f866e7fc2e0b9ff",
+    "local_snapshot_commit": "5252cdc9ebb2fb138ca41275379b454d326eeac3",
+    "verification": "artifacts/github-act-stage-upload-005/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1415,6 +1415,13 @@
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
-    "latest_online_summary": "artifacts/act-online-summary-001/summary.json"
+    "latest_online_summary": "artifacts/act-online-summary-001/summary.json",
+    "inference_export_stage": {
+      "tests": "artifacts/act-inference-cpu-tests-001",
+      "tests_passed": 16,
+      "portable_t2": "releases/act-t2-online-final-001/manifest.json",
+      "real_independent_entry_evaluated": false,
+      "final_test_accessed": false
+    }
   }
 }

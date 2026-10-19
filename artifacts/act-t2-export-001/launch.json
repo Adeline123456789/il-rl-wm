@@ -1,0 +1,15 @@
+{
+  "pid": 2812799,
+  "command": [
+    ".venv/bin/python",
+    "scripts/export_act_online_actor.py",
+    "--checkpoint",
+    "checkpoints/act-t2-online-seed0-002/final.pt",
+    "--output",
+    "releases/act-t2-online-final-001"
+  ],
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONPATH": "/media/midea/F496AC8096AC4548/il-rl-wm"
+  }
+}

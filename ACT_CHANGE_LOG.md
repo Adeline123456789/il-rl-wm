@@ -21,3 +21,7 @@ D1真实闭环负结果后，追加36项CPU回归全通过。独立初态审计�
 ## 2026-10-19 最终评测入口同步显式reset（正确性修复）
 
 审查发现独立主SAC和隔离RLPD评测入口未传matched_eval_resets，虽主helper已支持，最终多批次仍会回到旧自动reset语义。两个入口改为显式batch seed=base_seed+completed_episodes，并在result.protocol记录explicit_batch_seed；最终汇总拒绝缺失或错误的逐回合eval_seed。原88条件/权重选择/任务/预算不变，原历史验证不重写。9项CPU契约测试通过，包括不同策略随机数消耗、训练RNG恢复、错误reset seed拒绝；不声称这是新GPU评测，seed20000门控保持false。首个pytest启动因宿主ROS自动插件缺少lark失败，采用既有禁用插件自动加载和项目PYTHONPATH隔离后成功，未安装或修改训练依赖。
+
+## 2026-10-19：独立 ACT 评测门控与在线权重导出
+
+新增统一严格推理加载和完成作业的轻量actor导出；学生加载不构造教师，保留已学习方差。T2便携权重584114字节，全部actor张量与原final相等，CPU序列化动作逐位相等，见releases/act-t2-online-final-001与artifacts/act-t2-export-001。新增ACT独立评测入口，扩展既有闭环helper至10环境/100回合最终协议，逐批显式reset，最终gate在模型/CUDA/环境启动前检查；原默认8环境验证不变。16项CPU推理/门控/参数复制/reset/最终汇总测试通过（2.05秒），见artifacts/act-inference-cpu-tests-001；新10环境入口尚未真实GPU验证，未访问最终测试、未登记额外GPU预算。当前T3训练继续，未改在线算法。所有程序和上传按用户要求后台执行。

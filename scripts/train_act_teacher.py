@@ -47,25 +47,29 @@ def offline_errors(model, dataset, batch_size):
 
 @torch.no_grad()
 def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=False, method=None,
-                matched_resets=True):
+                matched_resets=True, eval_seed=10000, num_envs=8, purpose='validation', trace=False):
+    assert (eval_seed, purpose) in [(10000, 'validation'), (20000, 'final_test')]
+    assert num_envs in (8, 10) and episodes > 0 and episodes % num_envs == 0
+    if purpose == 'final_test':
+        assert episodes == 100 and num_envs == 10 and matched_resets
+        assert json.loads(Path('configs/act_final_test_gate.json').read_text())['released'], 'Final-test gate closed'
     from scripts.interaction_counter import CountedEnv
     from vendor.maniskill.bc.behavior_cloning.make_env import make_eval_envs
     method = method or ('act_temporal_ensemble' if temporal else 'act_requery_first')
-    env = make_eval_envs('PickCube-v1', 8, 'physx_cuda', dict(obs_mode='state',
+    env = make_eval_envs('PickCube-v1', num_envs, 'physx_cuda', dict(obs_mode='state',
         control_mode='pd_ee_delta_pos', reward_mode='sparse', max_episode_steps=200,
         render_mode='rgb_array'), video_dir=str(out/('videos_ensemble' if temporal else 'videos')) if video else None,
-        wrappers=[lambda e: CountedEnv(e, counter, 'validation')])
-    assert episodes > 0 and episodes % 8 == 0
-    reset_seed = 10000
+        wrappers=[lambda e: CountedEnv(e, counter, purpose)])
+    reset_seed = eval_seed
     obs, _ = env.reset(seed=reset_seed)
     episode_count = 0; rows = []; latencies = []
-    memory = TemporalEnsemble(8, model.config.num_queries, 4, 'cuda') if temporal else None
-    events = {k: torch.zeros(8, dtype=torch.bool, device='cuda')
+    memory = TemporalEnsemble(num_envs, model.config.num_queries, 4, 'cuda') if temporal else None
+    events = {k: torch.zeros(num_envs, dtype=torch.bool, device='cuda')
               for k in ['approached', 'is_grasped', 'lifted', 'is_obj_placed']}
-    first_grasp = torch.full((8,), -1, dtype=torch.int64, device='cuda'); episode_step = 0
+    first_grasp = torch.full((num_envs,), -1, dtype=torch.int64, device='cuda'); episode_step = 0
     traces = {k: [] for k in ['obs', 'action', 'reward']}
     while episode_count < episodes:
-        if video: traces['obs'].append(obs.cpu().numpy())
+        if video or trace: traces['obs'].append(obs.cpu().numpy())
         torch.cuda.synchronize(); before = time.perf_counter()
         action = memory.update(model.raw_chunk(obs)) if temporal else model(obs)
         torch.cuda.synchronize(); latencies.append((time.perf_counter()-before)*1000)
@@ -82,40 +86,43 @@ def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=
         # Cube centre z > .04 means a .02m lift above its initial .02m table height.
         assert physical_obs.shape[-1] == 42
         events['lifted'] |= physical_obs[:, 31] > .04
-        if video:
+        if video or trace:
             traces['action'].append(action.cpu().numpy()); traces['reward'].append(reward.cpu().numpy())
         if truncated.any():
             assert truncated.all()
             metrics = {k: v.float().cpu().numpy() for k,v in current['episode'].items()}
-            for i in range(8):
+            for i in range(num_envs):
                 row = dict(iteration=iteration, episode_index=episode_count+i, eval_seed=reset_seed,
                     method=method,
                     first_grasp_step=int(first_grasp[i]) if first_grasp[i]>=0 else None,
                     **{k: float(v[i]) for k,v in metrics.items()},
                     **{k+'_once': bool(v[i]) for k,v in events.items()})
-                rows.append(row); append(out/'validation_episodes.jsonl', row)
+                rows.append(row); append(out/('episodes.jsonl' if purpose=='final_test' else 'validation_episodes.jsonl'), row)
             for event in events.values(): event.zero_()
             first_grasp.fill_(-1); episode_step = 0
             if memory is not None: memory.reset(truncated)
-            episode_count += 8
+            episode_count += num_envs
             if matched_resets and episode_count < episodes:
                 # Unseeded auto-resets consume global Torch RNG, including policy draws.
                 # Discard that reset observation and explicitly seed the next full batch.
-                reset_seed = 10000 + episode_count
+                reset_seed = eval_seed + episode_count
                 obs, _ = env.reset(seed=reset_seed)
     env.close(); counter.flush()
     append(out/'inference_latency.jsonl', dict(iteration=iteration, method=method,
-        batch_size=8, milliseconds=latencies))
-    if video: np.savez_compressed(out/('final_ensemble_trace.npz' if temporal else 'final_validation_trace.npz'),
+        batch_size=num_envs, milliseconds=latencies))
+    if video or trace: np.savez_compressed(out/('final_test_trace.npz' if purpose=='final_test' else
+        'final_ensemble_trace.npz' if temporal else 'final_validation_trace.npz'),
         **{k: np.stack(v) for k,v in traces.items()})
     return dict(method=method, episodes=len(rows), success_once=sum(r['success_once'] for r in rows),
         success_at_end=sum(r['success_at_end'] for r in rows),
         mean_return=float(np.mean([r['return'] for r in rows])),
         stage_counts={k: sum(r[k+'_once'] for r in rows) for k in events},
-        latency_batch8_ms_mean=float(np.mean(latencies)), latency_batch8_ms_p95=float(np.quantile(latencies,.95)),
+        **{f'latency_batch{num_envs}_ms_mean':float(np.mean(latencies)),
+           f'latency_batch{num_envs}_ms_p95':float(np.quantile(latencies,.95))},
         inference_scope=('prior full chunk + temporal aggregation + clamp' if temporal else
                          method)+'; synchronized CUDA; excludes env.step/render',
-        validation_seed=10000, reset_protocol='explicit seed 10000+episode_batch_start' if matched_resets else 'legacy initial seed only')
+        **(dict(validation_seed=eval_seed) if purpose=='validation' else dict(test_seed=eval_seed)),
+        reset_protocol=f'explicit seed {eval_seed}+episode_batch_start' if matched_resets else 'legacy initial seed only')
 
 
 def main():

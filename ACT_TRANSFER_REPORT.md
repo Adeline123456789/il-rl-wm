@@ -61,3 +61,7 @@ D1后续审计发现只给首批reset设置seed无法保证后续批次初态相
 这是开发seed0的有限稀疏奖励预算基线，不能据此断言充分训练也失败。记录soft Q均值峰值约55.93，final约.30，温度final约1e-5；soft Q含熵项，不能用零任务奖励直接判定其为任务回报高估或数值失稳。
 
 `scripts/summarize_act_online.py`核对实际命令、固定critic哈希、共享配置、完整交互/更新、17×40逐回合reset seeds与全部有限指标。当前快照`artifacts/act-online-summary-001`只给已结束T2填写成绩，T3运行及T4–T6未完成项为null，不按0分处理。无最终测试、无ACT-WM结论。
+
+## 2026-10-19：独立 ACT 评测门控与在线权重导出
+
+新增统一严格推理加载和完成作业的轻量actor导出；学生加载不构造教师，保留已学习方差。T2便携权重584114字节，全部actor张量与原final相等，CPU序列化动作逐位相等，见releases/act-t2-online-final-001与artifacts/act-t2-export-001。新增ACT独立评测入口，扩展既有闭环helper至10环境/100回合最终协议，逐批显式reset，最终gate在模型/CUDA/环境启动前检查；原默认8环境验证不变。16项CPU推理/门控/参数复制/reset/最终汇总测试通过（2.05秒），见artifacts/act-inference-cpu-tests-001；新10环境入口尚未真实GPU验证，未访问最终测试、未登记额外GPU预算。当前T3训练继续，未改在线算法。所有程序和上传按用户要求后台执行。
