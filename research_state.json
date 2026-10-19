@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 66851.67773959681,
+    "gpu_job_seconds_used": 67956.7868159858,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -173,7 +173,8 @@
     "act-t5-online-smoke-001",
     "act-t4-online-smoke-001",
     "act-t2-online-seed0-001",
-    "act-t2-online-seed0-002"
+    "act-t2-online-seed0-002",
+    "act-t3-online-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1174,6 +1175,43 @@
           "final": -0.29817888140678406
         }
       }
+    },
+    "act_t3_online_seed0_001": {
+      "id": "act-t3-online-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1105.1090763889952,
+      "peak_device_mib": 4709,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 2,
+      "losses": {
+        "losses/alpha": {
+          "min": 7.17740931577282e-06,
+          "max": 0.7639744877815247,
+          "final": 3.9408761949744076e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3190631568431854,
+          "max": 53.60826110839844,
+          "final": 0.3190631568431854
+        },
+        "losses/qf2_values": {
+          "min": 0.3017781972885132,
+          "max": 53.60850524902344,
+          "final": 0.3017781972885132
+        },
+        "losses/actor_loss": {
+          "min": -54.09770584106445,
+          "max": -0.3055709898471832,
+          "final": -0.3055709898471832
+        }
+      }
     }
   },
   "next_experiment": "Frozen T2-T6 same-critic equal-interaction online comparison, original 24h cap and 7200s reserve; analyze full results before local retention changes.",
@@ -1338,7 +1376,7 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "act-t3-online-seed0-001",
+    "experiment": "act-t4-online-seed0-001",
     "authoritative_live_file": "artifacts/act-online-batch-002/status.json",
     "note": "Snapshot; check authoritative live status before acting"
   },
@@ -1351,9 +1389,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "06ff01bd39fcefca3b037d5d7f866e7fc2e0b9ff",
-    "local_snapshot_commit": "5252cdc9ebb2fb138ca41275379b454d326eeac3",
-    "verification": "artifacts/github-act-stage-upload-005/status.json",
+    "remote_commit": "6f989625a876942af6b59f4dd5323506c1710f91",
+    "local_snapshot_commit": "f6f399bd03bc3b6503b7ebee7a733d1f10659221",
+    "verification": "artifacts/github-act-stage-upload-006/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1415,7 +1453,7 @@
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
-    "latest_online_summary": "artifacts/act-online-summary-001/summary.json",
+    "latest_online_summary": "artifacts/act-online-summary-002/summary.json",
     "inference_export_stage": {
       "tests": "artifacts/act-inference-cpu-tests-001",
       "tests_passed": 16,

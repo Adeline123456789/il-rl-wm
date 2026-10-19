@@ -1,0 +1,10 @@
+{
+  "pid": 2818826,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-t3-postprocess-001/run.py"
+  ],
+  "GPU_use": false,
+  "prerequisite": "successful completed T3 manifest",
+  "max_wait_seconds": 240
+}

@@ -40,3 +40,8 @@ the comparison and checkpoint selections first, account for the existing 88
 historical conditions and ACT conditions inside the shared remaining budget, and
 retain the 7200-second final-evaluation reserve. Student-only SAC inference here
 does not establish the final SAC+WM research objective.
+
+T3 BC-initialized SAC: `act-t3-online-final-001/weights.pt` (584178 bytes),
+exported after its successful full-run exit. Its manifest and
+`artifacts/act-t3-postprocess-001` preserve full-source hash, strict tensor parity
+and CPU serialization checks. Existing final validation remains 0/40.
