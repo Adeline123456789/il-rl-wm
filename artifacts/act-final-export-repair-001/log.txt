@@ -1,0 +1,76 @@
+Traceback (most recent call last):
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pytest/__main__.py", line 9, in <module>
+    raise SystemExit(_console_main())
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 253, in _console_main
+    code = _main(prog=_get_prog_name(sys.argv))
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 223, in _main
+    config = _prepareconfig(new_args, plugins, prog=prog)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 410, in _prepareconfig
+    config: Config = pluginmanager.hook.pytest_cmdline_parse(
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_caller.py", line 197, in __call__
+    return self._hookexec(
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_manager.py", line 183, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_execution.py", line 195, in _multicall
+    raise exception
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_execution.py", line 167, in _multicall
+    teardown.throw(exception)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/helpconfig.py", line 124, in pytest_cmdline_parse
+    config = yield
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_execution.py", line 147, in _multicall
+    res = hook_impl.function(*args)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 1232, in pytest_cmdline_parse
+    self.parse(args)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/_pytest/config/__init__.py", line 1583, in parse
+    self.pluginmanager.load_setuptools_entrypoints("pytest11")
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/lib/python3.10/site-packages/pluggy/_manager.py", line 521, in load_setuptools_entrypoints
+    plugin = ep.load()
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/importlib/metadata/__init__.py", line 171, in load
+    module = import_module(match.group('module'))
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/__init__.py", line 15, in <module>
+    from . import tools
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/tools/__init__.py", line 18, in <module>
+    from .process import launch_process
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch_testing/tools/process.py", line 17, in <module>
+    import launch
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/__init__.py", line 17, in <module>
+    from . import actions
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/actions/__init__.py", line 17, in <module>
+    from .declare_launch_argument import DeclareLaunchArgument
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/actions/declare_launch_argument.py", line 22, in <module>
+    import launch.logging
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/logging/__init__.py", line 32, in <module>
+    from ..frontend import expose_substitution
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/frontend/__init__.py", line 20, in <module>
+    from .parser import InvalidFrontendLaunchFileError, Parser
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/frontend/parser.py", line 38, in <module>
+    from .parse_substitution import parse_if_substitutions
+  File "/opt/ros/humble/lib/python3.10/site-packages/launch/frontend/parse_substitution.py", line 23, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/artifacts/act-final-export-repair-001/run.py", line 10, in <module>
+    subprocess.run(['.venv/bin/python','-m','pytest','-q','tests/test_analysis_export.py','tests/test_final_results.py','tests/test_act_final_evidence.py'],check=True)
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['.venv/bin/python', '-m', 'pytest', '-q', 'tests/test_analysis_export.py', 'tests/test_final_results.py', 'tests/test_act_final_evidence.py']' returned non-zero exit status 1.

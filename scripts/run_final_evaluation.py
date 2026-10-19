@@ -35,7 +35,10 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--plan',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--ids',nargs='+',help='Explicit registered subset; unselected entries remain pending')
+    p.add_argument('--remaining-seconds',type=float,help='Remaining original batch allowance after a recorded failed invocation')
     args=p.parse_args();plan=json.loads(args.plan.read_text())
+    allowance=plan['total_evaluation_limit_seconds'] if args.remaining_seconds is None else args.remaining_seconds
+    assert 0<allowance<=plan['total_evaluation_limit_seconds']
     # ACT task supersedes the earlier evaluation start authorization: protect the
     # same test seeds until the new comparison conditions are explicitly frozen.
     gate=ROOT/'configs/act_final_test_gate.json'
@@ -75,7 +78,7 @@ def main():
     args.output.mkdir(parents=True,exist_ok=False)
     record=dict(phase='running',plan_sha256=hashlib.sha256(args.plan.read_bytes()).hexdigest(),
         selected=[e['id'] for e in entries],unselected_pending=[i for i in ids if i not in {e['id'] for e in entries}],
-        completed=[],current=None)
+        completed=[],current=None,effective_limit_seconds=allowance)
     (args.output/'registered_plan.json').write_text(json.dumps(plan,indent=2)+'\n')
     started=time.monotonic();cpu_env=dict(os.environ,CUDA_VISIBLE_DEVICES='',JAX_PLATFORMS='cpu')
     def save():
@@ -114,7 +117,7 @@ def main():
                     '--training-interactions',str(e['training_interactions'])]
             experiment=f"e7-test-{e['id']}-001"
             command+=['--output',f'artifacts/{experiment}','--seed','20000','--episodes','100','--num-envs','10']
-            remaining=plan['total_evaluation_limit_seconds']-(time.monotonic()-started)
+            remaining=allowance-(time.monotonic()-started)
             assert remaining>0,'Registered evaluation budget exhausted'
             subprocess.run([PYTHON,'scripts/run_experiment.py','--id',experiment,'--seconds',str(min(remaining,plan['per_job_limit_seconds'])),
                             '--',*command],cwd=ROOT,check=True)

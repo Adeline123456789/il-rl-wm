@@ -1,6 +1,9 @@
 {
   "pid": 2996780,
-  "phase": "running",
-  "exit_code": null,
-  "started_at": 1792388527.8431575
+  "phase": "failed",
+  "exit_code": 1,
+  "started_at": 1792388527.8431575,
+  "evaluation_exit_code": 1,
+  "summary_exit_code": 0,
+  "ended_at": 1792388649.3464026
 }

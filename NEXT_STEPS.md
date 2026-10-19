@@ -24,3 +24,5 @@ T2–T6全部完整结束，fixed-final成功0/0/0/0/34（各40回合），真�
 Stack/Peg 额外训练 seeds1/2 与 RLPD 额外种子仍未排队，是否能执行取决于实际剩余预算；视觉阶段未实施。Peg 只有 126 条 GPU 成功轨迹、88 个不同来源组，CPU/GPU 开环回放成功差异尚未消除，不能借用 CPU 标签或把重复组当独立演示。
 
 2026-10-19 05:42 UTC：U2完整结束，CPU诊断和单因素审计exit0。比较冻结见artifacts/act-comparison-freeze-001/result.json，gate已放行。仅启动一次act-final-evaluation-launch-002/run.py；其批次输出act-final-evaluation-batch-002和汇总act-final-summary-002。不得重复启动或以final结果调参。所有106条件后更新报告/原始证据/源码commit覆盖并后台交付，之后暂停本批自动化。
+
+2026-10-19：最终队列002已因旧导出计数字段失败；001/002失败证据保留。唯一当前队列003，PID3003841，先核验act-final-evaluation-launch-003/status.json与batch-003，不重启002。仅余68登记项，共享剩余7078.596346秒。自动汇总act-final-summary-003包含已完成002的两项。Stage16远端6de7192596f3feee1de2f2b09232644ca3468fb3，tree4f36d687fbd59776748b58dca772d173cb5bf1e4已核验。

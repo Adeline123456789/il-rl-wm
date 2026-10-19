@@ -1,0 +1,9 @@
+{
+  "pid": 3003566,
+  "started_at": 1792389073.3086596,
+  "exit_code": 1,
+  "GPU_use": false,
+  "phase": "failed",
+  "error": "CalledProcessError(1, ['.venv/bin/python', '-m', 'pytest', '-q', 'tests/test_analysis_export.py', 'tests/test_final_results.py', 'tests/test_act_final_evidence.py'])",
+  "ended_at": 1792389073.4399786
+}

@@ -1,0 +1,84 @@
+{
+  "experiment_id": "e7-test-pick-seed0-a-001",
+  "started_at": "2026-10-19T05:42:09.335681+00:00",
+  "ended_at": "2026-10-19T05:43:08.081720+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/evaluate_checkpoint.py",
+    "--checkpoint",
+    "releases/final-pick-seed0-a-001/weights.pt",
+    "--methods",
+    "sac",
+    "--output",
+    "artifacts/e7-test-pick-seed0-a-001",
+    "--seed",
+    "20000",
+    "--episodes",
+    "100",
+    "--num-envs",
+    "10"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 600.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 2996814,
+  "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "57933894274a1540ec63951078ed4243be60f4b9bb68ceec8d668317d454772a",
+  "source_snapshot_sha256": "12155fdb52bcc2d7b9ef086cf26a7428d0140b8789cc6326216a177f5ca8124f",
+  "child_pid": 2996830,
+  "elapsed_seconds": 58.6509955250076
+}
+{
+  "experiment_id": "e7-test-pick-seed0-b-001",
+  "started_at": "2026-10-19T05:43:09.806321+00:00",
+  "ended_at": "2026-10-19T05:44:08.516060+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/evaluate_checkpoint.py",
+    "--checkpoint",
+    "releases/final-pick-seed0-b-001/weights.pt",
+    "--methods",
+    "sac",
+    "--output",
+    "artifacts/e7-test-pick-seed0-b-001",
+    "--seed",
+    "20000",
+    "--episodes",
+    "100",
+    "--num-envs",
+    "10"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 600.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 2999305,
+  "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "8cdd8c4565f7aa88dabc42c824003ec8254a24f1316698f217b5eb258160ed06",
+  "source_snapshot_sha256": "4f818c46086129d27ba23eede0313b3e4309f524c455c46226f5d90a205c165b",
+  "child_pid": 2999321,
+  "elapsed_seconds": 58.638479629997164
+}
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/export_analysis_checkpoint.py", line 30, in <module>
+    if __name__=='__main__':main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/export_analysis_checkpoint.py", line 16, in main
+    state={key:original[key] for key in keys}
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/export_analysis_checkpoint.py", line 16, in <dictcomp>
+    state={key:original[key] for key in keys}
+KeyError: 'lineage_training_interactions'
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_final_evaluation.py", line 128, in <module>
+    if __name__=='__main__':main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_final_evaluation.py", line 90, in main
+    cpu([PYTHON,'scripts/export_analysis_checkpoint.py','--checkpoint',e['checkpoint'],'--output',str(package)])
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/run_final_evaluation.py", line 84, in cpu
+    def cpu(command):subprocess.run(command,cwd=ROOT,env=cpu_env,check=True)
+  File "/home/midea/miniconda3/envs/avp_clean/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python', 'scripts/export_analysis_checkpoint.py', '--checkpoint', 'checkpoints/e3-sac-c-full-001/final.pt', '--output', 'releases/final-pick-seed0-c-001']' returned non-zero exit status 1.
