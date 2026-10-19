@@ -318,3 +318,5 @@ T4仅去掉专家混合则fixed-final0/40，因此当前开发证据支持额外
 2026-10-19 U2真实资源短检exit0：121.308秒/5706MiB，8192真实训练/1040更新/16000验证；均值8/40→1/40仍有显著技能损失，不能用短检认定局部假设成立。初始Actor/双Critic与T5哈希一致，辅助66560样本仅来自55092专家训练状态。预算投影含余量4203.005秒，已登记全长cap4500秒与106条件最终计划；研究余量4909.079秒，7200秒reserve不动。
 
 2026-10-19 U2 full后台PID2935565/训练2935582已核实单GPU真实运行，初始Actor/双Critic哈希与T5一致。CPU后处理等待器2936685只在成功后执行六条件汇总、teacher-free导出、固定状态漂移和真实replay诊断；失败停止、不重复GPU，不释放final gate。写research_state时误将background_jobs列表按字典访问，发生于Popen和launch回执保存之后；已核对现有PID/status并修正状态写入，没有重复启动，错误记录见receipt_recovery.json。
+
+2026-10-19 U2仍在既定后台运行，未重复GPU。CPU后台归档PID2975433正常完成：以已交付8ec9714为prerequisite生成至9f1536c的148878288字节增量bundle，base+increment在全新bare仓库无网络恢复，145 GPU作业的45个独立code_commit全部存在，git fsck通过。归档不包含本次发布自身；旧缺失plot脚本字节仍显式保留未恢复。训练与最终评测期间固定本地source HEAD，使用临时Git index发布证据快照以免把归档自身反复装入未来源码bundle；完成后核对所有实际评测code_commit覆盖。此次归档不代表U2或最终测试完成。

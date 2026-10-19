@@ -1,0 +1,7 @@
+{
+  "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "publication": "temporary index tree; local HEAD and normal index unchanged",
+  "future_requirement": "Verify all eventual final-evaluation code commits covered before batch closure",
+  "current_gpu_run": "act-u2-retention-seed0-001",
+  "final_test_accessed": false
+}
