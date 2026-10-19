@@ -57,3 +57,11 @@ D1在修正配对下仍失败后，按原顺序独立研究参数迁移，不叠
 均值明确取atanh(clip(ACT copied linear head(h0), -1+1e-6, 1-1e-6))，再用标准SAC tanh-Gaussian采样/修正log_prob；这是一种已授权的数值动作映射，非把ACT输出当pre-tanh或CVAE posterior当log_prob。新的log_std head初始化-2；后续SAC时可训练。为保持条件分布定义，推理骨干dropout在训练和评测均关闭，但参数允许梯度；所有query仍参与自注意力。饱和处clamp梯度为0是明确限制，统计比例，不预先宣称在线优化有效。
 
 先CPU独立存储、全部decoder梯度、极值log_prob测试；真实GPU接口+闭环单作业≤300秒，先2次接口检查，再40回合均值与随机验证。用刚冻结的matched-reset种子和40初态核验，不重训教师、不用test。检查实际演示state上复制动作误差、饱和比例，隔离副本做一次SAC形式Actor/温度梯度探针（随机critic，仅工程检查），闭环只评估未更新的参数复制模型。无在线训练或WM，不能将初始动作对齐称为SAC学得更好。保留7200秒reserve。
+
+## 2026-10-19 最终证据入口接入（尚未执行最终测试）
+
+新增configs/act_final_evaluation_plan.json，在原52条/88条件完全不变的基础上登记16个ACT条件：K30首动作/时间集成、D1初始均值/随机、C1初始均值/随机，以及T2–T6各自fixed-final均值/随机。合计68条/104条件，共享原7200秒整批限额，不能各自新增7200秒。T5/T6尚未完成，未用其结果筛选条件；若后续登记唯一保持机制，必须在测试放行前显式追加并核算。
+
+最终runner新增ACT便携权重校验和统一评测分支：离线初始包固定SHA，在线包必须对应已完成训练的final哈希与交互数；统一汇总从ACT原始episode_index/iteration适配，保留原始逐回合文件。15项CPU门控/结果身份/种子/完整回合/导出来源/旧协议回归测试通过，104个条件实际预检均未运行，分数为null。它不证明10环境真实仿真已通过。
+
+新增scripts/check_act_evaluation_entry.py，待现有T5/T6结束且核对余额后，使用原runner以act-independent-eval-smoke-001单作业≤300秒运行6个模式×10回合、10环境、validation seed10000；累计12000验证交互、0训练，检查真实trace形状和全部初态配对。该预检不占用最终seed，需从测试reserve之外的余额支付。当前仅准备脚本，未启动或排入第二GPU；最终runner要求其实际status与预算manifest均成功。configs/act_final_test_gate.json仍为false，比较冻结前不能运行最终104条件。

@@ -12,6 +12,25 @@ PYTHON=str(ROOT/'.venv/bin/python')
 RLPD_PYTHON=str(ROOT/'.venv-rlpd/bin/python')
 
 
+def act_checkpoint_hash(entry, root):
+    """Verify a registered offline package or fixed-final online export before test access."""
+    path=root/entry['checkpoint']
+    digest=hashlib.sha256(path.read_bytes()).hexdigest()
+    if entry['training_interactions']==0:
+        assert digest==entry['checkpoint_sha256'], entry['id']
+    else:
+        exported=json.loads((path.parent/'manifest.json').read_text())
+        assert digest==exported['portable_sha256'] and exported['all_actor_tensors_equal']
+        assert exported['source']==f"checkpoints/{entry['training_experiment']}/final.pt"
+        records=[json.loads(line) for line in
+            (root/'artifacts'/entry['training_experiment']/'checkpoints.jsonl').read_text().splitlines()]
+        assert any(r['final'] and r['path']==exported['source'] and
+                   r['sha256']==exported['source_sha256'] and r['step']==entry['training_interactions']
+                   for r in records)
+    assert entry['methods']==[entry['kind']+'_'+entry['mode']]
+    return digest
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--plan',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
@@ -35,12 +54,19 @@ def main():
     # Verify all selected training runs and loader smokes before any test access.
     required=['e7-independent-eval-smoke-001']
     if any(e['framework']=='rlpd' for e in entries):required.append('e7-rlpd-independent-eval-smoke-001')
+    if any(e['framework']=='act' for e in entries):
+        smoke=json.loads((ROOT/'artifacts/act-independent-eval-smoke-001/status.json').read_text())
+        assert smoke['phase']=='completed' and smoke['exit_code']==0
+        required.append('act-independent-eval-smoke-001')
     for name in required+[e['training_experiment'] for e in entries]:
         m=json.loads((ROOT/'artifacts'/name/'manifest.json').read_text())
         assert m['ended_at'] and m['exit_code']==0 and m['stop_reason'] is None, name
         assert not (ROOT/'artifacts'/name/'INVALIDATED.json').exists()
     expected={}
     for e in entries:
+        if e['framework']=='act':
+            expected[e['id']]=act_checkpoint_hash(e,ROOT)
+            continue
         assert (ROOT/e['checkpoint']).exists(), e['id']
         records=[json.loads(line) for line in (ROOT/'artifacts'/e['training_experiment']/'checkpoints.jsonl').read_text().splitlines()]
         key='path' if e['framework']=='main' else 'directory'
@@ -72,13 +98,20 @@ def main():
                     cpu([PYTHON,'scripts/export_deployment.py','--checkpoint',e['checkpoint'],'--output',str(deployment)])
                     cpu([PYTHON,'scripts/check_deployment.py','--checkpoint',e['checkpoint'],'--package',str(deployment/'policy.pt'),
                          '--output',str(deployment/'action-parity.json')])
-            else:
+            elif e['framework']=='rlpd':
                 cpu([RLPD_PYTHON,'external/rlpd/policy.py','--checkpoint',e['checkpoint'],'--output',str(package)])
                 manifest=json.loads((ROOT/package/'manifest.json').read_text())
                 assert manifest['source_sha256']==expected[e['id']]
                 assert (manifest['config']['env_id'],manifest['config']['seed'],manifest['step'])==(
                     e['task'],e['training_seed'],e['training_interactions'])
                 command=[RLPD_PYTHON,'external/rlpd/evaluate.py','--policy',str(package)]
+            else:
+                assert e['framework']=='act'
+                package=Path(e['checkpoint']).parent
+                assert act_checkpoint_hash(e,ROOT)==expected[e['id']]
+                command=[PYTHON,'scripts/evaluate_act_checkpoint.py','--checkpoint',e['checkpoint'],
+                    '--kind',e['kind'],'--mode',e['mode'],'--training-seed',str(e['training_seed']),
+                    '--training-interactions',str(e['training_interactions'])]
             experiment=f"e7-test-{e['id']}-001"
             command+=['--output',f'artifacts/{experiment}','--seed','20000','--episodes','100','--num-envs','10']
             remaining=plan['total_evaluation_limit_seconds']-(time.monotonic()-started)

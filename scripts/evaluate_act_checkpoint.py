@@ -30,10 +30,15 @@ def main():
     parser.add_argument('--episodes',type=int,required=True)
     parser.add_argument('--num-envs',type=int,default=10)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--training-seed',type=int,default=0)
+    parser.add_argument('--training-interactions',type=int,default=0)
     args=parser.parse_args()
     validate_protocol(args.kind,args.mode,args.seed,args.episodes,args.num_envs,'configs/act_final_test_gate.json')
     torch.set_num_threads(2);torch.manual_seed(args.seed)
     saved=torch.load(args.checkpoint,map_location='cpu',weights_only=False)
+    if args.training_interactions:
+        assert saved['training_interactions']==args.training_interactions
+        assert saved['config']['seed']==args.training_seed
     model=load_model(saved,args.kind,'cuda')
     args.output.mkdir(parents=True,exist_ok=True)
     assert not any((args.output/name).exists() for name in ['result.json','episodes.jsonl','validation_episodes.jsonl'])
@@ -42,11 +47,12 @@ def main():
     result=closed_loop(action_callable(model,args.kind,args.mode),args.output,saved.get('step',0),
         args.episodes,counter,temporal=args.mode=='ensemble',method=args.kind+'_'+args.mode,
         eval_seed=args.seed,num_envs=args.num_envs,purpose=purpose,trace=True)
-    result.update(checkpoint=str(args.checkpoint),checkpoint_sha256=hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
+    result.update(seed=args.seed,training_seed=args.training_seed,training_interactions=args.training_interactions,
+        checkpoint=str(args.checkpoint),checkpoint_sha256=hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
         kind=args.kind,mode=args.mode,purpose=purpose,num_envs=args.num_envs,
         new_training_interactions=0,interactions=args.episodes*200,selection='explicit fixed checkpoint',
         protocol=dict(env_id='PickCube-v1',obs_mode='state',control_mode='pd_ee_delta_pos',reward_mode='sparse',
-                      horizon=200,reset_protocol='explicit_batch_seed'),
+                      horizon=200,max_episode_steps=200,reset_protocol='explicit_batch_seed'),
         torch_peak_allocated_bytes=torch.cuda.max_memory_allocated())
     (args.output/'result.json').write_text(json.dumps(result,indent=2)+'\n')
 

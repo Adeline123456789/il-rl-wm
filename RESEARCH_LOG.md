@@ -276,3 +276,11 @@ T4完成262144真实训练交互、64528更新、136000验证交互，exit0，10
 预登记1024个expert-train固定状态的CPU诊断显示，16384步gripper对教师MSE从.00618升至.99441，均值动作接近零、log_std约-.10至-.14；fixed-final gripper MSE为1.83111，pre-tanh KL(initial||current)均值612.994。全部四快照和原始数组保留于artifacts/act-t4-online-drift-001；这是分布内动作漂移与原有闭环退化的关联，不能独立归因于熵、Critic或探索。继续保留F-ACT-01/F-ACT-02，不接入WM掩盖迁移损失。
 
 完整权重SHA256 554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b；无教师便携actor SHA256 9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80，全部张量及CPU序列化动作相同。原始配置/日志/代码快照、17验证点曲线和导出核验一起保存。共享已完成GPU作业69055.980秒，另加运行中的T5时间；7200秒测试reserve保持不变。T5由原队列串行接续，T6随后，最终测试门控仍关闭。
+
+## 2026-10-19 最终证据入口接入（尚未执行最终测试）
+
+新增configs/act_final_evaluation_plan.json，在原52条/88条件完全不变的基础上登记16个ACT条件：K30首动作/时间集成、D1初始均值/随机、C1初始均值/随机，以及T2–T6各自fixed-final均值/随机。合计68条/104条件，共享原7200秒整批限额，不能各自新增7200秒。T5/T6尚未完成，未用其结果筛选条件；若后续登记唯一保持机制，必须在测试放行前显式追加并核算。
+
+最终runner新增ACT便携权重校验和统一评测分支：离线初始包固定SHA，在线包必须对应已完成训练的final哈希与交互数；统一汇总从ACT原始episode_index/iteration适配，保留原始逐回合文件。15项CPU门控/结果身份/种子/完整回合/导出来源/旧协议回归测试通过，104个条件实际预检均未运行，分数为null。它不证明10环境真实仿真已通过。
+
+新增scripts/check_act_evaluation_entry.py，待现有T5/T6结束且核对余额后，使用原runner以act-independent-eval-smoke-001单作业≤300秒运行6个模式×10回合、10环境、validation seed10000；累计12000验证交互、0训练，检查真实trace形状和全部初态配对。该预检不占用最终seed，需从测试reserve之外的余额支付。当前仅准备脚本，未启动或排入第二GPU；最终runner要求其实际status与预算manifest均成功。configs/act_final_test_gate.json仍为false，比较冻结前不能运行最终104条件。

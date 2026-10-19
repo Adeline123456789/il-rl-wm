@@ -40,6 +40,11 @@ def summarize(plan, root):
         result = read(folder / 'result.json')
         counter = read(folder / 'interactions.json')
         episodes = [json.loads(line) for line in (folder / 'episodes.jsonl').read_text().splitlines()]
+        if entry['framework']=='act':
+            # Keep original ACT evidence unchanged; adapt its explicit field names locally.
+            assert (result['kind'],result['mode'])==(entry['kind'],entry['mode'])
+            assert result['checkpoint']==entry['checkpoint']
+            episodes=[dict(ep,episode=ep['episode_index'],step=ep['iteration']) for ep in episodes]
         assert result['purpose'] == 'final_test' and result['seed'] == 20000
         assert result['num_envs'] == 10 and result['new_training_interactions'] == 0
         assert result['protocol']['env_id'] == entry['task']
@@ -47,7 +52,8 @@ def summarize(plan, root):
         assert result['training_seed'] == entry['training_seed']
         budget_key = 'lineage_training_interactions' if entry['framework'] == 'main' else 'training_interactions'
         assert result[budget_key] == entry['training_interactions']
-        methods = result['methods'] if entry['framework'] == 'main' else {'RLPD': result}
+        methods = (result['methods'] if entry['framework'] == 'main' else
+                   {result['method']:result} if entry['framework']=='act' else {'RLPD': result})
         assert set(methods) == set(entry['methods']) == {ep['method'] for ep in episodes}
         assert len(episodes) == 100 * len(rows)
         total = 0

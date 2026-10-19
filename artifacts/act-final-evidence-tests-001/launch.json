@@ -1,0 +1,8 @@
+{
+  "pid": 2852813,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-final-evidence-tests-001/run.py"
+  ],
+  "GPU_use": false
+}

@@ -1432,9 +1432,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "5d7499d7b3c40b01fbdea706750e371017a1618d",
-    "local_snapshot_commit": "d19e129acbb16a59ea6e98f052315d80a8786365",
-    "verification": "artifacts/github-act-stage-upload-008/status.json",
+    "remote_commit": "43cddd3ffe8f22f76b4ed74325db6125cde6c089",
+    "local_snapshot_commit": "7db9e91ab06cccef55965ddefd2f7763c0cbdb4e",
+    "verification": "artifacts/github-act-stage-upload-009/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1447,16 +1447,20 @@
   ],
   "final_evaluation": {
     "status": "gate_wait_timeout_no_test_access; resume new queue after comparison freeze",
-    "plan": "configs/final_evaluation_plan.json",
-    "models_or_stages": 52,
-    "method_conditions": 88,
+    "plan": "configs/act_final_evaluation_plan.json",
+    "models_or_stages": 68,
+    "method_conditions": 104,
     "episodes_per_condition": 100,
     "limit_seconds": 7200,
     "final_test_accessed": false,
     "queue": "artifacts/queue-final-evaluation-001/status.json",
     "summary_queue": "artifacts/queue-final-results-001/status.json",
-    "method_fixed": true,
-    "release_gate": "configs/act_final_test_gate.json"
+    "method_fixed": false,
+    "release_gate": "configs/act_final_test_gate.json",
+    "historical_plan": "configs/final_evaluation_plan.json",
+    "historical_method_fixed": true,
+    "act_validation_smoke": "prepared_not_launched; artifacts/act-independent-eval-smoke-001/status.json",
+    "cpu_evidence_tests": "artifacts/act-final-evidence-tests-001/status.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
   "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
