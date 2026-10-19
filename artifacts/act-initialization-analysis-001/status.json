@@ -4,9 +4,10 @@
   "started_at": 1792402340.6914778,
   "exit_code": null,
   "completed": [
-    "act-r0-expert50-seed0-001"
+    "act-r0-expert50-seed0-001",
+    "act-r1-expert50-seed0-001"
   ],
   "new_environment_interactions": 0,
   "gpu_jobs_started": 0,
-  "current": "act-r1-expert50-seed0-001"
+  "current": "act-r3-expert50-seed0-001"
 }

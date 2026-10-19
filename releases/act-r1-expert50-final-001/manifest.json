@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-r1-expert50-seed0-001/final.pt",
+  "source_sha256": "f2241b16c0ffdcb93177a24736c5991eb0ae80e94c50313567b9da9f6271b807",
+  "portable": "releases/act-r1-expert50-final-001/weights.pt",
+  "portable_sha256": "2b30979b7618a23955ab492dba8787dfa2cd4c107fbd2aa11305e7427254a6c8",
+  "bytes": 584370,
+  "actor_kind": "mlp",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}

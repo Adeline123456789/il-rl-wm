@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "R0 expert50 complete and audited; R1 full run active; R3 and fixed final evaluation pending",
+  "phase": "R0/R1 full controls complete and audited; R3 active; all8 fixed-final tests pending",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -254,7 +254,8 @@
     "e7-test-act-u2-final-stochastic-002",
     "act-r0-expert50-smoke-001",
     "act-r3-expert50-smoke-001",
-    "act-r0-expert50-seed0-001"
+    "act-r0-expert50-seed0-001",
+    "act-r1-expert50-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1431,9 +1432,46 @@
           "final": -24.87065887451172
         }
       }
+    },
+    "act_r1_expert50_seed0_001": {
+      "id": "act-r1-expert50-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 30,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1365.811185341,
+      "peak_device_mib": 4714,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "f2241b16c0ffdcb93177a24736c5991eb0ae80e94c50313567b9da9f6271b807",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 609,
+      "losses": {
+        "losses/alpha": {
+          "min": 0.03172195330262184,
+          "max": 0.7595660090446472,
+          "final": 0.04838569462299347
+        },
+        "losses/qf1_values": {
+          "min": 17.8574275970459,
+          "max": 53.34391784667969,
+          "final": 25.430423736572266
+        },
+        "losses/qf2_values": {
+          "min": 17.869014739990234,
+          "max": 53.37091064453125,
+          "final": 25.412355422973633
+        },
+        "losses/actor_loss": {
+          "min": -53.73279571533203,
+          "max": -19.924806594848633,
+          "final": -25.41323471069336
+        }
+      }
     }
   },
-  "next_experiment": "Continue existing queue002 R1 then R3; bounded CPU summaries PID28933; eight fixed-final tests after gate release",
+  "next_experiment": "Continue existing queue002 R3 PID71954, then8 fixed-final tests. CPU summary28933 and terminal audit56507 already active; do not duplicate.",
   "blockers": [],
   "resume": "Read FINAL_BATCH_REPORT.md and completion audit; do not restart original or completion queues; hourly automation remains deleted.",
   "background_jobs": [
@@ -1630,6 +1668,11 @@
       "role": "Bounded CPU initialization-control summaries; no GPU launches",
       "status_file": "artifacts/act-initialization-analysis-001/status.json",
       "launched_pid": 28933
+    },
+    {
+      "role": "Bounded CPU terminal audit for authorized11500s batch; no GPU launches",
+      "status_file": "artifacts/act-initialization-delivery-audit-001/status.json",
+      "launched_pid": 56507
     }
   ],
   "environment": {
@@ -1655,12 +1698,13 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "status": "R0 expert50 complete and audited; R1 full run active; R3 and fixed final evaluation pending",
+    "status": "R0/R1 full controls complete and audited; R3 active; all8 fixed-final tests pending",
     "queue": "artifacts/act-initialization-batch-002/status.json",
     "resource_gate": "artifacts/act-initialization-batch-002/resource_gate.json",
     "gpu_budget": "configs/act_initialization_budget.json",
     "original_batch_report": "FINAL_BATCH_REPORT.md",
-    "latest_development_summary": "artifacts/act-initialization-analysis-001/summary-001/summary.json"
+    "latest_development_summary": "artifacts/act-initialization-analysis-001/summary-002/summary.json",
+    "terminal_audit": "artifacts/act-initialization-delivery-audit-001/status.json"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1668,16 +1712,16 @@
   },
   "upload_access": {
     "phase": "verified",
-    "commit": "5adb2c8155c9c94095f2567824ac4e860338d7d0",
-    "tree": "2723aa23694e4dd32809d4201034193c7a8a684a",
-    "receipt": "artifacts/github-act-stage-upload-023/status.json",
-    "verified_files": 3542,
+    "commit": "500f4960783593aeec257b38bf42734e4f03f045",
+    "tree": "fdfe0da2da0fb54c7369f7a9cd17297e795bf604",
+    "receipt": "artifacts/github-act-stage-upload-028/status.json",
+    "verified_files": 3577,
     "draft_pr": 2,
     "main_unchanged": true,
-    "note": "Remote metadata commit includes verified stage22 receipt; this final self-referential receipt remains local until a later authorized change.",
+    "note": "R0 full development evidence and portable actor published; R1 active; this receipt remains local until the next scientific milestone.",
     "status": "verified",
-    "latest_receipt": "artifacts/github-act-stage-upload-027/status.json",
-    "remote_commit": "76d3f79a05844a162d433cc3821c1a37caf08f77"
+    "latest_receipt": "artifacts/github-act-stage-upload-028/status.json",
+    "remote_commit": "500f4960783593aeec257b38bf42734e4f03f045"
   },
   "local_hypotheses": [
     {
@@ -2067,10 +2111,10 @@
     "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
     "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
     "archive": "releases/source-history-act-20261019-001/manifest.json",
-    "latest_publication_plan": ".cache/github-act-stage-027/plan.json",
-    "note": "Stage27 verified3542 files; original source HEAD/index preserved. New11500s batch explicitly authorized separately; R0 full evidence awaiting next publication.",
-    "latest_verified_remote": "76d3f79a05844a162d433cc3821c1a37caf08f77",
-    "latest_verified_tree": "42b3ea6a79f781298b9dd7435b3aaba47c549ebd"
+    "latest_publication_plan": ".cache/github-act-stage-028/plan.json",
+    "note": "Stage28 verified3577 files; main unchanged and Draft PR2 updated. Local HEAD/index preserved; no publication of in-progress R1 raw results.",
+    "latest_verified_remote": "500f4960783593aeec257b38bf42734e4f03f045",
+    "latest_verified_tree": "fdfe0da2da0fb54c7369f7a9cd17297e795bf604"
   },
   "hourly_automation": {
     "id": "il-rl-wm-act",
@@ -2081,7 +2125,7 @@
     "act-initialization-controls-20261019": {
       "authorization": "configs/act_initialization_budget.json",
       "limit_seconds": 11500,
-      "gpu_job_seconds_used": 1523.3927817499998
+      "gpu_job_seconds_used": 2889.203967091
     }
   }
 }
