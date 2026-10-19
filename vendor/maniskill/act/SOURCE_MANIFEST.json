@@ -1,0 +1,48 @@
+{
+  "repository": "https://github.com/mani-skill/ManiSkill",
+  "commit": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+  "files": [
+    {
+      "path": "vendor/maniskill/act/README.md",
+      "upstream": "examples/baselines/act/README.md",
+      "sha256": "04bf57b074679de5a0ef7de64db10d20cf2ddb37fd0f0ab42370d9465cb03058",
+      "git_blob": "95f69b2a074131219f81167b599aba771c7b1955"
+    },
+    {
+      "path": "vendor/maniskill/act/train.py",
+      "upstream": "examples/baselines/act/train.py",
+      "sha256": "de4b056adcd3c4ca1228d7e7c957a7b747550ef228f963d4cabae1e00e700346",
+      "git_blob": "c2cc9a752166ddf3a6d9df40f04d08567f88c9eb"
+    },
+    {
+      "path": "vendor/maniskill/act/act/detr/detr_vae.py",
+      "upstream": "examples/baselines/act/act/detr/detr_vae.py",
+      "sha256": "ed8b83c498172c486594c58f5e078dd4392de8983685ee87a99166825a468b37",
+      "git_blob": "65c2b281147b6e7846ea95624c944e4446379fe9"
+    },
+    {
+      "path": "vendor/maniskill/act/act/detr/transformer.py",
+      "upstream": "examples/baselines/act/act/detr/transformer.py",
+      "sha256": "5bc6700b6be400e7c974592ffc8a2b92d1f6f2cf4831198f7cb8f1de4a59bd4c",
+      "git_blob": "335a414062e2e8f1fa474540225a1c13395f94d8"
+    },
+    {
+      "path": "vendor/maniskill/act/act/evaluate.py",
+      "upstream": "examples/baselines/act/act/evaluate.py",
+      "sha256": "dd0b733b3624d63d683918e64ccc217c019e3a5dddcc514a0f42628a1be87cbb",
+      "git_blob": "b31cdc46b25fc20a11a79a5f28f1a4c8a12fe92b"
+    },
+    {
+      "path": "vendor/maniskill/act/act/make_env.py",
+      "upstream": "examples/baselines/act/act/make_env.py",
+      "sha256": "b588b119e86b9b23c08ef9f11a52294a168cbe0d3af4cac4b2c2eb2e26d196fe",
+      "git_blob": "55db1629f8e645f093b277a16cc8dd265088e104"
+    },
+    {
+      "path": "vendor/maniskill/act/act/utils.py",
+      "upstream": "examples/baselines/act/act/utils.py",
+      "sha256": "780c30ff8ac377f08e6b85e402ee0963eb0446ac120c2d3fa560789b948df900",
+      "git_blob": "c6da0285639ada0f42945d87f0c8d27b9e86df49"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "updates": 100,
+  "elapsed_seconds": 9.233290939009748,
+  "model_parameters": 1348548,
+  "training_examples": 55092,
+  "validation_examples": 13897,
+  "final_validation": {
+    "method": "act_requery_first",
+    "episodes": 8,
+    "success_once": 0.0,
+    "success_at_end": 0.0,
+    "mean_return": 0.0,
+    "stage_counts": {
+      "approached": 3,
+      "is_grasped": 2,
+      "lifted": 2,
+      "is_obj_placed": 0
+    },
+    "latency_batch8_ms_mean": 1.2274688441539183,
+    "latency_batch8_ms_p95": 1.372931248624809,
+    "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+    "validation_seed": 10000
+  },
+  "ensemble_validation": null,
+  "posterior_only_parameters": 411072,
+  "inference_parameters": 937476,
+  "final_test_accessed": false,
+  "cpu_audit": false,
+  "new_training_environment_interactions": 0,
+  "teacher_gate_passed": false,
+  "gate_definition": "Fixed final, mode A, >=8/40 validation success before migration; not significance or 3-seed confirmation",
+  "torch_peak_allocated_bytes": 173631488
+}

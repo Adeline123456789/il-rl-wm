@@ -1,0 +1,7 @@
+{
+  "training_updates": 10000,
+  "measured_smoke_seconds_per_update": 0.010175171149894595,
+  "projected_training_seconds": 101.75171149894595,
+  "budget_seconds": 1800,
+  "rule": "Require 1.5x observed K8 training cost + 300s validation/video allowance to fit; no hidden shortening"
+}

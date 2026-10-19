@@ -1,0 +1,362 @@
+[
+  {
+    "experiment": "pick-seed1-a-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 788.6934191179898,
+      "frozen_il_verified": false,
+      "torch_peak_allocated_bytes": 141894656
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "28d7a1b9d1bcc66457d5da0ec5a7bcee8aba977a46bb7b01b9b05ecd74e8b0f8"
+  },
+  {
+    "experiment": "pick-seed1-b-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 783.5370726409892,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142469632
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "5e5b2982bf822bd99b75116e1003a5cbc098778dd00728c6b1fc9ba61e818e3e"
+  },
+  {
+    "experiment": "pick-seed1-bc-001",
+    "result": {
+      "iterations": 10000,
+      "training_examples": 55092,
+      "validation_examples": 13897,
+      "validation_interactions": 80000,
+      "training_online_interactions": 0,
+      "elapsed_seconds": 571.7126377650129,
+      "torch_peak_allocated_bytes": 27623424,
+      "torch_peak_reserved_bytes": 33554432,
+      "checkpoint_selection": "fixed_final",
+      "final_test_evaluated": false
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 10000,
+        "success_once": 0.0,
+        "episodes": 40
+      }
+    ],
+    "result_sha256": "14ef9a981c4fa89218f2b1bce5a8273e696899b19623d87f6cf234fc69f9113d"
+  },
+  {
+    "experiment": "pick-seed1-c-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 890.5074994780007,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142838272
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 8.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "c284c5df8f8dc47f3ecc0754e7645c8bf98cb9f1615412925a44dc44810a26b1"
+  },
+  {
+    "experiment": "pick-seed1-c-continue-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 872.4281802740006,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142838272
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 15.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "e98ec3165b062997b09b04b821091d89928f69af29436f0dac2a008ff4df3590"
+  },
+  {
+    "experiment": "pick-seed1-u0-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 64000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 1089.0623386390216,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 145830400
+    },
+    "final_validation": [
+      {
+        "method": "il",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      },
+      {
+        "method": "il_sac_wm",
+        "step": 262144,
+        "success_once": 13.0,
+        "episodes": 16
+      },
+      {
+        "method": "sac",
+        "step": 262144,
+        "success_once": 15.0,
+        "episodes": 16
+      },
+      {
+        "method": "sac_wm",
+        "step": 262144,
+        "success_once": 16.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "69b4038fb59fd086978960eaac841f4edd85945195be0eb03ca0c552427f2c65"
+  },
+  {
+    "experiment": "pick-seed1-value-001",
+    "result": {
+      "updates": 5000,
+      "new_environment_interactions": 0,
+      "elapsed_seconds": 4.178514911007369,
+      "trainable_parameters": 78081,
+      "checkpoint": "checkpoints/pick-seed1-value-001/final.pt",
+      "sha256": "37e1633a00bb0a8951063aee3846e70f369a30ba86293ba431b6aeeb115688ae",
+      "torch_peak_allocated_bytes": 208775168
+    },
+    "final_validation": [],
+    "result_sha256": "fdc0eaf7ffceb31988bc10fa4401b87b76196b3079c3feecaf407a6e2e07d2b2"
+  },
+  {
+    "experiment": "pick-seed1-wm-001",
+    "result": {
+      "updates": 10000,
+      "elapsed_seconds": 10.598430278012529,
+      "trainable_parameters": 88875,
+      "new_environment_interactions": 0,
+      "checkpoint": "checkpoints/pick-seed1-wm-001/final.pt",
+      "sha256": "cf4db21366a97fe0e13d81d31da7fc1cdacb4022a8a649b173e7f17a98f948f9",
+      "torch_peak_allocated_bytes": 208573440
+    },
+    "final_validation": [],
+    "result_sha256": "c11aa352bc9dba7171a3a22f128b67ab85889d2a18377a9ffa1e1e1b85400024"
+  },
+  {
+    "experiment": "pick-seed2-a-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 759.753390398022,
+      "frozen_il_verified": false,
+      "torch_peak_allocated_bytes": 141894656
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "d53b86c53c785576d491ea844273fca9413494c44cd4d58c145060431a45e57e"
+  },
+  {
+    "experiment": "pick-seed2-b-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 783.885703011998,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142469632
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "5cc4500a49b439a7cd109a655073dc0f19a3fe5b1d519538dfc358a6bb2e63f7"
+  },
+  {
+    "experiment": "pick-seed2-bc-001",
+    "result": {
+      "iterations": 10000,
+      "training_examples": 55092,
+      "validation_examples": 13897,
+      "validation_interactions": 80000,
+      "training_online_interactions": 0,
+      "elapsed_seconds": 555.282128256018,
+      "torch_peak_allocated_bytes": 27623424,
+      "torch_peak_reserved_bytes": 33554432,
+      "checkpoint_selection": "fixed_final",
+      "final_test_evaluated": false
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 10000,
+        "success_once": 0.0,
+        "episodes": 40
+      }
+    ],
+    "result_sha256": "85112efd6d5955d837a72a01a303a963a3ce71de1668cdea234c0b2a3abd7c41"
+  },
+  {
+    "experiment": "pick-seed2-c-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 0,
+      "gradient_updates": 64528,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 847.5517403629783,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142838272
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "254af943fa06d0ba2c4f5b62e2f28eb374364f91f3e09cc7c3fc20b913742965"
+  },
+  {
+    "experiment": "pick-seed2-c-continue-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 16000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 904.8570660700207,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 142838272
+    },
+    "final_validation": [
+      {
+        "method": "default",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "936e1e7f26e7266de8ad02d869970eeebc157a9a43b5c790fff90fc5b7e56410"
+  },
+  {
+    "experiment": "pick-seed2-u0-001",
+    "result": {
+      "training_interactions": 262144,
+      "inherited_training_interactions": 262144,
+      "gradient_updates": 65536,
+      "validation_interactions": 64000,
+      "final_test_evaluated": false,
+      "elapsed_seconds": 1092.0897775129997,
+      "frozen_il_verified": true,
+      "torch_peak_allocated_bytes": 145830400
+    },
+    "final_validation": [
+      {
+        "method": "il",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      },
+      {
+        "method": "il_sac_wm",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      },
+      {
+        "method": "sac",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      },
+      {
+        "method": "sac_wm",
+        "step": 262144,
+        "success_once": 0.0,
+        "episodes": 16
+      }
+    ],
+    "result_sha256": "2d522c70282046bd15c0efe0a2772ab992c386fa228ebdb4724f7ee52deeab24"
+  },
+  {
+    "experiment": "pick-seed2-value-001",
+    "result": {
+      "updates": 5000,
+      "new_environment_interactions": 0,
+      "elapsed_seconds": 4.493484865990467,
+      "trainable_parameters": 78081,
+      "checkpoint": "checkpoints/pick-seed2-value-001/final.pt",
+      "sha256": "c715b2da1337119b0765459c9b91ee009d2d94e194ff9346b4eefb7367d5a683",
+      "torch_peak_allocated_bytes": 208775168
+    },
+    "final_validation": [],
+    "result_sha256": "4404b6571f230f3be8c7a62b55d024a91741ea4c7244749f2fee5552041630b6"
+  },
+  {
+    "experiment": "pick-seed2-wm-001",
+    "result": {
+      "updates": 10000,
+      "elapsed_seconds": 10.906618898996385,
+      "trainable_parameters": 88875,
+      "new_environment_interactions": 0,
+      "checkpoint": "checkpoints/pick-seed2-wm-001/final.pt",
+      "sha256": "5f33cdbbffaf2f2c4b2634f3dedbd2bdafa00badbac3cecfe29e0ce39d86d347",
+      "torch_peak_allocated_bytes": 208573440
+    },
+    "final_validation": [],
+    "result_sha256": "5f7623ccf8e57721d5e4000fb4a867b2e95d9bcc49824ccd86746e4c4c6cc343"
+  }
+]

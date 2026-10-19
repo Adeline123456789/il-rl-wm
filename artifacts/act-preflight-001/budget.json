@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-16T18:26:36.341787+00:00",
+  "ended_job_seconds": 25225.871549465985,
+  "active": [
+    {
+      "id": "e3-rlpd-full-001",
+      "child_pid": 1786044,
+      "elapsed_seconds": 5599.398741
+    }
+  ],
+  "remaining_seconds_before_existing_pending_jobs": 55574.72970953402
+}

@@ -1,0 +1,127 @@
+{
+  "phase": "completed",
+  "completed": [
+    "act-t0-smoke-001",
+    "act-t0-seed0-001",
+    "act-t0-k16-seed0-001",
+    "act-t0-k30-seed0-001"
+  ],
+  "current": null,
+  "stage": "ACT-T0",
+  "start_budget_used_seconds": 64210.38123582094,
+  "available_training_seconds": 14989.61876417906,
+  "stage_limit_seconds": 5700,
+  "final_test_reserve_seconds": 7200,
+  "teacher_gate_passed": true,
+  "results": {
+    "act-t0-seed0-001": {
+      "first": {
+        "method": "act_requery_first",
+        "episodes": 40,
+        "success_once": 1.0,
+        "success_at_end": 0.0,
+        "mean_return": 0.475,
+        "stage_counts": {
+          "approached": 21,
+          "is_grasped": 21,
+          "lifted": 8,
+          "is_obj_placed": 1
+        },
+        "latency_batch8_ms_mean": 1.310010996821802,
+        "latency_batch8_ms_p95": 1.4260436160839163,
+        "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      },
+      "ensemble": {
+        "method": "act_temporal_ensemble",
+        "episodes": 40,
+        "success_once": 21.0,
+        "success_at_end": 2.0,
+        "mean_return": 12.125,
+        "stage_counts": {
+          "approached": 40,
+          "is_grasped": 40,
+          "lifted": 37,
+          "is_obj_placed": 22
+        },
+        "latency_batch8_ms_mean": 1.434493591048522,
+        "latency_batch8_ms_p95": 1.569708454189822,
+        "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      }
+    },
+    "act-t0-k16-seed0-001": {
+      "first": {
+        "method": "act_requery_first",
+        "episodes": 40,
+        "success_once": 4.0,
+        "success_at_end": 0.0,
+        "mean_return": 1.275,
+        "stage_counts": {
+          "approached": 38,
+          "is_grasped": 38,
+          "lifted": 25,
+          "is_obj_placed": 4
+        },
+        "latency_batch8_ms_mean": 1.3082224410609342,
+        "latency_batch8_ms_p95": 1.4422476509935223,
+        "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      },
+      "ensemble": {
+        "method": "act_temporal_ensemble",
+        "episodes": 40,
+        "success_once": 25.0,
+        "success_at_end": 3.0,
+        "mean_return": 24.2,
+        "stage_counts": {
+          "approached": 40,
+          "is_grasped": 40,
+          "lifted": 33,
+          "is_obj_placed": 26
+        },
+        "latency_batch8_ms_mean": 1.4404641865403391,
+        "latency_batch8_ms_p95": 1.58610910148127,
+        "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      }
+    },
+    "act-t0-k30-seed0-001": {
+      "first": {
+        "method": "act_requery_first",
+        "episodes": 40,
+        "success_once": 8.0,
+        "success_at_end": 4.0,
+        "mean_return": 10.65,
+        "stage_counts": {
+          "approached": 33,
+          "is_grasped": 33,
+          "lifted": 19,
+          "is_obj_placed": 8
+        },
+        "latency_batch8_ms_mean": 1.3071189032052644,
+        "latency_batch8_ms_p95": 1.4343991031637415,
+        "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      },
+      "ensemble": {
+        "method": "act_temporal_ensemble",
+        "episodes": 40,
+        "success_once": 30.0,
+        "success_at_end": 5.0,
+        "mean_return": 27.625,
+        "stage_counts": {
+          "approached": 40,
+          "is_grasped": 40,
+          "lifted": 35,
+          "is_obj_placed": 30
+        },
+        "latency_batch8_ms_mean": 1.4436877749976702,
+        "latency_batch8_ms_p95": 1.587704653502442,
+        "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+        "validation_seed": 10000
+      }
+    }
+  },
+  "next_stage": "ACT-D1 expert-state-only distillation; freeze teacher using development validation"
+}

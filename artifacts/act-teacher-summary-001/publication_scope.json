@@ -1,0 +1,143 @@
+{
+  "stage": "ACT-T0 completed; D1 implementation and CPU tests",
+  "excluded_local_video_files": [
+    {
+      "path": "artifacts/act-t0-seed0-001/videos/0.mp4",
+      "bytes": 1053004
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos/1.mp4",
+      "bytes": 1068619
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos/2.mp4",
+      "bytes": 1117350
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos/3.mp4",
+      "bytes": 1239563
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos/4.mp4",
+      "bytes": 1005065
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos_ensemble/0.mp4",
+      "bytes": 1420241
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos_ensemble/1.mp4",
+      "bytes": 1458847
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos_ensemble/2.mp4",
+      "bytes": 1422369
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos_ensemble/3.mp4",
+      "bytes": 1450720
+    },
+    {
+      "path": "artifacts/act-t0-seed0-001/videos_ensemble/4.mp4",
+      "bytes": 1435451
+    },
+    {
+      "path": "artifacts/act-d1-seed0-001/sac_mean/videos/0.mp4",
+      "bytes": 1524121
+    },
+    {
+      "path": "artifacts/act-d1-seed0-001/sac_mean/videos/1.mp4",
+      "bytes": 1565583
+    },
+    {
+      "path": "artifacts/act-d1-seed0-001/sac_mean/videos/2.mp4",
+      "bytes": 1556917
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos/0.mp4",
+      "bytes": 1295915
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos/1.mp4",
+      "bytes": 1335647
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos/2.mp4",
+      "bytes": 1353295
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos/3.mp4",
+      "bytes": 1317994
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos/4.mp4",
+      "bytes": 1379335
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos_ensemble/0.mp4",
+      "bytes": 1394634
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos_ensemble/1.mp4",
+      "bytes": 1418438
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos_ensemble/2.mp4",
+      "bytes": 1420916
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos_ensemble/3.mp4",
+      "bytes": 1365035
+    },
+    {
+      "path": "artifacts/act-t0-k16-seed0-001/videos_ensemble/4.mp4",
+      "bytes": 1495622
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos/0.mp4",
+      "bytes": 1255944
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos/1.mp4",
+      "bytes": 1267306
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos/2.mp4",
+      "bytes": 1278385
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos/3.mp4",
+      "bytes": 1306244
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos/4.mp4",
+      "bytes": 1301437
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos_ensemble/0.mp4",
+      "bytes": 1415411
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos_ensemble/1.mp4",
+      "bytes": 1429467
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos_ensemble/2.mp4",
+      "bytes": 1398063
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos_ensemble/3.mp4",
+      "bytes": 1382464
+    },
+    {
+      "path": "artifacts/act-t0-k30-seed0-001/videos_ensemble/4.mp4",
+      "bytes": 1426719
+    }
+  ],
+  "excluded_categories": [
+    "original datasets",
+    "full training checkpoints and replay",
+    "old newly completed experiments pending subsequent batch evidence publication"
+  ],
+  "note": "All T0 metrics, per-episode logs, configs, source snapshots and selected portable teacher included. D1 GPU results not yet included."
+}

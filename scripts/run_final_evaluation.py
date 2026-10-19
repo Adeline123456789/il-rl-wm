@@ -17,6 +17,15 @@ def main():
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--ids',nargs='+',help='Explicit registered subset; unselected entries remain pending')
     args=p.parse_args();plan=json.loads(args.plan.read_text())
+    # ACT task supersedes the earlier evaluation start authorization: protect the
+    # same test seeds until the new comparison conditions are explicitly frozen.
+    gate=ROOT/'configs/act_final_test_gate.json'
+    if gate.exists():
+        deadline=time.monotonic()+86400
+        while not json.loads(gate.read_text())['released']:
+            if time.monotonic()>=deadline:
+                raise RuntimeError('ACT comparison not frozen; final-test gate remains closed')
+            time.sleep(30)
     assert (plan['seed'],plan['episodes_per_model_method'],plan['num_envs'])==(20000,100,10)
     entries=plan['entries'];ids=[e['id'] for e in entries]
     assert len(set(ids))==len(ids)

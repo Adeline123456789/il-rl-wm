@@ -1,0 +1,17 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--junitxml=artifacts/act-cpu-tests-003/junit.xml"
+  ],
+  "started_at": "2026-10-16T17:48:54.425625+00:00",
+  "cpu_only": true,
+  "new_environment_interactions": 0,
+  "child_pid": 1955912,
+  "exit_code": 0,
+  "elapsed_seconds": 4.617220775980968,
+  "ended_at": "2026-10-16T17:48:59.042835+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "pid": 1949784,
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "PYTHONPATH": "",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  }
+}

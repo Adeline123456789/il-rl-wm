@@ -1,5 +1,17 @@
 # 上游来源登记
 
+## ACT 扩展来源（2026-10-17）
+
+唯一新增训练底座仍是上述锁定 ManiSkill `62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3`。`vendor/maniskill/act/SOURCE_MANIFEST.json` 登记原样保存的 train.py、README、detr_vae.py、transformer.py、evaluate.py、make_env.py、utils.py 及许可证，blob逐一匹配；Apache-2.0/第三方声明随代码保留。ACT论文为 Zhao等，RSS2023，https://arxiv.org/abs/2304.13705 。
+
+本地适配 `scripts/act_teacher.py` 复用 DETRVAE、Transformer、CVAE encoder，增加episode-tail有效mask并使用decoder最后一层；`train_act_teacher.py` 使用现有真实GPU回放、AdamW、L1+KL及StepLR，取消EMA、明确均匀有放回采样及首动作重查询；时间集成单列。Torch/numpy/h5py、已有IPython与ManiSkill环境沿用，不安装另一套学习框架。已完成CPU接口验证，尚未完成GPU教师闭环；必要偏差见ACT_FAILURES.md。
+
+原始ACT https://github.com/tonyzhaozh/act ，commit `742c753c0d4a5d87076c8f69e5628c79a8cc5488`，MIT；LeRobot https://github.com/huggingface/lerobot ，commit `146d8474932c8b566717eb2738ba459337ab71c4`，Apache-2.0/第三方MIT。仅阅读推理latent、动作队列、temporal ensemble与normalization接口；六份文件及hash见literature/act_source_manifest.json，不安装其依赖。
+
+Policy Decorator https://github.com/tongzhoumu/policy_decorator ，commit `92ba9ba442587ae5989c286355ace2200a0537fb`；论文 https://arxiv.org/abs/2412.13630 ，Yuan/Mu/Tao/Fang/Zhang/Su。只读README与online/pi_dec_bet_maniskill2.py；README声明MIT但该commit的LICENSE为空blob `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`，因此不复制其实现到发布代码。其ManiSkill2/BeT/残差SAC环境不接入。源码evaluate仍执行base+scaled residual，最终依赖教师；本项目只参考受控探索/遗忘诊断，不照搬残差主干。它将reward减1并采用不同bootstrap协议，也不直接与本项目数值等同。
+
+PAC-ACT https://arxiv.org/html/2607.09590v1 为chunk-level PPO，当前未核实作者官方源码，故无代码复用。完整方法及实验正文已核对；其视觉骨干复制、Gaussian head、value critic和奖励级行为先验不是标准单步SAC结果。详见ACT_RELATED_WORK.md。
+
 当前状态补充（2026-10-16）：以下各段保留接入时的历史状态。主ManiSkill BC、A/B/C、完整U0、C续训和两次F1诊断已经真实完成；RLPD隔离训练/评测smoke完成，完整运行排队；U1完整seed0规划段运行中。历史段落中的“尚未完成”不代表当前状态，逐实验结果以research_state.json及原始manifest为准。最新核查8份vendor文件SHA256不变，ManiSkill/rfcl缓存checkout仍为锁定commit且工作树干净。
 
 ## ManiSkill：唯一主环境与 BC/SAC 底座

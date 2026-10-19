@@ -1,0 +1,27 @@
+{
+  "experiment_id": "act-t0-k30-seed0-001",
+  "started_at": "2026-10-17T03:52:28.787647+00:00",
+  "ended_at": "2026-10-17T03:57:42.161804+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/train_act_teacher.py",
+    "--config",
+    "configs/act_t0_k30_seed0.json",
+    "--id",
+    "act-t0-k30-seed0-001",
+    "--output",
+    "artifacts/act-t0-k30-seed0-001"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 1800.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 2587877,
+  "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "b8aa2877c1a0dd6238c28143c5b094a6e1777d026154f353bafe17e446c643f5",
+  "source_snapshot_sha256": "d9e1e1660a6e106d710ea08cd6260c307bf0eb06137a8b9f560b5fba9a8a397a",
+  "child_pid": 2587891,
+  "elapsed_seconds": 313.2939230729826
+}

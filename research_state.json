@@ -2,7 +2,7 @@
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
   "phase": "independent_training_repeats",
-  "branch": "research/u0-batch-20261016",
+  "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
     "ManiSkill": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"
@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 16542.608747378996,
+    "gpu_job_seconds_used": 25225.871549465985,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -94,7 +94,21 @@
     "f1-u0-step196608-prefix20-001",
     "f1-u1-step196608-prefix20-001",
     "pick-seed1-bc-001",
-    "pick-seed1-a-001"
+    "pick-seed1-a-001",
+    "pick-seed1-b-001",
+    "pick-seed1-c-001",
+    "pick-seed1-wm-001",
+    "pick-seed1-value-001",
+    "pick-seed1-u0-001",
+    "pick-seed1-c-continue-001",
+    "pick-seed2-bc-001",
+    "pick-seed2-a-001",
+    "pick-seed2-b-001",
+    "pick-seed2-c-001",
+    "pick-seed2-wm-001",
+    "pick-seed2-value-001",
+    "pick-seed2-u0-001",
+    "pick-seed2-c-continue-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -620,7 +634,7 @@
       "final_validation_mean_return": 0.0
     }
   },
-  "next_experiment": "Continue independent Pick1/2, RLPD, Stack/Peg, U1 seed1/2, Pick3/U1-3/Pick4/U1-4; then registered final evaluation and CPU aggregation automatically on success. Preserve 2h final-evaluation reserve.",
+  "next_experiment": "Existing registered old training chain continues; ACT-T0 after last old training if shared remaining budget permits. Final test waits for explicit comparison freeze. ACT-D1 must await usable teacher.",
   "blockers": [],
   "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
   "background_jobs": [
@@ -752,6 +766,11 @@
       "role": "queue-pick-seed1-pipeline-003",
       "status_file": "artifacts/queue-pick-seed1-pipeline-003/status.json",
       "launched_pid": 1128167
+    },
+    {
+      "role": "ACT-T0 teacher stage",
+      "status_file": "artifacts/queue-act-t0-stage-001/status.json",
+      "launched_pid": 1959272
     }
   ],
   "environment": {
@@ -777,8 +796,8 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "pick-seed1-b-001",
-    "authoritative_live_file": "artifacts/pick-seed1-pipeline-001/status.json"
+    "experiment": "e3-rlpd-full-001",
+    "authoritative_live_file": "artifacts/e3-rlpd-full-001/manifest.json"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -787,7 +806,11 @@
   "upload_access": {
     "local_git_https": "no credential; dry-run exit128",
     "github_connector": "authenticated as repository owner; metadata reports push permission",
-    "status": "User requested current in-progress snapshot; preparing connector upload to research/u0-batch-20261016"
+    "status": "In-progress snapshot uploaded and remote tree/files verified",
+    "remote_branch": "research/u0-batch-20261016",
+    "remote_commit": "4e014a582be095eec4571495998f5cc433cc2664",
+    "local_snapshot_commit": "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+    "verification": "artifacts/github-upload-receipt-001/verification.json"
   },
   "local_hypotheses": [
     {
@@ -798,7 +821,7 @@
     }
   ],
   "final_evaluation": {
-    "status": "queued_after_all_registered_training",
+    "status": "queued_with_ACT_comparison_freeze_gate",
     "plan": "configs/final_evaluation_plan.json",
     "models_or_stages": 52,
     "method_conditions": 88,
@@ -807,8 +830,39 @@
     "final_test_accessed": false,
     "queue": "artifacts/queue-final-evaluation-001/status.json",
     "summary_queue": "artifacts/queue-final-results-001/status.json",
-    "method_fixed": true
+    "method_fixed": true,
+    "release_gate": "configs/act_final_test_gate.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
-  "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json"
+  "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
+  "act_research": {
+    "task": "ACT→SAC transfer, user authorized 2026-10-17",
+    "plan": "ACT_SAC_PLAN.md",
+    "phase": "teacher_cpu_verified_gpu_queued",
+    "branch": "research/act-sac-transfer",
+    "cpu_tests": "artifacts/act-cpu-tests-003",
+    "cpu_real_data": "artifacts/act-real-data-cpu-002",
+    "teacher_queue": "artifacts/queue-act-t0-stage-001/status.json",
+    "teacher_max_gpu_seconds": 5700,
+    "old_training_preserved": true,
+    "budget_reset": false,
+    "distillation_first_data": "expert_train_states_only",
+    "parameter_transfer": "not_started",
+    "wm": "unchanged",
+    "upload": "background at complete ACT transfer milestone; new branch and PR, no main merge",
+    "cpu_preflight": {
+      "tests": "artifacts/act-cpu-tests-004",
+      "tests_passed": 35,
+      "real_data": "artifacts/act-real-data-cpu-003",
+      "updates": 10,
+      "new_environment_interactions": 0
+    },
+    "continuation": {
+      "automation_id": "il-rl-wm-act",
+      "kind": "heartbeat",
+      "hourly_checks_limit": 24,
+      "stage": "teacher_queued",
+      "stop_on": "batch complete or shared GPU budget exhausted"
+    }
+  }
 }

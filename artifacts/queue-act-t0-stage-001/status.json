@@ -1,0 +1,13 @@
+{
+  "pid": 1959272,
+  "prerequisite": "artifacts/queue-u1-pick-seed4-pipeline-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_act_teacher_stage.py",
+    "--output",
+    "artifacts/act-t0-stage-001"
+  ],
+  "started_at": "2026-10-16T17:54:08.632054+00:00",
+  "phase": "waiting",
+  "exit_code": null
+}
