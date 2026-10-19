@@ -1,0 +1,8 @@
+[
+  "/home/midea/miniconda3/envs/avp_clean/bin/python3.10",
+  "scripts/summarize_act_online.py",
+  "--plan",
+  "configs/act_initialization_analysis_plan.json",
+  "--output",
+  "artifacts/act-initialization-analysis-001/summary-002"
+]

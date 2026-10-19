@@ -1,0 +1,15 @@
+{
+  "pid": 1952173,
+  "cpu_only": true,
+  "command": [
+    ".venv/bin/python",
+    "scripts/train_act_teacher.py",
+    "--config",
+    "configs/act_t0_cpu_audit.json",
+    "--id",
+    "act-real-data-cpu-001",
+    "--output",
+    "artifacts/act-real-data-cpu-001",
+    "--cpu-audit"
+  ]
+}

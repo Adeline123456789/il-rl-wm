@@ -1,0 +1,27 @@
+{
+  "experiment_id": "act-d1-smoke-001",
+  "started_at": "2026-10-19T01:24:20.554342+00:00",
+  "ended_at": "2026-10-19T01:24:38.864162+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/distill_act_sac.py",
+    "--config",
+    "configs/act_d1_smoke.json",
+    "--id",
+    "act-d1-smoke-001",
+    "--output",
+    "artifacts/act-d1-smoke-001"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 300.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 2746412,
+  "code_commit": "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "54de5cdb336b5c74ff6c8149d2ebc46f761fa850582f6bb3b8d9629ecd2bddcf",
+  "source_snapshot_sha256": "a8385878e371fbe71f831f36b71f38211cda5e1a5254b09b4ba6c6a645adff13",
+  "child_pid": 2746426,
+  "elapsed_seconds": 18.248753916996066
+}

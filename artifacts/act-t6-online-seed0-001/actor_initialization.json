@@ -1,0 +1,14 @@
+{
+  "kind": "mlp",
+  "checkpoint": "releases/act-d1-negative-001/weights.pt",
+  "initial_log_std": -2.0,
+  "sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099",
+  "actor_parameters": 144648,
+  "variance_trainable": true,
+  "actor_hash": "0b26484617ba01a1ee7473bc05744515fc21b0e48a70df38dd1394b3d66783d5",
+  "critic1_hash": "0836c51e836994c293707d55e67c55a00d2383912b89a9753d45462110a2441d",
+  "critic2_hash": "e3d4137ec09e0ed0c3a83bf768b3a55bf406f1d4a78a9e829efbee10d8d5bca9",
+  "critic_layer_norm": true,
+  "bc_checkpoint": null,
+  "teacher_calls_in_sac_updates": false
+}

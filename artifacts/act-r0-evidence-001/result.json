@@ -1,0 +1,86 @@
+{
+  "experiment": "act-r0-expert50-seed0-001",
+  "source_files_verified": 174,
+  "manifest_sha256": "2c2eaeb2b00fd194137ddc36ccd77c24ea8400d59c43a44b7b837133e6230f4b",
+  "source_checkpoint_sha256": "c0f9c8a17740ec36164b278f4eab5a9cf5ba247a37aad2ea88f0c0a0f48d6f2d",
+  "portable_sha256": "6fcb1f76b8d18588c57ec39cd1cad54a2a3588c172ee29ab03ae172f119b0aa4",
+  "initial_actor_and_critics_match_T2": true,
+  "config_differences_from_T2": {
+    "expert_audit": [
+      null,
+      "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json"
+    ],
+    "exp_name": [
+      "act-t2-online-seed0-002",
+      "act-r0-expert50-seed0-001"
+    ],
+    "expert_dataset": [
+      null,
+      "data/replay/e0-pickcube-gpu-replay-full-003/trajectory.state.pd_ee_delta_pos.physx_cuda.h5"
+    ],
+    "output": [
+      "artifacts/act-t2-online-seed0-002",
+      "artifacts/act-r0-expert50-seed0-001"
+    ]
+  },
+  "sampling": {
+    "expert_samples": 33038336,
+    "online_samples": 33038336,
+    "expert_fraction": 0.5
+  },
+  "original_budget_seconds": 85238.75034914288,
+  "result": {
+    "id": "act-r0-expert50-seed0-001",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 31,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1323.153780288,
+    "peak_device_mib": 4669,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "c0f9c8a17740ec36164b278f4eab5a9cf5ba247a37aad2ea88f0c0a0f48d6f2d",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 606,
+    "losses": {
+      "losses/alpha": {
+        "min": 0.02594219334423542,
+        "max": 0.7388468980789185,
+        "final": 0.04866662621498108
+      },
+      "losses/qf1_values": {
+        "min": 23.035324096679688,
+        "max": 55.39423751831055,
+        "final": 25.058788299560547
+      },
+      "losses/qf2_values": {
+        "min": 22.951892852783203,
+        "max": 55.42539596557617,
+        "final": 24.800968170166016
+      },
+      "losses/actor_loss": {
+        "min": -55.834716796875,
+        "max": -23.05803680419922,
+        "final": -24.87065887451172
+      }
+    }
+  },
+  "scope": "Seed0 development only; no new environment steps or optimization; T6 difference not statistical proof",
+  "queue_snapshot": {
+    "pid": 18028,
+    "phase": "training",
+    "completed": [
+      "act-r3-expert50-smoke-001",
+      "act-r0-expert50-seed0-001"
+    ],
+    "current": "act-r1-expert50-seed0-001",
+    "started_at": 1792401395.6975894,
+    "exit_code": null,
+    "plan_sha256": "7853d194c57ec89b7030d26b8bcd59552458e5329b258196a0834cd2b60b8342",
+    "authorization_sha256": "ce15673369b428439bf2072d33c1c420ad02bee390b36d5583bbbdf779e3dd0c",
+    "reused_completed_smokes": [
+      "act-r0-expert50-smoke-001"
+    ]
+  }
+}

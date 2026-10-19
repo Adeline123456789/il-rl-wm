@@ -1,0 +1,17 @@
+{
+  "pid": 2782042,
+  "phase": "completed",
+  "completed": [
+    "act-t2-online-seed0-002",
+    "act-t3-online-seed0-001",
+    "act-t4-online-seed0-001",
+    "act-t5-online-seed0-001",
+    "act-t6-online-seed0-001"
+  ],
+  "current": null,
+  "started_at": 1792375384.4459126,
+  "plan_sha256": "150f2325095b4ee351fa99e9ec7a2a962c09f75e3f3746ce88424d7e00860b41",
+  "new_budget_granted": false,
+  "exit_code": 0,
+  "ended_at": 1792383741.384393
+}

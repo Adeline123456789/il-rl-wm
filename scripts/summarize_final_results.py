@@ -16,11 +16,22 @@ def read(path):
     return json.loads(path.read_text())
 
 
-def summarize(plan, root):
-    assert (plan['seed'], plan['episodes_per_model_method'], plan['num_envs']) == (20000, 100, 10)
+def summarize(plan, root, attempts=None):
+    seed = plan['seed']
+    if plan.get('final_protocol'):
+        registered = read(Path(plan['final_protocol']))
+        assert registered['status'] == 'registered_before_training'
+        assert seed == registered['seed'] and seed not in (10000, 20000)
+    else:
+        assert seed == 20000
+    assert (plan['episodes_per_model_method'], plan['num_envs']) == (100, 10)
+    attempts = attempts or {}
+    assert set(attempts) <= {entry['id'] for entry in plan['entries']}
+    assert all(Path(name).name == name and name.startswith(f'e7-test-{key}-')
+               for key, name in attempts.items())
     conditions, evidence = [], []
     for entry in plan['entries']:
-        folder = root / f"e7-test-{entry['id']}-001"
+        folder = root / attempts.get(entry['id'], f"e7-test-{entry['id']}-001")
         rows = [dict(id=entry['id'], **{key: entry[key] for key in IDENTITY}, method=method,
                      status='not_started', episodes=None, success_once=None, success_at_end=None,
                      success_rate=None, mean_return=None, evaluation_interactions=None)
@@ -40,19 +51,27 @@ def summarize(plan, root):
         result = read(folder / 'result.json')
         counter = read(folder / 'interactions.json')
         episodes = [json.loads(line) for line in (folder / 'episodes.jsonl').read_text().splitlines()]
-        assert result['purpose'] == 'final_test' and result['seed'] == 20000
+        if entry['framework']=='act':
+            # Keep original ACT evidence unchanged; adapt its explicit field names locally.
+            assert (result['kind'],result['mode'])==(entry['kind'],entry['mode'])
+            assert result['checkpoint']==entry['checkpoint']
+            episodes=[dict(ep,episode=ep['episode_index'],step=ep['iteration']) for ep in episodes]
+        assert result['purpose'] == 'final_test' and result['seed'] == seed
         assert result['num_envs'] == 10 and result['new_training_interactions'] == 0
         assert result['protocol']['env_id'] == entry['task']
+        assert result['protocol']['reset_protocol'] == 'explicit_batch_seed'
         assert result['training_seed'] == entry['training_seed']
         budget_key = 'lineage_training_interactions' if entry['framework'] == 'main' else 'training_interactions'
         assert result[budget_key] == entry['training_interactions']
-        methods = result['methods'] if entry['framework'] == 'main' else {'RLPD': result}
+        methods = (result['methods'] if entry['framework'] == 'main' else
+                   {result['method']:result} if entry['framework']=='act' else {'RLPD': result})
         assert set(methods) == set(entry['methods']) == {ep['method'] for ep in episodes}
         assert len(episodes) == 100 * len(rows)
         total = 0
         for row in rows:
             selected = [ep for ep in episodes if ep['method'] == row['method']]
             assert len(selected) == 100 and {ep['episode'] for ep in selected} == set(range(100))
+            assert all(ep['eval_seed'] == seed + ep['episode'] // 10 * 10 for ep in selected)
             assert len({ep['step'] for ep in selected}) == 1
             assert all(ep['episode_len'] == result['protocol']['max_episode_steps'] for ep in selected)
             assert all(ep['success_once'] in [0, 1] and ep['success_at_end'] in [0, 1]
@@ -109,8 +128,13 @@ def main():
     parser.add_argument('--plan', type=Path, default=Path('configs/final_evaluation_plan.json'))
     parser.add_argument('--root', type=Path, default=Path('artifacts'))
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--attempt-map', type=Path, help='Explicit registered-condition to attempt ID mapping; original failures stay intact')
     args = parser.parse_args()
-    result = summarize(read(args.plan), args.root)
+    attempts = read(args.attempt_map) if args.attempt_map else None
+    result = summarize(read(args.plan), args.root, attempts)
+    if args.attempt_map:
+        result['attempt_mapping'] = attempts
+        result['attempt_mapping_sha256'] = hashlib.sha256(args.attempt_map.read_bytes()).hexdigest()
     result['plan_sha256'] = hashlib.sha256(args.plan.read_bytes()).hexdigest()
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / 'summary.json').write_text(json.dumps(result, indent=2) + '\n')

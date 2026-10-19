@@ -42,6 +42,11 @@ import mani_skill.envs
 @dataclass
 class Args:
     output: str = ""
+    retention_config: Optional[str] = None
+    actor_init_checkpoint: Optional[str] = None
+    actor_init_kind: str = 'mlp'
+    initial_log_std: Optional[float] = None
+    matched_eval_resets: bool = False
     bc_checkpoint: Optional[str] = None
     expert_dataset: Optional[str] = None
     expert_audit: Optional[str] = None
@@ -319,8 +324,13 @@ class Logger:
     def close(self):
         self.writer.close()
 
-if __name__ == "__main__":
-    args = tyro.cli(Args)
+def validate_args(args):
+    """Validate the registered SAC interfaces before constructing any environment."""
+    assert args.actor_init_kind in {'mlp','act'}
+    if args.retention_config:
+        assert args.actor_init_checkpoint and args.actor_init_kind == 'act'
+        assert not (args.expert_dataset or args.resume_checkpoint or args.wm_checkpoint or args.bc_checkpoint)
+    assert not (args.actor_init_checkpoint and (args.bc_checkpoint or args.resume_checkpoint or args.wm_checkpoint)), 'Offline ACT initialization is a separate no-planning experiment'
     assert bool(args.expert_dataset) == bool(args.expert_audit)
     assert bool(args.wm_checkpoint)==bool(args.task_value_checkpoint)
     if args.wm_checkpoint:
@@ -328,7 +338,7 @@ if __name__ == "__main__":
     if args.resume_checkpoint:
         assert args.autotune and args.learning_starts==0, 'Resume as a new segment with retained replay and immediate updates'
     if args.expert_dataset:
-        assert args.bc_checkpoint and args.batch_size % 2 == 0, 'C uses BC initialization and exactly 50% expert samples'
+        assert args.batch_size % 2 == 0, 'Expert mixture requires exactly 50% expert samples'
     assert args.output and not args.track and not args.capture_video and not args.save_trajectory
     assert not args.evaluate and args.checkpoint is None, 'Use explicit evaluation/restart entry; no implicit optimizer reset'
     assert not args.partial_reset and not args.eval_partial_reset and args.bootstrap_at_done == 'always'
@@ -339,6 +349,11 @@ if __name__ == "__main__":
     assert args.training_freq * args.utd >= 1 and args.policy_frequency == 1
     assert args.num_eval_steps % args.max_episode_steps == 0 and args.eval_freq > 0
     assert args.total_timesteps >= args.learning_starts
+
+
+if __name__ == "__main__":
+    args = tyro.cli(Args)
+    validate_args(args)
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
     assert not (output / 'metrics.jsonl').exists(), 'Do not append a new run to old evidence'
     torch.set_num_threads(args.torch_threads)
@@ -416,6 +431,9 @@ if __name__ == "__main__":
     max_action = float(envs.single_action_space.high[0])
 
     actor = Actor(envs).to(device)
+    from scripts.sac_actor_initialization import initialize_actor
+    actor, actor_initialization = initialize_actor(actor, args.actor_init_checkpoint,
+        args.actor_init_kind, args.initial_log_std)
     frozen_il = None
     if args.bc_checkpoint:
         # Loading BC must not shift fresh critic/variance initialization or rollout RNG.
@@ -430,6 +448,11 @@ if __name__ == "__main__":
     qf2 = SoftQNetwork(envs,args.critic_layer_norm).to(device)
     qf1_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
     qf2_target = SoftQNetwork(envs,args.critic_layer_norm).to(device)
+    if args.actor_init_checkpoint or args.initial_log_std is not None:
+        actor_initialization.update(actor_hash=fingerprint(actor),critic1_hash=fingerprint(qf1),
+            critic2_hash=fingerprint(qf2),critic_layer_norm=args.critic_layer_norm,
+            bc_checkpoint=args.bc_checkpoint,teacher_calls_in_sac_updates=False)
+        (output/'actor_initialization.json').write_text(json.dumps(actor_initialization,indent=2))
     if args.checkpoint is not None:
         ckpt = torch.load(args.checkpoint)
         actor.load_state_dict(ckpt['actor'])
@@ -467,6 +490,10 @@ if __name__ == "__main__":
         (output / 'expert_manifest.json').write_text(json.dumps(dict(**expert.manifest, expert_fraction=0.5),indent=2))
     sampled_expert = 0
     sampled_online = 0
+    retention = None
+    if args.retention_config:
+        from scripts.act_retention import MeanRetention
+        retention = MeanRetention.from_config(args.retention_config, device, output)
 
     # TRY NOT TO MODIFY: start the game
     obs, info = envs.reset(seed=args.seed) # in Gymnasium, seed is given to reset() instead of seed()
@@ -607,6 +634,9 @@ if __name__ == "__main__":
                 qf2_pi = qf2(data.obs, pi)
                 min_qf_pi = torch.min(qf1_pi, qf2_pi)
                 actor_loss = ((alpha * log_pi) - min_qf_pi).mean()
+                if retention is not None:
+                    retention_mse, retention_coefficient = retention.loss(actor, global_step)
+                    actor_loss = actor_loss + retention_coefficient * retention_mse
 
                 actor_optimizer.zero_grad()
                 actor_loss.backward()
@@ -647,6 +677,10 @@ if __name__ == "__main__":
             logger.add_scalar("losses/qf2_loss", qf2_loss.item(), global_step)
             logger.add_scalar("losses/qf_loss", qf_loss.item() / 2.0, global_step)
             logger.add_scalar("losses/actor_loss", actor_loss.item(), global_step)
+            if retention is not None:
+                logger.add_scalar("retention/mse", retention_mse.item(), global_step)
+                logger.add_scalar("retention/coefficient", retention_coefficient, global_step)
+                logger.add_scalar("retention/samples", retention.samples, global_step)
             logger.add_scalar("losses/alpha", alpha, global_step)
             logger.add_scalar("time/update_time", update_time, global_step)
             logger.add_scalar("time/rollout_time", rollout_time, global_step)
@@ -669,6 +703,10 @@ if __name__ == "__main__":
         (output/'executed_sources.json').write_text(json.dumps(dict(il=int(u0.counts[0]),planned_sac=int(u0.counts[1]),random_sac=int(u0.counts[2]),wm_updates=u0.wm_updates,task_value_updates=u0.value_updates),indent=2))
     (output / 'result.json').write_text(json.dumps(dict(training_interactions=global_step,inherited_training_interactions=args.inherited_training_interactions, gradient_updates=global_update, validation_interactions=validation_interactions, final_test_evaluated=False, elapsed_seconds=time.perf_counter()-started_at, frozen_il_verified=frozen_il is not None, torch_peak_allocated_bytes=torch.cuda.max_memory_allocated()), indent=2))
     interaction_counter.flush()
+    if retention is not None:
+        (output/'retention_result.json').write_text(json.dumps(dict(updates=retention.updates,
+            samples=retention.samples, final_coefficient=retention.coefficient(global_step),
+            teacher_calls_in_sac_updates=False, teacher_required_at_deployment=False), indent=2)+'\n')
     assert interaction_counter.counts['training']['completed_transitions'] == global_step
     assert interaction_counter.counts['validation']['completed_transitions'] == validation_interactions
     logger.close()

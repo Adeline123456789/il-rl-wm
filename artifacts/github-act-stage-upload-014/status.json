@@ -1,0 +1,15 @@
+{
+  "exit_code": 0,
+  "pid": null,
+  "transport": "background authenticated connector",
+  "tool_cells": [
+    "1111",
+    "1115"
+  ],
+  "local_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "remote_commit": "5f8c673f025b9c5707d4cf5f6a90cd618e1c1678",
+  "tree": "2c8c1a034fe6487205c3f0a10c9f5384303a766c",
+  "verified_files": 2301,
+  "all_blob_sha_and_modes_match": true,
+  "main_unchanged": true
+}

@@ -1,0 +1,2631 @@
+{
+  "rows": [
+    {
+      "method": "T5",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 8.0,
+      "success_at_end": 4.0,
+      "grasped_once": 28,
+      "placed_once": 8,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 12.3,
+      "teacher_mse_per_dim": [
+        3.5998900258307764e-21,
+        5.421010862427522e-20,
+        4.87890977618477e-19,
+        1.0167075514821988e-12
+      ],
+      "mean_log_std": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "metrics": {}
+    },
+    {
+      "method": "T5",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0017391155706718564,
+        0.003517170436680317,
+        0.02012428641319275,
+        0.9804805517196655
+      ],
+      "mean_log_std": [
+        -0.11624637246131897,
+        -0.12658604979515076,
+        -0.15972694754600525,
+        -0.13333266973495483
+      ],
+      "metrics": {
+        "losses/qf1_values": 47.19771194458008,
+        "losses/qf2_values": 47.198081970214844,
+        "losses/qf1_loss": 0.01149098388850689,
+        "losses/qf2_loss": 0.011474288068711758,
+        "losses/qf_loss": 0.011482635512948036,
+        "losses/actor_loss": -48.419639587402344,
+        "losses/alpha": 0.4460185766220093,
+        "losses/alpha_loss": 3.007711887359619
+      }
+    },
+    {
+      "method": "T5",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0015472641680389643,
+        0.003278050571680069,
+        0.019767485558986664,
+        0.9917620420455933
+      ],
+      "mean_log_std": [
+        -0.14033548533916473,
+        -0.13953083753585815,
+        -0.15518257021903992,
+        -0.1515026092529297
+      ],
+      "metrics": {
+        "losses/qf1_values": 35.25749206542969,
+        "losses/qf2_values": 35.27217483520508,
+        "losses/qf1_loss": 0.00021795551583636552,
+        "losses/qf2_loss": 5.131341822561808e-05,
+        "losses/qf_loss": 0.0001346344652120024,
+        "losses/actor_loss": -35.345176696777344,
+        "losses/alpha": 0.028094258159399033,
+        "losses/alpha_loss": 0.18912990391254425
+      }
+    },
+    {
+      "method": "T5",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.031838055700063705,
+        0.009962920099496841,
+        0.12473072111606598,
+        0.9422445297241211
+      ],
+      "mean_log_std": [
+        -0.27609625458717346,
+        -0.25096893310546875,
+        -0.24086883664131165,
+        -0.11316242814064026
+      ],
+      "metrics": {
+        "losses/qf1_values": 7.649407863616943,
+        "losses/qf2_values": 7.658473014831543,
+        "losses/qf1_loss": 2.6641082513378933e-05,
+        "losses/qf2_loss": 2.438669434923213e-05,
+        "losses/qf_loss": 2.551388752181083e-05,
+        "losses/actor_loss": -7.651020050048828,
+        "losses/alpha": 0.0007312308298423886,
+        "losses/alpha_loss": 0.004646618384867907
+      }
+    },
+    {
+      "method": "T5",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.5025196075439453,
+        0.44513994455337524,
+        0.3454335331916809,
+        1.2755515575408936
+      ],
+      "mean_log_std": [
+        -1.2307994365692139,
+        -1.1013801097869873,
+        -1.3072086572647095,
+        -0.8493320345878601
+      ],
+      "metrics": {
+        "losses/qf1_values": 0.2759428918361664,
+        "losses/qf2_values": 0.2799265384674072,
+        "losses/qf1_loss": 1.0796858987305313e-05,
+        "losses/qf2_loss": 6.035386377334362e-07,
+        "losses/qf_loss": 5.7001989262062125e-06,
+        "losses/actor_loss": -0.2783903181552887,
+        "losses/alpha": 1.3786185490971548e-06,
+        "losses/alpha_loss": -8.002078857316519e-07
+      }
+    },
+    {
+      "method": "U2",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 8.0,
+      "success_at_end": 4.0,
+      "grasped_once": 28,
+      "placed_once": 8,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 12.3,
+      "teacher_mse_per_dim": [
+        3.5998900258307764e-21,
+        5.421010862427522e-20,
+        4.87890977618477e-19,
+        1.0167075514821988e-12
+      ],
+      "mean_log_std": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "metrics": {}
+    },
+    {
+      "method": "U2",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 1.0,
+      "grasped_once": 14,
+      "placed_once": 1,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.85,
+      "teacher_mse_per_dim": [
+        7.40714167477563e-05,
+        0.00017232228128705174,
+        0.0003877597046084702,
+        0.0035943666007369757
+      ],
+      "mean_log_std": [
+        -0.7030704021453857,
+        -0.7030273079872131,
+        -0.7387512922286987,
+        -0.6045621633529663
+      ],
+      "metrics": {
+        "losses/qf1_values": 47.086456298828125,
+        "losses/qf2_values": 47.08661651611328,
+        "losses/qf1_loss": 0.010946684516966343,
+        "losses/qf2_loss": 0.010926158167421818,
+        "losses/qf_loss": 0.01093642134219408,
+        "losses/actor_loss": -48.296512603759766,
+        "retention/mse": 0.0004256676766090095,
+        "retention/coefficient": 7.5,
+        "retention/samples": 197632.0,
+        "losses/alpha": 0.44581764936447144,
+        "losses/alpha_loss": 3.0021347999572754
+      }
+    },
+    {
+      "method": "U2",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.00025371668743900955,
+        0.0005907025770284235,
+        0.0005249069072306156,
+        0.017948975786566734
+      ],
+      "mean_log_std": [
+        -0.3997246026992798,
+        -0.42894262075424194,
+        -0.3986375033855438,
+        0.24442936480045319
+      ],
+      "metrics": {
+        "losses/qf1_values": 35.12671661376953,
+        "losses/qf2_values": 35.12172317504883,
+        "losses/qf1_loss": 6.176995520945638e-05,
+        "losses/qf2_loss": 0.00011968553008046001,
+        "losses/qf_loss": 9.07277426449582e-05,
+        "losses/actor_loss": -35.208839416503906,
+        "retention/mse": 0.0,
+        "retention/coefficient": 0.0,
+        "retention/samples": 983040.0,
+        "losses/alpha": 0.02808646857738495,
+        "losses/alpha_loss": 0.18907777965068817
+      }
+    },
+    {
+      "method": "U2",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.060577377676963806,
+        0.03880921006202698,
+        0.28843438625335693,
+        0.8688048124313354
+      ],
+      "mean_log_std": [
+        -0.2874625027179718,
+        -0.276496946811676,
+        -0.4415234625339508,
+        -0.12402142584323883
+      ],
+      "metrics": {
+        "losses/qf1_values": 7.62355375289917,
+        "losses/qf2_values": 7.618523597717285,
+        "losses/qf1_loss": 1.2450217582227197e-05,
+        "losses/qf2_loss": 6.003725866321474e-05,
+        "losses/qf_loss": 3.624373857746832e-05,
+        "losses/actor_loss": -7.629369735717773,
+        "retention/mse": 0.0,
+        "retention/coefficient": 0.0,
+        "retention/samples": 983040.0,
+        "losses/alpha": 0.0007291393703781068,
+        "losses/alpha_loss": 0.004661982879042625
+      }
+    },
+    {
+      "method": "U2",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.28268179297447205,
+        0.17763106524944305,
+        0.49829167127609253,
+        1.1425920724868774
+      ],
+      "mean_log_std": [
+        -2.133012056350708,
+        -1.823996901512146,
+        -1.4362975358963013,
+        -1.510486364364624
+      ],
+      "metrics": {
+        "losses/qf1_values": 0.2790713310241699,
+        "losses/qf2_values": 0.27742499113082886,
+        "losses/qf1_loss": 7.958550440889667e-07,
+        "losses/qf2_loss": 1.3846427009411855e-06,
+        "losses/qf_loss": 1.0902488156716572e-06,
+        "losses/actor_loss": -0.2792373597621918,
+        "retention/mse": 0.0,
+        "retention/coefficient": 0.0,
+        "retention/samples": 983040.0,
+        "losses/alpha": 3.934959295293083e-06,
+        "losses/alpha_loss": 1.1394822649890557e-06
+      }
+    },
+    {
+      "method": "T6",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 1.0,
+      "grasped_once": 19,
+      "placed_once": 1,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 2.925,
+      "teacher_mse_per_dim": [
+        5.78312756260857e-05,
+        0.00010460997873451561,
+        0.00024092635430861264,
+        0.006177349481731653
+      ],
+      "mean_log_std": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "metrics": {}
+    },
+    {
+      "method": "T6",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0054118395783007145,
+        0.0036957524716854095,
+        0.05355244502425194,
+        0.9030136466026306
+      ],
+      "mean_log_std": [
+        -0.1587086021900177,
+        -0.1667899489402771,
+        -0.17899088561534882,
+        -0.11396961659193039
+      ],
+      "metrics": {
+        "losses/qf1_values": 43.556217193603516,
+        "losses/qf2_values": 43.55498504638672,
+        "losses/qf1_loss": 0.029983196407556534,
+        "losses/qf2_loss": 0.028843583539128304,
+        "losses/qf_loss": 0.029413390904664993,
+        "losses/actor_loss": -44.704010009765625,
+        "losses/alpha": 0.4535732865333557,
+        "losses/alpha_loss": 3.050436496734619
+      }
+    },
+    {
+      "method": "T6",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0065824915654957294,
+        0.004979012068361044,
+        0.031184440478682518,
+        1.543936014175415
+      ],
+      "mean_log_std": [
+        -2.8217647075653076,
+        -2.4063851833343506,
+        -2.606287956237793,
+        -0.628720760345459
+      ],
+      "metrics": {
+        "losses/qf1_values": 38.0994873046875,
+        "losses/qf2_values": 38.08064651489258,
+        "losses/qf1_loss": 0.026266107335686684,
+        "losses/qf2_loss": 0.02129550650715828,
+        "losses/qf_loss": 0.023780807852745056,
+        "losses/actor_loss": -38.063053131103516,
+        "losses/alpha": 0.0364762619137764,
+        "losses/alpha_loss": 0.07852667570114136
+      }
+    },
+    {
+      "method": "T6",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 18.0,
+      "success_at_end": 7.0,
+      "grasped_once": 32,
+      "placed_once": 18,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 44.1,
+      "teacher_mse_per_dim": [
+        0.03213803470134735,
+        0.045639581978321075,
+        0.07633227854967117,
+        0.2247830629348755
+      ],
+      "mean_log_std": [
+        -3.1518259048461914,
+        -2.592365264892578,
+        -2.99070143699646,
+        -0.6312479972839355
+      ],
+      "metrics": {
+        "losses/qf1_values": 27.226333618164062,
+        "losses/qf2_values": 27.16975212097168,
+        "losses/qf1_loss": 0.17654156684875488,
+        "losses/qf2_loss": 0.18866398930549622,
+        "losses/qf_loss": 0.18260277807712555,
+        "losses/actor_loss": -27.119792938232422,
+        "losses/alpha": 0.04025734215974808,
+        "losses/alpha_loss": -0.004947257693856955
+      }
+    },
+    {
+      "method": "T6",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 34.0,
+      "success_at_end": 22.0,
+      "grasped_once": 35,
+      "placed_once": 34,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 124.1,
+      "teacher_mse_per_dim": [
+        0.09442074596881866,
+        0.12485641986131668,
+        0.20994357764720917,
+        0.3302173614501953
+      ],
+      "mean_log_std": [
+        -2.664424419403076,
+        -1.881389856338501,
+        -2.1583948135375977,
+        -0.8337885141372681
+      ],
+      "metrics": {
+        "losses/qf1_values": 24.995267868041992,
+        "losses/qf2_values": 24.92904281616211,
+        "losses/qf1_loss": 0.29548197984695435,
+        "losses/qf2_loss": 0.24270600080490112,
+        "losses/qf_loss": 0.26909399032592773,
+        "losses/actor_loss": -25.14558982849121,
+        "losses/alpha": 0.04501582682132721,
+        "losses/alpha_loss": -0.0005946031305938959
+      }
+    },
+    {
+      "method": "T4",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 1.0,
+      "success_at_end": 1.0,
+      "grasped_once": 19,
+      "placed_once": 1,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 2.925,
+      "teacher_mse_per_dim": [
+        5.78312756260857e-05,
+        0.00010460997873451561,
+        0.00024092635430861264,
+        0.006177349481731653
+      ],
+      "mean_log_std": [
+        -2.0,
+        -2.0,
+        -2.0,
+        -2.0
+      ],
+      "metrics": {}
+    },
+    {
+      "method": "T4",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0015926450723782182,
+        0.0030887387692928314,
+        0.02146974578499794,
+        0.994409441947937
+      ],
+      "mean_log_std": [
+        -0.10478415340185165,
+        -0.11584609001874924,
+        -0.13935299217700958,
+        -0.10089724510908127
+      ],
+      "metrics": {
+        "losses/qf1_values": 43.31437683105469,
+        "losses/qf2_values": 43.31309509277344,
+        "losses/qf1_loss": 0.013802381232380867,
+        "losses/qf2_loss": 0.01378722209483385,
+        "losses/qf_loss": 0.013794802129268646,
+        "losses/actor_loss": -44.55177307128906,
+        "losses/alpha": 0.4541242718696594,
+        "losses/alpha_loss": 3.0599498748779297
+      }
+    },
+    {
+      "method": "T4",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0026285359635949135,
+        0.0035218943376094103,
+        0.023524535819888115,
+        0.9924335479736328
+      ],
+      "mean_log_std": [
+        -0.15553805232048035,
+        -0.1441521942615509,
+        -0.1628705859184265,
+        -0.14797352254390717
+      ],
+      "metrics": {
+        "losses/qf1_values": 34.32733917236328,
+        "losses/qf2_values": 34.32647705078125,
+        "losses/qf1_loss": 0.0006643361411988735,
+        "losses/qf2_loss": 0.0007005911320447922,
+        "losses/qf_loss": 0.0006824636366218328,
+        "losses/actor_loss": -34.44645690917969,
+        "losses/alpha": 0.028598960489034653,
+        "losses/alpha_loss": 0.19231924414634705
+      }
+    },
+    {
+      "method": "T4",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.0461912602186203,
+        0.1679961234331131,
+        0.18485857546329498,
+        1.000024437904358
+      ],
+      "mean_log_std": [
+        -0.21726471185684204,
+        -0.24987760186195374,
+        -0.21078693866729736,
+        -0.11294633150100708
+      ],
+      "metrics": {
+        "losses/qf1_values": 7.516604423522949,
+        "losses/qf2_values": 7.5089263916015625,
+        "losses/qf1_loss": 0.00019710807828232646,
+        "losses/qf2_loss": 4.06582148571033e-05,
+        "losses/qf_loss": 0.00011888314475072548,
+        "losses/actor_loss": -7.487905502319336,
+        "losses/alpha": 0.0007466283277608454,
+        "losses/alpha_loss": 0.004696845542639494
+      }
+    },
+    {
+      "method": "T4",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0,
+      "lifted_once": null,
+      "lift_missing_reason": "Online validation logs do not record height/trajectory; cannot reconstruct lift counts from grasp/place booleans.",
+      "mean_return": 0.0,
+      "teacher_mse_per_dim": [
+        0.3159358501434326,
+        0.3001789152622223,
+        0.6042028069496155,
+        1.831114649772644
+      ],
+      "mean_log_std": [
+        -1.0554782152175903,
+        -0.8941642642021179,
+        -1.1541333198547363,
+        -0.9351575970649719
+      ],
+      "metrics": {
+        "losses/qf1_values": 0.2754051685333252,
+        "losses/qf2_values": 0.2761397957801819,
+        "losses/qf1_loss": 4.971004727849504e-07,
+        "losses/qf2_loss": 4.1733727584869484e-08,
+        "losses/qf_loss": 2.6941711439576466e-07,
+        "losses/actor_loss": -0.2760038673877716,
+        "losses/alpha": 1.145498799814959e-06,
+        "losses/alpha_loss": 1.814498659769015e-06
+      }
+    }
+  ],
+  "real_replay": {
+    "T5": {
+      "positive_reward_transitions": 0,
+      "first_positive_transition_ordinal": null,
+      "first_positive_vector_step_completed_interactions": null,
+      "positive_episode_ids": [],
+      "bins": [
+        {
+          "start": 0,
+          "end": 4096,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5821770429611206,
+            0.575036346912384,
+            0.5846432447433472,
+            0.5791085958480835
+          ],
+          "action_variance": [
+            0.3389301300048828,
+            0.33066681027412415,
+            0.3418077230453491,
+            0.33536678552627563
+          ]
+        },
+        {
+          "start": 4096,
+          "end": 16384,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5868574976921082,
+            0.5867111682891846,
+            0.5921215415000916,
+            0.5881776809692383
+          ],
+          "action_variance": [
+            0.3444017171859741,
+            0.3442300260066986,
+            0.35060790181159973,
+            0.3459530174732208
+          ]
+        },
+        {
+          "start": 16384,
+          "end": 65536,
+          "positive_rewards": 0,
+          "grasped_observations": 7,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5867525935173035,
+            0.5892413854598999,
+            0.5883691906929016,
+            0.5871577858924866
+          ],
+          "action_variance": [
+            0.34427860379219055,
+            0.34720543026924133,
+            0.3461783230304718,
+            0.34475424885749817
+          ]
+        },
+        {
+          "start": 65536,
+          "end": 131072,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5763170123100281,
+            0.5746310353279114,
+            0.5753390192985535,
+            0.5892547369003296
+          ],
+          "action_variance": [
+            0.33214128017425537,
+            0.33020082116127014,
+            0.331015020608902,
+            0.34722113609313965
+          ]
+        },
+        {
+          "start": 131072,
+          "end": 262144,
+          "positive_rewards": 0,
+          "grasped_observations": 3,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.582988977432251,
+            0.5543643236160278,
+            0.5178326964378357,
+            0.6406164765357971
+          ],
+          "action_variance": [
+            0.3398761749267578,
+            0.3073197901248932,
+            0.2681506872177124,
+            0.4103894531726837
+          ]
+        }
+      ]
+    },
+    "U2": {
+      "positive_reward_transitions": 6,
+      "first_positive_transition_ordinal": 231299,
+      "first_positive_vector_step_completed_interactions": 231312,
+      "positive_episode_ids": [
+        1154
+      ],
+      "bins": [
+        {
+          "start": 0,
+          "end": 4096,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5821770429611206,
+            0.575036346912384,
+            0.5846432447433472,
+            0.5791085958480835
+          ],
+          "action_variance": [
+            0.3389301300048828,
+            0.33066681027412415,
+            0.3418077230453491,
+            0.33536678552627563
+          ]
+        },
+        {
+          "start": 4096,
+          "end": 16384,
+          "positive_rewards": 0,
+          "grasped_observations": 1,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5868977904319763,
+            0.5867137908935547,
+            0.5922427773475647,
+            0.5908917784690857
+          ],
+          "action_variance": [
+            0.3444490134716034,
+            0.34423306584358215,
+            0.35075151920318604,
+            0.349153071641922
+          ]
+        },
+        {
+          "start": 16384,
+          "end": 65536,
+          "positive_rewards": 0,
+          "grasped_observations": 2,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5881641507148743,
+            0.5906587839126587,
+            0.5898538827896118,
+            0.5934054851531982
+          ],
+          "action_variance": [
+            0.3459371030330658,
+            0.34887781739234924,
+            0.34792760014533997,
+            0.35213008522987366
+          ]
+        },
+        {
+          "start": 65536,
+          "end": 131072,
+          "positive_rewards": 0,
+          "grasped_observations": 1,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5761073231697083,
+            0.5739873647689819,
+            0.5748441219329834,
+            0.5872292518615723
+          ],
+          "action_variance": [
+            0.3318996727466583,
+            0.3294614851474762,
+            0.3304457366466522,
+            0.3448381721973419
+          ]
+        },
+        {
+          "start": 131072,
+          "end": 262144,
+          "positive_rewards": 6,
+          "grasped_observations": 0,
+          "positive_episode_count": 1,
+          "action_std": [
+            0.4536195397377014,
+            0.49062079191207886,
+            0.5012692809104919,
+            0.5751908421516418
+          ],
+          "action_variance": [
+            0.20577068626880646,
+            0.24070875346660614,
+            0.25127092003822327,
+            0.3308444917201996
+          ]
+        }
+      ]
+    },
+    "T6": {
+      "positive_reward_transitions": 63147,
+      "first_positive_transition_ordinal": 100521,
+      "first_positive_vector_step_completed_interactions": 100528,
+      "positive_episode_ids": [
+        504,
+        512,
+        562,
+        569,
+        572,
+        583,
+        596,
+        598,
+        600,
+        615,
+        617,
+        621,
+        623,
+        624,
+        625,
+        627,
+        629,
+        631,
+        632,
+        633,
+        635,
+        637,
+        638,
+        639,
+        640,
+        641,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        654,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        665,
+        666,
+        667,
+        669,
+        670,
+        671,
+        674,
+        675,
+        677,
+        678,
+        679,
+        680,
+        682,
+        683,
+        686,
+        687,
+        688,
+        691,
+        692,
+        693,
+        694,
+        696,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        707,
+        708,
+        709,
+        710,
+        711,
+        715,
+        716,
+        717,
+        719,
+        720,
+        722,
+        723,
+        725,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        734,
+        735,
+        736,
+        737,
+        738,
+        740,
+        741,
+        743,
+        746,
+        747,
+        751,
+        752,
+        754,
+        755,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        769,
+        770,
+        771,
+        772,
+        773,
+        776,
+        778,
+        779,
+        781,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        791,
+        792,
+        793,
+        795,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        804,
+        806,
+        807,
+        809,
+        810,
+        812,
+        813,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        826,
+        829,
+        830,
+        832,
+        833,
+        834,
+        835,
+        838,
+        839,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        850,
+        851,
+        852,
+        853,
+        854,
+        856,
+        857,
+        858,
+        860,
+        863,
+        866,
+        867,
+        869,
+        870,
+        871,
+        873,
+        874,
+        875,
+        876,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        891,
+        893,
+        894,
+        895,
+        896,
+        898,
+        901,
+        902,
+        903,
+        905,
+        907,
+        908,
+        911,
+        912,
+        913,
+        915,
+        916,
+        917,
+        918,
+        919,
+        920,
+        921,
+        922,
+        923,
+        924,
+        925,
+        926,
+        927,
+        928,
+        929,
+        931,
+        934,
+        936,
+        937,
+        939,
+        941,
+        944,
+        945,
+        949,
+        952,
+        954,
+        955,
+        957,
+        958,
+        959,
+        961,
+        963,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        973,
+        974,
+        976,
+        977,
+        978,
+        980,
+        982,
+        983,
+        984,
+        985,
+        988,
+        989,
+        990,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        1000,
+        1001,
+        1002,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1013,
+        1015,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1024,
+        1025,
+        1026,
+        1027,
+        1029,
+        1030,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1039,
+        1040,
+        1041,
+        1042,
+        1043,
+        1044,
+        1046,
+        1047,
+        1049,
+        1050,
+        1051,
+        1052,
+        1053,
+        1055,
+        1057,
+        1059,
+        1060,
+        1061,
+        1062,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1074,
+        1075,
+        1077,
+        1078,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1118,
+        1119,
+        1120,
+        1121,
+        1123,
+        1124,
+        1125,
+        1127,
+        1128,
+        1129,
+        1130,
+        1131,
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139,
+        1140,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1162,
+        1163,
+        1164,
+        1166,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171,
+        1172,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180,
+        1181,
+        1182,
+        1183,
+        1184,
+        1185,
+        1186,
+        1187,
+        1188,
+        1189,
+        1190,
+        1191,
+        1192,
+        1193,
+        1194,
+        1195,
+        1196,
+        1197,
+        1198,
+        1199,
+        1201,
+        1202,
+        1203,
+        1204,
+        1205,
+        1207,
+        1208,
+        1209,
+        1210,
+        1211,
+        1212,
+        1213,
+        1214,
+        1215,
+        1216,
+        1217,
+        1218,
+        1219,
+        1220,
+        1221,
+        1222,
+        1223,
+        1224,
+        1225,
+        1226,
+        1227,
+        1229,
+        1230,
+        1231,
+        1232,
+        1233,
+        1235,
+        1236,
+        1237,
+        1238,
+        1239,
+        1240,
+        1242,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249,
+        1250,
+        1251,
+        1252,
+        1254,
+        1255,
+        1257,
+        1259,
+        1260,
+        1261,
+        1262,
+        1263,
+        1266,
+        1267,
+        1268,
+        1269,
+        1270,
+        1271,
+        1274,
+        1275,
+        1276,
+        1277,
+        1278,
+        1279,
+        1280,
+        1282,
+        1283,
+        1284,
+        1286,
+        1287,
+        1288,
+        1289,
+        1290,
+        1291,
+        1292,
+        1293,
+        1295,
+        1299,
+        1301,
+        1302,
+        1303,
+        1304,
+        1306,
+        1308,
+        1309,
+        1310,
+        1311
+      ],
+      "bins": [
+        {
+          "start": 0,
+          "end": 4096,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5821770429611206,
+            0.575036346912384,
+            0.5846432447433472,
+            0.5791085958480835
+          ],
+          "action_variance": [
+            0.3389301300048828,
+            0.33066681027412415,
+            0.3418077230453491,
+            0.33536678552627563
+          ]
+        },
+        {
+          "start": 4096,
+          "end": 16384,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5842172503471375,
+            0.5846443176269531,
+            0.5904116630554199,
+            0.5954886674880981
+          ],
+          "action_variance": [
+            0.3413098156452179,
+            0.341808944940567,
+            0.34858593344688416,
+            0.3546067774295807
+          ]
+        },
+        {
+          "start": 16384,
+          "end": 65536,
+          "positive_rewards": 0,
+          "grasped_observations": 2,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5765977501869202,
+            0.5774787664413452,
+            0.5770004391670227,
+            0.591969907283783
+          ],
+          "action_variance": [
+            0.33246496319770813,
+            0.3334817588329315,
+            0.3329295217990875,
+            0.35042837262153625
+          ]
+        },
+        {
+          "start": 65536,
+          "end": 131072,
+          "positive_rewards": 1777,
+          "grasped_observations": 11829,
+          "positive_episode_count": 34,
+          "action_std": [
+            0.3576299250125885,
+            0.3473852574825287,
+            0.3691011369228363,
+            0.76860511302948
+          ],
+          "action_variance": [
+            0.127899169921875,
+            0.12067652493715286,
+            0.13623563945293427,
+            0.5907537937164307
+          ]
+        },
+        {
+          "start": 131072,
+          "end": 262144,
+          "positive_rewards": 61370,
+          "grasped_observations": 92349,
+          "positive_episode_count": 505,
+          "action_std": [
+            0.2773880660533905,
+            0.29804718494415283,
+            0.2988188564777374,
+            0.6332129240036011
+          ],
+          "action_variance": [
+            0.07694414258003235,
+            0.08883212506771088,
+            0.08929271250963211,
+            0.4009586274623871
+          ]
+        }
+      ]
+    },
+    "T4": {
+      "positive_reward_transitions": 0,
+      "first_positive_transition_ordinal": null,
+      "first_positive_vector_step_completed_interactions": null,
+      "positive_episode_ids": [],
+      "bins": [
+        {
+          "start": 0,
+          "end": 4096,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5821770429611206,
+            0.575036346912384,
+            0.5846432447433472,
+            0.5791085958480835
+          ],
+          "action_variance": [
+            0.3389301300048828,
+            0.33066681027412415,
+            0.3418077230453491,
+            0.33536678552627563
+          ]
+        },
+        {
+          "start": 4096,
+          "end": 16384,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5875321626663208,
+            0.5874068737030029,
+            0.5932464003562927,
+            0.5964694619178772
+          ],
+          "action_variance": [
+            0.3451940715312958,
+            0.34504684805870056,
+            0.35194131731987,
+            0.3557758331298828
+          ]
+        },
+        {
+          "start": 16384,
+          "end": 65536,
+          "positive_rewards": 0,
+          "grasped_observations": 0,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5855293869972229,
+            0.5882013440132141,
+            0.5873965620994568,
+            0.5868175029754639
+          ],
+          "action_variance": [
+            0.3428446352481842,
+            0.34598085284233093,
+            0.34503471851348877,
+            0.3443547785282135
+          ]
+        },
+        {
+          "start": 65536,
+          "end": 131072,
+          "positive_rewards": 0,
+          "grasped_observations": 1,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.5783953070640564,
+            0.5784702301025391,
+            0.5795688033103943,
+            0.5888743996620178
+          ],
+          "action_variance": [
+            0.33454111218452454,
+            0.33462777733802795,
+            0.3358999788761139,
+            0.34677308797836304
+          ]
+        },
+        {
+          "start": 131072,
+          "end": 262144,
+          "positive_rewards": 0,
+          "grasped_observations": 4,
+          "positive_episode_count": 0,
+          "action_std": [
+            0.553272008895874,
+            0.567318856716156,
+            0.5696720480918884,
+            0.5962715148925781
+          ],
+          "action_variance": [
+            0.3061099052429199,
+            0.32185065746307373,
+            0.32452625036239624,
+            0.3555397093296051
+          ]
+        }
+      ]
+    }
+  },
+  "costs": {
+    "T5": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 3743.461614077969,
+      "training_script_seconds": 3737.9685902790516,
+      "whole_gpu_peak_mib": 5769,
+      "torch_peak_allocated_bytes": 882284544,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "U2": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 3735.2483002779773,
+      "training_script_seconds": 3728.785919099988,
+      "whole_gpu_peak_mib": 5770,
+      "torch_peak_allocated_bytes": 894432768,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "T6": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 1313.5013992399909,
+      "training_script_seconds": 1307.43761877605,
+      "whole_gpu_peak_mib": 4746,
+      "torch_peak_allocated_bytes": 147527680,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "T4": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 1099.1932152470108,
+      "training_script_seconds": 1092.933363003016,
+      "whole_gpu_peak_mib": 4864,
+      "torch_peak_allocated_bytes": 147159040,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    }
+  },
+  "logged_metric_ranges": {
+    "T5": {
+      "losses/actor_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": -56.79010772705078,
+          "max": -25.691570281982422,
+          "last": {
+            "step": 65536,
+            "metric": "losses/actor_loss",
+            "value": -35.345176696777344
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -29.80181121826172,
+          "max": -0.2783903181552887,
+          "last": {
+            "step": 262144,
+            "metric": "losses/actor_loss",
+            "value": -0.2783903181552887
+          }
+        }
+      ],
+      "losses/alpha": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.028094258159399033,
+          "max": 0.7408556342124939,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha",
+            "value": 0.028094258159399033
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 1.3786185490971548e-06,
+          "max": 0.017772410064935684,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha",
+            "value": 1.3786185490971548e-06
+          }
+        }
+      ],
+      "losses/alpha_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.18912990391254425,
+          "max": 4.986988067626953,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha_loss",
+            "value": 0.18912990391254425
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -8.002078857316519e-07,
+          "max": 0.11970647424459457,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha_loss",
+            "value": -8.002078857316519e-07
+          }
+        }
+      ],
+      "losses/qf1_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.00021795551583636552,
+          "max": 0.028191177174448967,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_loss",
+            "value": 0.00021795551583636552
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 3.6366651556818397e-07,
+          "max": 0.0006365554290823638,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_loss",
+            "value": 1.0796858987305313e-05
+          }
+        }
+      ],
+      "losses/qf1_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 23.64512062072754,
+          "max": 56.315406799316406,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_values",
+            "value": 35.25749206542969
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.2759428918361664,
+          "max": 29.76568603515625,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_values",
+            "value": 0.2759428918361664
+          }
+        }
+      ],
+      "losses/qf2_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 5.131341822561808e-05,
+          "max": 0.028272610157728195,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_loss",
+            "value": 5.131341822561808e-05
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 4.631532419807627e-07,
+          "max": 0.00011427525896579027,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_loss",
+            "value": 6.035386377334362e-07
+          }
+        }
+      ],
+      "losses/qf2_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 23.643287658691406,
+          "max": 56.315059661865234,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_values",
+            "value": 35.27217483520508
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.2799265384674072,
+          "max": 29.75969123840332,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_values",
+            "value": 0.2799265384674072
+          }
+        }
+      ],
+      "losses/qf_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.0001346344652120024,
+          "max": 0.028231892734766006,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf_loss",
+            "value": 0.0001346344652120024
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 4.804331865670974e-07,
+          "max": 0.00037541534402407706,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf_loss",
+            "value": 5.7001989262062125e-06
+          }
+        }
+      ]
+    },
+    "U2": {
+      "losses/actor_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": -56.67140197753906,
+          "max": -25.512065887451172,
+          "last": {
+            "step": 65536,
+            "metric": "losses/actor_loss",
+            "value": -35.208839416503906
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -29.689857482910156,
+          "max": -0.2792373597621918,
+          "last": {
+            "step": 262144,
+            "metric": "losses/actor_loss",
+            "value": -0.2792373597621918
+          }
+        }
+      ],
+      "losses/alpha": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.02808646857738495,
+          "max": 0.7406128644943237,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha",
+            "value": 0.02808646857738495
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 3.7981910736561986e-06,
+          "max": 0.01776205748319626,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha",
+            "value": 3.934959295293083e-06
+          }
+        }
+      ],
+      "losses/alpha_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.18907777965068817,
+          "max": 4.960090160369873,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha_loss",
+            "value": 0.18907777965068817
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -9.414361556991935e-08,
+          "max": 0.11966327577829361,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha_loss",
+            "value": 1.1394822649890557e-06
+          }
+        }
+      ],
+      "losses/qf1_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 6.176995520945638e-05,
+          "max": 0.027983443811535835,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_loss",
+            "value": 6.176995520945638e-05
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 3.3904936458384327e-07,
+          "max": 0.00015228925622068346,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_loss",
+            "value": 7.958550440889667e-07
+          }
+        }
+      ],
+      "losses/qf1_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 23.566085815429688,
+          "max": 56.196876525878906,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_values",
+            "value": 35.12671661376953
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.2790713310241699,
+          "max": 29.642751693725586,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_values",
+            "value": 0.2790713310241699
+          }
+        }
+      ],
+      "losses/qf2_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.00011968553008046001,
+          "max": 0.028069814667105675,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_loss",
+            "value": 0.00011968553008046001
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 2.4187335156966583e-07,
+          "max": 0.0006578779430128634,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_loss",
+            "value": 1.3846427009411855e-06
+          }
+        }
+      ],
+      "losses/qf2_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 23.564029693603516,
+          "max": 56.19804763793945,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_values",
+            "value": 35.12172317504883
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.27742499113082886,
+          "max": 29.652626037597656,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_values",
+            "value": 0.27742499113082886
+          }
+        }
+      ],
+      "losses/qf_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 9.07277426449582e-05,
+          "max": 0.028026629239320755,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf_loss",
+            "value": 9.07277426449582e-05
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 3.215522497157508e-07,
+          "max": 0.0003766531590372324,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf_loss",
+            "value": 1.0902488156716572e-06
+          }
+        }
+      ],
+      "retention/coefficient": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.0,
+          "max": 8.75,
+          "last": {
+            "step": 65536,
+            "metric": "retention/coefficient",
+            "value": 0.0
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.0,
+          "max": 0.0,
+          "last": {
+            "step": 262144,
+            "metric": "retention/coefficient",
+            "value": 0.0
+          }
+        }
+      ],
+      "retention/mse": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.0,
+          "max": 0.012939903885126114,
+          "last": {
+            "step": 65536,
+            "metric": "retention/mse",
+            "value": 0.0
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.0,
+          "max": 0.0,
+          "last": {
+            "step": 262144,
+            "metric": "retention/mse",
+            "value": 0.0
+          }
+        }
+      ],
+      "retention/samples": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 66560.0,
+          "max": 983040.0,
+          "last": {
+            "step": 65536,
+            "metric": "retention/samples",
+            "value": 983040.0
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 983040.0,
+          "max": 983040.0,
+          "last": {
+            "step": 262144,
+            "metric": "retention/samples",
+            "value": 983040.0
+          }
+        }
+      ]
+    },
+    "T6": {
+      "losses/actor_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": -54.20863723754883,
+          "max": -21.079448699951172,
+          "last": {
+            "step": 65536,
+            "metric": "losses/actor_loss",
+            "value": -38.063053131103516
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -39.63119125366211,
+          "max": -21.07717514038086,
+          "last": {
+            "step": 262144,
+            "metric": "losses/actor_loss",
+            "value": -25.14558982849121
+          }
+        }
+      ],
+      "losses/alpha": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.0364762619137764,
+          "max": 0.7542821764945984,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha",
+            "value": 0.0364762619137764
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.0261068157851696,
+          "max": 0.04501582682132721,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha",
+            "value": 0.04501582682132721
+          }
+        }
+      ],
+      "losses/alpha_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.07852667570114136,
+          "max": 5.068864822387695,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha_loss",
+            "value": 0.07852667570114136
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -0.011490698903799057,
+          "max": 0.033445388078689575,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha_loss",
+            "value": -0.0005946031305938959
+          }
+        }
+      ],
+      "losses/qf1_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.006359553430229425,
+          "max": 0.057896003127098083,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_loss",
+            "value": 0.026266107335686684
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.07927491515874863,
+          "max": 0.3359876275062561,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_loss",
+            "value": 0.29548197984695435
+          }
+        }
+      ],
+      "losses/qf1_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 19.027637481689453,
+          "max": 53.77193832397461,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_values",
+            "value": 38.0994873046875
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 21.11873435974121,
+          "max": 39.58869934082031,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_values",
+            "value": 24.995267868041992
+          }
+        }
+      ],
+      "losses/qf2_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.005984119605273008,
+          "max": 0.05726698413491249,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_loss",
+            "value": 0.02129550650715828
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.0581110417842865,
+          "max": 0.317614883184433,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_loss",
+            "value": 0.24270600080490112
+          }
+        }
+      ],
+      "losses/qf2_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 19.040847778320312,
+          "max": 53.76728057861328,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_values",
+            "value": 38.08064651489258
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 21.12221336364746,
+          "max": 39.53667068481445,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_values",
+            "value": 24.92904281616211
+          }
+        }
+      ],
+      "losses/qf_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.006171836517751217,
+          "max": 0.05758149176836014,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf_loss",
+            "value": 0.023780807852745056
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.06869298219680786,
+          "max": 0.31358152627944946,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf_loss",
+            "value": 0.26909399032592773
+          }
+        }
+      ]
+    },
+    "T4": {
+      "losses/actor_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": -54.52239990234375,
+          "max": -20.509613037109375,
+          "last": {
+            "step": 65536,
+            "metric": "losses/actor_loss",
+            "value": -34.44645690917969
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -29.03753662109375,
+          "max": -0.2760038673877716,
+          "last": {
+            "step": 262144,
+            "metric": "losses/actor_loss",
+            "value": -0.2760038673877716
+          }
+        }
+      ],
+      "losses/alpha": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.028598960489034653,
+          "max": 0.7554770708084106,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha",
+            "value": 0.028598960489034653
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 1.145498799814959e-06,
+          "max": 0.01809968426823616,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha",
+            "value": 1.145498799814959e-06
+          }
+        }
+      ],
+      "losses/alpha_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.19231924414634705,
+          "max": 5.083399772644043,
+          "last": {
+            "step": 65536,
+            "metric": "losses/alpha_loss",
+            "value": 0.19231924414634705
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": -1.931963424794958e-06,
+          "max": 0.12152409553527832,
+          "last": {
+            "step": 262144,
+            "metric": "losses/alpha_loss",
+            "value": 1.814498659769015e-06
+          }
+        }
+      ],
+      "losses/qf1_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.00030448875622823834,
+          "max": 0.03808224946260452,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_loss",
+            "value": 0.0006643361411988735
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 1.600855767946996e-07,
+          "max": 0.0006795047083869576,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_loss",
+            "value": 4.971004727849504e-07
+          }
+        }
+      ],
+      "losses/qf1_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 18.423397064208984,
+          "max": 54.03567123413086,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf1_values",
+            "value": 34.32733917236328
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.2754051685333252,
+          "max": 29.039335250854492,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf1_values",
+            "value": 0.2754051685333252
+          }
+        }
+      ],
+      "losses/qf2_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.0005742651992477477,
+          "max": 0.03796185553073883,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_loss",
+            "value": 0.0007005911320447922
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 4.1733727584869484e-08,
+          "max": 0.00029058626387268305,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_loss",
+            "value": 4.1733727584869484e-08
+          }
+        }
+      ],
+      "losses/qf2_values": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 18.423965454101562,
+          "max": 54.036903381347656,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf2_values",
+            "value": 34.32647705078125
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 0.2761397957801819,
+          "max": 29.000831604003906,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf2_values",
+            "value": 0.2761397957801819
+          }
+        }
+      ],
+      "losses/qf_loss": [
+        {
+          "start_exclusive": 0,
+          "end_inclusive": 65536,
+          "records": 8,
+          "min": 0.00046764430589973927,
+          "max": 0.03802205249667168,
+          "last": {
+            "step": 65536,
+            "metric": "losses/qf_loss",
+            "value": 0.0006824636366218328
+          }
+        },
+        {
+          "start_exclusive": 65536,
+          "end_inclusive": 262144,
+          "records": 24,
+          "min": 2.6941711439576466e-07,
+          "max": 0.00048504548612982035,
+          "last": {
+            "step": 262144,
+            "metric": "losses/qf_loss",
+            "value": 2.6941711439576466e-07
+          }
+        }
+      ]
+    }
+  },
+  "T4_T6_config_differences": {
+    "expert_audit": [
+      null,
+      "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json"
+    ],
+    "expert_dataset": [
+      null,
+      "data/replay/e0-pickcube-gpu-replay-full-003/trajectory.state.pd_ee_delta_pos.physx_cuda.h5"
+    ],
+    "exp_name": [
+      "act-t4-online-seed0-001",
+      "act-t6-online-seed0-001"
+    ],
+    "output": [
+      "artifacts/act-t4-online-seed0-001",
+      "artifacts/act-t6-online-seed0-001"
+    ]
+  },
+  "classification": "B: reduced expert-distribution mean drift, no sustained closed-loop success improvement; transient early success is retained. Not pure C: failure at49152 precedes65536 cutoff.",
+  "missing_measurements": [
+    "Online validation lift counts and first grasp time were not logged; do not impute.",
+    "No ground-truth Q calibration or causal identification of entropy/warmup/critic.",
+    "Soft Q includes entropy; its magnitude alone is not task-value overestimation."
+  ],
+  "sources": {
+    "artifacts/act-t5-online-seed0-001/validation_episodes.jsonl": "74a183acd362c6901a0f25956cf09d64fb88dce1a652c0ac2c4703fbd6acd0a5",
+    "artifacts/act-t5-online-seed0-001/metrics.jsonl": "d1806e1b8227b37afe26f8c33fa2a72ca92142b387fc4250f407bf85227e42ca",
+    "artifacts/act-t5-online-drift-001/result.json": "b48045f9b6464a4a47b9352ebb79e14246ea201c30325682868a4bbc85d501f7",
+    "artifacts/act-t5-online-seed0-001/manifest.json": "072f5ae39bf7ea080897ded465b7da7a45987ad95b2fea61264c966d0e4e3118",
+    "artifacts/act-t5-online-seed0-001/result.json": "9d00c93bcb958bcd3286dd05fa80599dd862eeb1985aa37849b3b567bec2b8bf",
+    "artifacts/act-t5-online-seed0-001/resources.jsonl": "ab0b4ad121cfdb6edc2f29f16cb2f8e35f8728fcc32ab9df94ce997ec56d0eec",
+    "artifacts/act-online-behavior-audit-002/act-t5-online-seed0-001/transitions.npz": "fcea01eee3bc42210e158c13ffb82220f90ed3d494bacb6ec93c2be1ca4c72e6",
+    "artifacts/act-u2-retention-seed0-001/validation_episodes.jsonl": "2209bb970cade1a151bc864b15527e1f969078b5169e64b665df99f737c0e6f8",
+    "artifacts/act-u2-retention-seed0-001/metrics.jsonl": "1bbbafeadd125e6b6f7e71a2ef9b3379f251dd348b7f4349125de5491afeea47",
+    "artifacts/act-u2-online-drift-001/result.json": "fb42a0ce668c1d8a66d26c562a1d2eb906b81e1118850df7af789e644d7b191c",
+    "artifacts/act-u2-retention-seed0-001/manifest.json": "d8e56ceb818e014e8bec92ccc6ba5d3bd73439f2ce2ec97cb52cc8abd431b9a2",
+    "artifacts/act-u2-retention-seed0-001/result.json": "1b3ef5be138824df33ad024fef441c0b48fae65bfaf41f3c041f56f8f43c7654",
+    "artifacts/act-u2-retention-seed0-001/resources.jsonl": "49a61e8dee7e4f80b916990000acc3de7038af89e7bed18574d7c733f2c6db26",
+    "artifacts/act-u2-online-behavior-001/transitions.npz": "ef99e63db49877e18c4ee33260093cacccde8c1a21394a380ca8f020c5dca3f1",
+    "artifacts/act-t6-online-seed0-001/validation_episodes.jsonl": "30c60a70c39db283577c35ff63dec6181076abcfc842fabb58e871b258d874a8",
+    "artifacts/act-t6-online-seed0-001/metrics.jsonl": "361fd446cb813e93883fe1b732f81c1185e89f8cf194cff63240d1719c9a427a",
+    "artifacts/act-t6-online-drift-001/result.json": "59e0a01323505d78ccca6540aba505d5dd7bbf088006ec209f511bc9508a09bb",
+    "artifacts/act-t6-online-seed0-001/manifest.json": "1c568ef9c77c190f05f127b744b6f44ba28a49e065826e7002029d4b21399617",
+    "artifacts/act-t6-online-seed0-001/result.json": "0cdd20c6a10f0ab3bad078223bd1e3dde35f1fec6590d3ddfb3acfd502d8b126",
+    "artifacts/act-t6-online-seed0-001/resources.jsonl": "8f12ce2f4c6ce9f22a0fb6834022a88558abdfd9b97de25608f39053c44379f3",
+    "artifacts/act-t6-evidence-audit-001/transitions.npz": "7607b0ea0c2821eebfcf7b066c8e3381ea97ff109ad0e227fe8fdd60ffbfc284",
+    "artifacts/act-t4-online-seed0-001/validation_episodes.jsonl": "6da48f0171287b575231dc76800bee792aa87dfb8181d9040b8bf5d12cfe93fd",
+    "artifacts/act-t4-online-seed0-001/metrics.jsonl": "3640e5ecc83b060945d7e1a2313bc92af0c06749b07e0e34a5e7b0735c3ce74f",
+    "artifacts/act-t4-online-drift-001/result.json": "6689bd7cfae597bdc93762beb39b6b2c6cb647791785161c8093860198649e5a",
+    "artifacts/act-t4-online-seed0-001/manifest.json": "2d67d4ea05c6129933f7ac639a5b1ae1239649f4e4fff5830a6e40889941477f",
+    "artifacts/act-t4-online-seed0-001/result.json": "d2dbea4dc93205fb48ff5195fd8741211da3293a8129cdc3b8e391545f438631",
+    "artifacts/act-t4-online-seed0-001/resources.jsonl": "006a416571bff8fb31595235911c8e30a74a3707f9cb2801e4a6cc6424758be3",
+    "artifacts/act-online-behavior-audit-001/act-t4-online-seed0-001/transitions.npz": "623621b366d1868899d4117f5ed158730c79d2292050bbe0c7ffc9470ebfc2a2",
+    "artifacts/act-t4-online-seed0-001/sac_config.json": "6e7857adfae07bce9e09dbf9e0027efbe64a83898d3bd4de7e4aae7975cb3749",
+    "artifacts/act-t6-online-seed0-001/sac_config.json": "1aa708a4b176241d99b7ecd212a9b2e6c87ee2bc331fb23a95d21bbb1b229050"
+  },
+  "new_environment_interactions": 0,
+  "new_training_updates": 0,
+  "final_test_used_for_analysis": false
+}

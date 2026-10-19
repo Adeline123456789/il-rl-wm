@@ -1,0 +1,49 @@
+{
+  "pid": 3049565,
+  "phase": "failed",
+  "exit_code": 1,
+  "commands": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "/home/midea/.codex/skills/nature-figure/scripts/validate_figure.py",
+        "scripts/plot_act_development_review.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "scripts/plot_act_development_review.py",
+        "--output",
+        "artifacts/act-development-figures-002/figures",
+        "--qa-tools",
+        "/home/midea/.codex/skills/nature-figure/scripts"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "/home/midea/.codex/skills/nature-figure/scripts/audit_pdf_text.py",
+        "artifacts/act-development-figures-002/figures/online_success.pdf",
+        "--min-pt",
+        "5",
+        "--json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "/home/midea/.codex/skills/nature-figure/scripts/audit_figure_collisions.py",
+        "artifacts/act-development-figures-002/figures/online_success.pdf",
+        "--json-out",
+        "artifacts/act-development-figures-002/figures/online_success.collision.json"
+      ],
+      "exit_code": 2
+    }
+  ],
+  "error": "RuntimeError('Command3 failed with2')",
+  "elapsed_seconds": 1.7644236087799072
+}

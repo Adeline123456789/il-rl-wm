@@ -1,0 +1,458 @@
+[
+  {
+    "id": "act-t2-online-seed0-002",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1094.9869961909717,
+    "peak_device_mib": 4713,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 0,
+    "losses": {
+      "losses/alpha": {
+        "min": 9.482948371442035e-06,
+        "max": 0.7388117909431458,
+        "final": 1.0021742127719335e-05
+      },
+      "losses/qf1_values": {
+        "min": 0.3010726571083069,
+        "max": 55.92681121826172,
+        "final": 0.3010726571083069
+      },
+      "losses/qf2_values": {
+        "min": 0.30020055174827576,
+        "max": 55.926055908203125,
+        "final": 0.30020055174827576
+      },
+      "losses/actor_loss": {
+        "min": -56.39734649658203,
+        "max": -0.29817888140678406,
+        "final": -0.29817888140678406
+      }
+    }
+  },
+  {
+    "id": "act-t3-online-seed0-001",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1105.1090763889952,
+    "peak_device_mib": 4709,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 2,
+    "losses": {
+      "losses/alpha": {
+        "min": 7.17740931577282e-06,
+        "max": 0.7639744877815247,
+        "final": 3.9408761949744076e-05
+      },
+      "losses/qf1_values": {
+        "min": 0.3190631568431854,
+        "max": 53.60826110839844,
+        "final": 0.3190631568431854
+      },
+      "losses/qf2_values": {
+        "min": 0.3017781972885132,
+        "max": 53.60850524902344,
+        "final": 0.3017781972885132
+      },
+      "losses/actor_loss": {
+        "min": -54.09770584106445,
+        "max": -0.3055709898471832,
+        "final": -0.3055709898471832
+      }
+    }
+  },
+  {
+    "id": "act-t4-online-seed0-001",
+    "status": "completed",
+    "initial_success": 1,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1099.1932152470108,
+    "peak_device_mib": 4864,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 0,
+    "losses": {
+      "losses/alpha": {
+        "min": 1.145498799814959e-06,
+        "max": 0.7554770708084106,
+        "final": 1.145498799814959e-06
+      },
+      "losses/qf1_values": {
+        "min": 0.2754051685333252,
+        "max": 54.03567123413086,
+        "final": 0.2754051685333252
+      },
+      "losses/qf2_values": {
+        "min": 0.2761397957801819,
+        "max": 54.036903381347656,
+        "final": 0.2761397957801819
+      },
+      "losses/actor_loss": {
+        "min": -54.52239990234375,
+        "max": -0.2760038673877716,
+        "final": -0.2760038673877716
+      }
+    }
+  },
+  {
+    "id": "act-t5-online-seed0-001",
+    "status": "completed",
+    "initial_success": 8,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 3743.461614077969,
+    "peak_device_mib": 5769,
+    "actor_parameters": 940808,
+    "checkpoint_sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 0,
+    "losses": {
+      "losses/alpha": {
+        "min": 1.3786185490971548e-06,
+        "max": 0.7408556342124939,
+        "final": 1.3786185490971548e-06
+      },
+      "losses/qf1_values": {
+        "min": 0.2759428918361664,
+        "max": 56.315406799316406,
+        "final": 0.2759428918361664
+      },
+      "losses/qf2_values": {
+        "min": 0.2799265384674072,
+        "max": 56.315059661865234,
+        "final": 0.2799265384674072
+      },
+      "losses/actor_loss": {
+        "min": -56.79010772705078,
+        "max": -0.2783903181552887,
+        "final": -0.2783903181552887
+      }
+    }
+  },
+  {
+    "id": "act-t6-online-seed0-001",
+    "status": "completed",
+    "initial_success": 1,
+    "final_success": 34,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1313.5013992399909,
+    "peak_device_mib": 4746,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "4d9607af76782f4c9c70262383967dc89685ec409624b1f2e90dc5fd584520de",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 523,
+    "losses": {
+      "losses/alpha": {
+        "min": 0.0261068157851696,
+        "max": 0.7542821764945984,
+        "final": 0.04501582682132721
+      },
+      "losses/qf1_values": {
+        "min": 19.027637481689453,
+        "max": 53.77193832397461,
+        "final": 24.995267868041992
+      },
+      "losses/qf2_values": {
+        "min": 19.040847778320312,
+        "max": 53.76728057861328,
+        "final": 24.92904281616211
+      },
+      "losses/actor_loss": {
+        "min": -54.20863723754883,
+        "max": -21.07717514038086,
+        "final": -25.14558982849121
+      }
+    }
+  },
+  {
+    "id": "act-u2-retention-seed0-001",
+    "status": "completed",
+    "initial_success": 8,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 3735.2483002779773,
+    "peak_device_mib": 5770,
+    "actor_parameters": 940808,
+    "checkpoint_sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 1,
+    "losses": {
+      "losses/alpha": {
+        "min": 3.7981910736561986e-06,
+        "max": 0.7406128644943237,
+        "final": 3.934959295293083e-06
+      },
+      "losses/qf1_values": {
+        "min": 0.2790713310241699,
+        "max": 56.196876525878906,
+        "final": 0.2790713310241699
+      },
+      "losses/qf2_values": {
+        "min": 0.27742499113082886,
+        "max": 56.19804763793945,
+        "final": 0.27742499113082886
+      },
+      "losses/actor_loss": {
+        "min": -56.67140197753906,
+        "max": -0.2792373597621918,
+        "final": -0.2792373597621918
+      }
+    }
+  }
+]
+{
+  "source": "checkpoints/act-u2-retention-seed0-001/final.pt",
+  "source_sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae",
+  "portable": "releases/act-u2-online-final-001/weights.pt",
+  "portable_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+  "bytes": 3792120,
+  "actor_kind": "act",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}
+[
+  {
+    "step": 0,
+    "checkpoint": {
+      "path": "releases/act-c1-init-001/weights.pt",
+      "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    "teacher_action_mse_per_dim": [
+      3.5998900258307764e-21,
+      5.421010862427522e-20,
+      4.87890977618477e-19,
+      1.0167075514821988e-12
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_log_std": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -2.0
+    ],
+    "mean_action_abs_max": [
+      0.13974937796592712,
+      0.2688983082771301,
+      0.38278165459632874,
+      0.9999989867210388
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.9921875
+    ],
+    "pre_tanh_kl_initial_current_mean": 0.0,
+    "validation_success_once": 8,
+    "validation_success_at_end": 4,
+    "validation_episodes": 40
+  },
+  {
+    "step": 16384,
+    "checkpoint": {
+      "step": 16384,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_16384.pt",
+      "bytes": 22403135,
+      "sha256": "29ea07b2dfd82202f4af61ce1fcda496224c7d0d0aea5877e278c6f6bda7eeb3"
+    },
+    "teacher_action_mse_per_dim": [
+      7.40714167477563e-05,
+      0.00017232228128705174,
+      0.0003877597046084702,
+      0.0035943666007369757
+    ],
+    "initial_action_drift_mse_per_dim": [
+      7.40714167477563e-05,
+      0.00017232228128705174,
+      0.0003877597046084702,
+      0.0035943519324064255
+    ],
+    "mean_log_std": [
+      -0.7030704021453857,
+      -0.7030273079872131,
+      -0.7387512922286987,
+      -0.6045621633529663
+    ],
+    "mean_action_abs_max": [
+      0.13971222937107086,
+      0.26519232988357544,
+      0.3646709620952606,
+      0.9999989867210388
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.875
+    ],
+    "pre_tanh_kl_initial_current_mean": 4.70556116104126,
+    "validation_success_once": 1,
+    "validation_success_at_end": 1,
+    "validation_episodes": 40
+  },
+  {
+    "step": 65536,
+    "checkpoint": {
+      "step": 65536,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_65536.pt",
+      "bytes": 41326719,
+      "sha256": "3658cece05018156d11fa4818c6a81cc9c283a6154e3f6ee03e83c816bfec026"
+    },
+    "teacher_action_mse_per_dim": [
+      0.00025371668743900955,
+      0.0005907025770284235,
+      0.0005249069072306156,
+      0.017948975786566734
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.00025371668743900955,
+      0.0005907025770284235,
+      0.0005249069072306156,
+      0.01794888824224472
+    ],
+    "mean_log_std": [
+      -0.3997246026992798,
+      -0.42894262075424194,
+      -0.3986375033855438,
+      0.24442936480045319
+    ],
+    "mean_action_abs_max": [
+      0.15212708711624146,
+      0.23852689564228058,
+      0.3669045567512512,
+      0.9999989867210388
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.7919921875
+    ],
+    "pre_tanh_kl_initial_current_mean": 7.71678352355957,
+    "validation_success_once": 0,
+    "validation_success_at_end": 0,
+    "validation_episodes": 40
+  },
+  {
+    "step": 131072,
+    "checkpoint": {
+      "step": 131072,
+      "final": false,
+      "path": "checkpoints/act-u2-retention-seed0-001/step_131072.pt",
+      "bytes": 66558532,
+      "sha256": "022b5dfb6e0d71f6aa39a38a7060e33beaac19b48a87d0030cbd2b74b7d55821"
+    },
+    "teacher_action_mse_per_dim": [
+      0.060577377676963806,
+      0.03880921006202698,
+      0.28843438625335693,
+      0.8688048124313354
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.060577377676963806,
+      0.03880921006202698,
+      0.28843438625335693,
+      0.8688030242919922
+    ],
+    "mean_log_std": [
+      -0.2874625027179718,
+      -0.276496946811676,
+      -0.4415234625339508,
+      -0.12402142584323883
+    ],
+    "mean_action_abs_max": [
+      0.5918014049530029,
+      0.638073205947876,
+      0.8071413636207581,
+      0.9594851732254028
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pre_tanh_kl_initial_current_mean": 38.230770111083984,
+    "validation_success_once": 0,
+    "validation_success_at_end": 0,
+    "validation_episodes": 40
+  },
+  {
+    "step": 262144,
+    "checkpoint": {
+      "step": 262144,
+      "final": true,
+      "path": "checkpoints/act-u2-retention-seed0-001/final.pt",
+      "bytes": 116997542,
+      "sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae"
+    },
+    "teacher_action_mse_per_dim": [
+      0.28268179297447205,
+      0.17763106524944305,
+      0.49829167127609253,
+      1.1425920724868774
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.28268179297447205,
+      0.17763106524944305,
+      0.49829167127609253,
+      1.1425899267196655
+    ],
+    "mean_log_std": [
+      -2.133012056350708,
+      -1.823996901512146,
+      -1.4362975358963013,
+      -1.510486364364624
+    ],
+    "mean_action_abs_max": [
+      0.9357962608337402,
+      0.8793286085128784,
+      0.8617627024650574,
+      0.7013033628463745
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pre_tanh_kl_initial_current_mean": 620.8507080078125,
+    "validation_success_once": 0,
+    "validation_success_at_end": 0,
+    "validation_episodes": 40
+  }
+]

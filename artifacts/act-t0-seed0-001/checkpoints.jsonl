@@ -1,0 +1,4 @@
+{"path": "checkpoints/act-t0-seed0-001/step-2500.pt", "step": 2500, "bytes": 16326970, "sha256": "a4edcde3860be116701675f03a7bad1572faf40f2c2891a152c06eb35e76a9ef"}
+{"path": "checkpoints/act-t0-seed0-001/step-5000.pt", "step": 5000, "bytes": 16326970, "sha256": "b0087f05ec847f2409ffbf34367797e5fa9af2b7525a418495683b12cda0d45f"}
+{"path": "checkpoints/act-t0-seed0-001/step-7500.pt", "step": 7500, "bytes": 16326970, "sha256": "c5878c597afcb27d1016c0e5496af34ee3ac0430d257addb2079221c1eef0426"}
+{"path": "checkpoints/act-t0-seed0-001/final.pt", "step": 10000, "bytes": 16305998, "sha256": "1142d094d9ba415d35303bff4ec4b8a9007bb67a460bd2fc0af7ec566ce4ee1a"}

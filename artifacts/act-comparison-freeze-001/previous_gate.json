@@ -1,0 +1,7 @@
+{
+  "released": false,
+  "reason": "New user-requested ACT comparison is not frozen. Preserve seed20000; validation seed10000 only until milestone review of actual teacher/transfer evidence.",
+  "old_registered_conditions_changed": false,
+  "old_training_queue_changed": false,
+  "release_requires": "Record frozen method/config/checkpoint-selection/comparison scope or explicitly close the ACT milestone as unsuccessful; retain all negative results."
+}

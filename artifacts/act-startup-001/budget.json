@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-16T17:45:37.006403+00:00",
+  "completed_gpu_job_seconds": 25225.871549465985,
+  "active_elapsed_seconds": 3140.063357,
+  "total_limit_seconds": 86400,
+  "remaining_after_active_elapsed": 58034.065093534016,
+  "final_evaluation_reserve_seconds": 7200,
+  "act_t0_max_seconds": 2100,
+  "active": [
+    {
+      "id": "e3-rlpd-full-001",
+      "pid": 1786044,
+      "limit": 10800.0
+    }
+  ],
+  "note": "ACT starts only after old registered training chain; available budget recomputed then. This remaining balance is not unreserved credit."
+}

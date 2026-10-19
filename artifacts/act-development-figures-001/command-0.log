@@ -1,0 +1,33 @@
+Nature Figure Static Preflight
+source: scripts/plot_act_development_review.py
+backend: python
+
+[PASS] SOURCE-SYNTAX: Python source parses successfully
+[FAIL] FONT-FAMILY: No explicit publication-safe font family found in matplotlib rcParams
+[PASS] FONT-SIZE: All detected text sizes are at least 5 pt (minimum 8 pt)
+[PASS] FONT-GLYPH-FLOOR: No mathtext superscript/subscript expression detected
+[PASS] LEGEND-LABEL-CASE: Detected literal legend labels start with display-style capitalization
+[PASS] COLOR-MAP: No rainbow/jet/hsv color mapping detected
+[PASS] EDITABLE-TEXT: SVG and PDF editable-text settings are configured
+[FAIL] EXPORT-VECTOR: Missing required vector export: SVG, PDF
+[FAIL] EXPORT-RASTER: No TIFF or PNG raster export found
+[WARN] RASTER-DPI: Raster export meets the 300 dpi floor but not the 600 dpi default
+  - 300
+[WARN] FINAL-WIDTH: Detected width 4572.0 mm is not near the common 89/183 mm defaults; verify the target journal
+[PASS] DATA-SAMPLING: No high-confidence row-sampling operation detected
+[PASS] DATA-EXCLUSION: No high-confidence missing-data exclusion detected
+[PASS] DEMO-DATA: No obvious simulated-data generator detected
+[PASS] LOG-GUARD: No logarithmic transform or axis detected
+[PASS] INTERP-MONOTONIC: No NumPy interpolation requiring an increasing x-grid detected
+[WARN] UNCERTAINTY-ENCODING: Seed/fold/split aggregates are present without an obvious error bar or uncertainty band
+  - seed
+  - mean
+[PASS] ROTATION-ANCHOR: No rotated Matplotlib text detected
+[PASS] ANNOTATION-WORKAROUND: No high-risk hard-coded label height or opaque white text mask detected
+[PASS] PANEL-ALIGNMENT-GATE: Render-time panel-alignment gate is wired into the plotting source
+  - require_matplotlib_panel_alignment(
+[PASS] BACKEND-EXCLUSIVE: No obvious cross-backend plotting reference found for python
+
+summary: 15 pass, 3 warn, 3 fail
+verdict: FIX BEFORE DELIVERY
+note: static preflight does not validate statistics, source-data truth, or rendered appearance

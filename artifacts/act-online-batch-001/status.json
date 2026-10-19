@@ -1,0 +1,12 @@
+{
+  "pid": 2780748,
+  "phase": "failed",
+  "completed": [],
+  "current": "act-t2-online-seed0-001",
+  "started_at": 1792375117.482322,
+  "plan_sha256": "bb5cbc263e12021cae87c18ebaab9335c4a92ebd680b2a379be90ed2b30219cc",
+  "new_budget_granted": false,
+  "exit_code": 1,
+  "error": "CalledProcessError(1, ['/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python', 'scripts/run_experiment.py', '--id', 'act-t2-online-seed0-001', '--seconds', '1630', '--', '/home/midea/miniconda3/bin/python', 'scripts/train_sac.py', '--output', 'artifacts/act-t2-online-seed0-001', '--exp-name', 'act-t2-online-seed0-001', '--env-id', 'PickCube-v1', '--seed', '0', '--control-mode', 'pd_ee_delta_pos', '--max-episode-steps', '200', '--total-timesteps', '262144', '--num-envs', '16', '--num-eval-envs', '8', '--num-eval-steps', '1000', '--training-freq', '64', '--utd', '0.25', '--batch-size', '1024', '--buffer-size', '262144', '--learning-starts', '4096', '--eval-freq', '16384', '--log-freq', '8192', '--gamma', '0.99', '--no-capture-video', '--no-track', '--critic-layer-norm', '--initial-log-std', '-2', '--matched-eval-resets', '--actor-init-kind', 'mlp'])",
+  "ended_at": 1792375119.679509
+}

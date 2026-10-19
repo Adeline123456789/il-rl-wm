@@ -1,0 +1,7 @@
+{
+  "pid": 3151161,
+  "phase": "failed",
+  "exit_code": 1,
+  "error": "KeyError('phases')",
+  "elapsed_seconds": 0.022484540939331055
+}

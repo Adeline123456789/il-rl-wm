@@ -1,0 +1,1251 @@
+{
+  "terminal_batch": true,
+  "running_gpu_manifests": [],
+  "completed_conditions": 104,
+  "registered_conditions": 106,
+  "condition_statuses": {
+    "completed": 104,
+    "failed": 1,
+    "not_started": 1
+  },
+  "missing_conditions": [
+    "act-u2-final-mean:act_mean",
+    "act-u2-final-stochastic:act_stochastic"
+  ],
+  "final_plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "summary_recomputed_from_raw_episodes": true,
+  "gate_before_test_verified": true,
+  "all_gpu_manifest_count": 214,
+  "source_commits_verified_in_offline_restored_history": [
+    "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+    "04f6162f6667b6bc28cadfb977da8e288db46a46",
+    "09d606712540920e0134a46bda539600ba3c1ca9",
+    "0e379ba50a1016467851df5e9714cff70fce5850",
+    "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+    "1b3f57f089a2301e209e3ec147288bf9b38b42e6",
+    "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+    "261b0b525cc0fe3fbbf0de853602cea3065ee376",
+    "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+    "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+    "33b07a71a68967b21ce7c9fb7eac59470ddd6b81",
+    "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+    "47599319c50930fabc73dbd76ee2da7d973fdacf",
+    "4ab1909c1157c1c0198242e17bb8fb82623e4b52",
+    "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+    "613e527ec62f1d2d86a50443e58e52fcf6ad1e76",
+    "69d7b9e36cb367549844278c311760cdf556b9b7",
+    "6b2e2d91a7a6b45debffaa4b418a08c016c10db7",
+    "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+    "779129b1b0d9c8c72f7d22f99f1d485112e29241",
+    "7892c38541e7e24aae9450852e10bfcd61f091a6",
+    "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0",
+    "865f0dd61fac39451c2c65b296b9e004d2e11ff1",
+    "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+    "922077e293ee74f14ec37a389caa5bd2a2725daa",
+    "94d3ab7994c7b4ca8959f406f5079b6c7a4b6bb0",
+    "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+    "9a38aadd63388177a99063a68728183e3e6e3be3",
+    "9f1536cf857892f0e4db301377b05db4e7c9518c",
+    "a74017d719a6536dfe7e627213b39d616232ddda",
+    "ab52d12370ee35d5a7f49e33af31077a104e6161",
+    "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+    "c5a8791fdf2efd40b887a4c4390b6f0950158c69",
+    "c7b318b47cd8f24091564aec629779783d2b9826",
+    "cbcea4f997caa40f224542b53047f91cb38a6bee",
+    "d19e129acbb16a59ea6e98f052315d80a8786365",
+    "d699acb9cdd6e36845cbdb89df9e85b6f5e408ae",
+    "ddf0c6a546520842e316b637b4e3176994f896d8",
+    "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+    "e27870bc95f8967c09cc5c1fb1838d034fed873f",
+    "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+    "f0dc12f4e31292b88bb4b785aef53fa8da5273e7",
+    "f3bbfea82c3946ffb5fbf77f280e171bef0ba672",
+    "f3cbe8d1884b253193e5c30ee67683da9e42eeb9",
+    "f3ec73ecf49357cbedcf0d6feeb89aefe70d3ce5",
+    "f6f399bd03bc3b6503b7ebee7a733d1f10659221"
+  ],
+  "final_job_records": [
+    {
+      "id": "pick-seed0-a",
+      "manifest_sha256": "f083c84a9f37492c12822f4159b1dfa0a9bb642061ce929f26c06952ac94941e",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 152,
+      "source_snapshot_sha256": "12155fdb52bcc2d7b9ef086cf26a7428d0140b8789cc6326216a177f5ca8124f",
+      "tracked_patch_sha256": "57933894274a1540ec63951078ed4243be60f4b9bb68ceec8d668317d454772a",
+      "weight": {
+        "path": "releases/final-pick-seed0-a-001/weights.pt",
+        "sha256": "0fd5a7abb2f4d4a6b77a9385f2e0be566674b1b0d1c2fb386bbb614b64e2edf8",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.6509955250076,
+      "whole_gpu_peak_mib": 3588
+    },
+    {
+      "id": "pick-seed0-b",
+      "manifest_sha256": "2fa6a59b8af93fa7a4869df6bcfa3d6c7dce4460b7db75efa703f8e24d20712f",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 152,
+      "source_snapshot_sha256": "4f818c46086129d27ba23eede0313b3e4309f524c455c46226f5d90a205c165b",
+      "tracked_patch_sha256": "8cdd8c4565f7aa88dabc42c824003ec8254a24f1316698f217b5eb258160ed06",
+      "weight": {
+        "path": "releases/final-pick-seed0-b-001/weights.pt",
+        "sha256": "6c3fcf6a25fe5406d118581dc2e862347876145be861a311c56244601490f9a0",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.638479629997164,
+      "whole_gpu_peak_mib": 3646
+    },
+    {
+      "id": "pick-seed0-c",
+      "manifest_sha256": "f4aba11129dc0fec42e91fbc4d9bbe4a088e696066409524a9eeab2df9f88646",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "639344b953aa1152132227320773ce4129a871384d5930f9d493371c21b1ccbe",
+      "tracked_patch_sha256": "613f64fb9d3b1991bf7444a330ecf566c4c42483700b71c00d77ba7796ae5773",
+      "weight": {
+        "path": "releases/final-pick-seed0-c-001/weights.pt",
+        "sha256": "edc0356a2ce37ff83b0b94c76b24a803c0915841979125fe9fcfc83abf8ce911",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.7297199619934,
+      "whole_gpu_peak_mib": 3483
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "manifest_sha256": "95ad02e4edd476e1225c7eb90d105a2afa89a9ccad283aa7e91903637acf2e63",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "0ec5c70a22f5b9c206dfe00a36720aa91b323654a22869437044bc5ff9e4d2ad",
+      "tracked_patch_sha256": "1bbc38ffeeb6225e24e30de4519916bc3bc9c9979fc0876932fcb59e52bf6ba4",
+      "weight": {
+        "path": "releases/final-pick-seed0-c-continue-001/weights.pt",
+        "sha256": "0bd751755f350ef8716eebc8aa27926aa3562c0ea6cecf72485ba104eeee0657",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.71053030900657,
+      "whole_gpu_peak_mib": 3583
+    },
+    {
+      "id": "pick-seed0-u0",
+      "manifest_sha256": "ed2d7468d27537db7fdb2675b54b413d96ef66d31e2c0960880c80b7230ddd89",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "45a01375389f71b403c2f75e7ecf41aee596e5ef928b7b54aa4af99e34345c35",
+      "tracked_patch_sha256": "ef10614ee24735e506d354c17e3f6c649cbec3c6557ff263a7e6cce8e5862257",
+      "weight": {
+        "path": "releases/final-pick-seed0-u0-001/weights.pt",
+        "sha256": "ed8d8b5cff7284212084a8b2f58f06715d1e297348433b4466085f225a50e4ad",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 242.53016390901757,
+      "whole_gpu_peak_mib": 3587
+    },
+    {
+      "id": "pick-seed1-a",
+      "manifest_sha256": "96ce2e1a406a1d270f048b47f1fd090a40cbad7619be8f9ec535018873d7460f",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "80281620e325dbbdc6301f677b65ae1136c4fda3790ef79ace33d9a943baf9cf",
+      "tracked_patch_sha256": "53b11efaa05f36aeffe81db443e99103f577be6ef8ce673af31d0cbdcb1775b9",
+      "weight": {
+        "path": "releases/final-pick-seed1-a-001/weights.pt",
+        "sha256": "a19516dcab9562312b45f9fa3cb1b4b47df4470603ea1c49976b667d2b504396",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 56.62444670801051,
+      "whole_gpu_peak_mib": 3462
+    },
+    {
+      "id": "pick-seed1-b",
+      "manifest_sha256": "c51bc16139933a7343dde4072bd756e5741a2b96098a80825b245e9a4d9d9518",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "0f5331b49d9c0d36d4d333c65584062cb733f61a80e1c5d5503039bef3799cb4",
+      "tracked_patch_sha256": "94d284ec8b998cb539394204b200a1de0252f9b432e9f558daec690c461775a3",
+      "weight": {
+        "path": "releases/final-pick-seed1-b-001/weights.pt",
+        "sha256": "c6cf2a1b0f1ea99e9e75a6ed0e56efc59531738926d6e1a2d3b00f28cc03f27e",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 50.566630635003094,
+      "whole_gpu_peak_mib": 3453
+    },
+    {
+      "id": "pick-seed1-c",
+      "manifest_sha256": "fa5311239913a0eb9776d22dd61ea53c8d813459e00f9bd74b3ccb340985c9b0",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "e5b7e342bc5c94c586fd1575d973f5f273cc0ffbf8b496b47eee131062b99f8d",
+      "tracked_patch_sha256": "63c3aabccf248d9c24c807b3104e895d1fb7bccd4df46023751876c6b7d92b09",
+      "weight": {
+        "path": "releases/final-pick-seed1-c-001/weights.pt",
+        "sha256": "a10ee079e30e1ef71461098f3d61d043fb4bfc608b90804c155498cc79f98475",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.7015443170094,
+      "whole_gpu_peak_mib": 3460
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "manifest_sha256": "f1aa6faedfc0b0ebf0d7d349e713f1b5e36b4d8c27eba29581e48099c6e63715",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "c1ab4f8b7d2a46dbc3a8cc52b3a6f58be68587ac9877747eccc5fb453e3683bf",
+      "tracked_patch_sha256": "2671b839474396bb9da8952b456cb14be37115f3f2f56f4c6f2b9f76acfbc175",
+      "weight": {
+        "path": "releases/final-pick-seed1-c-continue-001/weights.pt",
+        "sha256": "ef0d7207a7a4ab6c4b20b100058916143dcb9be11dc5a2aa0f1bc77f86a1b207",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.72879979200661,
+      "whole_gpu_peak_mib": 3488
+    },
+    {
+      "id": "pick-seed1-u0",
+      "manifest_sha256": "25a23ba4b859d6c6381ecb89389943bf1aa6de15a4292301c859996e1adcea1d",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 153,
+      "source_snapshot_sha256": "834493bdabc8fc8e0008b65a60ea96af88098ae32923e2d92f600ced92ca7a01",
+      "tracked_patch_sha256": "bcccb575239a359daf5384f0c60733e855ead538949e275b564a5902bdf543bd",
+      "weight": {
+        "path": "releases/final-pick-seed1-u0-001/weights.pt",
+        "sha256": "12eb8592140985a39b3a57e106534eb4873fd4b5d31dbf1edd2b6d5887572d87",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 248.58981515601045,
+      "whole_gpu_peak_mib": 3601
+    },
+    {
+      "id": "pick-seed2-a",
+      "manifest_sha256": "4702a467328ec8a8da5d2838c72c359c359a0407b9f07b33fb04a095f81eebd2",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 154,
+      "source_snapshot_sha256": "c9b3d98fdaf84c8ad3546873a7d7989fb587289feefda2403bf7b39da9c5010d",
+      "tracked_patch_sha256": "dc37f9d3dd8dd7b2a713a8e767ef9f6fdc82913ad2a1bf9e169b862f454608aa",
+      "weight": {
+        "path": "releases/final-pick-seed2-a-001/weights.pt",
+        "sha256": "3d641efc27c7c43b0887b2ff80530800e7ec175b761c935b56367c39d1c4ee02",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 56.62699014600366,
+      "whole_gpu_peak_mib": 3469
+    },
+    {
+      "id": "pick-seed2-b",
+      "manifest_sha256": "0b5ac26783927826044e0a8484cb2f7cc302933866abc355a36e4b6c0d6e91f1",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 154,
+      "source_snapshot_sha256": "1bf5c7a192b404b63c3f29facca244aba18a3723efefa1d5ee23e4b47bf8cabb",
+      "tracked_patch_sha256": "0a54d848d7b42b4160aeec18160bf27899d347e1a00a8550502866b4249db4b0",
+      "weight": {
+        "path": "releases/final-pick-seed2-b-001/weights.pt",
+        "sha256": "cdca30b7b3f74c08110dac6522d4a53320037d8303001f6b34581a71480e7bf0",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.61961254995549,
+      "whole_gpu_peak_mib": 3496
+    },
+    {
+      "id": "pick-seed2-c",
+      "manifest_sha256": "88052a7464ce77e5c3fbc891a97ac84f621e377d5f44601a370c50518868f15f",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 155,
+      "source_snapshot_sha256": "c5ee6a09b2e05ab83b7220be69acc0077f4984e28bebdd4a003cd04bed2c042b",
+      "tracked_patch_sha256": "d63dfce4b38a0360c23198a30a44f10704e5cfac8667659e2a040b55efd7e971",
+      "weight": {
+        "path": "releases/final-pick-seed2-c-001/weights.pt",
+        "sha256": "9908f9bd10948270b39db59f2b4bd69398a6ed2d37bd58a1be5934a145c1f19a",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 66.74195267900359,
+      "whole_gpu_peak_mib": 3490
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "manifest_sha256": "5f76453e314f17c4f17cb05b521f38f67e1b317d4e8d55aef642a2d3517a8771",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 155,
+      "source_snapshot_sha256": "3de611eab1eb538945d38cd6cb3ab97ad31e8b9b8fb833f4d54eb954b5b1534d",
+      "tracked_patch_sha256": "d0acb254e944d3fba3ee7a24b134d29ee19b0ac7817e357925f7d01c4f7a397f",
+      "weight": {
+        "path": "releases/final-pick-seed2-c-continue-001/weights.pt",
+        "sha256": "d28fe5f71e73776e144ed1ce253ca32fc8918ef404afbd789897debc7e134469",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.68583410902647,
+      "whole_gpu_peak_mib": 3488
+    },
+    {
+      "id": "pick-seed2-u0",
+      "manifest_sha256": "d82d529d13dfbf15a6a3ea25e1ac74a7f7828a130fd9079f4918e5587f9d21e6",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "310dbeec406763cf6dc5eb308b45bde3e9dee8e726eb86de6d3b1a74c370038d",
+      "tracked_patch_sha256": "1944bfcb202b8efd3a4250b2229d42574e46b12a9b2b6d89aa5ad838b49366fb",
+      "weight": {
+        "path": "releases/final-pick-seed2-u0-001/weights.pt",
+        "sha256": "5f66a219b4dc2a8381ba2b50d3223b52e94de41953b782930541fc814b7b4152",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 280.8967634799774,
+      "whole_gpu_peak_mib": 3569
+    },
+    {
+      "id": "stack-seed0-a",
+      "manifest_sha256": "918a8d72dc9f996adb2697100db60b6f8c159cd21858b74fdd6026f69f2f5974",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "d8245a1092075aeedec3fc520edf69ed6bf08ec7d3d66c99f70387461f8ddafd",
+      "tracked_patch_sha256": "ed36ea99cc085ce60dff39388011cd74af6bdbb8aae989ca6c5371aeb2d98241",
+      "weight": {
+        "path": "releases/final-stack-seed0-a-001/weights.pt",
+        "sha256": "de1ee3ac3ed51012b288788135586d6dfa8a41d9b014e6179e743b48ec24f2d8",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 74.8544324200484,
+      "whole_gpu_peak_mib": 3533
+    },
+    {
+      "id": "stack-seed0-b",
+      "manifest_sha256": "13392bc83b75a46c0f71dc7ac5dc4eea37a1683543186ba26d2a70f8886e73aa",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "eef754bbbd8d469920c9ebeb6dd41b8348df79965ea440dd5fc1ad8e18ef5e4d",
+      "tracked_patch_sha256": "429f92b0d1273e03dcc30966e9e6b7864e96fd9bac8b7ffb604fdf1397e64080",
+      "weight": {
+        "path": "releases/final-stack-seed0-b-001/weights.pt",
+        "sha256": "ebcc733c8d771bce5364067fa5065508418fe1b55c5761d069b0bef60bc8c510",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 82.88870082201902,
+      "whole_gpu_peak_mib": 3682
+    },
+    {
+      "id": "stack-seed0-c",
+      "manifest_sha256": "42d5db2b8ff3a1eeb0dfbc43f4a1f2594bab233c8ca4e15bd8b171545e2616e6",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "7f183346150069d4495edb4449b7b56ec7f760488c7ff68f47ce8fa7330fa559",
+      "tracked_patch_sha256": "3dad9db6469b1b86df6525e48715e6b536cc2e1602b491b2ea75ad373571f959",
+      "weight": {
+        "path": "releases/final-stack-seed0-c-001/weights.pt",
+        "sha256": "5b211f0d021b7e21df26aeb858d6c6db9f52962c5d2f25e9e26010a2799d4afd",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 91.02574878197629,
+      "whole_gpu_peak_mib": 3592
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "manifest_sha256": "7b5ead954c1d8fc2820e8f778e2178b68b5b8df13f0db72f824acdbbd1d70fcd",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "c1a1c06699085ca68706918a3405838e954e094dbd574983c213541c5a9587b3",
+      "tracked_patch_sha256": "fcbdf5783472367e5632be2519a5d1ca437ef5ffadd20ce0b0bc28cdfe0b3914",
+      "weight": {
+        "path": "releases/final-stack-seed0-c-continue-001/weights.pt",
+        "sha256": "3af6c33d205fa884413214919c5adfb33b2ac8a77949d9e30b1b431c806f144b",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 95.01046517700888,
+      "whole_gpu_peak_mib": 3555
+    },
+    {
+      "id": "stack-seed0-u0",
+      "manifest_sha256": "868398d833ad1b5ae82a5094cdf31a9b94ac9528a1f567d0d15a636fc98976e8",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 156,
+      "source_snapshot_sha256": "8c4a4475ba161e28d47035a88f4d620fcda2a319cb7dccc4ef9e9101e86d5cbe",
+      "tracked_patch_sha256": "adf9763fa0f6011f8f5e2e025469b13a3fa6e39109ecce77824d0316f095c3f2",
+      "weight": {
+        "path": "releases/final-stack-seed0-u0-001/weights.pt",
+        "sha256": "c17914cb0ba8b83c61f5be30a76fcf8532a255ba2b3f537cded6e2078c5c7c90",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 343.5439161590184,
+      "whole_gpu_peak_mib": 3642
+    },
+    {
+      "id": "peg-seed0-a",
+      "manifest_sha256": "8c254db591591b1da7f00f422712d80e456530e0d65807edbd7a837d4ea435cb",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 157,
+      "source_snapshot_sha256": "84ad550158bcdc14a6b26a916094002bd5dc088b3c3ed9c364b3a13ffbdc0fd5",
+      "tracked_patch_sha256": "8f8da0420fb35254290aae8b1fd0c55a3a2e521387be1bc022843936ccc09eef",
+      "weight": {
+        "path": "releases/final-peg-seed0-a-001/weights.pt",
+        "sha256": "d46ffe4dff403958e831c263c34ebcc8e9d213ef0c0a7bd7f1f4a1aca67a39e8",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 139.4718144449871,
+      "whole_gpu_peak_mib": 3545
+    },
+    {
+      "id": "peg-seed0-b",
+      "manifest_sha256": "d723be3df5a272969fdb8700bbc0410d4da55a73c7ead48448c901b776e1ea7a",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 157,
+      "source_snapshot_sha256": "f303feb905fe250347e2cf316cf047d682063ffd0a953969107e2cac0a4a4caf",
+      "tracked_patch_sha256": "2ec16d6ee75b7d42da616f7ac4f2a0a0e6aa8203073c054108725818c2127007",
+      "weight": {
+        "path": "releases/final-peg-seed0-b-001/weights.pt",
+        "sha256": "21a03bc8551a4a9523b183c5fab16463d10c74a87d5f80795d9dece5e5d85cc6",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 137.4665417399956,
+      "whole_gpu_peak_mib": 3547
+    },
+    {
+      "id": "peg-seed0-c",
+      "manifest_sha256": "713965a04fa99e9377e71af42bf37f460eb1cbadd913593494d55faecf87922d",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "de0c15a54be10bd829561d886cb252d597de9999d14d74d0979d8adbdf03b448",
+      "tracked_patch_sha256": "0f9b9d79306c9163e14f6fb61223157e5a8f5fc7dc105162f8b7585d308875de",
+      "weight": {
+        "path": "releases/final-peg-seed0-c-001/weights.pt",
+        "sha256": "0ac936f2c026f7b7fbacddf3a265437c51d4e1869a8d80eb48ae5b03d7288784",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 133.373731322994,
+      "whole_gpu_peak_mib": 3692
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "manifest_sha256": "0c7c8111566c8a677822dca5da186412a3dfa7a96d6dd6444f6d95d560c5dc56",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "3fea121a66de63646c852118c4574970fe85b3b8dfad33e461219b993530c594",
+      "tracked_patch_sha256": "b3cec6ea9ecb3394860ee3cebf398f5d63460aa355f262ee60609ef7f32e3ce6",
+      "weight": {
+        "path": "releases/final-peg-seed0-c-continue-001/weights.pt",
+        "sha256": "782cf3b8be18ae5b9bb74a191bd3e3241c8d4ac7c46fe358822f76bd193c2eef",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 113.23027963301865,
+      "whole_gpu_peak_mib": 3789
+    },
+    {
+      "id": "peg-seed0-u0",
+      "manifest_sha256": "09e3ce18edbef7ebdb4f879071920cf01d40a26eaf4edcd3e883548bb5b3726a",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "0c53220ee035b55c99e0a46e7d10aa1e4f054a933788187ad5bdbb6923af5d83",
+      "tracked_patch_sha256": "a7432516c6a3bc8bfd7acdd93406646bc18cb904597e7e851672bbccdc885e9e",
+      "weight": {
+        "path": "releases/final-peg-seed0-u0-001/weights.pt",
+        "sha256": "bc627b0190d3c10dc6113dd0e8018e8d4b00f3496ad145a1cbb000863d0c2af9",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 497.0260166449589,
+      "whole_gpu_peak_mib": 3868
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "manifest_sha256": "13402b50894de750d7b7b0581da9e44bfa43c6dee0b0188141d705421b7a2336",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "40f3f4afe7523b5eefc3482fc2efaea0c88dbf7022d4c70afbf33fdb7e885ded",
+      "tracked_patch_sha256": "07653c4812a967976512d3e0f3592e9ac43a086669ab7e07ffe22a823427a7bc",
+      "weight": {
+        "path": "releases/final-u1-pick-seed0-c-001/weights.pt",
+        "sha256": "9475dc09ce0470259ea8ca915033a64fa8208012c27c42eb17bff868b674cb94",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.658619022986386,
+      "whole_gpu_peak_mib": 3537
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "manifest_sha256": "6d2b29996a389bc96b4a1a573de2114910fd69b0c99293ffbe47508a54eed830",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "db17b18ce31d35546d808560de28b9de1e4ae8457b5fb7b52c41947a8e0fcf89",
+      "tracked_patch_sha256": "8766b6998dcc5042a50a9e1cc0a91cb418ca829023f0ccfee8ae3670b87cfa69",
+      "weight": {
+        "path": "releases/final-u1-pick-seed0-c-continue-001/weights.pt",
+        "sha256": "7bdbc8cc2659b9d9902d4972085602f930186e4c236a39e544975625a0fcf346",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.6629759480129,
+      "whole_gpu_peak_mib": 3657
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "manifest_sha256": "fe17bdcf7e0aa002da5345d0b54bc18cf6f26f3ac3e248ff67f174e0eb652d35",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "06dc1dc94d3718a3314d9c4a12f6d5233695f177d192728fd04f351998b33136",
+      "tracked_patch_sha256": "ba6832165455af99af24230a28ed341a6242e3b388938c91155ae6f1e7ccb976",
+      "weight": {
+        "path": "releases/final-u1-pick-seed0-u0-001/weights.pt",
+        "sha256": "c729f93666550b16e95e48f1888e27a0e1fb5917e826eca2ba3ab9776af0097e",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 234.4408237269963,
+      "whole_gpu_peak_mib": 3556
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "manifest_sha256": "1707a61a3d4d410b4380b1ed91fd3f18ae70fc44558203ada5a66fc3c10a0cb8",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "a147e7810c1a3cafde9fcdcbc36f2c36b78cf4aae189a016d17d286e39b80b58",
+      "tracked_patch_sha256": "4d559e19af4ad3f0295863f0629e7d736d8fb61866a3fcb4d4e65c984db5258d",
+      "weight": {
+        "path": "releases/final-u1-pick-seed1-c-001/weights.pt",
+        "sha256": "6053e339635e36563c0756374f0c7ea952935149ac7bb80f78d254e8c7608a27",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.68417796998983,
+      "whole_gpu_peak_mib": 3500
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "manifest_sha256": "a2fbd54b601e739cf4e6bcbc583eabbaa7d3468c2c7d85a11a49a9285e5806c0",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "5afb2ab5998eed5b40313f7891166a5fafb154c40f990c044d474c38d5f64e60",
+      "tracked_patch_sha256": "1aa5e8175255f7c0a459f7f27bea697e80fcf8da5ae00356692aac28c89665a9",
+      "weight": {
+        "path": "releases/final-u1-pick-seed1-c-continue-001/weights.pt",
+        "sha256": "0cc04c225199bf1f24080fa360edf1d1a4f5d0f688858fe88bc8e81a576defba",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.664521812985186,
+      "whole_gpu_peak_mib": 3502
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "manifest_sha256": "2101ef24759ed2f3b5d8b6fc23c8c20308cae5d7ba4d93dc384a98e37a6b9291",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "beb3650278bacfc374b7ec91bbe393d88641fe357f0fb1e14ae9ae4f738eb819",
+      "tracked_patch_sha256": "d222c5f8e4b9f76d0ba810b5c9cbe6931e69c80227ec96bbba3336711d6a32eb",
+      "weight": {
+        "path": "releases/final-u1-pick-seed1-u0-001/weights.pt",
+        "sha256": "dfd5900571aae93184dacf7d1a3ac30e3f8d7144eb8e439f0d40c3b6b39d814a",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 234.41810826596338,
+      "whole_gpu_peak_mib": 3602
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "manifest_sha256": "a4f34ec62ed4c799b9ea97219a623ff324731ade7be9046dcb8c24931a8919c3",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "a0cfc7bb9fa92033f960d61560349e8b6e74be4348b83d2160fc5d5c413808e4",
+      "tracked_patch_sha256": "b0c780a63f0fe0431de2a062d174c78202248ace38b9f4b57b47cfdc1c9a604c",
+      "weight": {
+        "path": "releases/final-u1-pick-seed2-c-001/weights.pt",
+        "sha256": "1fcd2e7cf3f6455416535460d9d727f4ffb11767ef3464d6339509027ea0ab3a",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.66675081901485,
+      "whole_gpu_peak_mib": 3496
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "manifest_sha256": "6fd50a1bf6dc9d54b450da36af406a98f26b49b632f10feb8f858bf9dbbe3d1f",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "9b7826d85fc5692a3aaba6cd36849a8eee43eb57c6a73818acfd44fed7b0ed97",
+      "tracked_patch_sha256": "86030417764f0b617fe02fcb8f4fae594e2b5ad03963e0fb562307ad9bd05aa5",
+      "weight": {
+        "path": "releases/final-u1-pick-seed2-c-continue-001/weights.pt",
+        "sha256": "b777e74af1a2f0794e444dd7491ad65f9484428a8a9c80d8d478903a2ae75228",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.65652479795972,
+      "whole_gpu_peak_mib": 3665
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "manifest_sha256": "7b0ea5bffe462018f57bb014bee9114508d13094381854f0a10a8b2e4331770d",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "abd7b8a2566d23cc207c49e0a27cbbaef0dd3cd84f7ec47e52d2a61ed9fc6c34",
+      "tracked_patch_sha256": "b9b8ded73f8ae76fd95b048e28e6bb275b85c583bec808fd0c22996e65db8899",
+      "weight": {
+        "path": "releases/final-u1-pick-seed2-u0-001/weights.pt",
+        "sha256": "62191875543954f41b81f63ace06cac41190bf4e19a4a513875158f006b32f47",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 244.5164141539717,
+      "whole_gpu_peak_mib": 3854
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "manifest_sha256": "fd287b70b4209f8eacfa045df50af563666b54074a00a896a473f1752c18042d",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "1149ad70d107ed6fe251f92f53066b3524aebc82d509aec364f160555dbe1a65",
+      "tracked_patch_sha256": "22cc28462cb6270126f8744c36c4c6cf1fe2235511fc894f088440b488b34cc6",
+      "weight": {
+        "path": "releases/final-rlpd-seed0-step262144-001/actor.msgpack",
+        "sha256": "773f1a125222635ac833c95797620a1acf644993b7c290f9fd111304f461a2ff",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 70.79966663802043,
+      "whole_gpu_peak_mib": 3993
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "manifest_sha256": "07dc9318faa2470ac5266859615cdc9ed625c248ea764d95f8f4de7c3ba8e564",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "638622c6a905898dd109c2384ea3a54833ca05e89e02e906cc1e60ad9952108d",
+      "tracked_patch_sha256": "1f60cac089a3cbbf8476be4ca91f67c8fb17ed385760a9a732f018d589cefbaf",
+      "weight": {
+        "path": "releases/final-rlpd-seed0-step524288-001/actor.msgpack",
+        "sha256": "f9562fbecc865beeacb98e14a8f381db1e1aed269a699cb8707773507bf6003e",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 68.75653941900237,
+      "whole_gpu_peak_mib": 4091
+    },
+    {
+      "id": "pick-seed3-a",
+      "manifest_sha256": "c06ff1648f500202f1e2a2a6b8bc1d19b43e2c54efd3fd7386f57538cf163268",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "5df3843f6960254ebb92f02721a1540deb43ba733a163983e625314c3967dc22",
+      "tracked_patch_sha256": "323e052c3b76a3ed4bf9ccb141189231003f43b1c5972d51d61805391fdd180e",
+      "weight": {
+        "path": "releases/final-pick-seed3-a-001/weights.pt",
+        "sha256": "d31de35f0ec800fc9ad53a57e928d82d7aa3958671ce5fe64ff585202a41f29c",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 54.6084768770379,
+      "whole_gpu_peak_mib": 3706
+    },
+    {
+      "id": "pick-seed3-b",
+      "manifest_sha256": "de23382ea6b87a2e6e1ed7e1aaed6a08a5f00288364a5e4b77d13d2c9d078143",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "9be722c497a396549c3d17de865bf749fa1b155d050ab482bdf499f2d6a764ae",
+      "tracked_patch_sha256": "6da999f92c4bdbd9b4b2d12be74e3c6720caa3d098821968e54f58b082c7a853",
+      "weight": {
+        "path": "releases/final-pick-seed3-b-001/weights.pt",
+        "sha256": "64a2ecf17a8b28aa2e074e7ad965724258edd6924a6021358af39738fdb797cb",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.66301698499592,
+      "whole_gpu_peak_mib": 3589
+    },
+    {
+      "id": "pick-seed3-c",
+      "manifest_sha256": "5f15343e55971bf6b325ee64c7037570b884b81b33609b2bacb9ca52a6802cd9",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "dbf94b54716bcbcefb4ca0dbbca7eac385321cc012c1a7fa5ff3286aba60bb36",
+      "tracked_patch_sha256": "170d3e53739b2cf1e55ffb206b016b221ce033357efe25a86d338c8d2d96dc15",
+      "weight": {
+        "path": "releases/final-pick-seed3-c-001/weights.pt",
+        "sha256": "7d181bcea61b97ee2bcb3859e1da947baefc846e3ab686ac1dcd6b47106d2c60",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.73843966104323,
+      "whole_gpu_peak_mib": 3574
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "manifest_sha256": "a000934828760253914a799e2799163ffca852253e1899820cc3f1e661630753",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "ab07d290fcd1aa91db8241eceee0feb204afdccac493ac79ef5d191e0099b2a7",
+      "tracked_patch_sha256": "ddfbffb5a10402501323fb5adbcbab314ea63622c9677d406c658987629a066c",
+      "weight": {
+        "path": "releases/final-pick-seed3-c-continue-001/weights.pt",
+        "sha256": "18b7cb37159f9d2f0983c74a77923da1e826485402b3d1aed3457de8d0280ad9",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.64201603602851,
+      "whole_gpu_peak_mib": 3581
+    },
+    {
+      "id": "pick-seed3-u0",
+      "manifest_sha256": "a9a98b95d93fa2d10c1cf6a131a2138ca7b5ca24649a64d3b8fb33df468686ec",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "cfb82be9edeb98fb0f3709a8542307c1725b992c5db45534967ab277be41bb88",
+      "tracked_patch_sha256": "7f099fa7c8f4ed276a87833eb20bf768b0692de8624737f940ffa394d154376a",
+      "weight": {
+        "path": "releases/final-pick-seed3-u0-001/weights.pt",
+        "sha256": "93e20b29f35ee9266dfde9920fb03fe7355b44a68132d5af2eee549b8c0402b5",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 242.50625080399914,
+      "whole_gpu_peak_mib": 3614
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "manifest_sha256": "f2273dafbb3bbe67f2fb4418fe89362c55bcc6a207e0916bc5bc351e83121b0c",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "fe28b1f6c36045ca5c4e5dc50331d362f8d1c7fb86633d37fd4986bdb6fc82b2",
+      "tracked_patch_sha256": "cf7b52a1c33ce7540cf790417c711fbbed46003b5f2d3ea69a379fb12d7e0cda",
+      "weight": {
+        "path": "releases/final-u1-pick-seed3-c-001/weights.pt",
+        "sha256": "cff720396deb47e12c8f0cdd3581e2833397abfaac4adaeb791aea4fb17d1120",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 66.72139246598817,
+      "whole_gpu_peak_mib": 3574
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "manifest_sha256": "a8cdcc690d0b8d9dd29fa5310710c5382faa1d969d6a281d065c421db51018c7",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "ff11052d18ba4414e566476c5396ac16ee71e82a71548ecbefee0d74203f7fc6",
+      "tracked_patch_sha256": "0b0d7b5914642fd52ab6582f421b400be2fd14c9b75e38c61b3e68aa90b1c836",
+      "weight": {
+        "path": "releases/final-u1-pick-seed3-c-continue-001/weights.pt",
+        "sha256": "2a1d62cf529d2ca871a21c6813eb8708d8315348d4c7ac798ce77525d0541d5a",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 64.6869114759611,
+      "whole_gpu_peak_mib": 3520
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "manifest_sha256": "c53e92ed0c972da72aa94f3d3fea7d823be86cdb5b11082baf65a534fc55cd37",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "094fc1db17625f46fc6d3ae630b659e4f24c598f4498bd14f88cccdd50237b8c",
+      "tracked_patch_sha256": "e79b27b832ae782556ab8af8c3fc7c6388ef79456bae476812f41611517b562c",
+      "weight": {
+        "path": "releases/final-u1-pick-seed3-u0-001/weights.pt",
+        "sha256": "9e8908268b651b25d4af7b2406bba862dbcd8e4a5b2a51189b78a57cb343f235",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 250.62558630399872,
+      "whole_gpu_peak_mib": 3578
+    },
+    {
+      "id": "pick-seed4-a",
+      "manifest_sha256": "de6b9a1527f8156fb8af5df8c128d994e08a2ec0a53f1edc3f1ac4f46279e8e3",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "d67f626553810b1cf3421a9afe25870ad91cf51e65877955a5f92fb166fb06a0",
+      "tracked_patch_sha256": "10aa0710215a197f39288673a902ffae2c8aca220aaa00c50fab5386c3fcbea1",
+      "weight": {
+        "path": "releases/final-pick-seed4-a-001/weights.pt",
+        "sha256": "f1d526879f230b87c3676468fb83de1118006b9eb62b8f9ccdbf8d74a0818364",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 54.59883120004088,
+      "whole_gpu_peak_mib": 3574
+    },
+    {
+      "id": "pick-seed4-b",
+      "manifest_sha256": "25168056099fc17659f6a79fefe657321bb873dcceb304fce346a793080383eb",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "9213bed42a5dc8230810ff31a9382b72b5c7cf83a38c354349b35cc16d0a6741",
+      "tracked_patch_sha256": "2931d43c457bec2aa37c54d659c417f79c476fcb37845799791afcf62022551f",
+      "weight": {
+        "path": "releases/final-pick-seed4-b-001/weights.pt",
+        "sha256": "f4355946cc78e298d8f0d8411d83a55e787cb9fd37e45231dfac79bb9150c99c",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 54.59610756399343,
+      "whole_gpu_peak_mib": 3570
+    },
+    {
+      "id": "pick-seed4-c",
+      "manifest_sha256": "7405ee93586efd56f7356eaea632079b4db172a7f1b8b83e8af2a94f85d0cc97",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "7b9c04497eb5d3858ea25e70f7e1c0cc1f537d8f6dab3e925f01223c54eaae2d",
+      "tracked_patch_sha256": "b1035cbc3dd5dc6db08f2208c7db0a9b0bd1ecfdbdf21165efe483228de5d727",
+      "weight": {
+        "path": "releases/final-pick-seed4-c-001/weights.pt",
+        "sha256": "259be762213a7eb659ad60a6c6e554d45d878f215db59099d6d8108fb4a0df7e",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.673397597973235,
+      "whole_gpu_peak_mib": 3778
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "manifest_sha256": "8e50ac38d574ffcd968a9ba9e14135c2020daa711f4e551d128a5c99bb8c3441",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "f8eae26e60b7f3c8bffd980cc149089bb67b34d514bc6283d6ac73be9ccf08dc",
+      "tracked_patch_sha256": "f88616911b2a8a8a22766dacfe95db697f70f44eeaf9e13ba5e00cfaaacc36db",
+      "weight": {
+        "path": "releases/final-pick-seed4-c-continue-001/weights.pt",
+        "sha256": "1b94711b96b1298787474c642c43786da10260b74eb8c792f38c94e5054a91f3",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.655555650999304,
+      "whole_gpu_peak_mib": 3575
+    },
+    {
+      "id": "pick-seed4-u0",
+      "manifest_sha256": "23bf746f4f080c1c7d95736d9f86ad087b340713ffe030c81e8ce16833740cd6",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "3a03e56a27664ca40c91be83876f442981a2852d361f9c85fabe3c37097033be",
+      "tracked_patch_sha256": "28f292656feae9d4792c59b27f5e01e5110d8517638cfebd63ba1cfaaa575074",
+      "weight": {
+        "path": "releases/final-pick-seed4-u0-001/weights.pt",
+        "sha256": "7931a42155497012f171ba5490a97c206ea0f114c2d78bf95264191dc66afa7a",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 248.78845725697465,
+      "whole_gpu_peak_mib": 3653
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "manifest_sha256": "232712a3c294883bfca1654658bba95bf456ee2a990183181ce0d630327a6fcc",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "7fab572c5545e129f1d9a994980719bd0a234bda76b0c3b882c52595bd28b7e8",
+      "tracked_patch_sha256": "2f29c1979bc7f87a7a31cb9114d772a622e2c9b2a7cadc5e7d343bcc6a2b4f9e",
+      "weight": {
+        "path": "releases/final-u1-pick-seed4-c-001/weights.pt",
+        "sha256": "ecaef59e27d3e3136071f2359cd1565c50010ee1bf225857860da014c70166b0",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.63354674499715,
+      "whole_gpu_peak_mib": 3596
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "manifest_sha256": "fa85fafd052694c7936ac2a1dedfc52a03a9586a0387c016dcac930b8e473220",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "82706ee413d7bd381dc53cb7a685c38e2c8a9ddfb98f31db37378fe052d3670f",
+      "tracked_patch_sha256": "04eb6bc90147f0df1e51c6b19ec7ff25e972af44055162dddf46ecf6482fecea",
+      "weight": {
+        "path": "releases/final-u1-pick-seed4-c-continue-001/weights.pt",
+        "sha256": "acb6f39fb9a266b73a10af36df26a27db42f860fd8d69c8116c232626bcd9941",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.65885713300668,
+      "whole_gpu_peak_mib": 3588
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "manifest_sha256": "0ca7882bbdec78c71b4bdabfad40b78b66a0a33224a51171ea4cac4296450445",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "50d55471e0cc46d8566ff302cac4dda3bad0e620963170aec6182a247a66dce0",
+      "tracked_patch_sha256": "4bb5f703145a048a9bcb776213b80693c4bbd908091a1b7088577637e27700e4",
+      "weight": {
+        "path": "releases/final-u1-pick-seed4-u0-001/weights.pt",
+        "sha256": "9fa2f8fa515d3005d15d17bfbc51362323aabc4f9d248155276d8f646a6f9dde",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 238.44760700705228,
+      "whole_gpu_peak_mib": 3537
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "manifest_sha256": "8bec7416c4792cd73147ac48f81c0a8c0fa52eac3a02178cf6f6cdeb52208e97",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "9ca6c4424a62ea1e3450175277ae28a865f04515e2d583fee4569a6527e67e98",
+      "tracked_patch_sha256": "1f60d51dc79d567646b4598d355b70daeff28336d5a16a9b4036d371aad45e6d",
+      "weight": {
+        "path": "releases/act-teacher-k30-001/weights.pt",
+        "sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.644024311040994,
+      "whole_gpu_peak_mib": 3535
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "manifest_sha256": "521f05ccd26334db5eb5098480f4497a3c3d0dfbd4102b5d654056edf83537ff",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "27d752cc4374eb9c3e3574cedf11e7824f6fa20c55f984cbf0821d9f2fed6da7",
+      "tracked_patch_sha256": "5790893e5a3431905149e7a546d6b2d927edcac6a22fcc1b47bc65f5be8767eb",
+      "weight": {
+        "path": "releases/act-teacher-k30-001/weights.pt",
+        "sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.67987900500884,
+      "whole_gpu_peak_mib": 3535
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "manifest_sha256": "f59e1b1a2a533065726ba7f9928c40e047570788eed4060956858a06dd7a2f45",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "f8384dc9d56bb88754a2ee6212af50c67ffb577976f573a0ba621aa2a93272e7",
+      "tracked_patch_sha256": "c66cbadb2b3ae4869dd533af73c2c51d4badb6c0c780eb6f24232d0c4c96827a",
+      "weight": {
+        "path": "releases/act-d1-negative-001/weights.pt",
+        "sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.61625622102292,
+      "whole_gpu_peak_mib": 3490
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "manifest_sha256": "94344071e5ee40b84e96f084477b3485d19dd45c30f12fdb80fe47db502fac26",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "a89ef4c981cba7781b57e7bc44789aa073a064960b5e1c5633a7c1c4b6105043",
+      "tracked_patch_sha256": "0bf586ea038cbf968ed3c019efe249a76a854874ee26c50558b1604b7e864767",
+      "weight": {
+        "path": "releases/act-d1-negative-001/weights.pt",
+        "sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 48.51737650803989,
+      "whole_gpu_peak_mib": 3490
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "manifest_sha256": "1fe50ee2b7c29b1024f5f6dbf94ddedd5a3d4a465e5954d5ddaf70826b7b33bf",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "cb0c61835c7f8bdc3c96169c4109ae224d227f22b1aa9d89714d7f8be1937274",
+      "tracked_patch_sha256": "f1418cc03e41f95edb5c650f995707126471ef1a07a770a3d3c58fbdaca803d3",
+      "weight": {
+        "path": "releases/act-c1-init-001/weights.pt",
+        "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 62.67927949101431,
+      "whole_gpu_peak_mib": 3496
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "manifest_sha256": "b42833e097dba33a8aedf492bc8ad586e3a7fb5f43866ae5cb0a6cf4006d3007",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "c25820b0bb1722a794e200ef1ccd55f775401336fe38d9cefadc45fdd5a33a63",
+      "tracked_patch_sha256": "f3ff49eeaa90981fd3c0122e895d42ba8b9260eaab8bc2595b9ad9efc97cbfd9",
+      "weight": {
+        "path": "releases/act-c1-init-001/weights.pt",
+        "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.65367102698656,
+      "whole_gpu_peak_mib": 3571
+    },
+    {
+      "id": "act-t2-final-mean",
+      "manifest_sha256": "7342623a4d23c1cc425c344a62024ec7675e6111019fbd2acddcbb86ba831a16",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "0e2b272d1c81fa0256b1028885a6db5ac0d2c599a6d324d56dc775c67fb63fea",
+      "tracked_patch_sha256": "07bf2790cfaaff3303ea2597f3da49d215599130046a7350cc5c2a13e0e4017a",
+      "weight": {
+        "path": "releases/act-t2-online-final-001/weights.pt",
+        "sha256": "9bc432b97d907f25227a4382d36081dc82954d664b20ca7ff4f8c1e1056475d9",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.658466652967036,
+      "whole_gpu_peak_mib": 3540
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "manifest_sha256": "337b55704d754c62ae67b01620b200748233885423352fb9ec9139af19b184a1",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "f2f717b2d9723fa729c6e670fa7b5ca218b86479483fdb8559bf6cde2fc094b9",
+      "tracked_patch_sha256": "aac9bf9b0bd9a0b450aa0166861d285956c5db0b880f95fbac9c0cea6d7f41d6",
+      "weight": {
+        "path": "releases/act-t2-online-final-001/weights.pt",
+        "sha256": "9bc432b97d907f25227a4382d36081dc82954d664b20ca7ff4f8c1e1056475d9",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.678169119986705,
+      "whole_gpu_peak_mib": 3544
+    },
+    {
+      "id": "act-t3-final-mean",
+      "manifest_sha256": "4bd867b4ac2301cc57b5326df88a57774e8df8d86bf26ccff8c8651afd1eaa11",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "7cf8579fe4983044f46ae1203b4c778e33f90ed6eb15f50d72a52d57ce450eb3",
+      "tracked_patch_sha256": "b311e88d9fec9e3428346e4f42ee942c41a6efcee42bb1bcb7a9af1de00b3483",
+      "weight": {
+        "path": "releases/act-t3-online-final-001/weights.pt",
+        "sha256": "7c6d876e81e25b9c111e134e56ae1bc08f872e2e3b8dae15e800644b9a8c24a6",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 58.618411009025294,
+      "whole_gpu_peak_mib": 3553
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "manifest_sha256": "abff613d0559705b2e04b3def2c834623045a4d40f335c06dd4d537f5d72cb4c",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "ab42d33674a3edafa94b362117bc0f2e3f0ebf9ac6e1f2f8d4c5f29e54120f5b",
+      "tracked_patch_sha256": "33213d705a5685782d74ee7309e42f4d3ee24e242e0a0c5e739d6454923153d0",
+      "weight": {
+        "path": "releases/act-t3-online-final-001/weights.pt",
+        "sha256": "7c6d876e81e25b9c111e134e56ae1bc08f872e2e3b8dae15e800644b9a8c24a6",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 60.64362232602434,
+      "whole_gpu_peak_mib": 3550
+    },
+    {
+      "id": "act-t4-final-mean",
+      "manifest_sha256": "da7331197dde1e2ca2b73b20f28723667009441926078fa407b487a58d669b2d",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "eb135ed1d4289f52c2754c492a15d9cf627178eaa0dbd2badeb67dd55b753fb2",
+      "tracked_patch_sha256": "f1552beb4e1be7b70b39b0d85fc9af3e7863e03e5fce06b6000cc173216db34b",
+      "weight": {
+        "path": "releases/act-t4-online-final-001/weights.pt",
+        "sha256": "9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 50.573654801992234,
+      "whole_gpu_peak_mib": 3559
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "manifest_sha256": "28271bc3c3fcd07000d20b0b1fe11914935586c90097623f51493aa9b2d2721c",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "113dcab5ff0fb76c373573bef5bf8a1bfc1d7149416398558f9d52ac21ad581e",
+      "tracked_patch_sha256": "83e280004eaf4fda3e223b40474d6159f0a928012e16630c888f71b79fcfbc1a",
+      "weight": {
+        "path": "releases/act-t4-online-final-001/weights.pt",
+        "sha256": "9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 50.56239807896782,
+      "whole_gpu_peak_mib": 3544
+    },
+    {
+      "id": "act-t5-final-mean",
+      "manifest_sha256": "609a4717df2a873f7ee64628ad06f7ed8f58e0405dbb2cd0d4d9896a93c9991b",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "3ee4e96b9cfeb646ca275e391b4e9187b301382435e7c436206ab05e522ac3db",
+      "tracked_patch_sha256": "0610cf5c2d060a6360f35b54986c3c45ee0f88b331729b7da9ac4f1b53e017eb",
+      "weight": {
+        "path": "releases/act-t5-online-final-001/weights.pt",
+        "sha256": "1ac068d572bbf9d8fdc1fa08d016fefbdd72d684dd34de025f5c77f1f01ad44b",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 52.56499637902016,
+      "whole_gpu_peak_mib": 3564
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "manifest_sha256": "9264ef41b56ab142d3b7b4b725fc3b18f5e11538727bf41cc7b7103335c658b0",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "e47bc809b2000d8bd5999e365c23387ab04ccce799ee8c5f086b63fc65b8c0a8",
+      "tracked_patch_sha256": "8c68df40a16f69519eac453a0f44fb337270c94f0e3157ec54088e14643e46a7",
+      "weight": {
+        "path": "releases/act-t5-online-final-001/weights.pt",
+        "sha256": "1ac068d572bbf9d8fdc1fa08d016fefbdd72d684dd34de025f5c77f1f01ad44b",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 52.58652904705377,
+      "whole_gpu_peak_mib": 3541
+    },
+    {
+      "id": "act-t6-final-mean",
+      "manifest_sha256": "09222977703cdba40255afc170bdc7e65a934403b38c63a25610a35fe9a9d335",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "343b9f51c886a452043ed238d0d56da8c636a4147c82499aeafda00d9883787c",
+      "tracked_patch_sha256": "16a71899cf5b13f9f2a830e46762a313e9baed8ca54dc410f5bdba20ebf0a553",
+      "weight": {
+        "path": "releases/act-t6-online-final-001/weights.pt",
+        "sha256": "1edd54abe8df9c775b53841ecfaaea0adc6ff17489ea046f941bca1cb3800171",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 66.75572725996608,
+      "whole_gpu_peak_mib": 3563
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "manifest_sha256": "7e5b87dc59b2cd5a44846ff4f436180b0a0c5ff75b4791cae4bcaf3be5ae7245",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "7095bd3766f6f45bbed4bb40268167e04c3259dda994409f71fafcad864f4b39",
+      "tracked_patch_sha256": "3ba653b6a368e20bfa200e56a4cbe3de3389f361a096714b685f744f993310ad",
+      "weight": {
+        "path": "releases/act-t6-online-final-001/weights.pt",
+        "sha256": "1edd54abe8df9c775b53841ecfaaea0adc6ff17489ea046f941bca1cb3800171",
+        "verified": true
+      },
+      "exit_code": 0,
+      "stop_reason": null,
+      "gpu_job_seconds": 66.71449814800872,
+      "whole_gpu_peak_mib": 3528
+    },
+    {
+      "id": "act-u2-final-mean",
+      "manifest_sha256": "1b5cc0cecf580c8955b331b4f57c294ed48ce14c4a0656c78b32bd26c270a012",
+      "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "source_files_verified": 158,
+      "source_snapshot_sha256": "6d427c39fae75f0b70db09ade3360110e8653f974e19fb83527923f7cb317342",
+      "tracked_patch_sha256": "43d7be31e10c4ef0cac617204147e58631586c79ea4bf1582fa37dc94385cdbc",
+      "weight": null,
+      "exit_code": 143,
+      "stop_reason": "time_budget",
+      "gpu_job_seconds": 38.12614982697414,
+      "whole_gpu_peak_mib": 3534
+    }
+  ],
+  "all_gpu_job_seconds": 85131.54638952191,
+  "ledger_equal": true,
+  "gpu_limit_seconds": 86400,
+  "local_hypotheses_used": 2,
+  "final_batch_wall_seconds": 7200.778426306031,
+  "original_final_limit_seconds": 7200,
+  "manifest_interval_overlaps": [],
+  "audit_findings": [
+    "Final batch wall time includes 0.7784263060311787 seconds beyond cap; report shutdown/cleanup overhead explicitly"
+  ],
+  "new_environment_interactions": 0,
+  "new_training_updates": 0,
+  "completion_scope": "Provenance/accounting only. Missing final conditions, ACT-WM, independent ACT seeds/tasks, and unresolved scientific claims remain incomplete; this audit does not declare research goal achieved."
+}

@@ -1,0 +1,1732 @@
+{
+  "captured_at": 1792392481.1187603,
+  "source_queue": "act-final-evaluation-batch-003",
+  "complete_batch": false,
+  "entries": [
+    {
+      "id": "pick-seed0-c",
+      "experiment": "e7-test-pick-seed0-c-001",
+      "package": "releases/final-pick-seed0-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/episodes.jsonl",
+          "bytes": 27299,
+          "sha256": "b0cc716fba97da5d6aefd1d239f3b96d5b6556083d344e2cdbb2757e900954fe"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/manifest.json",
+          "bytes": 1020,
+          "sha256": "f4aba11129dc0fec42e91fbc4d9bbe4a088e696066409524a9eeab2df9f88646"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/resources.jsonl",
+          "bytes": 8652,
+          "sha256": "ab80897c52cdad46bfc97c67f037e3f80d409e40f82371f20160ff5f034266ad"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/result.json",
+          "bytes": 911,
+          "sha256": "305458d9e2ef6e0e93394e9fee17a4e5b55f6414fd26729c59eef805a2e838a7"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "639344b953aa1152132227320773ce4129a871384d5930f9d493371c21b1ccbe"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-001/working-tree.patch",
+          "bytes": 619718,
+          "sha256": "613f64fb9d3b1991bf7444a330ecf566c4c42483700b71c00d77ba7796ae5773"
+        },
+        {
+          "path": "releases/final-pick-seed0-c-001/manifest.json",
+          "bytes": 650,
+          "sha256": "f3d4778848b462c26f742a52f2ea64179a7dc10258027eeee659bac0da04502c"
+        },
+        {
+          "path": "releases/final-pick-seed0-c-001/weights.pt",
+          "bytes": 3473655,
+          "sha256": "edc0356a2ce37ff83b0b94c76b24a803c0915841979125fe9fcfc83abf8ce911"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "experiment": "e7-test-pick-seed0-c-continue-001",
+      "package": "releases/final-pick-seed0-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/episodes.jsonl",
+          "bytes": 27438,
+          "sha256": "8e3f98be24d04119a9a899c183031afab171b569d468b8d1bf34872718c4a816"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/manifest.json",
+          "bytes": 1048,
+          "sha256": "95ad02e4edd476e1225c7eb90d105a2afa89a9ccad283aa7e91903637acf2e63"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/resources.jsonl",
+          "bytes": 8651,
+          "sha256": "fe4c054b5e2f0d0f3fb3d2c844694b52019fbe4de60fe09e91ac90e0da214fea"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/result.json",
+          "bytes": 919,
+          "sha256": "356438ef536cfcfcf3c9990b84c27ed0829d7c17633fc8b293243a6eacae5f8c"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "0ec5c70a22f5b9c206dfe00a36720aa91b323654a22869437044bc5ff9e4d2ad"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-c-continue-001/working-tree.patch",
+          "bytes": 619751,
+          "sha256": "1bbc38ffeeb6225e24e30de4519916bc3bc9c9979fc0876932fcb59e52bf6ba4"
+        },
+        {
+          "path": "releases/final-pick-seed0-c-continue-001/manifest.json",
+          "bytes": 668,
+          "sha256": "633913ebe7c38a3e6260d29a40de601880a48b29509135d0e6481e7fd099f5c2"
+        },
+        {
+          "path": "releases/final-pick-seed0-c-continue-001/weights.pt",
+          "bytes": 3473847,
+          "sha256": "0bd751755f350ef8716eebc8aa27926aa3562c0ea6cecf72485ba104eeee0657"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed0-u0",
+      "experiment": "e7-test-pick-seed0-u0-001",
+      "package": "releases/final-pick-seed0-u0-001",
+      "conditions": 4,
+      "episodes": 400,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/episodes.jsonl",
+          "bytes": 104638,
+          "sha256": "184c41124128aff26424e49fe18c50b3a36f4124d56f0aa954b8997f44dd0d21"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/interactions.json",
+          "bytes": 369,
+          "sha256": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/manifest.json",
+          "bytes": 1066,
+          "sha256": "ed2d7468d27537db7fdb2675b54b413d96ef66d31e2c0960880c80b7230ddd89"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/resources.jsonl",
+          "bytes": 32458,
+          "sha256": "34a21274f92f3c412d9f77b3b58e472b66f29a4e29233de4601964cede879734"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/result.json",
+          "bytes": 1570,
+          "sha256": "63be521bf9d5f715118cf1cac70e628ab896f78beccf8a7ee6052543a47e472e"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "45a01375389f71b403c2f75e7ecf41aee596e5ef928b7b54aa4af99e34345c35"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed0-u0-001/working-tree.patch",
+          "bytes": 619793,
+          "sha256": "ef10614ee24735e506d354c17e3f6c649cbec3c6557ff263a7e6cce8e5862257"
+        },
+        {
+          "path": "releases/final-pick-seed0-u0-001/manifest.json",
+          "bytes": 648,
+          "sha256": "228bd010ff1ba61615f8e5445157cf2b55e33e605f828fe74c5e8b892f4a1207"
+        },
+        {
+          "path": "releases/final-pick-seed0-u0-001/weights.pt",
+          "bytes": 4462255,
+          "sha256": "ed8d8b5cff7284212084a8b2f58f06715d1e297348433b4466085f225a50e4ad"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed1-a",
+      "experiment": "e7-test-pick-seed1-a-001",
+      "package": "releases/final-pick-seed1-a-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/episodes.jsonl",
+          "bytes": 26001,
+          "sha256": "028c31cc7c9497d4bb98fcfda998877ade57ddbc68bfb34e9d4a5de8d118aa8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/manifest.json",
+          "bytes": 1021,
+          "sha256": "96ce2e1a406a1d270f048b47f1fd090a40cbad7619be8f9ec535018873d7460f"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/resources.jsonl",
+          "bytes": 7564,
+          "sha256": "936ce65550ab495749301cd4b29c3e1c37241634f97a98ae3031e80a9bb9f854"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/result.json",
+          "bytes": 906,
+          "sha256": "b6ad1c1d50ae9f58207ca5a0f568fa177d0dbb7e52717fba72466d603dcba216"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "80281620e325dbbdc6301f677b65ae1136c4fda3790ef79ace33d9a943baf9cf"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-a-001/working-tree.patch",
+          "bytes": 619844,
+          "sha256": "53b11efaa05f36aeffe81db443e99103f577be6ef8ce673af31d0cbdcb1775b9"
+        },
+        {
+          "path": "releases/final-pick-seed1-a-001/manifest.json",
+          "bytes": 650,
+          "sha256": "041b0a06bc256e8b8e6e1a7c77837ddfafb9aad321cf1c08d15427238f7d9700"
+        },
+        {
+          "path": "releases/final-pick-seed1-a-001/weights.pt",
+          "bytes": 2896527,
+          "sha256": "a19516dcab9562312b45f9fa3cb1b4b47df4470603ea1c49976b667d2b504396"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed1-b",
+      "experiment": "e7-test-pick-seed1-b-001",
+      "package": "releases/final-pick-seed1-b-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/episodes.jsonl",
+          "bytes": 25992,
+          "sha256": "dd6825aa062e03fcdf7193419e3c191531f45fa1a915224f62e21655d4e401f5"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/manifest.json",
+          "bytes": 1022,
+          "sha256": "c51bc16139933a7343dde4072bd756e5741a2b96098a80825b245e9a4d9d9518"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/resources.jsonl",
+          "bytes": 6750,
+          "sha256": "63461ef7761e56544850551fbb0d8220011c47ebf8db961e79ddab463258cfd4"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/result.json",
+          "bytes": 905,
+          "sha256": "bfb7a628d5f567906650b93ce1cd0cba842293da8dcabc0b9caec6cb6b16b9f9"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "0f5331b49d9c0d36d4d333c65584062cb733f61a80e1c5d5503039bef3799cb4"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-b-001/working-tree.patch",
+          "bytes": 619876,
+          "sha256": "94d284ec8b998cb539394204b200a1de0252f9b432e9f558daec690c461775a3"
+        },
+        {
+          "path": "releases/final-pick-seed1-b-001/manifest.json",
+          "bytes": 649,
+          "sha256": "4bbbec6924057c676a3ed7de796bc43d7e9199e54e70cee32482a4a7df1efead"
+        },
+        {
+          "path": "releases/final-pick-seed1-b-001/weights.pt",
+          "bytes": 3473655,
+          "sha256": "c6cf2a1b0f1ea99e9e75a6ed0e56efc59531738926d6e1a2d3b00f28cc03f27e"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed1-c",
+      "experiment": "e7-test-pick-seed1-c-001",
+      "package": "releases/final-pick-seed1-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/episodes.jsonl",
+          "bytes": 26785,
+          "sha256": "8e9a21598baf87940525bd5128d5251e71811fe02c3e3798bb0b0b5b6e3ba338"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/manifest.json",
+          "bytes": 1020,
+          "sha256": "fa5311239913a0eb9776d22dd61ea53c8d813459e00f9bd74b3ccb340985c9b0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/resources.jsonl",
+          "bytes": 8649,
+          "sha256": "f68d763dddfc94c9f5bb5cc5429fca71c385248650c3d3ca46a813f64cb76254"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/result.json",
+          "bytes": 910,
+          "sha256": "a884fbca25772f2a479fa51a4824dca6db40db5f5f7ff219b49b358d21a38ee0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "e5b7e342bc5c94c586fd1575d973f5f273cc0ffbf8b496b47eee131062b99f8d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-001/working-tree.patch",
+          "bytes": 619909,
+          "sha256": "63c3aabccf248d9c24c807b3104e895d1fb7bccd4df46023751876c6b7d92b09"
+        },
+        {
+          "path": "releases/final-pick-seed1-c-001/manifest.json",
+          "bytes": 649,
+          "sha256": "be4371dbbc9a7bf154fac0fd892772661d977ed03b73bb3d1b616b29bc3632bf"
+        },
+        {
+          "path": "releases/final-pick-seed1-c-001/weights.pt",
+          "bytes": 3473783,
+          "sha256": "a10ee079e30e1ef71461098f3d61d043fb4bfc608b90804c155498cc79f98475"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "experiment": "e7-test-pick-seed1-c-continue-001",
+      "package": "releases/final-pick-seed1-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/episodes.jsonl",
+          "bytes": 27294,
+          "sha256": "e0df9e726efe8b071f3f3564069482b0d8dd8cf35509baf41f649e80e49ff7e8"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/manifest.json",
+          "bytes": 1048,
+          "sha256": "f1aa6faedfc0b0ebf0d7d349e713f1b5e36b4d8c27eba29581e48099c6e63715"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/resources.jsonl",
+          "bytes": 8644,
+          "sha256": "389f37cdf9cbd990d8fa8ebbd63862e4b0119d87d71d517d3eab1ed57a5ec458"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/result.json",
+          "bytes": 919,
+          "sha256": "d251f2cfd4c64e300ad61082a4a34d6eef459e50b72b36d96fb191e7ba83a99d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "c1ab4f8b7d2a46dbc3a8cc52b3a6f58be68587ac9877747eccc5fb453e3683bf"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-c-continue-001/working-tree.patch",
+          "bytes": 619943,
+          "sha256": "2671b839474396bb9da8952b456cb14be37115f3f2f56f4c6f2b9f76acfbc175"
+        },
+        {
+          "path": "releases/final-pick-seed1-c-continue-001/manifest.json",
+          "bytes": 667,
+          "sha256": "32ed811b26204d9372ea6ead3e3ec0f5b584d2f8be30be3e313a8cf143eb8224"
+        },
+        {
+          "path": "releases/final-pick-seed1-c-continue-001/weights.pt",
+          "bytes": 3473847,
+          "sha256": "ef0d7207a7a4ab6c4b20b100058916143dcb9be11dc5a2aa0f1bc77f86a1b207"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed1-u0",
+      "experiment": "e7-test-pick-seed1-u0-001",
+      "package": "releases/final-pick-seed1-u0-001",
+      "conditions": 4,
+      "episodes": 400,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/episodes.jsonl",
+          "bytes": 108820,
+          "sha256": "680d4a8a91fea0e7120158e086a23ad5fe23714c89564266fca53cf595979df1"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/interactions.json",
+          "bytes": 369,
+          "sha256": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/manifest.json",
+          "bytes": 1066,
+          "sha256": "25a23ba4b859d6c6381ecb89389943bf1aa6de15a4292301c859996e1adcea1d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/resources.jsonl",
+          "bytes": 33268,
+          "sha256": "1547440ba83268b98def05153ce7646ba8b16b91ba2f8ca5542c326c25b4bbe5"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/result.json",
+          "bytes": 1585,
+          "sha256": "adf6c94e5c94a9408e4cb1a003c31a441971da8f506cf7ae1335db381dabe25d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/source_hashes.json",
+          "bytes": 15816,
+          "sha256": "7df0d4b8156daa129311c3ef8be96fbbeed17bbdefa7daf0256e2b0c443327a0"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/source_snapshot.tar.gz",
+          "bytes": 176861,
+          "sha256": "834493bdabc8fc8e0008b65a60ea96af88098ae32923e2d92f600ced92ca7a01"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed1-u0-001/working-tree.patch",
+          "bytes": 619985,
+          "sha256": "bcccb575239a359daf5384f0c60733e855ead538949e275b564a5902bdf543bd"
+        },
+        {
+          "path": "releases/final-pick-seed1-u0-001/manifest.json",
+          "bytes": 651,
+          "sha256": "abe30e313f2315e1070c65fd12b30f4904563735bcccb93bfd86fe57f02670dd"
+        },
+        {
+          "path": "releases/final-pick-seed1-u0-001/weights.pt",
+          "bytes": 4462319,
+          "sha256": "12eb8592140985a39b3a57e106534eb4873fd4b5d31dbf1edd2b6d5887572d87"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed2-a",
+      "experiment": "e7-test-pick-seed2-a-001",
+      "package": "releases/final-pick-seed2-a-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/episodes.jsonl",
+          "bytes": 26006,
+          "sha256": "a972489d0a2d15391f52e6ffc50fe0b726508989a58bb6595ac848337605b352"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/manifest.json",
+          "bytes": 1021,
+          "sha256": "4702a467328ec8a8da5d2838c72c359c359a0407b9f07b33fb04a095f81eebd2"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/resources.jsonl",
+          "bytes": 7571,
+          "sha256": "9f6213f845436ceb873a67a25265b289118d80bc105327262ddc14fa0e326757"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/result.json",
+          "bytes": 905,
+          "sha256": "f8874454d24093579c0eb921e37aa6061a6c6671412b2fa4634d5814d85d9bd6"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/source_hashes.json",
+          "bytes": 15931,
+          "sha256": "a33151b42275b2c570e649e18b0b24384c0c6480eefc9011a7aa80019f1e50fc"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/source_snapshot.tar.gz",
+          "bytes": 178461,
+          "sha256": "c9b3d98fdaf84c8ad3546873a7d7989fb587289feefda2403bf7b39da9c5010d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-a-001/working-tree.patch",
+          "bytes": 620019,
+          "sha256": "dc37f9d3dd8dd7b2a713a8e767ef9f6fdc82913ad2a1bf9e169b862f454608aa"
+        },
+        {
+          "path": "releases/final-pick-seed2-a-001/manifest.json",
+          "bytes": 650,
+          "sha256": "2975689cbb590498032863796bf22ce513979524104fac30da123ba7f7f577f0"
+        },
+        {
+          "path": "releases/final-pick-seed2-a-001/weights.pt",
+          "bytes": 2896527,
+          "sha256": "3d641efc27c7c43b0887b2ff80530800e7ec175b761c935b56367c39d1c4ee02"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed2-b",
+      "experiment": "e7-test-pick-seed2-b-001",
+      "package": "releases/final-pick-seed2-b-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/episodes.jsonl",
+          "bytes": 26009,
+          "sha256": "31d7eec4241fcc061b495dccb08724c3a59c984922a36d3db9705475c73f6883"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/manifest.json",
+          "bytes": 1021,
+          "sha256": "0b5ac26783927826044e0a8484cb2f7cc302933866abc355a36e4b6c0d6e91f1"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/resources.jsonl",
+          "bytes": 7829,
+          "sha256": "ef275fe102a46ae9d77cdc8a7342dca5a5e45490bbfb45afa8775f1c70a0a1f4"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/result.json",
+          "bytes": 905,
+          "sha256": "d37bb17b12050605f9df198f9868c2fe3705c61126338e3cbdefa6a93f2cc56b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/source_hashes.json",
+          "bytes": 15931,
+          "sha256": "2e34a3ba99e0064b9cf0298a45b04477e116bac29392e476beee0998bb00a7c9"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/source_snapshot.tar.gz",
+          "bytes": 178600,
+          "sha256": "1bf5c7a192b404b63c3f29facca244aba18a3723efefa1d5ee23e4b47bf8cabb"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-b-001/working-tree.patch",
+          "bytes": 620052,
+          "sha256": "0a54d848d7b42b4160aeec18160bf27899d347e1a00a8550502866b4249db4b0"
+        },
+        {
+          "path": "releases/final-pick-seed2-b-001/manifest.json",
+          "bytes": 649,
+          "sha256": "b152b4635842d367428e6e9e9c177cb6f9a318da89d91033cb1fd4742277955f"
+        },
+        {
+          "path": "releases/final-pick-seed2-b-001/weights.pt",
+          "bytes": 3473655,
+          "sha256": "cdca30b7b3f74c08110dac6522d4a53320037d8303001f6b34581a71480e7bf0"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed2-c",
+      "experiment": "e7-test-pick-seed2-c-001",
+      "package": "releases/final-pick-seed2-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/episodes.jsonl",
+          "bytes": 25949,
+          "sha256": "5db47c2dcda959c67bcf5a76762dca2f5460075075b965a50388e7c954e3ca2e"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/manifest.json",
+          "bytes": 1021,
+          "sha256": "88052a7464ce77e5c3fbc891a97ac84f621e377d5f44601a370c50518868f15f"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/resources.jsonl",
+          "bytes": 8916,
+          "sha256": "093c03b098b8d6caca77935655af5e9a48403b52f18d80335fbbbedb93348c84"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/result.json",
+          "bytes": 904,
+          "sha256": "a8ece001f3debb357c48005babc7a57b1f765f6fc6f3e82ddcffdd62b87cbeb6"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/source_hashes.json",
+          "bytes": 16038,
+          "sha256": "c72ed9dc8601541c33870a68eff0b516341d559a16ff9fa323b87a87dd748cb6"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/source_snapshot.tar.gz",
+          "bytes": 180868,
+          "sha256": "c5ee6a09b2e05ab83b7220be69acc0077f4984e28bebdd4a003cd04bed2c042b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-001/working-tree.patch",
+          "bytes": 620085,
+          "sha256": "d63dfce4b38a0360c23198a30a44f10704e5cfac8667659e2a040b55efd7e971"
+        },
+        {
+          "path": "releases/final-pick-seed2-c-001/manifest.json",
+          "bytes": 649,
+          "sha256": "3f57f1b0a121b8a9192b65895276d2cf0d69ceee0a0ccdfb472cdd44c1c00950"
+        },
+        {
+          "path": "releases/final-pick-seed2-c-001/weights.pt",
+          "bytes": 3473783,
+          "sha256": "9908f9bd10948270b39db59f2b4bd69398a6ed2d37bd58a1be5934a145c1f19a"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "experiment": "e7-test-pick-seed2-c-continue-001",
+      "package": "releases/final-pick-seed2-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/episodes.jsonl",
+          "bytes": 25966,
+          "sha256": "af79a52ce83f11f702d1918ecbc30006ff853119a0c18495cd8c52fc6eec3114"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/manifest.json",
+          "bytes": 1048,
+          "sha256": "5f76453e314f17c4f17cb05b521f38f67e1b317d4e8d55aef642a2d3517a8771"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/resources.jsonl",
+          "bytes": 8376,
+          "sha256": "a24a7a21aeb9c60bc90656e571f38aca5b61cf943b25fbc411d77c4c2de8ca7c"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/result.json",
+          "bytes": 914,
+          "sha256": "b41e3ab9e7f5d226431d21805ecdff760c46a9a7b0b1b913eef9ef18c3c9c988"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/source_hashes.json",
+          "bytes": 16038,
+          "sha256": "c72ed9dc8601541c33870a68eff0b516341d559a16ff9fa323b87a87dd748cb6"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 180868,
+          "sha256": "3de611eab1eb538945d38cd6cb3ab97ad31e8b9b8fb833f4d54eb954b5b1534d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-c-continue-001/working-tree.patch",
+          "bytes": 620118,
+          "sha256": "d0acb254e944d3fba3ee7a24b134d29ee19b0ac7817e357925f7d01c4f7a397f"
+        },
+        {
+          "path": "releases/final-pick-seed2-c-continue-001/manifest.json",
+          "bytes": 667,
+          "sha256": "cef40d2f7116cf0ef03190418069eb994748180676a424fc333edddf2239ebaa"
+        },
+        {
+          "path": "releases/final-pick-seed2-c-continue-001/weights.pt",
+          "bytes": 3473847,
+          "sha256": "d28fe5f71e73776e144ed1ce253ca32fc8918ef404afbd789897debc7e134469"
+        }
+      ]
+    },
+    {
+      "id": "pick-seed2-u0",
+      "experiment": "e7-test-pick-seed2-u0-001",
+      "package": "releases/final-pick-seed2-u0-001",
+      "conditions": 4,
+      "episodes": 400,
+      "files": [
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/episodes.jsonl",
+          "bytes": 104584,
+          "sha256": "36340653403d7792d2b2fb7bdf913b181b755c43ebe6b358c8a4a30646422eac"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/interactions.json",
+          "bytes": 369,
+          "sha256": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/manifest.json",
+          "bytes": 1065,
+          "sha256": "d82d529d13dfbf15a6a3ea25e1ac74a7f7828a130fd9079f4918e5587f9d21e6"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/resources.jsonl",
+          "bytes": 37587,
+          "sha256": "82fd755c80208fbd54750891a6329f6a796a5c33c754a97cbdf21f1ea8a61e0e"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/result.json",
+          "bytes": 1572,
+          "sha256": "851d6f896628255a009ae0d31a5241cdbe8772dfdfcb59986904ec1a4ee36103"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "310dbeec406763cf6dc5eb308b45bde3e9dee8e726eb86de6d3b1a74c370038d"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-pick-seed2-u0-001/working-tree.patch",
+          "bytes": 620160,
+          "sha256": "1944bfcb202b8efd3a4250b2229d42574e46b12a9b2b6d89aa5ad838b49366fb"
+        },
+        {
+          "path": "releases/final-pick-seed2-u0-001/manifest.json",
+          "bytes": 651,
+          "sha256": "35533977d4de47fabaed4afde351d332ae12baaaac64da0fb97402cdd50237c1"
+        },
+        {
+          "path": "releases/final-pick-seed2-u0-001/weights.pt",
+          "bytes": 4462319,
+          "sha256": "5f66a219b4dc2a8381ba2b50d3223b52e94de41953b782930541fc814b7b4152"
+        }
+      ]
+    },
+    {
+      "id": "stack-seed0-a",
+      "experiment": "e7-test-stack-seed0-a-001",
+      "package": "releases/final-stack-seed0-a-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/interactions.json",
+          "bytes": 369,
+          "sha256": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/manifest.json",
+          "bytes": 1023,
+          "sha256": "918a8d72dc9f996adb2697100db60b6f8c159cd21858b74fdd6026f69f2f5974"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/resources.jsonl",
+          "bytes": 9998,
+          "sha256": "bc5b5cdf4b56929dbdd04808b336773f12564695c332099001e0e79231311772"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/result.json",
+          "bytes": 907,
+          "sha256": "2777400c50cd9f64b6ec8455db34504e27948c03419272dd2b49fa5dcde6528c"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "d8245a1092075aeedec3fc520edf69ed6bf08ec7d3d66c99f70387461f8ddafd"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-a-001/working-tree.patch",
+          "bytes": 628701,
+          "sha256": "ed36ea99cc085ce60dff39388011cd74af6bdbb8aae989ca6c5371aeb2d98241"
+        },
+        {
+          "path": "releases/final-stack-seed0-a-001/manifest.json",
+          "bytes": 653,
+          "sha256": "a121a2567d7325d543e80277478406e4baf95de62f92d098edc9d754cd7450ec"
+        },
+        {
+          "path": "releases/final-stack-seed0-a-001/weights.pt",
+          "bytes": 2927247,
+          "sha256": "de1ee3ac3ed51012b288788135586d6dfa8a41d9b014e6179e743b48ec24f2d8"
+        }
+      ]
+    },
+    {
+      "id": "stack-seed0-b",
+      "experiment": "e7-test-stack-seed0-b-001",
+      "package": "releases/final-stack-seed0-b-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/interactions.json",
+          "bytes": 369,
+          "sha256": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/manifest.json",
+          "bytes": 1024,
+          "sha256": "13392bc83b75a46c0f71dc7ac5dc4eea37a1683543186ba26d2a70f8886e73aa"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/resources.jsonl",
+          "bytes": 11077,
+          "sha256": "4567669ca32d05ad7e35ed0335293d09cd8c9bf2daba33136fa9e4bc5b3a4cf8"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/result.json",
+          "bytes": 907,
+          "sha256": "5b36085a06ac3222ce4411e26ef0f4ab0a7482cb08ab5c6e648d0ef54cfb1a75"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "eef754bbbd8d469920c9ebeb6dd41b8348df79965ea440dd5fc1ad8e18ef5e4d"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-b-001/working-tree.patch",
+          "bytes": 637544,
+          "sha256": "429f92b0d1273e03dcc30966e9e6b7864e96fd9bac8b7ffb604fdf1397e64080"
+        },
+        {
+          "path": "releases/final-stack-seed0-b-001/manifest.json",
+          "bytes": 652,
+          "sha256": "83771595a54d9189990e10d6f455bd56e798463605c7e80182646c3981005c9b"
+        },
+        {
+          "path": "releases/final-stack-seed0-b-001/weights.pt",
+          "bytes": 3510519,
+          "sha256": "ebcc733c8d771bce5364067fa5065508418fe1b55c5761d069b0bef60bc8c510"
+        }
+      ]
+    },
+    {
+      "id": "stack-seed0-c",
+      "experiment": "e7-test-stack-seed0-c-001",
+      "package": "releases/final-stack-seed0-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/manifest.json",
+          "bytes": 1024,
+          "sha256": "42d5db2b8ff3a1eeb0dfbc43f4a1f2594bab233c8ca4e15bd8b171545e2616e6"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/resources.jsonl",
+          "bytes": 12163,
+          "sha256": "6a0ae0ea10d882abb576cc2921d1290894d0d1a45411100f81a208b33b6100e4"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/result.json",
+          "bytes": 907,
+          "sha256": "f82a84df11f6c24480681434019311b701e6ca49946390bcb933c9b62b889eff"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "7f183346150069d4495edb4449b7b56ec7f760488c7ff68f47ce8fa7330fa559"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-001/working-tree.patch",
+          "bytes": 648068,
+          "sha256": "3dad9db6469b1b86df6525e48715e6b536cc2e1602b491b2ea75ad373571f959"
+        },
+        {
+          "path": "releases/final-stack-seed0-c-001/manifest.json",
+          "bytes": 652,
+          "sha256": "2a9bbe2058027f86371bfd780a1262e80f6b9cde43416c2975826abb1a541a4a"
+        },
+        {
+          "path": "releases/final-stack-seed0-c-001/weights.pt",
+          "bytes": 3510647,
+          "sha256": "5b211f0d021b7e21df26aeb858d6c6db9f52962c5d2f25e9e26010a2799d4afd"
+        }
+      ]
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "experiment": "e7-test-stack-seed0-c-continue-001",
+      "package": "releases/final-stack-seed0-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/manifest.json",
+          "bytes": 1051,
+          "sha256": "7b5ead954c1d8fc2820e8f778e2178b68b5b8df13f0db72f824acdbbd1d70fcd"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/resources.jsonl",
+          "bytes": 12691,
+          "sha256": "ce3599dd1d6ee9d3cb77e25c9303c90403b4fdfe2385d372c8c76ee596db0d7a"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/result.json",
+          "bytes": 916,
+          "sha256": "ae11c8bce62ec0954ea92ef47867e230e901a2c756834c190be3f88424cf40cd"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "c1a1c06699085ca68706918a3405838e954e094dbd574983c213541c5a9587b3"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-c-continue-001/working-tree.patch",
+          "bytes": 648102,
+          "sha256": "fcbdf5783472367e5632be2519a5d1ca437ef5ffadd20ce0b0bc28cdfe0b3914"
+        },
+        {
+          "path": "releases/final-stack-seed0-c-continue-001/manifest.json",
+          "bytes": 670,
+          "sha256": "01e6e35e67e19b99a04773a530259bcb8e114eaaa047d69d20fe158bab9858d3"
+        },
+        {
+          "path": "releases/final-stack-seed0-c-continue-001/weights.pt",
+          "bytes": 3510711,
+          "sha256": "3af6c33d205fa884413214919c5adfb33b2ac8a77949d9e30b1b431c806f144b"
+        }
+      ]
+    },
+    {
+      "id": "stack-seed0-u0",
+      "experiment": "e7-test-stack-seed0-u0-001",
+      "package": "releases/final-stack-seed0-u0-001",
+      "conditions": 4,
+      "episodes": 400,
+      "files": [
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/episodes.jsonl",
+          "bytes": 70760,
+          "sha256": "f903511524e13562cf87ec5502010235a39a1f3cc0cce71f624beed6df48f5a3"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/interactions.json",
+          "bytes": 374,
+          "sha256": "bf3c9b178344df828822c37bd97562eb92dfc64f622ecae5726ef560617f98cb"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/manifest.json",
+          "bytes": 1068,
+          "sha256": "868398d833ad1b5ae82a5094cdf31a9b94ac9528a1f567d0d15a636fc98976e8"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/resources.jsonl",
+          "bytes": 45915,
+          "sha256": "08b689c7934dd9d29e474e04f8bc1752abd948fb31c44dde508a77b2707d8ea7"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/result.json",
+          "bytes": 1566,
+          "sha256": "728a8aa0c0c0e33ca7db2155b545ebc3cba65e53e1c404c4f7bb7dbf85faa965"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/source_hashes.json",
+          "bytes": 16157,
+          "sha256": "65bf4f9678a0d17e08d01b8abb64599b396758d8309fd2764938d1fdcda6cd0f"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/source_snapshot.tar.gz",
+          "bytes": 182948,
+          "sha256": "8c4a4475ba161e28d47035a88f4d620fcda2a319cb7dccc4ef9e9101e86d5cbe"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-stack-seed0-u0-001/working-tree.patch",
+          "bytes": 648145,
+          "sha256": "adf9763fa0f6011f8f5e2e025469b13a3fa6e39109ecce77824d0316f095c3f2"
+        },
+        {
+          "path": "releases/final-stack-seed0-u0-001/manifest.json",
+          "bytes": 654,
+          "sha256": "2d4b2e9315d5bc3deefba913e9292eb7513fbac10e3f2a4e9de01385239744f5"
+        },
+        {
+          "path": "releases/final-stack-seed0-u0-001/weights.pt",
+          "bytes": 4524143,
+          "sha256": "c17914cb0ba8b83c61f5be30a76fcf8532a255ba2b3f537cded6e2078c5c7c90"
+        }
+      ]
+    },
+    {
+      "id": "peg-seed0-a",
+      "experiment": "e7-test-peg-seed0-a-001",
+      "package": "releases/final-peg-seed0-a-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/interactions.json",
+          "bytes": 369,
+          "sha256": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/manifest.json",
+          "bytes": 1018,
+          "sha256": "8c254db591591b1da7f00f422712d80e456530e0d65807edbd7a837d4ea435cb"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/resources.jsonl",
+          "bytes": 18644,
+          "sha256": "b2ae35dd40d15c4f94b55902f608c5a3430074511f8d77585d6bc6d19c3db944"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/result.json",
+          "bytes": 914,
+          "sha256": "5d1144618356773b6ef92f0a39f625add4bc7675bcc120d5649fabe985c4f377"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/source_hashes.json",
+          "bytes": 16266,
+          "sha256": "ec7d7d256afd0fa58f63d55a640d9b6496d84490a46b8246bb6cf8f6ea564aa6"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/source_snapshot.tar.gz",
+          "bytes": 185216,
+          "sha256": "84ad550158bcdc14a6b26a916094002bd5dc088b3c3ed9c364b3a13ffbdc0fd5"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-a-001/working-tree.patch",
+          "bytes": 648200,
+          "sha256": "8f8da0420fb35254290aae8b1fd0c55a3a2e521387be1bc022843936ccc09eef"
+        },
+        {
+          "path": "releases/final-peg-seed0-a-001/manifest.json",
+          "bytes": 656,
+          "sha256": "5b71e9c41b5aad4a29470242a2a27443a06054f8b508a375ff3bde68403d5507"
+        },
+        {
+          "path": "releases/final-peg-seed0-a-001/weights.pt",
+          "bytes": 2920079,
+          "sha256": "d46ffe4dff403958e831c263c34ebcc8e9d213ef0c0a7bd7f1f4a1aca67a39e8"
+        }
+      ]
+    },
+    {
+      "id": "peg-seed0-b",
+      "experiment": "e7-test-peg-seed0-b-001",
+      "package": "releases/final-peg-seed0-b-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/interactions.json",
+          "bytes": 369,
+          "sha256": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/manifest.json",
+          "bytes": 1018,
+          "sha256": "d723be3df5a272969fdb8700bbc0410d4da55a73c7ead48448c901b776e1ea7a"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/resources.jsonl",
+          "bytes": 18375,
+          "sha256": "18c26f3c9e6671cf28aed09ab4d3f574852ac36502795161f03bf19ed00244be"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/result.json",
+          "bytes": 914,
+          "sha256": "e86bbda69a8b05fc1b8c53ca850394e43c80a2f00dc8d5f137c565c3d2563841"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/source_hashes.json",
+          "bytes": 16266,
+          "sha256": "ec7d7d256afd0fa58f63d55a640d9b6496d84490a46b8246bb6cf8f6ea564aa6"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/source_snapshot.tar.gz",
+          "bytes": 185216,
+          "sha256": "f303feb905fe250347e2cf316cf047d682063ffd0a953969107e2cac0a4a4caf"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-b-001/working-tree.patch",
+          "bytes": 648232,
+          "sha256": "2ec16d6ee75b7d42da616f7ac4f2a0a0e6aa8203073c054108725818c2127007"
+        },
+        {
+          "path": "releases/final-peg-seed0-b-001/manifest.json",
+          "bytes": 655,
+          "sha256": "a3d9551e3220bb402b5f457b6880c34c1e7aac4f7fd78465d19fcaf016400956"
+        },
+        {
+          "path": "releases/final-peg-seed0-b-001/weights.pt",
+          "bytes": 3501303,
+          "sha256": "21a03bc8551a4a9523b183c5fab16463d10c74a87d5f80795d9dece5e5d85cc6"
+        }
+      ]
+    },
+    {
+      "id": "peg-seed0-c",
+      "experiment": "e7-test-peg-seed0-c-001",
+      "package": "releases/final-peg-seed0-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/manifest.json",
+          "bytes": 1017,
+          "sha256": "713965a04fa99e9377e71af42bf37f460eb1cbadd913593494d55faecf87922d"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/resources.jsonl",
+          "bytes": 17835,
+          "sha256": "229f40be22221eda19bd45f95cdd528315ebf26c220312a5dfbe7df9e790a2c0"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/result.json",
+          "bytes": 914,
+          "sha256": "06c821623fcadc0a711e9d506b99935907730c21957bbe335909525a83bf4946"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/source_hashes.json",
+          "bytes": 16378,
+          "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/source_snapshot.tar.gz",
+          "bytes": 187164,
+          "sha256": "de0c15a54be10bd829561d886cb252d597de9999d14d74d0979d8adbdf03b448"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-001/working-tree.patch",
+          "bytes": 648264,
+          "sha256": "0f9b9d79306c9163e14f6fb61223157e5a8f5fc7dc105162f8b7585d308875de"
+        },
+        {
+          "path": "releases/final-peg-seed0-c-001/manifest.json",
+          "bytes": 655,
+          "sha256": "5fc60003bbfba1e3600bf0e86b061601de88d161917d0ef9b06c43373e3c3a34"
+        },
+        {
+          "path": "releases/final-peg-seed0-c-001/weights.pt",
+          "bytes": 3501431,
+          "sha256": "0ac936f2c026f7b7fbacddf3a265437c51d4e1869a8d80eb48ae5b03d7288784"
+        }
+      ]
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "experiment": "e7-test-peg-seed0-c-continue-001",
+      "package": "releases/final-peg-seed0-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/episodes.jsonl",
+          "bytes": 17490,
+          "sha256": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/manifest.json",
+          "bytes": 1046,
+          "sha256": "0c7c8111566c8a677822dca5da186412a3dfa7a96d6dd6444f6d95d560c5dc56"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/resources.jsonl",
+          "bytes": 15126,
+          "sha256": "0ca105b953120cc9878e3562746bc5d8b29469e0ee1b2066e782a97fe4a50435"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/result.json",
+          "bytes": 922,
+          "sha256": "7335f1709333627c30bc9adb28f6771650f9b865411460c304f501c4f0775411"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/source_hashes.json",
+          "bytes": 16378,
+          "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 187164,
+          "sha256": "3fea121a66de63646c852118c4574970fe85b3b8dfad33e461219b993530c594"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-c-continue-001/working-tree.patch",
+          "bytes": 651259,
+          "sha256": "b3cec6ea9ecb3394860ee3cebf398f5d63460aa355f262ee60609ef7f32e3ce6"
+        },
+        {
+          "path": "releases/final-peg-seed0-c-continue-001/manifest.json",
+          "bytes": 673,
+          "sha256": "5a7888b1fa40f51bbc1e51af8e34a7d4005742b9bf03d3034a8bc982a2683756"
+        },
+        {
+          "path": "releases/final-peg-seed0-c-continue-001/weights.pt",
+          "bytes": 3501495,
+          "sha256": "782cf3b8be18ae5b9bb74a191bd3e3241c8d4ac7c46fe358822f76bd193c2eef"
+        }
+      ]
+    },
+    {
+      "id": "peg-seed0-u0",
+      "experiment": "e7-test-peg-seed0-u0-001",
+      "package": "releases/final-peg-seed0-u0-001",
+      "conditions": 4,
+      "episodes": 400,
+      "files": [
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/episodes.jsonl",
+          "bytes": 70760,
+          "sha256": "9663ce56216023eb4ad8da858d0ce3bb216309cf766e0c0e9920d9ebf3411eef"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/interactions.json",
+          "bytes": 374,
+          "sha256": "1faa4efee5b3768b412f40fee1b2006a3280626eaefbc38ee95e9ecf37bb9877"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/manifest.json",
+          "bytes": 1062,
+          "sha256": "09e3ce18edbef7ebdb4f879071920cf01d40a26eaf4edcd3e883548bb5b3726a"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/resources.jsonl",
+          "bytes": 66483,
+          "sha256": "6a30fa43237ac356e9fd9e57198d216eec13ae5dbc5ed8f6a53999792e0a46c2"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/result.json",
+          "bytes": 1579,
+          "sha256": "4af54d837207e0288a1fbe1d1507d5addedd4c407a5bab4c111752af62595a5f"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/source_hashes.json",
+          "bytes": 16378,
+          "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/source_snapshot.tar.gz",
+          "bytes": 187164,
+          "sha256": "0c53220ee035b55c99e0a46e7d10aa1e4f054a933788187ad5bdbb6923af5d83"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-peg-seed0-u0-001/working-tree.patch",
+          "bytes": 651300,
+          "sha256": "a7432516c6a3bc8bfd7acdd93406646bc18cb904597e7e851672bbccdc885e9e"
+        },
+        {
+          "path": "releases/final-peg-seed0-u0-001/manifest.json",
+          "bytes": 657,
+          "sha256": "023f112847468b6f6296927e5f05bdb9386ebd1cdf68b50c4b37e05174782dcc"
+        },
+        {
+          "path": "releases/final-peg-seed0-u0-001/weights.pt",
+          "bytes": 4503215,
+          "sha256": "bc627b0190d3c10dc6113dd0e8018e8d4b00f3496ad145a1cbb000863d0c2af9"
+        }
+      ]
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "experiment": "e7-test-u1-pick-seed0-c-001",
+      "package": "releases/final-u1-pick-seed0-c-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/episodes.jsonl",
+          "bytes": 27321,
+          "sha256": "cfa2295425a6a154c80e1c9404d7d559af6ef469241637de174d651a575f80f8"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/manifest.json",
+          "bytes": 1031,
+          "sha256": "13402b50894de750d7b7b0581da9e44bfa43c6dee0b0188141d705421b7a2336"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/resources.jsonl",
+          "bytes": 8373,
+          "sha256": "22564b5ae8ae2b36c15bf6f4174a8f54fbce161101938fcea154d13f45a41d06"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/result.json",
+          "bytes": 911,
+          "sha256": "b1e6b7b18a5485b157be61580870f0dc155a38090121e4b7ede584f5b9e1f6de"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/source_hashes.json",
+          "bytes": 16378,
+          "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/source_snapshot.tar.gz",
+          "bytes": 187164,
+          "sha256": "40f3f4afe7523b5eefc3482fc2efaea0c88dbf7022d4c70afbf33fdb7e885ded"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-001/working-tree.patch",
+          "bytes": 651392,
+          "sha256": "07653c4812a967976512d3e0f3592e9ac43a086669ab7e07ffe22a823427a7bc"
+        },
+        {
+          "path": "releases/final-u1-pick-seed0-c-001/manifest.json",
+          "bytes": 655,
+          "sha256": "73b581e324809e679a87e563ab1db6d5ff91f19635a71ab5f38e362aee2a6c03"
+        },
+        {
+          "path": "releases/final-u1-pick-seed0-c-001/weights.pt",
+          "bytes": 3505455,
+          "sha256": "9475dc09ce0470259ea8ca915033a64fa8208012c27c42eb17bff868b674cb94"
+        }
+      ]
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "experiment": "e7-test-u1-pick-seed0-c-continue-001",
+      "package": "releases/final-u1-pick-seed0-c-continue-001",
+      "conditions": 1,
+      "episodes": 100,
+      "files": [
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/episodes.jsonl",
+          "bytes": 27456,
+          "sha256": "acfb478ffcd672a3a10d19d194f83c48b0eb2697a8b46402307ea087d55e04ac"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/interactions.json",
+          "bytes": 369,
+          "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/manifest.json",
+          "bytes": 1056,
+          "sha256": "6d2b29996a389bc96b4a1a573de2114910fd69b0c99293ffbe47508a54eed830"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/resources.jsonl",
+          "bytes": 8380,
+          "sha256": "9bc7225f2678971fcf7bd972956456e0bd3a262257bc4dd75c7bf7645906fe6b"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/result.json",
+          "bytes": 921,
+          "sha256": "6e3741f00976e99d061e964aa8d176083e636c5281ada257dcc6654a9f6d7879"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/source_hashes.json",
+          "bytes": 16378,
+          "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/source_snapshot.tar.gz",
+          "bytes": 187164,
+          "sha256": "db17b18ce31d35546d808560de28b9de1e4ae8457b5fb7b52c41947a8e0fcf89"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "artifacts/e7-test-u1-pick-seed0-c-continue-001/working-tree.patch",
+          "bytes": 651428,
+          "sha256": "8766b6998dcc5042a50a9e1cc0a91cb418ca829023f0ccfee8ae3670b87cfa69"
+        },
+        {
+          "path": "releases/final-u1-pick-seed0-c-continue-001/manifest.json",
+          "bytes": 673,
+          "sha256": "1ee89fea3c63f714992e0be551c6ffc19ecc0a25c67db49645f97f917b035736"
+        },
+        {
+          "path": "releases/final-u1-pick-seed0-c-continue-001/weights.pt",
+          "bytes": 3505583,
+          "sha256": "7bdbc8cc2659b9d9902d4972085602f930186e4c236a39e544975625a0fcf346"
+        }
+      ]
+    }
+  ]
+}

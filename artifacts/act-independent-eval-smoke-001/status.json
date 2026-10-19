@@ -1,0 +1,55 @@
+{
+  "phase": "completed",
+  "completed": [
+    {
+      "id": "act-teacher-k30-first",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150"
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150"
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099"
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099"
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "exit_code": 0,
+      "initial_state_max_error": 0,
+      "validation_interactions": 2000,
+      "checkpoint_sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    }
+  ],
+  "current": null,
+  "exit_code": 0,
+  "seed": 10000,
+  "num_envs": 10,
+  "episodes_per_condition": 10,
+  "training_interactions": 0,
+  "final_test_accessed": false,
+  "validation_interactions": 12000
+}

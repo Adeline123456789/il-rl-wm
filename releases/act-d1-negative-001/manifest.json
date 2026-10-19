@@ -1,0 +1,11 @@
+{
+  "source": "checkpoints/act-d1-seed0-001/final.pt",
+  "source_sha256": "94f60af9dc99f112c66ec23b0ff10e3bb44dcbb6635a955e5e56425615986d67",
+  "portable_sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099",
+  "actor": "scripts.train_sac.Actor",
+  "state_dim": 42,
+  "action_dim": 4,
+  "teacher_required_at_deployment": false,
+  "negative_result": "mean 1/40, stochastic 1/40; teacher 8/40",
+  "resume_training": false
+}

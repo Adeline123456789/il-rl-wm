@@ -1,0 +1,2 @@
+{"completed_act_conditions": 16, "maximum_initial_action_difference": 1.0132789611816406e-06}
+{'pid': 3151006, 'phase': 'completed', 'exit_code': 0, 'elapsed_seconds': 0.49797892570495605}

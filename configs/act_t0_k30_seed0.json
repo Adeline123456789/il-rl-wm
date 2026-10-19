@@ -1,0 +1,23 @@
+{
+  "method": "ACT-T0",
+  "seed": 0,
+  "audit": "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+  "model": {
+    "hidden_dim": 128,
+    "dim_feedforward": 512,
+    "enc_layers": 2,
+    "dec_layers": 2,
+    "nheads": 4,
+    "dropout": 0.1,
+    "num_queries": 30,
+    "pre_norm": false,
+    "kl_weight": 10.0
+  },
+  "lr": 0.0001,
+  "updates": 10000,
+  "batch_size": 256,
+  "eval_every": 2500,
+  "validation_episodes": 40,
+  "record_final_video": true,
+  "evaluate_temporal_ensemble": true
+}

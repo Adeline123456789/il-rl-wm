@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "independent_training_repeats",
-  "branch": "research/u0-batch-20261016",
+  "phase": "R0/R1 full controls complete and audited; R3 active; all8 fixed-final tests pending",
+  "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
     "ManiSkill": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"
@@ -21,9 +21,9 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 16542.608747378996,
+    "gpu_job_seconds_used": 85238.75034914288,
     "local_changes_limit": 2,
-    "local_changes_used": 1,
+    "local_changes_used": 2,
     "final_evaluation_reserve_seconds": 7200
   },
   "data_version": {
@@ -94,7 +94,168 @@
     "f1-u0-step196608-prefix20-001",
     "f1-u1-step196608-prefix20-001",
     "pick-seed1-bc-001",
-    "pick-seed1-a-001"
+    "pick-seed1-a-001",
+    "pick-seed1-b-001",
+    "pick-seed1-c-001",
+    "pick-seed1-wm-001",
+    "pick-seed1-value-001",
+    "pick-seed1-u0-001",
+    "pick-seed1-c-continue-001",
+    "pick-seed2-bc-001",
+    "pick-seed2-a-001",
+    "pick-seed2-b-001",
+    "pick-seed2-c-001",
+    "pick-seed2-wm-001",
+    "pick-seed2-value-001",
+    "pick-seed2-u0-001",
+    "pick-seed2-c-continue-001",
+    "e3-rlpd-full-001",
+    "stack-seed0-bc-001",
+    "stack-seed0-a-001",
+    "stack-seed0-b-001",
+    "stack-seed0-c-001",
+    "stack-seed0-wm-001",
+    "stack-seed0-value-001",
+    "stack-seed0-u0-001",
+    "stack-seed0-c-continue-001",
+    "peg-seed0-bc-001",
+    "peg-seed0-a-001",
+    "peg-seed0-b-001",
+    "peg-seed0-c-001",
+    "peg-seed0-wm-001",
+    "peg-seed0-value-001",
+    "peg-seed0-u0-001",
+    "peg-seed0-c-continue-001",
+    "u1-pick-seed1-c-001",
+    "u1-pick-seed1-wm-001",
+    "u1-pick-seed1-value-001",
+    "u1-pick-seed1-u0-001",
+    "u1-pick-seed1-c-continue-001",
+    "u1-pick-seed2-c-001",
+    "u1-pick-seed2-wm-001",
+    "u1-pick-seed2-value-001",
+    "u1-pick-seed2-u0-001",
+    "u1-pick-seed2-c-continue-001",
+    "pick-seed3-bc-001",
+    "pick-seed3-a-001",
+    "pick-seed3-b-001",
+    "pick-seed3-c-001",
+    "pick-seed3-wm-001",
+    "pick-seed3-value-001",
+    "pick-seed3-u0-001",
+    "pick-seed3-c-continue-001",
+    "u1-pick-seed3-c-001",
+    "u1-pick-seed3-wm-001",
+    "u1-pick-seed3-value-001",
+    "u1-pick-seed3-u0-001",
+    "u1-pick-seed3-c-continue-001",
+    "pick-seed4-bc-001",
+    "pick-seed4-a-001",
+    "pick-seed4-b-001",
+    "pick-seed4-c-001",
+    "pick-seed4-wm-001",
+    "pick-seed4-value-001",
+    "pick-seed4-u0-001",
+    "pick-seed4-c-continue-001",
+    "u1-pick-seed4-c-001",
+    "u1-pick-seed4-wm-001",
+    "u1-pick-seed4-value-001",
+    "u1-pick-seed4-u0-001",
+    "u1-pick-seed4-c-continue-001",
+    "act-t0-smoke-001",
+    "act-t0-seed0-001",
+    "act-t0-k16-seed0-001",
+    "act-t0-k30-seed0-001",
+    "act-d1-smoke-001",
+    "act-d1-seed0-001",
+    "act-matched-eval-001",
+    "act-c1-seed0-001",
+    "act-t5-online-smoke-001",
+    "act-t4-online-smoke-001",
+    "act-t2-online-seed0-001",
+    "act-t2-online-seed0-002",
+    "act-t3-online-seed0-001",
+    "act-t4-online-seed0-001",
+    "act-t5-online-seed0-001",
+    "act-t6-online-seed0-001",
+    "act-independent-eval-smoke-001",
+    "act-u2-retention-smoke-001",
+    "act-u2-retention-seed0-001",
+    "e7-test-pick-seed0-a-001",
+    "e7-test-pick-seed0-b-001",
+    "e7-test-pick-seed0-c-001",
+    "e7-test-pick-seed0-c-continue-001",
+    "e7-test-pick-seed0-u0-001",
+    "e7-test-pick-seed1-a-001",
+    "e7-test-pick-seed1-b-001",
+    "e7-test-pick-seed1-c-001",
+    "e7-test-pick-seed1-c-continue-001",
+    "e7-test-pick-seed1-u0-001",
+    "e7-test-pick-seed2-a-001",
+    "e7-test-pick-seed2-b-001",
+    "e7-test-pick-seed2-c-001",
+    "e7-test-pick-seed2-c-continue-001",
+    "e7-test-pick-seed2-u0-001",
+    "e7-test-stack-seed0-a-001",
+    "e7-test-stack-seed0-b-001",
+    "e7-test-stack-seed0-c-001",
+    "e7-test-stack-seed0-c-continue-001",
+    "e7-test-stack-seed0-u0-001",
+    "e7-test-peg-seed0-a-001",
+    "e7-test-peg-seed0-b-001",
+    "e7-test-peg-seed0-c-001",
+    "e7-test-peg-seed0-c-continue-001",
+    "e7-test-peg-seed0-u0-001",
+    "e7-test-u1-pick-seed0-c-001",
+    "e7-test-u1-pick-seed0-c-continue-001",
+    "e7-test-u1-pick-seed0-u0-001",
+    "e7-test-u1-pick-seed1-c-001",
+    "e7-test-u1-pick-seed1-c-continue-001",
+    "e7-test-u1-pick-seed1-u0-001",
+    "e7-test-u1-pick-seed2-c-001",
+    "e7-test-u1-pick-seed2-c-continue-001",
+    "e7-test-u1-pick-seed2-u0-001",
+    "e7-test-rlpd-seed0-step262144-001",
+    "e7-test-rlpd-seed0-step524288-001",
+    "e7-test-pick-seed3-a-001",
+    "e7-test-pick-seed3-b-001",
+    "e7-test-pick-seed3-c-001",
+    "e7-test-pick-seed3-c-continue-001",
+    "e7-test-pick-seed3-u0-001",
+    "e7-test-u1-pick-seed3-c-001",
+    "e7-test-u1-pick-seed3-c-continue-001",
+    "e7-test-u1-pick-seed3-u0-001",
+    "e7-test-pick-seed4-a-001",
+    "e7-test-pick-seed4-b-001",
+    "e7-test-pick-seed4-c-001",
+    "e7-test-pick-seed4-c-continue-001",
+    "e7-test-pick-seed4-u0-001",
+    "e7-test-u1-pick-seed4-c-001",
+    "e7-test-u1-pick-seed4-c-continue-001",
+    "e7-test-u1-pick-seed4-u0-001",
+    "e7-test-act-teacher-k30-first-001",
+    "e7-test-act-teacher-k30-ensemble-001",
+    "e7-test-act-d1-initial-mean-001",
+    "e7-test-act-d1-initial-stochastic-001",
+    "e7-test-act-c1-initial-mean-001",
+    "e7-test-act-c1-initial-stochastic-001",
+    "e7-test-act-t2-final-mean-001",
+    "e7-test-act-t2-final-stochastic-001",
+    "e7-test-act-t3-final-mean-001",
+    "e7-test-act-t3-final-stochastic-001",
+    "e7-test-act-t4-final-mean-001",
+    "e7-test-act-t4-final-stochastic-001",
+    "e7-test-act-t5-final-mean-001",
+    "e7-test-act-t5-final-stochastic-001",
+    "e7-test-act-t6-final-mean-001",
+    "e7-test-act-t6-final-stochastic-001",
+    "e7-test-act-u2-final-mean-001",
+    "e7-test-act-u2-final-mean-002",
+    "e7-test-act-u2-final-stochastic-002",
+    "act-r0-expert50-smoke-001",
+    "act-r3-expert50-smoke-001",
+    "act-r0-expert50-seed0-001",
+    "act-r1-expert50-seed0-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -618,11 +779,701 @@
       "final_validation_success_once": 0.0,
       "final_validation_episodes": 16,
       "final_validation_mean_return": 0.0
+    },
+    "act_teacher_stage": {
+      "phase": "completed",
+      "completed": [
+        "act-t0-smoke-001",
+        "act-t0-seed0-001",
+        "act-t0-k16-seed0-001",
+        "act-t0-k30-seed0-001"
+      ],
+      "current": null,
+      "stage": "ACT-T0",
+      "start_budget_used_seconds": 64210.38123582094,
+      "available_training_seconds": 14989.61876417906,
+      "stage_limit_seconds": 5700,
+      "final_test_reserve_seconds": 7200,
+      "teacher_gate_passed": true,
+      "results": {
+        "act-t0-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 1.0,
+            "success_at_end": 0.0,
+            "mean_return": 0.475,
+            "stage_counts": {
+              "approached": 21,
+              "is_grasped": 21,
+              "lifted": 8,
+              "is_obj_placed": 1
+            },
+            "latency_batch8_ms_mean": 1.310010996821802,
+            "latency_batch8_ms_p95": 1.4260436160839163,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 21.0,
+            "success_at_end": 2.0,
+            "mean_return": 12.125,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 37,
+              "is_obj_placed": 22
+            },
+            "latency_batch8_ms_mean": 1.434493591048522,
+            "latency_batch8_ms_p95": 1.569708454189822,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k16-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 4.0,
+            "success_at_end": 0.0,
+            "mean_return": 1.275,
+            "stage_counts": {
+              "approached": 38,
+              "is_grasped": 38,
+              "lifted": 25,
+              "is_obj_placed": 4
+            },
+            "latency_batch8_ms_mean": 1.3082224410609342,
+            "latency_batch8_ms_p95": 1.4422476509935223,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 25.0,
+            "success_at_end": 3.0,
+            "mean_return": 24.2,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 33,
+              "is_obj_placed": 26
+            },
+            "latency_batch8_ms_mean": 1.4404641865403391,
+            "latency_batch8_ms_p95": 1.58610910148127,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        },
+        "act-t0-k30-seed0-001": {
+          "first": {
+            "method": "act_requery_first",
+            "episodes": 40,
+            "success_once": 8.0,
+            "success_at_end": 4.0,
+            "mean_return": 10.65,
+            "stage_counts": {
+              "approached": 33,
+              "is_grasped": 33,
+              "lifted": 19,
+              "is_obj_placed": 8
+            },
+            "latency_batch8_ms_mean": 1.3071189032052644,
+            "latency_batch8_ms_p95": 1.4343991031637415,
+            "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          },
+          "ensemble": {
+            "method": "act_temporal_ensemble",
+            "episodes": 40,
+            "success_once": 30.0,
+            "success_at_end": 5.0,
+            "mean_return": 27.625,
+            "stage_counts": {
+              "approached": 40,
+              "is_grasped": 40,
+              "lifted": 35,
+              "is_obj_placed": 30
+            },
+            "latency_batch8_ms_mean": 1.4436877749976702,
+            "latency_batch8_ms_p95": 1.587704653502442,
+            "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+            "validation_seed": 10000
+          }
+        }
+      },
+      "next_stage": "ACT-D1 expert-state-only distillation; freeze teacher using development validation"
+    },
+    "act_d1_seed0_001": {
+      "offline": {
+        "train": {
+          "mse": 0.0011683952761813998,
+          "per_action_mse": [
+            5.895331560168415e-05,
+            9.716527711134404e-05,
+            0.00018628367979545146,
+            0.004331178497523069
+          ]
+        },
+        "validation": {
+          "mse": 0.0014863813994452357,
+          "per_action_mse": [
+            6.033515091985464e-05,
+            9.930053784046322e-05,
+            0.00018460136197973043,
+            0.005601288750767708
+          ]
+        }
+      },
+      "closed_loop": {
+        "sac_mean": {
+          "method": "sac_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 26,
+            "is_grasped": 18,
+            "lifted": 8,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.5367771469755098,
+          "latency_batch8_ms_p95": 1.7210612626513466,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.0011058506788685918,
+            0.0005616182461380959,
+            0.003956533502787352,
+            0.2522466778755188
+          ],
+          "sample_mean_action_mse": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sac_stochastic": {
+          "method": "sac_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.2,
+          "stage_counts": {
+            "approached": 8,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.9728537137852982,
+          "latency_batch8_ms_p95": 2.360487577971071,
+          "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+          "validation_seed": 10000,
+          "teacher_action_mse_on_student_states": [
+            0.004126774612814188,
+            0.004568456672132015,
+            0.020549971610307693,
+            0.2841547727584839
+          ],
+          "sample_mean_action_mse": [
+            0.01767021231353283,
+            0.01756623014807701,
+            0.01524823997169733,
+            0.00021377734083216637
+          ]
+        }
+      },
+      "teacher_success_once": 8,
+      "teacher_episodes": 40,
+      "success_gap_teacher_minus_student": {
+        "sac_mean": 0.17500000000000002,
+        "sac_stochastic": 0.17500000000000002
+      },
+      "paired_teacher_state_mse": 0.002725261729210615,
+      "teacher_frozen": true,
+      "log_std_frozen": -2.0,
+      "temperature_gradient": -10.852874755859375,
+      "elapsed_seconds": 82.9625137639814,
+      "torch_peak_allocated_bytes": 111528448,
+      "new_training_interactions": 0,
+      "final_test_accessed": false,
+      "smoke": false
+    },
+    "act_matched_eval_001": {
+      "methods": {
+        "act_k8_first": {
+          "method": "act_k8_first",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.65,
+          "stage_counts": {
+            "approached": 24,
+            "is_grasped": 24,
+            "lifted": 9,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.3256626125075854,
+          "latency_batch8_ms_p95": 1.493290325743146,
+          "inference_scope": "act_k8_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k8_ensemble": {
+          "method": "act_k8_ensemble",
+          "episodes": 40,
+          "success_once": 18.0,
+          "success_at_end": 1.0,
+          "mean_return": 12.325,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 39,
+            "is_obj_placed": 19
+          },
+          "latency_batch8_ms_mean": 1.452313132584095,
+          "latency_batch8_ms_p95": 1.6720712766982613,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_first": {
+          "method": "act_k16_first",
+          "episodes": 40,
+          "success_once": 10.0,
+          "success_at_end": 0.0,
+          "mean_return": 5.85,
+          "stage_counts": {
+            "approached": 38,
+            "is_grasped": 38,
+            "lifted": 26,
+            "is_obj_placed": 13
+          },
+          "latency_batch8_ms_mean": 1.326911490643397,
+          "latency_batch8_ms_p95": 1.5169636608334258,
+          "inference_scope": "act_k16_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k16_ensemble": {
+          "method": "act_k16_ensemble",
+          "episodes": 40,
+          "success_once": 31.0,
+          "success_at_end": 5.0,
+          "mean_return": 34.35,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 37,
+            "is_obj_placed": 31
+          },
+          "latency_batch8_ms_mean": 1.4834239052142948,
+          "latency_batch8_ms_p95": 1.6739258891902864,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_first": {
+          "method": "act_k30_first",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.3679431031341664,
+          "latency_batch8_ms_p95": 1.5403787343529982,
+          "inference_scope": "act_k30_first; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "act_k30_ensemble": {
+          "method": "act_k30_ensemble",
+          "episodes": 40,
+          "success_once": 30.0,
+          "success_at_end": 5.0,
+          "mean_return": 31.725,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 36,
+            "is_obj_placed": 30
+          },
+          "latency_batch8_ms_mean": 1.4852700061164796,
+          "latency_batch8_ms_p95": 1.6976981831248847,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_mean": {
+          "method": "student_mean",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 1.0,
+          "mean_return": 2.925,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 19,
+            "lifted": 5,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 0.14382142905378714,
+          "latency_batch8_ms_p95": 0.1774639298673719,
+          "inference_scope": "student_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        },
+        "student_stochastic": {
+          "method": "student_stochastic",
+          "episodes": 40,
+          "success_once": 0.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.0,
+          "stage_counts": {
+            "approached": 5,
+            "is_grasped": 1,
+            "lifted": 0,
+            "is_obj_placed": 0
+          },
+          "latency_batch8_ms_mean": 0.4209939423017204,
+          "latency_batch8_ms_p95": 0.49498847511131316,
+          "inference_scope": "student_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_from_first_condition": 0.0
+        }
+      },
+      "protocol": "matched batch reset seeds 10000,10008,10016,10024,10032; state42/pd_ee_delta_pos/sparse/GPU/horizon200",
+      "training_interactions": 0,
+      "checkpoint_selection": "original fixed-final K30 frozen before D1; no reselection from this corrected evaluation",
+      "final_test_accessed": false,
+      "torch_peak_allocated_bytes": 33825280
+    },
+    "act_c1_seed0_001": {
+      "real_expert_states": 55092,
+      "initial_action_max_abs": 1.0728836059570312e-06,
+      "initial_action_mse": 2.548404300855337e-13,
+      "saturated_action_fraction": 0.24777190880708633,
+      "copied_tensor_count": 70,
+      "teacher_unchanged": true,
+      "methods": {
+        "transfer_mean": {
+          "method": "transfer_mean",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 12.3,
+          "stage_counts": {
+            "approached": 28,
+            "is_grasped": 28,
+            "lifted": 14,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.373218371940311,
+          "latency_batch8_ms_p95": 1.5253929130267352,
+          "inference_scope": "transfer_mean; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        },
+        "transfer_stochastic": {
+          "method": "transfer_stochastic",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.025,
+          "stage_counts": {
+            "approached": 33,
+            "is_grasped": 13,
+            "lifted": 9,
+            "is_obj_placed": 3
+          },
+          "latency_batch8_ms_mean": 1.6432184736477211,
+          "latency_batch8_ms_p95": 1.8280131014762446,
+          "inference_scope": "transfer_stochastic; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000,
+          "reset_protocol": "explicit seed 10000+episode_batch_start",
+          "initial_obs_max_abs_vs_teacher": 0.0
+        }
+      },
+      "elapsed_seconds": 81.30926746997284,
+      "torch_peak_allocated_bytes": 231443456,
+      "train_interactions": 0,
+      "final_test_accessed": false,
+      "actor_parameters": 940808,
+      "online_learning_verified": false,
+      "note": "Initial parameter preservation and stochastic execution only; online SAC superiority/forgetting untested"
+    },
+    "act_t2_online_seed0_002": {
+      "id": "act-t2-online-seed0-002",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1094.9869961909717,
+      "peak_device_mib": 4713,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 9.482948371442035e-06,
+          "max": 0.7388117909431458,
+          "final": 1.0021742127719335e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3010726571083069,
+          "max": 55.92681121826172,
+          "final": 0.3010726571083069
+        },
+        "losses/qf2_values": {
+          "min": 0.30020055174827576,
+          "max": 55.926055908203125,
+          "final": 0.30020055174827576
+        },
+        "losses/actor_loss": {
+          "min": -56.39734649658203,
+          "max": -0.29817888140678406,
+          "final": -0.29817888140678406
+        }
+      }
+    },
+    "act_t3_online_seed0_001": {
+      "id": "act-t3-online-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1105.1090763889952,
+      "peak_device_mib": 4709,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 2,
+      "losses": {
+        "losses/alpha": {
+          "min": 7.17740931577282e-06,
+          "max": 0.7639744877815247,
+          "final": 3.9408761949744076e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3190631568431854,
+          "max": 53.60826110839844,
+          "final": 0.3190631568431854
+        },
+        "losses/qf2_values": {
+          "min": 0.3017781972885132,
+          "max": 53.60850524902344,
+          "final": 0.3017781972885132
+        },
+        "losses/actor_loss": {
+          "min": -54.09770584106445,
+          "max": -0.3055709898471832,
+          "final": -0.3055709898471832
+        }
+      }
+    },
+    "act_t4_online_seed0_001": {
+      "id": "act-t4-online-seed0-001",
+      "status": "completed",
+      "initial_success": 1,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1099.1932152470108,
+      "peak_device_mib": 4864,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 1.145498799814959e-06,
+          "max": 0.7554770708084106,
+          "final": 1.145498799814959e-06
+        },
+        "losses/qf1_values": {
+          "min": 0.2754051685333252,
+          "max": 54.03567123413086,
+          "final": 0.2754051685333252
+        },
+        "losses/qf2_values": {
+          "min": 0.2761397957801819,
+          "max": 54.036903381347656,
+          "final": 0.2761397957801819
+        },
+        "losses/actor_loss": {
+          "min": -54.52239990234375,
+          "max": -0.2760038673877716,
+          "final": -0.2760038673877716
+        }
+      }
+    },
+    "act_t5_online_seed0_001": {
+      "id": "act-t5-online-seed0-001",
+      "status": "completed",
+      "initial_success": 8,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 3743.461614077969,
+      "peak_device_mib": 5769,
+      "actor_parameters": 940808,
+      "checkpoint_sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 1.3786185490971548e-06,
+          "max": 0.7408556342124939,
+          "final": 1.3786185490971548e-06
+        },
+        "losses/qf1_values": {
+          "min": 0.2759428918361664,
+          "max": 56.315406799316406,
+          "final": 0.2759428918361664
+        },
+        "losses/qf2_values": {
+          "min": 0.2799265384674072,
+          "max": 56.315059661865234,
+          "final": 0.2799265384674072
+        },
+        "losses/actor_loss": {
+          "min": -56.79010772705078,
+          "max": -0.2783903181552887,
+          "final": -0.2783903181552887
+        }
+      }
+    },
+    "act_online_comparison_complete": {
+      "summary": "artifacts/act-online-summary-005/summary.json",
+      "fixed_final_success_of_40": {
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "T6": 34
+      },
+      "training_seed": 0,
+      "final_test_accessed": false
+    },
+    "act_independent_eval_smoke_001": {
+      "status": "completed",
+      "gpu_job_seconds": 56.67084224300925,
+      "validation_interactions": 12000,
+      "training_interactions": 0,
+      "all_initial_state_max_error": 0
+    },
+    "act_u2_resource_smoke": {
+      "id": "act-u2-retention-smoke-001",
+      "success_once_initial": 8,
+      "success_once_final": 1,
+      "episodes": 40,
+      "gpu_job_seconds": 121.30759384500561,
+      "resource_gate_passed": true,
+      "not_efficacy_evidence": true
+    },
+    "act_r0_expert50_seed0_001": {
+      "id": "act-r0-expert50-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 31,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1323.153780288,
+      "peak_device_mib": 4669,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "c0f9c8a17740ec36164b278f4eab5a9cf5ba247a37aad2ea88f0c0a0f48d6f2d",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 606,
+      "losses": {
+        "losses/alpha": {
+          "min": 0.02594219334423542,
+          "max": 0.7388468980789185,
+          "final": 0.04866662621498108
+        },
+        "losses/qf1_values": {
+          "min": 23.035324096679688,
+          "max": 55.39423751831055,
+          "final": 25.058788299560547
+        },
+        "losses/qf2_values": {
+          "min": 22.951892852783203,
+          "max": 55.42539596557617,
+          "final": 24.800968170166016
+        },
+        "losses/actor_loss": {
+          "min": -55.834716796875,
+          "max": -23.05803680419922,
+          "final": -24.87065887451172
+        }
+      }
+    },
+    "act_r1_expert50_seed0_001": {
+      "id": "act-r1-expert50-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 30,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1365.811185341,
+      "peak_device_mib": 4714,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "f2241b16c0ffdcb93177a24736c5991eb0ae80e94c50313567b9da9f6271b807",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 609,
+      "losses": {
+        "losses/alpha": {
+          "min": 0.03172195330262184,
+          "max": 0.7595660090446472,
+          "final": 0.04838569462299347
+        },
+        "losses/qf1_values": {
+          "min": 17.8574275970459,
+          "max": 53.34391784667969,
+          "final": 25.430423736572266
+        },
+        "losses/qf2_values": {
+          "min": 17.869014739990234,
+          "max": 53.37091064453125,
+          "final": 25.412355422973633
+        },
+        "losses/actor_loss": {
+          "min": -53.73279571533203,
+          "max": -19.924806594848633,
+          "final": -25.41323471069336
+        }
+      }
     }
   },
-  "next_experiment": "Continue independent Pick1/2, RLPD, Stack/Peg, U1 seed1/2, Pick3/U1-3/Pick4/U1-4; then registered final evaluation and CPU aggregation automatically on success. Preserve 2h final-evaluation reserve.",
+  "next_experiment": "Continue existing queue002 R3 PID71954, then8 fixed-final tests. CPU summary28933 and terminal audit56507 already active; do not duplicate.",
   "blockers": [],
-  "resume": "Read charter, prompt, AGENTS and log; inspect running jobs and budget before launching GPU work.",
+  "resume": "Read FINAL_BATCH_REPORT.md and completion audit; do not restart original or completion queues; hourly automation remains deleted.",
   "background_jobs": [
     {
       "role": "e6-u0-full-001",
@@ -752,6 +1603,76 @@
       "role": "queue-pick-seed1-pipeline-003",
       "status_file": "artifacts/queue-pick-seed1-pipeline-003/status.json",
       "launched_pid": 1128167
+    },
+    {
+      "role": "ACT-T0 teacher stage",
+      "status_file": "artifacts/queue-act-t0-stage-001/status.json",
+      "launched_pid": 1959272
+    },
+    {
+      "role": "ACT T4-T6 CPU evidence/export/drift postprocessing",
+      "status_file": "artifacts/act-online-postprocess-001/status.json",
+      "launched_pid": 2829356
+    },
+    {
+      "role": "ACT independent 10-env validation entry after T6 and CPU postprocessing",
+      "status_file": "artifacts/queue-act-eval-entry-001/status.json",
+      "launched_pid": 2915393
+    },
+    {
+      "role": "U2 bounded full ACT retention control",
+      "status_file": "artifacts/act-u2-full-batch-001/status.json",
+      "launched_pid": 2935565
+    },
+    {
+      "role": "U2 CPU-only postprocessing after successful full run",
+      "status_file": "artifacts/queue-act-u2-postprocess-001/status.json",
+      "launched_pid": 2936685
+    },
+    {
+      "role": "U2 read-only single-mechanism/source/retention audit after existing CPU queue",
+      "status_file": "artifacts/queue-act-u2-audit-001/status.json",
+      "launched_pid": 2981751
+    },
+    {
+      "role": "Frozen106-condition final evaluation and raw summary",
+      "status_file": "artifacts/act-final-evaluation-launch-002/status.json",
+      "launched_pid": 2996780
+    },
+    {
+      "role": "Final evaluation003 remaining68 entries, shared original cap",
+      "status_file": "artifacts/act-final-evaluation-launch-003/status.json",
+      "launched_pid": 3003841
+    },
+    {
+      "role": "Authorized U2 final completion (terminal)",
+      "status_file": "artifacts/act-final-completion-001/status.json",
+      "launched_pid": 3178278
+    },
+    {
+      "role": "U2 completion CPU audit (terminal)",
+      "status_file": "artifacts/act-final-completion-postprocess-001/status.json",
+      "launched_pid": 3180899
+    },
+    {
+      "role": "Authorized11500s initialization controls",
+      "status_file": "artifacts/act-initialization-batch-001/status.json",
+      "launched_pid": 13872
+    },
+    {
+      "role": "11500s controls after resource-estimator reconciliation; reuses R0 smoke",
+      "status_file": "artifacts/act-initialization-batch-002/status.json",
+      "launched_pid": 18028
+    },
+    {
+      "role": "Bounded CPU initialization-control summaries; no GPU launches",
+      "status_file": "artifacts/act-initialization-analysis-001/status.json",
+      "launched_pid": 28933
+    },
+    {
+      "role": "Bounded CPU terminal audit for authorized11500s batch; no GPU launches",
+      "status_file": "artifacts/act-initialization-delivery-audit-001/status.json",
+      "launched_pid": 56507
     }
   ],
   "environment": {
@@ -769,46 +1690,442 @@
     "real_gpu_training_completed": true,
     "gpu_smoke": "completed_and_replay_audited",
     "real_gpu_smoke_completed": true,
-    "full_training_completed": false,
-    "full_training": "queued_after_pick_seed2",
+    "full_training_completed": true,
+    "full_training": "completed; see artifacts/e3-rlpd-full-001",
     "full_limit_seconds": 10800,
     "smoke_peak_gpu_mib": 4893,
     "portable_smoke_actor": "releases/rlpd-smoke-001",
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "pick-seed1-b-001",
-    "authoritative_live_file": "artifacts/pick-seed1-pipeline-001/status.json"
+    "status": "R0/R1 full controls complete and audited; R3 active; all8 fixed-final tests pending",
+    "queue": "artifacts/act-initialization-batch-002/status.json",
+    "resource_gate": "artifacts/act-initialization-batch-002/resource_gate.json",
+    "gpu_budget": "configs/act_initialization_budget.json",
+    "original_batch_report": "FINAL_BATCH_REPORT.md",
+    "latest_development_summary": "artifacts/act-initialization-analysis-001/summary-002/summary.json",
+    "terminal_audit": "artifacts/act-initialization-delivery-audit-001/status.json"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
     "PegInsertionSide-v1": "full1000_revision002_audited_126_eligible_88_distinct_source_groups_874_failed_retained"
   },
   "upload_access": {
-    "local_git_https": "no credential; dry-run exit128",
-    "github_connector": "authenticated as repository owner; metadata reports push permission",
-    "status": "User requested current in-progress snapshot; preparing connector upload to research/u0-batch-20261016"
+    "phase": "verified",
+    "commit": "500f4960783593aeec257b38bf42734e4f03f045",
+    "tree": "fdfe0da2da0fb54c7369f7a9cd17297e795bf604",
+    "receipt": "artifacts/github-act-stage-upload-028/status.json",
+    "verified_files": 3577,
+    "draft_pr": 2,
+    "main_unchanged": true,
+    "note": "R0 full development evidence and portable actor published; R1 active; this receipt remains local until the next scientific milestone.",
+    "status": "verified",
+    "latest_receipt": "artifacts/github-act-stage-upload-028/status.json",
+    "remote_commit": "500f4960783593aeec257b38bf42734e4f03f045"
   },
   "local_hypotheses": [
     {
       "id": "U1",
       "mechanism": "SAC critic hidden LayerNorm only",
-      "status": "seed0_stability_supported_independent_confirmation_pending",
+      "status": "independent seeds1-4 complete; stability gain but no WM net gain in validation",
       "specification": "U1_CHANGE.md"
+    },
+    {
+      "id": "U2",
+      "mechanism": "finite early actor mean retention only",
+      "status": "completed bounded negative; classification B; no third hypothesis authorized",
+      "specification": "U2_CHANGE.md"
     }
   ],
   "final_evaluation": {
-    "status": "queued_after_all_registered_training",
-    "plan": "configs/final_evaluation_plan.json",
-    "models_or_stages": 52,
-    "method_conditions": 88,
+    "status": "completed_after_explicit_300_second_authorization",
+    "plan": "configs/act_final_evaluation_plan.json",
+    "models_or_stages": 70,
+    "method_conditions": 106,
     "episodes_per_condition": 100,
     "limit_seconds": 7200,
-    "final_test_accessed": false,
-    "queue": "artifacts/queue-final-evaluation-001/status.json",
-    "summary_queue": "artifacts/queue-final-results-001/status.json",
-    "method_fixed": true
+    "final_test_accessed": true,
+    "queue": "artifacts/act-final-evaluation-batch-003/status.json",
+    "summary_queue": "artifacts/act-final-evaluation-launch-003/status.json",
+    "method_fixed": true,
+    "release_gate": "configs/act_final_test_gate.json",
+    "historical_plan": "configs/final_evaluation_plan.json",
+    "historical_method_fixed": true,
+    "act_validation_smoke": "completed; comparison frozen and gate released before first test access",
+    "cpu_evidence_tests": "artifacts/act-final-evidence-tests-001/status.json",
+    "resume003": {
+      "failure_id": "F-ACT-EVAL-02",
+      "prior_batch": "artifacts/act-final-evaluation-batch-002/status.json",
+      "prior_elapsed_seconds": 121.40365356201073,
+      "remaining_seconds": 7078.596346437989,
+      "skip_completed": [
+        "pick-seed0-a",
+        "pick-seed0-b"
+      ],
+      "selected": [
+        "pick-seed0-c",
+        "pick-seed0-c-continue",
+        "pick-seed0-u0",
+        "pick-seed1-a",
+        "pick-seed1-b",
+        "pick-seed1-c",
+        "pick-seed1-c-continue",
+        "pick-seed1-u0",
+        "pick-seed2-a",
+        "pick-seed2-b",
+        "pick-seed2-c",
+        "pick-seed2-c-continue",
+        "pick-seed2-u0",
+        "stack-seed0-a",
+        "stack-seed0-b",
+        "stack-seed0-c",
+        "stack-seed0-c-continue",
+        "stack-seed0-u0",
+        "peg-seed0-a",
+        "peg-seed0-b",
+        "peg-seed0-c",
+        "peg-seed0-c-continue",
+        "peg-seed0-u0",
+        "u1-pick-seed0-c",
+        "u1-pick-seed0-c-continue",
+        "u1-pick-seed0-u0",
+        "u1-pick-seed1-c",
+        "u1-pick-seed1-c-continue",
+        "u1-pick-seed1-u0",
+        "u1-pick-seed2-c",
+        "u1-pick-seed2-c-continue",
+        "u1-pick-seed2-u0",
+        "rlpd-seed0-step262144",
+        "rlpd-seed0-step524288",
+        "pick-seed3-a",
+        "pick-seed3-b",
+        "pick-seed3-c",
+        "pick-seed3-c-continue",
+        "pick-seed3-u0",
+        "u1-pick-seed3-c",
+        "u1-pick-seed3-c-continue",
+        "u1-pick-seed3-u0",
+        "pick-seed4-a",
+        "pick-seed4-b",
+        "pick-seed4-c",
+        "pick-seed4-c-continue",
+        "pick-seed4-u0",
+        "u1-pick-seed4-c",
+        "u1-pick-seed4-c-continue",
+        "u1-pick-seed4-u0",
+        "act-teacher-k30-first",
+        "act-teacher-k30-ensemble",
+        "act-d1-initial-mean",
+        "act-d1-initial-stochastic",
+        "act-c1-initial-mean",
+        "act-c1-initial-stochastic",
+        "act-t2-final-mean",
+        "act-t2-final-stochastic",
+        "act-t3-final-mean",
+        "act-t3-final-stochastic",
+        "act-t4-final-mean",
+        "act-t4-final-stochastic",
+        "act-t5-final-mean",
+        "act-t5-final-stochastic",
+        "act-t6-final-mean",
+        "act-t6-final-stochastic",
+        "act-u2-final-mean",
+        "act-u2-final-stochastic"
+      ],
+      "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "new_budget": false,
+      "arguments": [
+        "--remaining-seconds",
+        "7078.596346437989",
+        "--ids",
+        "pick-seed0-c",
+        "pick-seed0-c-continue",
+        "pick-seed0-u0",
+        "pick-seed1-a",
+        "pick-seed1-b",
+        "pick-seed1-c",
+        "pick-seed1-c-continue",
+        "pick-seed1-u0",
+        "pick-seed2-a",
+        "pick-seed2-b",
+        "pick-seed2-c",
+        "pick-seed2-c-continue",
+        "pick-seed2-u0",
+        "stack-seed0-a",
+        "stack-seed0-b",
+        "stack-seed0-c",
+        "stack-seed0-c-continue",
+        "stack-seed0-u0",
+        "peg-seed0-a",
+        "peg-seed0-b",
+        "peg-seed0-c",
+        "peg-seed0-c-continue",
+        "peg-seed0-u0",
+        "u1-pick-seed0-c",
+        "u1-pick-seed0-c-continue",
+        "u1-pick-seed0-u0",
+        "u1-pick-seed1-c",
+        "u1-pick-seed1-c-continue",
+        "u1-pick-seed1-u0",
+        "u1-pick-seed2-c",
+        "u1-pick-seed2-c-continue",
+        "u1-pick-seed2-u0",
+        "rlpd-seed0-step262144",
+        "rlpd-seed0-step524288",
+        "pick-seed3-a",
+        "pick-seed3-b",
+        "pick-seed3-c",
+        "pick-seed3-c-continue",
+        "pick-seed3-u0",
+        "u1-pick-seed3-c",
+        "u1-pick-seed3-c-continue",
+        "u1-pick-seed3-u0",
+        "pick-seed4-a",
+        "pick-seed4-b",
+        "pick-seed4-c",
+        "pick-seed4-c-continue",
+        "pick-seed4-u0",
+        "u1-pick-seed4-c",
+        "u1-pick-seed4-c-continue",
+        "u1-pick-seed4-u0",
+        "act-teacher-k30-first",
+        "act-teacher-k30-ensemble",
+        "act-d1-initial-mean",
+        "act-d1-initial-stochastic",
+        "act-c1-initial-mean",
+        "act-c1-initial-stochastic",
+        "act-t2-final-mean",
+        "act-t2-final-stochastic",
+        "act-t3-final-mean",
+        "act-t3-final-stochastic",
+        "act-t4-final-mean",
+        "act-t4-final-stochastic",
+        "act-t5-final-mean",
+        "act-t5-final-stochastic",
+        "act-t6-final-mean",
+        "act-t6-final-stochastic",
+        "act-u2-final-mean",
+        "act-u2-final-stochastic"
+      ]
+    },
+    "throughput_forecast": "artifacts/act-final-throughput-review-001/result.json",
+    "terminal_audit": "artifacts/act-final-completion-postprocess-001/audit.json",
+    "completed_conditions": 106,
+    "failed_conditions": 0,
+    "not_started_conditions": 0,
+    "summary": "artifacts/act-final-summary-004/summary.json",
+    "actual_final_batch_wall_seconds": 7200.778426306031,
+    "shutdown_cleanup_overhead_seconds": 0.7784263060311787,
+    "missing_conditions": [],
+    "retry_authorized": false,
+    "completion_proposal": "configs/act_final_completion_proposal.json",
+    "completion_authorization": {
+      "user_message": "\u6279\u51c6\u8865\u8bc4 300 \u79d2",
+      "recorded_at": "2026-10-19T08:44:49.381106+00:00",
+      "additional_seconds": 300,
+      "per_job_seconds": 120,
+      "original_total_gpu_seconds": 86400,
+      "original_final_cap_seconds": 7200,
+      "original_plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "checkpoint_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+      "attempt_map": "configs/act_final_completion_attempts.json",
+      "scope": [
+        "act-u2-final-mean",
+        "act-u2-final-stochastic"
+      ],
+      "new_training_updates": 0,
+      "automatic_retry": false,
+      "automation_recreated": false,
+      "prior_proposal": "configs/act_final_completion_proposal.json"
+    },
+    "completion_result": {
+      "phase": "completed",
+      "completed_conditions": 106,
+      "registered_conditions": 106,
+      "unchanged_other_conditions": 104,
+      "old_failed_attempt_preserved": true,
+      "all_gpu_job_seconds": 85238.75034914288,
+      "remaining_gpu_job_seconds": 1161.2496508571203,
+      "gpu_job_count": 216,
+      "completion_wall_seconds": 107.54360562498914,
+      "completion_gpu_job_seconds": 107.20395962096518,
+      "original_final_wall_seconds": 7200.778426306031,
+      "original_shutdown_overrun_seconds": 0.778426306031,
+      "added_cap_seconds": 300,
+      "manifest_intervals_disjoint": true,
+      "checkpoint_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+      "records": [
+        {
+          "condition": "act-u2-final-mean",
+          "attempt": "e7-test-act-u2-final-mean-002",
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 52.60707024397561,
+          "source_files_verified": 163,
+          "changed_non_execution_scripts": [
+            "scripts/summarize_final_results.py"
+          ],
+          "interactions": {
+            "phases": {
+              "final_test": {
+                "attempted_transitions": 20000,
+                "completed_transitions": 20000,
+                "completed_vector_steps": 2000
+              }
+            },
+            "total_completed": 20000,
+            "total_attempted": 20000,
+            "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+          },
+          "peak_gpu_mib": 3502,
+          "manifest_sha256": "02bc0e8b6711ef0dcadd0c0926b8a3959ab3f8e97899b2b762b7501c9228a440"
+        },
+        {
+          "condition": "act-u2-final-stochastic",
+          "attempt": "e7-test-act-u2-final-stochastic-002",
+          "exit_code": 0,
+          "stop_reason": null,
+          "elapsed_seconds": 54.596889376989566,
+          "source_files_verified": 163,
+          "changed_non_execution_scripts": [
+            "scripts/summarize_final_results.py"
+          ],
+          "interactions": {
+            "phases": {
+              "final_test": {
+                "attempted_transitions": 20000,
+                "completed_transitions": 20000,
+                "completed_vector_steps": 2000
+              }
+            },
+            "total_completed": 20000,
+            "total_attempted": 20000,
+            "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+          },
+          "peak_gpu_mib": 3467,
+          "manifest_sha256": "e0630d1faeb37178e9351632680f4a5bac85dab3eaf1ba254cc35f9364e9f669"
+        }
+      ],
+      "new_training_updates": 0,
+      "audit_new_environment_interactions": 0
+    },
+    "latest_summary": "artifacts/act-final-summary-004/summary.json",
+    "completion_scope_finished": true,
+    "prior_state": "artifacts/act-final-completion-delivery-001/prior_final_evaluation_state.json"
   },
   "diagnostic_followup": "configs/f1_prefix20_followup.json",
-  "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json"
+  "progress_snapshot": "artifacts/github-snapshot-20261016-001/snapshot.json",
+  "act_research": {
+    "task": "ACT\u2192SAC transfer, user authorized 2026-10-17",
+    "plan": "ACT_SAC_PLAN.md",
+    "phase": "Bounded development and all18 ACT final conditions complete; broader ACT-WM and causal research still incomplete",
+    "branch": "research/act-sac-transfer",
+    "cpu_tests": "artifacts/act-cpu-tests-003",
+    "cpu_real_data": "artifacts/act-real-data-cpu-002",
+    "teacher_queue": "artifacts/queue-act-t0-stage-001/status.json",
+    "teacher_max_gpu_seconds": 5700,
+    "old_training_preserved": true,
+    "budget_reset": false,
+    "distillation_first_data": "expert_train_states_only",
+    "parameter_transfer": "artifacts/act-c1-seed0-001/result.json",
+    "wm": "unchanged",
+    "upload": "each validated small stage, background, new branch; no main merge",
+    "cpu_preflight": {
+      "tests": "artifacts/act-cpu-tests-004",
+      "tests_passed": 35,
+      "real_data": "artifacts/act-real-data-cpu-003",
+      "updates": 10,
+      "new_environment_interactions": 0
+    },
+    "continuation": {
+      "automation_id": "il-rl-wm-act",
+      "status": "deleted_by_user_request",
+      "recreate_authorized": false
+    },
+    "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
+    "distillation": "artifacts/act-d1-seed0-001/result.json",
+    "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
+    "next_stage": "Resource-gated serial R0/R1/R3; new final seed30000 preregistered, no WM",
+    "teacher_selection_unchanged": true,
+    "online_plan": "artifacts/act-online-budget-002/plan.json",
+    "online_stage": "artifacts/act-online-batch-002/status.json",
+    "latest_online_summary": "artifacts/act-online-summary-006/summary.json",
+    "inference_export_stage": {
+      "tests": "artifacts/act-inference-cpu-tests-001",
+      "tests_passed": 16,
+      "portable_t2": "releases/act-t2-online-final-001/manifest.json",
+      "real_independent_entry_evaluated": false,
+      "final_test_accessed": false
+    },
+    "online_drift_diagnostic": {
+      "script": "scripts/diagnose_act_online_drift.py",
+      "fixed_expert_train_states": 1024,
+      "full_run_steps": [
+        16384,
+        65536,
+        131072,
+        262144
+      ],
+      "smoke_validation": "artifacts/act-t5-smoke-drift-002/result.json",
+      "existing_probe_parity": "artifacts/act-drift-parity-001/result.json",
+      "postprocess_status": "artifacts/act-online-postprocess-001/status.json",
+      "full_run_drift_completed": [
+        "act-t4-online-seed0-001",
+        "act-t5-online-seed0-001"
+      ]
+    },
+    "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json",
+    "t5_actual_online_behavior_audit": "artifacts/act-online-behavior-audit-002/portable-manifest.json",
+    "u2_full_closure": {
+      "frozen_at": "2026-10-19T05:41:53.918084+00:00",
+      "development_closed": true,
+      "reason": "Bounded T2-T6 and U2 comparison complete. U2 failed to retain final skill; no more local hypotheses or tuning. Preserve all negative results. ACT-WM and independent ACT repeats remain uncompleted, not replaced by final testing.",
+      "selection": "Existing registered checkpoints only; online fixed final, offline preselected packages. No final-score-driven changes.",
+      "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+      "conditions": 106,
+      "entries": 70,
+      "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+      "audit": "artifacts/act-u2-comparison-audit-001/result.json",
+      "gpu_job_seconds_used": 78026.16978091677,
+      "remaining_total_seconds": 8373.830219083233,
+      "final_batch_cap_seconds": 7200,
+      "new_budget": false
+    },
+    "new_task": "ACT_NEXT_STAGE_TASK_2026-10-19.md",
+    "next_gpu_training_authorized": true,
+    "next_plan": "configs/act_initialization_execution_plan_002.json",
+    "reviews": [
+      "ACT_U2_FINAL_REVIEW.md",
+      "ACT_TRANSFER_CAUSAL_GAPS.md",
+      "NEXT_RESEARCH_BATCH.md"
+    ],
+    "r0_cpu_preflight": {
+      "status": "completed",
+      "evidence": "artifacts/act-r0-interface-cpu-001",
+      "tests_passed": 12,
+      "gpu_seconds": 0,
+      "new_training_updates": 0
+    }
+  },
+  "source_publication": {
+    "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+    "mode": "temporary Git index trees until final evaluation ends; do not commit archive parts into local history before evaluations finish",
+    "archive": "releases/source-history-act-20261019-001/manifest.json",
+    "latest_publication_plan": ".cache/github-act-stage-028/plan.json",
+    "note": "Stage28 verified3577 files; main unchanged and Draft PR2 updated. Local HEAD/index preserved; no publication of in-progress R1 raw results.",
+    "latest_verified_remote": "500f4960783593aeec257b38bf42734e4f03f045",
+    "latest_verified_tree": "fdfe0da2da0fb54c7369f7a9cd17297e795bf604"
+  },
+  "hourly_automation": {
+    "id": "il-rl-wm-act",
+    "status": "deleted",
+    "reason": "User explicitly cancelled the hourly scheduled task; existing bounded processes were not terminated."
+  },
+  "additional_budgets": {
+    "act-initialization-controls-20261019": {
+      "authorization": "configs/act_initialization_budget.json",
+      "limit_seconds": 11500,
+      "gpu_job_seconds_used": 2889.203967091
+    }
+  }
 }

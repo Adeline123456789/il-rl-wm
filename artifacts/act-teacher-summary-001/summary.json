@@ -1,0 +1,186 @@
+{
+  "conditions": [
+    {
+      "k": 8,
+      "experiment": "act-t0-seed0-001",
+      "result": {
+        "updates": 10000,
+        "elapsed_seconds": 249.56654917899868,
+        "model_parameters": 1348548,
+        "training_examples": 55092,
+        "validation_examples": 13897,
+        "final_validation": {
+          "method": "act_requery_first",
+          "episodes": 40,
+          "success_once": 1.0,
+          "success_at_end": 0.0,
+          "mean_return": 0.475,
+          "stage_counts": {
+            "approached": 21,
+            "is_grasped": 21,
+            "lifted": 8,
+            "is_obj_placed": 1
+          },
+          "latency_batch8_ms_mean": 1.310010996821802,
+          "latency_batch8_ms_p95": 1.4260436160839163,
+          "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "ensemble_validation": {
+          "method": "act_temporal_ensemble",
+          "episodes": 40,
+          "success_once": 21.0,
+          "success_at_end": 2.0,
+          "mean_return": 12.125,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 37,
+            "is_obj_placed": 22
+          },
+          "latency_batch8_ms_mean": 1.434493591048522,
+          "latency_batch8_ms_p95": 1.569708454189822,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "posterior_only_parameters": 411072,
+        "inference_parameters": 937476,
+        "final_test_accessed": false,
+        "cpu_audit": false,
+        "new_training_environment_interactions": 0,
+        "teacher_gate_passed": false,
+        "gate_definition": "Fixed final, mode A, >=8/40 validation success before migration; not significance or 3-seed confirmation",
+        "torch_peak_allocated_bytes": 174445056
+      },
+      "gpu_job_seconds": 252.61643004001235,
+      "peak_device_mib": 3856,
+      "raw_episode_sha256": "b646bed225686672fb559f9dc6928ae34b9334aacd7cddea789dfd2853c43bac"
+    },
+    {
+      "k": 16,
+      "experiment": "act-t0-k16-seed0-001",
+      "result": {
+        "updates": 10000,
+        "elapsed_seconds": 270.82859191601165,
+        "model_parameters": 1349572,
+        "training_examples": 55092,
+        "validation_examples": 13897,
+        "final_validation": {
+          "method": "act_requery_first",
+          "episodes": 40,
+          "success_once": 4.0,
+          "success_at_end": 0.0,
+          "mean_return": 1.275,
+          "stage_counts": {
+            "approached": 38,
+            "is_grasped": 38,
+            "lifted": 25,
+            "is_obj_placed": 4
+          },
+          "latency_batch8_ms_mean": 1.3082224410609342,
+          "latency_batch8_ms_p95": 1.4422476509935223,
+          "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "ensemble_validation": {
+          "method": "act_temporal_ensemble",
+          "episodes": 40,
+          "success_once": 25.0,
+          "success_at_end": 3.0,
+          "mean_return": 24.2,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 33,
+            "is_obj_placed": 26
+          },
+          "latency_batch8_ms_mean": 1.4404641865403391,
+          "latency_batch8_ms_p95": 1.58610910148127,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "posterior_only_parameters": 411072,
+        "inference_parameters": 938500,
+        "final_test_accessed": false,
+        "cpu_audit": false,
+        "new_training_environment_interactions": 0,
+        "teacher_gate_passed": false,
+        "gate_definition": "Fixed final, mode A, >=8/40 validation success before migration; not significance or 3-seed confirmation",
+        "torch_peak_allocated_bytes": 279048704
+      },
+      "gpu_job_seconds": 272.8212091999885,
+      "peak_device_mib": 3948,
+      "raw_episode_sha256": "9c4de2b9048d7ea2847b6e5d8a0c91d4daa0280f7fffd56cb59976782d09f39b"
+    },
+    {
+      "k": 30,
+      "experiment": "act-t0-k30-seed0-001",
+      "result": {
+        "updates": 10000,
+        "elapsed_seconds": 311.1582835079753,
+        "model_parameters": 1351364,
+        "training_examples": 55092,
+        "validation_examples": 13897,
+        "final_validation": {
+          "method": "act_requery_first",
+          "episodes": 40,
+          "success_once": 8.0,
+          "success_at_end": 4.0,
+          "mean_return": 10.65,
+          "stage_counts": {
+            "approached": 33,
+            "is_grasped": 33,
+            "lifted": 19,
+            "is_obj_placed": 8
+          },
+          "latency_batch8_ms_mean": 1.3071189032052644,
+          "latency_batch8_ms_p95": 1.4343991031637415,
+          "inference_scope": "prior full chunk + clamp + first action; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "ensemble_validation": {
+          "method": "act_temporal_ensemble",
+          "episodes": 40,
+          "success_once": 30.0,
+          "success_at_end": 5.0,
+          "mean_return": 27.625,
+          "stage_counts": {
+            "approached": 40,
+            "is_grasped": 40,
+            "lifted": 35,
+            "is_obj_placed": 30
+          },
+          "latency_batch8_ms_mean": 1.4436877749976702,
+          "latency_batch8_ms_p95": 1.587704653502442,
+          "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+          "validation_seed": 10000
+        },
+        "posterior_only_parameters": 411072,
+        "inference_parameters": 940292,
+        "final_test_accessed": false,
+        "cpu_audit": false,
+        "new_training_environment_interactions": 0,
+        "teacher_gate_passed": true,
+        "gate_definition": "Fixed final, mode A, >=8/40 validation success before migration; not significance or 3-seed confirmation",
+        "torch_peak_allocated_bytes": 468567040
+      },
+      "gpu_job_seconds": 313.2939230729826,
+      "peak_device_mib": 4203,
+      "raw_episode_sha256": "998bdc7b11d8bb125e2a861211f3b6fcefd31a07fe0384ca11c2c179213e4b2d"
+    }
+  ],
+  "selection": {
+    "experiment": "act-t0-k30-seed0-001",
+    "chunk_size": 30,
+    "checkpoint": "checkpoints/act-t0-k30-seed0-001/final.pt",
+    "checkpoint_sha256": "ce576c9632c3fb4c44d9a49df8ec8996443287a8bcefb8ac2b441a5914f35acc",
+    "portable": "releases/act-teacher-k30-001/weights.pt",
+    "portable_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+    "mode": "current-state first action; latent=0; no temporal ensemble",
+    "normalization": "none; raw state; action clamp [-1,1]",
+    "seed": 10000,
+    "selection": "fixed final; first-action success_once then success_at_end then smaller K",
+    "limitation": "single development seed; 8/40 first-action successes, 4/40 end successes; usable threshold only"
+  },
+  "final_test_accessed": false
+}

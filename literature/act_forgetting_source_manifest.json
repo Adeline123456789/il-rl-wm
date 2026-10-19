@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/zhaoyi11/adaptive_bc",
+  "commit": "d47226d4ffc9959ac0ed1337ddd7ebb787fc05e1",
+  "paper": "https://arxiv.org/abs/2210.13846v1",
+  "license": "Apache-2.0, LICENSE read at locked commit",
+  "role": "read-only method/code audit; no code reuse or dependencies installed",
+  "files": {
+    "redq_bc.py": {
+      "path": ".cache/references/adaptive_bc/redq_bc.py",
+      "sha256": "8edf6a01dafff5cfefc1fcae2291b2add6651590c402fb27fbf8de0a22ffb9e3",
+      "bytes": 6795,
+      "git_blob_sha": "18501c6f509f7110586ccf49e57f70d8c21af5ef",
+      "upstream_blob_verified": true
+    },
+    "main.py": {
+      "path": ".cache/references/adaptive_bc/main.py",
+      "sha256": "2d1798fc5700c99da50fecd76a75c0e9b78f41f4d4da6ae3dc619ca4213a8610",
+      "bytes": 9940,
+      "git_blob_sha": "638355b02ac94d88592158e6ffc957982d47c4d6",
+      "upstream_blob_verified": true
+    },
+    "LICENSE": {
+      "path": ".cache/references/adaptive_bc/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "git_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "upstream_blob_verified": true
+    },
+    "environment.yaml": {
+      "path": ".cache/references/adaptive_bc/environment.yaml",
+      "sha256": "293f74405a171447d566673c1297c9dcad6b9baeb95d804b015de99b70a245ab",
+      "bytes": 283,
+      "git_blob_sha": "d64a94159c68545ce108e773c738d813c10b2d0d",
+      "upstream_blob_verified": true
+    }
+  }
+}

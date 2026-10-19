@@ -1,0 +1,107 @@
+id,task,training_seed,variant,training_interactions,training_role,method,status,episodes,success_once,success_at_end,success_rate,mean_return,evaluation_interactions
+pick-seed0-a,PickCube-v1,0,A,262144,development,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed0-b,PickCube-v1,0,B,262144,development,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed0-c,PickCube-v1,0,C,262144,development,sac,completed,100,89,75,0.89,149.16,20000
+pick-seed0-c-continue,PickCube-v1,0,C continuation,524288,development,sac,completed,100,98,98,0.98,184.49,20000
+pick-seed0-u0,PickCube-v1,0,U0,524288,development,il,completed,100,0,0,0.0,0.0,20000
+pick-seed0-u0,PickCube-v1,0,U0,524288,development,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed0-u0,PickCube-v1,0,U0,524288,development,il_sac_wm,completed,100,0,0,0.0,0.0,20000
+pick-seed0-u0,PickCube-v1,0,U0,524288,development,sac_wm,completed,100,0,0,0.0,0.0,20000
+pick-seed1-a,PickCube-v1,1,A,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed1-b,PickCube-v1,1,B,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed1-c,PickCube-v1,1,C,262144,independent_repeat,sac,completed,100,58,31,0.58,68.32,20000
+pick-seed1-c-continue,PickCube-v1,1,C continuation,524288,independent_repeat,sac,completed,100,89,89,0.89,162.02,20000
+pick-seed1-u0,PickCube-v1,1,U0,524288,independent_repeat,il,completed,100,0,0,0.0,0.0,20000
+pick-seed1-u0,PickCube-v1,1,U0,524288,independent_repeat,sac,completed,100,95,90,0.95,171.44,20000
+pick-seed1-u0,PickCube-v1,1,U0,524288,independent_repeat,il_sac_wm,completed,100,88,76,0.88,133.26,20000
+pick-seed1-u0,PickCube-v1,1,U0,524288,independent_repeat,sac_wm,completed,100,94,86,0.94,165.84,20000
+pick-seed2-a,PickCube-v1,2,A,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed2-b,PickCube-v1,2,B,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed2-c,PickCube-v1,2,C,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed2-c-continue,PickCube-v1,2,C continuation,524288,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed2-u0,PickCube-v1,2,U0,524288,independent_repeat,il,completed,100,0,0,0.0,0.0,20000
+pick-seed2-u0,PickCube-v1,2,U0,524288,independent_repeat,sac,completed,100,1,0,0.01,0.01,20000
+pick-seed2-u0,PickCube-v1,2,U0,524288,independent_repeat,il_sac_wm,completed,100,1,0,0.01,0.17,20000
+pick-seed2-u0,PickCube-v1,2,U0,524288,independent_repeat,sac_wm,completed,100,1,0,0.01,0.02,20000
+stack-seed0-a,StackCube-v1,0,A,262144,development,sac,completed,100,0,0,0.0,0.0,30000
+stack-seed0-b,StackCube-v1,0,B,262144,development,sac,completed,100,0,0,0.0,0.0,30000
+stack-seed0-c,StackCube-v1,0,C,262144,development,sac,completed,100,0,0,0.0,0.0,30000
+stack-seed0-c-continue,StackCube-v1,0,C continuation,524288,development,sac,completed,100,0,0,0.0,0.0,30000
+stack-seed0-u0,StackCube-v1,0,U0,524288,development,il,completed,100,0,0,0.0,0.0,30000
+stack-seed0-u0,StackCube-v1,0,U0,524288,development,sac,completed,100,0,0,0.0,0.0,30000
+stack-seed0-u0,StackCube-v1,0,U0,524288,development,il_sac_wm,completed,100,0,0,0.0,0.0,30000
+stack-seed0-u0,StackCube-v1,0,U0,524288,development,sac_wm,completed,100,0,0,0.0,0.0,30000
+peg-seed0-a,PegInsertionSide-v1,0,A,262144,development,sac,completed,100,0,0,0.0,0.0,40000
+peg-seed0-b,PegInsertionSide-v1,0,B,262144,development,sac,completed,100,0,0,0.0,0.0,40000
+peg-seed0-c,PegInsertionSide-v1,0,C,262144,development,sac,completed,100,0,0,0.0,0.0,40000
+peg-seed0-c-continue,PegInsertionSide-v1,0,C continuation,524288,development,sac,completed,100,0,0,0.0,0.0,40000
+peg-seed0-u0,PegInsertionSide-v1,0,U0,524288,development,il,completed,100,0,0,0.0,0.0,40000
+peg-seed0-u0,PegInsertionSide-v1,0,U0,524288,development,sac,completed,100,0,0,0.0,0.0,40000
+peg-seed0-u0,PegInsertionSide-v1,0,U0,524288,development,il_sac_wm,completed,100,0,0,0.0,0.0,40000
+peg-seed0-u0,PegInsertionSide-v1,0,U0,524288,development,sac_wm,completed,100,0,0,0.0,0.0,40000
+u1-pick-seed0-c,PickCube-v1,0,C-LN,262144,development,sac,completed,100,94,74,0.94,155.72,20000
+u1-pick-seed0-c-continue,PickCube-v1,0,C-LN continuation,524288,development,sac,completed,100,99,98,0.99,185.15,20000
+u1-pick-seed0-u0,PickCube-v1,0,U1,524288,development,il,completed,100,0,0,0.0,0.0,20000
+u1-pick-seed0-u0,PickCube-v1,0,U1,524288,development,sac,completed,100,98,97,0.98,182.17,20000
+u1-pick-seed0-u0,PickCube-v1,0,U1,524288,development,il_sac_wm,completed,100,81,64,0.81,110.12,20000
+u1-pick-seed0-u0,PickCube-v1,0,U1,524288,development,sac_wm,completed,100,98,94,0.98,175.81,20000
+u1-pick-seed1-c,PickCube-v1,1,C-LN,262144,independent_repeat,sac,completed,100,86,73,0.86,142.92,20000
+u1-pick-seed1-c-continue,PickCube-v1,1,C-LN continuation,524288,independent_repeat,sac,completed,100,92,91,0.92,169.1,20000
+u1-pick-seed1-u0,PickCube-v1,1,U1,524288,independent_repeat,il,completed,100,0,0,0.0,0.0,20000
+u1-pick-seed1-u0,PickCube-v1,1,U1,524288,independent_repeat,sac,completed,100,90,87,0.9,165.49,20000
+u1-pick-seed1-u0,PickCube-v1,1,U1,524288,independent_repeat,il_sac_wm,completed,100,80,70,0.8,108.33,20000
+u1-pick-seed1-u0,PickCube-v1,1,U1,524288,independent_repeat,sac_wm,completed,100,91,87,0.91,159.93,20000
+u1-pick-seed2-c,PickCube-v1,2,C-LN,262144,independent_repeat,sac,completed,100,80,63,0.8,120.96,20000
+u1-pick-seed2-c-continue,PickCube-v1,2,C-LN continuation,524288,independent_repeat,sac,completed,100,90,88,0.9,162.63,20000
+u1-pick-seed2-u0,PickCube-v1,2,U1,524288,independent_repeat,il,completed,100,0,0,0.0,0.0,20000
+u1-pick-seed2-u0,PickCube-v1,2,U1,524288,independent_repeat,sac,completed,100,91,88,0.91,167.84,20000
+u1-pick-seed2-u0,PickCube-v1,2,U1,524288,independent_repeat,il_sac_wm,completed,100,68,60,0.68,95.92,20000
+u1-pick-seed2-u0,PickCube-v1,2,U1,524288,independent_repeat,sac_wm,completed,100,91,91,0.91,163.64,20000
+rlpd-seed0-step262144,PickCube-v1,0,RLPD,262144,development,RLPD,completed,100,30,21,0.3,41.37,20000
+rlpd-seed0-step524288,PickCube-v1,0,RLPD,524288,development,RLPD,completed,100,46,39,0.46,69.68,20000
+pick-seed3-a,PickCube-v1,3,A,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed3-b,PickCube-v1,3,B,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed3-c,PickCube-v1,3,C,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed3-c-continue,PickCube-v1,3,C continuation,524288,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed3-u0,PickCube-v1,3,U0,524288,independent_repeat,il,completed,100,5,0,0.05,0.37,20000
+pick-seed3-u0,PickCube-v1,3,U0,524288,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed3-u0,PickCube-v1,3,U0,524288,independent_repeat,il_sac_wm,completed,100,1,1,0.01,0.17,20000
+pick-seed3-u0,PickCube-v1,3,U0,524288,independent_repeat,sac_wm,completed,100,0,0,0.0,0.0,20000
+u1-pick-seed3-c,PickCube-v1,3,C-LN,262144,independent_repeat,sac,completed,100,89,81,0.89,151.19,20000
+u1-pick-seed3-c-continue,PickCube-v1,3,C-LN continuation,524288,independent_repeat,sac,completed,100,98,98,0.98,183.11,20000
+u1-pick-seed3-u0,PickCube-v1,3,U1,524288,independent_repeat,il,completed,100,5,0,0.05,0.37,20000
+u1-pick-seed3-u0,PickCube-v1,3,U1,524288,independent_repeat,sac,completed,100,98,94,0.98,181.72,20000
+u1-pick-seed3-u0,PickCube-v1,3,U1,524288,independent_repeat,il_sac_wm,completed,100,73,50,0.73,76.95,20000
+u1-pick-seed3-u0,PickCube-v1,3,U1,524288,independent_repeat,sac_wm,completed,100,98,92,0.98,174.2,20000
+pick-seed4-a,PickCube-v1,4,A,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed4-b,PickCube-v1,4,B,262144,independent_repeat,sac,completed,100,0,0,0.0,0.0,20000
+pick-seed4-c,PickCube-v1,4,C,262144,independent_repeat,sac,completed,100,89,68,0.89,136.71,20000
+pick-seed4-c-continue,PickCube-v1,4,C continuation,524288,independent_repeat,sac,completed,100,96,88,0.96,171.75,20000
+pick-seed4-u0,PickCube-v1,4,U0,524288,independent_repeat,il,completed,100,2,0,0.02,0.17,20000
+pick-seed4-u0,PickCube-v1,4,U0,524288,independent_repeat,sac,completed,100,98,94,0.98,180.17,20000
+pick-seed4-u0,PickCube-v1,4,U0,524288,independent_repeat,il_sac_wm,completed,100,85,69,0.85,120.71,20000
+pick-seed4-u0,PickCube-v1,4,U0,524288,independent_repeat,sac_wm,completed,100,97,93,0.97,175.02,20000
+u1-pick-seed4-c,PickCube-v1,4,C-LN,262144,independent_repeat,sac,completed,100,67,50,0.67,98.63,20000
+u1-pick-seed4-c-continue,PickCube-v1,4,C-LN continuation,524288,independent_repeat,sac,completed,100,94,93,0.94,173.52,20000
+u1-pick-seed4-u0,PickCube-v1,4,U1,524288,independent_repeat,il,completed,100,2,0,0.02,0.17,20000
+u1-pick-seed4-u0,PickCube-v1,4,U1,524288,independent_repeat,sac,completed,100,91,85,0.91,162.52,20000
+u1-pick-seed4-u0,PickCube-v1,4,U1,524288,independent_repeat,il_sac_wm,completed,100,75,57,0.75,99.93,20000
+u1-pick-seed4-u0,PickCube-v1,4,U1,524288,independent_repeat,sac_wm,completed,100,95,90,0.95,167.4,20000
+act-teacher-k30-first,PickCube-v1,0,T1 ACT,0,development,teacher_first,completed,100,14,6,0.14,5.74,20000
+act-teacher-k30-ensemble,PickCube-v1,0,T1 ACT,0,development,teacher_ensemble,completed,100,73,8,0.73,30.4,20000
+act-d1-initial-mean,PickCube-v1,0,D1 initialization,0,development,mlp_mean,completed,100,1,1,0.01,0.51,20000
+act-d1-initial-stochastic,PickCube-v1,0,D1 initialization,0,development,mlp_stochastic,completed,100,0,0,0.0,0.0,20000
+act-c1-initial-mean,PickCube-v1,0,C1 initialization,0,development,act_mean,completed,100,15,6,0.15,5.79,20000
+act-c1-initial-stochastic,PickCube-v1,0,C1 initialization,0,development,act_stochastic,completed,100,1,0,0.01,0.07,20000
+act-t2-final-mean,PickCube-v1,0,T2 random SAC,262144,development,mlp_mean,completed,100,0,0,0.0,0.0,20000
+act-t2-final-stochastic,PickCube-v1,0,T2 random SAC,262144,development,mlp_stochastic,completed,100,0,0,0.0,0.0,20000
+act-t3-final-mean,PickCube-v1,0,T3 BC-init SAC,262144,development,mlp_mean,completed,100,0,0,0.0,0.0,20000
+act-t3-final-stochastic,PickCube-v1,0,T3 BC-init SAC,262144,development,mlp_stochastic,completed,100,0,0,0.0,0.0,20000
+act-t4-final-mean,PickCube-v1,0,T4 ACT-distilled SAC,262144,development,mlp_mean,completed,100,0,0,0.0,0.0,20000
+act-t4-final-stochastic,PickCube-v1,0,T4 ACT-distilled SAC,262144,development,mlp_stochastic,completed,100,0,0,0.0,0.0,20000
+act-t5-final-mean,PickCube-v1,0,T5 ACT-parameter SAC,262144,development,act_mean,completed,100,0,0,0.0,0.0,20000
+act-t5-final-stochastic,PickCube-v1,0,T5 ACT-parameter SAC,262144,development,act_stochastic,completed,100,0,0,0.0,0.0,20000
+act-t6-final-mean,PickCube-v1,0,T6 ACT-distilled expert-mix SAC,262144,development,mlp_mean,completed,100,77,58,0.77,123.46,20000
+act-t6-final-stochastic,PickCube-v1,0,T6 ACT-distilled expert-mix SAC,262144,development,mlp_stochastic,completed,100,79,58,0.79,109.31,20000
+act-u2-final-mean,PickCube-v1,0,U2 T5 finite actor-only mean retention,262144,development,act_mean,completed,100,0,0,0.0,0.0,20000
+act-u2-final-stochastic,PickCube-v1,0,U2 T5 finite actor-only mean retention,262144,development,act_stochastic,completed,100,0,0,0.0,0.0,20000

@@ -32,7 +32,9 @@ def evaluate_policy(actor, env, args, output, step, method=None, episode_filenam
     obs, _ = env.reset(seed=args.eval_seed)
     episodes = 0
     event_seen = {}
-    for _ in range(args.num_eval_steps):
+    matched_resets = getattr(args, 'matched_eval_resets', False)
+    reset_seed = args.eval_seed
+    for eval_step in range(args.num_eval_steps):
         with torch.no_grad():
             obs, _, _, _, info = env.step(actor.get_eval_action(obs))
         actual_info = info.get('final_info', info)
@@ -44,10 +46,14 @@ def evaluate_policy(actor, env, args, output, step, method=None, episode_filenam
         if 'final_info' in info:
             mask = info['_final_info']
             for i in torch.where(mask)[0].tolist():
-                append_json(output / episode_filename, dict(step=step, episode=episodes, env=i, **({} if method is None else dict(method=method)), **{k:float(v[i]) for k,v in info['final_info']['episode'].items()}, **{k+'_once':bool(v[i]) for k,v in event_seen.items()}))
+                append_json(output / episode_filename, dict(step=step, episode=episodes, env=i, **({} if method is None else dict(method=method)), **(dict(eval_seed=reset_seed) if matched_resets else {}), **{k:float(v[i]) for k,v in info['final_info']['episode'].items()}, **{k+'_once':bool(v[i]) for k,v in event_seen.items()}))
                 episodes += 1
             for value in event_seen.values():
                 value[mask] = False
+            if matched_resets and eval_step+1 < args.num_eval_steps:
+                assert mask.all(), 'This matched evaluation requires synchronized full episodes'
+                reset_seed = args.eval_seed + episodes
+                obs, _ = env.reset(seed=reset_seed)
     assert episodes == args.num_eval_envs * args.num_eval_steps // args.max_episode_steps
     actor.train()
     random.setstate(states[0]); np.random.set_state(states[1]); torch.set_rng_state(states[2]); torch.cuda.set_rng_state_all(states[3])

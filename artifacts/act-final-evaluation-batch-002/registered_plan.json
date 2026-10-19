@@ -1,0 +1,1076 @@
+{
+  "status": "registered 106 conditions; U2 full control approved by measured resource gate; final test remains closed",
+  "selection": "fixed final per training segment; RLPD262144 is predeclared equal-interaction intermediate",
+  "seed": 20000,
+  "episodes_per_model_method": 100,
+  "num_envs": 10,
+  "per_job_limit_seconds": 600,
+  "total_evaluation_limit_seconds": 7200,
+  "entries": [
+    {
+      "id": "pick-seed0-a",
+      "framework": "main",
+      "training_experiment": "e2-sac-a-full-002",
+      "checkpoint": "checkpoints/e2-sac-a-full-002/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed0-b",
+      "framework": "main",
+      "training_experiment": "e2-sac-b-full-001",
+      "checkpoint": "checkpoints/e2-sac-b-full-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed0-c",
+      "framework": "main",
+      "training_experiment": "e3-sac-c-full-001",
+      "checkpoint": "checkpoints/e3-sac-c-full-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "framework": "main",
+      "training_experiment": "e3-sac-c-continue-full-001",
+      "checkpoint": "checkpoints/e3-sac-c-continue-full-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed0-u0",
+      "framework": "main",
+      "training_experiment": "e6-u0-full-001",
+      "checkpoint": "checkpoints/e6-u0-full-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed1-a",
+      "framework": "main",
+      "training_experiment": "pick-seed1-a-001",
+      "checkpoint": "checkpoints/pick-seed1-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed1-b",
+      "framework": "main",
+      "training_experiment": "pick-seed1-b-001",
+      "checkpoint": "checkpoints/pick-seed1-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed1-c",
+      "framework": "main",
+      "training_experiment": "pick-seed1-c-001",
+      "checkpoint": "checkpoints/pick-seed1-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "framework": "main",
+      "training_experiment": "pick-seed1-c-continue-001",
+      "checkpoint": "checkpoints/pick-seed1-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed1-u0",
+      "framework": "main",
+      "training_experiment": "pick-seed1-u0-001",
+      "checkpoint": "checkpoints/pick-seed1-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed2-a",
+      "framework": "main",
+      "training_experiment": "pick-seed2-a-001",
+      "checkpoint": "checkpoints/pick-seed2-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed2-b",
+      "framework": "main",
+      "training_experiment": "pick-seed2-b-001",
+      "checkpoint": "checkpoints/pick-seed2-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed2-c",
+      "framework": "main",
+      "training_experiment": "pick-seed2-c-001",
+      "checkpoint": "checkpoints/pick-seed2-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "framework": "main",
+      "training_experiment": "pick-seed2-c-continue-001",
+      "checkpoint": "checkpoints/pick-seed2-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed2-u0",
+      "framework": "main",
+      "training_experiment": "pick-seed2-u0-001",
+      "checkpoint": "checkpoints/pick-seed2-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "stack-seed0-a",
+      "framework": "main",
+      "training_experiment": "stack-seed0-a-001",
+      "checkpoint": "checkpoints/stack-seed0-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "stack-seed0-b",
+      "framework": "main",
+      "training_experiment": "stack-seed0-b-001",
+      "checkpoint": "checkpoints/stack-seed0-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "stack-seed0-c",
+      "framework": "main",
+      "training_experiment": "stack-seed0-c-001",
+      "checkpoint": "checkpoints/stack-seed0-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "framework": "main",
+      "training_experiment": "stack-seed0-c-continue-001",
+      "checkpoint": "checkpoints/stack-seed0-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "stack-seed0-u0",
+      "framework": "main",
+      "training_experiment": "stack-seed0-u0-001",
+      "checkpoint": "checkpoints/stack-seed0-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "peg-seed0-a",
+      "framework": "main",
+      "training_experiment": "peg-seed0-a-001",
+      "checkpoint": "checkpoints/peg-seed0-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "peg-seed0-b",
+      "framework": "main",
+      "training_experiment": "peg-seed0-b-001",
+      "checkpoint": "checkpoints/peg-seed0-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "peg-seed0-c",
+      "framework": "main",
+      "training_experiment": "peg-seed0-c-001",
+      "checkpoint": "checkpoints/peg-seed0-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "framework": "main",
+      "training_experiment": "peg-seed0-c-continue-001",
+      "checkpoint": "checkpoints/peg-seed0-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "peg-seed0-u0",
+      "framework": "main",
+      "training_experiment": "peg-seed0-u0-001",
+      "checkpoint": "checkpoints/peg-seed0-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed0-c-001",
+      "checkpoint": "checkpoints/u1-pick-seed0-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed0-c-continue-001",
+      "checkpoint": "checkpoints/u1-pick-seed0-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed0-u0-001",
+      "checkpoint": "checkpoints/u1-pick-seed0-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed1-c-001",
+      "checkpoint": "checkpoints/u1-pick-seed1-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed1-c-continue-001",
+      "checkpoint": "checkpoints/u1-pick-seed1-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed1-u0-001",
+      "checkpoint": "checkpoints/u1-pick-seed1-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed2-c-001",
+      "checkpoint": "checkpoints/u1-pick-seed2-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed2-c-continue-001",
+      "checkpoint": "checkpoints/u1-pick-seed2-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed2-u0-001",
+      "checkpoint": "checkpoints/u1-pick-seed2-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "framework": "rlpd",
+      "training_experiment": "e3-rlpd-full-001",
+      "checkpoint": "checkpoints/e3-rlpd-full-001/step_262144",
+      "methods": [
+        "RLPD"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "RLPD",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "framework": "rlpd",
+      "training_experiment": "e3-rlpd-full-001",
+      "checkpoint": "checkpoints/e3-rlpd-full-001/final",
+      "methods": [
+        "RLPD"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "RLPD",
+      "training_interactions": 524288,
+      "training_role": "development"
+    },
+    {
+      "id": "pick-seed3-a",
+      "framework": "main",
+      "training_experiment": "pick-seed3-a-001",
+      "checkpoint": "checkpoints/pick-seed3-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed3-b",
+      "framework": "main",
+      "training_experiment": "pick-seed3-b-001",
+      "checkpoint": "checkpoints/pick-seed3-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed3-c",
+      "framework": "main",
+      "training_experiment": "pick-seed3-c-001",
+      "checkpoint": "checkpoints/pick-seed3-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "framework": "main",
+      "training_experiment": "pick-seed3-c-continue-001",
+      "checkpoint": "checkpoints/pick-seed3-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed3-u0",
+      "framework": "main",
+      "training_experiment": "pick-seed3-u0-001",
+      "checkpoint": "checkpoints/pick-seed3-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed3-c-001",
+      "checkpoint": "checkpoints/u1-pick-seed3-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed3-c-continue-001",
+      "checkpoint": "checkpoints/u1-pick-seed3-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed3-u0-001",
+      "checkpoint": "checkpoints/u1-pick-seed3-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed4-a",
+      "framework": "main",
+      "training_experiment": "pick-seed4-a-001",
+      "checkpoint": "checkpoints/pick-seed4-a-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed4-b",
+      "framework": "main",
+      "training_experiment": "pick-seed4-b-001",
+      "checkpoint": "checkpoints/pick-seed4-b-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed4-c",
+      "framework": "main",
+      "training_experiment": "pick-seed4-c-001",
+      "checkpoint": "checkpoints/pick-seed4-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "framework": "main",
+      "training_experiment": "pick-seed4-c-continue-001",
+      "checkpoint": "checkpoints/pick-seed4-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "pick-seed4-u0",
+      "framework": "main",
+      "training_experiment": "pick-seed4-u0-001",
+      "checkpoint": "checkpoints/pick-seed4-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed4-c-001",
+      "checkpoint": "checkpoints/u1-pick-seed4-c-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed4-c-continue-001",
+      "checkpoint": "checkpoints/u1-pick-seed4-c-continue-001/final.pt",
+      "methods": [
+        "sac"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "framework": "main",
+      "training_experiment": "u1-pick-seed4-u0-001",
+      "checkpoint": "checkpoints/u1-pick-seed4-u0-001/final.pt",
+      "methods": [
+        "il",
+        "sac",
+        "il_sac_wm",
+        "sac_wm"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat"
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "framework": "act",
+      "training_experiment": "act-t0-k30-seed0-001",
+      "checkpoint": "releases/act-teacher-k30-001/weights.pt",
+      "kind": "teacher",
+      "mode": "first",
+      "methods": [
+        "teacher_first"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150"
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "framework": "act",
+      "training_experiment": "act-t0-k30-seed0-001",
+      "checkpoint": "releases/act-teacher-k30-001/weights.pt",
+      "kind": "teacher",
+      "mode": "ensemble",
+      "methods": [
+        "teacher_ensemble"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150"
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "framework": "act",
+      "training_experiment": "act-d1-seed0-001",
+      "checkpoint": "releases/act-d1-negative-001/weights.pt",
+      "kind": "mlp",
+      "mode": "mean",
+      "methods": [
+        "mlp_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099"
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "framework": "act",
+      "training_experiment": "act-d1-seed0-001",
+      "checkpoint": "releases/act-d1-negative-001/weights.pt",
+      "kind": "mlp",
+      "mode": "stochastic",
+      "methods": [
+        "mlp_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "aeb886dcbe739a3a71a8939256f4c13b45faf531e77fddbacaa74b294980c099"
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "framework": "act",
+      "training_experiment": "act-c1-seed0-001",
+      "checkpoint": "releases/act-c1-init-001/weights.pt",
+      "kind": "act",
+      "mode": "mean",
+      "methods": [
+        "act_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "framework": "act",
+      "training_experiment": "act-c1-seed0-001",
+      "checkpoint": "releases/act-c1-init-001/weights.pt",
+      "kind": "act",
+      "mode": "stochastic",
+      "methods": [
+        "act_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "checkpoint_sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    {
+      "id": "act-t2-final-mean",
+      "framework": "act",
+      "training_experiment": "act-t2-online-seed0-002",
+      "checkpoint": "releases/act-t2-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "mean",
+      "methods": [
+        "mlp_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-t2-online-seed0-002",
+      "checkpoint": "releases/act-t2-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "stochastic",
+      "methods": [
+        "mlp_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t3-final-mean",
+      "framework": "act",
+      "training_experiment": "act-t3-online-seed0-001",
+      "checkpoint": "releases/act-t3-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "mean",
+      "methods": [
+        "mlp_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-t3-online-seed0-001",
+      "checkpoint": "releases/act-t3-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "stochastic",
+      "methods": [
+        "mlp_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t4-final-mean",
+      "framework": "act",
+      "training_experiment": "act-t4-online-seed0-001",
+      "checkpoint": "releases/act-t4-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "mean",
+      "methods": [
+        "mlp_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-t4-online-seed0-001",
+      "checkpoint": "releases/act-t4-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "stochastic",
+      "methods": [
+        "mlp_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t5-final-mean",
+      "framework": "act",
+      "training_experiment": "act-t5-online-seed0-001",
+      "checkpoint": "releases/act-t5-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "mean",
+      "methods": [
+        "act_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-t5-online-seed0-001",
+      "checkpoint": "releases/act-t5-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "stochastic",
+      "methods": [
+        "act_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t6-final-mean",
+      "framework": "act",
+      "training_experiment": "act-t6-online-seed0-001",
+      "checkpoint": "releases/act-t6-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "mean",
+      "methods": [
+        "mlp_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-t6-online-seed0-001",
+      "checkpoint": "releases/act-t6-online-final-001/weights.pt",
+      "kind": "mlp",
+      "mode": "stochastic",
+      "methods": [
+        "mlp_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-u2-final-mean",
+      "framework": "act",
+      "training_experiment": "act-u2-retention-seed0-001",
+      "checkpoint": "releases/act-u2-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "mean",
+      "methods": [
+        "act_mean"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development"
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "framework": "act",
+      "training_experiment": "act-u2-retention-seed0-001",
+      "checkpoint": "releases/act-u2-online-final-001/weights.pt",
+      "kind": "act",
+      "mode": "stochastic",
+      "methods": [
+        "act_stochastic"
+      ],
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development"
+    }
+  ],
+  "limitations": "Initial registry covers currently queued seeds/tasks. Additional preregistered training seeds must be appended before their final-test access. No test result may select a checkpoint or trigger method tuning.",
+  "extension_note": "2026-10-16: seeds3/4 registered in fixed order before their training and before any final test; same methods, data and budgets. Training pipelines preserve 7200 seconds of the existing 24h cap for evaluation; unfinished entries remain explicit.",
+  "historical_plan_sha256": "b3485b55adf79bea80118c8744afbbe0cd4f0b0375a17ea536f7ad05a1100671",
+  "historical_entries_unchanged": true,
+  "budget_note": "Single shared 7200-second batch cap across historical and ACT entries; no added GPU budget",
+  "required_act_validation_smoke": "artifacts/act-independent-eval-smoke-001/status.json",
+  "u2_registration": "2026-10-19: fixed final mean/stochastic before full U2 or final-test access; same shared7200s cap"
+}

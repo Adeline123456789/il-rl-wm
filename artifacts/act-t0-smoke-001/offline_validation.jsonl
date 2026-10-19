@@ -1,0 +1,1 @@
+{"step": 100, "first_action_mse": 0.017091143025745974, "prior_chunk_l1": 0.06946773375222702, "raw_output_clip_fraction": 0.21320287178714104, "first_mse": 950.0624585151672, "chunk_l1": 29492.10955810547, "clipped_values": 90514, "first_values": 55588, "valid_values": 424544}

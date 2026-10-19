@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/act-u2-retention-seed0-001/final.pt",
+  "sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae",
+  "training_seed": 0,
+  "inherited_interactions": 0
+}

@@ -1,0 +1,22 @@
+{
+  "phase": "completed",
+  "started_at": 1792373174.3356376,
+  "transport": "authenticated GitHub connector in background tool cell",
+  "pid": null,
+  "pid_note": "Connector executes outside local shell; tool cell ID is recorded by UI",
+  "local_commit": "9a38aadd63388177a99063a68728183e3e6e3be3",
+  "exit_code": 0,
+  "remote_commit": "f06a11b11bea25e34a89f744eb2d263b5b236fdc",
+  "remote_tree": "7c2757da9102b0ad7259821378bfe93421af9ed4",
+  "tree_matches_local": true,
+  "branch_readback_verified": true,
+  "main_unchanged": true,
+  "uploaded_objects": 160,
+  "tree_first_attempt": "from-scratch request timed out; expected tree GET404; retried same content as 186-entry delta successfully",
+  "background_tool_cells": [
+    "760",
+    "769",
+    "775",
+    "777"
+  ]
+}

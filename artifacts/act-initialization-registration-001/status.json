@@ -1,0 +1,6 @@
+{
+  "phase": "outputs_verified",
+  "exit_code": null,
+  "reason": "Original launcher did not retain process exit code; all registered files and exact commands independently verified by preflight002",
+  "preflight": "artifacts/act-initialization-preflight-002/status.json"
+}

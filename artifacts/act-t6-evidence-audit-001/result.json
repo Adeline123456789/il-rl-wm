@@ -1,0 +1,16 @@
+{
+  "exit_code": 0,
+  "pid": 2932246,
+  "source_files_verified": 148,
+  "actual_code_commit": "7892c38541e7e24aae9450852e10bfcd61f091a6",
+  "dirty_source_captured": true,
+  "portable_bins_equal": true,
+  "new_environment_interactions": 0,
+  "counts": {
+    "positive_reward_transitions": 63147,
+    "grasped_observation_transitions": 104180,
+    "unique_grasped_episodes": 664,
+    "successful_episodes": 533,
+    "episodes_seen": 1312
+  }
+}

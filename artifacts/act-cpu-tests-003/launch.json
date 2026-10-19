@@ -1,0 +1,12 @@
+{
+  "pid": 1955910,
+  "cpu_only": true,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--junitxml=artifacts/act-cpu-tests-003/junit.xml"
+  ]
+}

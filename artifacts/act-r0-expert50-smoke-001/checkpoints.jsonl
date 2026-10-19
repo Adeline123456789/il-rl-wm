@@ -1,0 +1,2 @@
+{"step": 0, "final": false, "path": "checkpoints/act-r0-expert50-smoke-001/step_0.pt", "bytes": 2943170, "sha256": "7ec2f529170e23393ff6ad07042fe74bc208e646e0ba4abf6bcac108cde45f5e"}
+{"step": 8192, "final": true, "path": "checkpoints/act-r0-expert50-smoke-001/final.pt", "bytes": 9608710, "sha256": "c2e7149056b99f4b1893a5119c1f96798dde343bdfcbcea3375dc2b4f11debbd"}

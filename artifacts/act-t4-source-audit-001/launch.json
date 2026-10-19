@@ -1,0 +1,8 @@
+{
+  "pid": 2843921,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-t4-source-audit-001/run.py"
+  ],
+  "GPU_use": false
+}

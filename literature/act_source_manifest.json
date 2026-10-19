@@ -1,0 +1,66 @@
+[
+  {
+    "repository": "https://github.com/tonyzhaozh/act",
+    "commit": "742c753c0d4a5d87076c8f69e5628c79a8cc5488",
+    "path": "detr/models/detr_vae.py",
+    "local_path": ".cache/act-reference-sources/tonyzhaozh/act/detr/models/detr_vae.py",
+    "remote_blob_sha": "bccfca75e48e3e9aa179554710ee67536d2436a7",
+    "read_only": true,
+    "sha256": "499d968a3704156e5e29425a29691c3fa93421481d3609ed6b600b21801270f1"
+  },
+  {
+    "repository": "https://github.com/tonyzhaozh/act",
+    "commit": "742c753c0d4a5d87076c8f69e5628c79a8cc5488",
+    "path": "detr/models/transformer.py",
+    "local_path": ".cache/act-reference-sources/tonyzhaozh/act/detr/models/transformer.py",
+    "remote_blob_sha": "f38afd0eb2211b45a980278294a426b3fa82c96f",
+    "read_only": true,
+    "sha256": "c6d2a1e7138e6ca62db7cc61bfc99857fb2a3a9375ba7b304310ca264f357ee2"
+  },
+  {
+    "repository": "https://github.com/tonyzhaozh/act",
+    "commit": "742c753c0d4a5d87076c8f69e5628c79a8cc5488",
+    "path": "LICENSE",
+    "local_path": ".cache/act-reference-sources/tonyzhaozh/act/LICENSE",
+    "remote_blob_sha": "35e5f5e277714ec3b4b69ce573f1aa8a79bad787",
+    "read_only": true,
+    "sha256": "4666c312da313e6c46929f6695d06cf98a2e7359b9c7dcbb0ea232d01b32cd42"
+  },
+  {
+    "repository": "https://github.com/huggingface/lerobot",
+    "commit": "146d8474932c8b566717eb2738ba459337ab71c4",
+    "path": "src/lerobot/policies/act/modeling_act.py",
+    "local_path": ".cache/act-reference-sources/huggingface/lerobot/src/lerobot/policies/act/modeling_act.py",
+    "remote_blob_sha": "d3f82d79c7b76b5841a2f0e4f62ab92f70b57a9e",
+    "read_only": true,
+    "sha256": "83d954f79ccd3eaa6774dbea92524939c8ac08359bb355ba7cd37b8601e1e3af"
+  },
+  {
+    "repository": "https://github.com/huggingface/lerobot",
+    "commit": "146d8474932c8b566717eb2738ba459337ab71c4",
+    "path": "src/lerobot/policies/act/configuration_act.py",
+    "local_path": ".cache/act-reference-sources/huggingface/lerobot/src/lerobot/policies/act/configuration_act.py",
+    "remote_blob_sha": "b5c3d68f1f0ea498b19264379bf73982be809383",
+    "read_only": true,
+    "sha256": "35a60c0dd3c811b137b5eb035bdbd40d40e2c24ba0cda61756052e6e1c829282"
+  },
+  {
+    "repository": "https://github.com/huggingface/lerobot",
+    "commit": "146d8474932c8b566717eb2738ba459337ab71c4",
+    "path": "LICENSE",
+    "local_path": ".cache/act-reference-sources/huggingface/lerobot/LICENSE",
+    "remote_blob_sha": "93baf0c18936131979fdda6a38536cbcef0efccb",
+    "read_only": true,
+    "sha256": "9e108af26a7ae92a6d2cb0273856a4a0a84da8819c2cffee8b2657cc4f905718"
+  },
+  {
+    "repository": "https://github.com/tongzhoumu/policy_decorator",
+    "commit": "92ba9ba442587ae5989c286355ace2200a0537fb",
+    "path": "online/pi_dec_bet_maniskill2.py",
+    "local_path": ".cache/act-reference-sources/tongzhoumu/policy_decorator/online/pi_dec_bet_maniskill2.py",
+    "remote_blob_sha": "5befc6f710b0119e1039578486eab51ac6b8bbe3",
+    "sha256": "c0166e7871b178ebe10e60fa625f8016ae57d1cc914d034fb0cd8d6fe718f383",
+    "read_only": true,
+    "license": "README claims MIT; LICENSE is empty at this commit; no redistribution or reuse"
+  }
+]

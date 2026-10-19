@@ -1,0 +1,14 @@
+{
+  "updates": 10,
+  "elapsed_seconds": 1.3777401089901105,
+  "model_parameters": 1348548,
+  "training_examples": 55092,
+  "validation_examples": 13897,
+  "final_validation": null,
+  "final_test_accessed": false,
+  "cpu_audit": true,
+  "new_training_environment_interactions": 0,
+  "teacher_gate_passed": false,
+  "gate_definition": "Fixed final, mode A, >=8/40 validation success before migration; not significance or 3-seed confirmation",
+  "torch_peak_allocated_bytes": 0
+}

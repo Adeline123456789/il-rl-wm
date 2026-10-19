@@ -1,0 +1,7 @@
+{
+  "pid": 56507,
+  "command": [
+    "/home/midea/miniconda3/envs/avp_clean/bin/python3.10",
+    "artifacts/act-initialization-delivery-audit-001/run.py"
+  ]
+}

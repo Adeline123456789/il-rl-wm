@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-10-19T05:41:53.918084+00:00",
+  "development_closed": true,
+  "reason": "Bounded T2-T6 and U2 comparison complete. U2 failed to retain final skill; no more local hypotheses or tuning. Preserve all negative results. ACT-WM and independent ACT repeats remain uncompleted, not replaced by final testing.",
+  "selection": "Existing registered checkpoints only; online fixed final, offline preselected packages. No final-score-driven changes.",
+  "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "conditions": 106,
+  "entries": 70,
+  "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "audit": "artifacts/act-u2-comparison-audit-001/result.json",
+  "gpu_job_seconds_used": 78026.16978091677,
+  "remaining_total_seconds": 8373.830219083233,
+  "final_batch_cap_seconds": 7200,
+  "new_budget": false
+}

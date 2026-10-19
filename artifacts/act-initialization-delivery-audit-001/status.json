@@ -1,0 +1,9 @@
+{
+  "pid": 56507,
+  "started_at": 1792403578.8906124,
+  "phase": "waiting",
+  "exit_code": null,
+  "new_environment_interactions": 0,
+  "new_training_updates": 0,
+  "gpu_jobs_started": 0
+}

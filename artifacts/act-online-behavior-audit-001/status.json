@@ -1,0 +1,10 @@
+{
+  "phase": "completed",
+  "completed": [
+    "act-t2-online-seed0-002",
+    "act-t3-online-seed0-001",
+    "act-t4-online-seed0-001"
+  ],
+  "exit_code": 0,
+  "GPU_use": false
+}

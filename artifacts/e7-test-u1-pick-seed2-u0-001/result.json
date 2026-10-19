@@ -1,0 +1,59 @@
+{
+  "checkpoint": "releases/final-u1-pick-seed2-u0-001/weights.pt",
+  "sha256": "62191875543954f41b81f63ace06cac41190bf4e19a4a513875158f006b32f47",
+  "training_seed": 2,
+  "lineage_training_interactions": 524288,
+  "critic_layer_norm": true,
+  "purpose": "final_test",
+  "seed": 20000,
+  "episodes_per_method": 100,
+  "num_envs": 10,
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "checkpoint_selection": "explicit fixed checkpoint; no selection by this evaluation",
+  "methods": {
+    "il": {
+      "interactions": 20000,
+      "wall_seconds": 56.42128530202899,
+      "candidates": 1,
+      "calls_il": true,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0
+    },
+    "sac": {
+      "interactions": 20000,
+      "wall_seconds": 57.663565121009015,
+      "candidates": 1,
+      "calls_il": false,
+      "success_once": 91.0,
+      "success_at_end": 88.0,
+      "mean_return": 167.84
+    },
+    "il_sac_wm": {
+      "interactions": 20000,
+      "wall_seconds": 62.54709867294878,
+      "candidates": 9,
+      "calls_il": true,
+      "success_once": 68.0,
+      "success_at_end": 60.0,
+      "mean_return": 95.92
+    },
+    "sac_wm": {
+      "interactions": 20000,
+      "wall_seconds": 64.17493729299167,
+      "candidates": 9,
+      "calls_il": false,
+      "success_once": 91.0,
+      "success_at_end": 91.0,
+      "mean_return": 163.64
+    }
+  },
+  "new_training_interactions": 0
+}

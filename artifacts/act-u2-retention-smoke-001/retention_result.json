@@ -1,0 +1,7 @@
+{
+  "updates": 1040,
+  "samples": 66560,
+  "final_coefficient": 8.75,
+  "teacher_calls_in_sac_updates": false,
+  "teacher_required_at_deployment": false
+}

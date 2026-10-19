@@ -1,0 +1,514 @@
+{
+  "conditions": [
+    {
+      "id": "act-t2-online-seed0-002",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1094.9869961909717,
+      "peak_device_mib": 4713,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 9.482948371442035e-06,
+          "max": 0.7388117909431458,
+          "final": 1.0021742127719335e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3010726571083069,
+          "max": 55.92681121826172,
+          "final": 0.3010726571083069
+        },
+        "losses/qf2_values": {
+          "min": 0.30020055174827576,
+          "max": 55.926055908203125,
+          "final": 0.30020055174827576
+        },
+        "losses/actor_loss": {
+          "min": -56.39734649658203,
+          "max": -0.29817888140678406,
+          "final": -0.29817888140678406
+        }
+      }
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1105.1090763889952,
+      "peak_device_mib": 4709,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 2,
+      "losses": {
+        "losses/alpha": {
+          "min": 7.17740931577282e-06,
+          "max": 0.7639744877815247,
+          "final": 3.9408761949744076e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3190631568431854,
+          "max": 53.60826110839844,
+          "final": 0.3190631568431854
+        },
+        "losses/qf2_values": {
+          "min": 0.3017781972885132,
+          "max": 53.60850524902344,
+          "final": 0.3017781972885132
+        },
+        "losses/actor_loss": {
+          "min": -54.09770584106445,
+          "max": -0.3055709898471832,
+          "final": -0.3055709898471832
+        }
+      }
+    },
+    {
+      "id": "act-t4-online-seed0-001",
+      "status": "running",
+      "initial_success": null,
+      "final_success": null,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": null,
+      "gradient_updates": null,
+      "gpu_job_seconds": null,
+      "peak_device_mib": null,
+      "actor_parameters": null
+    },
+    {
+      "id": "act-t5-online-seed0-001",
+      "status": "not_started",
+      "initial_success": null,
+      "final_success": null,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": null,
+      "gradient_updates": null,
+      "gpu_job_seconds": null,
+      "peak_device_mib": null,
+      "actor_parameters": null
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "status": "not_started",
+      "initial_success": null,
+      "final_success": null,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": null,
+      "gradient_updates": null,
+      "gpu_job_seconds": null,
+      "peak_device_mib": null,
+      "actor_parameters": null
+    }
+  ],
+  "curves": [
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 32768,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 49152,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 81920,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 98304,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 114688,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 147456,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 163840,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 180224,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 196608,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 1
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 212992,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 229376,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 245760,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t2-online-seed0-002",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 1,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 32768,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 49152,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 81920,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 98304,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 114688,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 147456,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 163840,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 180224,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 196608,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 212992,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 229376,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 245760,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t3-online-seed0-001",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    }
+  ],
+  "evidence": {
+    "act-t2-online-seed0-002": {
+      "manifest.json": "f8a277ca2e679f245ad0927a9e83dfeed9bd0564be905abe30188e21907fcacb",
+      "sac_config.json": "eca4195080358f5554d1d9443670eeaefe5b4a68f052acd960311814b6c598cb",
+      "actor_initialization.json": "853851c1aad023892cf2997ed52f4c93db5158c4ae8913be9ce85cb1a9c9c524",
+      "result.json": "cce7db1530e6d9a2f01cfbdb4181a7b19d23235b77aa9ce32d6b1c64b623453b",
+      "interactions.json": "f83b020fc890d70663d01272bb2d98d4d60e3d1266f100c337b3ea6e681584a9",
+      "validation_episodes.jsonl": "d1291c6929e0800e816df7447a1cc3de585caacb8459bdf1dc71067197265bdc",
+      "train_episodes.jsonl": "893042ed8f4a30707319c440cf63df0d1eb0653f92bf35b82ed8b2450579334e",
+      "metrics.jsonl": "7796d008d59325a5217444cbf26550ac02678e0cc016e4653f4deda3d06ccc44",
+      "resources.jsonl": "0c61b5c92126ca6094a9c752bc996262a6183fd3dbf0b5580b79aefbd5b2458e",
+      "checkpoints.jsonl": "a15965f4630df5db472a9b51520e91399ed70bce8862ddc6c7e94b452ba27443"
+    },
+    "act-t3-online-seed0-001": {
+      "manifest.json": "12fb05d43f07c45bdcf5caab7d3871549d49f08fd2bec3cc81ca74ff680f3a1e",
+      "sac_config.json": "8f39a38d2b6571f74ad807ef665d6e5e8f1b5d8c3449177626794be5f9b19c84",
+      "actor_initialization.json": "dfd62c34b763d8aa42c6cb44ecf1dee2d1564039d9c86a8fbd39b7458d64ef78",
+      "result.json": "0f56203c28e8c21a80edbc23d5de4a0ccad23ca28bccebf02265c7e15884beec",
+      "interactions.json": "f83b020fc890d70663d01272bb2d98d4d60e3d1266f100c337b3ea6e681584a9",
+      "validation_episodes.jsonl": "3fc56e9b52604531ada66c97edc248929e38ba5c65ede6e6963ab9763e9fee80",
+      "train_episodes.jsonl": "dc637433ced19b0292ab0597c056b2cdd527806c10b44d28e8bb9ff779e15f04",
+      "metrics.jsonl": "50765d800b90c2589829ab6a947b78fc34810075453056a18535deb23fba61ce",
+      "resources.jsonl": "0aedc755aa8b411579b43b733310cd3ffd50d215a7961b52d5bb6acc9965f7a7",
+      "checkpoints.jsonl": "ab49e475b2a8f98c404e7af902bca5a5548dbeea4dc75d875296d6086783fdf1"
+    }
+  },
+  "shared_config": {
+    "seed": 0,
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "total_timesteps": 262144,
+    "num_envs": 16,
+    "num_eval_envs": 8,
+    "num_eval_steps": 1000,
+    "training_freq": 64,
+    "utd": 0.25,
+    "batch_size": 1024,
+    "buffer_size": 262144,
+    "learning_starts": 4096,
+    "eval_freq": 16384,
+    "log_freq": 8192,
+    "gamma": 0.99,
+    "critic_layer_norm": true,
+    "initial_log_std": -2.0,
+    "matched_eval_resets": true,
+    "autotune": true,
+    "policy_lr": 0.0003,
+    "q_lr": 0.0003,
+    "alpha": 0.2,
+    "tau": 0.01,
+    "policy_frequency": 1,
+    "bootstrap_at_done": "always"
+  },
+  "scope": "Seed0 development; fixed final, validation only. Curves are not independent training repeats. Initial teacher/transfer results have separate offline costs; no ACT-WM conclusion.",
+  "final_test_accessed": false,
+  "new_environment_interactions": 0,
+  "plan_sha256": "150f2325095b4ee351fa99e9ec7a2a962c09f75e3f3746ce88424d7e00860b41"
+}

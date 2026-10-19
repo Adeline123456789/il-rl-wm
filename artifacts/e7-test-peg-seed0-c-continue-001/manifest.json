@@ -1,0 +1,33 @@
+{
+  "experiment_id": "e7-test-peg-seed0-c-continue-001",
+  "started_at": "2026-10-19T06:34:49.687216+00:00",
+  "ended_at": "2026-10-19T06:36:43.015142+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/evaluate_checkpoint.py",
+    "--checkpoint",
+    "releases/final-peg-seed0-c-continue-001/weights.pt",
+    "--methods",
+    "sac",
+    "--output",
+    "artifacts/e7-test-peg-seed0-c-continue-001",
+    "--seed",
+    "20000",
+    "--episodes",
+    "100",
+    "--num-envs",
+    "10"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 600.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 3055220,
+  "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "b3cec6ea9ecb3394860ee3cebf398f5d63460aa355f262ee60609ef7f32e3ce6",
+  "source_snapshot_sha256": "3fea121a66de63646c852118c4574970fe85b3b8dfad33e461219b993530c594",
+  "child_pid": 3055236,
+  "elapsed_seconds": 113.23027963301865
+}

@@ -1,0 +1,1 @@
+{"completed_conditions": 106, "added_gpu_seconds": 107.20395962096518, "total_gpu_seconds": 85238.75034914288, "remaining": 1161.2496508571203}

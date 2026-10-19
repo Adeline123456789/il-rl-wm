@@ -1,0 +1,40 @@
+{
+  "method": "teacher_ensemble",
+  "episodes": 100,
+  "success_once": 73.0,
+  "success_at_end": 8.0,
+  "mean_return": 30.4,
+  "stage_counts": {
+    "approached": 100,
+    "is_grasped": 99,
+    "lifted": 90,
+    "is_obj_placed": 73
+  },
+  "latency_batch10_ms_mean": 1.362947468238417,
+  "latency_batch10_ms_p95": 1.5496566222282127,
+  "inference_scope": "prior full chunk + temporal aggregation + clamp; synchronized CUDA; excludes env.step/render",
+  "test_seed": 20000,
+  "reset_protocol": "explicit seed 20000+episode_batch_start",
+  "seed": 20000,
+  "training_seed": 0,
+  "training_interactions": 0,
+  "checkpoint": "releases/act-teacher-k30-001/weights.pt",
+  "checkpoint_sha256": "768c93d37ab21f5c8ba3cbfb44f2573631b6189049ba450ec95d291d0ded1150",
+  "kind": "teacher",
+  "mode": "ensemble",
+  "purpose": "final_test",
+  "num_envs": 10,
+  "new_training_interactions": 0,
+  "interactions": 20000,
+  "selection": "explicit fixed checkpoint",
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "obs_mode": "state",
+    "control_mode": "pd_ee_delta_pos",
+    "reward_mode": "sparse",
+    "horizon": 200,
+    "max_episode_steps": 200,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "torch_peak_allocated_bytes": 17763840
+}

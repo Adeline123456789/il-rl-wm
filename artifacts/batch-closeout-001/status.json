@@ -1,0 +1,14 @@
+{
+  "phase": "evidence_delivered",
+  "gpu_jobs_running": false,
+  "publication_pending": false,
+  "data_delivery_commit": "a00ff2cd852dd2cc16847995c529f9ed918f451f",
+  "verified_files": 3398,
+  "goal_complete": false,
+  "remaining": [
+    "U2 two final evaluations pending explicit cap extension",
+    "ACT initialization causal controls",
+    "ACT-WM",
+    "ACT independent seeds and tasks"
+  ]
+}

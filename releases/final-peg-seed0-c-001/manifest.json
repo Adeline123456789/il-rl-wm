@@ -1,0 +1,20 @@
+{
+  "path": "releases/final-peg-seed0-c-001/weights.pt",
+  "bytes": 3501431,
+  "sha256": "0ac936f2c026f7b7fbacddf3a265437c51d4e1869a8d80eb48ae5b03d7288784",
+  "source": {
+    "path": "checkpoints/peg-seed0-c-001/final.pt",
+    "sha256": "ce8469a3ce236ee2c5d50ef2d1485ac0e776dba7b3b9254c079968050c826b2b"
+  },
+  "env_id": "PegInsertionSide-v1",
+  "training_seed": 0,
+  "lineage_training_interactions": 262144,
+  "purpose": "Frozen diagnosis and independent evaluation. Use separate deployment package for IL-free planning.",
+  "includes_frozen_il": true,
+  "omitted": [
+    "optimizers",
+    "replay",
+    "RNG"
+  ],
+  "training_resume_supported": false
+}

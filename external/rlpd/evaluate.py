@@ -39,7 +39,8 @@ def main():
         max_episode_steps=config['max_episode_steps'])
     env=ManiSkillVectorEnv(CountedEnv(raw,counter,purpose),args.num_envs,ignore_terminations=True,record_metrics=True)
     eval_args=SimpleNamespace(eval_seed=args.seed,num_eval_envs=args.num_envs,
-        max_episode_steps=config['max_episode_steps'],num_eval_steps=args.episodes//args.num_envs*config['max_episode_steps'])
+        max_episode_steps=config['max_episode_steps'],num_eval_steps=args.episodes//args.num_envs*config['max_episode_steps'],
+        matched_eval_resets=True)
     start=time.monotonic()
     interactions=evaluate_policy(policy,env,eval_args,args.output,policy.manifest['step'],'RLPD',episode_filename='episodes.jsonl')
     elapsed=time.monotonic()-start;env.close();counter.flush()
@@ -52,7 +53,8 @@ def main():
         mean_return=sum(r['return'] for r in rows)/len(rows),interactions=interactions,
         elapsed_seconds=elapsed,new_training_interactions=0,checkpoint_selection='fixed final',
         protocol=dict(env_id=config['env_id'],control_mode=config['control_mode'],max_episode_steps=config['max_episode_steps'],
-                      reward_mode='sparse',gamma=.99,reconfiguration_freq=1,ignore_terminations=True))
+                      reward_mode='sparse',gamma=.99,reconfiguration_freq=1,ignore_terminations=True,
+                      reset_protocol='explicit_batch_seed'))
     (args.output/'result.json').write_text(json.dumps(record,indent=2)+'\n')
 
 

@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-t2-online-seed0-002/final.pt",
+  "source_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+  "portable": "releases/act-t2-online-final-001/weights.pt",
+  "portable_sha256": "9bc432b97d907f25227a4382d36081dc82954d664b20ca7ff4f8c1e1056475d9",
+  "bytes": 584114,
+  "actor_kind": "mlp",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}

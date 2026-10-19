@@ -1,0 +1,9 @@
+{
+  "pid": 3178278,
+  "started_at": 1792399498.2442153,
+  "command": [
+    ".venv/bin/python",
+    "scripts/complete_u2_final_evaluation.py"
+  ],
+  "status": "artifacts/act-final-completion-001/status.json"
+}

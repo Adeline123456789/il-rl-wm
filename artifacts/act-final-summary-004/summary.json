@@ -1,0 +1,3677 @@
+{
+  "conditions": [
+    {
+      "id": "pick-seed0-a",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-b",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-c",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 89,
+      "success_at_end": 75,
+      "success_rate": 0.89,
+      "mean_return": 149.16,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 98,
+      "success_rate": 0.98,
+      "mean_return": 184.49,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-a",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-b",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-c",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 58,
+      "success_at_end": 31,
+      "success_rate": 0.58,
+      "mean_return": 68.32,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 89,
+      "success_at_end": 89,
+      "success_rate": 0.89,
+      "mean_return": 162.02,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 95,
+      "success_at_end": 90,
+      "success_rate": 0.95,
+      "mean_return": 171.44,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 88,
+      "success_at_end": 76,
+      "success_rate": 0.88,
+      "mean_return": 133.26,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 94,
+      "success_at_end": 86,
+      "success_rate": 0.94,
+      "mean_return": 165.84,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-a",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-b",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-c",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 0,
+      "success_rate": 0.01,
+      "mean_return": 0.01,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 0,
+      "success_rate": 0.01,
+      "mean_return": 0.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 0,
+      "success_rate": 0.01,
+      "mean_return": 0.02,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "stack-seed0-a",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-b",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-c",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-u0",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-u0",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-u0",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "stack-seed0-u0",
+      "task": "StackCube-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 30000
+    },
+    {
+      "id": "peg-seed0-a",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-b",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-c",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-u0",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-u0",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-u0",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "peg-seed0-u0",
+      "task": "PegInsertionSide-v1",
+      "training_seed": 0,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 40000
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 94,
+      "success_at_end": 74,
+      "success_rate": 0.94,
+      "mean_return": 155.72,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 99,
+      "success_at_end": 98,
+      "success_rate": 0.99,
+      "mean_return": 185.15,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 97,
+      "success_rate": 0.98,
+      "mean_return": 182.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 81,
+      "success_at_end": 64,
+      "success_rate": 0.81,
+      "mean_return": 110.12,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 94,
+      "success_rate": 0.98,
+      "mean_return": 175.81,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 86,
+      "success_at_end": 73,
+      "success_rate": 0.86,
+      "mean_return": 142.92,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 92,
+      "success_at_end": 91,
+      "success_rate": 0.92,
+      "mean_return": 169.1,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 90,
+      "success_at_end": 87,
+      "success_rate": 0.9,
+      "mean_return": 165.49,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 80,
+      "success_at_end": 70,
+      "success_rate": 0.8,
+      "mean_return": 108.33,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 91,
+      "success_at_end": 87,
+      "success_rate": 0.91,
+      "mean_return": 159.93,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 80,
+      "success_at_end": 63,
+      "success_rate": 0.8,
+      "mean_return": 120.96,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 90,
+      "success_at_end": 88,
+      "success_rate": 0.9,
+      "mean_return": 162.63,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 91,
+      "success_at_end": 88,
+      "success_rate": 0.91,
+      "mean_return": 167.84,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 68,
+      "success_at_end": 60,
+      "success_rate": 0.68,
+      "mean_return": 95.92,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 91,
+      "success_at_end": 91,
+      "success_rate": 0.91,
+      "mean_return": 163.64,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "RLPD",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "RLPD",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 30,
+      "success_at_end": 21,
+      "success_rate": 0.3,
+      "mean_return": 41.37,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "RLPD",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "RLPD",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 46,
+      "success_at_end": 39,
+      "success_rate": 0.46,
+      "mean_return": 69.68,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-a",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-b",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-c",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 5,
+      "success_at_end": 0,
+      "success_rate": 0.05,
+      "mean_return": 0.37,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 1,
+      "success_rate": 0.01,
+      "mean_return": 0.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 89,
+      "success_at_end": 81,
+      "success_rate": 0.89,
+      "mean_return": 151.19,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 98,
+      "success_rate": 0.98,
+      "mean_return": 183.11,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 5,
+      "success_at_end": 0,
+      "success_rate": 0.05,
+      "mean_return": 0.37,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 94,
+      "success_rate": 0.98,
+      "mean_return": 181.72,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 73,
+      "success_at_end": 50,
+      "success_rate": 0.73,
+      "mean_return": 76.95,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 92,
+      "success_rate": 0.98,
+      "mean_return": 174.2,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-a",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-b",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-c",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 89,
+      "success_at_end": 68,
+      "success_rate": 0.89,
+      "mean_return": 136.71,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 96,
+      "success_at_end": 88,
+      "success_rate": 0.96,
+      "mean_return": 171.75,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 2,
+      "success_at_end": 0,
+      "success_rate": 0.02,
+      "mean_return": 0.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 98,
+      "success_at_end": 94,
+      "success_rate": 0.98,
+      "mean_return": 180.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 85,
+      "success_at_end": 69,
+      "success_rate": 0.85,
+      "mean_return": 120.71,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 97,
+      "success_at_end": 93,
+      "success_rate": 0.97,
+      "mean_return": 175.02,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 67,
+      "success_at_end": 50,
+      "success_rate": 0.67,
+      "mean_return": 98.63,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 94,
+      "success_at_end": 93,
+      "success_rate": 0.94,
+      "mean_return": 173.52,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 2,
+      "success_at_end": 0,
+      "success_rate": 0.02,
+      "mean_return": 0.17,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 91,
+      "success_at_end": 85,
+      "success_rate": 0.91,
+      "mean_return": 162.52,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 75,
+      "success_at_end": 57,
+      "success_rate": 0.75,
+      "mean_return": 99.93,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 95,
+      "success_at_end": 90,
+      "success_rate": 0.95,
+      "mean_return": 167.4,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "teacher_first",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 14,
+      "success_at_end": 6,
+      "success_rate": 0.14,
+      "mean_return": 5.74,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "teacher_ensemble",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 73,
+      "success_at_end": 8,
+      "success_rate": 0.73,
+      "mean_return": 30.4,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 1,
+      "success_rate": 0.01,
+      "mean_return": 0.51,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "act_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 15,
+      "success_at_end": 6,
+      "success_rate": 0.15,
+      "mean_return": 5.79,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 1,
+      "success_at_end": 0,
+      "success_rate": 0.01,
+      "mean_return": 0.07,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t2-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t3-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t4-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t5-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t6-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 77,
+      "success_at_end": 58,
+      "success_rate": 0.77,
+      "mean_return": 123.46,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 79,
+      "success_at_end": 58,
+      "success_rate": 0.79,
+      "mean_return": 109.31,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-u2-final-mean",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_mean",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "status": "completed",
+      "episodes": 100,
+      "success_once": 0,
+      "success_at_end": 0,
+      "success_rate": 0.0,
+      "mean_return": 0.0,
+      "evaluation_interactions": 20000
+    }
+  ],
+  "aggregates": [
+    {
+      "task": "PickCube-v1",
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.89,
+      "sample_sd_success_rate": null,
+      "mean_return": 149.16,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.98,
+      "sample_sd_success_rate": null,
+      "mean_return": 184.49,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": 0.0,
+      "mean_return": 0.0,
+      "sample_sd_return": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": 0.0,
+      "mean_return": 0.0,
+      "sample_sd_return": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.3675,
+      "sample_sd_success_rate": 0.442822387269057,
+      "mean_return": 51.2575,
+      "sample_sd_return": 65.44188586066267
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.4625,
+      "sample_sd_success_rate": 0.5348130514488216,
+      "mean_return": 83.4425,
+      "sample_sd_return": 96.43294678168867
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.0175,
+      "sample_sd_success_rate": 0.023629078131263043,
+      "mean_return": 0.135,
+      "sample_sd_return": 0.1759734828508735
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.485,
+      "sample_sd_success_rate": 0.5544065896674268,
+      "mean_return": 87.905,
+      "sample_sd_return": 101.56073142049867
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.4375,
+      "sample_sd_success_rate": 0.4937863910639903,
+      "mean_return": 63.57749999999999,
+      "sample_sd_return": 73.39572075400581
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.48,
+      "sample_sd_success_rate": 0.5486346689738081,
+      "mean_return": 85.22,
+      "sample_sd_return": 98.46338202601007
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "StackCube-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "A",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "B",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "C",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "C continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PegInsertionSide-v1",
+      "variant": "U0",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.94,
+      "sample_sd_success_rate": null,
+      "mean_return": 155.72,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.99,
+      "sample_sd_success_rate": null,
+      "mean_return": 185.15,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.98,
+      "sample_sd_success_rate": null,
+      "mean_return": 182.17,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.81,
+      "sample_sd_success_rate": null,
+      "mean_return": 110.12,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "sac_wm",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.98,
+      "sample_sd_success_rate": null,
+      "mean_return": 175.81,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C-LN",
+      "training_interactions": 262144,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.805,
+      "sample_sd_success_rate": 0.09746794344808962,
+      "mean_return": 128.42499999999998,
+      "sample_sd_return": 23.60662689444075
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C-LN continuation",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.935,
+      "sample_sd_success_rate": 0.03415650255319864,
+      "mean_return": 172.09,
+      "sample_sd_return": 8.600717024372647
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.0175,
+      "sample_sd_success_rate": 0.023629078131263043,
+      "mean_return": 0.135,
+      "sample_sd_return": 0.1759734828508735
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.925,
+      "sample_sd_success_rate": 0.036968455021364706,
+      "mean_return": 169.3925,
+      "sample_sd_return": 8.501730706156243
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "il_sac_wm",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.74,
+      "sample_sd_success_rate": 0.0496655480858378,
+      "mean_return": 95.2825,
+      "sample_sd_return": 13.270562346788472
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U1",
+      "training_interactions": 524288,
+      "training_role": "independent_repeat",
+      "method": "sac_wm",
+      "training_seeds": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "n_training_runs": 4,
+      "mean_success_rate": 0.9375,
+      "sample_sd_success_rate": 0.0340342964277702,
+      "mean_return": 166.2925,
+      "sample_sd_return": 6.090218250057486
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "RLPD",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "RLPD",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.3,
+      "sample_sd_success_rate": null,
+      "mean_return": 41.37,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "RLPD",
+      "training_interactions": 524288,
+      "training_role": "development",
+      "method": "RLPD",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.46,
+      "sample_sd_success_rate": null,
+      "mean_return": 69.68,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "teacher_first",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.14,
+      "sample_sd_success_rate": null,
+      "mean_return": 5.74,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T1 ACT",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "teacher_ensemble",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.73,
+      "sample_sd_success_rate": null,
+      "mean_return": 30.4,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.01,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.51,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "D1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "act_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.15,
+      "sample_sd_success_rate": null,
+      "mean_return": 5.79,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "C1 initialization",
+      "training_interactions": 0,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.01,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.07,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T2 random SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T3 BC-init SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T4 ACT-distilled SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T5 ACT-parameter SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.77,
+      "sample_sd_success_rate": null,
+      "mean_return": 123.46,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "T6 ACT-distilled expert-mix SAC",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "mlp_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.79,
+      "sample_sd_success_rate": null,
+      "mean_return": 109.31,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_mean",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    },
+    {
+      "task": "PickCube-v1",
+      "variant": "U2 T5 finite actor-only mean retention",
+      "training_interactions": 262144,
+      "training_role": "development",
+      "method": "act_stochastic",
+      "training_seeds": [
+        0
+      ],
+      "n_training_runs": 1,
+      "mean_success_rate": 0.0,
+      "sample_sd_success_rate": null,
+      "mean_return": 0.0,
+      "sample_sd_return": null
+    }
+  ],
+  "paired_differences": [
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 524288,
+      "method": "il",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.0,
+      "mean_return_difference": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.98,
+      "mean_return_difference": 182.17
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 524288,
+      "method": "il_sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.81,
+      "mean_return_difference": 110.12
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 524288,
+      "method": "sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.98,
+      "mean_return_difference": 175.81
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.0,
+      "mean_return_difference": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.04999999999999993,
+      "mean_return_difference": -5.949999999999989
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il_sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.07999999999999996,
+      "mean_return_difference": -24.929999999999993
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.029999999999999916,
+      "mean_return_difference": -5.909999999999997
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.0,
+      "mean_return_difference": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.9,
+      "mean_return_difference": 167.83
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il_sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.67,
+      "mean_return_difference": 95.75
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.9,
+      "mean_return_difference": 163.61999999999998
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.0,
+      "mean_return_difference": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.98,
+      "mean_return_difference": 181.72
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il_sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.72,
+      "mean_return_difference": 76.78
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.98,
+      "mean_return_difference": 174.2
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": 0.0,
+      "mean_return_difference": 0.0
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.06999999999999995,
+      "mean_return_difference": -17.649999999999977
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "il_sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.09999999999999998,
+      "mean_return_difference": -20.779999999999987
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac_wm",
+      "treatment": "U1",
+      "control": "U0",
+      "success_rate_difference": -0.020000000000000018,
+      "mean_return_difference": -7.6200000000000045
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 262144,
+      "method": "sac",
+      "treatment": "C-LN",
+      "control": "C",
+      "success_rate_difference": 0.04999999999999993,
+      "mean_return_difference": 6.560000000000002
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 262144,
+      "method": "sac",
+      "treatment": "C-LN",
+      "control": "C",
+      "success_rate_difference": 0.28,
+      "mean_return_difference": 74.6
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 262144,
+      "method": "sac",
+      "treatment": "C-LN",
+      "control": "C",
+      "success_rate_difference": 0.8,
+      "mean_return_difference": 120.96
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 262144,
+      "method": "sac",
+      "treatment": "C-LN",
+      "control": "C",
+      "success_rate_difference": 0.89,
+      "mean_return_difference": 151.19
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 262144,
+      "method": "sac",
+      "treatment": "C-LN",
+      "control": "C",
+      "success_rate_difference": -0.21999999999999997,
+      "mean_return_difference": -38.08000000000001
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 0,
+      "training_role": "development",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "C-LN continuation",
+      "control": "C continuation",
+      "success_rate_difference": 0.010000000000000009,
+      "mean_return_difference": 0.6599999999999966
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 1,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "C-LN continuation",
+      "control": "C continuation",
+      "success_rate_difference": 0.030000000000000027,
+      "mean_return_difference": 7.079999999999984
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 2,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "C-LN continuation",
+      "control": "C continuation",
+      "success_rate_difference": 0.9,
+      "mean_return_difference": 162.63
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 3,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "C-LN continuation",
+      "control": "C continuation",
+      "success_rate_difference": 0.98,
+      "mean_return_difference": 183.11
+    },
+    {
+      "task": "PickCube-v1",
+      "training_seed": 4,
+      "training_role": "independent_repeat",
+      "training_interactions": 524288,
+      "method": "sac",
+      "treatment": "C-LN continuation",
+      "control": "C continuation",
+      "success_rate_difference": -0.020000000000000018,
+      "mean_return_difference": 1.7700000000000102
+    }
+  ],
+  "evidence": [
+    {
+      "id": "pick-seed0-a",
+      "files": {
+        "manifest.json": "f083c84a9f37492c12822f4159b1dfa0a9bb642061ce929f26c06952ac94941e",
+        "result.json": "f4d3b23683343100145d884c83a0c509445ccf40749b54a3096e5f3a558a03f6",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "c35ee360012bd2f66ff47185c3b6eb201b037ce3961770d7475d662530fa3453"
+      }
+    },
+    {
+      "id": "pick-seed0-b",
+      "files": {
+        "manifest.json": "2fa6a59b8af93fa7a4869df6bcfa3d6c7dce4460b7db75efa703f8e24d20712f",
+        "result.json": "48dab3c670871caa6e864ab936fb7035e40666ee4fc3f6e48b4887a91a84b78c",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "8a89c29bd8f80bcde1f73ea23825a3bff4af2b34c19e9bf427c2d82a8adbf154"
+      }
+    },
+    {
+      "id": "pick-seed0-c",
+      "files": {
+        "manifest.json": "f4aba11129dc0fec42e91fbc4d9bbe4a088e696066409524a9eeab2df9f88646",
+        "result.json": "305458d9e2ef6e0e93394e9fee17a4e5b55f6414fd26729c59eef805a2e838a7",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "b0cc716fba97da5d6aefd1d239f3b96d5b6556083d344e2cdbb2757e900954fe"
+      }
+    },
+    {
+      "id": "pick-seed0-c-continue",
+      "files": {
+        "manifest.json": "95ad02e4edd476e1225c7eb90d105a2afa89a9ccad283aa7e91903637acf2e63",
+        "result.json": "356438ef536cfcfcf3c9990b84c27ed0829d7c17633fc8b293243a6eacae5f8c",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "8e3f98be24d04119a9a899c183031afab171b569d468b8d1bf34872718c4a816"
+      }
+    },
+    {
+      "id": "pick-seed0-u0",
+      "files": {
+        "manifest.json": "ed2d7468d27537db7fdb2675b54b413d96ef66d31e2c0960880c80b7230ddd89",
+        "result.json": "63be521bf9d5f715118cf1cac70e628ab896f78beccf8a7ee6052543a47e472e",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "184c41124128aff26424e49fe18c50b3a36f4124d56f0aa954b8997f44dd0d21"
+      }
+    },
+    {
+      "id": "pick-seed1-a",
+      "files": {
+        "manifest.json": "96ce2e1a406a1d270f048b47f1fd090a40cbad7619be8f9ec535018873d7460f",
+        "result.json": "b6ad1c1d50ae9f58207ca5a0f568fa177d0dbb7e52717fba72466d603dcba216",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "028c31cc7c9497d4bb98fcfda998877ade57ddbc68bfb34e9d4a5de8d118aa8b"
+      }
+    },
+    {
+      "id": "pick-seed1-b",
+      "files": {
+        "manifest.json": "c51bc16139933a7343dde4072bd756e5741a2b96098a80825b245e9a4d9d9518",
+        "result.json": "bfb7a628d5f567906650b93ce1cd0cba842293da8dcabc0b9caec6cb6b16b9f9",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "dd6825aa062e03fcdf7193419e3c191531f45fa1a915224f62e21655d4e401f5"
+      }
+    },
+    {
+      "id": "pick-seed1-c",
+      "files": {
+        "manifest.json": "fa5311239913a0eb9776d22dd61ea53c8d813459e00f9bd74b3ccb340985c9b0",
+        "result.json": "a884fbca25772f2a479fa51a4824dca6db40db5f5f7ff219b49b358d21a38ee0",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "8e9a21598baf87940525bd5128d5251e71811fe02c3e3798bb0b0b5b6e3ba338"
+      }
+    },
+    {
+      "id": "pick-seed1-c-continue",
+      "files": {
+        "manifest.json": "f1aa6faedfc0b0ebf0d7d349e713f1b5e36b4d8c27eba29581e48099c6e63715",
+        "result.json": "d251f2cfd4c64e300ad61082a4a34d6eef459e50b72b36d96fb191e7ba83a99d",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "e0df9e726efe8b071f3f3564069482b0d8dd8cf35509baf41f649e80e49ff7e8"
+      }
+    },
+    {
+      "id": "pick-seed1-u0",
+      "files": {
+        "manifest.json": "25a23ba4b859d6c6381ecb89389943bf1aa6de15a4292301c859996e1adcea1d",
+        "result.json": "adf6c94e5c94a9408e4cb1a003c31a441971da8f506cf7ae1335db381dabe25d",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "680d4a8a91fea0e7120158e086a23ad5fe23714c89564266fca53cf595979df1"
+      }
+    },
+    {
+      "id": "pick-seed2-a",
+      "files": {
+        "manifest.json": "4702a467328ec8a8da5d2838c72c359c359a0407b9f07b33fb04a095f81eebd2",
+        "result.json": "f8874454d24093579c0eb921e37aa6061a6c6671412b2fa4634d5814d85d9bd6",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "a972489d0a2d15391f52e6ffc50fe0b726508989a58bb6595ac848337605b352"
+      }
+    },
+    {
+      "id": "pick-seed2-b",
+      "files": {
+        "manifest.json": "0b5ac26783927826044e0a8484cb2f7cc302933866abc355a36e4b6c0d6e91f1",
+        "result.json": "d37bb17b12050605f9df198f9868c2fe3705c61126338e3cbdefa6a93f2cc56b",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "31d7eec4241fcc061b495dccb08724c3a59c984922a36d3db9705475c73f6883"
+      }
+    },
+    {
+      "id": "pick-seed2-c",
+      "files": {
+        "manifest.json": "88052a7464ce77e5c3fbc891a97ac84f621e377d5f44601a370c50518868f15f",
+        "result.json": "a8ece001f3debb357c48005babc7a57b1f765f6fc6f3e82ddcffdd62b87cbeb6",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "5db47c2dcda959c67bcf5a76762dca2f5460075075b965a50388e7c954e3ca2e"
+      }
+    },
+    {
+      "id": "pick-seed2-c-continue",
+      "files": {
+        "manifest.json": "5f76453e314f17c4f17cb05b521f38f67e1b317d4e8d55aef642a2d3517a8771",
+        "result.json": "b41e3ab9e7f5d226431d21805ecdff760c46a9a7b0b1b913eef9ef18c3c9c988",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "af79a52ce83f11f702d1918ecbc30006ff853119a0c18495cd8c52fc6eec3114"
+      }
+    },
+    {
+      "id": "pick-seed2-u0",
+      "files": {
+        "manifest.json": "d82d529d13dfbf15a6a3ea25e1ac74a7f7828a130fd9079f4918e5587f9d21e6",
+        "result.json": "851d6f896628255a009ae0d31a5241cdbe8772dfdfcb59986904ec1a4ee36103",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "36340653403d7792d2b2fb7bdf913b181b755c43ebe6b358c8a4a30646422eac"
+      }
+    },
+    {
+      "id": "stack-seed0-a",
+      "files": {
+        "manifest.json": "918a8d72dc9f996adb2697100db60b6f8c159cd21858b74fdd6026f69f2f5974",
+        "result.json": "2777400c50cd9f64b6ec8455db34504e27948c03419272dd2b49fa5dcde6528c",
+        "interactions.json": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607",
+        "episodes.jsonl": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+      }
+    },
+    {
+      "id": "stack-seed0-b",
+      "files": {
+        "manifest.json": "13392bc83b75a46c0f71dc7ac5dc4eea37a1683543186ba26d2a70f8886e73aa",
+        "result.json": "5b36085a06ac3222ce4411e26ef0f4ab0a7482cb08ab5c6e648d0ef54cfb1a75",
+        "interactions.json": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607",
+        "episodes.jsonl": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+      }
+    },
+    {
+      "id": "stack-seed0-c",
+      "files": {
+        "manifest.json": "42d5db2b8ff3a1eeb0dfbc43f4a1f2594bab233c8ca4e15bd8b171545e2616e6",
+        "result.json": "f82a84df11f6c24480681434019311b701e6ca49946390bcb933c9b62b889eff",
+        "interactions.json": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607",
+        "episodes.jsonl": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+      }
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "files": {
+        "manifest.json": "7b5ead954c1d8fc2820e8f778e2178b68b5b8df13f0db72f824acdbbd1d70fcd",
+        "result.json": "ae11c8bce62ec0954ea92ef47867e230e901a2c756834c190be3f88424cf40cd",
+        "interactions.json": "b70c3964fd162f286a0275db6a6345c617590567f73e9ab4adaa5fd7c6ef9607",
+        "episodes.jsonl": "ead8e8a9c3cac813fb15e37a69b79ea184a0c5ac0652a379179682b44fca7c30"
+      }
+    },
+    {
+      "id": "stack-seed0-u0",
+      "files": {
+        "manifest.json": "868398d833ad1b5ae82a5094cdf31a9b94ac9528a1f567d0d15a636fc98976e8",
+        "result.json": "728a8aa0c0c0e33ca7db2155b545ebc3cba65e53e1c404c4f7bb7dbf85faa965",
+        "interactions.json": "bf3c9b178344df828822c37bd97562eb92dfc64f622ecae5726ef560617f98cb",
+        "episodes.jsonl": "f903511524e13562cf87ec5502010235a39a1f3cc0cce71f624beed6df48f5a3"
+      }
+    },
+    {
+      "id": "peg-seed0-a",
+      "files": {
+        "manifest.json": "8c254db591591b1da7f00f422712d80e456530e0d65807edbd7a837d4ea435cb",
+        "result.json": "5d1144618356773b6ef92f0a39f625add4bc7675bcc120d5649fabe985c4f377",
+        "interactions.json": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026",
+        "episodes.jsonl": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+      }
+    },
+    {
+      "id": "peg-seed0-b",
+      "files": {
+        "manifest.json": "d723be3df5a272969fdb8700bbc0410d4da55a73c7ead48448c901b776e1ea7a",
+        "result.json": "e86bbda69a8b05fc1b8c53ca850394e43c80a2f00dc8d5f137c565c3d2563841",
+        "interactions.json": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026",
+        "episodes.jsonl": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+      }
+    },
+    {
+      "id": "peg-seed0-c",
+      "files": {
+        "manifest.json": "713965a04fa99e9377e71af42bf37f460eb1cbadd913593494d55faecf87922d",
+        "result.json": "06c821623fcadc0a711e9d506b99935907730c21957bbe335909525a83bf4946",
+        "interactions.json": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026",
+        "episodes.jsonl": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+      }
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "files": {
+        "manifest.json": "0c7c8111566c8a677822dca5da186412a3dfa7a96d6dd6444f6d95d560c5dc56",
+        "result.json": "7335f1709333627c30bc9adb28f6771650f9b865411460c304f501c4f0775411",
+        "interactions.json": "7f17a0f6086fa20970f54655421c18269fa5ecf4dfdfdadd65b581f6dcf84026",
+        "episodes.jsonl": "90fad2fcc937d409a7c614335720de8005b71ba57ce73aa37b80902bf78312f3"
+      }
+    },
+    {
+      "id": "peg-seed0-u0",
+      "files": {
+        "manifest.json": "09e3ce18edbef7ebdb4f879071920cf01d40a26eaf4edcd3e883548bb5b3726a",
+        "result.json": "4af54d837207e0288a1fbe1d1507d5addedd4c407a5bab4c111752af62595a5f",
+        "interactions.json": "1faa4efee5b3768b412f40fee1b2006a3280626eaefbc38ee95e9ecf37bb9877",
+        "episodes.jsonl": "9663ce56216023eb4ad8da858d0ce3bb216309cf766e0c0e9920d9ebf3411eef"
+      }
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "files": {
+        "manifest.json": "13402b50894de750d7b7b0581da9e44bfa43c6dee0b0188141d705421b7a2336",
+        "result.json": "b1e6b7b18a5485b157be61580870f0dc155a38090121e4b7ede584f5b9e1f6de",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "cfa2295425a6a154c80e1c9404d7d559af6ef469241637de174d651a575f80f8"
+      }
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "files": {
+        "manifest.json": "6d2b29996a389bc96b4a1a573de2114910fd69b0c99293ffbe47508a54eed830",
+        "result.json": "6e3741f00976e99d061e964aa8d176083e636c5281ada257dcc6654a9f6d7879",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "acfb478ffcd672a3a10d19d194f83c48b0eb2697a8b46402307ea087d55e04ac"
+      }
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "files": {
+        "manifest.json": "fe17bdcf7e0aa002da5345d0b54bc18cf6f26f3ac3e248ff67f174e0eb652d35",
+        "result.json": "d6bc3900b6f593a518c7c451d54fea294284dfdfa04cfd2b935c97a22396a9c7",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "78ee83429f44e36098783f5d68fd234f40186a143fc843839a532d778c6f6e60"
+      }
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "files": {
+        "manifest.json": "1707a61a3d4d410b4380b1ed91fd3f18ae70fc44558203ada5a66fc3c10a0cb8",
+        "result.json": "8b6c913bd74842fd14124ead6f89a1865d1343f9b6b3a0590e08aeb16acdf91d",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "bbe8313835b980ed1c814721104c41562f1e1ac1d47859d48988e23ece708b55"
+      }
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "files": {
+        "manifest.json": "a2fbd54b601e739cf4e6bcbc583eabbaa7d3468c2c7d85a11a49a9285e5806c0",
+        "result.json": "92b98f896b888a790e0d0926c2e28e79977ff93a449756118234c418d89fd88e",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "f782e3e2ebdfcf4fcd504f149d1b994c2f2bc585a9c1e5693024a3464a85210e"
+      }
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "files": {
+        "manifest.json": "2101ef24759ed2f3b5d8b6fc23c8c20308cae5d7ba4d93dc384a98e37a6b9291",
+        "result.json": "ea6aa8b3f92c1c2bcb7f06a08fcdfcedea853a4606af588d15d0a11681c24403",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "035e05faf8486fe9e0fac1a0013e29f788e5f70c47ed021ec9abff27d8ae6647"
+      }
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "files": {
+        "manifest.json": "a4f34ec62ed4c799b9ea97219a623ff324731ade7be9046dcb8c24931a8919c3",
+        "result.json": "aa0f746ce1a77c25b04d4c7a7f21072089ef8bce2d2b519fc6d07217cd171c63",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "c578183f38cacefdf602584ec3d8afc7e4439a94c65c7a49e9f2dcd76bde2c99"
+      }
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "files": {
+        "manifest.json": "6fd50a1bf6dc9d54b450da36af406a98f26b49b632f10feb8f858bf9dbbe3d1f",
+        "result.json": "b4aa2e5db0b0f8cff4e931ac21a1e3cac74704252c246094c243df17f0c6b5fe",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "f383e1ae9d81a051085962c0a1eaead42e4a5ce3b8ceb93550440694ed99f97e"
+      }
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "files": {
+        "manifest.json": "7b0ea5bffe462018f57bb014bee9114508d13094381854f0a10a8b2e4331770d",
+        "result.json": "903840f402556c7c8dcc1a88c8b4a13aea8af26d3d27803b8400b33c62cebdb4",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "b0fdde277d5ea55c2f073bbdbe032648ed58e07f20e052c5f91ed7f8f1249b80"
+      }
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "files": {
+        "manifest.json": "fd287b70b4209f8eacfa045df50af563666b54074a00a896a473f1752c18042d",
+        "result.json": "161da75dce6670c87edac60b537ffe364b1628a97286a34563a78654f0d3d802",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "45a9c385ffb4d42a0baf2ab4288a35934981d19b7f41563986d31cc5ca58eeda"
+      }
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "files": {
+        "manifest.json": "07dc9318faa2470ac5266859615cdc9ed625c248ea764d95f8f4de7c3ba8e564",
+        "result.json": "039491a371e18bc2f8523c642889d8d9a57f1f5828eea5933a2b08675a6c8251",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "b963096a254ed3a259060f4487efb79e804addaf73ab7e2e8295314bd229cfb6"
+      }
+    },
+    {
+      "id": "pick-seed3-a",
+      "files": {
+        "manifest.json": "c06ff1648f500202f1e2a2a6b8bc1d19b43e2c54efd3fd7386f57538cf163268",
+        "result.json": "0e91a2fd39bc6c1c533a1af8d8fcbcca535ccf8f0956bc84d955de1bf2cc05b6",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "6ed25601741043ed055d865f099abd9bc752e4b3b81750bce88cf3697fca4ff5"
+      }
+    },
+    {
+      "id": "pick-seed3-b",
+      "files": {
+        "manifest.json": "de23382ea6b87a2e6e1ed7e1aaed6a08a5f00288364a5e4b77d13d2c9d078143",
+        "result.json": "28f4eb63662d15b1e8905cab2c0d5dcec68422ca2f79fd90fb8eab5079f6c150",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1c2f441d5268bc8d139cf33b71fb0d5f8ff7ea008e5307d20edf0e5a1a2d4cfe"
+      }
+    },
+    {
+      "id": "pick-seed3-c",
+      "files": {
+        "manifest.json": "5f15343e55971bf6b325ee64c7037570b884b81b33609b2bacb9ca52a6802cd9",
+        "result.json": "2859180d7856716044487260dca6a32f5b380e55c5f01982e4e21d5438e26c32",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "98ed65f7ae1a165e2a0b8df44038f59b058e84b4a68787aa1324ec89f5c9afe1"
+      }
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "files": {
+        "manifest.json": "a000934828760253914a799e2799163ffca852253e1899820cc3f1e661630753",
+        "result.json": "2fc3050be8ec8496640b40b37e5397a04463abac37f88f88adc55cf5b42818e2",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "4cf2aa6d53dc08d81deaaf9be7e2d1d108e6de70b6092af58166338d234bc49e"
+      }
+    },
+    {
+      "id": "pick-seed3-u0",
+      "files": {
+        "manifest.json": "a9a98b95d93fa2d10c1cf6a131a2138ca7b5ca24649a64d3b8fb33df468686ec",
+        "result.json": "95801499bc393fd4afe529cbf42e0abdf1a19b758a60ceba3631812fb18effb9",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "cd46b8bc9b5a244446865f759861c4f7c34793c493ce96b109e246cade34027b"
+      }
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "files": {
+        "manifest.json": "f2273dafbb3bbe67f2fb4418fe89362c55bcc6a207e0916bc5bc351e83121b0c",
+        "result.json": "adff23598791cbb57327a74884734198407c54d8ebadf06f52bae40aba1e6078",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1e594742b1e7dd92d07b932713ad9079a3c55d9f89ddcbd62f86a34fcc4d9698"
+      }
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "files": {
+        "manifest.json": "a8cdcc690d0b8d9dd29fa5310710c5382faa1d969d6a281d065c421db51018c7",
+        "result.json": "f866f574dc98e4e2fb22bb9063e89f6af13d1ecbdcf53f6a56db5b03d43f464f",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "3d4e52afedb8b78dbba9f9e151f7bb2d1c9d15935d306a72e32f0bfc673518a6"
+      }
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "files": {
+        "manifest.json": "c53e92ed0c972da72aa94f3d3fea7d823be86cdb5b11082baf65a534fc55cd37",
+        "result.json": "3dea333927361f6d703e82d950bd712622bc87e4ebb294f0624a4638b9d7824b",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "2466da46a71b36cbccbb864f368aac02341943890a81f7779ac44a1c10ccb32b"
+      }
+    },
+    {
+      "id": "pick-seed4-a",
+      "files": {
+        "manifest.json": "de6b9a1527f8156fb8af5df8c128d994e08a2ec0a53f1edc3f1ac4f46279e8e3",
+        "result.json": "99b50f17066d59d8563e4acbd1f67d1a207c0fc2f7c320ba4e9f5bd9368537e7",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "807db88d3537cc87a9b6b2ed8e68d7d37b49a8fc5a291df3ff46a492dd5e004f"
+      }
+    },
+    {
+      "id": "pick-seed4-b",
+      "files": {
+        "manifest.json": "25168056099fc17659f6a79fefe657321bb873dcceb304fce346a793080383eb",
+        "result.json": "88c99c8ada114e9c1c5acf936f9cb38c40ed7aa3ee3e790ec8599aaf8979ce75",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "582bb4fd8a70aaf9d59ead14fe957e8ed5100df2f63fe0df08b1b40c805dc59a"
+      }
+    },
+    {
+      "id": "pick-seed4-c",
+      "files": {
+        "manifest.json": "7405ee93586efd56f7356eaea632079b4db172a7f1b8b83e8af2a94f85d0cc97",
+        "result.json": "1a02bffad6115de8a690c0340cb1114936528603d57cd202e0f8f398e6aea88a",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "22de5e2a43bb47ae62892e7ad33ab66793cccdf6b25d2bbfb7eba45098c2c201"
+      }
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "files": {
+        "manifest.json": "8e50ac38d574ffcd968a9ba9e14135c2020daa711f4e551d128a5c99bb8c3441",
+        "result.json": "3998a38c992f1cd8a8aca390a5224476b175119c612e3a1ff0a6d04b535c9751",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1002582e39129029bf389ff093e00a3cd5c78b1ad6070cd6518f5a710fee5550"
+      }
+    },
+    {
+      "id": "pick-seed4-u0",
+      "files": {
+        "manifest.json": "23bf746f4f080c1c7d95736d9f86ad087b340713ffe030c81e8ce16833740cd6",
+        "result.json": "edd58947bd6ee50b0f19c8e7bde7d43dff6c715989623d2f268ec4bd7e5950ca",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "4b5274f6204273fac30f1a403016627a39f2e313614c6ea276650864b58b14cb"
+      }
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "files": {
+        "manifest.json": "232712a3c294883bfca1654658bba95bf456ee2a990183181ce0d630327a6fcc",
+        "result.json": "86e0ef1c3b4c657422db40048dfb94f9b056db4587b2922ccbc061a67c025976",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "5355d08da5826d55f9e7a5e39e8400b45c5de1d2665d1f342424cd9a814125ad"
+      }
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "files": {
+        "manifest.json": "fa85fafd052694c7936ac2a1dedfc52a03a9586a0387c016dcac930b8e473220",
+        "result.json": "d41b54e7f525e535df20c8d401950f95941b6ff3f601c6fbe5b9e1d345c228df",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "d2ef5611c3d7358821f3a88a2cf296bbbd9a93dff2ffc04f9275c082e313db29"
+      }
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "files": {
+        "manifest.json": "0ca7882bbdec78c71b4bdabfad40b78b66a0a33224a51171ea4cac4296450445",
+        "result.json": "d467b26b76e5d2e8e6eb39c18154bf272f175a90111f18dafb59e70dfa504b37",
+        "interactions.json": "211aade05332981eef75c1ee48dfadf04ea2ad77a40b300e4f230024da8c485b",
+        "episodes.jsonl": "0cd0374180affccb2e82324c8007d34b233482d68624c8e2d50d49efe50ec309"
+      }
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "files": {
+        "manifest.json": "8bec7416c4792cd73147ac48f81c0a8c0fa52eac3a02178cf6f6cdeb52208e97",
+        "result.json": "9f560aa11d3bdf1515e48bd5556a344aadc0d676eba22cb4f8b70425e9947400",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "c79b9114f9a326edbfc00b9f6764425f83179c7f3b082f0ead469d59be55bcb9"
+      }
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "files": {
+        "manifest.json": "521f05ccd26334db5eb5098480f4497a3c3d0dfbd4102b5d654056edf83537ff",
+        "result.json": "9fc23eadc7a11fe793ca8c1709c75cf2c46ab0fe135317e46aa8d94c0e3cecd8",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "4b503b883ce3f9366907552abd9f12db86ec0456bcb5428b5984bb6281a9fcc7"
+      }
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "files": {
+        "manifest.json": "f59e1b1a2a533065726ba7f9928c40e047570788eed4060956858a06dd7a2f45",
+        "result.json": "6b429ce8f4ca143fe9c13a946db778da015b226ba81a5365041ed58e7ac92c29",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "bab7d5e17dd965ab23f4a3f8fc41832787f73c54b4434adbc4069318ee5c4b7a"
+      }
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "files": {
+        "manifest.json": "94344071e5ee40b84e96f084477b3485d19dd45c30f12fdb80fe47db502fac26",
+        "result.json": "5429c50eed51ad7d9242278cb55e2a229183a8bbf6cf35273145f942bcbae364",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "b87b47cc134167bc70fa99310b1a3cb71b31afad075e0e39fae3ffb4b36df02b"
+      }
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "files": {
+        "manifest.json": "1fe50ee2b7c29b1024f5f6dbf94ddedd5a3d4a465e5954d5ddaf70826b7b33bf",
+        "result.json": "a1436fddb7272720101d1ead96dbbedef2bf899dc85e5419b8856f4a59be5b35",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "da993078d5fe58086dfb8cb75d754a4105cd8696b729fd6cead4277c42cea9d6"
+      }
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "files": {
+        "manifest.json": "b42833e097dba33a8aedf492bc8ad586e3a7fb5f43866ae5cb0a6cf4006d3007",
+        "result.json": "b71b5e74f360b56fae8881ebaa94de32110926a53ffc56bdd758cbcd0ca69ebd",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1b68da4503dd944548ca61cfbf8c54c02caf38eb360065148e0a59f4244197ce"
+      }
+    },
+    {
+      "id": "act-t2-final-mean",
+      "files": {
+        "manifest.json": "7342623a4d23c1cc425c344a62024ec7675e6111019fbd2acddcbb86ba831a16",
+        "result.json": "fce7d7b90cff98a16041ada8d5292b2030c657f49b62f98def0724f5baa42f2c",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "bf59b37d758010df4396a192c1a710e0c0020f9315f0f49aab6bf93b7d2794ba"
+      }
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "files": {
+        "manifest.json": "337b55704d754c62ae67b01620b200748233885423352fb9ec9139af19b184a1",
+        "result.json": "19fc545687eb800eefab97d20967a13f71dd01c15c20f3e1522344ad0ddbce0d",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "123fe9e57c50acac6afc500fb6df77ff412966176004483184a48d832c4f2358"
+      }
+    },
+    {
+      "id": "act-t3-final-mean",
+      "files": {
+        "manifest.json": "4bd867b4ac2301cc57b5326df88a57774e8df8d86bf26ccff8c8651afd1eaa11",
+        "result.json": "8c35f09d8bf511c20a245e49264a2a0d768c0e8e740198810d0f55a0c6184c38",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "024a8cc1d2c3f8dae3585ccae9f3dd44f67e7cbf11448746dd1cec063457ef50"
+      }
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "files": {
+        "manifest.json": "abff613d0559705b2e04b3def2c834623045a4d40f335c06dd4d537f5d72cb4c",
+        "result.json": "56e7aa418f5619d27b1b9548d9719b85dc381c49969f1e8688a752adb29d2046",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "6ae84af0c0fd8a9eaa1cd087f5b12f9de1b8fe7a4b0122051fe522cb3e2d8401"
+      }
+    },
+    {
+      "id": "act-t4-final-mean",
+      "files": {
+        "manifest.json": "da7331197dde1e2ca2b73b20f28723667009441926078fa407b487a58d669b2d",
+        "result.json": "c282f6305b531716d0b9bcff516587bf77d64daea132e5b5f000b5113799c939",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "8fe9fb903277052f5d088d50aa6dd6a01abc3fe2cc9950920b3ae0aa0cde4a20"
+      }
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "files": {
+        "manifest.json": "28271bc3c3fcd07000d20b0b1fe11914935586c90097623f51493aa9b2d2721c",
+        "result.json": "8cac548329aeea20193acd526396eb5bbb21b9bed3e889e05fac2079d4848ca0",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "a1eb18069cd70f6b1332ddd2e9b067cffebf226d5e1010c4f8cf00a5a2a7b3cb"
+      }
+    },
+    {
+      "id": "act-t5-final-mean",
+      "files": {
+        "manifest.json": "609a4717df2a873f7ee64628ad06f7ed8f58e0405dbb2cd0d4d9896a93c9991b",
+        "result.json": "6e1287227bea1ec8e72499db7415f5242784ad29ad8d0d67b83a5fe08f27e9e6",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "7e57628a6199d829292d2c7b33ef1950c2e4836aa70d643aca0840f5b906fd09"
+      }
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "files": {
+        "manifest.json": "9264ef41b56ab142d3b7b4b725fc3b18f5e11538727bf41cc7b7103335c658b0",
+        "result.json": "6bd7825794613a356ac7b33c4a51699ceecbe7609d9ee48da6018669a7c54a45",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1cd5dbe8585746774f2798e98e3c20005f6a9798860407a17f8d9ddcd000b8bf"
+      }
+    },
+    {
+      "id": "act-t6-final-mean",
+      "files": {
+        "manifest.json": "09222977703cdba40255afc170bdc7e65a934403b38c63a25610a35fe9a9d335",
+        "result.json": "85e5b06b9a4149f4dc261eb0d8360dab98e3df9ba361ecafc3e9787a4609cf75",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "dddedea77a081fa50b67e7a683ce7faf05963bcc6d125f000b5a9e9b40683546"
+      }
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "files": {
+        "manifest.json": "7e5b87dc59b2cd5a44846ff4f436180b0a0c5ff75b4791cae4bcaf3be5ae7245",
+        "result.json": "209e09b47a75fc700e618366a1cee97a8709462ebe28a2ea028c41b61ee4e844",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "6dd378e36d5afdb81c0c9705734b5c1f90da65f69c106235ee1aa5a75bd32f44"
+      }
+    },
+    {
+      "id": "act-u2-final-mean",
+      "files": {
+        "manifest.json": "02bc0e8b6711ef0dcadd0c0926b8a3959ab3f8e97899b2b762b7501c9228a440",
+        "result.json": "4c3b35e80707bd3774ae6760554d1a2643054b23b745f193170b4136b1a6b60a",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "7e57628a6199d829292d2c7b33ef1950c2e4836aa70d643aca0840f5b906fd09"
+      }
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "files": {
+        "manifest.json": "e0630d1faeb37178e9351632680f4a5bac85dab3eaf1ba254cc35f9364e9f669",
+        "result.json": "cc91588faeefce14d5ae957d5d3e21d8a16996ece63930641c837c72523b630a",
+        "interactions.json": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b",
+        "episodes.jsonl": "1cd5dbe8585746774f2798e98e3c20005f6a9798860407a17f8d9ddcd000b8bf"
+      }
+    }
+  ],
+  "completed_conditions": 106,
+  "registered_conditions": 106,
+  "definition": "One row per registered model/method. Missing and failed runs have null scores. Aggregation uses training runs, separates development from independent repeats, tasks and interaction budgets. No significance or convergence claim.",
+  "attempt_mapping": {
+    "act-u2-final-mean": "e7-test-act-u2-final-mean-002",
+    "act-u2-final-stochastic": "e7-test-act-u2-final-stochastic-002"
+  },
+  "attempt_mapping_sha256": "57ab33539cd263dbd5eb0c185d720a21ca85ca7b7f8b89bccda83d8093aabd87",
+  "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca"
+}

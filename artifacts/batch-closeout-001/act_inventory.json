@@ -1,0 +1,1113 @@
+[
+  {
+    "id": "act-teacher-k30-first",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/episodes.jsonl",
+        "bytes": 31286,
+        "sha256": "c79b9114f9a326edbfc00b9f6764425f83179c7f3b082f0ead469d59be55bcb9"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/final_test_trace.npz",
+        "bytes": 2773243,
+        "sha256": "650fbdcd1d228a5c59224387485cc1a5fce1c965f73de95eb35c1672580bd6c2"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/inference_latency.jsonl",
+        "bytes": 39597,
+        "sha256": "d708f1e032a0598d0cb6a6979cc9c8d91146c9790900228785ce3a9dd4dce1b4"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/manifest.json",
+        "bytes": 1141,
+        "sha256": "8bec7416c4792cd73147ac48f81c0a8c0fa52eac3a02178cf6f6cdeb52208e97"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/resources.jsonl",
+        "bytes": 8100,
+        "sha256": "86c0c425b72e674955868f9423f8c6e7effa30c13f2a0543cff8852c85567a6a"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/result.json",
+        "bytes": 1185,
+        "sha256": "9f560aa11d3bdf1515e48bd5556a344aadc0d676eba22cb4f8b70425e9947400"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "9ca6c4424a62ea1e3450175277ae28a865f04515e2d583fee4569a6527e67e98"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-first-001/working-tree.patch",
+        "bytes": 653108,
+        "sha256": "1f60d51dc79d567646b4598d355b70daeff28336d5a16a9b4036d371aad45e6d"
+      }
+    ]
+  },
+  {
+    "id": "act-teacher-k30-ensemble",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/episodes.jsonl",
+        "bytes": 32323,
+        "sha256": "4b503b883ce3f9366907552abd9f12db86ec0456bcb5428b5984bb6281a9fcc7"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/final_test_trace.npz",
+        "bytes": 2949300,
+        "sha256": "1eb7b796c27cfcaa4609643568a9d7cab33c061b55578bc0f73cf0343742e51a"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/inference_latency.jsonl",
+        "bytes": 39607,
+        "sha256": "164bffab0f0a2932fb6f7788e68b1912d32d23398a1a9f5987f3ebf2b8e5039c"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/manifest.json",
+        "bytes": 1149,
+        "sha256": "521f05ccd26334db5eb5098480f4497a3c3d0dfbd4102b5d654056edf83537ff"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/resources.jsonl",
+        "bytes": 8373,
+        "sha256": "6a1ec2eb5aeecb26ad43afbb3aae5c1d197c7282926fd1f416fb26916e1043e3"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/result.json",
+        "bytes": 1225,
+        "sha256": "9fc23eadc7a11fe793ca8c1709c75cf2c46ab0fe135317e46aa8d94c0e3cecd8"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "27d752cc4374eb9c3e3574cedf11e7824f6fa20c55f984cbf0821d9f2fed6da7"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-teacher-k30-ensemble-001/working-tree.patch",
+        "bytes": 653150,
+        "sha256": "5790893e5a3431905149e7a546d6b2d927edcac6a22fcc1b47bc65f5be8767eb"
+      }
+    ]
+  },
+  {
+    "id": "act-d1-initial-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/episodes.jsonl",
+        "bytes": 30730,
+        "sha256": "bab7d5e17dd965ab23f4a3f8fc41832787f73c54b4434adbc4069318ee5c4b7a"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/final_test_trace.npz",
+        "bytes": 2762357,
+        "sha256": "8854bb2daa7738ffcb0eb060f373fec6e1217308a7e23dcda5da9a96f0ccd2e4"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/inference_latency.jsonl",
+        "bytes": 41644,
+        "sha256": "527f35895f6a0256ae80b61550ac0b9d06f2d1899d20e55f8b7fd23f4a49de56"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/manifest.json",
+        "bytes": 1131,
+        "sha256": "f59e1b1a2a533065726ba7f9928c40e047570788eed4060956858a06dd7a2f45"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/resources.jsonl",
+        "bytes": 7831,
+        "sha256": "bd4776ee7e62a072eb4c987cad2c9412381da24f9c4a5235e2e976b16c8ef5dc"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/result.json",
+        "bytes": 1170,
+        "sha256": "6b429ce8f4ca143fe9c13a946db778da015b226ba81a5365041ed58e7ac92c29"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "f8384dc9d56bb88754a2ee6212af50c67ffb577976f573a0ba621aa2a93272e7"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-mean-001/working-tree.patch",
+        "bytes": 653195,
+        "sha256": "c66cbadb2b3ae4869dd533af73c2c51d4badb6c0c780eb6f24232d0c4c96827a"
+      }
+    ]
+  },
+  {
+    "id": "act-d1-initial-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/episodes.jsonl",
+        "bytes": 31472,
+        "sha256": "b87b47cc134167bc70fa99310b1a3cb71b31afad075e0e39fae3ffb4b36df02b"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/final_test_trace.npz",
+        "bytes": 2736747,
+        "sha256": "34c390da76e5b9b3b4726c011ef3373b7d48fa9af0cac80d66f1e28cd565ac6a"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/inference_latency.jsonl",
+        "bytes": 40801,
+        "sha256": "4b1a7845cbf58c1cdf33172fd64a0e8b317a59f9c2f8fc3e4ac51c75fc599a44"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/manifest.json",
+        "bytes": 1149,
+        "sha256": "94344071e5ee40b84e96f084477b3485d19dd45c30f12fdb80fe47db502fac26"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/resources.jsonl",
+        "bytes": 6483,
+        "sha256": "e1506b00d5d3ce5c26e139560e0d3b037d9c9bd53ae9d8c296afc2ee6c53fbd9"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/result.json",
+        "bytes": 1183,
+        "sha256": "5429c50eed51ad7d9242278cb55e2a229183a8bbf6cf35273145f942bcbae364"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "a89ef4c981cba7781b57e7bc44789aa073a064960b5e1c5633a7c1c4b6105043"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-d1-initial-stochastic-001/working-tree.patch",
+        "bytes": 653235,
+        "sha256": "0bf586ea038cbf968ed3c019efe249a76a854874ee26c50558b1604b7e864767"
+      }
+    ]
+  },
+  {
+    "id": "act-c1-initial-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/episodes.jsonl",
+        "bytes": 30401,
+        "sha256": "da993078d5fe58086dfb8cb75d754a4105cd8696b729fd6cead4277c42cea9d6"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/final_test_trace.npz",
+        "bytes": 2776882,
+        "sha256": "6595b5809ef6919003f0df2e2e40d4cebb29e182011bb09df6e194050b330d90"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/inference_latency.jsonl",
+        "bytes": 39587,
+        "sha256": "41e3617cfe25a33196cad93937798876fa60c0cde45728d77102a3cb6ee7b9de"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/manifest.json",
+        "bytes": 1127,
+        "sha256": "1fe50ee2b7c29b1024f5f6dbf94ddedd5a3d4a465e5954d5ddaf70826b7b33bf"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/resources.jsonl",
+        "bytes": 8375,
+        "sha256": "b512700559d05fff96bdec3bd999c3b32cf26f6620abd3c0711567826facc126"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/result.json",
+        "bytes": 1165,
+        "sha256": "a1436fddb7272720101d1ead96dbbedef2bf899dc85e5419b8856f4a59be5b35"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "cb0c61835c7f8bdc3c96169c4109ae224d227f22b1aa9d89714d7f8be1937274"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-mean-001/working-tree.patch",
+        "bytes": 653281,
+        "sha256": "f1418cc03e41f95edb5c650f995707126471ef1a07a770a3d3c58fbdaca803d3"
+      }
+    ]
+  },
+  {
+    "id": "act-c1-initial-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/episodes.jsonl",
+        "bytes": 30984,
+        "sha256": "1b68da4503dd944548ca61cfbf8c54c02caf38eb360065148e0a59f4244197ce"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/final_test_trace.npz",
+        "bytes": 2774328,
+        "sha256": "f50354b10a25c59ca85e89c9cefa008f822265cc6da207b5de83b92c2f613adc"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/inference_latency.jsonl",
+        "bytes": 39522,
+        "sha256": "64973779fbe87da9cd1d66c4a5f5c4a690b78b3ec7801d6ff5e35d02612a827d"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/manifest.json",
+        "bytes": 1145,
+        "sha256": "b42833e097dba33a8aedf492bc8ad586e3a7fb5f43866ae5cb0a6cf4006d3007"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/resources.jsonl",
+        "bytes": 8100,
+        "sha256": "d2ed7700f517925073096de616487ea2bed629f2fb256eb94f63b423fed05f9c"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/result.json",
+        "bytes": 1182,
+        "sha256": "b71b5e74f360b56fae8881ebaa94de32110926a53ffc56bdd758cbcd0ca69ebd"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "c25820b0bb1722a794e200ef1ccd55f775401336fe38d9cefadc45fdd5a33a63"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-c1-initial-stochastic-001/working-tree.patch",
+        "bytes": 653321,
+        "sha256": "f3ff49eeaa90981fd3c0122e895d42ba8b9260eaab8bc2595b9ad9efc97cbfd9"
+      }
+    ]
+  },
+  {
+    "id": "act-t2-final-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/episodes.jsonl",
+        "bytes": 30983,
+        "sha256": "bf59b37d758010df4396a192c1a710e0c0020f9315f0f49aab6bf93b7d2794ba"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/final_test_trace.npz",
+        "bytes": 2772881,
+        "sha256": "e7c2198013ba77cc86e4cc092ebd75c1ff77ccf6156b5c15debe962e2c2e904e"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/inference_latency.jsonl",
+        "bytes": 41558,
+        "sha256": "20677333202b5b8bfe91f7c528b97aca22b36561e2900b3eb3638f1f4239e4fc"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/manifest.json",
+        "bytes": 1137,
+        "sha256": "7342623a4d23c1cc425c344a62024ec7675e6111019fbd2acddcbb86ba831a16"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/resources.jsonl",
+        "bytes": 7831,
+        "sha256": "d0f8df8c11b168a46b3998f7b6df6b558f49c67625d4e5673e5b765d506e534e"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/result.json",
+        "bytes": 1175,
+        "sha256": "fce7d7b90cff98a16041ada8d5292b2030c657f49b62f98def0724f5baa42f2c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "0e2b272d1c81fa0256b1028885a6db5ac0d2c599a6d324d56dc775c67fb63fea"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-mean-001/working-tree.patch",
+        "bytes": 653367,
+        "sha256": "07bf2790cfaaff3303ea2597f3da49d215599130046a7350cc5c2a13e0e4017a"
+      }
+    ]
+  },
+  {
+    "id": "act-t2-final-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/episodes.jsonl",
+        "bytes": 31583,
+        "sha256": "123fe9e57c50acac6afc500fb6df77ff412966176004483184a48d832c4f2358"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/final_test_trace.npz",
+        "bytes": 2789585,
+        "sha256": "48c4b741da48481ff39d3c15387d353f24551861d2197fcd584e5e14551e056e"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/inference_latency.jsonl",
+        "bytes": 40633,
+        "sha256": "3c4f1cd1f621f88a8269cbdf0997d4d633a54f4e17efe40874ea6242a94904a8"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/manifest.json",
+        "bytes": 1167,
+        "sha256": "337b55704d754c62ae67b01620b200748233885423352fb9ec9139af19b184a1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/resources.jsonl",
+        "bytes": 8112,
+        "sha256": "787830bba502b99c56830acec275eea7434c77ba203f2c98aa97cdaedcb3f516"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/result.json",
+        "bytes": 1192,
+        "sha256": "19fc545687eb800eefab97d20967a13f71dd01c15c20f3e1522344ad0ddbce0d"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "f2f717b2d9723fa729c6e670fa7b5ca218b86479483fdb8559bf6cde2fc094b9"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t2-final-stochastic-001/working-tree.patch",
+        "bytes": 653404,
+        "sha256": "aac9bf9b0bd9a0b450aa0166861d285956c5db0b880f95fbac9c0cea6d7f41d6"
+      }
+    ]
+  },
+  {
+    "id": "act-t3-final-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/episodes.jsonl",
+        "bytes": 30988,
+        "sha256": "024a8cc1d2c3f8dae3585ccae9f3dd44f67e7cbf11448746dd1cec063457ef50"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/final_test_trace.npz",
+        "bytes": 2757418,
+        "sha256": "e59214c1276954dd49a9ea538a13e7c570fa8a45481e8f4625c4162d8000e491"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/inference_latency.jsonl",
+        "bytes": 41546,
+        "sha256": "c6398251e37b0bd46d7e892b5c7c0ed5979326fd6b5d5019154f32473f6497f8"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/manifest.json",
+        "bytes": 1148,
+        "sha256": "4bd867b4ac2301cc57b5326df88a57774e8df8d86bf26ccff8c8651afd1eaa11"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/resources.jsonl",
+        "bytes": 7838,
+        "sha256": "fb0c72402c0e234a3c62a3640a0809a2db4f913853ed4ca18e43877d11f8f73e"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/result.json",
+        "bytes": 1174,
+        "sha256": "8c35f09d8bf511c20a245e49264a2a0d768c0e8e740198810d0f55a0c6184c38"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "7cf8579fe4983044f46ae1203b4c778e33f90ed6eb15f50d72a52d57ce450eb3"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-mean-001/working-tree.patch",
+        "bytes": 653449,
+        "sha256": "b311e88d9fec9e3428346e4f42ee942c41a6efcee42bb1bcb7a9af1de00b3483"
+      }
+    ]
+  },
+  {
+    "id": "act-t3-final-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/episodes.jsonl",
+        "bytes": 31589,
+        "sha256": "6ae84af0c0fd8a9eaa1cd087f5b12f9de1b8fe7a4b0122051fe522cb3e2d8401"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/final_test_trace.npz",
+        "bytes": 2761798,
+        "sha256": "0b18c94fe8f757bc4b89ecdfbfdbf503a2105d14c4f00c2b7e4c3622f3a28269"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/inference_latency.jsonl",
+        "bytes": 40709,
+        "sha256": "5114aa26160532c1ab77b569f6fdba62434beb23c5c4117eb2665fd5e5eebad7"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/manifest.json",
+        "bytes": 1166,
+        "sha256": "abff613d0559705b2e04b3def2c834623045a4d40f335c06dd4d537f5d72cb4c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/resources.jsonl",
+        "bytes": 8107,
+        "sha256": "63e5fad109f585843d2170982f817146b0ff6f4823fa537b948c15213c5f1443"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/result.json",
+        "bytes": 1192,
+        "sha256": "56e7aa418f5619d27b1b9548d9719b85dc381c49969f1e8688a752adb29d2046"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "ab42d33674a3edafa94b362117bc0f2e3f0ebf9ac6e1f2f8d4c5f29e54120f5b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t3-final-stochastic-001/working-tree.patch",
+        "bytes": 653891,
+        "sha256": "33213d705a5685782d74ee7309e42f4d3ee24e242e0a0c5e739d6454923153d0"
+      }
+    ]
+  },
+  {
+    "id": "act-t4-final-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/episodes.jsonl",
+        "bytes": 30990,
+        "sha256": "8fe9fb903277052f5d088d50aa6dd6a01abc3fe2cc9950920b3ae0aa0cde4a20"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/final_test_trace.npz",
+        "bytes": 2622499,
+        "sha256": "e7885a6f3e44cf2066c592fe6d83b68fae70e90a5fda280b20a0d6f79c682c08"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/inference_latency.jsonl",
+        "bytes": 41621,
+        "sha256": "787d4bd15d36f761b2890c041325e84362a86b7c69d860ec60c3d1a53de4f60b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/manifest.json",
+        "bytes": 1149,
+        "sha256": "da7331197dde1e2ca2b73b20f28723667009441926078fa407b487a58d669b2d"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/resources.jsonl",
+        "bytes": 6753,
+        "sha256": "3ce0efd46676d7ce5ccab118d41d71c820f9ca325bf719e16dd4a34eeeba9c41"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/result.json",
+        "bytes": 1175,
+        "sha256": "c282f6305b531716d0b9bcff516587bf77d64daea132e5b5f000b5113799c939"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "eb135ed1d4289f52c2754c492a15d9cf627178eaa0dbd2badeb67dd55b753fb2"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-mean-001/working-tree.patch",
+        "bytes": 653936,
+        "sha256": "f1552beb4e1be7b70b39b0d85fc9af3e7863e03e5fce06b6000cc173216db34b"
+      }
+    ]
+  },
+  {
+    "id": "act-t4-final-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/episodes.jsonl",
+        "bytes": 31590,
+        "sha256": "a1eb18069cd70f6b1332ddd2e9b067cffebf226d5e1010c4f8cf00a5a2a7b3cb"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/final_test_trace.npz",
+        "bytes": 2729636,
+        "sha256": "ebf5b277673e7ca49be38e2b22dd764f40f9dc1c64b599424e54855354124823"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/inference_latency.jsonl",
+        "bytes": 40725,
+        "sha256": "bd300d47043d33475c7fe7b99cde5c7ccfaddb36d136062e69fd4515392bccda"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/manifest.json",
+        "bytes": 1167,
+        "sha256": "28271bc3c3fcd07000d20b0b1fe11914935586c90097623f51493aa9b2d2721c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/resources.jsonl",
+        "bytes": 6762,
+        "sha256": "4e42342fe3c730fee4fb59ee29129fa51d0ef56e7be060a92ef9e2cdd4cb72f9"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/result.json",
+        "bytes": 1192,
+        "sha256": "8cac548329aeea20193acd526396eb5bbb21b9bed3e889e05fac2079d4848ca0"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "113dcab5ff0fb76c373573bef5bf8a1bfc1d7149416398558f9d52ac21ad581e"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t4-final-stochastic-001/working-tree.patch",
+        "bytes": 653974,
+        "sha256": "83e280004eaf4fda3e223b40474d6159f0a928012e16630c888f71b79fcfbc1a"
+      }
+    ]
+  },
+  {
+    "id": "act-t5-final-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/episodes.jsonl",
+        "bytes": 30990,
+        "sha256": "7e57628a6199d829292d2c7b33ef1950c2e4836aa70d643aca0840f5b906fd09"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/final_test_trace.npz",
+        "bytes": 2768347,
+        "sha256": "3cf614f0b08906d854b61c634e29a1c13412ec405b6d67bb30bdf8121dea36fc"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/inference_latency.jsonl",
+        "bytes": 39587,
+        "sha256": "b4372f06361ed179fb66b208985a05014b3e2e34d98bcb76ab2f98c09ce57120"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/manifest.json",
+        "bytes": 1149,
+        "sha256": "609a4717df2a873f7ee64628ad06f7ed8f58e0405dbb2cd0d4d9896a93c9991b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/resources.jsonl",
+        "bytes": 7018,
+        "sha256": "1e9b675fd71356f2c42cf55563edf259bb79bd4f471e2f96e0e9ce5ac0a2aa00"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/result.json",
+        "bytes": 1173,
+        "sha256": "6e1287227bea1ec8e72499db7415f5242784ad29ad8d0d67b83a5fe08f27e9e6"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "3ee4e96b9cfeb646ca275e391b4e9187b301382435e7c436206ab05e522ac3db"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-mean-001/working-tree.patch",
+        "bytes": 654018,
+        "sha256": "0610cf5c2d060a6360f35b54986c3c45ee0f88b331729b7da9ac4f1b53e017eb"
+      }
+    ]
+  },
+  {
+    "id": "act-t5-final-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/episodes.jsonl",
+        "bytes": 31590,
+        "sha256": "1cd5dbe8585746774f2798e98e3c20005f6a9798860407a17f8d9ddcd000b8bf"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/final_test_trace.npz",
+        "bytes": 2784267,
+        "sha256": "f26615c2c25c4112a362cd1c194750f5608f706c23dc13ad87d21440f74031d0"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/inference_latency.jsonl",
+        "bytes": 39580,
+        "sha256": "71b29ae5da9c061507fed53ff785b1f61b0689abedd3dd6ad5efe6a40c2c6eda"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/manifest.json",
+        "bytes": 1167,
+        "sha256": "9264ef41b56ab142d3b7b4b725fc3b18f5e11538727bf41cc7b7103335c658b0"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/resources.jsonl",
+        "bytes": 7028,
+        "sha256": "38f34a243d91da6caeddbd61c007e6c27dc453c8b69b7450319da73d74e482a9"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/result.json",
+        "bytes": 1191,
+        "sha256": "6bd7825794613a356ac7b33c4a51699ceecbe7609d9ee48da6018669a7c54a45"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "e47bc809b2000d8bd5999e365c23387ab04ccce799ee8c5f086b63fc65b8c0a8"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t5-final-stochastic-001/working-tree.patch",
+        "bytes": 654056,
+        "sha256": "8c68df40a16f69519eac453a0f44fb337270c94f0e3157ec54088e14643e46a7"
+      }
+    ]
+  },
+  {
+    "id": "act-t6-final-mean",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/episodes.jsonl",
+        "bytes": 31722,
+        "sha256": "dddedea77a081fa50b67e7a683ce7faf05963bcc6d125f000b5a9e9b40683546"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/final_test_trace.npz",
+        "bytes": 2995619,
+        "sha256": "16896af88b725c90db03d4d49cba1c306350a85e4d23cb27882539a976bad475"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/inference_latency.jsonl",
+        "bytes": 41578,
+        "sha256": "269e67bda54b86956c0727f1c1e27e6c801ac49047b76b3578f828195d45e35f"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/manifest.json",
+        "bytes": 1149,
+        "sha256": "09222977703cdba40255afc170bdc7e65a934403b38c63a25610a35fe9a9d335"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/resources.jsonl",
+        "bytes": 8920,
+        "sha256": "0c43429feaa687e3bc445bb12ffb9a7f079b7e84117ae7268d40d6c171936778"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/result.json",
+        "bytes": 1184,
+        "sha256": "85e5b06b9a4149f4dc261eb0d8360dab98e3df9ba361ecafc3e9787a4609cf75"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "343b9f51c886a452043ed238d0d56da8c636a4147c82499aeafda00d9883787c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-mean-001/working-tree.patch",
+        "bytes": 654100,
+        "sha256": "16a71899cf5b13f9f2a830e46762a313e9baed8ca54dc410f5bdba20ebf0a553"
+      }
+    ]
+  },
+  {
+    "id": "act-t6-final-stochastic",
+    "status": "completed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/episodes.jsonl",
+        "bytes": 32331,
+        "sha256": "6dd378e36d5afdb81c0c9705734b5c1f90da65f69c106235ee1aa5a75bd32f44"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/final_test_trace.npz",
+        "bytes": 3075891,
+        "sha256": "d707dd43f16434b0f3786b2c75bd67435502a7ce64445c20775188cdedbfebde"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/inference_latency.jsonl",
+        "bytes": 40701,
+        "sha256": "e189285620e474ee21f9ca24bf35d815dffa1bc3fed6d69925c25390f2aae40c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/interactions.json",
+        "bytes": 369,
+        "sha256": "a1ebfb8038d7db02e36f97d8eee8772316ad5032b34cd0e8e7273d4e25eeea8b"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/manifest.json",
+        "bytes": 1167,
+        "sha256": "7e5b87dc59b2cd5a44846ff4f436180b0a0c5ff75b4791cae4bcaf3be5ae7245"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/resources.jsonl",
+        "bytes": 8912,
+        "sha256": "f90301b834ce88419d9411ce1da7f6292687250cb95b226e5b80ef99fe4b631c"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/result.json",
+        "bytes": 1200,
+        "sha256": "209e09b47a75fc700e618366a1cee97a8709462ebe28a2ea028c41b61ee4e844"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "7095bd3766f6f45bbed4bb40268167e04c3259dda994409f71fafcad864f4b39"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-t6-final-stochastic-001/working-tree.patch",
+        "bytes": 654138,
+        "sha256": "3ba653b6a368e20bfa200e56a4cbe3de3389f361a096714b685f744f993310ad"
+      }
+    ]
+  },
+  {
+    "id": "act-u2-final-mean",
+    "status": "failed",
+    "files": [
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/episodes.jsonl",
+        "bytes": 21690,
+        "sha256": "3d8d63f51124dc18cf246edbc5fdee78d84c081fa5e7f1c0e031b8d8cd76edd0"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/interactions.json",
+        "bytes": 369,
+        "sha256": "f49b064bb353a4947c0ac25e66cb3fd5c1fb9a21305001376bd7e1c0ef041280"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/manifest.json",
+        "bytes": 1158,
+        "sha256": "1b5cc0cecf580c8955b331b4f57c294ed48ce14c4a0656c78b32bd26c270a012"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/resources.jsonl",
+        "bytes": 5401,
+        "sha256": "9761cec5885581226d224c865f0fdf0effa0e7997dfa760707120e339c14952e"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/source_hashes.json",
+        "bytes": 16378,
+        "sha256": "1b96718676ea753660e766ffce743365195e0364a3bd6c11124a8769fcdf1dc1"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/source_snapshot.tar.gz",
+        "bytes": 187164,
+        "sha256": "6d427c39fae75f0b70db09ade3360110e8653f974e19fb83527923f7cb317342"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/stdout.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "artifacts/e7-test-act-u2-final-mean-001/working-tree.patch",
+        "bytes": 654182,
+        "sha256": "43d7be31e10c4ef0cac617204147e58631586c79ea4bf1582fa37dc94385cdbc"
+      }
+    ]
+  },
+  {
+    "id": "act-u2-final-stochastic",
+    "status": "not_started"
+  }
+]

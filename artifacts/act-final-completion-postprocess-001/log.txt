@@ -1,0 +1,1 @@
+{"completed_act_conditions": 18, "maximum_initial_action_difference": 1.0132789611816406e-06}

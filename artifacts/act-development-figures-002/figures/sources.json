@@ -1,0 +1,17 @@
+{
+  "source_hashes": {
+    "artifacts/act-online-summary-006/curves.csv": "02284944d2fe2c58ae763c9ea8f256d4fbfabc59cb32cde5e519cdc17413a590",
+    "artifacts/act-t5-online-drift-001/result.json": "b48045f9b6464a4a47b9352ebb79e14246ea201c30325682868a4bbc85d501f7",
+    "artifacts/act-u2-online-drift-001/result.json": "fb42a0ce668c1d8a66d26c562a1d2eb906b81e1118850df7af789e644d7b191c"
+  },
+  "plot_script_sha256": "4cdc9d24df9ea55d135495290f252e301dff57151e31a7d48692f9e9f3e3d6dc",
+  "rows_used": {
+    "success": 102,
+    "drift": 10
+  },
+  "excluded_rows": 0,
+  "interpolation": "Straight segments connect recorded checkpoints; no smoothing or inferred observations.",
+  "training_repeats": 1,
+  "uncertainty": "No training-seed uncertainty available; no error bars invented.",
+  "final_test_used": false
+}

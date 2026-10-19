@@ -1,0 +1,9 @@
+{
+  "pid": 13872,
+  "started_at": 1792401170.18934,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_initialization_controls.py"
+  ],
+  "status": "artifacts/act-initialization-batch-001/status.json"
+}

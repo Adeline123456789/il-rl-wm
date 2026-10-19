@@ -1,0 +1,129 @@
+# ACT 故障与未验证假设
+
+## F-ACT-IMPL-01：尾段不是真实专家动作
+
+锁定 ManiSkill `SmallDemoDataset_ACTPolicy.__getitem__` 在尾部合成静止臂/夹爪动作，`Agent.compute_loss` 对全部位置取mean，`DETRVAE.forward` 的posterior mask全false。新任务明确要求真实有效动作掩码。本地按真实episode结束位置标记pad；posterior attention和重建损失均排除pad。CPU测试验证不跨episode、任意改变pad值不改变posterior/loss，不把该接口修正称为性能改进。
+
+## F-ACT-IMPL-02：第一层decoder输出使后续层无学习信号
+
+锁定 `build_transformer` 设置 `return_intermediate_dec=True`，Transformer直接返回 `[layers,batch,query,hidden]`；DETRVAE取`[0]`后接action_head。因此后续decoder层虽计算却不影响损失。原作者锁定源码亦有该返回/索引组合。本地关闭intermediate返回，保留`[0]`但取得最后层；未修改vendor。两层梯度测试覆盖真实反向传播，未声称它提升闭环性能。无pad时本地训练forward与同一final-layer设置下的上游forward逐位一致；不把该检查误写为上游默认输出不变。
+
+## F-ACT-IMPL-03：执行模式不能混称
+
+官方无时间集成默认连续执行K个动作；本项目首模式必须每步重查首动作。时间集成单列、显式有效位而非用动作非零判断缓存存在，支持按环境清空。不能将它的历史依赖标签未经说明监督无历史学生。
+
+迁移研究Failure ID F-ACT-01/02/03/04当前尚未成立：没有教师/学生真实结果，不捏造技能丢失、遗忘或参数迁移不稳定。后续按现象→竞争解释→论文/源码→单一变更→对照结果登记。
+
+资料归档一次命令因参数列表超过操作系统上限被拒绝，未写文件或执行训练；改用逐文件保存并核对6份远端blob SHA。该传输问题与研究算法无关。
+
+## 2026-10-19 F-ACT-T0-01：执行模式及保持能力缺口
+
+固定K30首动作8/40、集成30/40，而末步仅4/40与5/40。有限网格开发结果，不是已证明的状态不可表达性。先以无历史首动作教师做D1，独立记录学生误差与闭环，不能把集成成绩套作教师基线。尚无迁移失败结论。
+
+## 2026-10-19 F-ACT-01：专家状态蒸馏未保留已验证首动作技能
+
+Problem：固定K30无集成教师8/40成功，D1确定性和随机学生各1/40；开发成功率差17.5个百分点，尚非跨种子统计结论。确定性学生抓取18/40、抬升8/40、放置1/40，教师对应33/40、19/40、8/40。
+
+Evidence：训练/验证教师动作MSE为.001168/.001486，gripper维验证MSE .00560，但学生真实闭环所到状态的gripper教师动作MSE .25225；教师真实轨迹同状态总MSE .002725。学生随机采样gripper变化较小，arm动作MSE约.016–.018，抓取仅1/40。采样影响与确定性蒸馏损失是两个不同问题。冻结教师、权重独立、单位动作尺度、有限log_prob与温度梯度通过；没有使用CVAE后验作为SAC分布。
+
+Prior Work：DAgger（Ross/Gordon/Bagnell, AISTATS2011, https://proceedings.mlr.press/v15/ross11a.html ）指出策略诱导状态分布与监督数据分布差异；Policy Distillation（Rusu et al., arXiv:1511.06295v2）证明策略压缩是既有方法，但其Atari证据不能保证这里的连续控制迁移。
+
+Hypotheses：专家训练状态覆盖不足及夹爪决策误差可能导致误差累积；单次开发运行不能证明因果。确定性教师本身也只有20%曾成功。已明确排除把75%集成教师的历史行为错误当成当前state目标。下一项先作独立参数复制的动作对齐/闭环对照，区分压缩损失与随机探索影响；之后若做在线状态标签，必须新训练seed/真实交互计费、不得使用本次验证轨迹训练。
+
+Controlled Experiment/Result：本次唯一迁移机制是专家状态均值MSE，没有新数据、正则或规划；结果为负。D1原模型和全部日志保留，禁止直接进入WM掩盖损失。未使用验证成绩再调训练长度或选中间checkpoint。
+
+## 2026-10-19 F-ACT-EVAL-01：相同首次seed不保证全部回合配对
+
+D1补充CPU审计发现：8000个实际均值动作与权重CPU重算最大差3.15e-6，但40个回合初态最大差1.9714（含姿态），目标位置差约.275m。首次严格断言失败保留于act-d1-verification-job-001；随后002保存完整逐维误差，不放宽容限掩盖失败。
+
+源码证据：锁定ManiSkill sapiens_env（实际路径mani_skill/envs/sapien_env.py）950–955在无seed且非enhanced_determinism时不隔离Torch RNG；PickCube使用torch.rand初始化，ManiSkillVectorEnv:168自动reset未传seed。T0/D1只对首批reset seed=10000，因此训练/随机策略消耗影响后续批次初态。T0网格及首动作/时间集成原成绩仍是真实开发结果，但不能当严格配对。D1原差17.5个百分点同样降级为非配对描述；F-ACT-01是否在匹配初态下成立待新评测。
+
+修复：ACT闭环每8回合显式reset seed=10000+episode_count，逐回合保存seed；固定全部T0/D1已有权重、无训练、无选择，8条件×40回合后台≤600秒。逐维检查所有40个初态最大差<1e-4才接纳配对。禁止把旧数据覆盖成新协议。其他历史BC/U0/U1评测可能存在同类限制，需要独立审计；不倒填或改变既有训练。
+
+历史范围补核：`scripts/sac_evidence.py:27` 的旧评测每次重置Python/NumPy/Torch全局RNG，区别于原ACT评测；对不消耗额外RNG的确定性策略，不能由本次ACT问题推断旧数据不配对。随机规划候选会额外消耗RNG，仍需直接初态审计。此处不修改旧SAC/WM或追溯改写旧指标。
+
+F-ACT-EVAL-01修复实测通过：act-matched-eval-001八条件各40完整回合，所有条件全部40初态逐维最大差0、seed序列完整，真实64000验证交互、无训练。固定K30仍8/40，D1均值1/40、随机0/40；因此F-ACT-01在本配对开发集仍可观察。新结果不用于重选K或重新训练。此证据排除了该比较的初态错配，但不独自证明覆盖不足等竞争解释。
+
+## F-ACT-C1-01：参数移植保留均值技能，随机执行明显下降
+
+配对初态下复制Actor均值8/40，log_std=-2随机执行1/40；末步4/40→0/40。初始化专家状态动作max误差1.073e-6，复制独立及teacher不变审计通过。当前是预RL随机执行现象，不能称在线遗忘。竞争解释是逐步独立arm噪声使接触动作不稳定，及夹爪饱和映射限制；需要后续共同SAC对照区分学习和探索，不立即加正则或额外演示标签。饱和分量24.78%意味着copied action head clamp外梯度为0，随机critic副本梯度通过不解决该结构限制。
+
+## F-ACT-02（短检观察）：参数初始化后早期在线技能丢失
+
+T5短检8192真实交互/1040标准SAC更新，确定性验证0步8/40→8192步0/40；T4同协议初始1/40。共同LN critic及log_std=-2，GPU作业分别113.233/70.755秒，无NaN退出。固定1024 expert-train状态CPU诊断：T5 gripper raw saturation .9902→0，四维平均log_std -2→约-.12，均值输出最大幅度从arm.14–.38/gripper1.02降为arm.008–.014/gripper.141。权重与动作数组保留于act-t5-smoke-diagnosis-001。
+
+这支持短检阶段发生分布/技能变化，不证明唯一原因。随机预热回放、初始化Q/熵驱动和参数变化均可能参与；不能只归因于clamp梯度（后期反而不再饱和）。先完成同初始化Critic的T2–T6有限对照，观察恢复/最终水平；本轮没有加入保持正则、改变alpha或探索方式。若后续完整对照仍支持遗忘，再依据已核验文献登记单机制改进。
+
+## F-ACT-RUN-01：计划生成器捕获了错误 Python 环境
+
+完整队列001的T2在import gymnasium前退出1，未创建环境或执行训练。生成计划时sys.executable来自系统Miniconda，而两次成功短检使用项目.venv。原manifest、stderr、完整计划及队列失败状态保留；2.064秒仍计入共享账本。修复只固定训练解释器，runner增加显式plan/output参数以保存新队列。新计划002逐参数核对：除解释器和失败T2的新ID外，五条件、交互数、更新数、种子和各作业cap完全相同。项目环境导入真实ManiSkill/SAC成功；不安装或混装依赖，不将启动修复计为算法改进。
+
+### F-ACT-02 待检验的单机制候选（尚未实施/未新增GPU预算）
+
+Problem → Early T5 smoke loses its initial deterministic skill.
+Experimental Evidence → 8192 interactions/1040 updates:8/40→0/40; fixed expert-train observations show mean-action collapse and log_std rise. This is not full-run failure or a proven cause.
+Prior Work → IBRL/RFT author code and AdaptiveBC demonstrate prior actor/BC retention objectives in different algorithms; see ACT_RELATED_WORK.md and source hashes.
+Proposed Mechanism → If full T2–T6 controls confirm persistent forgetting, consider a finite, decaying teacher first-action MSE added only to SAC Actor updates on expert-train states. Keep Critic, entropy tuning, replay mixture, real exploration and deployment interface unchanged. Precompute frozen zero-latent/no-ensemble labels; no teacher dependency at deployment. This is a prior-work adaptation, not a novelty claim.
+Controlled Experiment → Not registered or launched yet. First compare the completed T5/T4/T6 controls and actual remaining budget; then fix one parent, one coefficient/schedule and equal interactions before any new run. No parameter sweep, no combined variance/freeze/critic changes. Extra expert-state supervision must be reported distinctly from expert transitions supplied to Critic.
+Result → Pending; no new mechanism implemented.
+Conclusion → A mean-only constraint may preserve mean behavior while failing to preserve stochastic skill; it cannot be assumed to solve the observed variance growth. If resources cannot support the corresponding full control, retain the bounded negative finding and incomplete follow-up instead of silently shortening one method.
+
+### F-ACT-02 补充：固定输入的可复算漂移（2026-10-19）
+
+artifacts/act-t5-smoke-drift-002新增逐状态episode/timestep来源、教师标签及Gaussian KL，旧1024状态/动作/log_std逐位复现。gripper mean动作漂移MSE .942503，pre-tanh KL(initial||current)均值38.3999，所有最终动作分量在这些状态上均离开|a|≥.999边界；log_std约-.12。该证据与短检成功8/40→0/40一致，但尚不能区分熵压力、随机warmup、critic偏差或梯度参数化效应。完整在线固定四快照诊断已排CPU依赖队列；没有将短检外推为全程失败，没有引入新训练机制。
+
+### F-ACT-01 / F-ACT-02：T4 完整在线结果（2026-10-19）
+
+弱蒸馏学生初始1/40、19/40抓取，在16384步及其后全部固定验证点均0/40成功和抓取，262144步内1296完整训练回合无成功。expert-train固定输入gripper教师MSE .00618→.99441（16384）→1.83111（final）；原始动作、log_std和参数变化见artifacts/act-t4-online-drift-001。在线阶段没有恢复已在蒸馏时损失的技能，且初始抓取能力消失；这不是“强学生全部遗忘”的证据，也未唯一识别原因。先等待独立T5参数迁移和T6专家混合完整对照，保持损失仍未实施。
+
+### F-ACT-02：真实 replay 的技能数据覆盖（2026-10-19）
+
+T2/T3/T4各262144真实训练转移中的动作前抓取标记仅4/5/5，正奖励0/5/0。T4末段动作std约.469–.550仍无抓取/成功；没有证据把这种动作分散称为有用探索。共同4096均匀随机预热后先更新再执行Actor，是仍待区分的流程因素。完整逐转移派生数组、32个时间窗及复算脚本见artifacts/act-online-behavior-audit-001。仅观察性诊断，不改训练损失或warmup，不据此跳过T5/T6完整结果。
+
+### F-ACT-02：T5 完整运行确认持续退化（2026-10-19）
+
+独立参数迁移初始均值8/40、抓取28/40；16384步后16个固定验证点均0/40成功及抓取，262144真实训练转移未出现成功奖励。相比T4，初始能力保留更好，但此开发运行没有在线收益。固定expert输入的早期均值接近零/log_std升高与真实回放缺少抓取、成功数据同时出现；这些关联尚不能区分熵压力、Critic误差、warmup、参数化与数据覆盖。fixed-final x/y饱和比例10.06%/6.74%仅为参数化限制诊断，不将其单独称为原因。完整代码/配置/成本、四快照漂移、真实回放证据保留；待T6结束后据实际余量登记唯一局部对照或明确负结果关闭。当前未改核心主干或叠加保持机制。
+
+### F-ACT-02：T6恢复并不消除T4/T5失败
+
+T6初期同样丢失初始技能，加入50%专家转移后在固定final恢复至34/40，T4/T5仍0/40。它提示数据支持的重要性，但未区分初始化收益与额外专家数据收益，也未证明任何单一遗忘原因。保留原始失败。下一单机制应在初始技能较好的T5上独立测试有限均值保持；不将专家混合与新正则一起加入。T6全部结果、固定输入变化与真实回放计数见act-online-summary-005及act-t6-evidence-audit-001。
+
+
+## 2026-10-19 U2完整负结果与开发冻结
+
+U2完成262144真实训练交互/64528更新，3735.248300秒，整卡峰值5770MiB。初始8/40，16384步1/40、抓取14/40；32768步3/40、抓取31/40；从49152至262144的14个验证点均成功/抓取0/40。1296个完整训练回合仅1次成功。与T5末次0/40相比，没有持续技能收益。
+
+单因素审计通过：相同初始Actor/双LN Critic及40条初始评测记录；仅新增均值保持配置；15360次辅助更新、983040个专家训练状态标签；65536之后系数与新增采样均为零；152个执行源码文件、patch和便携Actor哈希验证通过。教师部署不需要，portable SHA256 d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35。
+
+F-ACT-02/U2：固定专家状态夹爪MSE在16384步仅0.003594（T5约0.98048），65536步0.017949，末次1.142592；但65536时闭环已经失败。这说明专家状态均值保持不能直接保证在线随机探索或闭环成功；不能把失败全部归因于约束归零，失败发生在截止前。分布覆盖、方差和Critic因素未独立识别，不追加机制。原始证据为act-online-summary-006、act-u2-online-drift-001、act-u2-online-behavior-001和act-u2-comparison-audit-001。
+
+开发阶段有界关闭，方法/模型选择冻结，放行原106条件最终评测；ACT-WM、多seed/多任务仍未完成。最终评测前总账78026.169781秒，剩余8373.830219秒，其中7200秒保持原最终整批上限。新队列002恢复评测，不重用旧超时队列，不改main。
+
+
+## 2026-10-19 F-ACT-EVAL-02：旧检查点导出计数兼容性
+
+最终批次002完成pick-seed0-a/b后，在第三项pick-seed0-c的CPU导出处因缺少lineage_training_interactions失败，尚未启动该项GPU评测；前两项结果保留，禁止重跑。原训练commit04f6162的save_snapshot只有global_step，且该运行不是续训。修复仅在缺少总计数且没有resume/inherited数据时采用global_step；续训缺失元数据则拒绝猜测。未修改任何模型参数、训练或评测协议。50个历史主框架登记检查点预检仅发现这一旧字段缺失；旧模型各网络张量导出前后完全相同。15项导出/最终证据测试通过。初次CPU测试因环境自动加载外部pytest插件缺lark启动失败，原日志保留；第二次沿用项目禁用插件自动加载的环境通过，未新增依赖。
+
+批次002实际墙钟121.403654秒计入原7200秒；新队列003仅选择余下68登记项，剩余上限7078.596346秒，原106条件计划与检查点选择不变。CPU修复与预检不构成新增训练假设或算力额度。证据：act-final-export-repair-001/002、act-final-evaluation-batch-002、act-final-evaluation-launch-003/resume.json。最终源代码HEAD仍为9f1536，实际修复代码由各次source_snapshot和working-tree.patch精确保存。
+
+## F-ACT-DIAG-01（2026-10-19，CPU诊断容差，不是训练失败）
+
+真实状态梯度探针001对float32 tanh(atanh(x))的单位导数使用过紧容差，近边界误差4.59e−5触发断言，退出1；原日志保留。002保留实际误差，检查非裁剪正导数并以float64验证解析恒等式，退出0。没有改模型或重新训练。实测初始夹爪99.02%探针输出被clamp，均值路径导数0；列为F-ACT-02竞争性参数化限制，不能由此确证遗忘原因。
+
+## U2验收补充（2026-10-19）
+
+全部真实训练回放仅6条正奖励，首次231312交互，保持期0条。在线验证抬升/首次抓取轨迹未记录，无法重建，明确null。该证据缺口不由新增最终测试回合补作开发数据。详细B类负结果见ACT_U2_FINAL_REVIEW.md。
+
+## F-ACT-EVAL-03：最终评测时间预算中断
+
+104/106条件完成。U2均值仅获37.474216秒，runner记录38.126150秒、time_budget/exit143；70完整回合、14180返回/14190尝试转移保留，但100回合正式成绩null。随机未启动。002+003墙钟7200.778426秒，0.778426秒为停止收尾开销，原24h账85131.546390秒未超。无自动补评或重新选模型；新增300秒final-cap提案未获授权。终态审计保留此发现，不写成全面通过。
+
+## F-ACT-ACCOUNT-01：旧回放计数格式
+
+CPU收尾汇总001假定所有交互文件有phases，遇旧回放total_interactions时KeyError。002单列已观察到的旧格式，与214作业GPU账一致；补充result/嵌套计数，三次早期步计数缺口明确保留。未修改模型、原始文件或实验协议，失败源码和日志保留。
+
+## F-ACT-EVAL-03 补评关闭（2026-10-19T08:47:54.132687+00:00）
+用户批准300秒后两个002 attempt均完成，原001失败不覆盖；各100回合0成功。资源中断已补齐，科学负结果仍保留。补评audit见artifacts/act-final-completion-postprocess-001/audit.json。
+
+## F-ACT-RESOURCE-01：资源估算重复放大一次性开销
+R0短检正常完成80.983609秒/8192交互/1040更新，旧资源模型将全部非rollout/update耗时按17/2验证次数放大，得1935.017777秒（含35%+60余量），超过1900，队列001按门槛停止。源码确认训练result计时在env/model初始化之后开始；job−result的16.265527秒是一次性setup/cleanup，将其重复计8.5次不正确。改为一次性部分只计一次、循环内其余耗时仍保守按17/2放大，保留35%+60余量。CPU用原日志重新计算，不增加GPU、不改模型/配置/预算；旧失败保留，新队列002只复用已完成R0短检。

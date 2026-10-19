@@ -1,6 +1,18 @@
+补评最新复算：`.venv/bin/python scripts/summarize_final_results.py --plan configs/act_final_evaluation_plan.json --attempt-map configs/act_final_completion_attempts.json --output <new-directory>`。映射保留旧失败；不带映射仍复算原104/106。详细账本见FINAL_BATCH_REPORT.md。
+
 # 复算与重跑
 
+> 最终证据更新：原批次104/106条件完成、U2两项未完成；复算命令和范围见[FINAL_BATCH_REPORT](FINAL_BATCH_REPORT.md)。原始summary与逐回合记录保留，未完成分数为null。
+
 当前仍在首批实验中；`research_state.json`与各实验`manifest.json`记录实际完成状态。以下重跑命令使用新目录，不能在现有活跃实验目录重复执行。所有耗时程序通过后台启动器或独立后台进程运行，保留日志和退出码。
+
+## 2026-10-19 当前状态与只读复算
+
+以下历史重跑章节不表示应在本机重复启动。当前有效最终注册表是`configs/act_final_evaluation_plan.json`（70项/106条件），gate已在开发冻结后释放；003队列接续002完成的A/B，原整批7200秒上限扣除失败前已耗时间。`artifacts/act-final-evaluation-batch-003/status.json`和各manifest为权威状态。后文“seed20000未访问”是旧快照表述，现已访问，不能用于后续方法选择。
+
+CPU新诊断：`scripts/review_act_u2_evidence.py --output <new-directory>`复算现有逐回合、指标、便携回放派生数组；`scripts/diagnose_act_mapping_gradients.py --output <new-directory>`需要本地原始固定快照和原审计数据，在CPU检查真实状态梯度。已执行结果及命令/退出码保存在`artifacts/act-u2-final-review-cpu-001/`、`artifacts/act-mapping-gradient-cpu-002/`；不要重复向已存在目录运行。CPU耗时程序仍应后台执行，CUDA_VISIBLE_DEVICES置空。
+
+源代码恢复基包与至9f1536的增量包见`releases/source-history-act-20261019-001/README.md`，离线恢复45个实际实验commit已核验。新诊断代码和源码哈希随当前发布树交付；大型原始checkpoint/replay留本机，不混入普通Git。
 
 ## 环境
 

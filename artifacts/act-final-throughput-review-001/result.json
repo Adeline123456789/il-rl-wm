@@ -1,0 +1,406 @@
+{
+  "captured_at": 1792390542.4545505,
+  "pid": 3029876,
+  "completed_entries": 14,
+  "registered_entries": 70,
+  "registered_conditions": 106,
+  "plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "ledger": {
+    "gpu_hours_limit": 24,
+    "gpu_job_seconds_used": 79245.31529634382,
+    "local_changes_limit": 2,
+    "local_changes_used": 2,
+    "final_evaluation_reserve_seconds": 7200
+  },
+  "current": "pick-seed2-u0",
+  "groups_seconds": {
+    "main_1_PickCube-v1": [
+      58.6509955250076,
+      58.638479629997164,
+      64.7297199619934,
+      64.71053030900657,
+      56.62444670801051,
+      50.566630635003094,
+      64.7015443170094,
+      64.72879979200661,
+      56.62699014600366,
+      58.61961254995549,
+      66.74195267900359,
+      62.68583410902647
+    ],
+    "main_4_PickCube-v1": [
+      242.53016390901757,
+      248.58981515601045
+    ]
+  },
+  "resumed_batch_elapsed_seconds": 1365.6905572414398,
+  "remaining_original_batch_seconds": 5712.905789196549,
+  "remaining_projection_low": 5978.717203859342,
+  "remaining_projection_high": 7603.398766737191,
+  "pending": [
+    {
+      "id": "pick-seed2-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "stack-seed0-a",
+      "seconds_low": 91.00319204525294,
+      "seconds_high": 91.00319204525294,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "stack-seed0-b",
+      "seconds_low": 91.00319204525294,
+      "seconds_high": 91.00319204525294,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "stack-seed0-c",
+      "seconds_low": 91.00319204525294,
+      "seconds_high": 91.00319204525294,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "stack-seed0-c-continue",
+      "seconds_low": 91.00319204525294,
+      "seconds_high": 91.00319204525294,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "stack-seed0-u0",
+      "seconds_low": 368.339984298771,
+      "seconds_high": 368.339984298771,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "peg-seed0-a",
+      "seconds_low": 121.33758939367061,
+      "seconds_high": 121.33758939367061,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "peg-seed0-b",
+      "seconds_low": 121.33758939367061,
+      "seconds_high": 121.33758939367061,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "peg-seed0-c",
+      "seconds_low": 121.33758939367061,
+      "seconds_high": 121.33758939367061,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "peg-seed0-c-continue",
+      "seconds_low": 121.33758939367061,
+      "seconds_high": 121.33758939367061,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "peg-seed0-u0",
+      "seconds_low": 491.119979065028,
+      "seconds_high": 491.119979065028,
+      "basis": "Pick measured job time scaled by horizon; startup overestimate"
+    },
+    {
+      "id": "u1-pick-seed0-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed0-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed0-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed1-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed1-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed1-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed2-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed2-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed2-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "rlpd-seed0-step262144",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 600,
+      "basis": "RLPD compilation overhead unmeasured in final entry;600s existing per-job cap upper bound"
+    },
+    {
+      "id": "rlpd-seed0-step524288",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 600,
+      "basis": "RLPD compilation overhead unmeasured in final entry;600s existing per-job cap upper bound"
+    },
+    {
+      "id": "pick-seed3-a",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed3-b",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed3-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed3-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed3-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed3-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed3-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed3-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed4-a",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed4-b",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed4-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed4-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "pick-seed4-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed4-c",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed4-c-continue",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 60.6687946968353,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "u1-pick-seed4-u0",
+      "seconds_low": 245.559989532514,
+      "seconds_high": 245.559989532514,
+      "basis": "same framework/method-count/task completed jobs"
+    },
+    {
+      "id": "act-teacher-k30-first",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-teacher-k30-ensemble",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-d1-initial-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-d1-initial-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-c1-initial-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-c1-initial-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t2-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t2-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t3-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t3-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t4-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t4-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t5-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t5-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t6-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-t6-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-u2-final-mean",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "seconds_low": 60.6687946968353,
+      "seconds_high": 91.00319204525294,
+      "basis": "same simulator/horizon; model-specific synchronized latency recorded below; wall range unvalidated"
+    }
+  ],
+  "validation_smoke_model_latency": {
+    "act-c1-initial-mean": {
+      "latency_batch10_ms_mean": 1.3541051527136005,
+      "latency_batch10_ms_p95": 1.4238680567359552
+    },
+    "act-c1-initial-stochastic": {
+      "latency_batch10_ms_mean": 1.635786771948915,
+      "latency_batch10_ms_p95": 1.733089087065309
+    },
+    "act-d1-initial-mean": {
+      "latency_batch10_ms_mean": 0.12431139475665987,
+      "latency_batch10_ms_p95": 0.1521629572380334
+    },
+    "act-d1-initial-stochastic": {
+      "latency_batch10_ms_mean": 0.42649531533243135,
+      "latency_batch10_ms_p95": 0.4949624475557357
+    },
+    "act-teacher-k30-ensemble": {
+      "latency_batch10_ms_mean": 1.4855257017188706,
+      "latency_batch10_ms_p95": 1.6580604977207256
+    },
+    "act-teacher-k30-first": {
+      "latency_batch10_ms_mean": 1.3558955592452548,
+      "latency_batch10_ms_p95": 1.4555831323377786
+    }
+  },
+  "selection_changed": false,
+  "limitation": "Forecast uses timings only, no test scores. Current in-flight job is charged at full predicted duration, conservative. Final model variants vary; range is not guarantee. Fixed registered order retained; budget-stopped/unrun scores remain null. No balanced subset selected after seeing final results."
+}

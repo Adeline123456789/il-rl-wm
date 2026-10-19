@@ -1,0 +1,13 @@
+{
+  "pid": 2776854,
+  "phase": "completed",
+  "completed": [
+    "act-t5-online-smoke-001",
+    "act-t4-online-smoke-001"
+  ],
+  "started_at": 1792374772.9031494,
+  "current": "act-t4-online-smoke-001",
+  "exit_code": 0,
+  "next": "Inspect throughput/skill loss before fixing equal full comparison budget; no full runs automatically scheduled",
+  "ended_at": 1792374957.1119034
+}

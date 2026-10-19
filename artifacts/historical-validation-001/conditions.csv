@@ -1,0 +1,89 @@
+id,experiment,task,training_seed,training_role,variant,method,training_interactions,episode_horizon,control_mode,checkpoint_step,checkpoint_sha256,episodes,success_once,success_at_end,mean_return
+pick-seed0-a,e2-sac-a-full-002,PickCube-v1,0,development,A,sac,262144,200,pd_ee_delta_pos,262144,2fd83e99e7604242047247980b7d85aa29e313e70184bbf5a7e86db1c1be380a,16,0,0,0.0
+pick-seed0-b,e2-sac-b-full-001,PickCube-v1,0,development,B,sac,262144,200,pd_ee_delta_pos,262144,2fa3456086f11f472dcaabe4c15bd99b109002cf93cfaa32e418af2445ddc498,16,0,0,0.0
+pick-seed0-c,e3-sac-c-full-001,PickCube-v1,0,development,C,sac,262144,200,pd_ee_delta_pos,262144,28d677a516434052b9ccbfe03001d0f2fc0bfcc2174233d7f5c1e7519a75c2ea,16,13,12,142.8125
+pick-seed0-c-continue,e3-sac-c-continue-full-001,PickCube-v1,0,development,C continuation,sac,524288,200,pd_ee_delta_pos,262144,8e9ed5e02694402008d7367e3687d1770a036de5c5de6bf4efcc6afdf6da908f,16,16,16,188.0625
+pick-seed0-u0,e6-u0-full-001,PickCube-v1,0,development,U0,il,524288,200,pd_ee_delta_pos,262144,c0ffcb9643732c9546e3e2e0cb7120a2d22bdfc10918db476d5103a79b7048d8,16,0,0,0.0
+pick-seed0-u0,e6-u0-full-001,PickCube-v1,0,development,U0,sac,524288,200,pd_ee_delta_pos,262144,c0ffcb9643732c9546e3e2e0cb7120a2d22bdfc10918db476d5103a79b7048d8,16,0,0,0.0
+pick-seed0-u0,e6-u0-full-001,PickCube-v1,0,development,U0,il_sac_wm,524288,200,pd_ee_delta_pos,262144,c0ffcb9643732c9546e3e2e0cb7120a2d22bdfc10918db476d5103a79b7048d8,16,0,0,0.0
+pick-seed0-u0,e6-u0-full-001,PickCube-v1,0,development,U0,sac_wm,524288,200,pd_ee_delta_pos,262144,c0ffcb9643732c9546e3e2e0cb7120a2d22bdfc10918db476d5103a79b7048d8,16,0,0,0.0
+pick-seed1-a,pick-seed1-a-001,PickCube-v1,1,independent_repeat,A,sac,262144,200,pd_ee_delta_pos,262144,ddb28d5ccfd31c2bb3d1b47607d4303782885918f9f5928fc06a3e5bfe203639,16,0,0,0.0
+pick-seed1-b,pick-seed1-b-001,PickCube-v1,1,independent_repeat,B,sac,262144,200,pd_ee_delta_pos,262144,7e11609e6c799c8c8b7595bdaf4bfe84fcc67779f2097681b0fe5d62ca213551,16,0,0,0.0
+pick-seed1-c,pick-seed1-c-001,PickCube-v1,1,independent_repeat,C,sac,262144,200,pd_ee_delta_pos,262144,c2be9dba870e0f7dd740d9830f7a8ac83c2972a555681c6ec01c8fe78fbc5374,16,8,4,57.3125
+pick-seed1-c-continue,pick-seed1-c-continue-001,PickCube-v1,1,independent_repeat,C continuation,sac,524288,200,pd_ee_delta_pos,262144,5bdf6d6eacddec743884bfd2cd4330d69b8cad07e9becb51519a5ee5e561c43e,16,15,15,172.1875
+pick-seed1-u0,pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U0,il,524288,200,pd_ee_delta_pos,262144,cf36edafcc396711d6bc2200db23f6839b185fb857034d5c8d59c9c5f34d06e4,16,0,0,0.0
+pick-seed1-u0,pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U0,sac,524288,200,pd_ee_delta_pos,262144,cf36edafcc396711d6bc2200db23f6839b185fb857034d5c8d59c9c5f34d06e4,16,15,14,162.1875
+pick-seed1-u0,pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U0,il_sac_wm,524288,200,pd_ee_delta_pos,262144,cf36edafcc396711d6bc2200db23f6839b185fb857034d5c8d59c9c5f34d06e4,16,13,12,119.875
+pick-seed1-u0,pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U0,sac_wm,524288,200,pd_ee_delta_pos,262144,cf36edafcc396711d6bc2200db23f6839b185fb857034d5c8d59c9c5f34d06e4,16,16,14,164.875
+pick-seed2-a,pick-seed2-a-001,PickCube-v1,2,independent_repeat,A,sac,262144,200,pd_ee_delta_pos,262144,3eba7c18f63e90876f6a18c89dc3823ef98410326696e2a2c129db4eda014f2a,16,0,0,0.0
+pick-seed2-b,pick-seed2-b-001,PickCube-v1,2,independent_repeat,B,sac,262144,200,pd_ee_delta_pos,262144,c78ccfe2f929beafba8d149fa485497db626aea13b320420d69d0cb99dce102f,16,0,0,0.0
+pick-seed2-c,pick-seed2-c-001,PickCube-v1,2,independent_repeat,C,sac,262144,200,pd_ee_delta_pos,262144,f6b80d32719045cc457d59dd8eae44582e386b0bf3321358362b1a80f0b06838,16,0,0,0.0
+pick-seed2-c-continue,pick-seed2-c-continue-001,PickCube-v1,2,independent_repeat,C continuation,sac,524288,200,pd_ee_delta_pos,262144,587996c80b21e2bef34634a3302300503c93b7ca8c4677248abfb9b6dc283851,16,0,0,0.0
+pick-seed2-u0,pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U0,il,524288,200,pd_ee_delta_pos,262144,fd37e6846353c98d650fbd00826a18d66f223eb2a184dbde96b17e500063577e,16,0,0,0.0
+pick-seed2-u0,pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U0,sac,524288,200,pd_ee_delta_pos,262144,fd37e6846353c98d650fbd00826a18d66f223eb2a184dbde96b17e500063577e,16,0,0,0.0
+pick-seed2-u0,pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U0,il_sac_wm,524288,200,pd_ee_delta_pos,262144,fd37e6846353c98d650fbd00826a18d66f223eb2a184dbde96b17e500063577e,16,0,0,0.0
+pick-seed2-u0,pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U0,sac_wm,524288,200,pd_ee_delta_pos,262144,fd37e6846353c98d650fbd00826a18d66f223eb2a184dbde96b17e500063577e,16,0,0,0.0
+stack-seed0-a,stack-seed0-a-001,StackCube-v1,0,development,A,sac,262144,300,pd_ee_delta_pos,262144,488ced4462784f7f35e88784bd0b75d759e50a02688235167fdf4e1de7fa2b9f,16,0,0,0.0
+stack-seed0-b,stack-seed0-b-001,StackCube-v1,0,development,B,sac,262144,300,pd_ee_delta_pos,262144,e324dde2b73b205c8bdafa5cceae72c9bb85793297554f17f8c563321178fc44,16,0,0,0.0
+stack-seed0-c,stack-seed0-c-001,StackCube-v1,0,development,C,sac,262144,300,pd_ee_delta_pos,262144,bdc80d246f7a9e6ce0de80669404e5d83c3c4c3090192ea48927dc7969638a77,16,0,0,0.0
+stack-seed0-c-continue,stack-seed0-c-continue-001,StackCube-v1,0,development,C continuation,sac,524288,300,pd_ee_delta_pos,262144,4ecd5085a16190e0527c7341640bb80d8598110a3d6991590e163cb765f67025,16,0,0,0.0
+stack-seed0-u0,stack-seed0-u0-001,StackCube-v1,0,development,U0,il,524288,300,pd_ee_delta_pos,262144,fd4a0031b8422a6b9e2dab73b9a0d66396a611b06ed2707422538eba1e43c937,16,0,0,0.0
+stack-seed0-u0,stack-seed0-u0-001,StackCube-v1,0,development,U0,sac,524288,300,pd_ee_delta_pos,262144,fd4a0031b8422a6b9e2dab73b9a0d66396a611b06ed2707422538eba1e43c937,16,0,0,0.0
+stack-seed0-u0,stack-seed0-u0-001,StackCube-v1,0,development,U0,il_sac_wm,524288,300,pd_ee_delta_pos,262144,fd4a0031b8422a6b9e2dab73b9a0d66396a611b06ed2707422538eba1e43c937,16,0,0,0.0
+stack-seed0-u0,stack-seed0-u0-001,StackCube-v1,0,development,U0,sac_wm,524288,300,pd_ee_delta_pos,262144,fd4a0031b8422a6b9e2dab73b9a0d66396a611b06ed2707422538eba1e43c937,16,0,0,0.0
+peg-seed0-a,peg-seed0-a-001,PegInsertionSide-v1,0,development,A,sac,262144,400,pd_ee_delta_pose,262144,b1ba2e6b5ea39ecaf15bb16a2432b29bb8ecb425152a29dff5c24b9e0b043d57,16,0,0,0.0
+peg-seed0-b,peg-seed0-b-001,PegInsertionSide-v1,0,development,B,sac,262144,400,pd_ee_delta_pose,262144,1b345fe7d930fd14fa630d860bd2c642ecc8f825fb297f038e010c1b16cc51bb,16,0,0,0.0
+peg-seed0-c,peg-seed0-c-001,PegInsertionSide-v1,0,development,C,sac,262144,400,pd_ee_delta_pose,262144,ce8469a3ce236ee2c5d50ef2d1485ac0e776dba7b3b9254c079968050c826b2b,16,0,0,0.0
+peg-seed0-c-continue,peg-seed0-c-continue-001,PegInsertionSide-v1,0,development,C continuation,sac,524288,400,pd_ee_delta_pose,262144,c4bd9f555de0feb121211978a156d9df820f545ca2e4766cf26549bd23476869,16,0,0,0.0
+peg-seed0-u0,peg-seed0-u0-001,PegInsertionSide-v1,0,development,U0,il,524288,400,pd_ee_delta_pose,262144,69dcbcf5871934e9c21825426ac97a8505b27df0a5045d3b64369af817753521,16,0,0,0.0
+peg-seed0-u0,peg-seed0-u0-001,PegInsertionSide-v1,0,development,U0,sac,524288,400,pd_ee_delta_pose,262144,69dcbcf5871934e9c21825426ac97a8505b27df0a5045d3b64369af817753521,16,0,0,0.0
+peg-seed0-u0,peg-seed0-u0-001,PegInsertionSide-v1,0,development,U0,il_sac_wm,524288,400,pd_ee_delta_pose,262144,69dcbcf5871934e9c21825426ac97a8505b27df0a5045d3b64369af817753521,16,0,0,0.0
+peg-seed0-u0,peg-seed0-u0-001,PegInsertionSide-v1,0,development,U0,sac_wm,524288,400,pd_ee_delta_pose,262144,69dcbcf5871934e9c21825426ac97a8505b27df0a5045d3b64369af817753521,16,0,0,0.0
+u1-pick-seed0-c,u1-pick-seed0-c-001,PickCube-v1,0,development,C-LN,sac,262144,200,pd_ee_delta_pos,262144,8547d24ca5cd18518c0ce3727af995fdabb5d64f6ac2e324d21aecc36b8fd2ac,16,14,11,133.75
+u1-pick-seed0-c-continue,u1-pick-seed0-c-continue-001,PickCube-v1,0,development,C-LN continuation,sac,524288,200,pd_ee_delta_pos,262144,a90d671d4984ad6679b20fbb73575da3d961d1570ac40ed17613d26fb72575bd,16,16,16,187.375
+u1-pick-seed0-u0,u1-pick-seed0-u0-001,PickCube-v1,0,development,U1,il,524288,200,pd_ee_delta_pos,262144,428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704,16,0,0,0.0
+u1-pick-seed0-u0,u1-pick-seed0-u0-001,PickCube-v1,0,development,U1,sac,524288,200,pd_ee_delta_pos,262144,428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704,16,16,16,187.0
+u1-pick-seed0-u0,u1-pick-seed0-u0-001,PickCube-v1,0,development,U1,il_sac_wm,524288,200,pd_ee_delta_pos,262144,428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704,16,13,10,121.25
+u1-pick-seed0-u0,u1-pick-seed0-u0-001,PickCube-v1,0,development,U1,sac_wm,524288,200,pd_ee_delta_pos,262144,428648e2eb44cc3aebacf8b7ac8d5da381cf85ace3f3f5bb45f8560aa34e8704,16,15,14,172.6875
+u1-pick-seed1-c,u1-pick-seed1-c-001,PickCube-v1,1,independent_repeat,C-LN,sac,262144,200,pd_ee_delta_pos,262144,da04adae36500acdaf9eac2f0aef9d26f6b36f6a802c2cddb705fe32353425b7,16,16,10,127.9375
+u1-pick-seed1-c-continue,u1-pick-seed1-c-continue-001,PickCube-v1,1,independent_repeat,C-LN continuation,sac,524288,200,pd_ee_delta_pos,262144,a586584a251db843ece76af94b6cd70c524fd0775dd7fd8a4bf1a782a6571c06,16,14,14,162.0
+u1-pick-seed1-u0,u1-pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U1,il,524288,200,pd_ee_delta_pos,262144,12c7bf6a76bd83044f231c9c5f98a1693e51fa3f54c3430ea88b8b0483655e40,16,0,0,0.0
+u1-pick-seed1-u0,u1-pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U1,sac,524288,200,pd_ee_delta_pos,262144,12c7bf6a76bd83044f231c9c5f98a1693e51fa3f54c3430ea88b8b0483655e40,16,16,14,167.125
+u1-pick-seed1-u0,u1-pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U1,il_sac_wm,524288,200,pd_ee_delta_pos,262144,12c7bf6a76bd83044f231c9c5f98a1693e51fa3f54c3430ea88b8b0483655e40,16,12,11,84.6875
+u1-pick-seed1-u0,u1-pick-seed1-u0-001,PickCube-v1,1,independent_repeat,U1,sac_wm,524288,200,pd_ee_delta_pos,262144,12c7bf6a76bd83044f231c9c5f98a1693e51fa3f54c3430ea88b8b0483655e40,16,15,14,162.875
+u1-pick-seed2-c,u1-pick-seed2-c-001,PickCube-v1,2,independent_repeat,C-LN,sac,262144,200,pd_ee_delta_pos,262144,eaf014c9cdde56388c2e369ef0db1f336318e4d02502d5a773ebdd485bac36eb,16,10,7,95.0625
+u1-pick-seed2-c-continue,u1-pick-seed2-c-continue-001,PickCube-v1,2,independent_repeat,C-LN continuation,sac,524288,200,pd_ee_delta_pos,262144,11516c0fcb63a150332e65684069511e798c6a8ff8b86dec3a350dd016a799ad,16,15,15,169.6875
+u1-pick-seed2-u0,u1-pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U1,il,524288,200,pd_ee_delta_pos,262144,d0174ff2b1e9c461a30f4be91ef3d695f816c682955c96cb27dbbf8a6159f72e,16,0,0,0.0
+u1-pick-seed2-u0,u1-pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U1,sac,524288,200,pd_ee_delta_pos,262144,d0174ff2b1e9c461a30f4be91ef3d695f816c682955c96cb27dbbf8a6159f72e,16,14,14,159.625
+u1-pick-seed2-u0,u1-pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U1,il_sac_wm,524288,200,pd_ee_delta_pos,262144,d0174ff2b1e9c461a30f4be91ef3d695f816c682955c96cb27dbbf8a6159f72e,16,9,9,90.125
+u1-pick-seed2-u0,u1-pick-seed2-u0-001,PickCube-v1,2,independent_repeat,U1,sac_wm,524288,200,pd_ee_delta_pos,262144,d0174ff2b1e9c461a30f4be91ef3d695f816c682955c96cb27dbbf8a6159f72e,16,14,14,156.0625
+rlpd-seed0-step262144,e3-rlpd-full-001,PickCube-v1,0,development,RLPD,RLPD,262144,200,pd_ee_delta_pos,262144,b80a17c75df729f4a62894edae9de71ead32914d34bf0f308a7823b65245261f,16,4,3,42.375
+rlpd-seed0-step524288,e3-rlpd-full-001,PickCube-v1,0,development,RLPD,RLPD,524288,200,pd_ee_delta_pos,524288,8552b4370e13dd4dd24cf9adf00ecec13732c23aa2276524c515345d25516d30,16,5,4,50.25
+pick-seed3-a,pick-seed3-a-001,PickCube-v1,3,independent_repeat,A,sac,262144,200,pd_ee_delta_pos,262144,81669e4a60a533c2c0d5db12780a52e7617bc270dd7d4af7b9d62fcdd7f6e9b4,16,0,0,0.0
+pick-seed3-b,pick-seed3-b-001,PickCube-v1,3,independent_repeat,B,sac,262144,200,pd_ee_delta_pos,262144,7ad42fe26b3d3437bb0c1e7ee3607a771cf606a6b87025f57378884b2ea31981,16,0,0,0.0
+pick-seed3-c,pick-seed3-c-001,PickCube-v1,3,independent_repeat,C,sac,262144,200,pd_ee_delta_pos,262144,9b5ca2c8a1e0ce8a12b2e745d1cb02a3e362c964c4125726f16c10f3497fc0f1,16,0,0,0.0
+pick-seed3-c-continue,pick-seed3-c-continue-001,PickCube-v1,3,independent_repeat,C continuation,sac,524288,200,pd_ee_delta_pos,262144,f66eb0e17b30e85030cfb69bdd68a942add304451debdc2da1a2406e51c4f496,16,0,0,0.0
+pick-seed3-u0,pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U0,il,524288,200,pd_ee_delta_pos,262144,e3a64ddb10092dfaae3425eda8184b98a2b42dce1050655f45758daae551d01a,16,0,0,0.0
+pick-seed3-u0,pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U0,sac,524288,200,pd_ee_delta_pos,262144,e3a64ddb10092dfaae3425eda8184b98a2b42dce1050655f45758daae551d01a,16,0,0,0.0
+pick-seed3-u0,pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U0,il_sac_wm,524288,200,pd_ee_delta_pos,262144,e3a64ddb10092dfaae3425eda8184b98a2b42dce1050655f45758daae551d01a,16,0,0,0.0
+pick-seed3-u0,pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U0,sac_wm,524288,200,pd_ee_delta_pos,262144,e3a64ddb10092dfaae3425eda8184b98a2b42dce1050655f45758daae551d01a,16,0,0,0.0
+u1-pick-seed3-c,u1-pick-seed3-c-001,PickCube-v1,3,independent_repeat,C-LN,sac,262144,200,pd_ee_delta_pos,262144,f8f88deda921321eb73ba86ea94607aa427fd4292a60cc58ce6aa896a81d8784,16,15,15,152.9375
+u1-pick-seed3-c-continue,u1-pick-seed3-c-continue-001,PickCube-v1,3,independent_repeat,C-LN continuation,sac,524288,200,pd_ee_delta_pos,262144,5ffea07b611cf854a20f211eb8cfc2808005fd10ef1e24b82d6191d77dd426de,16,15,15,172.375
+u1-pick-seed3-u0,u1-pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U1,il,524288,200,pd_ee_delta_pos,262144,557904b1011e7cc6c9504513d33f90900e23b6ccc9bc988645c3a6b568b694fe,16,0,0,0.0
+u1-pick-seed3-u0,u1-pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U1,sac,524288,200,pd_ee_delta_pos,262144,557904b1011e7cc6c9504513d33f90900e23b6ccc9bc988645c3a6b568b694fe,16,15,15,175.375
+u1-pick-seed3-u0,u1-pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U1,il_sac_wm,524288,200,pd_ee_delta_pos,262144,557904b1011e7cc6c9504513d33f90900e23b6ccc9bc988645c3a6b568b694fe,16,11,5,67.9375
+u1-pick-seed3-u0,u1-pick-seed3-u0-001,PickCube-v1,3,independent_repeat,U1,sac_wm,524288,200,pd_ee_delta_pos,262144,557904b1011e7cc6c9504513d33f90900e23b6ccc9bc988645c3a6b568b694fe,16,16,16,183.0
+pick-seed4-a,pick-seed4-a-001,PickCube-v1,4,independent_repeat,A,sac,262144,200,pd_ee_delta_pos,262144,e1490300da2721be3261f84588ed93829aa4074e7e69657641ecd81a0ea326d6,16,0,0,0.0
+pick-seed4-b,pick-seed4-b-001,PickCube-v1,4,independent_repeat,B,sac,262144,200,pd_ee_delta_pos,262144,face4e9ae55904140fa63f7bdcb5fe07402f79d09819383a719d50d5ab1a1812,16,0,0,0.0
+pick-seed4-c,pick-seed4-c-001,PickCube-v1,4,independent_repeat,C,sac,262144,200,pd_ee_delta_pos,262144,b906768ad32e6b6c493b5b63456d78a43c421c4e3c2a0633a5b805c23f65c074,16,15,12,146.8125
+pick-seed4-c-continue,pick-seed4-c-continue-001,PickCube-v1,4,independent_repeat,C continuation,sac,524288,200,pd_ee_delta_pos,262144,5e214a4854bbe75905fb136996e29cbf3cfd33de1d72988ea883f30c6abac27f,16,16,15,179.125
+pick-seed4-u0,pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U0,il,524288,200,pd_ee_delta_pos,262144,89da2acce497b28d0a066e77046878111017e93706015ad5fe0285e1750f4706,16,0,0,0.0
+pick-seed4-u0,pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U0,sac,524288,200,pd_ee_delta_pos,262144,89da2acce497b28d0a066e77046878111017e93706015ad5fe0285e1750f4706,16,16,16,187.0
+pick-seed4-u0,pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U0,il_sac_wm,524288,200,pd_ee_delta_pos,262144,89da2acce497b28d0a066e77046878111017e93706015ad5fe0285e1750f4706,16,13,9,110.875
+pick-seed4-u0,pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U0,sac_wm,524288,200,pd_ee_delta_pos,262144,89da2acce497b28d0a066e77046878111017e93706015ad5fe0285e1750f4706,16,16,16,180.5
+u1-pick-seed4-c,u1-pick-seed4-c-001,PickCube-v1,4,independent_repeat,C-LN,sac,262144,200,pd_ee_delta_pos,262144,a251cccab47faaf65bbcc2e4f50669f7d19036ecac3e3f80ed2db69a5992df2f,16,7,6,68.3125
+u1-pick-seed4-c-continue,u1-pick-seed4-c-continue-001,PickCube-v1,4,independent_repeat,C-LN continuation,sac,524288,200,pd_ee_delta_pos,262144,35e06fc9f1c363854327f4b39ca0b2237ee5c38b8bee076e6c2add7ef0a68a7d,16,13,12,149.6875
+u1-pick-seed4-u0,u1-pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U1,il,524288,200,pd_ee_delta_pos,262144,35fadc9cc4d295e087e12e9a214af0aefd3e471d265fee15af6bb860f5f2213f,16,0,0,0.0
+u1-pick-seed4-u0,u1-pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U1,sac,524288,200,pd_ee_delta_pos,262144,35fadc9cc4d295e087e12e9a214af0aefd3e471d265fee15af6bb860f5f2213f,16,13,13,148.5625
+u1-pick-seed4-u0,u1-pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U1,il_sac_wm,524288,200,pd_ee_delta_pos,262144,35fadc9cc4d295e087e12e9a214af0aefd3e471d265fee15af6bb860f5f2213f,16,9,5,63.5625
+u1-pick-seed4-u0,u1-pick-seed4-u0-001,PickCube-v1,4,independent_repeat,U1,sac_wm,524288,200,pd_ee_delta_pos,262144,35fadc9cc4d295e087e12e9a214af0aefd3e471d265fee15af6bb860f5f2213f,16,13,13,136.3125

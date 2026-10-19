@@ -1,0 +1,13 @@
+{
+  "code_commit": "7892c38541e7e24aae9450852e10bfcd61f091a6",
+  "extractor": "scripts/diagnose_behavior.py",
+  "extractor_sha256": "e16952acfd7c883bbca3b20b674c342d66066fa1ae50cf3d55d4025a602ee575",
+  "portable_files": {
+    "act-t5-online-seed0-001/transitions.npz": {
+      "bytes": 4224261,
+      "sha256": "fcea01eee3bc42210e158c13ffb82220f90ed3d494bacb6ec93c2be1ca4c72e6"
+    }
+  },
+  "new_environment_interactions": 0,
+  "GPU_use": false
+}

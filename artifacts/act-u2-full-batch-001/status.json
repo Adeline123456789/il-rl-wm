@@ -1,0 +1,13 @@
+{
+  "pid": 2935565,
+  "phase": "completed",
+  "completed": [
+    "act-u2-retention-seed0-001"
+  ],
+  "current": null,
+  "started_at": 1792384677.941522,
+  "plan_sha256": "f13816ca9b6eed574b931b8b23984cbf1842243b64476c0ecfe01fcab5a76114",
+  "new_budget_granted": false,
+  "exit_code": 0,
+  "ended_at": 1792388413.3235369
+}

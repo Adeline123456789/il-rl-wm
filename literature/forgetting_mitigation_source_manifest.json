@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/BartekCupial/finetuning-RL-as-CL",
+  "commit": "390d2041a2829a9ca609594d11e5567e0f1368d2",
+  "paper": "https://arxiv.org/html/2402.02868v3",
+  "license": "MIT; Copyright (c) 2019-2024 Aleksei Petrenko",
+  "role": "read-only NetHack reference; not RoboticSequence SAC reproduction",
+  "copied_into_training": false,
+  "dependencies_installed": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "local": ".cache/references/forgetting_mitigation/LICENSE",
+      "git_blob": "aaa4dbc3be1c294e199c5c1a5db4d19897c475b3",
+      "sha256": "988218f5d46d9f513a242ea1434684200e8212b3672964d6f04282ac818f56e1",
+      "bytes": 1078
+    },
+    {
+      "path": "sf_examples/nethack/algo/learning/learner.py",
+      "local": ".cache/references/forgetting_mitigation/sf_examples__nethack__algo__learning__learner.py",
+      "git_blob": "11763bcc6ad59e916fab80e4736bb9f9cb8655a1",
+      "sha256": "8359222536c0b4c2d6581242dfad59edd6605870131c13c47e1c2fb28bc9fa7b",
+      "bytes": 34222
+    },
+    {
+      "path": "sf_examples/nethack/models/kickstarter.py",
+      "local": ".cache/references/forgetting_mitigation/sf_examples__nethack__models__kickstarter.py",
+      "git_blob": "a64e5aa2510ebc276549c3d92e130c92750534da",
+      "sha256": "2618582f2d33b57b7c56b493bec5c81825506c7106e7a990cad67612dd694c0d",
+      "bytes": 6132
+    }
+  ]
+}

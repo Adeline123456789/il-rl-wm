@@ -1,0 +1,20 @@
+{
+  "path": "releases/final-stack-seed0-u0-001/weights.pt",
+  "bytes": 4524143,
+  "sha256": "c17914cb0ba8b83c61f5be30a76fcf8532a255ba2b3f537cded6e2078c5c7c90",
+  "source": {
+    "path": "checkpoints/stack-seed0-u0-001/final.pt",
+    "sha256": "fd4a0031b8422a6b9e2dab73b9a0d66396a611b06ed2707422538eba1e43c937"
+  },
+  "env_id": "StackCube-v1",
+  "training_seed": 0,
+  "lineage_training_interactions": 524288,
+  "purpose": "Frozen diagnosis and independent evaluation. Use separate deployment package for IL-free planning.",
+  "includes_frozen_il": true,
+  "omitted": [
+    "optimizers",
+    "replay",
+    "RNG"
+  ],
+  "training_resume_supported": false
+}

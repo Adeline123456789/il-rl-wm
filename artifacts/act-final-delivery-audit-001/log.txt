@@ -1,0 +1,33 @@
+{
+  "terminal_batch": true,
+  "running_gpu_manifests": [],
+  "completed_conditions": 104,
+  "registered_conditions": 106,
+  "condition_statuses": {
+    "completed": 104,
+    "failed": 1,
+    "not_started": 1
+  },
+  "missing_conditions": [
+    "act-u2-final-mean:act_mean",
+    "act-u2-final-stochastic:act_stochastic"
+  ],
+  "final_plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "summary_recomputed_from_raw_episodes": true,
+  "gate_before_test_verified": true,
+  "all_gpu_manifest_count": 214,
+  "all_gpu_job_seconds": 85131.54638952191,
+  "ledger_equal": true,
+  "gpu_limit_seconds": 86400,
+  "local_hypotheses_used": 2,
+  "final_batch_wall_seconds": 7200.778426306031,
+  "original_final_limit_seconds": 7200,
+  "manifest_interval_overlaps": [],
+  "audit_findings": [
+    "Final batch wall time includes 0.7784263060311787 seconds beyond cap; report shutdown/cleanup overhead explicitly"
+  ],
+  "new_environment_interactions": 0,
+  "new_training_updates": 0,
+  "completion_scope": "Provenance/accounting only. Missing final conditions, ACT-WM, independent ACT seeds/tasks, and unresolved scientific claims remain incomplete; this audit does not declare research goal achieved."
+}
+{'pid': 3048031, 'phase': 'completed', 'exit_code': 0, 'depends_on': 'artifacts/act-final-evaluation-launch-003/status.json', 'upstream_exit_code': 1, 'elapsed_seconds': 4922.908878564835}

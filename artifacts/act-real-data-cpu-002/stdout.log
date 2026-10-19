@@ -1,0 +1,1 @@
+{"step": 10, "offline": {"first_action_mse": 0.26907569380589524, "prior_chunk_l1": 0.3559329788372333, "raw_output_clip_fraction": 0.0, "first_mse": 14957.379667282104, "chunk_l1": 151109.21056747437, "clipped_values": 0, "first_values": 55588, "valid_values": 424544}, "closed_loop": null}

@@ -1,0 +1,13 @@
+{
+  "pid": 2981751,
+  "prerequisite": "artifacts/queue-act-u2-postprocess-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-u2-comparison-audit-001/audit.py"
+  ],
+  "started_at": "2026-10-19T05:29:56.908750+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 2995277,
+  "ended_at": "2026-10-19T05:40:22.568668+00:00"
+}

@@ -1,0 +1,1295 @@
+{
+  "results": [
+    {
+      "method": "T5",
+      "step": 0,
+      "checkpoint": {
+        "path": "releases/act-c1-init-001/weights.pt",
+        "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.990234375
+      ],
+      "raw_abs_max": [
+        0.13974937796592712,
+        0.2688983082771301,
+        0.38278165459632874,
+        1.0187382698059082
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.990234375
+      ],
+      "nonclipped_action_derivative_max_error": 2.849102020263672e-05,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 3.833564519882202,
+          "transformer": 0.5628074407577515,
+          "input_proj_robot_state": 0.3977316915988922,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4508144855499268,
+          "transformer": 3.9002525806427,
+          "input_proj_robot_state": 2.389899253845215,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.373410940170288,
+          "transformer": 0.6410208940505981,
+          "input_proj_robot_state": 0.5236483216285706,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.391417980194092,
+          "transformer": 0.6520822048187256,
+          "input_proj_robot_state": 0.44762611389160156,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.418231964111328,
+          "transformer": 0.674839198589325,
+          "input_proj_robot_state": 0.5219682455062866,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.533632755279541,
+          "transformer": 0.5726133584976196,
+          "input_proj_robot_state": 0.5062843561172485,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.481736183166504,
+          "transformer": 0.5197427272796631,
+          "input_proj_robot_state": 0.42573410272598267,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.5367014408111572,
+          "transformer": 0.5296443104743958,
+          "input_proj_robot_state": 0.4165635108947754,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4933359622955322,
+          "transformer": 0.739831268787384,
+          "input_proj_robot_state": 0.4666045308113098,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3958704471588135,
+          "transformer": 0.636323869228363,
+          "input_proj_robot_state": 0.49901318550109863,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4442265033721924,
+          "transformer": 0.6690558791160583,
+          "input_proj_robot_state": 0.48265036940574646,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3630218505859375,
+          "transformer": 0.7009861469268799,
+          "input_proj_robot_state": 0.5137965679168701,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3885343074798584,
+          "transformer": 1.1348432302474976,
+          "input_proj_robot_state": 0.8356035351753235,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.368980884552002,
+          "transformer": 0.7014642953872681,
+          "input_proj_robot_state": 0.4868793189525604,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.919285297393799,
+          "transformer": 0.8341585397720337,
+          "input_proj_robot_state": 0.40645548701286316,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.46952486038208,
+          "transformer": 0.5984074473381042,
+          "input_proj_robot_state": 0.5141668915748596,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "T5",
+      "step": 16384,
+      "checkpoint": {
+        "step": 16384,
+        "final": false,
+        "path": "checkpoints/act-t5-online-seed0-001/step_16384.pt",
+        "bytes": 22403071,
+        "sha256": "68590e5739d4308d0919981492cdcb015fbd777edfa2d09d24780e6035a6727e"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        0.019669830799102783,
+        0.02400854229927063,
+        0.02618234232068062,
+        0.022158488631248474
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 1.1920928955078125e-07,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 5.681189060211182,
+          "transformer": 1.1998454332351685,
+          "input_proj_robot_state": 0.037653859704732895,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680976867675781,
+          "transformer": 1.1981076002120972,
+          "input_proj_robot_state": 0.04081050679087639,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680653095245361,
+          "transformer": 1.196396827697754,
+          "input_proj_robot_state": 0.037806060165166855,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680247783660889,
+          "transformer": 1.2000164985656738,
+          "input_proj_robot_state": 0.03886420652270317,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.68052864074707,
+          "transformer": 1.199652075767517,
+          "input_proj_robot_state": 0.03593715280294418,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.68095588684082,
+          "transformer": 1.19816255569458,
+          "input_proj_robot_state": 0.039100684225559235,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.681039333343506,
+          "transformer": 1.1962525844573975,
+          "input_proj_robot_state": 0.03551051765680313,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680909156799316,
+          "transformer": 1.1934417486190796,
+          "input_proj_robot_state": 0.03662959858775139,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680788040161133,
+          "transformer": 1.1960211992263794,
+          "input_proj_robot_state": 0.035949282348155975,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680789470672607,
+          "transformer": 1.1985012292861938,
+          "input_proj_robot_state": 0.03349378705024719,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680446624755859,
+          "transformer": 1.2023001909255981,
+          "input_proj_robot_state": 0.03278432413935661,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680432319641113,
+          "transformer": 1.201162576675415,
+          "input_proj_robot_state": 0.03477860987186432,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680583477020264,
+          "transformer": 1.1970374584197998,
+          "input_proj_robot_state": 0.03776190057396889,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680487155914307,
+          "transformer": 1.1964728832244873,
+          "input_proj_robot_state": 0.03579054772853851,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.68100118637085,
+          "transformer": 1.1921007633209229,
+          "input_proj_robot_state": 0.0368075966835022,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.680887222290039,
+          "transformer": 1.197657823562622,
+          "input_proj_robot_state": 0.03897706791758537,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "T5",
+      "step": 65536,
+      "checkpoint": {
+        "step": 65536,
+        "final": false,
+        "path": "checkpoints/act-t5-online-seed0-001/step_65536.pt",
+        "bytes": 41326655,
+        "sha256": "dd079ca6ba18fe4f62f1a3ff97cbcaebc94edcddaa29c7b3043373ba824f6719"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        0.00912121869623661,
+        0.003911163657903671,
+        0.01472504623234272,
+        0.031279854476451874
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 0.0,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 5.691813945770264,
+          "transformer": 0.4327763020992279,
+          "input_proj_robot_state": 0.00638204999268055,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691918849945068,
+          "transformer": 0.4328267574310303,
+          "input_proj_robot_state": 0.006368661765009165,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691855430603027,
+          "transformer": 0.4325607419013977,
+          "input_proj_robot_state": 0.006380415987223387,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691775321960449,
+          "transformer": 0.43259796500205994,
+          "input_proj_robot_state": 0.006555717904120684,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691843509674072,
+          "transformer": 0.43279990553855896,
+          "input_proj_robot_state": 0.005783062893897295,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.6919050216674805,
+          "transformer": 0.43304750323295593,
+          "input_proj_robot_state": 0.005815393291413784,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691781044006348,
+          "transformer": 0.43239110708236694,
+          "input_proj_robot_state": 0.006576698273420334,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691872596740723,
+          "transformer": 0.4325995445251465,
+          "input_proj_robot_state": 0.0062857880257070065,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691873073577881,
+          "transformer": 0.43264275789260864,
+          "input_proj_robot_state": 0.006104530766606331,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691800117492676,
+          "transformer": 0.4326494038105011,
+          "input_proj_robot_state": 0.005603746511042118,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.69185733795166,
+          "transformer": 0.432944655418396,
+          "input_proj_robot_state": 0.005373090971261263,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.69187593460083,
+          "transformer": 0.4326877295970917,
+          "input_proj_robot_state": 0.005737858358770609,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691884994506836,
+          "transformer": 0.4326728880405426,
+          "input_proj_robot_state": 0.006060496903955936,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691828727722168,
+          "transformer": 0.43256309628486633,
+          "input_proj_robot_state": 0.006359536200761795,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691908359527588,
+          "transformer": 0.4326246678829193,
+          "input_proj_robot_state": 0.0063486117869615555,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.691879749298096,
+          "transformer": 0.43254461884498596,
+          "input_proj_robot_state": 0.0065838987939059734,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "T5",
+      "step": 131072,
+      "checkpoint": {
+        "step": 131072,
+        "final": false,
+        "path": "checkpoints/act-t5-online-seed0-001/step_131072.pt",
+        "bytes": 66558468,
+        "sha256": "abf27644f936ce49b8e27c41ac01a01ce5407dfa201b2742256dbb748110e3d4"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        0.4601708650588989,
+        0.193006694316864,
+        0.49169090390205383,
+        0.16036227345466614
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 1.1920928955078125e-07,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 5.442214488983154,
+          "transformer": 0.901935875415802,
+          "input_proj_robot_state": 1.518471360206604,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.455989360809326,
+          "transformer": 0.7255940437316895,
+          "input_proj_robot_state": 0.8768880367279053,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.445534706115723,
+          "transformer": 0.6812512874603271,
+          "input_proj_robot_state": 0.9532763361930847,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.443656921386719,
+          "transformer": 0.721061646938324,
+          "input_proj_robot_state": 1.0984768867492676,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.459686756134033,
+          "transformer": 0.7385008931159973,
+          "input_proj_robot_state": 1.0965402126312256,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.459506511688232,
+          "transformer": 0.7741289734840393,
+          "input_proj_robot_state": 1.1612266302108765,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.44796895980835,
+          "transformer": 0.6853635907173157,
+          "input_proj_robot_state": 1.0211910009384155,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.454982757568359,
+          "transformer": 0.6848166584968567,
+          "input_proj_robot_state": 0.8584092259407043,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.446438789367676,
+          "transformer": 0.7471362948417664,
+          "input_proj_robot_state": 0.9160518646240234,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.459587574005127,
+          "transformer": 0.7181486487388611,
+          "input_proj_robot_state": 1.000737190246582,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.4464430809021,
+          "transformer": 0.6685769557952881,
+          "input_proj_robot_state": 0.9909353256225586,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.4569501876831055,
+          "transformer": 0.7638811469078064,
+          "input_proj_robot_state": 0.8992090225219727,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.460727214813232,
+          "transformer": 0.7269874811172485,
+          "input_proj_robot_state": 1.0419907569885254,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.452007293701172,
+          "transformer": 0.7216106653213501,
+          "input_proj_robot_state": 0.9543117880821228,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.446349620819092,
+          "transformer": 0.6972610950469971,
+          "input_proj_robot_state": 0.8932961821556091,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.446523666381836,
+          "transformer": 0.6852525472640991,
+          "input_proj_robot_state": 0.9321701526641846,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "T5",
+      "step": 262144,
+      "checkpoint": {
+        "step": 262144,
+        "final": true,
+        "path": "checkpoints/act-t5-online-seed0-001/final.pt",
+        "bytes": 116997478,
+        "sha256": "8bde443ac5a9a632e210ffbf07f68ef848ad44917c951f5d7f40e6c23c86edba"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0986328125,
+        0.06640625,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        1.0780901908874512,
+        1.055562138557434,
+        0.9582847356796265,
+        0.8631758689880371
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0986328125,
+        0.06640625,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 4.589557647705078e-05,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 4.056450843811035,
+          "transformer": 1.8904399871826172,
+          "input_proj_robot_state": 2.1167423725128174,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3145413398742676,
+          "transformer": 1.11838698387146,
+          "input_proj_robot_state": 1.2488237619400024,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.273201942443848,
+          "transformer": 2.1777570247650146,
+          "input_proj_robot_state": 1.9638564586639404,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.308742046356201,
+          "transformer": 2.9709360599517822,
+          "input_proj_robot_state": 3.7440004348754883,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.47858190536499,
+          "transformer": 1.3320493698120117,
+          "input_proj_robot_state": 1.3113956451416016,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.4860711097717285,
+          "transformer": 1.116664171218872,
+          "input_proj_robot_state": 0.8979138731956482,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.013650417327881,
+          "transformer": 2.060389280319214,
+          "input_proj_robot_state": 2.243739366531372,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.276368141174316,
+          "transformer": 2.3715882301330566,
+          "input_proj_robot_state": 2.6454174518585205,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.909193754196167,
+          "transformer": 1.662268042564392,
+          "input_proj_robot_state": 1.7935928106307983,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.9508438110351562,
+          "transformer": 2.1481895446777344,
+          "input_proj_robot_state": 2.3936526775360107,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.902474880218506,
+          "transformer": 1.5783214569091797,
+          "input_proj_robot_state": 1.6396472454071045,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.113048553466797,
+          "transformer": 1.6767827272415161,
+          "input_proj_robot_state": 1.4103434085845947,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.400365352630615,
+          "transformer": 1.2374026775360107,
+          "input_proj_robot_state": 1.268776774406433,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.155590057373047,
+          "transformer": 2.8144710063934326,
+          "input_proj_robot_state": 3.8197829723358154,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.123073101043701,
+          "transformer": 2.071481227874756,
+          "input_proj_robot_state": 1.9744257926940918,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.8287529945373535,
+          "transformer": 1.7416847944259644,
+          "input_proj_robot_state": 1.951705813407898,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "U2",
+      "step": 0,
+      "checkpoint": {
+        "path": "releases/act-c1-init-001/weights.pt",
+        "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.990234375
+      ],
+      "raw_abs_max": [
+        0.13974937796592712,
+        0.2688983082771301,
+        0.38278165459632874,
+        1.0187382698059082
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.990234375
+      ],
+      "nonclipped_action_derivative_max_error": 2.849102020263672e-05,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 3.833564519882202,
+          "transformer": 0.5628074407577515,
+          "input_proj_robot_state": 0.3977316915988922,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4508144855499268,
+          "transformer": 3.9002525806427,
+          "input_proj_robot_state": 2.389899253845215,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.373410940170288,
+          "transformer": 0.6410208940505981,
+          "input_proj_robot_state": 0.5236483216285706,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.391417980194092,
+          "transformer": 0.6520822048187256,
+          "input_proj_robot_state": 0.44762611389160156,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.418231964111328,
+          "transformer": 0.674839198589325,
+          "input_proj_robot_state": 0.5219682455062866,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.533632755279541,
+          "transformer": 0.5726133584976196,
+          "input_proj_robot_state": 0.5062843561172485,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.481736183166504,
+          "transformer": 0.5197427272796631,
+          "input_proj_robot_state": 0.42573410272598267,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.5367014408111572,
+          "transformer": 0.5296443104743958,
+          "input_proj_robot_state": 0.4165635108947754,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4933359622955322,
+          "transformer": 0.739831268787384,
+          "input_proj_robot_state": 0.4666045308113098,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3958704471588135,
+          "transformer": 0.636323869228363,
+          "input_proj_robot_state": 0.49901318550109863,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.4442265033721924,
+          "transformer": 0.6690558791160583,
+          "input_proj_robot_state": 0.48265036940574646,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3630218505859375,
+          "transformer": 0.7009861469268799,
+          "input_proj_robot_state": 0.5137965679168701,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.3885343074798584,
+          "transformer": 1.1348432302474976,
+          "input_proj_robot_state": 0.8356035351753235,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.368980884552002,
+          "transformer": 0.7014642953872681,
+          "input_proj_robot_state": 0.4868793189525604,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.919285297393799,
+          "transformer": 0.8341585397720337,
+          "input_proj_robot_state": 0.40645548701286316,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.46952486038208,
+          "transformer": 0.5984074473381042,
+          "input_proj_robot_state": 0.5141668915748596,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "U2",
+      "step": 16384,
+      "checkpoint": {
+        "step": 16384,
+        "final": false,
+        "path": "checkpoints/act-u2-retention-seed0-001/step_16384.pt",
+        "bytes": 22403135,
+        "sha256": "29ea07b2dfd82202f4af61ce1fcda496224c7d0d0aea5877e278c6f6bda7eeb3"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.8720703125
+      ],
+      "raw_abs_max": [
+        0.13971222937107086,
+        0.26519232988357544,
+        0.3646709620952606,
+        1.2548983097076416
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.8720703125
+      ],
+      "nonclipped_action_derivative_max_error": 7.545948028564453e-05,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 3.651226758956909,
+          "transformer": 0.7180460691452026,
+          "input_proj_robot_state": 0.4571225345134735,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.151751756668091,
+          "transformer": 0.8429501056671143,
+          "input_proj_robot_state": 0.6497145891189575,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 2.9909796714782715,
+          "transformer": 0.7839505672454834,
+          "input_proj_robot_state": 0.5035611391067505,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.0355608463287354,
+          "transformer": 0.867038369178772,
+          "input_proj_robot_state": 0.707076907157898,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 2.982612371444702,
+          "transformer": 0.8338079452514648,
+          "input_proj_robot_state": 0.4912540316581726,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.17659592628479,
+          "transformer": 0.6658679842948914,
+          "input_proj_robot_state": 0.4905358850955963,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.2272987365722656,
+          "transformer": 0.6668441891670227,
+          "input_proj_robot_state": 0.49985194206237793,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.2256250381469727,
+          "transformer": 0.6686853766441345,
+          "input_proj_robot_state": 0.46144846081733704,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.1382243633270264,
+          "transformer": 0.8091015219688416,
+          "input_proj_robot_state": 0.4966970980167389,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.0113940238952637,
+          "transformer": 0.7883540987968445,
+          "input_proj_robot_state": 0.45274990797042847,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.1531965732574463,
+          "transformer": 0.8611396551132202,
+          "input_proj_robot_state": 0.4460849463939667,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.026620626449585,
+          "transformer": 0.8374025821685791,
+          "input_proj_robot_state": 0.4588560163974762,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 2.9983084201812744,
+          "transformer": 0.7750470638275146,
+          "input_proj_robot_state": 0.47179821133613586,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.017209529876709,
+          "transformer": 0.8820511102676392,
+          "input_proj_robot_state": 0.49100732803344727,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.7781424522399902,
+          "transformer": 0.7184059023857117,
+          "input_proj_robot_state": 0.5050095915794373,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.1704633235931396,
+          "transformer": 0.7028283476829529,
+          "input_proj_robot_state": 0.5164636373519897,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "U2",
+      "step": 65536,
+      "checkpoint": {
+        "step": 65536,
+        "final": false,
+        "path": "checkpoints/act-u2-retention-seed0-001/step_65536.pt",
+        "bytes": 41326719,
+        "sha256": "3658cece05018156d11fa4818c6a81cc9c283a6154e3f6ee03e83c816bfec026"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.7919921875
+      ],
+      "raw_abs_max": [
+        0.15212708711624146,
+        0.23852689564228058,
+        0.3669045567512512,
+        1.251559853553772
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.7919921875
+      ],
+      "nonclipped_action_derivative_max_error": 3.814697265625e-06,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 3.8094263076782227,
+          "transformer": 1.2595117092132568,
+          "input_proj_robot_state": 1.1638826131820679,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.176593542098999,
+          "transformer": 1.1457282304763794,
+          "input_proj_robot_state": 1.0402334928512573,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.0009257793426514,
+          "transformer": 1.1253604888916016,
+          "input_proj_robot_state": 0.8127352595329285,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.19258189201355,
+          "transformer": 1.240397334098816,
+          "input_proj_robot_state": 0.6011202931404114,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.03752064704895,
+          "transformer": 1.1865216493606567,
+          "input_proj_robot_state": 0.4546054005622864,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.224841594696045,
+          "transformer": 1.0705654621124268,
+          "input_proj_robot_state": 0.7247216105461121,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.130420207977295,
+          "transformer": 1.0359454154968262,
+          "input_proj_robot_state": 0.7274611592292786,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.1717584133148193,
+          "transformer": 1.023614525794983,
+          "input_proj_robot_state": 0.6123621463775635,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.229246139526367,
+          "transformer": 1.19720458984375,
+          "input_proj_robot_state": 0.8330050706863403,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.0517921447753906,
+          "transformer": 1.1502472162246704,
+          "input_proj_robot_state": 0.5979953408241272,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.386533260345459,
+          "transformer": 1.2872692346572876,
+          "input_proj_robot_state": 0.8081467747688293,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.133413553237915,
+          "transformer": 1.184985876083374,
+          "input_proj_robot_state": 0.7586632370948792,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 2.9788546562194824,
+          "transformer": 1.0966049432754517,
+          "input_proj_robot_state": 0.7580742835998535,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.123439073562622,
+          "transformer": 1.216926097869873,
+          "input_proj_robot_state": 0.6114267706871033,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.707386016845703,
+          "transformer": 0.9851966500282288,
+          "input_proj_robot_state": 1.1490862369537354,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.2549548149108887,
+          "transformer": 1.2360020875930786,
+          "input_proj_robot_state": 1.086458683013916,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "U2",
+      "step": 131072,
+      "checkpoint": {
+        "step": 131072,
+        "final": false,
+        "path": "checkpoints/act-u2-retention-seed0-001/step_131072.pt",
+        "bytes": 66558532,
+        "sha256": "022b5dfb6e0d71f6aa39a38a7060e33beaac19b48a87d0030cbd2b74b7d55821"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        0.5918014049530029,
+        0.638073205947876,
+        0.8071413636207581,
+        0.9594851732254028
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 1.7881393432617188e-07,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 5.08140754699707,
+          "transformer": 0.9982246160507202,
+          "input_proj_robot_state": 1.8980927467346191,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.146629333496094,
+          "transformer": 1.1313236951828003,
+          "input_proj_robot_state": 1.8793082237243652,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.193411350250244,
+          "transformer": 0.7438501119613647,
+          "input_proj_robot_state": 1.1506080627441406,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.0948052406311035,
+          "transformer": 2.0075910091400146,
+          "input_proj_robot_state": 3.652395009994507,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.113842487335205,
+          "transformer": 1.064658284187317,
+          "input_proj_robot_state": 2.057319164276123,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.239071369171143,
+          "transformer": 0.8410213589668274,
+          "input_proj_robot_state": 1.4268101453781128,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.206055164337158,
+          "transformer": 0.7971784472465515,
+          "input_proj_robot_state": 1.2979342937469482,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.1100077629089355,
+          "transformer": 1.3697963953018188,
+          "input_proj_robot_state": 2.691434144973755,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.035365104675293,
+          "transformer": 1.624526023864746,
+          "input_proj_robot_state": 3.2536120414733887,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.77653169631958,
+          "transformer": 0.7535023093223572,
+          "input_proj_robot_state": 1.2665680646896362,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.078455924987793,
+          "transformer": 1.0933109521865845,
+          "input_proj_robot_state": 2.134160280227661,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.89967155456543,
+          "transformer": 2.147213935852051,
+          "input_proj_robot_state": 3.758469343185425,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.183035850524902,
+          "transformer": 0.8842015862464905,
+          "input_proj_robot_state": 1.412756323814392,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.067137241363525,
+          "transformer": 1.315868616104126,
+          "input_proj_robot_state": 2.431856155395508,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.192884922027588,
+          "transformer": 0.7723895311355591,
+          "input_proj_robot_state": 1.3404805660247803,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 5.141080379486084,
+          "transformer": 1.2904536724090576,
+          "input_proj_robot_state": 2.480802059173584,
+          "fc_logstd": 0.0
+        }
+      ]
+    },
+    {
+      "method": "U2",
+      "step": 262144,
+      "checkpoint": {
+        "step": 262144,
+        "final": true,
+        "path": "checkpoints/act-u2-retention-seed0-001/final.pt",
+        "bytes": 116997542,
+        "sha256": "f5a0fadba37efa79c2cda6bbc7923152d068095a6b0317ed032fff5329871cae"
+      },
+      "model_unchanged": true,
+      "clipped_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_abs_max": [
+        0.9357962608337402,
+        0.8793286085128784,
+        0.8617627024650574,
+        0.7013033628463745
+      ],
+      "zero_action_derivative_fraction_per_dim": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nonclipped_action_derivative_max_error": 2.384185791015625e-07,
+      "batch_mean_action_parameter_gradient_norms": [
+        {
+          "action_head": 4.143505573272705,
+          "transformer": 0.9204320311546326,
+          "input_proj_robot_state": 0.9796485304832458,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.7321319580078125,
+          "transformer": 1.1441255807876587,
+          "input_proj_robot_state": 1.782486915588379,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.720454216003418,
+          "transformer": 1.5889004468917847,
+          "input_proj_robot_state": 3.4692392349243164,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.106213569641113,
+          "transformer": 1.575790524482727,
+          "input_proj_robot_state": 2.933699607849121,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.7021842002868652,
+          "transformer": 1.097657322883606,
+          "input_proj_robot_state": 1.7963415384292603,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.874155044555664,
+          "transformer": 1.2537097930908203,
+          "input_proj_robot_state": 1.6573154926300049,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.713606834411621,
+          "transformer": 1.4672871828079224,
+          "input_proj_robot_state": 2.801568031311035,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.7439820766448975,
+          "transformer": 1.6966326236724854,
+          "input_proj_robot_state": 3.418879508972168,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.966825008392334,
+          "transformer": 1.2464261054992676,
+          "input_proj_robot_state": 2.3189871311187744,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.8600525856018066,
+          "transformer": 1.0836633443832397,
+          "input_proj_robot_state": 1.746309757232666,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.7444345951080322,
+          "transformer": 1.405299425125122,
+          "input_proj_robot_state": 2.816819190979004,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.9217023849487305,
+          "transformer": 1.828635811805725,
+          "input_proj_robot_state": 3.4686930179595947,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.719031572341919,
+          "transformer": 1.2926630973815918,
+          "input_proj_robot_state": 2.0956907272338867,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.5425586700439453,
+          "transformer": 1.0112853050231934,
+          "input_proj_robot_state": 1.7373340129852295,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 4.120001316070557,
+          "transformer": 1.092013955116272,
+          "input_proj_robot_state": 1.2882232666015625,
+          "fc_logstd": 0.0
+        },
+        {
+          "action_head": 3.415712833404541,
+          "transformer": 0.658505916595459,
+          "input_proj_robot_state": 0.8640913367271423,
+          "fc_logstd": 0.0
+        }
+      ]
+    }
+  ],
+  "fixed_real_training_states": 1024,
+  "dataset_sha256": "c7c3dead37db29195a774ac25b575837b5544e4200f941dad25f9e71bee964a4",
+  "new_environment_interactions": 0,
+  "gpu_used": false,
+  "optimizer_steps": 0,
+  "final_test_states_used": false,
+  "interpretation": "Derivatives through actual forward/get_action. Strictly clipped outputs block the action-mean path, including sampled-action and log-prob mean paths. Other action dimensions and shared log_std features can still update the backbone. Sum/mean VJPs are local sensitivity probes, not a SAC-loss causal attribution. Probe uses first 1024 train states and is not representative of all online states."
+}

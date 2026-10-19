@@ -1,0 +1,13 @@
+{
+  "pid": 2936685,
+  "prerequisite": "artifacts/act-u2-full-batch-001/status.json",
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-u2-postprocess-launch-001/run.py"
+  ],
+  "started_at": "2026-10-19T04:39:07.185911+00:00",
+  "phase": "completed",
+  "exit_code": 0,
+  "child_pid": 2995095,
+  "ended_at": "2026-10-19T05:40:20.669197+00:00"
+}

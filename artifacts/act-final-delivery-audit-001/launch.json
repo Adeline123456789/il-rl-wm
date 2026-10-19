@@ -1,0 +1,9 @@
+{
+  "pid": 3048031,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-final-delivery-audit-001/run.py"
+  ],
+  "audit_script_sha256": "6f24154f32b424175e7558ab9ceca8dd09c86f4d9084deb860449f4ab5b93970",
+  "gpu_started": false
+}

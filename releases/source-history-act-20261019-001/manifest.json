@@ -1,0 +1,241 @@
+{
+  "source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "base_source_head": "8ec9714acb3dff8a0badc48f7d26df254bb2de38",
+  "base_manifest": "releases/source-history-20261016-001/manifest.json",
+  "base_bundle_sha256": "598aa89218f5514562559fdfe00761e56ebacef9f6fdd3fe92bbe940b9f7f28c",
+  "bundle_bytes": 148878288,
+  "bundle_sha256": "f020cf8cbb2912c1d49a48e9f7fb9946083ac0a21280af75f031492f7a2071ca",
+  "parts": [
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part000",
+      "bytes": 4194304,
+      "sha256": "91d4d9363d696d96c03c9b3ac7755e9e2405dafee29a0199e95ce43ec3cd1d0d"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part001",
+      "bytes": 4194304,
+      "sha256": "05de73a3d7f9d61c410922431bdcb80ce1b3a30d3d5d3ed046d04cd787215842"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part002",
+      "bytes": 4194304,
+      "sha256": "59e5f88049e7e330c28834975b480fd89a67ae6a7a68e0164372423f7a090d0d"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part003",
+      "bytes": 4194304,
+      "sha256": "50b47f8e95c30263b21a2836f6dcb97e13c1d4969f9d82fe4d0c8fab00ac65ee"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part004",
+      "bytes": 4194304,
+      "sha256": "c850421e068c4e6a3a523a72de46a84d9f9122ca2212f4b5dcc041e669d4b071"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part005",
+      "bytes": 4194304,
+      "sha256": "6e21aab2b3f3d9dc1481a98802afc01af4ad941c271e54781479d6ae937d6c79"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part006",
+      "bytes": 4194304,
+      "sha256": "4423e6a8c9aad31008645283161a68bf58219fd36d6b99c301f4f34f4040d4b8"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part007",
+      "bytes": 4194304,
+      "sha256": "72ba0aa019a81a95cce1f609a66ef7fe75cbe6278a0ac559ae4edf69cffc3aa4"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part008",
+      "bytes": 4194304,
+      "sha256": "fc1dbe94ab240f1151bf1b13b1c9dd3a034e8a9d0206bef650c7496d22032198"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part009",
+      "bytes": 4194304,
+      "sha256": "3ca801a3deea98157de009585116d6241c778ff35dcb70f763fd3bdc32f01dd7"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part010",
+      "bytes": 4194304,
+      "sha256": "20f59e72a5213a0d02eb35cef97dae0cdc74b24debf8bf2f85abe075c03c887d"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part011",
+      "bytes": 4194304,
+      "sha256": "7cfe5a473f7a254039f1baff40cf442de93972c69aafbcc7da910d615d47aa40"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part012",
+      "bytes": 4194304,
+      "sha256": "0a1c7becbd01ef110edb2dadfa962aabbf32f4968fe4580b4a2292931daea98d"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part013",
+      "bytes": 4194304,
+      "sha256": "cf54bba6f4ca36e79f5c2d39820cd51279d514d4f2c44c428e044bb88007d41e"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part014",
+      "bytes": 4194304,
+      "sha256": "2f6687b181bf275dcb5ecf3828f5c90aba36cb5ad5b3b6713cddb2e49acbacf0"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part015",
+      "bytes": 4194304,
+      "sha256": "0cc9224e1deebe059d14744a2339700a9b98438848c4b8ad73fe24beb270390f"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part016",
+      "bytes": 4194304,
+      "sha256": "bf048d15586b373a76e4423579cc2fc5c33996a8f5303d733899ca624a410e20"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part017",
+      "bytes": 4194304,
+      "sha256": "64ce368315f074afb8172cda951de309b4b74c7e649b4f06a0cccf8cea4f9160"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part018",
+      "bytes": 4194304,
+      "sha256": "528ca0e5915930ddac685914c41d49bf643d4c8f23ac17462cc5cf55122d8f39"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part019",
+      "bytes": 4194304,
+      "sha256": "be6c124b5902e8893f2c53b236b083e0035d539b7eb0c0517b2efa2e2286486a"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part020",
+      "bytes": 4194304,
+      "sha256": "573f355ccc600549f541d84bd30f30fed754772ddc36036fa2fec82155f60494"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part021",
+      "bytes": 4194304,
+      "sha256": "4fe7ff1a4aa41a87e68569967a5fe2a5c39a46003947c25493f250603276fd16"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part022",
+      "bytes": 4194304,
+      "sha256": "541d0aedd1db972d248e0e78c82d3a8f2fc9edb5c5b07e1df93a27cb65dde182"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part023",
+      "bytes": 4194304,
+      "sha256": "b631a62807aac91c80655836e87d30cccda272771d390b0f014ca5fe62cb43c3"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part024",
+      "bytes": 4194304,
+      "sha256": "cf780e46a62a183b1d12b931f5b724feae036ed9dacc6c66cee9634d5039cf7a"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part025",
+      "bytes": 4194304,
+      "sha256": "193c47442bd326ce3da61d54aed1d65a92934f241d98cbf1bc0bfed21b1e486f"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part026",
+      "bytes": 4194304,
+      "sha256": "41171563db031561c8c9ad2116c6861339f67a3e335df94446e28a9aa419f72a"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part027",
+      "bytes": 4194304,
+      "sha256": "48bd42075ca57afbc373183a66747dea9dcdda090997841fb65dca83478c01df"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part028",
+      "bytes": 4194304,
+      "sha256": "c4f18092105f62b716222ecf73fd49b0fc111ecec25ccc05091a37c0408f4054"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part029",
+      "bytes": 4194304,
+      "sha256": "1dd506dee20768eb9eef92f5717a5bdd67599c9bdd63656b0dce254016bf425d"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part030",
+      "bytes": 4194304,
+      "sha256": "74a480ede37d7a7ca5761f0875128afc69a3826b86a709e874751ee1782fe548"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part031",
+      "bytes": 4194304,
+      "sha256": "c7350910417e297124b2231d9756b9ace870905b6d4d91b9583a69c88bed9d3c"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part032",
+      "bytes": 4194304,
+      "sha256": "4a4bf63f27608dd0fd70fd3e66a3d1742a67a880d10e3ce4a834bee995c58edb"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part033",
+      "bytes": 4194304,
+      "sha256": "5d4701884e5bb8dbfe26feb26df2ed9651fc69dcd5dca0b5b04ba06b08149849"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part034",
+      "bytes": 4194304,
+      "sha256": "690c21bf5d17cff011779616a6f855b55fffdc46c746dbda52dc53c75669746c"
+    },
+    {
+      "path": "releases/source-history-act-20261019-001/source-history-increment.bundle.part035",
+      "bytes": 2077648,
+      "sha256": "610f28ad026e686a62f499b3d8da69f9992b328ae23a68495e5819c7f4e6092f"
+    }
+  ],
+  "experiment_manifest_count": 145,
+  "experiment_code_commits_verified_in_fresh_bare_repository": [
+    "0055b692a3a5477fc9ff5b6effd66a47a1c225d8",
+    "04f6162f6667b6bc28cadfb977da8e288db46a46",
+    "09d606712540920e0134a46bda539600ba3c1ca9",
+    "0e379ba50a1016467851df5e9714cff70fce5850",
+    "13d8da02c2c2c786a0679a1e92457eb19edadf6d",
+    "1b3f57f089a2301e209e3ec147288bf9b38b42e6",
+    "2378b85a218d01400ec99c6105a25ab7fcd65b6b",
+    "261b0b525cc0fe3fbbf0de853602cea3065ee376",
+    "2d89d1c3bc26347bcdc203d87f24002aa782fba9",
+    "2ec64f5dc3f9e7c699fe12e9948736f5c168cbc9",
+    "33b07a71a68967b21ce7c9fb7eac59470ddd6b81",
+    "3bb717ee9d4957e2405c39ec863f3ac114a20c3d",
+    "47599319c50930fabc73dbd76ee2da7d973fdacf",
+    "4ab1909c1157c1c0198242e17bb8fb82623e4b52",
+    "4b35ea4a132bb1f019fd62c25419c09c1e1fe911",
+    "613e527ec62f1d2d86a50443e58e52fcf6ad1e76",
+    "69d7b9e36cb367549844278c311760cdf556b9b7",
+    "6b2e2d91a7a6b45debffaa4b418a08c016c10db7",
+    "7179f764cf94db7e91fe94d7e39edcc901f98da7",
+    "779129b1b0d9c8c72f7d22f99f1d485112e29241",
+    "7892c38541e7e24aae9450852e10bfcd61f091a6",
+    "7b1987dcc943b4d5887e6b1e683f84aa9b2c95b0",
+    "865f0dd61fac39451c2c65b296b9e004d2e11ff1",
+    "8afcc83b4b27ba1c5024e1628e5603e9d9a4b057",
+    "922077e293ee74f14ec37a389caa5bd2a2725daa",
+    "94d3ab7994c7b4ca8959f406f5079b6c7a4b6bb0",
+    "97c85621c2fa7a3406bf4aafba91e8d40ca94455",
+    "9a38aadd63388177a99063a68728183e3e6e3be3",
+    "a74017d719a6536dfe7e627213b39d616232ddda",
+    "ab52d12370ee35d5a7f49e33af31077a104e6161",
+    "bf2e351ac18dc5bedddecb4a8f45e8c952328e47",
+    "c5a8791fdf2efd40b887a4c4390b6f0950158c69",
+    "c7b318b47cd8f24091564aec629779783d2b9826",
+    "cbcea4f997caa40f224542b53047f91cb38a6bee",
+    "d19e129acbb16a59ea6e98f052315d80a8786365",
+    "d699acb9cdd6e36845cbdb89df9e85b6f5e408ae",
+    "ddf0c6a546520842e316b637b4e3176994f896d8",
+    "e24be448d1b3537e47ee2fa533449bcf684aafe1",
+    "e27870bc95f8967c09cc5c1fb1838d034fed873f",
+    "e5e898db2c5fa57ce7e0dd9a3ec0c8cbb471ed38",
+    "f0dc12f4e31292b88bb4b785aef53fa8da5273e7",
+    "f3bbfea82c3946ffb5fbf77f280e171bef0ba672",
+    "f3cbe8d1884b253193e5c30ee67683da9e42eeb9",
+    "f3ec73ecf49357cbedcf0d6feeb89aefe70d3ce5",
+    "f6f399bd03bc3b6503b7ebee7a733d1f10659221"
+  ],
+  "full_offline_restore_verified": true,
+  "network_used": false,
+  "scope": "Committed local history through captured head, including the running U2 code commit. Dirty execution sources remain in individual source_snapshot.tar.gz/working-tree.patch; old unresolved plotting bytes remain explicitly missing."
+}

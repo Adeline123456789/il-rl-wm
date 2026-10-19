@@ -1,0 +1,87 @@
+[
+  {
+    "id": "act-t2-online-seed0-002",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1094.9869961909717,
+    "peak_device_mib": 4713,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 0,
+    "losses": {
+      "losses/alpha": {
+        "min": 9.482948371442035e-06,
+        "max": 0.7388117909431458,
+        "final": 1.0021742127719335e-05
+      },
+      "losses/qf1_values": {
+        "min": 0.3010726571083069,
+        "max": 55.92681121826172,
+        "final": 0.3010726571083069
+      },
+      "losses/qf2_values": {
+        "min": 0.30020055174827576,
+        "max": 55.926055908203125,
+        "final": 0.30020055174827576
+      },
+      "losses/actor_loss": {
+        "min": -56.39734649658203,
+        "max": -0.29817888140678406,
+        "final": -0.29817888140678406
+      }
+    }
+  },
+  {
+    "id": "act-t3-online-seed0-001",
+    "status": "running",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  },
+  {
+    "id": "act-t4-online-seed0-001",
+    "status": "not_started",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  },
+  {
+    "id": "act-t5-online-seed0-001",
+    "status": "not_started",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  },
+  {
+    "id": "act-t6-online-seed0-001",
+    "status": "not_started",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  }
+]

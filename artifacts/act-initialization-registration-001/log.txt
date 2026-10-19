@@ -1,0 +1,1 @@
+{"jobs": 13, "authorized": 11500, "old_gpu_seconds": 85238.75034914288, "seed": 30000}

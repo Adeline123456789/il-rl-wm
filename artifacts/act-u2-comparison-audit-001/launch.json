@@ -1,0 +1,16 @@
+{
+  "pid": 2981751,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/queue-act-u2-postprocess-001/status.json",
+    "--output",
+    "artifacts/queue-act-u2-audit-001",
+    "--max-wait-seconds",
+    "2400",
+    "--",
+    ".venv/bin/python",
+    "artifacts/act-u2-comparison-audit-001/audit.py"
+  ]
+}

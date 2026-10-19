@@ -1,0 +1,127 @@
+[
+  {
+    "id": "act-t2-online-seed0-002",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1094.9869961909717,
+    "peak_device_mib": 4713,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 0,
+    "losses": {
+      "losses/alpha": {
+        "min": 9.482948371442035e-06,
+        "max": 0.7388117909431458,
+        "final": 1.0021742127719335e-05
+      },
+      "losses/qf1_values": {
+        "min": 0.3010726571083069,
+        "max": 55.92681121826172,
+        "final": 0.3010726571083069
+      },
+      "losses/qf2_values": {
+        "min": 0.30020055174827576,
+        "max": 55.926055908203125,
+        "final": 0.30020055174827576
+      },
+      "losses/actor_loss": {
+        "min": -56.39734649658203,
+        "max": -0.29817888140678406,
+        "final": -0.29817888140678406
+      }
+    }
+  },
+  {
+    "id": "act-t3-online-seed0-001",
+    "status": "completed",
+    "initial_success": 0,
+    "final_success": 0,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": 262144,
+    "gradient_updates": 64528,
+    "gpu_job_seconds": 1105.1090763889952,
+    "peak_device_mib": 4709,
+    "actor_parameters": 144648,
+    "checkpoint_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+    "training_complete_episodes": 1296,
+    "training_success_episodes": 2,
+    "losses": {
+      "losses/alpha": {
+        "min": 7.17740931577282e-06,
+        "max": 0.7639744877815247,
+        "final": 3.9408761949744076e-05
+      },
+      "losses/qf1_values": {
+        "min": 0.3190631568431854,
+        "max": 53.60826110839844,
+        "final": 0.3190631568431854
+      },
+      "losses/qf2_values": {
+        "min": 0.3017781972885132,
+        "max": 53.60850524902344,
+        "final": 0.3017781972885132
+      },
+      "losses/actor_loss": {
+        "min": -54.09770584106445,
+        "max": -0.3055709898471832,
+        "final": -0.3055709898471832
+      }
+    }
+  },
+  {
+    "id": "act-t4-online-seed0-001",
+    "status": "running",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  },
+  {
+    "id": "act-t5-online-seed0-001",
+    "status": "not_started",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  },
+  {
+    "id": "act-t6-online-seed0-001",
+    "status": "not_started",
+    "initial_success": null,
+    "final_success": null,
+    "episodes_per_checkpoint": 40,
+    "training_interactions": null,
+    "gradient_updates": null,
+    "gpu_job_seconds": null,
+    "peak_device_mib": null,
+    "actor_parameters": null
+  }
+]
+{
+  "source": "checkpoints/act-t3-online-seed0-001/final.pt",
+  "source_sha256": "5efa081ec9d19d17a951b1772eb434a01b26eb71645e41314d266d43b8fdf39a",
+  "portable": "releases/act-t3-online-final-001/weights.pt",
+  "portable_sha256": "7c6d876e81e25b9c111e134e56ae1bc08f872e2e3b8dae15e800644b9a8c24a6",
+  "bytes": 584178,
+  "actor_kind": "mlp",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}

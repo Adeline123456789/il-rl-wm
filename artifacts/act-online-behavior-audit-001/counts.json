@@ -1,0 +1,29 @@
+[
+  {
+    "experiment": "act-t2-online-seed0-002",
+    "transitions": 262144,
+    "positive_reward_transitions": 0,
+    "grasped_observation_transitions": 4,
+    "unique_grasped_episodes": 2,
+    "episodes_seen": 1312,
+    "successful_episodes": 0
+  },
+  {
+    "experiment": "act-t3-online-seed0-001",
+    "transitions": 262144,
+    "positive_reward_transitions": 5,
+    "grasped_observation_transitions": 5,
+    "unique_grasped_episodes": 4,
+    "episodes_seen": 1312,
+    "successful_episodes": 2
+  },
+  {
+    "experiment": "act-t4-online-seed0-001",
+    "transitions": 262144,
+    "positive_reward_transitions": 0,
+    "grasped_observation_transitions": 5,
+    "unique_grasped_episodes": 2,
+    "episodes_seen": 1312,
+    "successful_episodes": 0
+  }
+]

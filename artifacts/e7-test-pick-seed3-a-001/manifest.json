@@ -1,0 +1,33 @@
+{
+  "experiment_id": "e7-test-pick-seed3-a-001",
+  "started_at": "2026-10-19T07:05:56.446572+00:00",
+  "ended_at": "2026-10-19T07:06:51.589716+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/evaluate_checkpoint.py",
+    "--checkpoint",
+    "releases/final-pick-seed3-a-001/weights.pt",
+    "--methods",
+    "sac",
+    "--output",
+    "artifacts/e7-test-pick-seed3-a-001",
+    "--seed",
+    "20000",
+    "--episodes",
+    "100",
+    "--num-envs",
+    "10"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 600.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 3099504,
+  "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "323e052c3b76a3ed4bf9ccb141189231003f43b1c5972d51d61805391fdd180e",
+  "source_snapshot_sha256": "5df3843f6960254ebb92f02721a1540deb43ba733a163983e625314c3967dc22",
+  "child_pid": 3099520,
+  "elapsed_seconds": 54.6084768770379
+}

@@ -1,0 +1,7 @@
+{
+  "pid": 2933398,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-u2-smoke-launch-001/run.py"
+  ]
+}

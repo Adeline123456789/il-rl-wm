@@ -1,0 +1,352 @@
+[
+  {
+    "id": "pick-seed0-a",
+    "checkpoint": "checkpoints/e2-sac-a-full-002/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed0-b",
+    "checkpoint": "checkpoints/e2-sac-b-full-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed0-c",
+    "checkpoint": "checkpoints/e3-sac-c-full-001/final.pt",
+    "legacy_counter": true,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed0-c-continue",
+    "checkpoint": "checkpoints/e3-sac-c-continue-full-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed0-u0",
+    "checkpoint": "checkpoints/e6-u0-full-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed1-a",
+    "checkpoint": "checkpoints/pick-seed1-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed1-b",
+    "checkpoint": "checkpoints/pick-seed1-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed1-c",
+    "checkpoint": "checkpoints/pick-seed1-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed1-c-continue",
+    "checkpoint": "checkpoints/pick-seed1-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed1-u0",
+    "checkpoint": "checkpoints/pick-seed1-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed2-a",
+    "checkpoint": "checkpoints/pick-seed2-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed2-b",
+    "checkpoint": "checkpoints/pick-seed2-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed2-c",
+    "checkpoint": "checkpoints/pick-seed2-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed2-c-continue",
+    "checkpoint": "checkpoints/pick-seed2-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed2-u0",
+    "checkpoint": "checkpoints/pick-seed2-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "stack-seed0-a",
+    "checkpoint": "checkpoints/stack-seed0-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "stack-seed0-b",
+    "checkpoint": "checkpoints/stack-seed0-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "stack-seed0-c",
+    "checkpoint": "checkpoints/stack-seed0-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "stack-seed0-c-continue",
+    "checkpoint": "checkpoints/stack-seed0-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "stack-seed0-u0",
+    "checkpoint": "checkpoints/stack-seed0-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "peg-seed0-a",
+    "checkpoint": "checkpoints/peg-seed0-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "peg-seed0-b",
+    "checkpoint": "checkpoints/peg-seed0-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "peg-seed0-c",
+    "checkpoint": "checkpoints/peg-seed0-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "peg-seed0-c-continue",
+    "checkpoint": "checkpoints/peg-seed0-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "peg-seed0-u0",
+    "checkpoint": "checkpoints/peg-seed0-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed0-c",
+    "checkpoint": "checkpoints/u1-pick-seed0-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "u1-pick-seed0-c-continue",
+    "checkpoint": "checkpoints/u1-pick-seed0-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed0-u0",
+    "checkpoint": "checkpoints/u1-pick-seed0-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed1-c",
+    "checkpoint": "checkpoints/u1-pick-seed1-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "u1-pick-seed1-c-continue",
+    "checkpoint": "checkpoints/u1-pick-seed1-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed1-u0",
+    "checkpoint": "checkpoints/u1-pick-seed1-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed2-c",
+    "checkpoint": "checkpoints/u1-pick-seed2-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "u1-pick-seed2-c-continue",
+    "checkpoint": "checkpoints/u1-pick-seed2-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed2-u0",
+    "checkpoint": "checkpoints/u1-pick-seed2-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed3-a",
+    "checkpoint": "checkpoints/pick-seed3-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed3-b",
+    "checkpoint": "checkpoints/pick-seed3-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed3-c",
+    "checkpoint": "checkpoints/pick-seed3-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed3-c-continue",
+    "checkpoint": "checkpoints/pick-seed3-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed3-u0",
+    "checkpoint": "checkpoints/pick-seed3-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed3-c",
+    "checkpoint": "checkpoints/u1-pick-seed3-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "u1-pick-seed3-c-continue",
+    "checkpoint": "checkpoints/u1-pick-seed3-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed3-u0",
+    "checkpoint": "checkpoints/u1-pick-seed3-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed4-a",
+    "checkpoint": "checkpoints/pick-seed4-a-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed4-b",
+    "checkpoint": "checkpoints/pick-seed4-b-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed4-c",
+    "checkpoint": "checkpoints/pick-seed4-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "pick-seed4-c-continue",
+    "checkpoint": "checkpoints/pick-seed4-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "pick-seed4-u0",
+    "checkpoint": "checkpoints/pick-seed4-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed4-c",
+    "checkpoint": "checkpoints/u1-pick-seed4-c-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 262144
+  },
+  {
+    "id": "u1-pick-seed4-c-continue",
+    "checkpoint": "checkpoints/u1-pick-seed4-c-continue-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  },
+  {
+    "id": "u1-pick-seed4-u0",
+    "checkpoint": "checkpoints/u1-pick-seed4-u0-001/final.pt",
+    "legacy_counter": false,
+    "global_step": 262144,
+    "lineage_training_interactions": 524288
+  }
+]

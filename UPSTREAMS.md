@@ -1,5 +1,17 @@
 # 上游来源登记
 
+## ACT 扩展来源（2026-10-17）
+
+唯一新增训练底座仍是上述锁定 ManiSkill `62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3`。`vendor/maniskill/act/SOURCE_MANIFEST.json` 登记原样保存的 train.py、README、detr_vae.py、transformer.py、evaluate.py、make_env.py、utils.py 及许可证，blob逐一匹配；Apache-2.0/第三方声明随代码保留。ACT论文为 Zhao等，RSS2023，https://arxiv.org/abs/2304.13705 。
+
+本地适配 `scripts/act_teacher.py` 复用 DETRVAE、Transformer、CVAE encoder，增加episode-tail有效mask并使用decoder最后一层；`train_act_teacher.py` 使用现有真实GPU回放、AdamW、L1+KL及StepLR，取消EMA、明确均匀有放回采样及首动作重查询；时间集成单列。Torch/numpy/h5py、已有IPython与ManiSkill环境沿用，不安装另一套学习框架。已完成CPU接口验证，尚未完成GPU教师闭环；必要偏差见ACT_FAILURES.md。
+
+原始ACT https://github.com/tonyzhaozh/act ，commit `742c753c0d4a5d87076c8f69e5628c79a8cc5488`，MIT；LeRobot https://github.com/huggingface/lerobot ，commit `146d8474932c8b566717eb2738ba459337ab71c4`，Apache-2.0/第三方MIT。仅阅读推理latent、动作队列、temporal ensemble与normalization接口；六份文件及hash见literature/act_source_manifest.json，不安装其依赖。
+
+Policy Decorator https://github.com/tongzhoumu/policy_decorator ，commit `92ba9ba442587ae5989c286355ace2200a0537fb`；论文 https://arxiv.org/abs/2412.13630 ，Yuan/Mu/Tao/Fang/Zhang/Su。只读README与online/pi_dec_bet_maniskill2.py；README声明MIT但该commit的LICENSE为空blob `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`，因此不复制其实现到发布代码。其ManiSkill2/BeT/残差SAC环境不接入。源码evaluate仍执行base+scaled residual，最终依赖教师；本项目只参考受控探索/遗忘诊断，不照搬残差主干。它将reward减1并采用不同bootstrap协议，也不直接与本项目数值等同。
+
+PAC-ACT https://arxiv.org/html/2607.09590v1 为chunk-level PPO，当前未核实作者官方源码，故无代码复用。完整方法及实验正文已核对；其视觉骨干复制、Gaussian head、value critic和奖励级行为先验不是标准单步SAC结果。详见ACT_RELATED_WORK.md。
+
 当前状态补充（2026-10-16）：以下各段保留接入时的历史状态。主ManiSkill BC、A/B/C、完整U0、C续训和两次F1诊断已经真实完成；RLPD隔离训练/评测smoke完成，完整运行排队；U1完整seed0规划段运行中。历史段落中的“尚未完成”不代表当前状态，逐实验结果以research_state.json及原始manifest为准。最新核查8份vendor文件SHA256不变，ManiSkill/rfcl缓存checkout仍为锁定commit且工作树干净。
 
 ## ManiSkill：唯一主环境与 BC/SAC 底座
@@ -67,3 +79,21 @@ ManiSkill 指向的 rfcl 已安装到独立 `.venv-rlpd`（JAX0.4.28），主 `.
 完整U0已运行并观察末期失稳，因此增加DroQ/REDQ原论文和作者源码核对。DroQ来源https://github.com/TakuyaHiraoka/Dropout-Q-Functions-for-Doubly-Efficient-Reinforcement-Learning ，commit `4c7adddbaf7573ff9256b16091a3bbdbd536aad4`；REDQ来源https://github.com/watchernyu/REDQ ，commit `7b5d1bff39291a57325a2836bd397a55728960bb`。两者LICENSE均MIT。具体阅读文件及SHA256见literature/value_stability_source_manifest.json；方法/成本/边界见literature/F-U0-001_value_stability_sources.md。未安装、未运行、未复制到主训练器，尚未登记局部算法修改。
 
 F-E0-005本地replay补丁在CPU/GPU保存时附加source/original episode ID，不改变环境步或动作；审计按显式ID核对，兼容既有唯一seed数据。Peg重复原始演示按seed组划分，证据与边界见diagnostics/F-E0-005.md。U1仅在本地主SAC critic隐藏层增加可选LayerNorm，默认U0输出逐位回归通过；来源与单一机制预登记见U1_CHANGE.md，无外部训练框架混入。
+
+2026-10-19 F-ACT-02只读补核：AdaptiveBC https://github.com/zhaoyi11/adaptive_bc ，commit d47226d4ffc9959ac0ed1337ddd7ebb787fc05e1，论文arXiv2210.13846v1，Apache-2.0。redq_bc.py/main.py/LICENSE/environment.yaml均与上游Git blob相同；仅参考Actor保持机制及适用限制，未复用代码/安装依赖/切换主算法。manifest见literature/act_forgetting_source_manifest.json。IBRL原锁定q_agent.py的RFT路径进一步读取，许可状态不变。
+
+## 2026-10-19 只读补充：forgetting mitigation
+
+- Repository: https://github.com/BartekCupial/finetuning-RL-as-CL
+- Commit: `390d2041a2829a9ca609594d11e5567e0f1368d2` (2024-05-23).
+- Paper: https://arxiv.org/html/2402.02868v3 ; ICML2024 https://proceedings.mlr.press/v235/wolczyk24a.html .
+- License: MIT, copyright 2019–2024 Aleksei Petrenko; actual LICENSE blob verified.
+- Read: `sf_examples/nethack/algo/learning/learner.py` retention losses/schedule; `sf_examples/nethack/models/kickstarter.py` teacher freezing and execution; LICENSE.
+- Role: read-only NetHack implementation reference for F-ACT-02. No code copied, no dependencies installed. Does not verify the paper's RoboticSequence SAC supplementary code.
+- Hash manifest: `literature/forgetting_mitigation_source_manifest.json`; interpretation and limits: `ACT_RELATED_WORK.md`.
+
+## 2026-10-19 只读补充与状态校正
+
+前文“教师闭环/完整U0/RLPD尚未完成”为初次接入时的历史记录；实际这些开发作业现均完成，最终测试仍进行。各阶段当前结果以ACT_TRANSFER_REPORT、HISTORICAL_VALIDATION、research_state及manifest为准。
+
+WSRL https://github.com/zhouzypaul/wsrl 锁定ad4dc1248a138bc15d6e053f2d1dba1b8cfbaca2，ICLR2025论文2412.07762；树内未发现LICENSE，许可不推定。DAWN https://github.com/Guozheng-Ma/DAWN 锁定71122b7fa89568bc2d49831fed8cb1b01e5a91e8，ICML2026论文见PMLR306/ma26s；LICENSE为0字节，未验证可运行依赖完整性。两者11文件Git blob/SHA见literature/wsrl_dawn_source_manifest.json，具体读取范围和机制边界见ACT_RELATED_WORK。全部只读，无源码复用/修改/新增主环境依赖。

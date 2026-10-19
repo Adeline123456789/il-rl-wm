@@ -1,0 +1,1 @@
+{"pid": 2752436, "commands": [[".venv/bin/python", "-m", "pytest", "-q", "tests"], [".venv/bin/python", "scripts/diagnose_act_distillation.py"]]}

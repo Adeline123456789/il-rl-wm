@@ -1,0 +1,16 @@
+{
+  "pid": 2936685,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/act-u2-full-batch-001/status.json",
+    "--output",
+    "artifacts/queue-act-u2-postprocess-001",
+    "--max-wait-seconds",
+    "4800",
+    "--",
+    ".venv/bin/python",
+    "artifacts/act-u2-postprocess-launch-001/run.py"
+  ]
+}

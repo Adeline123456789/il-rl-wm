@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 114, in <module>
+    main()
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 103, in main
+    result = summarize(read(args.plan), args.root)
+  File "/media/midea/F496AC8096AC4548/il-rl-wm/scripts/summarize_historical_validation.py", line 33, in summarize
+    assert config['max_episode_steps'] == 200 and config['control_mode'] == 'pd_ee_delta_pos'
+AssertionError

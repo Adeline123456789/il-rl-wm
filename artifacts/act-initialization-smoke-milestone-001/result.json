@@ -1,0 +1,83 @@
+{
+  "scope": "Resource and interface milestone, not full training or migration success",
+  "records": [
+    {
+      "experiment": "act-r0-expert50-smoke-001",
+      "result": {
+        "training_interactions": 8192,
+        "inherited_training_interactions": 0,
+        "gradient_updates": 1040,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 64.71808201199997,
+        "frozen_il_verified": false,
+        "torch_peak_allocated_bytes": 145820672
+      },
+      "gpu_seconds": 80.98360866399992,
+      "files": {
+        "manifest.json": "a68ea73df8863e1354cca8646d3d7a52b0b2476106741e106798eb5956a4283c",
+        "result.json": "10343417f5fab5dba24491f74eb5048c94f6db2ffbe15af611a085efa1297077",
+        "sampling.json": "b5f7fd57b2800a69fd02a9d84b217f29460199800cef3adb411706ddceafd874",
+        "actor_initialization.json": "853851c1aad023892cf2997ed52f4c93db5158c4ae8913be9ce85cb1a9c9c524",
+        "sac_config.json": "760eafa63d06e26b396a2db782c7d696ace9c033331fb76e0381570d49472040",
+        "interactions.json": "a339f4c0eb319b53589308019d01b0607a8d63cc8616202e10e3d2378d196890",
+        "source_hashes.json": "967f80e393851d096a9e7bf6f14fee68f252681ae918b96d832aa7e91321ca6b"
+      }
+    },
+    {
+      "experiment": "act-r3-expert50-smoke-001",
+      "result": {
+        "training_interactions": 8192,
+        "inherited_training_interactions": 0,
+        "gradient_updates": 1040,
+        "validation_interactions": 16000,
+        "final_test_evaluated": false,
+        "elapsed_seconds": 114.27130533900004,
+        "frozen_il_verified": false,
+        "torch_peak_allocated_bytes": 880946176
+      },
+      "gpu_seconds": 119.255392798,
+      "files": {
+        "manifest.json": "eea739b8820a5ab08631db4df327c7fee20dbccf0904c52f865fa49f3a43d2c2",
+        "result.json": "07d8a066921f916eb70f143e38c51353e64a1387bfc7dea0898b139b7ccef2b5",
+        "sampling.json": "b5f7fd57b2800a69fd02a9d84b217f29460199800cef3adb411706ddceafd874",
+        "actor_initialization.json": "ea5f8f8efbbd2f7f5a662b1653fff9e473e394b56fbec524fda363914df8c177",
+        "sac_config.json": "bf2ba809e58ef377a593ff6750450c8de7b9c8065b38117da5a8cc32fa430285",
+        "interactions.json": "a339f4c0eb319b53589308019d01b0607a8d63cc8616202e10e3d2378d196890",
+        "source_hashes.json": "e19a9e07b06b83e14b841a3151226fe1ed25ddb36ab4c65d39d4cac6683a1c77"
+      }
+    }
+  ],
+  "settled_new_gpu_seconds": 200.23900146199992,
+  "in_progress_time_not_in_this_sum": true,
+  "resource_gate": {
+    "act-r0-expert50-smoke-001": {
+      "one_time_setup_cleanup_seconds": 16.26552665199995,
+      "in_loop_other_seconds": 44.50240281000026,
+      "projected_full_seconds": 1266.9106074461647,
+      "previous_all_overhead_scaled_seconds": 1388.9020573361643,
+      "measured_seconds": 80.98360866399992,
+      "update_seconds": 7.50421912899958,
+      "rollout_seconds": 12.711460073000126,
+      "projected_with_margin": 1770.3293200523224,
+      "cap_seconds": 1900,
+      "rule": "One-time startup/cleanup once; scale in-loop residual 2 to17 evaluations, updates/rollouts;35% +60s. No score-based gate"
+    },
+    "act-r3-expert50-smoke-001": {
+      "one_time_setup_cleanup_seconds": 4.984087458999966,
+      "in_loop_other_seconds": 53.90338819799854,
+      "projected_full_seconds": 3815.0536583674975,
+      "previous_all_overhead_scaled_seconds": 3852.4343143099973,
+      "measured_seconds": 119.255392798,
+      "update_seconds": 47.26453275800054,
+      "rollout_seconds": 13.103384383000957,
+      "projected_with_margin": 5210.322438796122,
+      "cap_seconds": 6200,
+      "rule": "One-time startup/cleanup once; scale in-loop residual 2 to17 evaluations, updates/rollouts;35% +60s. No score-based gate"
+    }
+  },
+  "old_queue_failure_preserved": true,
+  "r0_smoke_reused_without_rerun": true,
+  "final_gate_released": false,
+  "full_results_pending": true
+}

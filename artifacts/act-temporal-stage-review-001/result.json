@@ -1,0 +1,53 @@
+{
+  "episodes": 40,
+  "paired_episode_reset_seeds_equal": true,
+  "stages": {
+    "approached_once": {
+      "first": 28,
+      "ensemble": 40,
+      "ensemble_only": 12,
+      "first_only": 0
+    },
+    "is_grasped_once": {
+      "first": 28,
+      "ensemble": 40,
+      "ensemble_only": 12,
+      "first_only": 0
+    },
+    "lifted_once": {
+      "first": 14,
+      "ensemble": 36,
+      "ensemble_only": 24,
+      "first_only": 2
+    },
+    "is_obj_placed_once": {
+      "first": 8,
+      "ensemble": 30,
+      "ensemble_only": 23,
+      "first_only": 1
+    },
+    "success_once": {
+      "first": 8,
+      "ensemble": 30,
+      "ensemble_only": 23,
+      "first_only": 1
+    },
+    "success_at_end": {
+      "first": 4,
+      "ensemble": 5,
+      "ensemble_only": 3,
+      "first_only": 2
+    }
+  },
+  "first_grasp_step_among_grasped": {
+    "first": {
+      "count": 28,
+      "median": 75.0
+    },
+    "ensemble": {
+      "count": 40,
+      "median": 42.0
+    }
+  },
+  "limitation": "Matched initial states, divergent subsequent trajectories. No inference that a particular stage alone caused gain; no proof current-state student cannot approximate history behavior."
+}

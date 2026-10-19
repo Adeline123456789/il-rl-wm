@@ -1,0 +1,12 @@
+{
+  "pid": 2782042,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_act_online_batch.py",
+    "--plan",
+    "artifacts/act-online-budget-002/plan.json",
+    "--output",
+    "artifacts/act-online-batch-002"
+  ],
+  "started_at": 1792375384.415747
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "completed",
+  "exit_code": 0,
+  "pid": null,
+  "background_tool_cells": [
+    "1181",
+    "1185"
+  ],
+  "local_source_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "capture": "temporary index tree; local HEAD unchanged",
+  "tree": "2395e860d7f3d223c76732cb28d7deb420f35af4",
+  "remote_commit": "d3cc98339c00dd197953926cd659b6e82753902a",
+  "verified_files": 2448,
+  "main_unchanged": true,
+  "draft_pr": 2,
+  "verified_at": "2026-10-19T05:55:42.720Z"
+}

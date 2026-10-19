@@ -1,0 +1,502 @@
+{
+  "conditions": [
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 31,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1323.153780288,
+      "peak_device_mib": 4669,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "c0f9c8a17740ec36164b278f4eab5a9cf5ba247a37aad2ea88f0c0a0f48d6f2d",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 606,
+      "losses": {
+        "losses/alpha": {
+          "min": 0.02594219334423542,
+          "max": 0.7388468980789185,
+          "final": 0.04866662621498108
+        },
+        "losses/qf1_values": {
+          "min": 23.035324096679688,
+          "max": 55.39423751831055,
+          "final": 25.058788299560547
+        },
+        "losses/qf2_values": {
+          "min": 22.951892852783203,
+          "max": 55.42539596557617,
+          "final": 24.800968170166016
+        },
+        "losses/actor_loss": {
+          "min": -55.834716796875,
+          "max": -23.05803680419922,
+          "final": -24.87065887451172
+        }
+      }
+    },
+    {
+      "id": "act-r1-expert50-seed0-001",
+      "status": "running",
+      "initial_success": null,
+      "final_success": null,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": null,
+      "gradient_updates": null,
+      "gpu_job_seconds": null,
+      "peak_device_mib": null,
+      "actor_parameters": null
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "status": "completed",
+      "initial_success": 1,
+      "final_success": 34,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1313.5013992399909,
+      "peak_device_mib": 4746,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "4d9607af76782f4c9c70262383967dc89685ec409624b1f2e90dc5fd584520de",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 523,
+      "losses": {
+        "losses/alpha": {
+          "min": 0.0261068157851696,
+          "max": 0.7542821764945984,
+          "final": 0.04501582682132721
+        },
+        "losses/qf1_values": {
+          "min": 19.027637481689453,
+          "max": 53.77193832397461,
+          "final": 24.995267868041992
+        },
+        "losses/qf2_values": {
+          "min": 19.040847778320312,
+          "max": 53.76728057861328,
+          "final": 24.92904281616211
+        },
+        "losses/actor_loss": {
+          "min": -54.20863723754883,
+          "max": -21.07717514038086,
+          "final": -25.14558982849121
+        }
+      }
+    },
+    {
+      "id": "act-r3-expert50-seed0-001",
+      "status": "not_started",
+      "initial_success": null,
+      "final_success": null,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": null,
+      "gradient_updates": null,
+      "gpu_job_seconds": null,
+      "peak_device_mib": null,
+      "actor_parameters": null
+    }
+  ],
+  "curves": [
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 32768,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 49152,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 2,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 81920,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 3,
+      "placed_once": 0
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 98304,
+      "episodes": 40,
+      "success_once": 3,
+      "success_at_end": 1,
+      "mean_return": 2.525,
+      "grasped_once": 25,
+      "placed_once": 3
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 114688,
+      "episodes": 40,
+      "success_once": 20,
+      "success_at_end": 10,
+      "mean_return": 39.975,
+      "grasped_once": 32,
+      "placed_once": 20
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 16,
+      "success_at_end": 10,
+      "mean_return": 41.275,
+      "grasped_once": 23,
+      "placed_once": 16
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 147456,
+      "episodes": 40,
+      "success_once": 21,
+      "success_at_end": 17,
+      "mean_return": 69.65,
+      "grasped_once": 25,
+      "placed_once": 21
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 163840,
+      "episodes": 40,
+      "success_once": 16,
+      "success_at_end": 12,
+      "mean_return": 56.5,
+      "grasped_once": 19,
+      "placed_once": 16
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 180224,
+      "episodes": 40,
+      "success_once": 24,
+      "success_at_end": 16,
+      "mean_return": 76.425,
+      "grasped_once": 27,
+      "placed_once": 24
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 196608,
+      "episodes": 40,
+      "success_once": 27,
+      "success_at_end": 15,
+      "mean_return": 96.35,
+      "grasped_once": 28,
+      "placed_once": 27
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 212992,
+      "episodes": 40,
+      "success_once": 24,
+      "success_at_end": 18,
+      "mean_return": 82.025,
+      "grasped_once": 24,
+      "placed_once": 24
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 229376,
+      "episodes": 40,
+      "success_once": 24,
+      "success_at_end": 20,
+      "mean_return": 95.95,
+      "grasped_once": 24,
+      "placed_once": 24
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 245760,
+      "episodes": 40,
+      "success_once": 24,
+      "success_at_end": 14,
+      "mean_return": 88.55,
+      "grasped_once": 26,
+      "placed_once": 24
+    },
+    {
+      "id": "act-r0-expert50-seed0-001",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 31,
+      "success_at_end": 20,
+      "mean_return": 120.55,
+      "grasped_once": 32,
+      "placed_once": 31
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 0,
+      "episodes": 40,
+      "success_once": 1,
+      "success_at_end": 1,
+      "mean_return": 2.925,
+      "grasped_once": 19,
+      "placed_once": 1
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 16384,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 32768,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 49152,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 65536,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 81920,
+      "episodes": 40,
+      "success_once": 0,
+      "success_at_end": 0,
+      "mean_return": 0.0,
+      "grasped_once": 0,
+      "placed_once": 0
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 98304,
+      "episodes": 40,
+      "success_once": 1,
+      "success_at_end": 0,
+      "mean_return": 0.15,
+      "grasped_once": 5,
+      "placed_once": 1
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 114688,
+      "episodes": 40,
+      "success_once": 1,
+      "success_at_end": 0,
+      "mean_return": 2.2,
+      "grasped_once": 17,
+      "placed_once": 1
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 131072,
+      "episodes": 40,
+      "success_once": 18,
+      "success_at_end": 7,
+      "mean_return": 44.1,
+      "grasped_once": 32,
+      "placed_once": 18
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 147456,
+      "episodes": 40,
+      "success_once": 21,
+      "success_at_end": 17,
+      "mean_return": 70.675,
+      "grasped_once": 27,
+      "placed_once": 21
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 163840,
+      "episodes": 40,
+      "success_once": 21,
+      "success_at_end": 11,
+      "mean_return": 54.575,
+      "grasped_once": 26,
+      "placed_once": 21
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 180224,
+      "episodes": 40,
+      "success_once": 21,
+      "success_at_end": 18,
+      "mean_return": 79.275,
+      "grasped_once": 22,
+      "placed_once": 21
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 196608,
+      "episodes": 40,
+      "success_once": 27,
+      "success_at_end": 16,
+      "mean_return": 81.8,
+      "grasped_once": 29,
+      "placed_once": 27
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 212992,
+      "episodes": 40,
+      "success_once": 27,
+      "success_at_end": 21,
+      "mean_return": 99.35,
+      "grasped_once": 30,
+      "placed_once": 27
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 229376,
+      "episodes": 40,
+      "success_once": 33,
+      "success_at_end": 18,
+      "mean_return": 119.225,
+      "grasped_once": 35,
+      "placed_once": 33
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 245760,
+      "episodes": 40,
+      "success_once": 32,
+      "success_at_end": 16,
+      "mean_return": 117.7,
+      "grasped_once": 32,
+      "placed_once": 32
+    },
+    {
+      "id": "act-t6-online-seed0-001",
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 34,
+      "success_at_end": 22,
+      "mean_return": 124.1,
+      "grasped_once": 35,
+      "placed_once": 34
+    }
+  ],
+  "evidence": {
+    "act-r0-expert50-seed0-001": {
+      "manifest.json": "2c2eaeb2b00fd194137ddc36ccd77c24ea8400d59c43a44b7b837133e6230f4b",
+      "sac_config.json": "b70da3b41b400ddb58850f3ecaa8431cf6cba9c6ba3e305b3dbfa8c45514de6b",
+      "actor_initialization.json": "853851c1aad023892cf2997ed52f4c93db5158c4ae8913be9ce85cb1a9c9c524",
+      "result.json": "211e890182dd9d785671350712c3cf890e70eb7a023880aa6e81b87714512107",
+      "interactions.json": "f83b020fc890d70663d01272bb2d98d4d60e3d1266f100c337b3ea6e681584a9",
+      "validation_episodes.jsonl": "04d3f080561f23ac42aaaf5c7f1641f206fdf62578bb150b6d0d0abf67a45a2b",
+      "train_episodes.jsonl": "951f2a1a35144054460c2b1d23df78d070be964e257290b36f78937be605a02d",
+      "metrics.jsonl": "ea03bad57d5d7e4f8758c7e883fe19e693edb835afb1b376585c3f98e054f643",
+      "resources.jsonl": "0971c15545f8684596dea7ddc30ddc30ec7ffaa65dfbedddd9a14280093b9958",
+      "checkpoints.jsonl": "84e8421962b65cc5f2654f28747998fa4025d76f49a2024759c7a47db4c03b7c"
+    },
+    "act-t6-online-seed0-001": {
+      "manifest.json": "1c568ef9c77c190f05f127b744b6f44ba28a49e065826e7002029d4b21399617",
+      "sac_config.json": "1aa708a4b176241d99b7ecd212a9b2e6c87ee2bc331fb23a95d21bbb1b229050",
+      "actor_initialization.json": "b70ee918b3e6f69fd0f9ed8190a8f587da406f760cd60504055d90beba22a1af",
+      "result.json": "0cdd20c6a10f0ab3bad078223bd1e3dde35f1fec6590d3ddfb3acfd502d8b126",
+      "interactions.json": "f83b020fc890d70663d01272bb2d98d4d60e3d1266f100c337b3ea6e681584a9",
+      "validation_episodes.jsonl": "30c60a70c39db283577c35ff63dec6181076abcfc842fabb58e871b258d874a8",
+      "train_episodes.jsonl": "7b15da6f97ba5b1111cdf6dff1790e41c0bd7fd91c48864cfdfc9b2775982b69",
+      "metrics.jsonl": "361fd446cb813e93883fe1b732f81c1185e89f8cf194cff63240d1719c9a427a",
+      "resources.jsonl": "8f12ce2f4c6ce9f22a0fb6834022a88558abdfd9b97de25608f39053c44379f3",
+      "checkpoints.jsonl": "cb2ff6acee1a1276c83e66ddef7bc432e2643ceb8f1ee52e57c1f9ec09b229a4"
+    }
+  },
+  "shared_config": {
+    "seed": 0,
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "total_timesteps": 262144,
+    "num_envs": 16,
+    "num_eval_envs": 8,
+    "num_eval_steps": 1000,
+    "training_freq": 64,
+    "utd": 0.25,
+    "batch_size": 1024,
+    "buffer_size": 262144,
+    "learning_starts": 4096,
+    "eval_freq": 16384,
+    "log_freq": 8192,
+    "gamma": 0.99,
+    "critic_layer_norm": true,
+    "initial_log_std": -2.0,
+    "matched_eval_resets": true,
+    "autotune": true,
+    "policy_lr": 0.0003,
+    "q_lr": 0.0003,
+    "alpha": 0.2,
+    "tau": 0.01,
+    "policy_frequency": 1,
+    "bootstrap_at_done": "always"
+  },
+  "scope": "Seed0 development; fixed final, validation only. Curves are not independent training repeats. Initial teacher/transfer results have separate offline costs; no ACT-WM conclusion.",
+  "final_test_accessed": false,
+  "new_environment_interactions": 0,
+  "plan_sha256": "edf182a2a61060fe421379c472c204120ee2efb3625dc2bdc04701635234f615"
+}

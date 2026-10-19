@@ -1,0 +1,18 @@
+{
+  "captured_at": 1792401671.296845,
+  "queue": {
+    "pid": 18028,
+    "phase": "training",
+    "completed": [
+      "act-r3-expert50-smoke-001"
+    ],
+    "current": "act-r0-expert50-seed0-001",
+    "started_at": 1792401395.6975894,
+    "exit_code": null,
+    "plan_sha256": "7853d194c57ec89b7030d26b8bcd59552458e5329b258196a0834cd2b60b8342",
+    "authorization_sha256": "ce15673369b428439bf2072d33c1c420ad02bee390b36d5583bbbdf779e3dd0c",
+    "reused_completed_smokes": [
+      "act-r0-expert50-smoke-001"
+    ]
+  }
+}

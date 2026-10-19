@@ -1,0 +1,11 @@
+{
+  "pid": 2829356,
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-online-postprocess-001/run.py"
+  ],
+  "GPU_use": false,
+  "wait_limit_seconds": 10800,
+  "source_sha256": "c5588d0d6dcd7293a0f1504100d72219105d57254ad97fb734cfeca9c708f306",
+  "launch_receipt_recovered": "Launcher raised NameError for missing hashlib after successful spawn; PID confirmed live, no duplicate process started."
+}

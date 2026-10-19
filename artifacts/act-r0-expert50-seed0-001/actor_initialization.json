@@ -1,0 +1,13 @@
+{
+  "kind": "mlp",
+  "checkpoint": null,
+  "initial_log_std": -2.0,
+  "actor_parameters": 144648,
+  "variance_trainable": true,
+  "actor_hash": "e3b05a869c9b9f7ce5be57ef3db0da7a00d356b250249d022b51d223cda3f55c",
+  "critic1_hash": "0836c51e836994c293707d55e67c55a00d2383912b89a9753d45462110a2441d",
+  "critic2_hash": "e3d4137ec09e0ed0c3a83bf768b3a55bf406f1d4a78a9e829efbee10d8d5bca9",
+  "critic_layer_norm": true,
+  "bc_checkpoint": null,
+  "teacher_calls_in_sac_updates": false
+}

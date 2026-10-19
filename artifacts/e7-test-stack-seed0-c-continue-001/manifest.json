@@ -1,0 +1,33 @@
+{
+  "experiment_id": "e7-test-stack-seed0-c-continue-001",
+  "started_at": "2026-10-19T06:20:33.097506+00:00",
+  "ended_at": "2026-10-19T06:22:08.189696+00:00",
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/evaluate_checkpoint.py",
+    "--checkpoint",
+    "releases/final-stack-seed0-c-continue-001/weights.pt",
+    "--methods",
+    "sac",
+    "--output",
+    "artifacts/e7-test-stack-seed0-c-continue-001",
+    "--seed",
+    "20000",
+    "--episodes",
+    "100",
+    "--num-envs",
+    "10"
+  ],
+  "cwd": "/media/midea/F496AC8096AC4548/il-rl-wm",
+  "limit_seconds": 600.0,
+  "memory_limit_mib": 20480,
+  "runner_pid": 3036221,
+  "code_commit": "9f1536cf857892f0e4db301377b05db4e7c9518c",
+  "code_dirty": true,
+  "exit_code": 0,
+  "stop_reason": null,
+  "tracked_patch_sha256": "fcbdf5783472367e5632be2519a5d1ca437ef5ffadd20ce0b0bc28cdfe0b3914",
+  "source_snapshot_sha256": "c1a1c06699085ca68706918a3405838e954e094dbd574983c213541c5a9587b3",
+  "child_pid": 3036237,
+  "elapsed_seconds": 95.01046517700888
+}

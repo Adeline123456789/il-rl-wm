@@ -8,6 +8,8 @@
     "artifacts/final-results-001"
   ],
   "started_at": "2026-10-16T14:23:44.182651+00:00",
-  "phase": "waiting",
-  "exit_code": null
+  "phase": "failed",
+  "exit_code": null,
+  "error": "AssertionError('Prerequisite wait limit exceeded')",
+  "ended_at": "2026-10-17T14:23:48.677783+00:00"
 }

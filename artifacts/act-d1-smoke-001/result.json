@@ -1,0 +1,97 @@
+{
+  "offline": {
+    "train": {
+      "mse": 0.016411030665040016,
+      "per_action_mse": [
+        0.0016837778966873884,
+        0.0031010976526886225,
+        0.0032403592485934496,
+        0.0576188899576664
+      ]
+    },
+    "validation": {
+      "mse": 0.016628555953502655,
+      "per_action_mse": [
+        0.0018657328328117728,
+        0.0032564480789005756,
+        0.003305950667709112,
+        0.0580860897898674
+      ]
+    }
+  },
+  "closed_loop": {
+    "sac_mean": {
+      "method": "sac_mean",
+      "episodes": 8,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0,
+      "stage_counts": {
+        "approached": 4,
+        "is_grasped": 0,
+        "lifted": 0,
+        "is_obj_placed": 0
+      },
+      "latency_batch8_ms_mean": 1.4843752438900992,
+      "latency_batch8_ms_p95": 2.1657800185494125,
+      "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+      "validation_seed": 10000,
+      "teacher_action_mse_on_student_states": [
+        0.004646655637770891,
+        0.002862104680389166,
+        0.03556671738624573,
+        1.9366247653961182
+      ],
+      "sample_mean_action_mse": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "sac_stochastic": {
+      "method": "sac_stochastic",
+      "episodes": 8,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0,
+      "stage_counts": {
+        "approached": 3,
+        "is_grasped": 1,
+        "lifted": 1,
+        "is_obj_placed": 0
+      },
+      "latency_batch8_ms_mean": 1.8675010011065751,
+      "latency_batch8_ms_p95": 2.424273884389549,
+      "inference_scope": "student action plus diagnostic teacher comparison/state logging; not pure student latency",
+      "validation_seed": 10000,
+      "teacher_action_mse_on_student_states": [
+        0.004192126914858818,
+        0.0027354988269507885,
+        0.021520990878343582,
+        1.596679449081421
+      ],
+      "sample_mean_action_mse": [
+        0.017159800976514816,
+        0.017947357147932053,
+        0.017211435362696648,
+        0.003900212002918124
+      ]
+    }
+  },
+  "teacher_success_once": 8,
+  "teacher_episodes": 40,
+  "success_gap_teacher_minus_student": {
+    "sac_mean": 0.2,
+    "sac_stochastic": 0.2
+  },
+  "paired_teacher_state_mse": 0.018239106982946396,
+  "teacher_frozen": true,
+  "log_std_frozen": -2.0,
+  "temperature_gradient": -0.9695819616317749,
+  "elapsed_seconds": 14.22293761104811,
+  "torch_peak_allocated_bytes": 111528448,
+  "new_training_interactions": 0,
+  "final_test_accessed": false,
+  "smoke": true
+}

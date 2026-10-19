@@ -1,0 +1,12 @@
+{
+  "seed": 0,
+  "selection": "releases/act-teacher-k30-001/manifest.json",
+  "audit": "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json",
+  "teacher_trace": "artifacts/act-t0-k30-seed0-001/final_validation_trace.npz",
+  "updates": 10000,
+  "batch_size": 256,
+  "lr": 0.0003,
+  "log_std": -2.0,
+  "episodes": 40,
+  "video": true
+}

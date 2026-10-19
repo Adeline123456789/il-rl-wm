@@ -1,0 +1,29 @@
+{
+  "pid": 1959272,
+  "command": [
+    ".venv/bin/python",
+    "scripts/after_success.py",
+    "--prerequisite",
+    "artifacts/queue-u1-pick-seed4-pipeline-001/status.json",
+    "--output",
+    "artifacts/queue-act-t0-stage-001",
+    "--max-wait-seconds",
+    "86400",
+    "--",
+    ".venv/bin/python",
+    "scripts/run_act_teacher_stage.py",
+    "--output",
+    "artifacts/act-t0-stage-001"
+  ],
+  "started_at": "2026-10-16T17:54:08.612355+00:00",
+  "max_gpu_seconds": 5700,
+  "budget_reset": false,
+  "configs": {
+    "configs/act_final_test_gate.json": "3aeb4e0239a50a5d30a2780676753fd4a0abf9ac76912a229e953d8a3fdce6a6",
+    "configs/act_t0_cpu_audit.json": "c6e3959893418870a5cb3edb760b24f1c58f15348b648439b9ca19153aa12982",
+    "configs/act_t0_k16_seed0.json": "01167424b4d5a953dd28cfd88c3a1a42a6bf37c14513cdc7e0f332a5e1388c6a",
+    "configs/act_t0_k30_seed0.json": "6c4a83f35f98ff6beb96d197dce5d6eb8c0b98e5229728a58c5d814fada7a670",
+    "configs/act_t0_seed0.json": "af6ac8210f40bfc1a8f43162347be2b8354a77c1302cc19e362610ff52e9d854",
+    "configs/act_t0_smoke.json": "06eda781f46961d8ed112c2858636b011b3d04d3106dd15d92f498a965a5e110"
+  }
+}

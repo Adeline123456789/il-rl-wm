@@ -1,0 +1,80 @@
+{
+  "costs": {
+    "T5": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 3743.461614077969,
+      "training_script_seconds": 3737.9685902790516,
+      "whole_gpu_peak_mib": 5769,
+      "torch_peak_allocated_bytes": 882284544,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "U2": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 3735.2483002779773,
+      "training_script_seconds": 3728.785919099988,
+      "whole_gpu_peak_mib": 5770,
+      "torch_peak_allocated_bytes": 894432768,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "T6": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 1313.5013992399909,
+      "training_script_seconds": 1307.43761877605,
+      "whole_gpu_peak_mib": 4746,
+      "torch_peak_allocated_bytes": 147527680,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    },
+    "T4": {
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "validation_interactions": 136000,
+      "gpu_job_seconds": 1099.1932152470108,
+      "training_script_seconds": 1092.933363003016,
+      "whole_gpu_peak_mib": 4864,
+      "torch_peak_allocated_bytes": 147159040,
+      "evaluation_time_separation": "Training-job total includes its 17 validation points; no separately logged GPU duration for each validation. Independent final evaluation reported separately."
+    }
+  },
+  "positive": {
+    "T5": {
+      "positive_reward_transitions": 0,
+      "first_positive_vector_step_completed_interactions": null
+    },
+    "U2": {
+      "positive_reward_transitions": 6,
+      "first_positive_vector_step_completed_interactions": 231312
+    },
+    "T6": {
+      "positive_reward_transitions": 63147,
+      "first_positive_vector_step_completed_interactions": 100528
+    },
+    "T4": {
+      "positive_reward_transitions": 0,
+      "first_positive_vector_step_completed_interactions": null
+    }
+  },
+  "config_differences": {
+    "expert_audit": [
+      null,
+      "artifacts/e0-pickcube-gpu-replay-full-003/dataset-audit.json"
+    ],
+    "expert_dataset": [
+      null,
+      "data/replay/e0-pickcube-gpu-replay-full-003/trajectory.state.pd_ee_delta_pos.physx_cuda.h5"
+    ],
+    "exp_name": [
+      "act-t4-online-seed0-001",
+      "act-t6-online-seed0-001"
+    ],
+    "output": [
+      "artifacts/act-t4-online-seed0-001",
+      "artifacts/act-t6-online-seed0-001"
+    ]
+  }
+}

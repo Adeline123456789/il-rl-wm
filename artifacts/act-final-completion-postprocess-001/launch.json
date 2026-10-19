@@ -1,0 +1,10 @@
+{
+  "pid": 3180899,
+  "started_at": 1792399556.0695252,
+  "launch_receipt_recovered_from_child_status": true,
+  "launcher_receipt_error": "NameError: json was not imported after successful Popen; child continues; no duplicate launch",
+  "child_command": [
+    ".venv/bin/python",
+    "artifacts/act-final-completion-postprocess-001/run.py"
+  ]
+}

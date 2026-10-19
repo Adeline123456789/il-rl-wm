@@ -1,0 +1,10 @@
+{
+  "status": "registered_before_training",
+  "registered_at": "2026-10-19T09:11:37.280717+00:00",
+  "seed": 30000,
+  "episodes": 100,
+  "num_envs": 10,
+  "gate": "configs/act_initialization_test_gate.json",
+  "selection": "fixed final for all four conditions; R2 reuses completed T6 without training",
+  "no_test_driven_tuning": true
+}

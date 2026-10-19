@@ -1,0 +1,10 @@
+{
+  "training_interactions": 262144,
+  "inherited_training_interactions": 0,
+  "gradient_updates": 64528,
+  "validation_interactions": 136000,
+  "final_test_evaluated": false,
+  "elapsed_seconds": 1317.0550307009999,
+  "frozen_il_verified": false,
+  "torch_peak_allocated_bytes": 147527680
+}

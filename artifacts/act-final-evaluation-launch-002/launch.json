@@ -1,0 +1,9 @@
+{
+  "pid": 2996780,
+  "started_at": 1792388527.8217924,
+  "log": "artifacts/act-final-evaluation-launch-002/log.txt",
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-final-evaluation-launch-002/run.py"
+  ]
+}

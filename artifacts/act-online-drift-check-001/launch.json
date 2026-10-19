@@ -1,0 +1,23 @@
+{
+  "pid": 2828255,
+  "commands": [
+    [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_act_online_drift.py"
+    ],
+    [
+      ".venv/bin/python",
+      "scripts/diagnose_act_online_drift.py",
+      "--experiment",
+      "act-t5-online-smoke-001",
+      "--steps",
+      "8192",
+      "--output",
+      "artifacts/act-t5-smoke-drift-002"
+    ]
+  ],
+  "GPU_use": false
+}

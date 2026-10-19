@@ -1,0 +1,89 @@
+..                                                                       [100%]
+2 passed in 0.66s
+[
+  {
+    "step": 0,
+    "checkpoint": {
+      "path": "releases/act-c1-init-001/weights.pt",
+      "sha256": "7acd38ff6c849edfede78389cee8d68d6e7ff1433a8dbd9829f9460b0388b271"
+    },
+    "teacher_action_mse_per_dim": [
+      3.5998900258307764e-21,
+      5.421010862427522e-20,
+      4.87890977618477e-19,
+      1.0167075514821988e-12
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_log_std": [
+      -2.0,
+      -2.0,
+      -2.0,
+      -2.0
+    ],
+    "mean_action_abs_max": [
+      0.13974937796592712,
+      0.2688983082771301,
+      0.38278165459632874,
+      0.9999989867210388
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.9921875
+    ],
+    "pre_tanh_kl_initial_current_mean": 0.0,
+    "validation_success_once": 8,
+    "validation_success_at_end": 4,
+    "validation_episodes": 40
+  },
+  {
+    "step": 8192,
+    "checkpoint": {
+      "step": 8192,
+      "final": true,
+      "path": "checkpoints/act-t5-online-smoke-001/final.pt",
+      "bytes": 19225894,
+      "sha256": "2f986bc072455ae873430a0b188fa5bdf40265e9baf9d2fc3b51f84b818970e9"
+    },
+    "teacher_action_mse_per_dim": [
+      0.0015262633096426725,
+      0.0031990143470466137,
+      0.019568460062146187,
+      0.9425050020217896
+    ],
+    "initial_action_drift_mse_per_dim": [
+      0.0015262633096426725,
+      0.0031990143470466137,
+      0.019568460062146187,
+      0.9425030946731567
+    ],
+    "mean_log_std": [
+      -0.11887852847576141,
+      -0.1287425458431244,
+      -0.1309550553560257,
+      -0.11919941753149033
+    ],
+    "mean_action_abs_max": [
+      0.012354070320725441,
+      0.007638908922672272,
+      0.01356019452214241,
+      0.14144985377788544
+    ],
+    "near_boundary_action_fraction": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pre_tanh_kl_initial_current_mean": 38.39994430541992,
+    "validation_success_once": 0,
+    "validation_success_at_end": 0,
+    "validation_episodes": 40
+  }
+]

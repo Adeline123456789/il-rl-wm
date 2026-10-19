@@ -56,13 +56,14 @@ def main():
         max_episode_steps=config['max_episode_steps'])
     env=ManiSkillVectorEnv(CountedEnv(raw,counter,purpose),args.num_envs,ignore_terminations=True,record_metrics=True)
     eval_args=SimpleNamespace(eval_seed=args.seed,num_eval_envs=args.num_envs,max_episode_steps=config['max_episode_steps'],
-        num_eval_steps=args.episodes//args.num_envs*config['max_episode_steps'])
+        num_eval_steps=args.episodes//args.num_envs*config['max_episode_steps'],matched_eval_resets=True)
     record=dict(checkpoint=str(args.checkpoint),sha256=hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
         training_seed=config['seed'],lineage_training_interactions=checkpoint['lineage_training_interactions'],
         critic_layer_norm=config.get('critic_layer_norm',False),
         purpose=purpose,seed=args.seed,episodes_per_method=args.episodes,num_envs=args.num_envs,
         protocol={key:config[key] for key in ['env_id','control_mode','max_episode_steps','gamma','reconfiguration_freq']},
         checkpoint_selection='explicit fixed checkpoint; no selection by this evaluation',methods={},new_training_interactions=0)
+    record['protocol']['reset_protocol']='explicit_batch_seed'
     for method,policy in policies.items():
         start=time.monotonic()
         interactions=evaluate_policy(policy,env,eval_args,args.output,checkpoint['global_step'],method,
