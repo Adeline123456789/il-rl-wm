@@ -34,3 +34,11 @@ Policy Decorator：已阅读[论文v1方法§4及失败分析附录F相关段落
 - **Forgetting mitigation**：Wolczyk等，[ICML2024/PMLR235:53039–53078](https://proceedings.mlr.press/v235/wolczyk24a.html)，出版方书目/摘要核验。其关注微调初期未访问的状态子空间能力退化，可作为覆盖不足的竞争解释。PDF抓取报Internal Error，本次只据摘要记录，未宣称方法或作者源码已核验；不据此实现新模块。
 
 这些来源说明行为保持、BC正则与遗忘分析已有先例，不构成本项目原创。AdaptiveBC的alpha是BC权重，不能与SAC温度alpha混称。Policy Decorator/PAC-ACT的既有核验继续有效，但残差教师依赖/chunk PPO均不替代本项目单步SAC。
+
+## 2026-10-19：补读 forgetting mitigation 方法与作者源码
+
+此前PDF访问失败，现已通过[arXiv v3 HTML](https://arxiv.org/html/2402.02868v3)阅读§2–5、B.1/B.3、C及F的相关段落；不把先前摘要级记录改写为当时已读全文。论文BC保持在预训练状态上计算teacher→student KL，KS则用学生在线状态；两者不能混称。机器人实验使用SAC，Actor保持而不正则Critic，但含阶段head、额外时间输入、成功/时限terminal及奖励修改，不能直接迁入本项目稀疏continuing协议。NetHack使用APPO，并伴随冻结encoder、熵设置等差异；这些不是本项目单一保持损失的效果证据。
+
+论文直接链接的[作者仓库](https://github.com/BartekCupial/finetuning-RL-as-CL/tree/390d2041a2829a9ca609594d11e5567e0f1368d2)锁定`390d2041a2829a9ca609594d11e5567e0f1368d2`。实际读取NetHack `learner.py`的`_distillation_loss`、`_kickstarting_loss`和系数调度，以及`models/kickstarter.py`：categorical teacher→student KL；KS过滤invalid样本；teacher eval/no-grad，wrapper forward仍调用teacher并保留其RNN state，因此不能直接当作本项目无教师部署。代码还包含保持系数与探索系数的可选联动，本项目不复制它。三文件含MIT LICENSE逐Git blob验证，见`literature/forgetting_mitigation_source_manifest.json`。机器人SAC补充源码尚未核验，未安装NetHack或SampleFactory。
+
+对F-ACT-02的下一步启发仍是待验证推断：区分专家训练状态上的技能保持与在线覆盖不足；本项目ACT为确定性零latent教师，不能直接定义其categorical/Gaussian KL。若测试均值MSE保持，必须说明它没有约束SAC方差；若测试初始随机SAC分布KL，应另立单机制对照，不能把二者一起加入。当前仅来源核验，未启动改进实验。

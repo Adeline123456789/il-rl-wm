@@ -31,3 +31,7 @@ D1真实闭环负结果后，追加36项CPU回归全通过。独立初态审计�
 新增CPU诊断入口scripts/diagnose_act_online_drift.py，只读取已成功完成的在线作业和哈希匹配检查点，不训练/采样/访问最终测试。固定前1024个expert-train转移，逐状态保存episode ID与时间索引，排除terminal obs和validation episode；报告与冻结K30首动作教师及初始学生的逐动作MSE、log_std、边界比例、逐参数L2和初始→当前pre-tanh Gaussian KL，关联既有40回合验证记录。它只检验固定专家分布上的变化，不能证明在线状态覆盖、Q校准或遗忘原因。
 
 两项数据隔离/KL数学测试exit0；在已完成T5 smoke上核验，obs/初始与末次动作/log_std全部逐位复现原诊断（artifacts/act-drift-parity-001）。新增结果：gripper动作漂移MSE .942503、对教师MSE .942505、pre-tanh KL均值38.3999；初始8/40→末次0/40为原真实短检结果，未新增闭环仿真。完整T4/T5/T6均预先固定诊断step16384/65536/131072/262144，CPU后台队列2829356等待各作业成功后依次汇总、导出和诊断，失败停止、不重启GPU。启动回执写入时缺hashlib导入报错发生在Popen之后，已通过实际存活PID和status恢复回执，没有重复启动；原错误记录保留。
+
+## 2026-10-19 T4 完整证据增量
+
+提交T4完整原始配置、逐回合记录、资源、代码快照、便携actor及预登记固定输入漂移；汇总器校验17×40回合和同Critic协议。CPU后处理成功后等待T5/T6，不新增GPU任务。追加forgetting mitigation论文/作者NetHack源码身份与适用边界。训练算法未变，最终测试未开放。

@@ -81,3 +81,13 @@ ManiSkill 指向的 rfcl 已安装到独立 `.venv-rlpd`（JAX0.4.28），主 `.
 F-E0-005本地replay补丁在CPU/GPU保存时附加source/original episode ID，不改变环境步或动作；审计按显式ID核对，兼容既有唯一seed数据。Peg重复原始演示按seed组划分，证据与边界见diagnostics/F-E0-005.md。U1仅在本地主SAC critic隐藏层增加可选LayerNorm，默认U0输出逐位回归通过；来源与单一机制预登记见U1_CHANGE.md，无外部训练框架混入。
 
 2026-10-19 F-ACT-02只读补核：AdaptiveBC https://github.com/zhaoyi11/adaptive_bc ，commit d47226d4ffc9959ac0ed1337ddd7ebb787fc05e1，论文arXiv2210.13846v1，Apache-2.0。redq_bc.py/main.py/LICENSE/environment.yaml均与上游Git blob相同；仅参考Actor保持机制及适用限制，未复用代码/安装依赖/切换主算法。manifest见literature/act_forgetting_source_manifest.json。IBRL原锁定q_agent.py的RFT路径进一步读取，许可状态不变。
+
+## 2026-10-19 只读补充：forgetting mitigation
+
+- Repository: https://github.com/BartekCupial/finetuning-RL-as-CL
+- Commit: `390d2041a2829a9ca609594d11e5567e0f1368d2` (2024-05-23).
+- Paper: https://arxiv.org/html/2402.02868v3 ; ICML2024 https://proceedings.mlr.press/v235/wolczyk24a.html .
+- License: MIT, copyright 2019–2024 Aleksei Petrenko; actual LICENSE blob verified.
+- Read: `sf_examples/nethack/algo/learning/learner.py` retention losses/schedule; `sf_examples/nethack/models/kickstarter.py` teacher freezing and execution; LICENSE.
+- Role: read-only NetHack implementation reference for F-ACT-02. No code copied, no dependencies installed. Does not verify the paper's RoboticSequence SAC supplementary code.
+- Hash manifest: `literature/forgetting_mitigation_source_manifest.json`; interpretation and limits: `ACT_RELATED_WORK.md`.

@@ -1,0 +1,15 @@
+{
+  "source": "checkpoints/act-t4-online-seed0-001/final.pt",
+  "source_sha256": "554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b",
+  "portable": "releases/act-t4-online-final-001/weights.pt",
+  "portable_sha256": "9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80",
+  "bytes": 584178,
+  "actor_kind": "mlp",
+  "all_actor_tensors_equal": true,
+  "cpu_synthetic_action_parity": true,
+  "includes_replay": false,
+  "includes_optimizer": false,
+  "includes_teacher": false,
+  "new_environment_interactions": 0,
+  "note": "CPU serialization parity only; no new closed-loop performance or transfer evidence."
+}

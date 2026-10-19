@@ -71,3 +71,7 @@ Conclusion → A mean-only constraint may preserve mean behavior while failing t
 ### F-ACT-02 补充：固定输入的可复算漂移（2026-10-19）
 
 artifacts/act-t5-smoke-drift-002新增逐状态episode/timestep来源、教师标签及Gaussian KL，旧1024状态/动作/log_std逐位复现。gripper mean动作漂移MSE .942503，pre-tanh KL(initial||current)均值38.3999，所有最终动作分量在这些状态上均离开|a|≥.999边界；log_std约-.12。该证据与短检成功8/40→0/40一致，但尚不能区分熵压力、随机warmup、critic偏差或梯度参数化效应。完整在线固定四快照诊断已排CPU依赖队列；没有将短检外推为全程失败，没有引入新训练机制。
+
+### F-ACT-01 / F-ACT-02：T4 完整在线结果（2026-10-19）
+
+弱蒸馏学生初始1/40、19/40抓取，在16384步及其后全部固定验证点均0/40成功和抓取，262144步内1296完整训练回合无成功。expert-train固定输入gripper教师MSE .00618→.99441（16384）→1.83111（final）；原始动作、log_std和参数变化见artifacts/act-t4-online-drift-001。在线阶段没有恢复已在蒸馏时损失的技能，且初始抓取能力消失；这不是“强学生全部遗忘”的证据，也未唯一识别原因。先等待独立T5参数迁移和T6专家混合完整对照，保持损失仍未实施。

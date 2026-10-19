@@ -1,8 +1,10 @@
 {
   "pid": 2829356,
   "phase": "waiting",
-  "completed": [],
-  "current": "act-t4-online-seed0-001",
+  "completed": [
+    "act-t4-online-seed0-001"
+  ],
+  "current": "act-t5-online-seed0-001",
   "exit_code": null,
   "GPU_use": false
 }

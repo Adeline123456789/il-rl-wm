@@ -266,3 +266,13 @@ T3正常完成262144真实训练交互、64528更新、136000验证交互，1105
 新增CPU诊断入口scripts/diagnose_act_online_drift.py，只读取已成功完成的在线作业和哈希匹配检查点，不训练/采样/访问最终测试。固定前1024个expert-train转移，逐状态保存episode ID与时间索引，排除terminal obs和validation episode；报告与冻结K30首动作教师及初始学生的逐动作MSE、log_std、边界比例、逐参数L2和初始→当前pre-tanh Gaussian KL，关联既有40回合验证记录。它只检验固定专家分布上的变化，不能证明在线状态覆盖、Q校准或遗忘原因。
 
 两项数据隔离/KL数学测试exit0；在已完成T5 smoke上核验，obs/初始与末次动作/log_std全部逐位复现原诊断（artifacts/act-drift-parity-001）。新增结果：gripper动作漂移MSE .942503、对教师MSE .942505、pre-tanh KL均值38.3999；初始8/40→末次0/40为原真实短检结果，未新增闭环仿真。完整T4/T5/T6均预先固定诊断step16384/65536/131072/262144，CPU后台队列2829356等待各作业成功后依次汇总、导出和诊断，失败停止、不重启GPU。启动回执写入时缺hashlib导入报错发生在Popen之后，已通过实际存活PID和status恢复回执，没有重复启动；原错误记录保留。
+
+2026-10-19 补读ICML2024 forgetting mitigation论文方法及相关附录，并核验作者NetHack实现的保持损失、教师冻结和系数调度，锁定390d2041a2829a9ca609594d11e5567e0f1368d2；三文件Git blob及SHA256见literature/forgetting_mitigation_source_manifest.json。机器人SAC补充源码尚未核验，明确区分论文实验与实际读到的NetHack代码；不复制训练框架、未新增GPU作业或保持机制。详细适用边界见ACT_RELATED_WORK.md。漂移诊断阶段已后台上传并核对远端5d7499d的2046文件SHA/mode与本地d19e129树相同，回执github-act-stage-upload-008保留。
+
+## 2026-10-19 T4 完整蒸馏初始化在线对照
+
+T4完成262144真实训练交互、64528更新、136000验证交互，exit0，1099.193 GPU作业秒，整卡峰值4864MiB。初始均值1/40成功、19/40抓取；16384步至固定final的16次验证均0/40成功且0/40抓取，1296个完整训练回合没有成功。与T2/T3的同Critic、同交互对照相比，当前没有蒸馏初始化改善在线学习的证据；不能从单开发种子宣称普遍无效。
+
+预登记1024个expert-train固定状态的CPU诊断显示，16384步gripper对教师MSE从.00618升至.99441，均值动作接近零、log_std约-.10至-.14；fixed-final gripper MSE为1.83111，pre-tanh KL(initial||current)均值612.994。全部四快照和原始数组保留于artifacts/act-t4-online-drift-001；这是分布内动作漂移与原有闭环退化的关联，不能独立归因于熵、Critic或探索。继续保留F-ACT-01/F-ACT-02，不接入WM掩盖迁移损失。
+
+完整权重SHA256 554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b；无教师便携actor SHA256 9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80，全部张量及CPU序列化动作相同。原始配置/日志/代码快照、17验证点曲线和导出核验一起保存。共享已完成GPU作业69055.980秒，另加运行中的T5时间；7200秒测试reserve保持不变。T5由原队列串行接续，T6随后，最终测试门控仍关闭。
