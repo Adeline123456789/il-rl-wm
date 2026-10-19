@@ -1,0 +1,17 @@
+{"step": 0, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_0.pt", "bytes": 2942978, "sha256": "b893a59821bc3a581711bb648af0316c4f22622e09e74d7cb75fb76a1a8f570e"}
+{"step": 16384, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_16384.pt", "bytes": 12772551, "sha256": "179882bb9d03f76f49bfd4ae3deec0af25a4df36ccf059d5f1276edaaa19e64e"}
+{"step": 32768, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_32768.pt", "bytes": 19080391, "sha256": "7da1318626faa172c3ef281c420a3fb01d4edf6be815288dc9d822df58d8770f"}
+{"step": 49152, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_49152.pt", "bytes": 25388231, "sha256": "f37b17029125c4d1897b9a5d978cada26e87808cd5b98269f63286e079a5ed7a"}
+{"step": 65536, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_65536.pt", "bytes": 31696071, "sha256": "6289b38d31a2bfa0f7e2494ce7375860bbeb2a53cf7f331dbb1c3a78bd31e0dd"}
+{"step": 81920, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_81920.pt", "bytes": 38003911, "sha256": "fc47ec5c50e8c170778c4bab64860d7a85c885264aef29b0c61e998f30d630bb"}
+{"step": 98304, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_98304.pt", "bytes": 44311751, "sha256": "6bafb238e3e1039914c4b88aa2e0029b92b63b43f2cbbc4d14ad1ec0045b0ac1"}
+{"step": 114688, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_114688.pt", "bytes": 50619796, "sha256": "5a11a3b73eaea453bd986472b155fd52386c1024bbafe13eef974d73291494c3"}
+{"step": 131072, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_131072.pt", "bytes": 56927636, "sha256": "812a000bbc3d547196e513460ac586baf4bc2a0c6fc1b133e93569aedd30aeab"}
+{"step": 147456, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_147456.pt", "bytes": 63235476, "sha256": "a38cf8c07014f95924ce9c720bdf65783c94cc689d8b17868310c42201ad919e"}
+{"step": 163840, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_163840.pt", "bytes": 69543316, "sha256": "360c76feca1a43b07a48d3f0c4fbb76d6ab55bdb4b7ce735b434064477187224"}
+{"step": 180224, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_180224.pt", "bytes": 75851156, "sha256": "f02919c4aa276f62093ad1c398ef0280eaf398aa94dfdb80bb313f8addf7b332"}
+{"step": 196608, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_196608.pt", "bytes": 82158996, "sha256": "25c25eed78d7c4672fb71ca3ec1b17cf908bdd22989e9c41f5030695e22c3408"}
+{"step": 212992, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_212992.pt", "bytes": 88466836, "sha256": "579e7173729c0cac8ec05e0c64200806a9d843c6625eb6a4bdfe15f1c5b5a41e"}
+{"step": 229376, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_229376.pt", "bytes": 94774676, "sha256": "e375b3201f1cba03dc3cbb7910fb6bf53c9b469a29b6b1b433be3d0f99ca03de"}
+{"step": 245760, "final": false, "path": "checkpoints/act-t2-online-seed0-002/step_245760.pt", "bytes": 101082516, "sha256": "d95bdb0caf7b00626d0211429e69628ba8c456cfe926f830bb2636612eb072ed"}
+{"step": 262144, "final": true, "path": "checkpoints/act-t2-online-seed0-002/final.pt", "bytes": 107380038, "sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae"}

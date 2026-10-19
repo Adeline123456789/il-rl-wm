@@ -21,7 +21,7 @@
   ],
   "budget": {
     "gpu_hours_limit": 24,
-    "gpu_job_seconds_used": 65756.69074340584,
+    "gpu_job_seconds_used": 66851.67773959681,
     "local_changes_limit": 2,
     "local_changes_used": 1,
     "final_evaluation_reserve_seconds": 7200
@@ -172,7 +172,8 @@
     "act-c1-seed0-001",
     "act-t5-online-smoke-001",
     "act-t4-online-smoke-001",
-    "act-t2-online-seed0-001"
+    "act-t2-online-seed0-001",
+    "act-t2-online-seed0-002"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1136,6 +1137,43 @@
       "actor_parameters": 940808,
       "online_learning_verified": false,
       "note": "Initial parameter preservation and stochastic execution only; online SAC superiority/forgetting untested"
+    },
+    "act_t2_online_seed0_002": {
+      "id": "act-t2-online-seed0-002",
+      "status": "completed",
+      "initial_success": 0,
+      "final_success": 0,
+      "episodes_per_checkpoint": 40,
+      "training_interactions": 262144,
+      "gradient_updates": 64528,
+      "gpu_job_seconds": 1094.9869961909717,
+      "peak_device_mib": 4713,
+      "actor_parameters": 144648,
+      "checkpoint_sha256": "02bab43361011ea2fd028bc9e4fdb87a05314e646e943b9bd2e576793af71dae",
+      "training_complete_episodes": 1296,
+      "training_success_episodes": 0,
+      "losses": {
+        "losses/alpha": {
+          "min": 9.482948371442035e-06,
+          "max": 0.7388117909431458,
+          "final": 1.0021742127719335e-05
+        },
+        "losses/qf1_values": {
+          "min": 0.3010726571083069,
+          "max": 55.92681121826172,
+          "final": 0.3010726571083069
+        },
+        "losses/qf2_values": {
+          "min": 0.30020055174827576,
+          "max": 55.926055908203125,
+          "final": 0.30020055174827576
+        },
+        "losses/actor_loss": {
+          "min": -56.39734649658203,
+          "max": -0.29817888140678406,
+          "final": -0.29817888140678406
+        }
+      }
     }
   },
   "next_experiment": "Frozen T2-T6 same-critic equal-interaction online comparison, original 24h cap and 7200s reserve; analyze full results before local retention changes.",
@@ -1300,9 +1338,9 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "experiment": "act-t2-online-seed0-002",
+    "experiment": "act-t3-online-seed0-001",
     "authoritative_live_file": "artifacts/act-online-batch-002/status.json",
-    "note": "Launch snapshot; consult status file and manifests for actual live progress"
+    "note": "Snapshot; check authoritative live status before acting"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1313,9 +1351,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "87ac0bd62a81f673be208804c349cb5cd5b31bda",
-    "local_snapshot_commit": "f3ec73ecf49357cbedcf0d6feeb89aefe70d3ce5",
-    "verification": "artifacts/github-act-stage-upload-003/status.json",
+    "remote_commit": "533f479c0f47c96878cc7c635f442b770fcdfe9c",
+    "local_snapshot_commit": "613e527ec62f1d2d86a50443e58e52fcf6ad1e76",
+    "verification": "artifacts/github-history-stage-upload-001/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1376,6 +1414,7 @@
     "next_stage": "Finish frozen T2-T6 comparisons, analyze forgetting before any retention mechanism or WM",
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
-    "online_stage": "artifacts/act-online-batch-002/status.json"
+    "online_stage": "artifacts/act-online-batch-002/status.json",
+    "latest_online_summary": "artifacts/act-online-summary-001/summary.json"
   }
 }

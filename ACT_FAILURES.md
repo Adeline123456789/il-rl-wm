@@ -57,3 +57,13 @@ T5短检8192真实交互/1040标准SAC更新，确定性验证0步8/40→8192步
 ## F-ACT-RUN-01：计划生成器捕获了错误 Python 环境
 
 完整队列001的T2在import gymnasium前退出1，未创建环境或执行训练。生成计划时sys.executable来自系统Miniconda，而两次成功短检使用项目.venv。原manifest、stderr、完整计划及队列失败状态保留；2.064秒仍计入共享账本。修复只固定训练解释器，runner增加显式plan/output参数以保存新队列。新计划002逐参数核对：除解释器和失败T2的新ID外，五条件、交互数、更新数、种子和各作业cap完全相同。项目环境导入真实ManiSkill/SAC成功；不安装或混装依赖，不将启动修复计为算法改进。
+
+### F-ACT-02 待检验的单机制候选（尚未实施/未新增GPU预算）
+
+Problem → Early T5 smoke loses its initial deterministic skill.
+Experimental Evidence → 8192 interactions/1040 updates:8/40→0/40; fixed expert-train observations show mean-action collapse and log_std rise. This is not full-run failure or a proven cause.
+Prior Work → IBRL/RFT author code and AdaptiveBC demonstrate prior actor/BC retention objectives in different algorithms; see ACT_RELATED_WORK.md and source hashes.
+Proposed Mechanism → If full T2–T6 controls confirm persistent forgetting, consider a finite, decaying teacher first-action MSE added only to SAC Actor updates on expert-train states. Keep Critic, entropy tuning, replay mixture, real exploration and deployment interface unchanged. Precompute frozen zero-latent/no-ensemble labels; no teacher dependency at deployment. This is a prior-work adaptation, not a novelty claim.
+Controlled Experiment → Not registered or launched yet. First compare the completed T5/T4/T6 controls and actual remaining budget; then fix one parent, one coefficient/schedule and equal interactions before any new run. No parameter sweep, no combined variance/freeze/critic changes. Extra expert-state supervision must be reported distinctly from expert transitions supplied to Critic.
+Result → Pending; no new mechanism implemented.
+Conclusion → A mean-only constraint may preserve mean behavior while failing to preserve stochastic skill; it cannot be assumed to solve the observed variance growth. If resources cannot support the corresponding full control, retain the bounded negative finding and incomplete follow-up instead of silently shortening one method.

@@ -24,3 +24,13 @@ Policy Decorator：已阅读[论文v1方法§4及失败分析附录F相关段落
 - Czarnecki et al. Distilling Policy Distillation. https://arxiv.org/abs/1902.02186 。定位并打开元数据页；未完成方法精读，暂不据此设计新机制。
 
 没有将行为蒸馏或ACT参数复用称为原创。下一阶段只比较参数移植，后续改进须另登记单一机制和实际数据权限。
+
+## 2026-10-19 F-ACT-02：早期遗忘的定向检索与源码核验
+
+沿用 nature-academic-search 的多来源检索流程；本会话未挂载其专用 search_papers/search_arxiv 工具，实际使用网页检索、arXiv/PMLR/作者项目页及已认证GitHub只读接口。检索词包括 SAC pretrained policy fine tuning catastrophic forgetting behavior cloning regularization、ACT SAC fine tuning policy preservation 2026、IBRL bc loss actor update。过滤无关LLM遗忘及论坛建议；不声称穷尽查新。
+
+- **IBRL / RFT**：作者[项目页](https://ibrl.hengyuanhu.com/)将RFT明确列为BC预训练后加BC损失的既有基线。锁定`3c457da3689cc90f881bcdf42a0a578f4a1f60aa`的[rl/q_agent.py](https://github.com/hengyuan-hu/ibrl/blob/3c457da3689cc90f881bcdf42a0a578f4a1f60aa/rl/q_agent.py)中`_compute_actor_bc_loss`用零噪声动作对demo动作作平方误差；`update_actor_rft`将其加到Actor目标，动态版本按参考/当前Q比较调权。该Actor目标没有SAC熵项，不能整套照搬。许可仍未核实，代码只读，无复制、无新依赖。源文件hash与原记录一致。
+- **AdaptiveBC**：Zhao/Boney/Ilin/Kannala/Pajarinen，[arXiv2210.13846v1](https://arxiv.org/html/2210.13846v1)，已读§III–V及算法1。BC约束可缓解初期下降，但过强会妨碍改进；方法使用TD3式目标及Q集成，不能当标准SAC。作者[代码](https://github.com/zhaoyi11/adaptive_bc/tree/d47226d4ffc9959ac0ed1337ddd7ebb787fc05e1)的Actor损失以绝对Q均值归一化，调权使用归一化回报、移动平均和回合长度；论文正文的归一化写法与代码不同。本项目不引入集成、自适应回报控制或Q归一化。四个只读文件逐Git blob匹配，Apache-2.0，详见`literature/act_forgetting_source_manifest.json`；不安装其Python3.8/Gym0.21/D4RL依赖。
+- **Forgetting mitigation**：Wolczyk等，[ICML2024/PMLR235:53039–53078](https://proceedings.mlr.press/v235/wolczyk24a.html)，出版方书目/摘要核验。其关注微调初期未访问的状态子空间能力退化，可作为覆盖不足的竞争解释。PDF抓取报Internal Error，本次只据摘要记录，未宣称方法或作者源码已核验；不据此实现新模块。
+
+这些来源说明行为保持、BC正则与遗忘分析已有先例，不构成本项目原创。AdaptiveBC的alpha是BC权重，不能与SAC温度alpha混称。Policy Decorator/PAC-ACT的既有核验继续有效，但残差教师依赖/chunk PPO均不替代本项目单步SAC。

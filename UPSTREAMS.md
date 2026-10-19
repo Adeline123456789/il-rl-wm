@@ -79,3 +79,5 @@ ManiSkill 指向的 rfcl 已安装到独立 `.venv-rlpd`（JAX0.4.28），主 `.
 完整U0已运行并观察末期失稳，因此增加DroQ/REDQ原论文和作者源码核对。DroQ来源https://github.com/TakuyaHiraoka/Dropout-Q-Functions-for-Doubly-Efficient-Reinforcement-Learning ，commit `4c7adddbaf7573ff9256b16091a3bbdbd536aad4`；REDQ来源https://github.com/watchernyu/REDQ ，commit `7b5d1bff39291a57325a2836bd397a55728960bb`。两者LICENSE均MIT。具体阅读文件及SHA256见literature/value_stability_source_manifest.json；方法/成本/边界见literature/F-U0-001_value_stability_sources.md。未安装、未运行、未复制到主训练器，尚未登记局部算法修改。
 
 F-E0-005本地replay补丁在CPU/GPU保存时附加source/original episode ID，不改变环境步或动作；审计按显式ID核对，兼容既有唯一seed数据。Peg重复原始演示按seed组划分，证据与边界见diagnostics/F-E0-005.md。U1仅在本地主SAC critic隐藏层增加可选LayerNorm，默认U0输出逐位回归通过；来源与单一机制预登记见U1_CHANGE.md，无外部训练框架混入。
+
+2026-10-19 F-ACT-02只读补核：AdaptiveBC https://github.com/zhaoyi11/adaptive_bc ，commit d47226d4ffc9959ac0ed1337ddd7ebb787fc05e1，论文arXiv2210.13846v1，Apache-2.0。redq_bc.py/main.py/LICENSE/environment.yaml均与上游Git blob相同；仅参考Actor保持机制及适用限制，未复用代码/安装依赖/切换主算法。manifest见literature/act_forgetting_source_manifest.json。IBRL原锁定q_agent.py的RFT路径进一步读取，许可状态不变。
