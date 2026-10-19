@@ -79,3 +79,9 @@ T4完成262144真实训练交互、64528更新、136000验证交互，exit0，10
 预登记1024个expert-train固定状态的CPU诊断显示，16384步gripper对教师MSE从.00618升至.99441，均值动作接近零、log_std约-.10至-.14；fixed-final gripper MSE为1.83111，pre-tanh KL(initial||current)均值612.994。全部四快照和原始数组保留于artifacts/act-t4-online-drift-001；这是分布内动作漂移与原有闭环退化的关联，不能独立归因于熵、Critic或探索。继续保留F-ACT-01/F-ACT-02，不接入WM掩盖迁移损失。
 
 完整权重SHA256 554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b；无教师便携actor SHA256 9bd8752ba664a020a57cb85a2679419577a624a3926a6ece395f10b563bc7d80，全部张量及CPU序列化动作相同。原始配置/日志/代码快照、17验证点曲线和导出核验一起保存。共享已完成GPU作业69055.980秒，另加运行中的T5时间；7200秒测试reserve保持不变。T5由原队列串行接续，T6随后，最终测试门控仍关闭。
+
+## 2026-10-19 真实训练回放覆盖诊断
+
+上一goal turn为progress：最终104条件的门控/证据接口、15项CPU验证及远端3eedce5逐文件核对完成。T5实际PID2842871仍存活，继续原训练；本轮复用已有diagnose_behavior.py，只在CPU读取T2/T3/T4已完成fixed-final的完整真实回放，checkpoint哈希和状态几何布局均核验。各262144转移，正奖励数依次0/5/0，成功episode数0/2/0；动作前抓取观测数4/5/5，涉及2/4/2个episode。1312个观察到的episode ID包含16个未完成尾段，不能与1296完整训练回合分母混用。
+
+三组每8192步的动作离散程度、抓取、目标距离和物体位移以及逐转移便携派生数组保存在artifacts/act-online-behavior-audit-001；数组往返复算全部bins和counts完全相同。T4末8192步动作std仍约.469–.550，但抓取/成功均为0；不能把较宽动作分布等同于有效探索。源码明确三组都先执行4096均匀随机warmup，完成首批SAC更新后才开始执行Actor；source=3标记bare-SAC采集路线，包括warmup，不能误读为全程Actor采样。此为覆盖不足/技能保持问题的观察，尚未识别warmup、entropy、Critic或参数化的单一因果。无新GPU作业、无新机制、无最终测试。

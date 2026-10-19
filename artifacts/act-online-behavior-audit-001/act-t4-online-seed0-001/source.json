@@ -1,0 +1,6 @@
+{
+  "checkpoint": "checkpoints/act-t4-online-seed0-001/final.pt",
+  "sha256": "554a43279130f47e977e484e543b01163f83cefc687401064f9a7986b7995a0b",
+  "training_seed": 0,
+  "inherited_interactions": 0
+}

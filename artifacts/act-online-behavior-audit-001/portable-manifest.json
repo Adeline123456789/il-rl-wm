@@ -1,0 +1,21 @@
+{
+  "code_commit": "2588d7f7f8d3ffde02a49c7cfc255100ad06f27b",
+  "extractor": "scripts/diagnose_behavior.py",
+  "extractor_sha256": "e16952acfd7c883bbca3b20b674c342d66066fa1ae50cf3d55d4025a602ee575",
+  "portable_files": {
+    "act-t2-online-seed0-002/transitions.npz": {
+      "bytes": 4215058,
+      "sha256": "c74c7a78c199eb7fc646661ee74dd15039a35a0f74f0ca8a76e2a1e4943b325d"
+    },
+    "act-t3-online-seed0-001/transitions.npz": {
+      "bytes": 4222122,
+      "sha256": "32df9fee46f8e59f8b27113e55292b3e399379f0102c10a226c4e2b929f8df83"
+    },
+    "act-t4-online-seed0-001/transitions.npz": {
+      "bytes": 4216745,
+      "sha256": "623621b366d1868899d4117f5ed158730c79d2292050bbe0c7ffc9470ebfc2a2"
+    }
+  },
+  "new_environment_interactions": 0,
+  "GPU_use": false
+}

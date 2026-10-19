@@ -1432,9 +1432,9 @@
     "github_connector": "authenticated as repository owner; metadata reports push permission",
     "status": "In-progress snapshot uploaded and remote tree/files verified",
     "remote_branch": "research/act-sac-transfer",
-    "remote_commit": "43cddd3ffe8f22f76b4ed74325db6125cde6c089",
-    "local_snapshot_commit": "7db9e91ab06cccef55965ddefd2f7763c0cbdb4e",
-    "verification": "artifacts/github-act-stage-upload-009/status.json",
+    "remote_commit": "3eedce553466c0809101fd55d856645d3520a97c",
+    "local_snapshot_commit": "2588d7f7f8d3ffde02a49c7cfc255100ad06f27b",
+    "verification": "artifacts/github-act-stage-upload-010/status.json",
     "pr": "https://github.com/Adeline123456789/il-rl-wm/pull/2"
   },
   "local_hypotheses": [
@@ -1523,6 +1523,7 @@
       "full_run_drift_completed": [
         "act-t4-online-seed0-001"
       ]
-    }
+    },
+    "actual_online_behavior_audit": "artifacts/act-online-behavior-audit-001/portable-manifest.json"
   }
 }

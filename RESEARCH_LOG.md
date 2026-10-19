@@ -284,3 +284,9 @@ T4完成262144真实训练交互、64528更新、136000验证交互，exit0，10
 最终runner新增ACT便携权重校验和统一评测分支：离线初始包固定SHA，在线包必须对应已完成训练的final哈希与交互数；统一汇总从ACT原始episode_index/iteration适配，保留原始逐回合文件。15项CPU门控/结果身份/种子/完整回合/导出来源/旧协议回归测试通过，104个条件实际预检均未运行，分数为null。它不证明10环境真实仿真已通过。
 
 新增scripts/check_act_evaluation_entry.py，待现有T5/T6结束且核对余额后，使用原runner以act-independent-eval-smoke-001单作业≤300秒运行6个模式×10回合、10环境、validation seed10000；累计12000验证交互、0训练，检查真实trace形状和全部初态配对。该预检不占用最终seed，需从测试reserve之外的余额支付。当前仅准备脚本，未启动或排入第二GPU；最终runner要求其实际status与预算manifest均成功。configs/act_final_test_gate.json仍为false，比较冻结前不能运行最终104条件。
+
+## 2026-10-19 真实训练回放覆盖诊断
+
+上一goal turn为progress：最终104条件的门控/证据接口、15项CPU验证及远端3eedce5逐文件核对完成。T5实际PID2842871仍存活，继续原训练；本轮复用已有diagnose_behavior.py，只在CPU读取T2/T3/T4已完成fixed-final的完整真实回放，checkpoint哈希和状态几何布局均核验。各262144转移，正奖励数依次0/5/0，成功episode数0/2/0；动作前抓取观测数4/5/5，涉及2/4/2个episode。1312个观察到的episode ID包含16个未完成尾段，不能与1296完整训练回合分母混用。
+
+三组每8192步的动作离散程度、抓取、目标距离和物体位移以及逐转移便携派生数组保存在artifacts/act-online-behavior-audit-001；数组往返复算全部bins和counts完全相同。T4末8192步动作std仍约.469–.550，但抓取/成功均为0；不能把较宽动作分布等同于有效探索。源码明确三组都先执行4096均匀随机warmup，完成首批SAC更新后才开始执行Actor；source=3标记bare-SAC采集路线，包括warmup，不能误读为全程Actor采样。此为覆盖不足/技能保持问题的观察，尚未识别warmup、entropy、Critic或参数化的单一因果。无新GPU作业、无新机制、无最终测试。

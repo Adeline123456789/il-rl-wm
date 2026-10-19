@@ -1,0 +1,12 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "artifacts/act-online-behavior-audit-001/recompute.py",
+    "--input",
+    "artifacts/act-online-behavior-audit-001",
+    "--output",
+    "artifacts/act-online-behavior-audit-001/recomputed-counts.json"
+  ],
+  "exit_code": 0,
+  "GPU_use": false
+}
