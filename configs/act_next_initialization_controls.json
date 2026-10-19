@@ -70,7 +70,7 @@
         "steps_per_env": 4
       },
       "existing_experiment": null,
-      "pre_execution_gate": "Current train_sac.py rejects expert replay with random initialization. Remove only that obsolete initialization requirement after CPU interface review; retain 50% batch split and explicit data audit."
+      "pre_execution_gate": "CPU interface fix verified in artifacts/act-r0-interface-cpu-001 (12 tests and real train-only data loading). GPU smoke/full training still requires explicit new budget authorization."
     },
     {
       "id": "R1",
@@ -328,5 +328,13 @@
     "Run each registered condition once; no parameter search or best-checkpoint selection.",
     "Compare fixed final and complete learning curves, early positive reward, teacher-free success and costs.",
     "If R0 approximates R2, prefer explanation by expert data until replicated init benefit; do not add warmup or U2 to salvage scores."
-  ]
+  ],
+  "cpu_interface_preflight": {
+    "status": "completed",
+    "evidence": "artifacts/act-r0-interface-cpu-001",
+    "tests_passed": 12,
+    "new_environment_interactions": 0,
+    "new_training_updates": 0,
+    "gpu_seconds": 0
+  }
 }

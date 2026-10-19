@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "Authorized U2 completion finished; 106/106 final conditions complete; no further GPU work authorized",
+  "phase": "106/106 final tests delivered; R0 CPU interface prerequisite complete; new GPU training awaits explicit authorization",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -1602,10 +1602,10 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "status": "300-second U2 completion finished; all106 conditions audited; publishing raw evidence",
+    "status": "Authorized U2 completion and background GitHub delivery finished; no job queued",
     "final_report": "FINAL_BATCH_REPORT.md",
     "audit": "artifacts/act-final-completion-postprocess-001/audit.json",
-    "data_delivery_commit": "a00ff2cd852dd2cc16847995c529f9ed918f451f"
+    "data_delivery_commit": "bf4036eca015b3ec3207440c3d64a9ae55d72eba"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1616,10 +1616,13 @@
     "commit": "5adb2c8155c9c94095f2567824ac4e860338d7d0",
     "tree": "2723aa23694e4dd32809d4201034193c7a8a684a",
     "receipt": "artifacts/github-act-stage-upload-023/status.json",
-    "verified_files": 3401,
+    "verified_files": 3455,
     "draft_pr": 2,
     "main_unchanged": true,
-    "note": "Remote metadata commit includes verified stage22 receipt; this final self-referential receipt remains local until a later authorized change."
+    "note": "Remote metadata commit includes verified stage22 receipt; this final self-referential receipt remains local until a later authorized change.",
+    "status": "verified",
+    "latest_receipt": "artifacts/github-act-stage-upload-024/status.json",
+    "remote_commit": "bf4036eca015b3ec3207440c3d64a9ae55d72eba"
   },
   "local_hypotheses": [
     {
@@ -1996,7 +1999,14 @@
       "ACT_U2_FINAL_REVIEW.md",
       "ACT_TRANSFER_CAUSAL_GAPS.md",
       "NEXT_RESEARCH_BATCH.md"
-    ]
+    ],
+    "r0_cpu_preflight": {
+      "status": "completed",
+      "evidence": "artifacts/act-r0-interface-cpu-001",
+      "tests_passed": 12,
+      "gpu_seconds": 0,
+      "new_training_updates": 0
+    }
   },
   "source_publication": {
     "frozen_local_head": "9f1536cf857892f0e4db301377b05db4e7c9518c",

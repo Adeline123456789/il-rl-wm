@@ -324,8 +324,8 @@ class Logger:
     def close(self):
         self.writer.close()
 
-if __name__ == "__main__":
-    args = tyro.cli(Args)
+def validate_args(args):
+    """Validate the registered SAC interfaces before constructing any environment."""
     assert args.actor_init_kind in {'mlp','act'}
     if args.retention_config:
         assert args.actor_init_checkpoint and args.actor_init_kind == 'act'
@@ -338,7 +338,7 @@ if __name__ == "__main__":
     if args.resume_checkpoint:
         assert args.autotune and args.learning_starts==0, 'Resume as a new segment with retained replay and immediate updates'
     if args.expert_dataset:
-        assert (args.bc_checkpoint or args.actor_init_checkpoint) and args.batch_size % 2 == 0, 'Expert mixture requires explicit offline initialization and exactly 50% expert samples'
+        assert args.batch_size % 2 == 0, 'Expert mixture requires exactly 50% expert samples'
     assert args.output and not args.track and not args.capture_video and not args.save_trajectory
     assert not args.evaluate and args.checkpoint is None, 'Use explicit evaluation/restart entry; no implicit optimizer reset'
     assert not args.partial_reset and not args.eval_partial_reset and args.bootstrap_at_done == 'always'
@@ -349,6 +349,11 @@ if __name__ == "__main__":
     assert args.training_freq * args.utd >= 1 and args.policy_frequency == 1
     assert args.num_eval_steps % args.max_episode_steps == 0 and args.eval_freq > 0
     assert args.total_timesteps >= args.learning_starts
+
+
+if __name__ == "__main__":
+    args = tyro.cli(Args)
+    validate_args(args)
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
     assert not (output / 'metrics.jsonl').exists(), 'Do not append a new run to old evidence'
     torch.set_num_threads(args.torch_threads)
