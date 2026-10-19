@@ -1,0 +1,32 @@
+{
+  "checkpoint": "releases/final-pick-seed1-b-001/weights.pt",
+  "sha256": "c6cf2a1b0f1ea99e9e75a6ed0e56efc59531738926d6e1a2d3b00f28cc03f27e",
+  "training_seed": 1,
+  "lineage_training_interactions": 262144,
+  "critic_layer_norm": false,
+  "purpose": "final_test",
+  "seed": 20000,
+  "episodes_per_method": 100,
+  "num_envs": 10,
+  "protocol": {
+    "env_id": "PickCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 200,
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "checkpoint_selection": "explicit fixed checkpoint; no selection by this evaluation",
+  "methods": {
+    "sac": {
+      "interactions": 20000,
+      "wall_seconds": 45.74952576396754,
+      "candidates": 1,
+      "calls_il": false,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0
+    }
+  },
+  "new_training_interactions": 0
+}

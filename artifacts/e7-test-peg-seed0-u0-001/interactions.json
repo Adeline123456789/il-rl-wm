@@ -1,0 +1,12 @@
+{
+  "phases": {
+    "final_test": {
+      "attempted_transitions": 160000,
+      "completed_transitions": 160000,
+      "completed_vector_steps": 16000
+    }
+  },
+  "total_completed": 160000,
+  "total_attempted": 160000,
+  "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+}

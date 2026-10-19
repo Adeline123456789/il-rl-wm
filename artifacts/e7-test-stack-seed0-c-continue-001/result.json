@@ -1,0 +1,32 @@
+{
+  "checkpoint": "releases/final-stack-seed0-c-continue-001/weights.pt",
+  "sha256": "3af6c33d205fa884413214919c5adfb33b2ac8a77949d9e30b1b431c806f144b",
+  "training_seed": 0,
+  "lineage_training_interactions": 524288,
+  "critic_layer_norm": false,
+  "purpose": "final_test",
+  "seed": 20000,
+  "episodes_per_method": 100,
+  "num_envs": 10,
+  "protocol": {
+    "env_id": "StackCube-v1",
+    "control_mode": "pd_ee_delta_pos",
+    "max_episode_steps": 300,
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "checkpoint_selection": "explicit fixed checkpoint; no selection by this evaluation",
+  "methods": {
+    "sac": {
+      "interactions": 30000,
+      "wall_seconds": 90.54892999900039,
+      "candidates": 1,
+      "calls_il": false,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0
+    }
+  },
+  "new_training_interactions": 0
+}

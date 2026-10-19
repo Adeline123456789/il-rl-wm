@@ -1,0 +1,32 @@
+{
+  "checkpoint": "releases/final-peg-seed0-b-001/weights.pt",
+  "sha256": "21a03bc8551a4a9523b183c5fab16463d10c74a87d5f80795d9dece5e5d85cc6",
+  "training_seed": 0,
+  "lineage_training_interactions": 262144,
+  "critic_layer_norm": false,
+  "purpose": "final_test",
+  "seed": 20000,
+  "episodes_per_method": 100,
+  "num_envs": 10,
+  "protocol": {
+    "env_id": "PegInsertionSide-v1",
+    "control_mode": "pd_ee_delta_pose",
+    "max_episode_steps": 400,
+    "gamma": 0.99,
+    "reconfiguration_freq": 1,
+    "reset_protocol": "explicit_batch_seed"
+  },
+  "checkpoint_selection": "explicit fixed checkpoint; no selection by this evaluation",
+  "methods": {
+    "sac": {
+      "interactions": 40000,
+      "wall_seconds": 133.80387568095466,
+      "candidates": 1,
+      "calls_il": false,
+      "success_once": 0.0,
+      "success_at_end": 0.0,
+      "mean_return": 0.0
+    }
+  },
+  "new_training_interactions": 0
+}
