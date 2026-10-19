@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_id": "20261016-u0-01",
-  "phase": "106/106 final tests delivered; R0 CPU interface prerequisite complete; new GPU training awaits explicit authorization",
+  "phase": "Authorized controls queue002: R0 smoke reused, R3 resource smoke then full controls if fit",
   "branch": "research/act-sac-transfer",
   "base_commit": "7e678e378af07c375361ee41aab45d2f505ad5c6",
   "upstreams": {
@@ -251,7 +251,8 @@
     "e7-test-act-t6-final-stochastic-001",
     "e7-test-act-u2-final-mean-001",
     "e7-test-act-u2-final-mean-002",
-    "e7-test-act-u2-final-stochastic-002"
+    "e7-test-act-u2-final-stochastic-002",
+    "act-r0-expert50-smoke-001"
   ],
   "results": {
     "e1_bc_smoke_001": {
@@ -1393,10 +1394,8 @@
       "not_efficacy_evidence": true
     }
   },
-  "next_experiment": "None queued; R0/R1/R3 remains an unauthorized separate proposal",
-  "blockers": [
-    "New training R0/R1/R3 and remaining ACT-WM/seeds/tasks require a separate explicit budget; 300-second evaluation authorization is consumed only by this completed scope."
-  ],
+  "next_experiment": "act-r3-expert50-smoke-001",
+  "blockers": [],
   "resume": "Read FINAL_BATCH_REPORT.md and completion audit; do not restart original or completion queues; hourly automation remains deleted.",
   "background_jobs": [
     {
@@ -1577,6 +1576,16 @@
       "role": "U2 completion CPU audit (terminal)",
       "status_file": "artifacts/act-final-completion-postprocess-001/status.json",
       "launched_pid": 3180899
+    },
+    {
+      "role": "Authorized11500s initialization controls",
+      "status_file": "artifacts/act-initialization-batch-001/status.json",
+      "launched_pid": 13872
+    },
+    {
+      "role": "11500s controls after resource-estimator reconciliation; reuses R0 smoke",
+      "status_file": "artifacts/act-initialization-batch-002/status.json",
+      "launched_pid": 18028
     }
   ],
   "environment": {
@@ -1602,10 +1611,10 @@
     "independent_evaluation_smoke": "completed_4_validation_episodes_800_interactions_0_training"
   },
   "ongoing_progress": {
-    "status": "Authorized U2 completion and background GitHub delivery finished; no job queued",
+    "status": "106 conditions and R0 CPU prerequisite delivered; awaiting new GPU authorization",
     "final_report": "FINAL_BATCH_REPORT.md",
     "audit": "artifacts/act-final-completion-postprocess-001/audit.json",
-    "data_delivery_commit": "bf4036eca015b3ec3207440c3d64a9ae55d72eba"
+    "data_delivery_commit": "ecdc9d8f40f90f1a8f63c2a167c4a20eb14c416a"
   },
   "task_data_preparation": {
     "StackCube-v1": "full1000_audited_769_eligible_231_failed_retained",
@@ -1616,13 +1625,13 @@
     "commit": "5adb2c8155c9c94095f2567824ac4e860338d7d0",
     "tree": "2723aa23694e4dd32809d4201034193c7a8a684a",
     "receipt": "artifacts/github-act-stage-upload-023/status.json",
-    "verified_files": 3455,
+    "verified_files": 3463,
     "draft_pr": 2,
     "main_unchanged": true,
     "note": "Remote metadata commit includes verified stage22 receipt; this final self-referential receipt remains local until a later authorized change.",
     "status": "verified",
-    "latest_receipt": "artifacts/github-act-stage-upload-024/status.json",
-    "remote_commit": "bf4036eca015b3ec3207440c3d64a9ae55d72eba"
+    "latest_receipt": "artifacts/github-act-stage-upload-025/status.json",
+    "remote_commit": "ecdc9d8f40f90f1a8f63c2a167c4a20eb14c416a"
   },
   "local_hypotheses": [
     {
@@ -1946,7 +1955,7 @@
     "teacher_selection": "releases/act-teacher-k30-001/manifest.json",
     "distillation": "artifacts/act-d1-seed0-001/result.json",
     "matched_evaluation": "artifacts/act-matched-eval-001/verified_summary.json",
-    "next_stage": "No further authorized GPU job; independent next-training budget decision required",
+    "next_stage": "Resource-gated serial R0/R1/R3; new final seed30000 preregistered, no WM",
     "teacher_selection_unchanged": true,
     "online_plan": "artifacts/act-online-budget-002/plan.json",
     "online_stage": "artifacts/act-online-batch-002/status.json",
@@ -1993,8 +2002,8 @@
       "new_budget": false
     },
     "new_task": "ACT_NEXT_STAGE_TASK_2026-10-19.md",
-    "next_gpu_training_authorized": false,
-    "next_plan": "configs/act_next_initialization_controls.json",
+    "next_gpu_training_authorized": true,
+    "next_plan": "configs/act_initialization_execution_plan_002.json",
     "reviews": [
       "ACT_U2_FINAL_REVIEW.md",
       "ACT_TRANSFER_CAUSAL_GAPS.md",
@@ -2021,5 +2030,12 @@
     "id": "il-rl-wm-act",
     "status": "deleted",
     "reason": "User explicitly cancelled the hourly scheduled task; existing bounded processes were not terminated."
+  },
+  "additional_budgets": {
+    "act-initialization-controls-20261019": {
+      "authorization": "configs/act_initialization_budget.json",
+      "limit_seconds": 11500,
+      "gpu_job_seconds_used": 80.98360866399992
+    }
   }
 }

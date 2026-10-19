@@ -1,0 +1,35 @@
+{
+  "phase": "completed",
+  "exit_code": 0,
+  "pid": null,
+  "executor": "background GitHub connector",
+  "started_at": 1792400661.6530855,
+  "recovery": "Previous cell45 absent; PR head still bf4036e. Resume content-addressed objects only, then compare-and-swap branch.",
+  "tree": "4835dd6e506373876a4973d9f3d82710c6d460cc",
+  "remote_parent": "bf4036eca015b3ec3207440c3d64a9ae55d72eba",
+  "uploaded": [
+    "cbdd6fb90b0b16695f5a5d38ad640980bb6a9ff7",
+    "e5ec5d45052e7563646b2aa8b0db47aa31e53d7d",
+    "305cf084c36ec40b56418cdc29a1dd8e09ece7d7",
+    "dbfde9f7abfcfb0fe3657c145ddc7ab02880ef71",
+    "bda3aae08592ae5de2c244e678ebc6aec93227e1",
+    "8076822ba361db4e6c246dee96477150275068b3",
+    "618021d31c8baf5cfd4a3a18fb27f00aa366ef09",
+    "edc72ceb1776d8e65cfc2b536a807d3a7d9cc193",
+    "8de06265b5c97e4922000cd5e5575c15d36ed0ff",
+    "b6c3b4e173058cc6c9cf82bcb0afdf69f24e0133",
+    "7cda32f3ba8ef33131f84c2555307474beb99550",
+    "9db0b64700e4a807423fbbfb42ff36c869a6f067",
+    "d2b779ebd9f22d51d94c747d35e9b004a98005b1",
+    "aaf1e00f75157980e632f193d523d63e8287b636"
+  ],
+  "remote_commit": "ecdc9d8f40f90f1a8f63c2a167c4a20eb14c416a",
+  "verified_files": 3463,
+  "main_unchanged": true,
+  "draft_pr": 2,
+  "verified_at": "2026-10-19T09:05:28.401Z",
+  "background_tool_cells": [
+    "4",
+    "5"
+  ]
+}

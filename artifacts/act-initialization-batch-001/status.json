@@ -1,0 +1,14 @@
+{
+  "pid": 13872,
+  "phase": "failed",
+  "completed": [
+    "act-r0-expert50-smoke-001"
+  ],
+  "current": "act-r0-expert50-smoke-001",
+  "started_at": 1792401170.2164564,
+  "exit_code": 1,
+  "plan_sha256": "c3e1bde24a14f57dbfdf908e4739ed898182aa26b0839872ad13339a7bec9849",
+  "authorization_sha256": "ce15673369b428439bf2072d33c1c420ad02bee390b36d5583bbbdf779e3dd0c",
+  "error": "AssertionError('Measured resource projection exceeds registered cap; stop without changing budget')",
+  "ended_at": 1792401251.789509
+}

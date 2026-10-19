@@ -1,0 +1,32 @@
+# 固定专家回放的初始化对照（2026-10-19）
+
+用户已明确批准下一批11500 GPU作业秒。原批次216作业/85238.750349秒、106个正式条件及失败记录保留。新授权采用独立账本，不使用原24小时剩余1161.249651秒，不恢复每小时自动化。
+
+## 问题和受控比较
+
+T4与T6的差别同时引入专家转移支持；T6成功不能单独归因于ACT初始化。已完成的U2只有专家均值保持，没有持续闭环收益。参考已有SAC/演示混合与ACT迁移文献（UPSTREAMS、ACT_RELATED_WORK），本批不新增第三种机制，只补齐固定50%专家回放的初始化对照。
+
+R0：随机MLP；R1：BC均值；R2：复用已有ACT-D1初始化T6；R3：ACT推理参数初始化Transformer。R3还改变架构和计算成本，不能当作纯权重初始化效应。所有新训练均PickCube sparse/state、seed0、fresh双LN Critic、std=-2、4096均匀随机预热、262144真实交互、64528更新、33038336个专家及同量在线更新样本、17次40回合验证。R2不重训；四条件在新测试协议统一评估。
+
+## 冻结协议和资源门槛
+
+授权原文、逐作业精确命令及上限：configs/act_initialization_budget.json。执行顺序和源码哈希：configs/act_initialization_execution_plan.json。R0/R3各8192训练交互的资源短检总cap300秒，独立于完整训练；R0/R1完整各cap1900秒，R3 cap6200秒，三项训练总cap10000秒；最后8个评测作业共享1200秒。未使用的旧批额度不转入本批。
+
+短检检查1040更新、532480专家样本/同量在线样本、与T6相同双Critic初始哈希；按实测更新、rollout和17次验证推算，再加35%及60秒。超过固定上限即停止并保留证据，不自动增加时长或改变超参数。任一错误/非有限值/数据或初始化不符停止，不自动重试。
+
+最终seed30000在任何新训练前登记；100回合、10环境、200步、均值及随机各一条件。原seed20000已经用于旧批，不用于本批开发。独立gate在全部三项固定训练及便携导出完成后释放；固定final，不按成绩选checkpoint。文件为configs/act_initialization_final_protocol.json、act_initialization_evaluation_plan.json和act_initialization_test_gate.json。
+
+## 已验证工程边界
+
+原GPU总账保持不变，新作业manifest有budget_id及授权文件哈希。runner保留同一GPU锁、实际GPU空闲检查和全作业未结束检查；独立类别余额保护评测，留12秒既有终止/清理余量。无budget-file时仍使用原24小时账本。
+
+CPU预检002的24测试通过，含分账不混用、未注册命令拒绝、类别保留、旧/新最终seed门槛、原ACT与SAC接口。五个完整训练命令已经实际tyro解析并验证；GPU短检/完整结果只以新manifest、result和原始回合为准。CPU测试不表示迁移或RL成功。
+
+## 当前证据入口与未完成项
+
+artifacts/act-initialization-batch-002/status.json为当前权威队列状态（001因资源估算停止并保留）；各作业独立PID、stdout/stderr、配置、源码快照、时间、资源和checkpoint哈希。资源门槛见同目录resource_gate.json。完成后汇总写入artifacts/act-initialization-summary-001。
+
+本计划尚无完整R0/R1/R3结果，不预判ACT初始化有效。不含新训练种子、多任务、预热来源修改、U2叠加或WM。原始最终SAC＋WM主干仍保留为后续研究要求。
+
+## 资源估算修正，F-ACT-RESOURCE-01
+R0短检80.983609秒，0→8192真实交互/1040更新，初始化Critic和50%采样通过。原估算把16.265527秒的一次性开销放大8.5倍，含余量1935.017777秒超过1900，队列001已停止。依据实际result训练循环计时修正一次性开销重复计入；循环内44.502403秒非更新/rollout开销仍全部按17/2计，保留35%+60余量，预测1770.329320秒。CPU预检003的26测试通过；002队列复用已成功R0短检，所有训练命令、预算及最终测试规则不变。新执行清单configs/act_initialization_execution_plan_002.json，旧清单和失败完整保留。

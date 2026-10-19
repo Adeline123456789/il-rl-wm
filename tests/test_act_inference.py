@@ -29,6 +29,22 @@ def test_final_gate_and_registered_protocol(tmp_path):
             validate_protocol(*values, gate)
 
 
+def test_fresh_registered_seed_requires_its_own_gate(tmp_path):
+    gate = tmp_path / 'new-gate.json'
+    gate.write_text('{"released": false}')
+    protocol = tmp_path / 'protocol.json'
+    protocol.write_text(json.dumps(dict(status='registered_before_training', seed=30000,
+                                        episodes=100, num_envs=10, gate=str(gate))))
+    with pytest.raises(AssertionError, match='gate closed'):
+        validate_protocol('act', 'mean', 30000, 100, 10, gate, protocol)
+    gate.write_text('{"released": true}')
+    validate_protocol('act', 'mean', 30000, 100, 10, gate, protocol)
+    with pytest.raises(AssertionError):
+        validate_protocol('act', 'mean', 30000, 100, 10, gate)
+    with pytest.raises(AssertionError):
+        validate_protocol('act', 'mean', 30001, 100, 10, gate, protocol)
+
+
 def test_closed_loop_rejects_final_before_creating_environment(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     (tmp_path / 'configs').mkdir()

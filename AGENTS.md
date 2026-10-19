@@ -23,3 +23,5 @@
 2026-10-19 用户明确批准补评300秒：仅U2两项，原24小时余额支付，授权见configs/act_final_completion_authorization.json；保留旧失败并使用新attempt映射。新训练11500秒仍未授权，自动化不恢复。
 
 2026-10-19 补评终态：106/106已完成，U2两项002均0/100。原300秒仅消耗实测补评时长，无新训练授权；禁止重复队列。最新FINAL_BATCH_REPORT.md和act-final-summary-004。
+
+2026-10-19 新授权：用户明确批准下一批11500 GPU作业秒，仅R0/R1/R3固定50%专家对照＋资源短检/评测；R2复用不重训。configs/act_initialization_budget.json独立账，不借旧余额；smoke300/train10000/eval1200，测试seed30000预登记。无额外调参/WM/预热或恢复定时任务。新队列按实际status/PID核实，不重复启动。

@@ -1,0 +1,4 @@
+..........................                                               [100%]
+26 passed in 1.52s
+Five exact registered training commands parsed/validated; source hashes match; final gate closed; zero simulator interactions.
+{'one_time_setup_cleanup_seconds': 16.26552665199995, 'in_loop_other_seconds': 44.50240281000026, 'projected_full_seconds': 1266.9106074461647, 'previous_all_overhead_scaled_seconds': 1388.9020573361643, 'with_35_percent_plus60': 1770.3293200523224}

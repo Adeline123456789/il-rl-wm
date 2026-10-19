@@ -47,12 +47,16 @@ def offline_errors(model, dataset, batch_size):
 
 @torch.no_grad()
 def closed_loop(model, out, iteration, episodes, counter, video=False, temporal=False, method=None,
-                matched_resets=True, eval_seed=10000, num_envs=8, purpose='validation', trace=False):
-    assert (eval_seed, purpose) in [(10000, 'validation'), (20000, 'final_test')]
+                matched_resets=True, eval_seed=10000, num_envs=8, purpose='validation', trace=False,
+                final_protocol=None):
+    assert purpose in ('validation', 'final_test')
+    if purpose == 'validation':
+        assert eval_seed == 10000 and final_protocol is None
     assert num_envs in (8, 10) and episodes > 0 and episodes % num_envs == 0
     if purpose == 'final_test':
-        assert episodes == 100 and num_envs == 10 and matched_resets
-        assert json.loads(Path('configs/act_final_test_gate.json').read_text())['released'], 'Final-test gate closed'
+        assert matched_resets
+        from scripts.final_test_protocol import validate_final_test
+        validate_final_test(eval_seed, episodes, num_envs, 'configs/act_final_test_gate.json', final_protocol)
     from scripts.interaction_counter import CountedEnv
     from vendor.maniskill.bc.behavior_cloning.make_env import make_eval_envs
     method = method or ('act_temporal_ensemble' if temporal else 'act_requery_first')

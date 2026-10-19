@@ -42,17 +42,22 @@ def test_online_export_must_be_registered_final(tmp_path):
     with pytest.raises(AssertionError):act_checkpoint_hash(entry,tmp_path)
 
 
-def test_act_rows_recompute_and_reject_wrong_identity(tmp_path):
+@pytest.mark.parametrize('seed', [20000, 30000])
+def test_act_rows_recompute_and_reject_wrong_identity(tmp_path, seed):
     entry=dict(id='act-synthetic',framework='act',task='PickCube-v1',training_seed=0,
         training_interactions=262144,training_role='development',variant='synthetic',
         kind='act',mode='mean',methods=['act_mean'],checkpoint='synthetic.pt')
-    plan=dict(seed=20000,episodes_per_model_method=100,num_envs=10,entries=[entry])
+    plan=dict(seed=seed,episodes_per_model_method=100,num_envs=10,entries=[entry])
+    if seed != 20000:
+        protocol = tmp_path/'protocol.json'
+        protocol.write_text(json.dumps(dict(status='registered_before_training', seed=seed)))
+        plan['final_protocol'] = str(protocol)
     folder=tmp_path/'e7-test-act-synthetic-001';folder.mkdir()
     (folder/'manifest.json').write_text(json.dumps(dict(ended_at='synthetic',exit_code=0,stop_reason=None)))
     rows=[dict(method='act_mean',episode_index=i,iteration=262144,episode_len=200,
-        eval_seed=20000+i//10*10,success_once=int(i<20),success_at_end=0,**{'return':float(i<20)}) for i in range(100)]
+        eval_seed=seed+i//10*10,success_once=int(i<20),success_at_end=0,**{'return':float(i<20)}) for i in range(100)]
     (folder/'episodes.jsonl').write_text('\n'.join(json.dumps(r) for r in rows))
-    result=dict(purpose='final_test',seed=20000,num_envs=10,new_training_interactions=0,
+    result=dict(purpose='final_test',seed=seed,num_envs=10,new_training_interactions=0,
         training_seed=0,training_interactions=262144,kind='act',mode='mean',method='act_mean',
         checkpoint='synthetic.pt',success_once=20,success_at_end=0,mean_return=.2,interactions=20000,
         protocol=dict(env_id='PickCube-v1',reset_protocol='explicit_batch_seed',max_episode_steps=200))
@@ -63,6 +68,6 @@ def test_act_rows_recompute_and_reject_wrong_identity(tmp_path):
     assert checked['completed_conditions']==1 and checked['conditions'][0]['success_rate']==.2
     bad=copy.deepcopy(plan);bad['entries'][0]['mode']='stochastic'
     with pytest.raises(AssertionError):summarize(bad,tmp_path)
-    rows[-1]['eval_seed']=20000
+    rows[-1]['eval_seed']=seed
     (folder/'episodes.jsonl').write_text('\n'.join(json.dumps(r) for r in rows))
     with pytest.raises(AssertionError):summarize(plan,tmp_path)

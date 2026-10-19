@@ -1,0 +1,13 @@
+{
+  "pid": 18028,
+  "started_at": 1792401395.6615152,
+  "command": [
+    "/media/midea/F496AC8096AC4548/il-rl-wm/.venv/bin/python",
+    "scripts/run_initialization_controls.py",
+    "--plan",
+    "configs/act_initialization_execution_plan_002.json",
+    "--output",
+    "artifacts/act-initialization-batch-002"
+  ],
+  "status": "artifacts/act-initialization-batch-002/status.json"
+}

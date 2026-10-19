@@ -17,7 +17,14 @@ def read(path):
 
 
 def summarize(plan, root, attempts=None):
-    assert (plan['seed'], plan['episodes_per_model_method'], plan['num_envs']) == (20000, 100, 10)
+    seed = plan['seed']
+    if plan.get('final_protocol'):
+        registered = read(Path(plan['final_protocol']))
+        assert registered['status'] == 'registered_before_training'
+        assert seed == registered['seed'] and seed not in (10000, 20000)
+    else:
+        assert seed == 20000
+    assert (plan['episodes_per_model_method'], plan['num_envs']) == (100, 10)
     attempts = attempts or {}
     assert set(attempts) <= {entry['id'] for entry in plan['entries']}
     assert all(Path(name).name == name and name.startswith(f'e7-test-{key}-')
@@ -49,7 +56,7 @@ def summarize(plan, root, attempts=None):
             assert (result['kind'],result['mode'])==(entry['kind'],entry['mode'])
             assert result['checkpoint']==entry['checkpoint']
             episodes=[dict(ep,episode=ep['episode_index'],step=ep['iteration']) for ep in episodes]
-        assert result['purpose'] == 'final_test' and result['seed'] == 20000
+        assert result['purpose'] == 'final_test' and result['seed'] == seed
         assert result['num_envs'] == 10 and result['new_training_interactions'] == 0
         assert result['protocol']['env_id'] == entry['task']
         assert result['protocol']['reset_protocol'] == 'explicit_batch_seed'
@@ -64,7 +71,7 @@ def summarize(plan, root, attempts=None):
         for row in rows:
             selected = [ep for ep in episodes if ep['method'] == row['method']]
             assert len(selected) == 100 and {ep['episode'] for ep in selected} == set(range(100))
-            assert all(ep['eval_seed'] == 20000 + ep['episode'] // 10 * 10 for ep in selected)
+            assert all(ep['eval_seed'] == seed + ep['episode'] // 10 * 10 for ep in selected)
             assert len({ep['step'] for ep in selected}) == 1
             assert all(ep['episode_len'] == result['protocol']['max_episode_steps'] for ep in selected)
             assert all(ep['success_once'] in [0, 1] and ep['success_at_end'] in [0, 1]

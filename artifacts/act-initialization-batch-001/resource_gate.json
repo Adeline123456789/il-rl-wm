@@ -1,0 +1,12 @@
+{
+  "act-r0-expert50-smoke-001": {
+    "measured_seconds": 80.98360866399992,
+    "update_seconds": 7.50421912899958,
+    "rollout_seconds": 12.711460073000126,
+    "other_seconds": 60.76792946200021,
+    "projected_full_seconds": 1388.9020573361645,
+    "projected_with_margin": 1935.0177774038223,
+    "cap_seconds": 1900,
+    "rule": "Scale updates/rollouts and 2 to17 evaluations, then35% +60seconds; no score-based gate"
+  }
+}

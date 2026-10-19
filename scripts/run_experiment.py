@@ -67,11 +67,33 @@ def ensure_gpu_idle():
         raise RuntimeError('GPU compute process already exists or process query failed; defer this job')
 
 
+def job_budget(state, previous, experiment, requested, authorization=None):
+    """Separate explicitly authorized batches; never borrow the original balance."""
+    if authorization is None:
+        used = sum(m['elapsed_seconds'] for m in previous if not m.get('budget_id'))
+        return used, min(requested, state['budget']['gpu_hours_limit'] * 3600 - used)
+    assert authorization['status'] == 'authorized'
+    budget_id = authorization['budget_id']
+    jobs = authorization['jobs']
+    assert experiment in jobs, 'Experiment is outside this authorization'
+    job = jobs[experiment]
+    assert requested <= job['cap_seconds']
+    charged = [m for m in previous if m.get('budget_id') == budget_id]
+    used = sum(m['elapsed_seconds'] for m in charged)
+    category_used = sum(m['elapsed_seconds'] for m in charged
+                        if jobs[m['experiment_id']]['category'] == job['category'])
+    remaining = min(authorization['total_seconds'] - used,
+                    authorization['category_caps'][job['category']] - category_used)
+    # Keep space for the runner's existing bounded termination/cleanup.
+    return used, min(requested, remaining - 12)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--id', required=True)
     parser.add_argument('--seconds', required=True, type=float)
     parser.add_argument('--memory-mib', type=int, default=20480)
+    parser.add_argument('--budget-file', type=Path, help='Explicit separate batch authorization; default retains original 24-hour ledger')
     parser.add_argument('command', nargs=argparse.REMAINDER)
     args = parser.parse_args()
     command = args.command[1:] if args.command[:1] == ['--'] else args.command
@@ -90,11 +112,12 @@ def run_locked(args, command):
         raise RuntimeError('Unfinished job manifest: reconcile elapsed budget first')
     state_path = ROOT / 'research_state.json'
     state = json.loads(state_path.read_text())
-    used = sum(m['elapsed_seconds'] for m in previous)
-    remaining = state['budget']['gpu_hours_limit'] * 3600 - used
-    if remaining <= 0:
+    authorization = json.loads(args.budget_file.read_text()) if args.budget_file else None
+    if authorization:
+        assert command == authorization['jobs'][args.id]['command'], 'Command differs from authorized registry'
+    used, duration = job_budget(state, previous, args.id, args.seconds, authorization)
+    if duration <= 0:
         raise RuntimeError('Batch budget exhausted')
-    duration = min(args.seconds, remaining)
     out = ROOT / 'artifacts' / args.id
     out.mkdir(exist_ok=False)
     manifest = {'experiment_id': args.id, 'started_at': stamp(), 'ended_at': None,
@@ -103,6 +126,9 @@ def run_locked(args, command):
                 'code_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
                 'code_dirty': bool(subprocess.check_output(['git', 'status', '--porcelain'], cwd=ROOT)),
                 'exit_code': None, 'stop_reason': None}
+    if authorization:
+        manifest.update(budget_id=authorization['budget_id'], budget_file=str(args.budget_file),
+                        budget_authorization_sha256=hashlib.sha256(args.budget_file.read_bytes()).hexdigest())
     patch = subprocess.check_output(['git', 'diff', 'HEAD'], cwd=ROOT)
     (out / 'working-tree.patch').write_bytes(patch)
     manifest['tracked_patch_sha256'] = hashlib.sha256(patch).hexdigest()
@@ -160,7 +186,12 @@ def run_locked(args, command):
         manifest['ended_at'] = stamp()
         write_json(out / 'manifest.json', manifest)
         state = json.loads(state_path.read_text())
-        state['budget']['gpu_job_seconds_used'] = used + manifest['elapsed_seconds']
+        if authorization:
+            state.setdefault('additional_budgets', {})[authorization['budget_id']] = dict(
+                authorization=str(args.budget_file), limit_seconds=authorization['total_seconds'],
+                gpu_job_seconds_used=used + manifest['elapsed_seconds'])
+        else:
+            state['budget']['gpu_job_seconds_used'] = used + manifest['elapsed_seconds']
         state['experiments'].append(args.id)
         write_json(state_path, state)
     print(json.dumps(manifest, indent=2))
