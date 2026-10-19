@@ -1,0 +1,19 @@
+{
+  "user_message": "批准补评 300 秒",
+  "recorded_at": "2026-10-19T08:44:49.381106+00:00",
+  "additional_seconds": 300,
+  "per_job_seconds": 120,
+  "original_total_gpu_seconds": 86400,
+  "original_final_cap_seconds": 7200,
+  "original_plan_sha256": "3dfaf75e4ab08373f965f263705a163c0613e6117eabe60704274057110963ca",
+  "checkpoint_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+  "attempt_map": "configs/act_final_completion_attempts.json",
+  "scope": [
+    "act-u2-final-mean",
+    "act-u2-final-stochastic"
+  ],
+  "new_training_updates": 0,
+  "automatic_retry": false,
+  "automation_recreated": false,
+  "prior_proposal": "configs/act_final_completion_proposal.json"
+}

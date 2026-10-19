@@ -121,3 +121,6 @@ F-ACT-02/U2：固定专家状态夹爪MSE在16384步仅0.003594（T5约0.98048�
 ## F-ACT-ACCOUNT-01：旧回放计数格式
 
 CPU收尾汇总001假定所有交互文件有phases，遇旧回放total_interactions时KeyError。002单列已观察到的旧格式，与214作业GPU账一致；补充result/嵌套计数，三次早期步计数缺口明确保留。未修改模型、原始文件或实验协议，失败源码和日志保留。
+
+## F-ACT-EVAL-03 补评关闭（2026-10-19T08:47:54.132687+00:00）
+用户批准300秒后两个002 attempt均完成，原001失败不覆盖；各100回合0成功。资源中断已补齐，科学负结果仍保留。补评audit见artifacts/act-final-completion-postprocess-001/audit.json。

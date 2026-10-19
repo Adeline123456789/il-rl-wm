@@ -1,3 +1,5 @@
+补评最新复算：`.venv/bin/python scripts/summarize_final_results.py --plan configs/act_final_evaluation_plan.json --attempt-map configs/act_final_completion_attempts.json --output <new-directory>`。映射保留旧失败；不带映射仍复算原104/106。详细账本见FINAL_BATCH_REPORT.md。
+
 # 复算与重跑
 
 > 最终证据更新：原批次104/106条件完成、U2两项未完成；复算命令和范围见[FINAL_BATCH_REPORT](FINAL_BATCH_REPORT.md)。原始summary与逐回合记录保留，未完成分数为null。

@@ -1,0 +1,71 @@
+{
+  "phase": "completed",
+  "completed_conditions": 106,
+  "registered_conditions": 106,
+  "unchanged_other_conditions": 104,
+  "old_failed_attempt_preserved": true,
+  "all_gpu_job_seconds": 85238.75034914288,
+  "remaining_gpu_job_seconds": 1161.2496508571203,
+  "gpu_job_count": 216,
+  "completion_wall_seconds": 107.54360562498914,
+  "completion_gpu_job_seconds": 107.20395962096518,
+  "original_final_wall_seconds": 7200.778426306031,
+  "original_shutdown_overrun_seconds": 0.778426306031,
+  "added_cap_seconds": 300,
+  "manifest_intervals_disjoint": true,
+  "checkpoint_sha256": "d4e220f52a47eef13323527bb6d2e428ce45d3ff4afdbb88f56db2912b8eab35",
+  "records": [
+    {
+      "condition": "act-u2-final-mean",
+      "attempt": "e7-test-act-u2-final-mean-002",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 52.60707024397561,
+      "source_files_verified": 163,
+      "changed_non_execution_scripts": [
+        "scripts/summarize_final_results.py"
+      ],
+      "interactions": {
+        "phases": {
+          "final_test": {
+            "attempted_transitions": 20000,
+            "completed_transitions": 20000,
+            "completed_vector_steps": 2000
+          }
+        },
+        "total_completed": 20000,
+        "total_attempted": 20000,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "peak_gpu_mib": 3502,
+      "manifest_sha256": "02bc0e8b6711ef0dcadd0c0926b8a3959ab3f8e97899b2b762b7501c9228a440"
+    },
+    {
+      "condition": "act-u2-final-stochastic",
+      "attempt": "e7-test-act-u2-final-stochastic-002",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 54.596889376989566,
+      "source_files_verified": 163,
+      "changed_non_execution_scripts": [
+        "scripts/summarize_final_results.py"
+      ],
+      "interactions": {
+        "phases": {
+          "final_test": {
+            "attempted_transitions": 20000,
+            "completed_transitions": 20000,
+            "completed_vector_steps": 2000
+          }
+        },
+        "total_completed": 20000,
+        "total_attempted": 20000,
+        "definition": "Completed counts only returned env.step calls; attempted minus completed flags an interrupted or failed step. No reset calls counted."
+      },
+      "peak_gpu_mib": 3467,
+      "manifest_sha256": "e0630d1faeb37178e9351632680f4a5bac85dab3eaf1ba254cc35f9364e9f669"
+    }
+  ],
+  "new_training_updates": 0,
+  "audit_new_environment_interactions": 0
+}

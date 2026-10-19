@@ -14,9 +14,10 @@ def digest(path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--summary', type=Path, default=Path('artifacts/act-final-summary-003/summary.json'))
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
-    summary_path = Path('artifacts/act-final-summary-003/summary.json')
+    summary_path = args.summary
     summary = json.loads(summary_path.read_text())
     sources = {str(summary_path): digest(summary_path)}
     rows = []
@@ -26,7 +27,8 @@ def main():
         if not condition['id'].startswith('act-'):
             continue
         row = dict(condition)
-        directory = Path('artifacts') / ('e7-test-' + condition['id'] + '-001')
+        directory = Path('artifacts') / summary.get('attempt_mapping', {}).get(
+            condition['id'], 'e7-test-' + condition['id'] + '-001')
         if condition['status'] != 'completed':
             row['stage_counts'] = None
             row['initial_observation_max_difference'] = None

@@ -1,12 +1,12 @@
 # 首批研究收尾：正式测试、负结果与未完成项
 
-2026-10-19。原有界批次已经停止计算，**104/106 条件完成，研究目标尚未全部完成**。历史 BC/U0/U1/RLPD 的 88 条件完成；ACT 的 18 条件完成 16 条，U2 均值因时间上限中断，U2 随机未启动。失败及未运行均为 null，不用开发分数替代。每小时自动化已按用户要求删除，未创建替代任务。
+2026-10-19。经用户明确批准300秒补评，**106/106正式条件全部完成；整个研究目标尚未全部完成**。历史88条件和ACT18条件均已完成。U2新attempt002的均值/随机各100完整回合，成功均0/100；原均值attempt001的预算中断和70回合仍完整保留，不把旧部分记录合入新成绩。每小时自动化已按用户要求删除，未创建替代任务。
 
-证据入口：[全部逐条件表](artifacts/act-final-summary-003/conditions.csv)、[原始回合复算汇总](artifacts/act-final-summary-003/summary.json)、[终态审计](artifacts/act-final-delivery-audit-001/audit/result.json)、[ACT 配对及阶段复算](artifacts/act-final-review-cpu-001/analysis/result.json)。测试前已冻结模型及选择规则，未依据本表调参。
+证据入口：[全部逐条件表](artifacts/act-final-summary-004/conditions.csv)、[原始回合复算汇总](artifacts/act-final-summary-004/summary.json)、[原阶段审计](artifacts/act-final-delivery-audit-001/audit/result.json)、[补评审计](artifacts/act-final-completion-postprocess-001/audit.json)、[ACT 配对及阶段复算](artifacts/act-final-review-cpu-002/analysis/result.json)。测试前已冻结模型及选择规则，未依据本表调参。
 
 ## 正式 ACT 测试
 
-PickCube-v1，state，pd_ee_delta_pos，sparse，200 步，10 环境；每个完成条件为100完整回合。ACT只有一个训练seed0，100回合不是100次独立训练。16个完成条件的100个初始观测逐元素一致。教师latent=0；“首动作”和“时间集成”分别定义，未混用监督标签。
+PickCube-v1，state，pd_ee_delta_pos，sparse，200 步，10 环境；每个完成条件为100完整回合。ACT只有一个训练seed0，100回合不是100次独立训练。18个完成条件的100个初始观测逐元素一致。教师latent=0；“首动作”和“时间集成”分别定义，未混用监督标签。
 
 |模型/模式|成功一次 /100|末步成功 /100|平均真实回报|
 |---|---:|---:|---:|
@@ -22,8 +22,8 @@ PickCube-v1，state，pd_ee_delta_pos，sparse，200 步，10 环境；每个完
 |T5 ACT 参数 SAC：均值/随机|0 / 0|0 / 0|0 / 0|
 |T6 ACT 蒸馏＋50%专家：均值|77|58|123.46|
 |T6 ACT 蒸馏＋50%专家：随机|79|58|109.31|
-|U2 有限保持：均值|未完成|未完成|未完成|
-|U2 有限保持：随机|未启动|未启动|未启动|
+|U2 有限保持：均值|0|0|0.00|
+|U2 有限保持：随机|0|0|0.00|
 
 T2–T6每项262144训练交互、64528更新、同fresh双LN Critic。T6另外采样33038336个专家转移；不能把这项额外监督收益归于ACT初始化。固定末次检查点，没有选取在线学习曲线的最高点。
 
@@ -31,7 +31,7 @@ ACT首动作→D1均值的抓取79→37、抬升39→15、成功14→1；低动�
 
 时间集成抓取99、抬升90、成功73，但末步成功仅8；首动作对应79、39、14、6。首次抓取条件中位步89→43，分母79与99不同。阶段事件是独立布尔测量，不能当作互斥漏斗或每阶段独立因果量。集成历史缓存未迁移给当前state-only学生。
 
-U2开发结果仍为B类有限负结果：15360次辅助更新和983040专家训练标签均已审计，均值漂移减小；但49152步闭环已失败，早于65536截止。其完整独立测试缺失，不能将开发0/40写成正式0/100。
+U2开发结果仍为B类有限负结果：15360次辅助更新和983040专家训练标签均已审计，均值漂移减小；但49152步闭环已失败，早于65536截止。补评的两个独立测试模式均为0/100，接近/抓取/抬升/放置计数均0；与同初态T5末次一样，没有观察到持续闭环收益。
 
 ## 历史主干的独立训练重复
 
@@ -58,6 +58,8 @@ StackCube/PegInsertionSide所有已注册历史正式条件均0/100；各仅开�
 
 ## 预算、失败和恢复边界
 
+原7200秒阶段的历史账目与失败保留如下。用户授权后两项补评GPU作业新增107.203960秒，补评队列墙钟107.543606秒（低于300秒），共享总账85238.750349秒/23.677431小时，剩1161.249651秒。作业总数216，新增40000个正式测试返回/尝试转移、0训练更新；正式测试累计返回2374180、尝试2374190，包含旧失败尾段。新审计见[completion audit](artifacts/act-final-completion-postprocess-001/audit.json)：其他104条件逐行不变、18个ACT条件100初态一致、源代码快照/权重/总账通过。
+
 - 214个受账本管理作业（含失败和离线/数据准备作业）的累计计费85131.546390秒，23.647652小时；与research_state逐项相等，24小时下剩1268.453610秒。全部manifest区间无重叠，资源记录仅GPU0，整卡采样峰值5770 MiB。采样峰值不等同连续监测保证。
 - 原最终评测墙钟上限7200秒，002＋003实测7200.778426秒，明确计入0.778426秒停止/收尾开销。没有启动额外重试以绕过上限。最终评测中的GPU作业计费包含中断尝试；CPU导出、排队和收尾墙钟与GPU作业总账不同，不重复相加。
 - **F-ACT-EVAL-03**：U2均值最后仅分配37.474216秒，运行38.126150秒后由既有runner以time_budget停止，exit143。保存70个完整回合和14180返回转移；另10转移已尝试但未返回。没有完整result，不纳入100回合成绩；随机模式未启动。
@@ -66,7 +68,7 @@ StackCube/PegInsertionSide所有已注册历史正式条件均0/100；各仅开�
 - CPU交互汇总001因旧回放格式没有phases失败（F-ACT-ACCOUNT-01），002把已观察到的旧回放计数单列后通过，保留两份源码/日志。此修复不改变训练或科学方法。
 - 终态审计复算104个完整条件、核对最终执行源码tar/patch/便携权重，并在离线恢复仓库验证46个实际code_commit。审计通过仅代表这些来源/账本检查完成，不证明ACT-WM或全部科研要求完成。
 
-只补齐U2两项测试的提案见[configs/act_final_completion_proposal.json](configs/act_final_completion_proposal.json)：请求将最终评测上限增加300秒，**从原24小时剩余额度内支付**，不训练、不调参、不重跑其他104条件；当前未授权、未排队。保留旧失败，新尝试使用独立ID，100回合完整重评，重复交互另记。R0/R1/R3的新训练11500秒提案是另一项请求，不能与这300秒混为一次许可。
+只补齐U2两项测试的提案见[configs/act_final_completion_proposal.json](configs/act_final_completion_proposal.json)：请求将最终评测上限增加300秒，**从原24小时剩余额度内支付**，不训练、不调参、不重跑其他104条件；现已获用户明确授权并完成，授权原文、attempt映射及cap见configs/act_final_completion_authorization.json。保留旧失败，新尝试使用独立002 ID，100回合完整重评，重复交互另记。R0/R1/R3的新训练11500秒提案是另一项请求，不能与这300秒混为一次许可。
 
 ## ACT任务12问的最终边界
 
@@ -75,7 +77,7 @@ StackCube/PegInsertionSide所有已注册历史正式条件均0/100；各仅开�
 3. **蒸馏继承了吗？** D1均值1/100、随机0/100，首动作教师14/100；本配置未有效继承闭环技能。
 4. **参数迁移更好吗？** 初始均值较好保留，随机1/100、在线后0/100；Transformer额外计算没有转化为持续在线优势。不是“参数可以复制”就证明有效RL迁移。
 5. **失去什么技能？** D1抓取、抬升显著减少；C1随机执行丢失抓取。集成历史能力未被表达；现有相关诊断未唯一识别根因。
-6. **是否遗忘？** T4/T5在线开发曲线与正式末次0/100支持本运行持续退化；U2保持专家均值未保护开发闭环，但其正式结果缺失。
+6. **是否遗忘？** T4/T5在线开发曲线与正式末次0/100支持本运行持续退化；U2保持专家均值未保护开发闭环，正式均值/随机均0/100，未观察到持续收益。
 7. **RL能超过教师吗？** T6均值77/100、随机79/100超过教师点估计，但有额外RL和专家转移资源；没有等资源、多训练seed证明。
 8. **ACT/SAC互补吗？** 未做新ACT候选对照，未知。
 9. **WM优于裸SAC/直接Q吗？** 历史U1无IL规划平均仅+1.25个百分点、回报反降；新ACT＋直接Q/WM尚未运行，不能宣称优势。
@@ -87,7 +89,7 @@ StackCube/PegInsertionSide所有已注册历史正式条件均0/100；各仅开�
 
 |要求|本批结论与证据边界|
 |---|---|
-|1 实现与真实运行|BC/SAC A/B/C、完整U0/U1、隔离RLPD、ACT教师/D1/C1/T2–T6/U2均真实运行；正式104条件完成。ACT-WM、ACT多seed/多任务及U2两项正式测试未完成。|
+|1 实现与真实运行|BC/SAC A/B/C、完整U0/U1、隔离RLPD、ACT教师/D1/C1/T2–T6/U2均真实运行；正式106条件完成。ACT-WM、ACT多seed/多任务仍未完成。|
 |2 上游与许可|ManiSkill 62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3为唯一主训练底座，BC/SAC/ACT具体文件及Apache-2.0保留；RLPD隔离。WSRL无可见LICENSE、DAWN空LICENSE的源码只读不复用，未声称获得许可。|
 |3 任务/奖励/公平|三任务均按锁定环境sparse协议。ACT用训练split；T6专家转移与U2教师标签额外监督分列，不用测试state训练。|
 |4 原主干|历史U0/U1完整保留；冻结IL、独立SAC、H2双源、task-value与soft-Q区分、终止语义和20%真实探索已实现。ACT升级目前止于无规划迁移，不冒充完整接回。|
@@ -95,13 +97,13 @@ StackCube/PegInsertionSide所有已注册历史正式条件均0/100；各仅开�
 |6 候选/探索/无IL|原始探索/分支计数保留；ACT均值复制不保证随机技能或成功覆盖。旧无IL测试完成，新ACT候选互补性未知。|
 |7 前人与修改|U1仅Critic LN，U2仅有限早期均值约束，两项额度用完；ACT结构升级由用户授权，未更换SAC/WM主算法。|
 |8 中间/最终一致性|D1低误差不保闭环；C1复制不保在线技能；U2均值保护不保开发闭环。T6成功来自附加专家混合干预，初始化贡献仍缺对照。|
-|9 完整性/不确定性|CSV含全部106条件、失败及null；旧训练seed0和1–4分开、ACT仅seed0。三次早期环境步计数缺口及历史未提交plot源码缺项明确保留。|
-|10 资源/下一步|计费23.648小时，采样峰值5770MiB，未新增GPU。先申请有限补评U2，再单独决定R0/R1/R3或预热研究预算；保持最终SAC＋WM目标。|
+|9 完整性/不确定性|CSV含全部106完整条件，旧失败及null汇总003仍保留；旧训练seed0和1–4分开、ACT仅seed0。三次早期环境步计数缺口及历史未提交plot源码缺项明确保留。|
+|10 资源/下一步|计费23.677431小时，历史采样峰值5770MiB，未新增GPU。U2已补齐，再单独决定R0/R1/R3或预热研究预算；保持最终SAC＋WM目标。|
 
 新任务的十问及WSRL/DAWN机制边界另见[ACT_TRANSFER_CAUSAL_GAPS.md](ACT_TRANSFER_CAUSAL_GAPS.md)。原开发数值仍保存，不能把本次held-out分数用于选择下一训练方法。未来新批次须重新预登记独立测试协议。
 
 ## 复算与交付
 
-`scripts/summarize_final_results.py --plan configs/act_final_evaluation_plan.json --output <新的输出目录>`从原始episodes复算，不运行仿真。`scripts/review_act_final_evidence.py --output <新的输出目录>`核对16个完成ACT条件的初态和阶段计数。项目Python为.venv/bin/python。终态审计的本地离线Git仓库可按releases中的source-history说明重建；其机器路径不是交付权重的唯一来源。
+`scripts/summarize_final_results.py --plan configs/act_final_evaluation_plan.json --attempt-map configs/act_final_completion_attempts.json --output <新的输出目录>`从原始episodes复算，不运行仿真。`scripts/review_act_final_evidence.py --summary artifacts/act-final-summary-004/summary.json --output <新的输出目录>`核对18个完成ACT条件的初态和阶段计数。项目Python为.venv/bin/python。终态审计的本地离线Git仓库可按releases中的source-history说明重建；其机器路径不是交付权重的唯一来源。
 
-本项目本批训练/评测已终止，未安排新增GPU作业。收尾时GPU上另有其他环境进程，未干预或纳入本项目账本；任何获准的后续作业仍须重新检查GPU占用。代码、原始结果、失败、权重和恢复档案分阶段上传research/act-sac-transfer，PR #2保持Draft，不合并main。最新核验回执见research_state.upload_access及artifacts/github-act-stage-upload-*；本地HEAD和用户原工作保持，临时index发布避免覆盖既有文件。大型演示/完整replay/训练checkpoint不进普通Git，来源、哈希和重建说明保留。
+本项目本批训练/评测已终止，未安排新增GPU作业。补评启动前重新核实GPU空闲，全程串行；任何后续作业仍须独立授权并检查占用。代码、原始结果、失败、权重和恢复档案分阶段上传research/act-sac-transfer，PR #2保持Draft，不合并main。最新核验回执见research_state.upload_access及artifacts/github-act-stage-upload-*；本地HEAD和用户原工作保持，临时index发布避免覆盖既有文件。大型演示/完整replay/训练checkpoint不进普通Git，来源、哈希和重建说明保留。

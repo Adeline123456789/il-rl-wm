@@ -19,3 +19,7 @@
 2026-10-19 后续任务入口：继续时读取ACT_NEXT_STAGE_TASK_2026-10-19.md、ACT_U2_FINAL_REVIEW.md、ACT_TRANSFER_CAUSAL_GAPS.md、NEXT_RESEARCH_BATCH.md。R0/R1/R3与预热仅提案，须新增明确GPU授权；当前继续原106条件最终队列，不重启U2或扩大预算。
 
 2026-10-19 终态入口：读取FINAL_BATCH_REPORT.md。原003评测/审计已退出，104/106完成，U2两项缺失；原final-cap耗尽，禁止重复原队列。用户已删除每小时自动化，不重建。补评300秒和新训练11500秒是独立未授权提案。
+
+2026-10-19 用户明确批准补评300秒：仅U2两项，原24小时余额支付，授权见configs/act_final_completion_authorization.json；保留旧失败并使用新attempt映射。新训练11500秒仍未授权，自动化不恢复。
+
+2026-10-19 补评终态：106/106已完成，U2两项002均0/100。原300秒仅消耗实测补评时长，无新训练授权；禁止重复队列。最新FINAL_BATCH_REPORT.md和act-final-summary-004。

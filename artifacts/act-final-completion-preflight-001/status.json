@@ -1,0 +1,11 @@
+{
+  "pid": 3178193,
+  "started_at": 1792399489.40868,
+  "phase": "completed",
+  "exit_code": 0,
+  "original_summary_unchanged": true,
+  "completed_conditions": 104,
+  "non_u2_rows_unchanged": true,
+  "new_attempts_not_started": true,
+  "ended_at": 1792399489.4901514
+}

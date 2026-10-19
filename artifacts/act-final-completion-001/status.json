@@ -1,0 +1,20 @@
+{
+  "pid": 3178278,
+  "phase": "completed",
+  "started_at": 1792399498.2699726,
+  "completed": [
+    {
+      "id": "act-u2-final-mean",
+      "experiment": "e7-test-act-u2-final-mean-002"
+    },
+    {
+      "id": "act-u2-final-stochastic",
+      "experiment": "e7-test-act-u2-final-stochastic-002"
+    }
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 107.54360562498914,
+  "gpu_seconds_before": 85131.54638952191,
+  "current": null,
+  "ended_at": 1792399605.8135762
+}

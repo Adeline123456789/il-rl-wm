@@ -16,11 +16,15 @@ def read(path):
     return json.loads(path.read_text())
 
 
-def summarize(plan, root):
+def summarize(plan, root, attempts=None):
     assert (plan['seed'], plan['episodes_per_model_method'], plan['num_envs']) == (20000, 100, 10)
+    attempts = attempts or {}
+    assert set(attempts) <= {entry['id'] for entry in plan['entries']}
+    assert all(Path(name).name == name and name.startswith(f'e7-test-{key}-')
+               for key, name in attempts.items())
     conditions, evidence = [], []
     for entry in plan['entries']:
-        folder = root / f"e7-test-{entry['id']}-001"
+        folder = root / attempts.get(entry['id'], f"e7-test-{entry['id']}-001")
         rows = [dict(id=entry['id'], **{key: entry[key] for key in IDENTITY}, method=method,
                      status='not_started', episodes=None, success_once=None, success_at_end=None,
                      success_rate=None, mean_return=None, evaluation_interactions=None)
@@ -117,8 +121,13 @@ def main():
     parser.add_argument('--plan', type=Path, default=Path('configs/final_evaluation_plan.json'))
     parser.add_argument('--root', type=Path, default=Path('artifacts'))
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--attempt-map', type=Path, help='Explicit registered-condition to attempt ID mapping; original failures stay intact')
     args = parser.parse_args()
-    result = summarize(read(args.plan), args.root)
+    attempts = read(args.attempt_map) if args.attempt_map else None
+    result = summarize(read(args.plan), args.root, attempts)
+    if args.attempt_map:
+        result['attempt_mapping'] = attempts
+        result['attempt_mapping_sha256'] = hashlib.sha256(args.attempt_map.read_bytes()).hexdigest()
     result['plan_sha256'] = hashlib.sha256(args.plan.read_bytes()).hexdigest()
     args.output.mkdir(parents=True, exist_ok=False)
     (args.output / 'summary.json').write_text(json.dumps(result, indent=2) + '\n')
