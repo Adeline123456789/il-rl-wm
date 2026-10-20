@@ -1,0 +1,206 @@
+{
+  "completed_final_conditions": 106,
+  "u1_paired_training_seeds": [
+    {
+      "seed": 1,
+      "success_pp_delta": 1.0,
+      "mean_return_delta": -5.560000000000002
+    },
+    {
+      "seed": 2,
+      "success_pp_delta": 0.0,
+      "mean_return_delta": -4.200000000000017
+    },
+    {
+      "seed": 3,
+      "success_pp_delta": 0.0,
+      "mean_return_delta": -7.52000000000001
+    },
+    {
+      "seed": 4,
+      "success_pp_delta": 4.0,
+      "mean_return_delta": 4.8799999999999955
+    }
+  ],
+  "u1_mean_success_pp_delta": 1.25,
+  "u1_mean_return_delta": -3.1000000000000085,
+  "diagnostic_interactions": 496320,
+  "probe_target_summaries": [
+    {
+      "experiment": "f1-u0-ranking-001",
+      "variant": "U0",
+      "training_step": 262144,
+      "lineage_training_interactions": 524288,
+      "prefix_steps": 40,
+      "target": "first_action_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 0.0,
+      "actual_return_max": 0.0,
+      "max_within_state_return_spread": 0.0
+    },
+    {
+      "experiment": "f1-u0-ranking-001",
+      "variant": "U0",
+      "training_step": 262144,
+      "lineage_training_interactions": 524288,
+      "prefix_steps": 40,
+      "target": "sequence_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 0.0,
+      "actual_return_max": 0.0,
+      "max_within_state_return_spread": 0.0
+    },
+    {
+      "experiment": "f1-u0-precollapse-ranking-001",
+      "variant": "U0",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 40,
+      "target": "first_action_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 90.47640754278069,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0000000000000142
+    },
+    {
+      "experiment": "f1-u0-precollapse-ranking-001",
+      "variant": "U0",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 40,
+      "target": "sequence_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 90.47640754278069,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0000000000000142
+    },
+    {
+      "experiment": "f1-u0-step196608-prefix20-001",
+      "variant": "U0",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 20,
+      "target": "first_action_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 92.02849459598892,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0
+    },
+    {
+      "experiment": "f1-u0-step196608-prefix20-001",
+      "variant": "U0",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 20,
+      "target": "sequence_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 92.02849459598892,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0
+    },
+    {
+      "experiment": "f1-u1-step196608-prefix20-001",
+      "variant": "U1",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 20,
+      "target": "first_action_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 0.0,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0
+    },
+    {
+      "experiment": "f1-u1-step196608-prefix20-001",
+      "variant": "U1",
+      "training_step": 196608,
+      "lineage_training_interactions": 458752,
+      "prefix_steps": 20,
+      "target": "sequence_student",
+      "valid_states": 8,
+      "rankable_pairs": 0,
+      "near_tie_pairs": 288,
+      "pairwise_accuracy": null,
+      "mean_regret": 0.0,
+      "tail_aware_tolerance": 1.795055327504512,
+      "actual_return_min": 0.0,
+      "actual_return_max": 98.20494467249539,
+      "max_within_state_return_spread": 1.0
+    }
+  ],
+  "controls": [
+    {
+      "experiment": "act-r0-expert50-seed0-001",
+      "training_seed": 0,
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 31.0,
+      "success_at_end": 20.0,
+      "mean_return": 120.55
+    },
+    {
+      "experiment": "act-r1-expert50-seed0-001",
+      "training_seed": 0,
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 30.0,
+      "success_at_end": 26.0,
+      "mean_return": 121.45
+    },
+    {
+      "experiment": "act-t6-online-seed0-001",
+      "training_seed": 0,
+      "step": 262144,
+      "episodes": 40,
+      "success_once": 34.0,
+      "success_at_end": 22.0,
+      "mean_return": 124.1
+    }
+  ],
+  "r3_interrupted": {
+    "ended_at": "2026-10-19T10:17:35.425197+00:00",
+    "exit_code": 1,
+    "stop_reason": "KeyboardInterrupt: Received signal 15; terminating child and saving ledger",
+    "elapsed_seconds": 846.9541239529999,
+    "child_pid": 71954
+  },
+  "new_environment_interactions": 0,
+  "new_gradient_updates": 0,
+  "gpu_jobs_started": 0,
+  "interpretation": "Descriptive only; no new causal evidence or independent training repeats."
+}

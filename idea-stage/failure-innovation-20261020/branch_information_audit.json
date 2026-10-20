@@ -1,0 +1,208 @@
+{
+  "experiments": [
+    {
+      "experiment": "f1-u0-ranking-001",
+      "targets": [
+        {
+          "mode": 0,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 0.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 0,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            8,
+            8
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        },
+        {
+          "mode": 1,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 0.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 0,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            8,
+            8
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        }
+      ],
+      "full_continuation_state_recorded": false,
+      "coalescence_provable_from_saved_arrays": false,
+      "available_real_states_shape": [
+        2,
+        2,
+        9,
+        8,
+        2,
+        42
+      ],
+      "note": "Only first2 resulting42-dim observations saved; neither full simulator/controller/RNG state nor full continuation states. Equal reward traces do not imply exact state coupling."
+    },
+    {
+      "experiment": "f1-u0-precollapse-ranking-001",
+      "targets": [
+        {
+          "mode": 0,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0000000000000142,
+          "states_with_any_observed_return_gap_gt_1e-9": 4,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            4,
+            4
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        },
+        {
+          "mode": 1,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0000000000000142,
+          "states_with_any_observed_return_gap_gt_1e-9": 5,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            3,
+            3
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        }
+      ],
+      "full_continuation_state_recorded": false,
+      "coalescence_provable_from_saved_arrays": false,
+      "available_real_states_shape": [
+        2,
+        2,
+        9,
+        8,
+        2,
+        42
+      ],
+      "note": "Only first2 resulting42-dim observations saved; neither full simulator/controller/RNG state nor full continuation states. Equal reward traces do not imply exact state coupling."
+    },
+    {
+      "experiment": "f1-u0-step196608-prefix20-001",
+      "targets": [
+        {
+          "mode": 0,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 5,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            3,
+            3
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        },
+        {
+          "mode": 1,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 7,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            1,
+            1
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        }
+      ],
+      "full_continuation_state_recorded": false,
+      "coalescence_provable_from_saved_arrays": false,
+      "available_real_states_shape": [
+        2,
+        2,
+        9,
+        8,
+        2,
+        42
+      ],
+      "note": "Only first2 resulting42-dim observations saved; neither full simulator/controller/RNG state nor full continuation states. Equal reward traces do not imply exact state coupling."
+    },
+    {
+      "experiment": "f1-u1-step196608-prefix20-001",
+      "targets": [
+        {
+          "mode": 0,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 2,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            6,
+            6
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        },
+        {
+          "mode": 1,
+          "state_count": 8,
+          "repeat_count": 2,
+          "observed_max_candidate_return_gap": 1.0,
+          "states_with_any_observed_return_gap_gt_1e-9": 4,
+          "states_with_any_observed_return_gap_gt_1": 0,
+          "mixed_observed_success_states_each_repeat": [
+            0,
+            0
+          ],
+          "all_candidates_reward_trace_equal_states_each_repeat": [
+            4,
+            4
+          ],
+          "repeat_reward_trace_max_abs_difference": 0.0
+        }
+      ],
+      "full_continuation_state_recorded": false,
+      "coalescence_provable_from_saved_arrays": false,
+      "available_real_states_shape": [
+        2,
+        2,
+        9,
+        8,
+        2,
+        42
+      ],
+      "note": "Only first2 resulting42-dim observations saved; neither full simulator/controller/RNG state nor full continuation states. Equal reward traces do not imply exact state coupling."
+    }
+  ],
+  "new_environment_interactions": 0,
+  "new_gradient_updates": 0,
+  "gpu_jobs_started": 0,
+  "interpretation": "Post-hoc descriptive information audit only. Does not revise preregistered tolerance, score, outcome definition or declare precise causal diagnosis."
+}

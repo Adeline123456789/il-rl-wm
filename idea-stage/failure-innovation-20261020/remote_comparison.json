@@ -1,0 +1,18 @@
+{
+  "remote_commit": "21935f29787dad569731831c65b956f2e5158e91",
+  "checked": [
+    {
+      "path": "ACT_INITIALIZATION_CONTROLS.md",
+      "local_blob": "6439dd48c9f9c021b7b0b245b81e880ec5d47775",
+      "remote_blob": "6439dd48c9f9c021b7b0b245b81e880ec5d47775",
+      "equal": true
+    },
+    {
+      "path": "FINAL_BATCH_REPORT.md",
+      "local_blob": "5fd0ee09434886b47fb972dce9f7e60765189f9d",
+      "remote_blob": "5fd0ee09434886b47fb972dce9f7e60765189f9d",
+      "equal": true
+    }
+  ],
+  "scope": "Exactly these2 files and ls-remote refs verified this session; prior3612-file receipt not rerun."
+}
