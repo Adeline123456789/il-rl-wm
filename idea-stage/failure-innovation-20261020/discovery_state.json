@@ -1,0 +1,26 @@
+{
+  "status": "NO_QUALIFIED_IDEA",
+  "next_action": "NEEDS_RETHINK",
+  "candidate_batches": 3,
+  "review_calls_used": 4,
+  "review_calls_limit": 8,
+  "completed_reviews": 3,
+  "unavailable_reviews": 1,
+  "highest_overall_score": 5,
+  "highest_novelty_score": 6,
+  "calibration": "none",
+  "new_environment_interactions": 0,
+  "new_gradient_updates": 0,
+  "gpu_jobs_started": 0,
+  "report": "idea-stage/failure-innovation-20261020/IDEA_REPORT.md",
+  "stop_reason": "Low novelty and missing discriminating evidence after3 materially different candidate batches; reviewer recommends stop; no gate relaxation.",
+  "gate": {
+    "overall": 8,
+    "novelty": 8,
+    "importance": 8,
+    "mechanism_testability": 7,
+    "feasibility": 7,
+    "passed": false
+  },
+  "updated_at": "2026-10-20T14:59:34.285497+08:00"
+}

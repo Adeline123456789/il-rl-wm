@@ -1,0 +1,13 @@
+# Local reading material and full reviewer traces stay on this machine.
+sources/
+*_raw.json
+*_request.json
+round_*_review.md
+round_*_prompt.md
+ORIGINAL_PROPOSAL_EXCERPT.md
+PRIMARY_LITERATURE_EXCERPTS.md
+ROUND*_PRIMARY.md
+BATCH2_WEB_PRIMARY.json
+sources_github_controls.json
+research_state_before_analysis.json
+*.log
